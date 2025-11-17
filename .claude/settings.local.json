@@ -1,0 +1,33 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm install:*)",
+      "Bash(npx tailwindcss init -p)",
+      "Bash(npx shadcn@latest init -d)",
+      "Bash(npx shadcn@latest add button card accordion navigation-menu sheet badge -y)",
+      "Bash(npm run build:*)",
+      "Bash(npm run dev:*)",
+      "Bash(timeout /t 5)",
+      "Bash(ping:*)",
+      "Bash(wh-sos-service-rep.webp)",
+      "Bash(rheem_logo-1.webp)",
+      "Bash(hajoca-1.webp)",
+      "Bash(rinnai-1.webp)",
+      "Bash(bradford-white-logo-1.webp)",
+      "Bash(navien-1.webp)",
+      "Bash(del:*)",
+      "Bash(nul)",
+      "Bash(taskkill:*)",
+      "Bash(if exist .nextdev rmdir /s /q .nextdev)",
+      "Bash(pkill -f \"npm run dev\")",
+      "Bash(killall node:*)",
+      "Bash(npx kill-port:*)",
+      "Bash(timeout /t 2 /nobreak)",
+      "Bash(timeout /t 5 /nobreak)",
+      "Bash(timeout /t 8 /nobreak)",
+      "Bash(timeout /t 10 /nobreak)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
