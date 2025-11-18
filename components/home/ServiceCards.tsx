@@ -119,7 +119,7 @@ export function ServiceCards() {
                     <div className="p-6 space-y-4 text-left">
                     <h3 className="text-2xl font-bold text-[#11110E] mb-1 leading-tight">
                           {service.title === "Gas Water Heaters" ? (
-                            <>Gas Water<br />Heaters</>
+                            <>Gas Water Heaters</>
                           ) : (
                             service.title
                           )}

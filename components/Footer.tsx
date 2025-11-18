@@ -117,7 +117,6 @@ export function Footer() {
           href={link.href}
           className="group flex items-center text-gray-400 hover:text-[#EA5D19] transition-colors"
         >
-          <span className="w-0 h-0.5 bg-[#EA5D19] group-hover:w-4 transition-all duration-300 mr-0 group-hover:mr-2 rounded-full" />
           {link.name}
         </Link>
       </li>
@@ -140,7 +139,6 @@ export function Footer() {
                         href={link.href}
                         className="group flex items-center text-gray-400 hover:text-[#EA5D19] transition-colors"
                       >
-                        <span className="w-0 h-0.5 bg-[#EA5D19] group-hover:w-4 transition-all duration-300 mr-0 group-hover:mr-2 rounded-full" />
                         {link.name}
                       </Link>
                     </li>
@@ -163,7 +161,6 @@ export function Footer() {
                         href={link.href}
                         className="group flex items-center text-gray-400 hover:text-[#EA5D19] transition-colors"
                       >
-                        <span className="w-0 h-0.5 bg-[#EA5D19] group-hover:w-4 transition-all duration-300 mr-0 group-hover:mr-2 rounded-full" />
                         {link.name}
                       </Link>
                     </li>

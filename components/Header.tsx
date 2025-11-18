@@ -8,7 +8,11 @@ import {
   Flame, Zap, FlaskConical, Waves, Filter,
   Wind, Gauge, Camera, Search, Home, AlertTriangle,
   Droplets, Settings, ShowerHead, Toilet, CircleDot,
-  Trash2, Shield, Grip, WashingMachine, Sparkles
+  Trash2, Shield, Grip, WashingMachine, Sparkles,
+  Ticket,
+  Map,
+  HomeIcon,
+  MapIcon
 } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Container } from "./Container";
@@ -43,7 +47,6 @@ const menuStructure = {
       { name: "Garbage Disposal Repair & Replacement", href: "/garbage-disposal-repair-replacement", desc: "Disposal services", icon: Trash2 },
       { name: "Moen Flo Leak Detection Installation", href: "/moen-flo-installation", desc: "Smart water monitoring", icon: Shield },
       { name: "Sump Pump Repair & Replacement", href: "/sump-pump-repair-replacement", desc: "Sump pump services", icon: Grip },
-      { name: "Plumbing Services", href: "/plumbing", desc: "All plumbing needs", icon: WashingMachine },
       { name: "Air Duct Cleaning", href: "/air-duct-cleaning", desc: "HVAC duct cleaning", icon: Sparkles },
     ],
   },
@@ -52,6 +55,8 @@ const menuStructure = {
     items: [
       { name: "About", href: "/about", desc: "Learn about our team", icon: Mail },
       { name: "Free Online Quote", href: "/quote", desc: "Get instant pricing", icon: Phone },
+      { name: "Discounts", href: "/discount-water-heaters", desc: "Get Water Heater Discounts", icon: Ticket },
+      { name: "Service Area", href: "/service-area", desc: "Areas We Service", icon: MapIcon  }
     ],
   },
 };
@@ -171,7 +176,7 @@ export function Header() {
                         </div>
 
                         {/* Quick Contact in Brand Section */}
-                        <div className="mt-8 pt-6 border-t border-white/10">
+                        <div className="mt-4 pt-6 border-t border-white/10">
                           <div className="space-y-2">
                             <div className="relative overflow-hidden rounded-xl shadow-2xl my-10">
                                           <Image
@@ -179,7 +184,7 @@ export function Header() {
                                             alt="Water Heater SOS professional technician"
                                             width={600}
                                             height={400}
-                                            className="h-auto w-full object-cover"
+                                            className="h-30 w-80 object-cover"
                                           />
                                         </div>
                             <p className="text-xs font-semibold text-gray-500 uppercase tracking-wider">
@@ -189,7 +194,7 @@ export function Header() {
                               href="tel:8006974014"
                               className="flex items-center gap-2 text-[#EA5D19] font-bold text-lg hover:text-[#FF6E2E] transition-colors"
                             >
-                              <Phone className="h-5 w-5" />
+                              <Phone className="h-3 w-3" />
                               (800) 697-4014
                             </a>
                             <p className="text-xs text-gray-500">
@@ -200,77 +205,68 @@ export function Header() {
                       </div>
 
                       {/* Menu Items - Right Columns */}
-                      <div className="lg:col-span-9 relative">
-                        <div className="grid auto-rows-min grid-cols-2 gap-4 md:grid-cols-3">
+                      <div className="lg:col-span-9 relative flex flex-col h-full">
+                      <div className="grid auto-rows-min grid-cols-2 gap-4 md:grid-cols-3 flex-1">
                           {menuStructure[activeMenu as keyof typeof menuStructure].items.map((item, index) => {
                             const ItemIcon = 'icon' in item ? item.icon : null;
                             const isFeatured = 'featured' in item && item.featured;
 
                             return (
                               <motion.div
-                                key={item.href}
-                                initial={{ opacity: 0, y: 10 }}
-                                animate={{ opacity: 1, y: 0 }}
-                                transition={{ delay: index * 0.03, duration: 0.2 }}
-                              >
-                                <Link
-                                  href={item.href}
-                                  className={`group relative flex items-start gap-3 rounded-xl px-4 py-4 transition-all h-full border hover-lift ${
+                              key={item.href}
+                              initial={{ opacity: 0, y: 10 }}
+                              animate={{ opacity: 1, y: 0 }}
+                              transition={{ delay: index * 0.01, duration: 0.15 }}
+                              whileHover={{ y: -4 }}
+                              whileTap={{ scale: 0.98 }}
+                            >
+                              <Link
+                                href={item.href}
+                                className={`group relative flex items-start gap-3 rounded-xl px-4 py-4 h-full border 
+                                  transition duration-200 ease-out
+                                  ${
                                     isFeatured
-                                      ? 'border-[#EA5D19]/40 bg-[#EA5D19]/10 backdrop-blur-sm shadow-sm'
-                                      : 'border-white/10 hover:border-[#EA5D19]/40 hover:bg-white/5'
+                                      ? "border-[#EA5D19]/40 bg-[#EA5D19]/10 backdrop-blur-sm shadow-sm hover:shadow-md"
+                                      : "border-white/10 hover:border-[#EA5D19]/40 hover:bg-white/5 hover:shadow-md"
                                   }`}
-                                >
-                                  {isFeatured && (
-                                    <div className="absolute -top-2 -right-2 z-10">
-                                      <span className="inline-flex items-center rounded-full bg-gradient-to-r from-[#EA5D19] to-[#FF6E2E] px-2 py-0.5 text-[10px] font-bold text-white shadow-md badge-pulse">
-                                        POPULAR
-                                      </span>
-                                    </div>
-                                  )}
-
-                                  {ItemIcon && (
-                                    <div className={`flex-shrink-0 rounded-lg p-2 transition-all duration-300 ${
-                                      isFeatured
-                                        ? 'bg-[#EA5D19] text-white'
-                                        : 'bg-white/10 text-[#EA5D19] group-hover:bg-[#EA5D19] group-hover:text-white group-hover:scale-110'
-                                    }`}>
-                                      <ItemIcon className="h-4 w-4" />
-                                    </div>
-                                  )}
-
-                                  <div className="flex-1 min-w-0">
-                                    <span className={`block text-sm font-semibold transition-colors leading-tight ${
-                                      isFeatured
-                                        ? 'text-white'
-                                        : 'text-white group-hover:text-[#EA5D19]'
-                                    }`}>
-                                      {item.name}
-                                    </span>
-                                    {'desc' in item && item.desc && (
-                                      <span className="mt-1 block text-xs text-gray-400 leading-snug">
-                                        {item.desc}
-                                      </span>
-                                    )}
+                              >
+                                {ItemIcon && (
+                                  <div
+                                    className={`flex-shrink-0 rounded-lg p-2
+                                      transition-colors transition-transform duration-200 ease-out
+                                      ${
+                                        isFeatured
+                                          ? "bg-[#EA5D19] text-white"
+                                          : "bg-white/10 text-[#EA5D19] group-hover:bg-[#EA5D19] group-hover:text-white group-hover:scale-105"
+                                      }`}
+                                  >
+                                    <ItemIcon className="h-4 w-4" />
                                   </div>
-                                </Link>
+                                )}
+                            
+                                <div className="flex-1 min-w-0">
+                                  <span
+                                    className={`block text-sm font-semibold transition-colors leading-tight
+                                      ${
+                                        isFeatured
+                                          ? "text-white"
+                                          : "text-white group-hover:text-[#EA5D19]"
+                                      }`}
+                                  >
+                                    {item.name}
+                                  </span>
+                                  {"desc" in item && item.desc && (
+                                    <span className="mt-1 block text-xs text-gray-400 leading-snug">
+                                      {item.desc}
+                                    </span>
+                                  )}
+                                </div>
+                              </Link>
                               </motion.div>
                             );
                           })}
                         </div>
 
-                        {/* Logo in Bottom Right */}
-                        <div className="absolute bottom-0 right-0 opacity-30 hover:opacity-60 transition-opacity">
-                          <Link href="/" className="inline-block">
-                            <Image
-                              src="/wh-sos-logo.webp"
-                              alt="Water Heater SOS"
-                              width={100}
-                              height={33}
-                              className="h-auto w-auto brightness-0 invert"
-                            />
-                          </Link>
-                        </div>
 
                         {/* Bottom CTA Bar */}
                         <div className="mt-10 pt-8">
@@ -334,7 +330,7 @@ export function Header() {
                       alt="Water Heater SOS Logo"
                       width={120}
                       height={40}
-                      className="h-auto w-auto brightness-0 invert"
+                      className="h-auto w-auto"
                     />
                   </Link>
                   <button
@@ -369,19 +365,6 @@ export function Header() {
                   ))}
                 </div>
 
-                {/* Mobile Footer Logo */}
-                <div className="border-t border-white/10 bg-[#11110E] px-6 pt-4 pb-2 flex justify-center">
-                  <Link href="/" onClick={() => setMobileOpen(false)}>
-                    <Image
-                      src="/wh-sos-logo.webp"
-                      alt="Water Heater SOS"
-                      width={80}
-                      height={26}
-                      className="h-auto w-auto opacity-40 brightness-0 invert"
-                    />
-                  </Link>
-                </div>
-
                 {/* Mobile CTA */}
                 <div className="border-t border-white/10 bg-[#11110E] p-6 pt-4">
                   <a
@@ -389,7 +372,7 @@ export function Header() {
                     className="flex w-full items-center justify-center gap-2 rounded-xl bg-[#EA5D19] px-6 py-4 text-lg font-semibold text-white shadow-lg"
                   >
                     <Phone className="h-5 w-5" />
-                    (800) 697-4014
+                    CALL NOW
                   </a>
                 </div>
               </div>
