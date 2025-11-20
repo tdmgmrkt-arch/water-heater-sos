@@ -82,19 +82,15 @@ export function WaterFiltrationContent() {
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.6 }}
             >
-
-            <span className="inline-block px-4 py-1 rounded-full bg-[#EA5D19] text-sm text-white font-semibold mb-4 tracking-wide">
-              Premium Water Filtration Service
-            </span>
-              <h1 className="text-4xl font-bold text-[#11110E] sm:text-5xl lg:text-6xl mb-6">
-                Water Filtration
+              <span className="inline-block px-4 py-1 rounded-full bg-[#EA5D19] text-sm text-white font-semibold mb-4 tracking-wide">
+                Premium Water Filtration Service
+              </span>
+              <h1 className="text-5xl font-extrabold text-[#11110E] sm:text-6xl lg:text-7xl mb-4 leading-tight">
+                <span className="text-[#EA5D19]">Whole Home </span>Water Filtration
               </h1>
-              <p className="text-xl text-gray-600 mb-4">
-              Unsure if your tap water is clean and free of unwanted chemicals?
-              </p>
-
               <p className="text-lg text-gray-700 leading-relaxed mb-4">
-                Tap water can contain various chemicals, such as chlorine, lead, fluoride, pesticides, herbicides, and traces of pharmaceuticals. Some are added for purification, and others may occur naturally or be introduced through environmental contamination.
+              Unsure if your tap water is clean and free of unwanted chemicals?
+              Tap water can contain various chemicals, such as chlorine, lead, fluoride, pesticides, herbicides, and traces of pharmaceuticals. Some are added for purification, and others may occur naturally or be introduced through environmental contamination.
               </p>
               <p className="text-lg text-gray-700 leading-relaxed mb-8">
                 Having a water filtration system installed in your home is a crucial step toward ensuring the health and well-being of your family. A properly installed system can provide you and your family with bottled water quality from your tap.
@@ -239,7 +235,7 @@ export function WaterFiltrationContent() {
 
       {/* FAQ Section */}
       <section className="py-20 bg-white">
-        <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}

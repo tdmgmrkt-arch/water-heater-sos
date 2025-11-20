@@ -106,8 +106,8 @@ export function Header() {
             <Image
               src="/wh-sos-logo.webp"
               alt="Water Heater SOS Logo"
-              width={120}
-              height={15}
+              width={240}
+              height={30}
               className="h-15 w-auto"
               priority
             />

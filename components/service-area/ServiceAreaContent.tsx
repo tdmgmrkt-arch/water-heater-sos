@@ -5,6 +5,7 @@ import { MapPin, Phone, CheckCircle2, DollarSign, Award, TrendingDown } from "lu
 import Link from "next/link";
 import Image from "next/image";
 
+// --- Data (Unchanged) ---
 const cities = [
   { name: "Redlands", slug: "/redlands" },
   { name: "Yucaipa", slug: "/yucaipa" },
@@ -61,9 +62,9 @@ const benefits = [
 
 export function ServiceAreaContent() {
   return (
-    <main className="min-h-screen bg-white">
-      {/* Hero Section */}
-      <section className="relative overflow-hidden bg-gradient-to-br from-[#11110E] via-[#1a1917] to-[#11110E] py-16 lg:py-20">
+    <main className="min-h-screen bg-gray-50"> {/* Changed main background to light gray */}
+      {/* -------------------- SECTION 1: HERO (HIGH-IMPACT GEOGRAPHIC FOCUS) -------------------- */}
+      <section className="relative overflow-hidden bg-gradient-to-br from-[#11110E] via-[#1a1917] to-[#11110E] py-20 lg:py-28"> {/* Increased padding slightly */}
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
           <motion.div
             className="absolute -top-40 -right-40 w-80 h-80 bg-[#EA5D19]/20 rounded-full blur-3xl"
@@ -84,96 +85,120 @@ export function ServiceAreaContent() {
             transition={{ duration: 0.6 }}
             className="text-center"
           >
-            <div className="inline-flex items-center gap-2 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 px-4 py-2 mb-6">
+            <div className="inline-flex items-center gap-2 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 px-4 py-2 mb-4"> {/* mb-6 -> mb-4 */}
               <MapPin className="h-4 w-4 text-[#EA5D19]" />
-              <span className="text-sm font-semibold text-white">Serving the Inland Empire</span>
+              <span className="text-sm font-semibold text-white">California Licensed Plumbing Experts</span>
             </div>
 
-            <h1 className="text-4xl font-bold text-white sm:text-5xl lg:text-6xl mb-4">
-              Service Area
+            <h1 className="text-5xl font-extrabold text-white sm:text-6xl lg:text-7xl mb-4 leading-tight"> {/* text-4xl -> 5xl, etc. for more impact */}
+              Local <span className="text-[#EA5D19]">Water Heater Service</span> Area
             </h1>
 
-            <p className="text-lg text-gray-300 max-w-3xl mx-auto leading-relaxed">
-              We provide water heater repair and installation services for the Inland Empire, California. While we don&apos;t cover every city, we do cover most of them.
+            <p className="text-xl text-gray-300 max-w-4xl mx-auto leading-relaxed mb-8"> {/* text-lg -> text-xl, added mb-8 */}
+              We provide same-day water heater repair, installation, and tankless service for the entire Inland Empire, California. Check below for the full list of cities we cover.
             </p>
 
             <div className="mt-8">
               <a
                 href="tel:8006974014"
-                className="inline-flex items-center gap-3 rounded-full bg-gradient-to-r from-[#EA5D19] to-[#FF6E2E] px-8 py-4 text-lg font-semibold text-white shadow-xl hover:shadow-2xl transition-all hover:scale-105"
+                className="inline-flex items-center gap-3 rounded-full bg-gradient-to-r from-[#EA5D19] to-[#FF6E2E] px-10 py-5 text-xl font-extrabold text-white shadow-xl ring-4 ring-orange-200/50 hover:shadow-2xl transition-all hover:scale-105"
               >
-                <Phone className="h-5 w-5" />
-                (800) 697-4014
+                <Phone className="h-6 w-6" />
+                Call Now for Same-Day Service
               </a>
             </div>
           </motion.div>
         </div>
       </section>
 
-      {/* Service Area Map & Cities Section */}
-<section className="py-16 lg:py-24 bg-white">
-  <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-    <motion.div
-      initial={{ opacity: 0, y: 20 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true }}
-      transition={{ duration: 0.6 }}
-      className="text-center mb-12"
-    >
-      <h2 className="text-3xl font-bold text-[#11110E] sm:text-4xl mb-4">
-        Service Area Map
-      </h2>
-      <p className="text-lg text-gray-600 max-w-7xl mx-auto mb-4">
-        Below, you will find a list of some of the main cities we service. Click on any city to learn more about our services in your area.
-      </p>
-      <p className="text-sm text-gray-600">
-        If your city isn&apos;t on the list, please{" "}
-        <a href="/contact" className="text-[#EA5D19] hover:underline font-semibold">
-          reach out to us
-        </a>{" "}
-        and see if your home is within our service area.
-      </p>
-    </motion.div>
-
-    {/* FIXED: GRID LAYOUT (NO MORE FLOAT / NO MORE COLUMNS) */}
-    <div className="grid lg:grid-cols-1 gap-12 items-start">
-      
-      {/* City List */}
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
-        {cities.map((city, index) => (
+      {/* -------------------- SECTION 2: SERVICE AREA MAP & CITY LIST (TWO-COLUMN GRID) -------------------- */}
+      <section className="py-16 lg:py-24 bg-gray-50">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <motion.div
-            key={city.slug}
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.5, delay: index * 0.02 }}
+            transition={{ duration: 0.6 }}
+            className="text-center mb-16"
           >
-            
-            <Link
-              href={city.slug}
-              className="group block p-3 bg-gradient-to-br from-gray-50 to-white rounded-xl border-2 border-gray-100 hover:border-[#EA5D19] transition-all hover:shadow-lg"
-            >
-              <div className="flex items-center gap-2">
-                <div className="flex-shrink-0 w-7 h-7 rounded-lg bg-gradient-to-br from-[#EA5D19] to-[#FF6E2E] flex items-center justify-center group-hover:scale-110 transition-transform">
-                  <MapPin className="h-3.5 w-3.5 text-white" />
-                </div>
-                <div className="flex-1 min-w-0">
-                  <h3 className="font-semibold text-sm text-[#11110E] group-hover:text-[#EA5D19] transition-colors truncate">
-                    {city.name}
-                  </h3>
-                </div>
-                <CheckCircle2 className="h-4 w-4 text-green-500 opacity-0 group-hover:opacity-100 transition-opacity flex-shrink-0" />
-              </div>
-            </Link>
+            <h2 className="text-4xl font-extrabold text-[#11110E] sm:text-5xl mb-3">
+              Cities We Proudly Serve
+            </h2>
+            <div className="h-1 w-20 bg-[#EA5D19] mx-auto rounded-full mb-4" />
+            <p className="text-lg text-gray-600 max-w-7xl mx-auto">
+              Our licensed technicians cover a wide radius across San Bernardino County and Riverside County.
+            </p>
           </motion.div>
-        ))}
-      </div>
 
-    </div>
-  </div>
-</section>
+          <div className="grid lg:grid-cols-12 gap-12 items-start">
+            
+            {/* LEFT COLUMN: SERVICE MAP (Visual Anchor - Col Span 5) */}
+            <motion.div 
+                initial={{ opacity: 0, x: -30 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6, delay: 0.2 }}
+                className="lg:col-span-5 relative h-196 bg-white rounded-3xl shadow-2xl overflow-hidden border-4 border-[#EA5D19]/30"
+            >
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d219890.3485624005!2d-117.46355972087129!3d34.043980669711594!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sinland%20empire!5e0!3m2!1sen!2sus!4v1763673846625!5m2!1sen!2sus"
+                  className="w-full h-full"
+                  style={{ border: 0 }}
+                  allowFullScreen
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                />
+              </motion.div>
 
-      {/* Benefits Section */}
+            {/* RIGHT COLUMN: CITY LIST (Detailed List - Col Span 7) */}
+            <motion.div 
+                initial={{ opacity: 0, x: 30 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6, delay: 0.2 }}
+                className="lg:col-span-7"
+            >
+                <div className="text-left mb-6">
+                    <p className="text-lg text-gray-700 font-semibold mb-4">
+                        If your city is listed, you qualify for our 24/7 same-day service guarantee.
+                    </p>
+                    <p className="text-sm text-gray-500">
+                        *Don't see your city? Call us directly to confirm availability—we often service neighboring areas!
+                    </p>
+                </div>
+                
+                {/* Enhanced City Grid */}
+                <div className="grid grid-cols-2 sm:grid-cols-3 gap-3"> {/* Increased density to 3 columns on small screens */}
+                    {cities.map((city, index) => (
+                        <motion.div
+                            key={city.slug}
+                            initial={{ opacity: 0, y: 10 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            viewport={{ once: true }}
+                            transition={{ duration: 0.3, delay: index * 0.02 }}
+                        >
+                            <Link
+                                href={city.slug}
+                                className="group block p-3 bg-white rounded-xl shadow-md hover:shadow-lg transition-all border border-gray-100 hover:border-[#EA5D19]"
+                            >
+                                <div className="flex items-center gap-3">
+                                    <MapPin className="h-4 w-4 text-[#EA5D19] flex-shrink-0 group-hover:scale-110 transition-transform" />
+                                    <h3 className="font-semibold text-base text-[#11110E] group-hover:text-[#EA5D19] transition-colors truncate">
+                                        {city.name}
+                                    </h3>
+                                    <CheckCircle2 className="h-4 w-4 text-green-500 ml-auto opacity-0 group-hover:opacity-100 transition-opacity flex-shrink-0" />
+                                </div>
+                            </Link>
+                        </motion.div>
+                    ))}
+                </div>
+            </motion.div>
+
+          </div>
+        </div>
+      </section>
+
+      {/* -------------------- SECTION 3: BENEFITS (TRUST & VALUE) -------------------- */}
       <section className="py-16 lg:py-24 bg-gradient-to-br from-[#11110E] via-[#1a1917] to-[#11110E]">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <motion.div
@@ -181,10 +206,10 @@ export function ServiceAreaContent() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="text-center mb-12"
+            className="text-center mb-16"
           >
-            <h2 className="text-3xl font-bold text-white sm:text-4xl mb-4">
-              Why Choose Water Heater SOS?
+            <h2 className="text-4xl font-extrabold text-white sm:text-5xl mb-4"> {/* text-3xl -> text-4xl */}
+              Why Water Heater SOS is the Smart Choice
             </h2>
             <div className="h-1 w-24 bg-gradient-to-r from-[#EA5D19] to-[#FF6E2E] mx-auto rounded-full"></div>
           </motion.div>
@@ -199,7 +224,7 @@ export function ServiceAreaContent() {
                 transition={{ duration: 0.6, delay: index * 0.1 }}
                 className="bg-white/10 backdrop-blur-sm border border-white/20 p-8 rounded-2xl hover:bg-white/15 transition-all"
               >
-                <div className="w-14 h-14 rounded-xl bg-gradient-to-br from-[#EA5D19] to-[#FF6E2E] flex items-center justify-center mb-4">
+                <div className="w-14 h-14 rounded-xl bg-gradient-to-br from-[#EA5D19] to-[#FF6E2E] flex items-center justify-center mb-6"> {/* mb-4 -> mb-6 */}
                   <benefit.icon className="h-7 w-7 text-white" />
                 </div>
                 <h3 className="text-xl font-bold text-white mb-3">{benefit.title}</h3>
@@ -216,44 +241,45 @@ export function ServiceAreaContent() {
             className="bg-white/10 backdrop-blur-sm border border-white/20 p-8 lg:p-12 rounded-2xl"
           >
             <div className="prose prose-lg prose-invert max-w-none">
+              <h3 className="text-2xl font-extrabold text-white mb-4">Trusted, Licensed, and Insured</h3>
               <p className="text-gray-300 leading-relaxed mb-6">
-                At Water Heater SOS we stand out in the industry not just for our quality service, but also for our incredibly competitive pricing. When you&apos;re looking at getting a new water heater or need repairs, cost can be a major concern. That&apos;s where we shine. We&apos;ve structured our plumbing pricing to be accessible to a broad range of customers, ensuring you don&apos;t have to break the bank to get reliable hot water at home.
+                At Water Heater SOS, we stand out in the industry not just for our quality service, but also for our commitment to transparent and competitive pricing. We ensure you receive reliable hot water without unexpected costs.
               </p>
               <p className="text-gray-300 leading-relaxed">
-                Moreover, we sweeten the deal with various water heater discounts. Whether you&apos;re a first-time customer, a senior citizen, or perhaps looking to bundle services, we offer reductions that make our already competitive prices even more attractive. These discounts are not just minor cuts; they&apos;re significant enough to make a noticeable difference in your wallet. By choosing our plumbing company, you&apos;re not only investing in quality service but also ensuring you get some of the best deals around, making it a smart choice for anyone looking to manage expenses without compromising on service quality.
+                We also offer significant water heater discounts for first-time customers, seniors, and bundling services. By choosing our licensed plumbing company, you are investing in certified quality and ensuring you get some of the best deals around, making it the smart choice for managing expenses without compromising service.
               </p>
             </div>
           </motion.div>
         </div>
       </section>
 
-      {/* Call to Action Section */}
-      <section className="py-16 lg:py-24 bg-gradient-to-br from-gray-50 to-white">
+      {/* -------------------- SECTION 4: FINAL CALL TO ACTION (COLOR POP) -------------------- */}
+      <section className="py-20 lg:py-28 bg-white"> {/* Increased padding slightly */}
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="text-center bg-gradient-to-br from-[#EA5D19] to-[#FF6E2E] p-12 rounded-3xl shadow-2xl"
+            className="text-center bg-gradient-to-br from-[#EA5D19] to-[#FF6E2E] p-12 lg:p-16 rounded-3xl shadow-2xl"
           >
-            <h2 className="text-3xl font-bold text-white sm:text-4xl mb-4">
-              Ready to Get Started?
+            <h2 className="text-4xl font-extrabold text-white sm:text-5xl mb-4"> {/* Increased size */}
+              Check Availability & Get Your Quote Now!
             </h2>
-            <p className="text-xl text-white/90 mb-8 max-w-2xl mx-auto">
-              Don&apos;t see your city listed? Contact us today to confirm service availability in your area!
+            <p className="text-xl text-white/90 mb-8 max-w-3xl mx-auto">
+              Ready for service? Click below to confirm if your home is in our service area and get your free, transparent estimate immediately.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
                 href="tel:8006974014"
-                className="inline-flex items-center justify-center gap-3 rounded-full bg-white px-8 py-4 text-lg font-semibold text-[#EA5D19] shadow-lg hover:bg-gray-100 transition-all hover:scale-105"
+                className="inline-flex items-center justify-center gap-3 rounded-full bg-white px-10 py-5 text-xl font-extrabold text-[#EA5D19] shadow-lg hover:bg-gray-100 transition-all hover:scale-105"
               >
-                <Phone className="h-5 w-5" />
+                <Phone className="h-6 w-6" />
                 (800) 697-4014
               </a>
               <a
                 href="/quote"
-                className="inline-flex items-center justify-center gap-3 rounded-full border-2 border-white bg-transparent px-8 py-4 text-lg font-semibold text-white hover:bg-white hover:text-[#EA5D19] transition-all hover:scale-105"
+                className="inline-flex items-center justify-center gap-3 rounded-full border-2 border-white bg-transparent px-10 py-5 text-xl font-extrabold text-white hover:bg-white/10 transition-all hover:scale-105"
               >
                 Get Free Quote
               </a>

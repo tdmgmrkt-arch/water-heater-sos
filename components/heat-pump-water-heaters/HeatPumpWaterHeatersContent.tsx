@@ -78,12 +78,11 @@ export function HeatPumpWaterHeatersContent() {
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.6 }}
             >
-
-            <span className="inline-block px-4 py-1 rounded-full bg-[#EA5D19] text-sm text-white font-semibold mb-4 tracking-wide">
-              Premium Heat Pump Water Heater Service
-            </span>
-              <h1 className="text-4xl font-bold text-[#11110E] sm:text-5xl lg:text-6xl mb-6">
-                Heat Pump Water Heaters
+              <span className="inline-block px-4 py-1 rounded-full bg-[#EA5D19] text-sm text-white font-semibold mb-4 tracking-wide">
+                Premium Heat Pump Water Heater Service
+              </span>
+              <h1 className="text-5xl font-extrabold text-[#11110E] sm:text-6xl lg:text-7xl mb-4 leading-tight">
+                <span className="text-[#EA5D19]">Heat Pump </span>Water Heaters
               </h1>
               <p className="text-xl text-gray-600 mb-8">
               Is your heat pump water heater giving you trouble? We offer fast, reliable repairs to restore your home’s hot water. And if you're ready to install a new heat pump water heater, our technicians can help you choose the right model and handle the full installation.
@@ -276,7 +275,7 @@ export function HeatPumpWaterHeatersContent() {
 
       {/* FAQ Section */}
       <section className="py-20 bg-white">
-        <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}

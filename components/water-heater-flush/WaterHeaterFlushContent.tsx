@@ -82,16 +82,12 @@ export function WaterHeaterFlushContent() {
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.6 }}
             >
-
-            <span className="inline-block px-4 py-1 rounded-full bg-[#EA5D19] text-sm text-white font-semibold mb-4 tracking-wide">
-              Premium Water Heater Flush Service
-            </span>
-              <h1 className="text-4xl font-bold text-[#11110E] sm:text-5xl lg:text-6xl mb-6">
-                Water Heater Flush
+              <span className="inline-block px-4 py-1 rounded-full bg-[#EA5D19] text-sm text-white font-semibold mb-4 tracking-wide">
+                Premium Water Heater Flush Service
+              </span>
+              <h1 className="text-5xl font-extrabold text-[#11110E] sm:text-6xl lg:text-7xl mb-4 leading-tight">
+                <span className="text-[#EA5D19]">Water Heater </span>Flush Service
               </h1>
-              <p className="text-xl text-gray-600 mb-8">
-                Professional Tankless Water Heater Flush!
-              </p>
               <p className="text-lg text-gray-700 leading-relaxed mb-8">
                 A tankless water heater is designed to provide hot water only when needed, which can lead to significant energy savings compared to traditional tank heaters. However, regular maintenance, particularly flushing, is essential to maintain its efficiency and longevity.
               </p>
@@ -291,7 +287,7 @@ export function WaterHeaterFlushContent() {
 
       {/* FAQ Section */}
       <section className="py-20 bg-white">
-        <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}

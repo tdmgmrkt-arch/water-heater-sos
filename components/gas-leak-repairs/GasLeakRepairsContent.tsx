@@ -23,12 +23,12 @@ export function GasLeakRepairsContent() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 }}
             >
-              <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl lg:text-6xl mb-6">
-                Gas Leak Repair & Gas Line Installation
+              <span className="inline-block px-4 py-1 rounded-full bg-[#EA5D19] text-sm text-white font-semibold mb-4 tracking-wide">
+                Emergency Gas Leak Detection And Safe Repairs
+              </span>
+              <h1 className="text-5xl font-extrabold text-[#11110E] sm:text-6xl lg:text-7xl mb-4 leading-tight">
+                <span className="text-[#EA5D19]">Gas Line Repair </span>& Installation
               </h1>
-              <p className="text-xl text-gray-600 mb-6">
-                Emergency Gas Leak Detection and Safe Repairs
-              </p>
               <p className="text-lg text-gray-700 leading-relaxed mb-4">
                 Do you suspect a gas leak or did your gas company shut off your service?
               </p>
@@ -175,7 +175,7 @@ export function GasLeakRepairsContent() {
 
       {/* FAQ Section */}
       <section className="py-20 bg-white">
-        <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}

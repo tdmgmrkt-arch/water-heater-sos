@@ -113,21 +113,18 @@ export function TanklessWaterHeatersContent() {
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.6 }}
             >
-
-            <span className="inline-block px-4 py-1 rounded-full bg-[#EA5D19] text-sm text-white font-semibold mb-4 tracking-wide">
-              Premium Tankless Water Heater Service
-            </span>
-              <h1 className="text-4xl font-bold text-[#11110E] sm:text-5xl lg:text-6xl mb-6">
-                Tankless Water Heaters
+              <span className="inline-block px-4 py-1 rounded-full bg-[#EA5D19] text-sm text-white font-semibold mb-4 tracking-wide">
+                Premium Tankless Water Heater Service
+              </span>
+              <h1 className="text-5xl font-extrabold text-[#11110E] sm:text-6xl lg:text-7xl mb-4 leading-tight">
+                <span className="text-[#EA5D19]">Tankless Water </span>Heater Service
               </h1>
-              <p className="text-xl text-gray-600 mb-8">
-                Is your tankless water heater displaying an error code?
-              </p>
               <p className="text-lg text-gray-700 leading-relaxed mb-4">
-                Tankless water heaters are great because they are energy efficient and will last considerably longer than traditional tank water heaters. However, many people neglect the yearly maintenance needed to ensure their unit's longevity.
+              Is your tankless water heater displaying an error code?
+                Tankless water heaters are great because they are energy efficient and will last considerably longer than traditional tank water heaters.
               </p>
               <p className="text-lg text-gray-700 leading-relaxed mb-8">
-                If your tankless water heater needs repair, we can help! Our technicians are experts in working on electric and gas tankless water heaters, as well as all sorts of tankless water heater brands.
+              However, many people neglect the yearly maintenance needed to ensure their unit's longevity. If your tankless water heater needs repair, we can help! Our technicians are experts in working on electric and gas tankless water heaters, as well as all sorts of tankless water heater brands.
               </p>
               <Link
                 href="/quote"
@@ -295,7 +292,7 @@ export function TanklessWaterHeatersContent() {
 
       {/* FAQ Section */}
       <section className="py-20 bg-white">
-        <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}

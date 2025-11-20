@@ -215,19 +215,27 @@ export function Hero() {
               transition={{ delay: 1.2, duration: 0.6 }}
               className="mt-6"
             >
-              <div className="glass-card rounded-xl p-4 shadow-xl border-2 border-white/40 bg-white/95 backdrop-blur-md">
-                <div className="flex items-center gap-3">
-                  <div className="flex-shrink-0 w-10 h-10 rounded-lg bg-gradient-to-br from-[#EA5D19] to-[#FF6E2E] flex items-center justify-center animate-pulse-glow">
+              <div className="relative rounded-xl p-4 shadow-lg border border-white/20 bg-white/80 backdrop-blur-xl">
+            
+                {/* Optional premium left accent */}
+                {/* <div className="absolute left-0 top-0 bottom-0 w-1 rounded-l-xl bg-gradient-to-b from-[#EA5D19] to-[#FF6E2E]" /> */}
+            
+                <div className="flex items-center gap-4">
+            
+                  {/* Icon */}
+                  <div className="flex-shrink-0 w-9 h-9 rounded-lg bg-gradient-to-br from-[#EA5D19] to-[#FF6E2E] flex items-center justify-center shadow-md">
                     <Zap className="h-5 w-5 text-white" />
                   </div>
+            
+                  {/* Text */}
                   <div className="flex-1">
-                    <p className="text-sm font-bold text-[#11110E] flex items-center gap-2">
+                    <p className="text-sm font-semibold text-[#11110E] flex items-center gap-1.5">
                       Same-Day Service Available
-                      <span className="inline-flex items-center rounded-full bg-green-500 px-2 py-0.5 text-[10px] font-bold text-white animate-pulse">
+                      <span className="inline-flex items-center rounded-full bg-green-600 px-2 py-0.5 text-[10px] font-bold text-white shadow-sm ring-2 ring-green-300/30">
                         LIVE
                       </span>
                     </p>
-                    <p className="text-xs text-gray-600 mt-0.5">
+                    <p className="text-xs text-gray-500 mt-0.5">
                       Fully stocked vans ready to go
                     </p>
                   </div>

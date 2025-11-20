@@ -23,12 +23,12 @@ export function DrainCleaningContent() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 }}
             >
-              <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl lg:text-6xl mb-6">
-                Drain Cleaning Services
+              <span className="inline-block px-4 py-1 rounded-full bg-[#EA5D19] text-sm text-white font-semibold mb-4 tracking-wide">
+                Are Your Drains Backing Up Into Your Home?
+              </span>
+              <h1 className="text-5xl font-extrabold text-[#11110E] sm:text-6xl lg:text-7xl mb-4 leading-tight">
+                <span className="text-[#EA5D19]">Drain Cleaning </span>Services
               </h1>
-              <p className="text-xl text-gray-600 mb-6">
-                Are your drains backing up into your home?
-              </p>
               <p className="text-lg text-gray-700 leading-relaxed mb-8">
                 Nobody wants to deal with a backed up <Link href="/toilet-repair-replacement" className="text-[#EA5D19] hover:underline font-semibold">toilet</Link> or a clogged drain. With regular use, hair, soap, grease, and other debris can build up in your pipes, causing slow drainage or complete blockages. If left untreated, these clogs can make your sink, shower, toilet or bathtub nearly impossible to use. At Water Heater SOS, we offer expert drain cleaning services to keep your drains flowing freely and your home running smoothly.
               </p>
@@ -228,7 +228,7 @@ export function DrainCleaningContent() {
 
       {/* FAQ Section */}
       <section className="py-20 bg-white">
-        <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}

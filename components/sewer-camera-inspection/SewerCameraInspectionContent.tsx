@@ -23,12 +23,12 @@ export function SewerCameraInspectionContent() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 }}
             >
-              <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl lg:text-6xl mb-6">
-                Sewer Camera Inspection
+              <span className="inline-block px-4 py-1 rounded-full bg-[#EA5D19] text-sm text-white font-semibold mb-4 tracking-wide">
+                Advanced Video Inspection For Accurate Diagnoses
+              </span>
+              <h1 className="text-5xl font-extrabold text-[#11110E] sm:text-6xl lg:text-7xl mb-4 leading-tight">
+                <span className="text-[#EA5D19]">Sewer Camera </span>Inspection
               </h1>
-              <p className="text-xl text-gray-600 mb-6">
-                Advanced Video Inspection for Accurate Diagnoses
-              </p>
               <p className="text-lg text-gray-700 leading-relaxed mb-4">
                 Experiencing slow drains, frequent clogs, or foul odors from your plumbing?
               </p>
@@ -175,7 +175,7 @@ export function SewerCameraInspectionContent() {
 
       {/* FAQ Section */}
       <section className="py-20 bg-white">
-        <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
