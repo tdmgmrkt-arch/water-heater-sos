@@ -52,7 +52,7 @@ export function WaterServiceRepairReplacementContent() {
             >
               <div className="relative h-[500px] w-full rounded-2xl overflow-hidden shadow-2xl">
                 <Image
-                  src="/placeholderimage.webp"
+                  src="/wh-sos-service-rep.webp"
                   alt="Professional water service line repair and replacement"
                   fill
                   className="object-cover"

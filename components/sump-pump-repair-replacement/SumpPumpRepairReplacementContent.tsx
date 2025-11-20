@@ -52,7 +52,7 @@ export function SumpPumpRepairReplacementContent() {
             >
               <div className="relative h-[500px] w-full rounded-2xl overflow-hidden shadow-2xl">
                 <Image
-                  src="/placeholderimage.webp"
+                  src="/wh-sos-service-rep.webp"
                   alt="Professional sump pump repair and replacement services"
                   fill
                   className="object-cover"

@@ -52,7 +52,7 @@ export function GasLeakRepairsContent() {
             >
               <div className="relative h-[500px] w-full rounded-2xl overflow-hidden shadow-2xl">
                 <Image
-                  src="/placeholderimage.webp"
+                  src="/wh-sos-service-rep.webp"
                   alt="Professional gas leak repair and gas line installation"
                   fill
                   className="object-cover"

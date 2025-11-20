@@ -118,7 +118,7 @@ export function PlumbingContent() {
               className="relative h-[400px] lg:h-[500px] rounded-3xl overflow-hidden shadow-2xl"
             >
               <Image
-                src="/placeholderimage.webp"
+                src="/wh-sos-service-rep.webp"
                 alt="Professional plumbing services"
                 fill
                 className="object-cover"
