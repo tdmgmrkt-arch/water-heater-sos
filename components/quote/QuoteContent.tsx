@@ -40,8 +40,7 @@ const faqs = [
 
 // --- Helper Components (Enhanced Visuals) ---
 
-const LisaReview = ({ imageSrc }) => (
-    <div className="p-6 bg-white rounded-2xl shadow-xl border-t-4 border-[#EA5D19] flex items-start gap-4">
+const LisaReview = ({ imageSrc }: { imageSrc: string }) => (    <div className="p-6 bg-white rounded-2xl shadow-xl border-t-4 border-[#EA5D19] flex items-start gap-4">
       <div className="relative w-16 h-16 flex-shrink-0 rounded-full overflow-hidden border-2 border-[#EA5D19]">
         <Image src={imageSrc} alt="Lisa B. customer profile picture" fill sizes="64px" className="object-cover"/>
       </div>
