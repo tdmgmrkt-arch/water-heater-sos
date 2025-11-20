@@ -1,11 +1,25 @@
-import { StubPage } from "@/components/StubPage";
 import type { Metadata } from "next";
+import { ClaremontContent } from "@/components/claremont/ClaremontContent";
 
 export const metadata: Metadata = {
-  title: "Water Heater Services in Claremont, CA",
-  description: "Expert water heater repair and installation services in Claremont, CA. Same-day service available.",
+  title: "Claremont Plumbers & Water Heater Repair | Water Heater SOS",
+  description:
+    "Expert plumbing services in Claremont, CA. Fast water heater repair, installation, drain cleaning & more. Licensed, insured & available 24/7. Call now!",
+  keywords: [
+    "Claremont plumber",
+    "water heater repair Claremont",
+    "emergency plumbing Claremont",
+    "drain cleaning Claremont",
+    "tankless water heater Claremont",
+  ],
+  openGraph: {
+    title: "Claremont Plumbers & Water Heater Repair | Water Heater SOS",
+    description:
+      "Expert plumbing services in Claremont, CA. Fast water heater repair, installation, drain cleaning & more. Licensed, insured & available 24/7.",
+    type: "website",
+  },
 };
 
 export default function ClaremontPage() {
-  return <StubPage title="Water Heater Services in Claremont, CA" />;
+  return <ClaremontContent />;
 }

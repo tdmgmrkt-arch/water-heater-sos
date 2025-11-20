@@ -1,11 +1,5 @@
-import { StubPage } from "@/components/StubPage";
-import type { Metadata } from "next";
-
-export const metadata: Metadata = {
-  title: "Moen Flo Leak Detection Installation",
-  description: "Professional Moen Flo smart water monitor installation to detect and prevent water leaks.",
-};
+import { redirect } from "next/navigation";
 
 export default function MoenFloInstallationPage() {
-  return <StubPage title="Moen Flo Leak Detection Installation" />;
+  redirect("/moen-flo-smart-water-monitor");
 }

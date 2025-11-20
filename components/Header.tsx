@@ -12,7 +12,8 @@ import {
   Ticket,
   Map,
   HomeIcon,
-  MapIcon
+  MapIcon,
+  TrendingUp
 } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Container } from "./Container";
@@ -35,8 +36,8 @@ const menuStructure = {
     items: [
       { name: "Drain Cleaning", href: "/drain-cleaning", desc: "Fast, effective drain cleaning", icon: Wind, featured: true },
       { name: "Hydro-Jetting", href: "/hydro-jetting", desc: "High-pressure pipe cleaning", icon: Waves, featured: true },
-      { name: "Sewer Camera Inspection", href: "/sewer-camera-inspection", desc: "Video pipe inspection", icon: Camera },
       { name: "Leak Detection Services", href: "/leak-detection-services", desc: "Advanced leak detection", icon: Search, featured: true },
+      { name: "Sewer Camera Inspection", href: "/sewer-camera-inspection", desc: "Video pipe inspection", icon: Camera },
       { name: "Whole-House Repipe", href: "/whole-house-repipe", desc: "Complete pipe replacement", icon: Home },
       { name: "Gas Leak Repair & Installation", href: "/gas-leak-repairs", desc: "Gas line services", icon: AlertTriangle },
       { name: "Water Service Repair & Replacement", href: "/water-service-repair-replacement", desc: "Water line services", icon: Droplets },
@@ -82,8 +83,25 @@ export function Header() {
           : "bg-gradient-to-r from-[#11110E] via-[#1a1917] to-[#11110E] border-white/10"
       }`}
     >
+      
+      {/* 🛑 OVERLAY 🛑 */}
+      <AnimatePresence>
+        {activeMenu && (
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.3 }}
+            className="fixed inset-0 top-20 z-40 bg-black/50 backdrop-blur-sm"
+            onClick={() => setActiveMenu(null)}
+          />
+        )}
+      </AnimatePresence>
+      {/* 🛑 END OVERLAY 🛑 */}
+
       <Container>
-        <div className="flex h-20 items-center justify-between">          {/* Logo */}
+        <div className="flex h-20 items-center justify-between">
+          {/* Logo */}
           <Link href="/" className="flex items-center">
             <Image
               src="/wh-sos-logo.webp"
@@ -134,14 +152,16 @@ export function Header() {
           <AnimatePresence>
             {activeMenu && (
               <motion.div
-                initial={{ opacity: 0, y: -20, scale: 0.98 }}
-                animate={{ opacity: 1, y: 0, scale: 1 }}
-                exit={{ opacity: 0, y: -20, scale: 0.98 }}
+                // FIX APPLIED: Removed y-translation to prevent visual gap flash
+                initial={{ opacity: 0, scale: 0.98 }}
+                animate={{ opacity: 1, scale: 1 }}
+                exit={{ opacity: 0, scale: 0.98 }}
                 transition={{
                   duration: 0.3,
                   ease: [0.4, 0, 0.2, 1]
                 }}
-                className="fixed left-0 right-0 top-21 z-40 w-full border-b border-white/10 bg-gradient-to-br from-[#11110E] via-[#1a1917] to-[#11110E] shadow-2xl backdrop-blur-lg"
+                // FIX APPLIED: Added visible orange top border (border-t-2 border-[#EA5D19]) to cover the microscopic rendering gap.
+                className="fixed left-0 right-0 top-20 z-50 w-full border-t-2 border-[#EA5D19] bg-gradient-to-br from-[#11110E] via-[#1a1917] to-[#11110E] shadow-2xl backdrop-blur-lg"
                 onMouseEnter={() => setActiveMenu(activeMenu)}
                 onMouseLeave={() => setActiveMenu(null)}
               >
@@ -179,14 +199,14 @@ export function Header() {
                         <div className="mt-4 pt-6 border-t border-white/10">
                           <div className="space-y-2">
                             <div className="relative overflow-hidden rounded-xl shadow-2xl my-10">
-                                          <Image
-                                            src="/wh-sos-service-rep.webp"
-                                            alt="Water Heater SOS professional technician"
-                                            width={600}
-                                            height={400}
-                                            className="h-30 w-80 object-cover"
-                                          />
-                                        </div>
+                                            <Image
+                                              src="/wh-sos-service-rep.webp"
+                                              alt="Water Heater SOS professional technician"
+                                              width={600}
+                                              height={400}
+                                              className="h-30 w-80 object-cover"
+                                            />
+                                          </div>
                             <p className="text-xs font-semibold text-gray-500 uppercase tracking-wider">
                               Need Help Now?
                             </p>
@@ -222,14 +242,35 @@ export function Header() {
                             >
                               <Link
                                 href={item.href}
-                                className={`group relative flex items-start gap-3 rounded-xl px-4 py-4 h-full border 
-                                  transition duration-200 ease-out
+                                onClick={() => setActiveMenu(null)}
+                                className={`group relative flex items-start gap-3 rounded-xl px-4 py-4 h-full border
+                                  transition duration-200 ease-out overflow-visible
                                   ${
                                     isFeatured
                                       ? "border-[#EA5D19]/40 bg-[#EA5D19]/10 backdrop-blur-sm shadow-sm hover:shadow-md"
                                       : "border-white/10 hover:border-[#EA5D19]/40 hover:bg-white/5 hover:shadow-md"
                                   }`}
                               >
+                                {isFeatured && (
+                                    <div className="absolute -top-4 left-[18px] z-20">
+                                    <span
+                                      className="
+                                        inline-flex items-center gap-1
+                                        rounded-md
+                                        px-3 py-[2px]
+                                        text-[10px] font-semibold text-[#EA5D19]
+                                        uppercase tracking-wide
+                                        bg-[#fffdf9]/95
+                                        shadow-[0_0_6px_rgba(234,93,25,0.35)]
+                                        border border-[#EA5D19]/30
+                                      "
+                                    >
+                                      <TrendingUp className="h-3 w-3 text-[#EA5D19]" />
+                                      Popular
+                                    </span>
+                                  </div>
+                                )}
+
                                 {ItemIcon && (
                                   <div
                                     className={`flex-shrink-0 rounded-lg p-2
@@ -243,7 +284,7 @@ export function Header() {
                                     <ItemIcon className="h-4 w-4" />
                                   </div>
                                 )}
-                            
+
                                 <div className="flex-1 min-w-0">
                                   <span
                                     className={`block text-sm font-semibold transition-colors leading-tight
@@ -309,7 +350,7 @@ export function Header() {
             )}
           </AnimatePresence>
 
-          {/* Mobile Menu Button */}
+          {/* Mobile Menu Button (No change) */}
           <Sheet open={mobileOpen} onOpenChange={setMobileOpen}>
             <SheetTrigger asChild className="lg:hidden">
               <Button

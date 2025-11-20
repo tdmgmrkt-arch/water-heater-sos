@@ -1,11 +1,25 @@
-import { StubPage } from "@/components/StubPage";
 import type { Metadata } from "next";
+import { LakeElsinoreContent } from "@/components/lake-elsinore/LakeElsinoreContent";
 
 export const metadata: Metadata = {
-  title: "Water Heater Services in Lake Elsinore, CA",
-  description: "Expert water heater repair and installation services in Lake Elsinore, CA. Same-day service available.",
+  title: "Lake Elsinore Plumbers & Water Heater Repair | Water Heater SOS",
+  description:
+    "5-Star plumbing services in Lake Elsinore, CA. Fast water heater repair, installation, drain cleaning & more. Licensed, insured & available 24/7. Call now!",
+  keywords: [
+    "Lake Elsinore plumber",
+    "water heater repair Lake Elsinore",
+    "emergency plumbing Lake Elsinore",
+    "drain cleaning Lake Elsinore",
+    "tankless water heater Lake Elsinore",
+  ],
+  openGraph: {
+    title: "Lake Elsinore Plumbers & Water Heater Repair | Water Heater SOS",
+    description:
+      "5-Star plumbing services in Lake Elsinore, CA. Fast water heater repair, installation, drain cleaning & more. Licensed, insured & available 24/7.",
+    type: "website",
+  },
 };
 
 export default function LakeElsinorePage() {
-  return <StubPage title="Water Heater Services in Lake Elsinore, CA" />;
+  return <LakeElsinoreContent />;
 }

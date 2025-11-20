@@ -3,84 +3,13 @@
 import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
-import { Phone, WrenchIcon, Zap, Clock, Settings, AlertTriangle } from "lucide-react";
+import { ArrowRight, Shield, Phone, Zap, Clock } from "lucide-react";
 import {
   Accordion,
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
-
-const brands = [
-  { name: "Rheem", image: "/rheem_logo-1.webp" },
-  { name: "Hajoca", image: "/hajoca-1.webp" },
-  { name: "Rinnai", image: "/rinnai-1.webp" },
-  { name: "Bradford White", image: "/bradford-white-logo-1.webp" },
-  { name: "Navien", image: "/navien-1.webp" },
-];
-
-const reasons = [
-  {
-    icon: WrenchIcon,
-    title: "Lack of Maintenance",
-    description: "Sump pumps need regular checkups to stay in good shape, but many homeowners skip this. Debris, dirt, or mineral buildup can clog the pump or jam the float, causing it to stop working when a big rain hits.",
-  },
-  {
-    icon: Zap,
-    title: "Power Outages",
-    description: "Sump pumps rely on electricity, and heavy storms often knock out power. Without a backup battery or generator, your pump can't run, leaving your basement at risk of flooding during the worst times.",
-  },
-  {
-    icon: Clock,
-    title: "Old Age",
-    description: "Most sump pumps last 7-10 years, but wear and tear takes its toll. Over time, parts like the motor or impeller break down, making the pump less reliable or causing it to fail completely.",
-  },
-  {
-    icon: Settings,
-    title: "Improper Installation",
-    description: "A sump pump that's not installed correctly might not handle water effectively. Issues like a poorly sized pump or wrong pipe setup can lead to backups or burnout, especially during heavy rain.",
-  },
-  {
-    icon: AlertTriangle,
-    title: "Clogged Discharge Lines",
-    description: "The pipe that carries water away from your home can get blocked by dirt, roots, or ice. If water can't flow out, the pump overworks and may fail, letting water pool in your basement.",
-  },
-];
-
-const faqs = [
-  {
-    question: "What does a sump pump do?",
-    answer: "A sump pump removes water that collects in a basement or crawlspace, preventing flooding. It pumps water out to a safe drainage area, protecting your home's foundation. Most run automatically when water levels rise.",
-  },
-  {
-    question: "How do I know if my sump pump is working?",
-    answer: "Test it by pouring water into the sump pit until the pump turns on. If it doesn't start or struggles to clear the water, it may need repairs or replacement.",
-  },
-  {
-    question: "Why does my sump pump keep running?",
-    answer: "A pump that runs constantly might have a stuck float switch or a clogged discharge line. It could also mean high groundwater levels overwhelming the system. Check for blockages or damage to avoid burnout.",
-  },
-  {
-    question: "What happens if my sump pump fails?",
-    answer: "A failed sump pump can lead to basement flooding, damaging walls, floors, and belongings. Water can also weaken your home's foundation, causing costly structural issues.",
-  },
-  {
-    question: "Why does my sump pump smell bad?",
-    answer: "A bad smell often comes from stagnant water or mold in the sump pit. Cleaning the pit and pump regularly can prevent odors and keep the system healthy.",
-  },
-  {
-    question: "Why is my sump pump making loud noises?",
-    answer: "Loud noises like grinding or rattling can mean a worn-out motor, loose parts, or debris in the pump. These issues can lead to failure if not fixed quickly.",
-  },
-  {
-    question: "Can a sump pump work during a power outage?",
-    answer: "Standard sump pumps need electricity, so they stop during power outages. A battery backup or generator can keep the pump running during storms when power often fails.",
-  },
-  {
-    question: "How often should I maintain my sump pump?",
-    answer: "Check your sump pump every 3-6 months to ensure it's clear of debris and working properly. Annual professional maintenance can catch problems before they lead to failure.",
-  },
-];
 
 export function SumpPumpRepairReplacementContent() {
   return (
@@ -89,255 +18,252 @@ export function SumpPumpRepairReplacementContent() {
       <section className="relative overflow-hidden bg-gradient-to-b from-gray-50 to-white pt-20 pb-16 lg:pt-32 lg:pb-24">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="grid gap-12 lg:grid-cols-2 lg:gap-16 items-center">
-            {/* Content */}
             <motion.div
-              initial={{ opacity: 0, x: -30 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.6 }}
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5 }}
             >
-
-            <span className="inline-block px-4 py-1 rounded-full bg-[#EA5D19] text-sm text-white font-semibold mb-4 tracking-wide">
-              Premium Sump Pump Repair & Replacement Service
-            </span>
-              <h1 className="text-4xl font-bold text-[#11110E] sm:text-5xl lg:text-6xl mb-6">
+              <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl lg:text-6xl mb-6">
                 Sump Pump Repair & Replacement
               </h1>
-              <p className="text-xl text-gray-600 mb-8">
-                Don't Let a Faulty Sump Pump Cause Home Damage!
+              <p className="text-xl text-gray-600 mb-6">
+                Protect Your Home from Basement Flooding
+              </p>
+              <p className="text-lg text-gray-700 leading-relaxed mb-4">
+                Is your sump pump making strange noises, running constantly, or not working at all?
+              </p>
+              <p className="text-lg text-gray-700 leading-relaxed mb-8">
+                A failing sump pump leaves your basement vulnerable to flooding and water damage during heavy rains. Our expert plumbers provide fast sump pump repairs and professional installations to keep your home dry and protected.
               </p>
               <Link
                 href="/quote"
-                className="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-[#EA5D19] to-[#FF6E2E] px-8 py-4 text-lg font-bold text-white shadow-lg hover:shadow-xl transition-all hover:scale-105"
+                className="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-[#EA5D19] to-[#FF6E2E] px-8 py-4 text-lg font-semibold text-white shadow-lg hover:shadow-xl transition-all duration-200 hover:scale-105"
               >
-                <Phone className="h-5 w-5" />
-                Schedule an Appointment Today!
+                Schedule an Appointment
+                <ArrowRight className="h-5 w-5" />
               </Link>
             </motion.div>
 
-            {/* Image */}
             <motion.div
-              initial={{ opacity: 0, x: 30 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.6, delay: 0.2 }}
-              className="relative h-[400px] lg:h-[500px] rounded-3xl overflow-hidden shadow-2xl"
+              initial={{ opacity: 0, scale: 0.95 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.5, delay: 0.2 }}
+              className="relative"
             >
-              <Image
-                src="/placeholderimage.webp"
-                alt="Professional sump pump repair and replacement services"
-                fill
-                className="object-cover"
-                priority
-              />
+              <div className="relative h-[500px] w-full rounded-2xl overflow-hidden shadow-2xl">
+                <Image
+                  src="/placeholderimage.webp"
+                  alt="Professional sump pump repair and replacement services"
+                  fill
+                  className="object-cover"
+                  priority
+                />
+              </div>
             </motion.div>
+          </div>
+
+          <div className="mt-12 bg-white rounded-3xl shadow-lg border border-gray-200 p-8 space-y-6 text-lg leading-relaxed text-gray-700">
+            <p>
+              Sump pumps are your home's first line of defense against basement flooding, removing water that accumulates in sump pits and preventing damage to foundations, floors, walls, and belongings. In areas prone to heavy rainfall or high groundwater levels, a properly functioning sump pump is essential for home protection. Our professional <Link href="/plumbing" className="text-[#EA5D19] hover:underline font-semibold">plumbing services</Link> include sump pump repairs, complete replacements, battery backup installations, and preventive maintenance to ensure your system works when you need it most.
+            </p>
+            <p>
+              Most sump pumps last 7-10 years before requiring replacement, though lack of maintenance, power outages during storms, clogged discharge lines, and improper installation can cause premature failure. Common problems include motors that won't start or run continuously, stuck or jammed float switches, clogged intake screens, burned-out motors from overwork, and discharge pipes blocked by debris, roots, or frozen ice. We also handle <Link href="/leak-detection-services" className="text-[#EA5D19] hover:underline font-semibold">leak detection</Link> to identify water intrusion sources that overwork your sump pump.
+            </p>
+            <p>
+              While minor issues like clearing clogged discharge lines or adjusting stuck float switches may allow repairs, most sump pump problems warrant replacement rather than repair. Repair costs often approach new pump prices, and fixing one component doesn't prevent other aging parts from failing during the next storm. Modern sump pumps offer superior reliability, battery backup options for power outages, higher capacity motors, and advanced features like Wi-Fi monitoring and alarm systems. Professional installation ensures proper sizing, correct discharge routing, and reliable operation when storms hit. We proudly serve homeowners throughout the Inland Empire, including <Link href="/redlands" className="text-[#EA5D19] hover:underline font-semibold">Redlands</Link>, <Link href="/loma-linda" className="text-[#EA5D19] hover:underline font-semibold">Loma Linda</Link>, <Link href="/highland" className="text-[#EA5D19] hover:underline font-semibold">Highland</Link>, and <Link href="/san-bernardino" className="text-[#EA5D19] hover:underline font-semibold">San Bernardino</Link>.
+            </p>
           </div>
         </div>
       </section>
 
-{/* Main Content Section */}
-<section className="py-20 bg-white">
-  <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-    <motion.div
-      initial={{ opacity: 0, y: 25 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true }}
-      transition={{ duration: 0.6 }}
-      className="mx-auto text-left"
-    >
-      <p className="text-lg text-gray-700 leading-relaxed mb-6">
-        Living in the greater Redlands area where heavy rain can hit hard, your sump pump is a lifesaver however, most only last 7 to 10 years. Those big storms can push your pump to the limit, and without regular care, it might quit when you need it most. Keeping up with maintenance can stretch your pump's life and save you from costly surprises, especially in areas prone to flooding.
-      </p>
-
-      <p className="text-lg text-gray-700 leading-relaxed">
-        We are here to guide you through everything you need to know about sump pump installation. You'll learn how to pick the right system and why having pros handle the job keeps your home safe. A properly installed sump pump kicks water out before it can harm your home's foundation, protecting your property's value and possibly even lowering your insurance costs. The clay soil and occasional heavy rains make basement flooding a real concern. A reliable sump pump acts like your home's first line of defense, stopping water damage before it starts. Don't wait for a flood to find out your pump isn't up to the task. Schedule your professional sump pump installation today.
-      </p>
-    </motion.div>
-  </div>
-</section>
-
-{/* Reasons Section */}
-<section className="bg-gray-50 py-20">
-  <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-    <motion.div
-      initial={{ opacity: 0, y: 25 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true }}
-      transition={{ duration: 0.6 }}
-      className="text-center mb-12"
-    >
-      <h2 className="text-4xl sm:text-5xl font-extrabold text-[#11110E] mb-6">
-        Reasons Why Sump Pumps Fail
-      </h2>
-      <div className="h-1 w-20 bg-[#EA5D19] mx-auto rounded-full" />
-    </motion.div>
-
-    <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-      {reasons.map((reason, index) => (
-        <motion.div
-          key={index}
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, delay: index * 0.1 }}
-          viewport={{ once: true }}
-          className="rounded-2xl bg-white p-8 shadow-md border border-gray-100 hover:shadow-xl transition-shadow"
-        >
-          <div className="mb-4 inline-flex rounded-full bg-[#EA5D19]/10 p-3">
-            <reason.icon className="h-6 w-6 text-[#EA5D19]" />
-          </div>
-          <h3 className="text-xl font-bold text-[#11110E] mb-3">
-            {reason.title}
-          </h3>
-          <p className="text-gray-700 leading-relaxed">
-            {reason.description}
-          </p>
-        </motion.div>
-      ))}
-    </div>
-  </div>
-</section>
-
-{/* Can a Sump Pump Be Repaired Section */}
-<section className="py-20 bg-white">
-  <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-    <motion.div
-      initial={{ opacity: 0, y: 25 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true }}
-      transition={{ duration: 0.6 }}
-      className="mx-auto text-left"
-    >
-      <h2 className="text-4xl sm:text-5xl font-extrabold text-[#11110E] mb-6">
-        Can a Sump Pump Be Repaired Instead of Replacing?
-      </h2>
-
-      <div className="h-1 w-20 bg-[#EA5D19] rounded-full mb-8" />
-
-      <p className="text-lg text-gray-700 leading-relaxed mb-6">
-        In many cases, a full replacement makes more sense because repairs often cost nearly as much as a new pump. Sump pumps aren't crazy expensive and basic models start for a few hundred dollars, and even high-end ones with battery backups are usually not too much more. Repairs, like fixing a worn out motor or replacing a jammed float switch, can easily run a few hundred dollars, plus labor, which adds up fast.
-      </p>
-
-      <p className="text-lg text-gray-700 leading-relaxed">
-        When a pump starts failing, it's often a sign that other parts are wearing out too. Patching one issue might just delay another breakdown, leaving your basement at risk during a big rain. Older pumps, especially those over 7-10 years, lose efficiency and reliability, so sinking money into repairs isn't always worth it. A new pump gives you better performance, modern features, and peace of mind. That said, minor fixes like clearing a clogged discharge line or adjusting a stuck float can be cheap and quick if the pump is still young. But if the motor's shot or the pump's old, replacement is usually the smarter move.
-      </p>
-    </motion.div>
-  </div>
-</section>
-
-      {/* Trusted Brands Section */}
-      <section className="bg-gray-50 py-16 lg:py-24">
+      {/* Benefits Section */}
+      <section className="py-20 bg-gray-50">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
             viewport={{ once: true }}
-            className="mx-auto max-w-7xl text-center relative z-20"
+            transition={{ duration: 0.5 }}
+            className="text-center mb-16"
           >
-            <h2 className="text-3xl font-bold text-[#11110E] sm:text-4xl mb-8">
-              Trusted Brands
+            <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl mb-4">
+              Why Choose Professional Sump Pump Service?
             </h2>
+            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+              Reliable protection from basement flooding and water damage
+            </p>
+          </motion.div>
 
-            <div className="h-1 w-20 bg-[#EA5D19] mx-auto rounded-full mb-8" />
+          <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
+            {[
+              {
+                title: "Prevent Flooding",
+                description: "A functioning sump pump removes water before it floods your basement, protecting foundations, walls, floors, and stored belongings. Don't wait for the next heavy rain to discover your pump has failed. Professional installation and maintenance prevent costly flood damage.",
+                icon: Shield,
+              },
+              {
+                title: "Battery Backup",
+                description: "Storms that cause flooding often knock out power, leaving standard pumps useless. We install battery backup systems that keep pumping during outages. Protect your home when you need it most with reliable backup power for sump pumps.",
+                icon: Zap,
+              },
+              {
+                title: "Fast Service",
+                description: "Sump pump failures can't wait, especially during storm season. We provide prompt service to repair or replace failed pumps quickly, minimizing your basement's flood risk. Most installations complete within hours, restoring protection immediately.",
+                icon: Clock,
+              },
+              {
+                title: "Modern Systems",
+                description: "Today's sump pumps offer Wi-Fi monitoring, high-capacity motors, dual-pump systems, and automatic alarms that alert you to problems. Upgrade from old, unreliable pumps to modern systems with features that provide peace of mind and superior protection.",
+                icon: ArrowRight,
+              },
+            ].map((benefit, index) => (
+              <motion.div
+                key={benefit.title}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: index * 0.1 }}
+                className="rounded-2xl bg-white p-8 shadow-lg border border-gray-200"
+              >
+                <div className="mb-4 inline-flex rounded-lg bg-[#EA5D19] p-3">
+                  <benefit.icon className="h-6 w-6 text-white" />
+                </div>
+                <h3 className="text-xl font-bold text-gray-900 mb-3">
+                  {benefit.title}
+                </h3>
+                <p className="text-gray-600">{benefit.description}</p>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
 
-            <div className="grid grid-cols-2 gap-6 md:grid-cols-3 lg:grid-cols-5 items-center relative z-20 min-h-[120px]">
-              {brands.map((brand, index) => (
-                <motion.div
-                  key={brand.name}
-                  initial={{ opacity: 0, scale: 0.85 }}
-                  whileInView={{ opacity: 1, scale: 1 }}
-                  transition={{ duration: 0.5, delay: index * 0.1 }}
-                  viewport={{ once: true }}
-                  className="flex items-center justify-center grayscale hover:grayscale-0 transition-all duration-300"
-                >
-                  <div className="relative h-20 w-28 mx-auto z-20">
-                    <Image
-                      src={brand.image}
-                      alt={`${brand.name} logo - trusted water heater brand`}
-                      fill
-                      sizes="100px"
-                      className="object-contain z-20"
-                    />
-                  </div>
-                </motion.div>
-              ))}
+      {/* CTA Section */}
+      <section className="py-20 bg-gradient-to-r from-[#EA5D19] to-[#FF6E2E]">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 text-center">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5 }}
+          >
+            <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl mb-6">
+              Get a Free Estimate Today!
+            </h2>
+            <p className="text-xl text-white/90 mb-8 max-w-2xl mx-auto">
+              Don't wait for a flood to damage your home. Contact us today for expert sump pump repair and replacement services.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Link
+                href="tel:+18006974014"
+                className="inline-flex items-center justify-center gap-2 rounded-full bg-white px-8 py-4 text-lg font-semibold text-[#EA5D19] shadow-lg hover:shadow-xl transition-all duration-200 hover:scale-105"
+              >
+                <Phone className="h-5 w-5" />
+                (800) 697-4014
+              </Link>
+              <Link
+                href="/quote"
+                className="inline-flex items-center justify-center gap-2 rounded-full bg-[#11110E] px-8 py-4 text-lg font-semibold text-white shadow-lg hover:shadow-xl transition-all duration-200 hover:scale-105"
+              >
+                Get Free Quote
+                <ArrowRight className="h-5 w-5" />
+              </Link>
             </div>
           </motion.div>
         </div>
       </section>
 
       {/* FAQ Section */}
-      <section className="py-16 lg:py-24">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <section className="py-20 bg-white">
+        <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
             viewport={{ once: true }}
-            className="mx-auto max-w-6xl"
+            transition={{ duration: 0.5 }}
+            className="text-center mb-16"
           >
-            <h2 className="text-3xl font-bold text-[#11110E] sm:text-4xl mb-8 text-center">
+            <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl mb-4">
               Frequently Asked Questions
             </h2>
-
-            <div className="h-1 w-20 bg-[#EA5D19] mx-auto rounded-full mb-8" />
-            <Accordion type="single" collapsible className="space-y-4">
-              {faqs.map((faq, index) => (
-                <motion.div
-                  key={index}
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.5, delay: index * 0.05 }}
-                  viewport={{ once: true }}
-                >
-                  <AccordionItem
-                    value={`item-${index}`}
-                    className="rounded-2xl bg-white px-6 shadow-md border-0"
-                  >
-                    <AccordionTrigger className="text-left font-semibold text-[#11110E] hover:text-[#EA5D19] py-6 flex items-start justify-between gap-2">
-                      <span className="flex-shrink-0 mr-2 text-[#EA5D19] font-bold">
-                        {String(index + 1).padStart(2, "0")}
-                      </span>
-                      <span className="flex-grow text-collapse-fix">
-                        {faq.question}
-                      </span>
-                    </AccordionTrigger>
-                    <AccordionContent className="text-gray-700 pb-6">
-                      {faq.answer}
-                    </AccordionContent>
-                  </AccordionItem>
-                </motion.div>
-              ))}
-            </Accordion>
-          </motion.div>
-        </div>
-      </section>
-
-      {/* CTA Section */}
-      <section className="bg-gradient-to-r from-[#EA5D19] to-[#FF6E2E] py-16 lg:py-24">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-            viewport={{ once: true }}
-            className="text-center"
-          >
-            <h2 className="text-3xl font-bold text-white sm:text-4xl mb-6">
-              Get a Free Estimate Now!
-            </h2>
-
-            <div className="h-1 w-20 bg-[#FFFF] mx-auto rounded-full mb-8" />
-
-            <p className="text-xl text-white/90 mb-8 max-w-7xl mx-auto">
-              Don't wait for a flood to damage your home. Contact us today for expert sump pump repair and replacement services.
+            <p className="text-xl text-gray-600">
+              Common questions about sump pump repair & replacement
             </p>
-            <Link
-              href="/quote"
-              className="inline-flex items-center gap-2 rounded-full bg-white px-8 py-4 text-lg font-bold text-[#EA5D19] shadow-lg hover:shadow-xl transition-all hover:scale-105"
-            >
-              <Phone className="h-5 w-5" />
-              Request Your Free Quote
-            </Link>
           </motion.div>
+
+          <Accordion type="single" collapsible className="space-y-4">
+            <AccordionItem value="item-1" className="border rounded-lg px-6 bg-gray-50">
+              <AccordionTrigger className="text-left text-lg font-semibold hover:text-[#EA5D19] transition-colors">
+                What does a sump pump do?
+              </AccordionTrigger>
+              <AccordionContent className="text-gray-600 text-base leading-relaxed">
+                A sump pump removes water that collects in a basement or crawlspace sump pit, preventing flooding and protecting your home's foundation. It automatically activates when water levels rise, pumping water out to a safe drainage area away from your home.
+              </AccordionContent>
+            </AccordionItem>
+
+            <AccordionItem value="item-2" className="border rounded-lg px-6 bg-gray-50">
+              <AccordionTrigger className="text-left text-lg font-semibold hover:text-[#EA5D19] transition-colors">
+                How do I know if my sump pump is working?
+              </AccordionTrigger>
+              <AccordionContent className="text-gray-600 text-base leading-relaxed">
+                Test it by pouring water into the sump pit until the float switch activates and the pump turns on. If it doesn't start, struggles to clear water, or makes unusual noises, it may need repairs or replacement. Test your pump every 3-6 months.
+              </AccordionContent>
+            </AccordionItem>
+
+            <AccordionItem value="item-3" className="border rounded-lg px-6 bg-gray-50">
+              <AccordionTrigger className="text-left text-lg font-semibold hover:text-[#EA5D19] transition-colors">
+                Why does my sump pump keep running?
+              </AccordionTrigger>
+              <AccordionContent className="text-gray-600 text-base leading-relaxed">
+                A pump that runs constantly might have a stuck float switch, a clogged discharge line preventing water removal, or extremely high groundwater levels overwhelming the system. Check for blockages or contact a professional to diagnose the issue before the pump burns out.
+              </AccordionContent>
+            </AccordionItem>
+
+            <AccordionItem value="item-4" className="border rounded-lg px-6 bg-gray-50">
+              <AccordionTrigger className="text-left text-lg font-semibold hover:text-[#EA5D19] transition-colors">
+                What happens if my sump pump fails?
+              </AccordionTrigger>
+              <AccordionContent className="text-gray-600 text-base leading-relaxed">
+                A failed sump pump leads to basement flooding, damaging walls, floors, stored belongings, and furniture. Water can weaken your home's foundation, cause mold growth, and create costly structural issues. Quick replacement prevents these expensive problems.
+              </AccordionContent>
+            </AccordionItem>
+
+            <AccordionItem value="item-5" className="border rounded-lg px-6 bg-gray-50">
+              <AccordionTrigger className="text-left text-lg font-semibold hover:text-[#EA5D19] transition-colors">
+                Can a sump pump work during a power outage?
+              </AccordionTrigger>
+              <AccordionContent className="text-gray-600 text-base leading-relaxed">
+                Standard sump pumps require electricity and stop during power outages. Since storms that cause flooding often knock out power, a battery backup system or generator is essential. Battery backup pumps keep running when the power fails, protecting your home when you need it most.
+              </AccordionContent>
+            </AccordionItem>
+
+            <AccordionItem value="item-6" className="border rounded-lg px-6 bg-gray-50">
+              <AccordionTrigger className="text-left text-lg font-semibold hover:text-[#EA5D19] transition-colors">
+                How often should I maintain my sump pump?
+              </AccordionTrigger>
+              <AccordionContent className="text-gray-600 text-base leading-relaxed">
+                Check your sump pump every 3-6 months by pouring water in the pit to ensure it activates and clears debris. Annual professional maintenance catches problems before they lead to failure. Clean the pit, check the float switch, and test the discharge line regularly.
+              </AccordionContent>
+            </AccordionItem>
+
+            <AccordionItem value="item-7" className="border rounded-lg px-6 bg-gray-50">
+              <AccordionTrigger className="text-left text-lg font-semibold hover:text-[#EA5D19] transition-colors">
+                Should I repair or replace my sump pump?
+              </AccordionTrigger>
+              <AccordionContent className="text-gray-600 text-base leading-relaxed">
+                Replacement is usually better than repair because repair costs often approach new pump prices, and fixing one part doesn't prevent other components from failing. If your pump is over 7-10 years old or has recurring problems, replacement with a modern, reliable system makes more sense.
+              </AccordionContent>
+            </AccordionItem>
+
+            <AccordionItem value="item-8" className="border rounded-lg px-6 bg-gray-50">
+              <AccordionTrigger className="text-left text-lg font-semibold hover:text-[#EA5D19] transition-colors">
+                Why is my sump pump making loud noises?
+              </AccordionTrigger>
+              <AccordionContent className="text-gray-600 text-base leading-relaxed">
+                Loud grinding or rattling noises indicate a worn-out motor, loose parts, or debris in the pump. These issues can lead to complete failure if not addressed quickly. Contact a professional to inspect and repair or replace the pump before it stops working entirely.
+              </AccordionContent>
+            </AccordionItem>
+          </Accordion>
         </div>
       </section>
     </>

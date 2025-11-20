@@ -1,11 +1,25 @@
-import { StubPage } from "@/components/StubPage";
 import type { Metadata } from "next";
+import { UplandContent } from "@/components/upland/UplandContent";
 
 export const metadata: Metadata = {
-  title: "Water Heater Services in Upland, CA",
-  description: "Expert water heater repair and installation services in Upland, CA. Same-day service available.",
+  title: "Upland Plumbers & Water Heater Services | Water Heater SOS",
+  description:
+    "Fantastic 5-star plumbers in Upland, CA. Fast water heater repair, installation, drain cleaning & more. Licensed, insured & available 24/7. Call now!",
+  keywords: [
+    "Upland plumber",
+    "water heater repair Upland",
+    "emergency plumbing Upland",
+    "drain cleaning Upland",
+    "tankless water heater Upland",
+  ],
+  openGraph: {
+    title: "Upland Plumbers & Water Heater Services | Water Heater SOS",
+    description:
+      "Fantastic 5-star plumbers in Upland, CA. Fast water heater repair, installation, drain cleaning & more. Licensed, insured & available 24/7.",
+    type: "website",
+  },
 };
 
 export default function UplandPage() {
-  return <StubPage title="Water Heater Services in Upland, CA" />;
+  return <UplandContent />;
 }

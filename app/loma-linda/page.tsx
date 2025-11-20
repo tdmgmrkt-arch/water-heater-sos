@@ -1,11 +1,27 @@
-import { StubPage } from "@/components/StubPage";
 import type { Metadata } from "next";
+import { LomaLindaContent } from "@/components/loma-linda/LomaLindaContent";
 
 export const metadata: Metadata = {
-  title: "Water Heater Services in Loma Linda, CA",
-  description: "Expert water heater repair and installation services in Loma Linda, CA. Same-day service available.",
+  title: "Loma Linda Plumbers & Water Heater Repair | Water Heater SOS",
+  description:
+    "Expert plumbing services in Loma Linda, CA. Water heater repair & replacement, leak detection, drain cleaning, and more. Call (800) 697-4014!",
+  keywords: [
+    "Loma Linda plumber",
+    "water heater repair Loma Linda",
+    "plumbing services Loma Linda CA",
+    "tankless water heater Loma Linda",
+    "leak detection Loma Linda",
+    "drain cleaning Loma Linda",
+  ],
+  openGraph: {
+    title: "Loma Linda Plumbers & Water Heater Repair | Water Heater SOS",
+    description:
+      "Expert plumbing services in Loma Linda, CA. Water heater repair & replacement, leak detection, and more.",
+    type: "website",
+    url: "https://waterheatersos.com/loma-linda",
+  },
 };
 
 export default function LomaLindaPage() {
-  return <StubPage title="Water Heater Services in Loma Linda, CA" />;
+  return <LomaLindaContent />;
 }

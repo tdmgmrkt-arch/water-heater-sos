@@ -3,79 +3,13 @@
 import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
-import { Phone, Droplets, Link2, AlertCircle, WrenchIcon } from "lucide-react";
+import { ArrowRight, Wrench, Phone, Timer, Shield, Zap } from "lucide-react";
 import {
   Accordion,
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
-
-const brands = [
-  { name: "Rheem", image: "/rheem_logo-1.webp" },
-  { name: "Hajoca", image: "/hajoca-1.webp" },
-  { name: "Rinnai", image: "/rinnai-1.webp" },
-  { name: "Bradford White", image: "/bradford-white-logo-1.webp" },
-  { name: "Navien", image: "/navien-1.webp" },
-];
-
-const leakReasons = [
-  {
-    icon: Link2,
-    title: "Faulty Sink Flange Connection",
-    description: "The flange is the part that connects the garbage disposal to the sink. If it's loose, improperly installed, or worn out, water can seep through the gaps, causing leaks under the sink.",
-  },
-  {
-    icon: Droplets,
-    title: "Worn Out Seals",
-    description: "Over time, the seals inside the garbage disposal can deteriorate due to constant use and exposure to water. When these seals fail, water escapes from the unit, leading to puddles underneath.",
-  },
-  {
-    icon: AlertCircle,
-    title: "Leaking Dishwasher or Drain Pipe Connection",
-    description: "The pipes connecting the disposal to the dishwasher or drain can become loose or damaged. These leaks often appear under the sink and may be mistaken for a problem with the disposal itself.",
-  },
-  {
-    icon: WrenchIcon,
-    title: "Worn Internal Parts Causing Bottom Leaks",
-    description: "Internal components of the disposal, like the grinding chamber, can wear out over time, especially in older units. This causes water to leak from the bottom, often signaling the need for a replacement.",
-  },
-];
-
-const faqs = [
-  {
-    question: "Can I fix a jammed garbage disposal myself?",
-    answer: "You can try using an allen wrench to manually turn the blades through the bottom of the unit or press the reset button. If the jam persists, professional plumbing help is needed to avoid damaging the disposal.",
-  },
-  {
-    question: "What causes a garbage disposal to stop working?",
-    answer: "A garbage disposal may stop due to a jam from food scraps, a burned-out motor, or electrical issues. Common culprits include bones, grease, or fibrous foods clogging the blades.",
-  },
-  {
-    question: "What foods should I avoid putting in my garbage disposal?",
-    answer: "Avoid fibrous foods like celery, grease, bones, and starchy items like pasta and potato peels. These can jam the blades, cause clogs, or damage the unit over time.",
-  },
-  {
-    question: "How long does a garbage disposal typically last?",
-    answer: "Most garbage disposals last 8-15 years, depending on usage and maintenance. Heavy use or improper items can shorten their lifespan significantly.",
-  },
-  {
-    question: "Why does my garbage disposal smell bad?",
-    answer: "Odors are caused by food buildup or grease trapped in the unit. Regular cleaning with ice, citrus peels, or baking soda and vinegar can help eliminate smells. If the smells persist call us so we can send one of our professional plumbers out to fix the situation.",
-  },
-  {
-    question: "Why is my garbage disposal leaking?",
-    answer: "Leaks often come from a loose sink flange, worn-out seals, or damaged internal parts. Dishwasher or drain pipe connections can also be the source of leaks.",
-  },
-  {
-    question: "How do I know if my garbage disposal needs repair or replacement?",
-    answer: "If the unit hums but doesn't spin, leaks persistently, or requires frequent resets, it may need repair. A burned-out motor or extensive internal damage often means replacement is more cost-effective.",
-  },
-  {
-    question: "Is it safe to run my garbage disposal without water?",
-    answer: "No, always run cold water while using the disposal to flush debris and prevent overheating. Running it dry can damage the blades and motor over time.",
-  },
-];
 
 export function GarbageDisposalRepairReplacementContent() {
   return (
@@ -84,277 +18,243 @@ export function GarbageDisposalRepairReplacementContent() {
       <section className="relative overflow-hidden bg-gradient-to-b from-gray-50 to-white pt-20 pb-16 lg:pt-32 lg:pb-24">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="grid gap-12 lg:grid-cols-2 lg:gap-16 items-center">
-            {/* Content */}
             <motion.div
-              initial={{ opacity: 0, x: -30 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.6 }}
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5 }}
             >
-
-            <span className="inline-block px-4 py-1 rounded-full bg-[#EA5D19] text-sm text-white font-semibold mb-4 tracking-wide">
-              Premium Garbage Disposal Repair & Replacement Service
-            </span>
-              <h1 className="text-4xl font-bold text-[#11110E] sm:text-5xl lg:text-6xl mb-6">
+              <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl lg:text-6xl mb-6">
                 Garbage Disposal Repair & Replacement
               </h1>
-              <p className="text-xl text-gray-600 mb-8">
-                Fast, Reliable Garbage Disposal Solutions
+              <p className="text-xl text-gray-600 mb-6">
+                Expert Solutions for Your Kitchen Disposal
+              </p>
+              <p className="text-lg text-gray-700 leading-relaxed mb-4">
+                Is your garbage disposal jammed, leaking, or making strange noises?
+              </p>
+              <p className="text-lg text-gray-700 leading-relaxed mb-8">
+                A malfunctioning garbage disposal disrupts your kitchen routine and can cause clogs or water damage. Our expert plumbers provide fast, reliable repair and replacement services.
               </p>
               <Link
                 href="/quote"
-                className="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-[#EA5D19] to-[#FF6E2E] px-8 py-4 text-lg font-bold text-white shadow-lg hover:shadow-xl transition-all hover:scale-105"
+                className="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-[#EA5D19] to-[#FF6E2E] px-8 py-4 text-lg font-semibold text-white shadow-lg hover:shadow-xl transition-all duration-200 hover:scale-105"
               >
-                <Phone className="h-5 w-5" />
-                Schedule an Appointment Today!
+                Schedule an Appointment
+                <ArrowRight className="h-5 w-5" />
               </Link>
             </motion.div>
 
-            {/* Image */}
             <motion.div
-              initial={{ opacity: 0, x: 30 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.6, delay: 0.2 }}
-              className="relative h-[400px] lg:h-[500px] rounded-3xl overflow-hidden shadow-2xl"
+              initial={{ opacity: 0, scale: 0.95 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.5, delay: 0.2 }}
+              className="relative"
             >
-              <Image
-                src="/placeholderimage.webp"
-                alt="Professional garbage disposal repair and replacement services"
-                fill
-                className="object-cover"
-                priority
-              />
+              <div className="relative h-[500px] w-full rounded-2xl overflow-hidden shadow-2xl">
+                <Image
+                  src="/placeholderimage.webp"
+                  alt="Professional garbage disposal repair and replacement services"
+                  fill
+                  className="object-cover"
+                  priority
+                />
+              </div>
             </motion.div>
+          </div>
+
+          <div className="mt-12 bg-white rounded-3xl shadow-lg border border-gray-200 p-8 space-y-6 text-lg leading-relaxed text-gray-700">
+            <p>
+              Garbage disposals are essential kitchen appliances that grind food waste, preventing <Link href="/drain-cleaning" className="text-[#EA5D19] hover:underline font-semibold">drain clogs</Link> and keeping your kitchen clean. When your disposal jams, leaks, or stops working, it creates inconvenient backups and potential water damage. Our professional <Link href="/plumbing" className="text-[#EA5D19] hover:underline font-semibold">plumbing services</Link> quickly diagnose and fix the problem.
+            </p>
+            <p>
+              We repair jammed blades, replace worn seals, fix leaking connections, and address electrical issues. Common problems include faulty sink flange connections, deteriorated internal seals, and loose dishwasher or drain pipe connections. For disposals beyond repair or outdated units that waste energy, we recommend upgrading to modern, powerful models with noise reduction and enhanced grinding capabilities.
+            </p>
+            <p>
+              Today's garbage disposals feature continuous feed operation, stainless steel components, and multi-stage grinding for efficient waste disposal. Whether you need a quick repair or complete replacement installation, our team ensures proper connection to prevent leaks and optimal performance. We proudly serve homeowners throughout the Inland Empire, including <Link href="/redlands" className="text-[#EA5D19] hover:underline font-semibold">Redlands</Link>, <Link href="/loma-linda" className="text-[#EA5D19] hover:underline font-semibold">Loma Linda</Link>, <Link href="/highland" className="text-[#EA5D19] hover:underline font-semibold">Highland</Link>, and <Link href="/san-bernardino" className="text-[#EA5D19] hover:underline font-semibold">San Bernardino</Link>.
+            </p>
           </div>
         </div>
       </section>
 
-{/* Main Content Section */}
-<section className="py-20 bg-white">
-  <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-    <motion.div
-      initial={{ opacity: 0, y: 25 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true }}
-      transition={{ duration: 0.6 }}
-      className="mx-auto text-left"
-    >
-      <p className="text-lg text-gray-700 leading-relaxed">
-        A garbage disposal makes cleaning up in the kitchen super easy, but when it gets clogged, jams, or starts leaking, it can be a real pain. Our skilled plumbers fix garbage disposal problems quickly, whether it's a simple repair or a complete replacement. We work hard to get your kitchen back to normal with dependable service you can count on. From clearing stubborn clogs to replacing worn-out units, we handle it all to save you time and stress. Contact us today for fast garbage disposal repair or installation.
-      </p>
-    </motion.div>
-  </div>
-</section>
-
-{/* Common Problems Section */}
-<section className="bg-gray-50 py-20">
-  <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-    <motion.div
-      initial={{ opacity: 0, y: 25 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true }}
-      transition={{ duration: 0.6 }}
-      className="mx-auto text-left"
-    >
-      <h2 className="text-4xl sm:text-5xl font-extrabold text-[#11110E] mb-6">
-        Common Garbage Disposal Problems
-      </h2>
-
-      <div className="h-1 w-20 bg-[#EA5D19] rounded-full mb-8" />
-
-      <p className="text-lg text-gray-700 leading-relaxed">
-        Garbage disposals can break down for a variety of reasons. A common issue is a motor that's too small for your household's needs, struggling to keep up with daily use. Another culprit is grease, or stringy food scraps being put down the drain, causing clogs or jams. Over time, wear and tear or buildup from food debris can also slow down or damage the unit, leading to poor performance or leaks.
-      </p>
-    </motion.div>
-  </div>
-</section>
-
-{/* Repair & Installation Section */}
-<section className="py-20 bg-white">
-  <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-    <motion.div
-      initial={{ opacity: 0, y: 25 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true }}
-      transition={{ duration: 0.6 }}
-      className="mx-auto text-left"
-    >
-      <h2 className="text-4xl sm:text-5xl font-extrabold text-[#11110E] mb-6">
-        Garbage Disposal Repair & Installation
-      </h2>
-
-      <div className="h-1 w-20 bg-[#EA5D19] rounded-full mb-8" />
-
-      <p className="text-lg text-gray-700 leading-relaxed mb-6">
-        When your garbage disposal acts up, our plumbers start by inspecting the unit to pinpoint the issue. If it's just jammed, we can often clear the blockage and get it running smoothly again. However, if the motor is burned out or the unit is too worn, a replacement may be the best option. We'll guide you in choosing the right disposal for your home, ensuring it's powerful enough to handle your needs.
-      </p>
-
-      <p className="text-lg text-gray-700 leading-relaxed">
-        Garbage disposals come in different motor sizes, measured in horsepower (HP). For small households, like apartments or condos with one or two people, a ½ HP motor is usually enough. Larger families of four or more in a house may need a ¾ HP model to keep up with heavier use. We'll recommend the perfect size to match your lifestyle.
-      </p>
-    </motion.div>
-  </div>
-</section>
-
-{/* Why Is My Garbage Disposal Leaking Section */}
-<section className="bg-gray-50 py-20">
-  <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-    <motion.div
-      initial={{ opacity: 0, y: 25 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true }}
-      transition={{ duration: 0.6 }}
-      className="text-center mb-12"
-    >
-      <h2 className="text-4xl sm:text-5xl font-extrabold text-[#11110E] mb-6">
-        Why Is My Garbage Disposal Leaking?
-      </h2>
-      <div className="h-1 w-20 bg-[#EA5D19] mx-auto rounded-full mb-8" />
-      <p className="text-lg text-gray-700 leading-relaxed max-w-3xl mx-auto">
-        Finding water under your sink can be frustrating, and it might mean your garbage disposal is leaking or the problem could be nearby. Below are four common reasons why garbage disposals leak, along with a summary of each issue.
-      </p>
-    </motion.div>
-
-    <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-2">
-      {leakReasons.map((reason, index) => (
-        <motion.div
-          key={index}
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, delay: index * 0.1 }}
-          viewport={{ once: true }}
-          className="rounded-2xl bg-white p-8 shadow-md border border-gray-100 hover:shadow-xl transition-shadow"
-        >
-          <div className="mb-4 inline-flex rounded-full bg-[#EA5D19]/10 p-3">
-            <reason.icon className="h-6 w-6 text-[#EA5D19]" />
-          </div>
-          <h3 className="text-xl font-bold text-[#11110E] mb-3">
-            {reason.title}
-          </h3>
-          <p className="text-gray-700 leading-relaxed">
-            {reason.description}
-          </p>
-        </motion.div>
-      ))}
-    </div>
-  </div>
-</section>
-
-      {/* Trusted Brands Section */}
-      <section className="bg-gray-50 py-16 lg:py-24">
+      {/* Benefits Section */}
+      <section className="py-20 bg-gray-50">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
             viewport={{ once: true }}
-            className="mx-auto max-w-7xl text-center relative z-20"
+            transition={{ duration: 0.5 }}
+            className="text-center mb-16"
           >
-            <h2 className="text-3xl font-bold text-[#11110E] sm:text-4xl mb-8">
-              Trusted Brands
+            <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl mb-4">
+              Why Choose Our Disposal Services?
             </h2>
+            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+              Professional repair and replacement for all garbage disposal brands
+            </p>
+          </motion.div>
 
-            <div className="h-1 w-20 bg-[#EA5D19] mx-auto rounded-full mb-8" />
+          <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
+            {[
+              {
+                title: "Fix Jams & Clogs",
+                description: "Jammed disposals from bones, fibrous foods, or grease buildup stop your kitchen routine. We safely clear blockages, repair damaged blades, and restore grinding power. Our technicians use proper tools to avoid damaging the motor or internal components during jam removal.",
+                icon: Wrench,
+              },
+              {
+                title: "Stop Leaks",
+                description: "Leaking disposals damage cabinets, floors, and create mold risks. We repair or replace worn seals, tighten sink flange connections, and fix dishwasher/drain pipe leaks. Proper installation prevents future water damage and ensures long-lasting, dry operation under your sink.",
+                icon: Shield,
+              },
+              {
+                title: "Fast Service",
+                description: "Kitchen disposal problems can't wait. Our plumbers arrive promptly with common replacement parts and disposal units. Most repairs and installations complete within 1-2 hours, minimizing disruption to your cooking and cleaning routines while ensuring proper functionality.",
+                icon: Timer,
+              },
+              {
+                title: "Modern Upgrades",
+                description: "Old disposals are loud, weak, and prone to jams. We install quiet, powerful models with multi-stage grinding, stainless steel components, and anti-jam features. Upgrade to continuous feed operation and enhanced horsepower for effortless food waste disposal.",
+                icon: Zap,
+              },
+            ].map((benefit, index) => (
+              <motion.div
+                key={benefit.title}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: index * 0.1 }}
+                className="rounded-2xl bg-white p-8 shadow-lg border border-gray-200"
+              >
+                <div className="mb-4 inline-flex rounded-lg bg-[#EA5D19] p-3">
+                  <benefit.icon className="h-6 w-6 text-white" />
+                </div>
+                <h3 className="text-xl font-bold text-gray-900 mb-3">
+                  {benefit.title}
+                </h3>
+                <p className="text-gray-600">{benefit.description}</p>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
 
-            <div className="grid grid-cols-2 gap-6 md:grid-cols-3 lg:grid-cols-5 items-center relative z-20 min-h-[120px]">
-              {brands.map((brand, index) => (
-                <motion.div
-                  key={brand.name}
-                  initial={{ opacity: 0, scale: 0.85 }}
-                  whileInView={{ opacity: 1, scale: 1 }}
-                  transition={{ duration: 0.5, delay: index * 0.1 }}
-                  viewport={{ once: true }}
-                  className="flex items-center justify-center grayscale hover:grayscale-0 transition-all duration-300"
-                >
-                  <div className="relative h-20 w-28 mx-auto z-20">
-                    <Image
-                      src={brand.image}
-                      alt={`${brand.name} logo - trusted water heater brand`}
-                      fill
-                      sizes="100px"
-                      className="object-contain z-20"
-                    />
-                  </div>
-                </motion.div>
-              ))}
+      {/* CTA Section */}
+      <section className="py-20 bg-gradient-to-r from-[#EA5D19] to-[#FF6E2E]">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 text-center">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5 }}
+          >
+            <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl mb-6">
+              Get a Free Estimate Today!
+            </h2>
+            <p className="text-xl text-white/90 mb-8 max-w-2xl mx-auto">
+              Don't let a faulty garbage disposal disrupt your kitchen. Contact us today for expert repair and replacement services.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Link
+                href="tel:+18006974014"
+                className="inline-flex items-center justify-center gap-2 rounded-full bg-white px-8 py-4 text-lg font-semibold text-[#EA5D19] shadow-lg hover:shadow-xl transition-all duration-200 hover:scale-105"
+              >
+                <Phone className="h-5 w-5" />
+                (800) 697-4014
+              </Link>
+              <Link
+                href="/quote"
+                className="inline-flex items-center justify-center gap-2 rounded-full bg-[#11110E] px-8 py-4 text-lg font-semibold text-white shadow-lg hover:shadow-xl transition-all duration-200 hover:scale-105"
+              >
+                Get Free Quote
+                <ArrowRight className="h-5 w-5" />
+              </Link>
             </div>
           </motion.div>
         </div>
       </section>
 
       {/* FAQ Section */}
-      <section className="py-16 lg:py-24">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <section className="py-20 bg-white">
+        <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
             viewport={{ once: true }}
-            className="mx-auto max-w-6xl"
+            transition={{ duration: 0.5 }}
+            className="text-center mb-16"
           >
-            <h2 className="text-3xl font-bold text-[#11110E] sm:text-4xl mb-8 text-center">
+            <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl mb-4">
               Frequently Asked Questions
             </h2>
-
-            <div className="h-1 w-20 bg-[#EA5D19] mx-auto rounded-full mb-8" />
-            <Accordion type="single" collapsible className="space-y-4">
-              {faqs.map((faq, index) => (
-                <motion.div
-                  key={index}
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.5, delay: index * 0.05 }}
-                  viewport={{ once: true }}
-                >
-                  <AccordionItem
-                    value={`item-${index}`}
-                    className="rounded-2xl bg-white px-6 shadow-md border-0"
-                  >
-                    <AccordionTrigger className="text-left font-semibold text-[#11110E] hover:text-[#EA5D19] py-6 flex items-start justify-between gap-2">
-                      <span className="flex-shrink-0 mr-2 text-[#EA5D19] font-bold">
-                        {String(index + 1).padStart(2, "0")}
-                      </span>
-                      <span className="flex-grow text-collapse-fix">
-                        {faq.question}
-                      </span>
-                    </AccordionTrigger>
-                    <AccordionContent className="text-gray-700 pb-6">
-                      {faq.answer}
-                    </AccordionContent>
-                  </AccordionItem>
-                </motion.div>
-              ))}
-            </Accordion>
-          </motion.div>
-        </div>
-      </section>
-
-      {/* CTA Section */}
-      <section className="bg-gradient-to-r from-[#EA5D19] to-[#FF6E2E] py-16 lg:py-24">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-            viewport={{ once: true }}
-            className="text-center"
-          >
-            <h2 className="text-3xl font-bold text-white sm:text-4xl mb-6">
-              Get a Free Estimate Now!
-            </h2>
-
-            <div className="h-1 w-20 bg-[#FFFF] mx-auto rounded-full mb-8" />
-
-            <p className="text-xl text-white/90 mb-8 max-w-7xl mx-auto">
-              Don't let a broken garbage disposal slow you down. Contact us today for expert repair and replacement services.
+            <p className="text-xl text-gray-600">
+              Common questions about garbage disposal repair & replacement
             </p>
-            <Link
-              href="/quote"
-              className="inline-flex items-center gap-2 rounded-full bg-white px-8 py-4 text-lg font-bold text-[#EA5D19] shadow-lg hover:shadow-xl transition-all hover:scale-105"
-            >
-              <Phone className="h-5 w-5" />
-              Request Your Free Quote
-            </Link>
           </motion.div>
+
+          <Accordion type="single" collapsible className="space-y-4">
+            <AccordionItem value="item-1" className="border rounded-lg px-6 bg-gray-50">
+              <AccordionTrigger className="text-left text-lg font-semibold hover:text-[#EA5D19] transition-colors">
+                Can I fix a jammed garbage disposal myself?
+              </AccordionTrigger>
+              <AccordionContent className="text-gray-600 text-base leading-relaxed">
+                You can try using an allen wrench to manually turn the blades through the bottom of the unit or press the reset button. If the jam persists, professional plumbing help is needed to avoid damaging the disposal.
+              </AccordionContent>
+            </AccordionItem>
+
+            <AccordionItem value="item-2" className="border rounded-lg px-6 bg-gray-50">
+              <AccordionTrigger className="text-left text-lg font-semibold hover:text-[#EA5D19] transition-colors">
+                What causes a garbage disposal to stop working?
+              </AccordionTrigger>
+              <AccordionContent className="text-gray-600 text-base leading-relaxed">
+                A garbage disposal may stop due to a jam from food scraps, a burned-out motor, or electrical issues. Common culprits include bones, grease, or fibrous foods clogging the blades.
+              </AccordionContent>
+            </AccordionItem>
+
+            <AccordionItem value="item-3" className="border rounded-lg px-6 bg-gray-50">
+              <AccordionTrigger className="text-left text-lg font-semibold hover:text-[#EA5D19] transition-colors">
+                What foods should I avoid putting in my garbage disposal?
+              </AccordionTrigger>
+              <AccordionContent className="text-gray-600 text-base leading-relaxed">
+                Avoid fibrous foods like celery, grease, bones, and starchy items like pasta and potato peels. These can jam the blades, cause clogs, or damage the unit over time.
+              </AccordionContent>
+            </AccordionItem>
+
+            <AccordionItem value="item-4" className="border rounded-lg px-6 bg-gray-50">
+              <AccordionTrigger className="text-left text-lg font-semibold hover:text-[#EA5D19] transition-colors">
+                How long does a garbage disposal typically last?
+              </AccordionTrigger>
+              <AccordionContent className="text-gray-600 text-base leading-relaxed">
+                Most garbage disposals last 8-15 years, depending on usage and maintenance. Heavy use or improper items can shorten their lifespan significantly.
+              </AccordionContent>
+            </AccordionItem>
+
+            <AccordionItem value="item-5" className="border rounded-lg px-6 bg-gray-50">
+              <AccordionTrigger className="text-left text-lg font-semibold hover:text-[#EA5D19] transition-colors">
+                Why is my garbage disposal leaking?
+              </AccordionTrigger>
+              <AccordionContent className="text-gray-600 text-base leading-relaxed">
+                Leaks can occur from worn seals, loose sink flange connections, or damaged dishwasher/drain pipe connections. A professional inspection can identify the source and provide proper repairs.
+              </AccordionContent>
+            </AccordionItem>
+
+            <AccordionItem value="item-6" className="border rounded-lg px-6 bg-gray-50">
+              <AccordionTrigger className="text-left text-lg font-semibold hover:text-[#EA5D19] transition-colors">
+                How much does garbage disposal installation cost?
+              </AccordionTrigger>
+              <AccordionContent className="text-gray-600 text-base leading-relaxed">
+                Installation costs vary based on the disposal model and complexity of the job. Contact us for a free estimate tailored to your specific needs and kitchen setup.
+              </AccordionContent>
+            </AccordionItem>
+
+            <AccordionItem value="item-7" className="border rounded-lg px-6 bg-gray-50">
+              <AccordionTrigger className="text-left text-lg font-semibold hover:text-[#EA5D19] transition-colors">
+                Can you install a garbage disposal if I don't have one?
+              </AccordionTrigger>
+              <AccordionContent className="text-gray-600 text-base leading-relaxed">
+                Yes! We can install a new garbage disposal even if your sink doesn't currently have one. Our plumbers assess your plumbing setup and recommend the best disposal model for your needs.
+              </AccordionContent>
+            </AccordionItem>
+          </Accordion>
         </div>
       </section>
     </>

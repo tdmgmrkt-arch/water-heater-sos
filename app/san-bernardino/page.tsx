@@ -1,11 +1,25 @@
-import { StubPage } from "@/components/StubPage";
 import type { Metadata } from "next";
+import { SanBernardinoContent } from "@/components/san-bernardino/SanBernardinoContent";
 
 export const metadata: Metadata = {
-  title: "Water Heater Services in San Bernardino, CA",
-  description: "Expert water heater repair and installation services in San Bernardino, CA. Same-day service available.",
+  title: "San Bernardino Plumbers & Water Heater Services | Water Heater SOS",
+  description:
+    "Plumbing problem solvers in San Bernardino, CA. Fast water heater repair, installation, drain cleaning & more. Licensed, insured & available 24/7. Call now!",
+  keywords: [
+    "San Bernardino plumber",
+    "water heater repair San Bernardino",
+    "emergency plumbing San Bernardino",
+    "drain cleaning San Bernardino",
+    "tankless water heater San Bernardino",
+  ],
+  openGraph: {
+    title: "San Bernardino Plumbers & Water Heater Services | Water Heater SOS",
+    description:
+      "Plumbing problem solvers in San Bernardino, CA. Fast water heater repair, installation, drain cleaning & more. Licensed, insured & available 24/7.",
+    type: "website",
+  },
 };
 
 export default function SanBernardinoPage() {
-  return <StubPage title="Water Heater Services in San Bernardino, CA" />;
+  return <SanBernardinoContent />;
 }

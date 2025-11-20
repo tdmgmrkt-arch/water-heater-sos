@@ -1,11 +1,26 @@
-import { StubPage } from "@/components/StubPage";
 import type { Metadata } from "next";
+import { DrainCleaningContent } from "@/components/drain-cleaning/DrainCleaningContent";
 
 export const metadata: Metadata = {
-  title: "Drain Cleaning",
-  description: "Professional drain cleaning services to clear clogs and restore proper drainage.",
+  title: "Drain Cleaning Services | Water Heater SOS",
+  description:
+    "Expert drain cleaning services to clear clogs and restore proper drainage. Fast, professional service for backed up drains, sewer lines & more. Call now!",
+  keywords: [
+    "drain cleaning",
+    "clogged drain",
+    "sewer cleaning",
+    "hydro jetting",
+    "drain repair",
+    "backed up drain",
+  ],
+  openGraph: {
+    title: "Drain Cleaning Services | Water Heater SOS",
+    description:
+      "Expert drain cleaning services to clear clogs and restore proper drainage. Fast, professional service for backed up drains, sewer lines & more.",
+    type: "website",
+  },
 };
 
 export default function DrainCleaningPage() {
-  return <StubPage title="Drain Cleaning" />;
+  return <DrainCleaningContent />;
 }

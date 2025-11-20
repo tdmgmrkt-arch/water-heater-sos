@@ -1,11 +1,25 @@
-import { StubPage } from "@/components/StubPage";
 import type { Metadata } from "next";
+import { ColtonContent } from "@/components/colton/ColtonContent";
 
 export const metadata: Metadata = {
-  title: "Water Heater Services in Colton, CA",
-  description: "Expert water heater repair and installation services in Colton, CA. Same-day service available.",
+  title: "Colton Plumbers & Water Heater Services | Water Heater SOS",
+  description:
+    "Full-service plumbing company in Colton, CA. Fast water heater repair, installation, drain cleaning & more. Licensed, insured & available 24/7. Call now!",
+  keywords: [
+    "Colton plumber",
+    "water heater repair Colton",
+    "emergency plumbing Colton",
+    "drain cleaning Colton",
+    "tankless water heater Colton",
+  ],
+  openGraph: {
+    title: "Colton Plumbers & Water Heater Services | Water Heater SOS",
+    description:
+      "Full-service plumbing company in Colton, CA. Fast water heater repair, installation, drain cleaning & more. Licensed, insured & available 24/7.",
+    type: "website",
+  },
 };
 
 export default function ColtonPage() {
-  return <StubPage title="Water Heater Services in Colton, CA" />;
+  return <ColtonContent />;
 }

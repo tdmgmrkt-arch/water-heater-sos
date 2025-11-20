@@ -1,11 +1,27 @@
-import { StubPage } from "@/components/StubPage";
 import type { Metadata } from "next";
+import { BanningContent } from "@/components/banning/BanningContent";
 
 export const metadata: Metadata = {
-  title: "Water Heater Services in Banning, CA",
-  description: "Expert water heater repair and installation services in Banning, CA. Same-day service available.",
+  title: "Banning Plumbers & Water Heater Repair | Water Heater SOS",
+  description:
+    "Expert plumbing services in Banning, CA. Water heater repair & replacement, tankless installations, drain cleaning, and more. Call (800) 697-4014!",
+  keywords: [
+    "Banning plumber",
+    "water heater repair Banning",
+    "plumbing services Banning CA",
+    "tankless water heater Banning",
+    "emergency plumber Banning",
+    "drain cleaning Banning",
+  ],
+  openGraph: {
+    title: "Banning Plumbers & Water Heater Repair | Water Heater SOS",
+    description:
+      "Expert plumbing services in Banning, CA. Water heater repair & replacement, tankless installations, and more.",
+    type: "website",
+    url: "https://waterheatersos.com/banning",
+  },
 };
 
 export default function BanningPage() {
-  return <StubPage title="Water Heater Services in Banning, CA" />;
+  return <BanningContent />;
 }

@@ -1,11 +1,25 @@
-import { StubPage } from "@/components/StubPage";
 import type { Metadata } from "next";
+import { FontanaContent } from "@/components/fontana/FontanaContent";
 
 export const metadata: Metadata = {
-  title: "Water Heater Services in Fontana, CA",
-  description: "Expert water heater repair and installation services in Fontana, CA. Same-day service available.",
+  title: "Fontana Plumbers & Water Heater Services | Water Heater SOS",
+  description:
+    "Delivering plumbing services in Fontana, CA. Fast water heater repair, installation, drain cleaning & more. Licensed, insured & available 24/7. Call now!",
+  keywords: [
+    "Fontana plumber",
+    "water heater repair Fontana",
+    "emergency plumbing Fontana",
+    "drain cleaning Fontana",
+    "tankless water heater Fontana",
+  ],
+  openGraph: {
+    title: "Fontana Plumbers & Water Heater Services | Water Heater SOS",
+    description:
+      "Delivering plumbing services in Fontana, CA. Fast water heater repair, installation, drain cleaning & more. Licensed, insured & available 24/7.",
+    type: "website",
+  },
 };
 
 export default function FontanaPage() {
-  return <StubPage title="Water Heater Services in Fontana, CA" />;
+  return <FontanaContent />;
 }

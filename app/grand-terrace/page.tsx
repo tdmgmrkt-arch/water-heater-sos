@@ -1,11 +1,25 @@
-import { StubPage } from "@/components/StubPage";
 import type { Metadata } from "next";
+import { GrandTerraceContent } from "@/components/grand-terrace/GrandTerraceContent";
 
 export const metadata: Metadata = {
-  title: "Water Heater Services in Grand Terrace, CA",
-  description: "Expert water heater repair and installation services in Grand Terrace, CA. Same-day service available.",
+  title: "Grand Terrace Plumbers & Water Heater Services | Water Heater SOS",
+  description:
+    "Trusted for all your plumbing needs in Grand Terrace, CA. Fast water heater repair, installation, drain cleaning & more. Licensed, insured & available 24/7. Call now!",
+  keywords: [
+    "Grand Terrace plumber",
+    "water heater repair Grand Terrace",
+    "emergency plumbing Grand Terrace",
+    "drain cleaning Grand Terrace",
+    "tankless water heater Grand Terrace",
+  ],
+  openGraph: {
+    title: "Grand Terrace Plumbers & Water Heater Services | Water Heater SOS",
+    description:
+      "Trusted for all your plumbing needs in Grand Terrace, CA. Fast water heater repair, installation, drain cleaning & more. Licensed, insured & available 24/7.",
+    type: "website",
+  },
 };
 
 export default function GrandTerracePage() {
-  return <StubPage title="Water Heater Services in Grand Terrace, CA" />;
+  return <GrandTerraceContent />;
 }

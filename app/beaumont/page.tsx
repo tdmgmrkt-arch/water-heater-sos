@@ -1,11 +1,27 @@
-import { StubPage } from "@/components/StubPage";
 import type { Metadata } from "next";
+import { BeaumontContent } from "@/components/beaumont/BeaumontContent";
 
 export const metadata: Metadata = {
-  title: "Water Heater Services in Beaumont, CA",
-  description: "Expert water heater repair and installation services in Beaumont, CA. Same-day service available.",
+  title: "Beaumont Plumbers & Water Heater Repair | Water Heater SOS",
+  description:
+    "Expert plumbing services in Beaumont, CA. Water heater repair & replacement, drain cleaning, and more. Fast, reliable service. Call (800) 697-4014!",
+  keywords: [
+    "Beaumont plumber",
+    "water heater repair Beaumont",
+    "plumbing services Beaumont CA",
+    "tankless water heater Beaumont",
+    "emergency plumber Beaumont",
+    "drain cleaning Beaumont",
+  ],
+  openGraph: {
+    title: "Beaumont Plumbers & Water Heater Repair | Water Heater SOS",
+    description:
+      "Expert plumbing services in Beaumont, CA. Water heater repair & replacement, drain cleaning, and more.",
+    type: "website",
+    url: "https://waterheatersos.com/beaumont",
+  },
 };
 
 export default function BeaumontPage() {
-  return <StubPage title="Water Heater Services in Beaumont, CA" />;
+  return <BeaumontContent />;
 }

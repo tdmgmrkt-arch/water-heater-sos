@@ -230,7 +230,7 @@ export function YucaipaContent() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="mx-auto text-center max-w-4xl"
+            className="mx-auto text-center max-w-7xl"
           >
             <h2 className="text-4xl sm:text-5xl font-extrabold text-[#11110E] mb-6">
               Hard Water Problems in Yucaipa?
@@ -248,7 +248,6 @@ export function YucaipaContent() {
           </motion.div>
         </div>
       </section>
-
       {/* Common Water Heater Issues Section */}
       <section className="py-20 bg-white">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">

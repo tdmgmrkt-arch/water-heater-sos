@@ -1,11 +1,30 @@
-import { StubPage } from "@/components/StubPage";
 import type { Metadata } from "next";
+import { RedlandsContent } from "@/components/redlands/RedlandsContent";
 
 export const metadata: Metadata = {
-  title: "Water Heater Services in Redlands, CA",
-  description: "Expert water heater repair and installation services in Redlands, CA. Same-day service available.",
+  title: "Redlands Plumbers & Water Heater Repair | Water Heater SOS",
+  description:
+    "Expert plumbing services in Redlands, CA. Fast water heater repair & replacement, drain cleaning, faucet repairs, and more. Upfront pricing. Call (800) 697-4014!",
+  keywords: [
+    "Redlands plumber",
+    "water heater repair Redlands",
+    "plumbing services Redlands CA",
+    "drain cleaning Redlands",
+    "faucet repair Redlands",
+    "toilet repair Redlands",
+    "sewer line repair Redlands",
+    "tankless water heater Redlands",
+    "emergency plumber Redlands",
+  ],
+  openGraph: {
+    title: "Redlands Plumbers & Water Heater Repair | Water Heater SOS",
+    description:
+      "Expert plumbing services in Redlands, CA. Fast water heater repair & replacement, drain cleaning, faucet repairs, and more.",
+    type: "website",
+    url: "https://waterheatersos.com/redlands",
+  },
 };
 
 export default function RedlandsPage() {
-  return <StubPage title="Water Heater Services in Redlands, CA" />;
+  return <RedlandsContent />;
 }

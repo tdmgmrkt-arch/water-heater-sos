@@ -3,102 +3,13 @@
 import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
-import { Check, Phone } from "lucide-react";
+import { ArrowRight, Droplets, Phone, Home, Shield, Wrench } from "lucide-react";
 import {
   Accordion,
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
-
-const brands = [
-  { name: "Rheem", image: "/Rheem_logo-1.webp" },
-  { name: "Hajoca", image: "/hajoca-1.webp" },
-  { name: "Rinnai", image: "/rinnai-1.webp" },
-  { name: "Bradford White", image: "/Bradford-White-logo-1.webp" },
-  { name: "Navien", image: "/navien-1.webp" },
-];
-
-const considerReasons = [
-  {
-    title: "Frequent Leaks",
-    description: "If leaks keep happening in different areas, the problem might not be a single weak spot but aging pipes that need replacing.",
-  },
-  {
-    title: "Discolored Water",
-    description: "Brown, rusty, or odd-colored water is often a sign of corrosion inside your pipes, which can affect water quality and pipe strength.",
-  },
-  {
-    title: "Low Water Pressure",
-    description: "Weak water flow could mean mineral buildup or hidden leaks in your plumbing system, making repiping a smart fix to restore full pressure.",
-  },
-  {
-    title: "Old Galvanized Pipes",
-    description: "Homes or businesses with outdated galvanized steel or polybutylene pipes are prone to corrosion, cracks, or bursts. Repiping is a proactive way to avoid major problems.",
-  },
-  {
-    title: "Repeated Pipe Reroutes",
-    description: "If you're constantly paying for plumbing repairs, a whole-house repipe can save you money and hassle in the long run with fewer repairs.",
-  },
-];
-
-const hiddenDangers = [
-  {
-    title: "Corrosion and Buildup",
-    description: "The calcium and magnesium in Southern California's water react with galvanized pipes, causing rust and mineral buildup inside. This narrows the pipes, reducing water flow and leading to frustratingly low water pressure. Over time, the corrosion weakens the pipes, making them prone to cracks and leaks.",
-  },
-  {
-    title: "Contaminated Water",
-    description: "As galvanized pipes corrode, rust and debris can mix with your water supply, turning clean water brown or rusty. This not only looks unappealing but can also pose health risks by affecting water quality.",
-  },
-  {
-    title: "Frequent and Costly Leaks",
-    description: "Corroded pipes are brittle and prone to breaking, leading to leaks that can damage walls, floors, and foundations. These leaks often go unnoticed until the damage is extensive, resulting in expensive repairs and potential mold growth.",
-  },
-  {
-    title: "Reduced Property Value",
-    description: "Outdated plumbing can scare off potential buyers if you're selling your home. Modern buyers expect reliable, updated systems, and galvanized pipes are a red flag for costly future repairs.",
-  },
-  {
-    title: "Unpredictable Failures",
-    description: "Even if your galvanized pipes seem fine now, their deterioration is inevitable. A sudden pipe burst can cause flooding, ruining furniture, flooring, and personal belongings, while driving up repair costs.",
-  },
-];
-
-const faqs = [
-  {
-    question: "What is whole-home repiping?",
-    answer: "Whole-home repipe involves replacing all the old or damaged pipes in your home with new, durable materials like PEX or copper. It addresses widespread plumbing issues to ensure a reliable water supply and prevent leaks or corrosion.",
-  },
-  {
-    question: "How do I know if my home needs a repipe?",
-    answer: "Signs include frequent leaks, discolored or rusty water, low water pressure, or pipes made of outdated materials like galvanized steel. If repairs are becoming frequent, a repipe may be a better long-term solution.",
-  },
-  {
-    question: "What materials are used for a whole-house repipe?",
-    answer: "Common materials include PEX, which is flexible and corrosion-resistant, and copper, which is durable but more expensive. We will explain the different solutions with the homeowner so they can make the best decision for their situation.",
-  },
-  {
-    question: "Are galvanized pipes really that bad?",
-    answer: "Yes, galvanized pipes corrode over time due to minerals in the water, leading to reduced water flow, leaks, and poor water quality. Replacing them prevents damage and health risks from rust.",
-  },
-  {
-    question: "Can I repipe just part of my home?",
-    answer: "Partial repiping is possible for specific problem areas, but whole-home repiping is often more cost-effective if pipes are old or deteriorating. It ensures the entire system is updated and reliable.",
-  },
-  {
-    question: "How long do new Pex pipes last?",
-    answer: "PEX pipes typically last 50-70 years or more with proper maintenance. Their lifespan depends on water quality and usage, but they're far more durable than galvanized pipes.",
-  },
-  {
-    question: "How long does a whole-home repipe take?",
-    answer: "A typical repipe for an average-sized home takes 2-3 days, depending on the size of the house and complexity of the plumbing system. In nearly all of all repipes we do, the water will be back on later the evening on the day we start. Larger homes or commercial properties may take longer.",
-  },
-  {
-    question: "How much does a whole-home repipe cost?",
-    answer: "Costs vary based on home size, pipe material, and labor, typically ranging from $10,000 to $20,000 for an average home. Factors like accessibility and the extent of pipe replacement affect the price.",
-  },
-];
 
 export function WholeHouseRepipeContent() {
   return (
@@ -107,301 +18,243 @@ export function WholeHouseRepipeContent() {
       <section className="relative overflow-hidden bg-gradient-to-b from-gray-50 to-white pt-20 pb-16 lg:pt-32 lg:pb-24">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="grid gap-12 lg:grid-cols-2 lg:gap-16 items-center">
-            {/* Content */}
             <motion.div
-              initial={{ opacity: 0, x: -30 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.6 }}
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5 }}
             >
-
-            <span className="inline-block px-4 py-1 rounded-full bg-[#EA5D19] text-sm text-white font-semibold mb-4 tracking-wide">
-              Premium Whole-House Repipe Service
-            </span>
-              <h1 className="text-4xl font-bold text-[#11110E] sm:text-5xl lg:text-6xl mb-6">
+              <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl lg:text-6xl mb-6">
                 Whole-House Repipe
               </h1>
-              <p className="text-xl text-gray-600 mb-8">
-                Is It Time to Repipe Your Home?
+              <p className="text-xl text-gray-600 mb-6">
+                Complete Plumbing System Replacement for Your Home
               </p>
               <p className="text-lg text-gray-700 leading-relaxed mb-4">
-                Are you tired of dealing with plumbing issues like low water pressure, discolored water, or constant leaks? These could be signs that your home needs repiping. We specialize in expert repiping services for both residential and commercial properties, ensuring your plumbing system is reliable, efficient, and built to last.
+                Dealing with frequent leaks, discolored water, or low water pressure?
               </p>
               <p className="text-lg text-gray-700 leading-relaxed mb-8">
-                Our experienced plumbers are ready to tackle full pipe replacements using high-quality materials, like copper or PEX, to upgrade old, worn-out, or damaged pipes. Whether your home's plumbing is corroding or your commercial property needs a large-scale overhaul, we tailor our services to fit your specific needs. We work hard to keep disruptions to a minimum, delivering a smooth installation process that restores your plumbing's performance and extends its lifespan.
+                Old, corroded pipes can cause serious damage to your home and drive up repair costs. Our whole-house repiping service replaces outdated plumbing with modern, reliable materials that last decades.
               </p>
               <Link
                 href="/quote"
-                className="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-[#EA5D19] to-[#FF6E2E] px-8 py-4 text-lg font-bold text-white shadow-lg hover:shadow-xl transition-all hover:scale-105"
+                className="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-[#EA5D19] to-[#FF6E2E] px-8 py-4 text-lg font-semibold text-white shadow-lg hover:shadow-xl transition-all duration-200 hover:scale-105"
               >
-                <Phone className="h-5 w-5" />
-                Get a Free Estimate Now!
+                Schedule an Appointment
+                <ArrowRight className="h-5 w-5" />
               </Link>
             </motion.div>
 
-            {/* Image */}
             <motion.div
-              initial={{ opacity: 0, x: 30 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.6, delay: 0.2 }}
-              className="relative h-[400px] lg:h-[500px] rounded-3xl overflow-hidden shadow-2xl"
+              initial={{ opacity: 0, scale: 0.95 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.5, delay: 0.2 }}
+              className="relative"
             >
-              <Image
-                src="/placeholderimage.webp"
-                alt="Whole-house repipe service"
-                fill
-                className="object-cover"
-                priority
-              />
+              <div className="relative h-[500px] w-full rounded-2xl overflow-hidden shadow-2xl">
+                <Image
+                  src="/placeholderimage.webp"
+                  alt="Professional whole-house repipe services"
+                  fill
+                  className="object-cover"
+                  priority
+                />
+              </div>
             </motion.div>
+          </div>
+
+          <div className="mt-12 bg-white rounded-3xl shadow-lg border border-gray-200 p-8 space-y-6 text-lg leading-relaxed text-gray-700">
+            <p>
+              Whole-house repiping replaces all the old, corroded pipes in your home with modern copper or PEX pipes that provide clean water, strong pressure, and reliable performance for 50+ years. If your home has galvanized steel or polybutylene pipes, you're at risk for frequent leaks, rust-colored water, and expensive water damage. Our expert <Link href="/plumbing" className="text-[#EA5D19] hover:underline font-semibold">plumbing services</Link> assess your system and recommend the best repiping solution.
+            </p>
+            <p>
+              Common signs you need repiping include multiple leaks in different locations, discolored or foul-smelling water, weak water pressure throughout the house, and visible corrosion on exposed pipes. Galvanized pipes corrode from the inside due to mineral buildup, restricting water flow and contaminating your water supply. Our repiping process involves replacing all supply lines while minimizing disruption to your daily routine. We also handle <Link href="/leak-detection-services" className="text-[#EA5D19] hover:underline font-semibold">leak detection services</Link> to identify hidden pipe damage before it causes major problems.
+            </p>
+            <p>
+              Modern PEX piping offers flexibility, freeze resistance, and faster installation compared to traditional copper, though both materials provide excellent longevity and performance. Our skilled plumbers work efficiently to complete most residential repipes in 3-7 days, ensuring your water remains functional each evening. Whether you're dealing with frequent emergency repairs or planning ahead to protect your investment, we deliver professional repiping services throughout the Inland Empire, including <Link href="/redlands" className="text-[#EA5D19] hover:underline font-semibold">Redlands</Link>, <Link href="/loma-linda" className="text-[#EA5D19] hover:underline font-semibold">Loma Linda</Link>, <Link href="/highland" className="text-[#EA5D19] hover:underline font-semibold">Highland</Link>, and <Link href="/san-bernardino" className="text-[#EA5D19] hover:underline font-semibold">San Bernardino</Link>.
+            </p>
           </div>
         </div>
       </section>
 
-{/* When Should You Consider Section */}
-<section className="py-20 bg-white">
-  <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-    <motion.div
-      initial={{ opacity: 0, y: 25 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true }}
-      transition={{ duration: 0.6 }}
-      className="text-center mb-14"
-    >
-      <h2 className="text-4xl sm:text-5xl font-extrabold text-[#11110E] mb-6">
-        When Should You Consider A Whole-House Repiping?
-      </h2>
-
-      <div className="h-1 w-20 bg-[#EA5D19] mx-auto rounded-full" />
-    </motion.div>
-
-    <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-3">
-      {considerReasons.map((reason, index) => (
-        <motion.div
-          key={index}
-          initial={{ opacity: 0, y: 25 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: index * 0.08 }}
-          viewport={{ once: true }}
-          className="rounded-2xl bg-white p-6 shadow-lg border border-gray-200 hover:shadow-xl hover:-translate-y-1 transition-all"
-        >
-          <div className="flex items-start gap-4 mb-4">
-            <div className="flex-shrink-0 w-8 h-8 rounded-full bg-[#EA5D19] flex items-center justify-center shadow-md">
-              <Check className="h-4 w-4 text-white" />
-            </div>
-            <h3 className="text-xl font-bold text-[#11110E] flex-1 leading-snug">
-              {reason.title}
-            </h3>
-          </div>
-
-          <p className="text-gray-700 leading-relaxed">
-            {reason.description}
-          </p>
-        </motion.div>
-      ))}
-    </div>
-  </div>
-</section>
-
-{/* Why You Should Replace Old Galvanized Pipes Section */}
-<section className="bg-gray-50 py-20">
-  <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-    <motion.div
-      initial={{ opacity: 0, y: 25 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true }}
-      transition={{ duration: 0.6 }}
-      className="mx-auto text-left"
-    >
-      <h2 className="text-4xl sm:text-5xl font-extrabold text-[#11110E] mb-6">
-        Why You Should Replace Old Galvanized Pipes
-      </h2>
-
-      <div className="h-1 w-20 bg-[#EA5D19] rounded-full mb-8" />
-
-      <p className="text-lg text-gray-700 leading-relaxed">
-        If your home or business still has old galvanized pipes, it's time to take action. These outdated pipes, once common in properties across the region, are a ticking time bomb due to the calcium and magnesium in our local water supply. Over time, these minerals cause galvanized pipes to corrode and deteriorate, leading to serious plumbing issues that can wreak havoc on your property. We are here to help you avoid costly damage with our expert repiping services, using high-quality PEX piping to ensure a reliable, long-lasting plumbing system.
-      </p>
-    </motion.div>
-  </div>
-</section>
-
-{/* 5 Hidden Dangers Section */}
-<section className="py-20 bg-white">
-  <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-    <motion.div
-      initial={{ opacity: 0, y: 25 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true }}
-      transition={{ duration: 0.6 }}
-      className="text-center mb-14"
-    >
-      <h2 className="text-4xl sm:text-5xl font-extrabold text-[#11110E] mb-6">
-        5 Hidden Dangers of Galvanized Pipes
-      </h2>
-
-      <div className="h-1 w-20 bg-[#EA5D19] mx-auto rounded-full mb-8" />
-
-      <p className="text-lg text-gray-700 leading-relaxed mx-auto">
-        Galvanized pipes, made of steel coated with zinc, were popular decades ago but are now a major liability. Here's why they're so problematic for your home or business:
-      </p>
-    </motion.div>
-
-    <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-3">
-      {hiddenDangers.map((danger, index) => (
-        <motion.div
-          key={index}
-          initial={{ opacity: 0, y: 25 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: index * 0.08 }}
-          viewport={{ once: true }}
-          className="rounded-2xl bg-white p-6 shadow-lg border border-gray-200 hover:shadow-xl hover:-translate-y-1 transition-all"
-        >
-          <div className="flex items-start gap-4 mb-4">
-            <div className="flex-shrink-0 w-8 h-8 rounded-full bg-[#EA5D19] flex items-center justify-center shadow-md">
-              <Check className="h-4 w-4 text-white" />
-            </div>
-            <h3 className="text-xl font-bold text-[#11110E] flex-1 leading-snug">
-              {danger.title}
-            </h3>
-          </div>
-
-          <p className="text-gray-700 leading-relaxed">
-            {danger.description}
-          </p>
-        </motion.div>
-      ))}
-    </div>
-
-    <motion.div
-      initial={{ opacity: 0, y: 25 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true }}
-      transition={{ duration: 0.6, delay: 0.5 }}
-      className="text-center mt-12"
-    >
-      <p className="text-lg text-gray-700 leading-relaxed max-w-5xl mx-auto">
-        Replacing galvanized pipes before they fail is a proactive investment that saves you from these headaches. By upgrading to modern PEX piping, you'll enjoy better water flow, cleaner water, and peace of mind knowing your plumbing system is built to last.
-      </p>
-    </motion.div>
-  </div>
-</section>
-
-      {/* Trusted Brands Section */}
-      <section className="bg-gray-50 py-16 lg:py-24">
+      {/* Benefits Section */}
+      <section className="py-20 bg-gray-50">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
             viewport={{ once: true }}
-            className="mx-auto max-w-7xl text-center relative z-20"
+            transition={{ duration: 0.5 }}
+            className="text-center mb-16"
           >
-            <h2 className="text-3xl font-bold text-[#11110E] sm:text-4xl mb-8">
-              Trusted Brands
+            <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl mb-4">
+              Why Choose Whole-House Repiping?
             </h2>
+            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+              Modern plumbing solutions that protect your home and family
+            </p>
+          </motion.div>
 
-            <div className="h-1 w-20 bg-[#EA5D19] mx-auto rounded-full mb-8" />
+          <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
+            {[
+              {
+                title: "Eliminate Leaks",
+                description: "Stop recurring leaks from corroded pipes that damage walls, floors, and foundations. New pipes eliminate the constant cycle of patch repairs and emergency calls. Prevent water damage, mold growth, and structural issues with a complete system replacement.",
+                icon: Droplets,
+              },
+              {
+                title: "Improve Water Quality",
+                description: "End rust-colored, foul-smelling water caused by corroded galvanized pipes. Modern pipes deliver clean, clear water free from metal contamination and sediment. Protect your family's health with safe drinking water and improved taste throughout your home.",
+                icon: Shield,
+              },
+              {
+                title: "Increase Water Pressure",
+                description: "Restore strong, consistent water flow to all fixtures. Corroded pipes narrow from mineral buildup, reducing pressure dramatically. New pipes provide full water pressure for showers, faucets, and appliances, improving daily comfort and appliance efficiency.",
+                icon: Home,
+              },
+              {
+                title: "Long-Term Solution",
+                description: "Invest in pipes that last 50-100 years with proper maintenance. Stop wasting money on temporary repairs and rising water bills. PEX and copper pipes resist corrosion, freeze damage, and leaks, providing reliable performance and peace of mind for decades.",
+                icon: Wrench,
+              },
+            ].map((benefit, index) => (
+              <motion.div
+                key={benefit.title}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: index * 0.1 }}
+                className="rounded-2xl bg-white p-8 shadow-lg border border-gray-200"
+              >
+                <div className="mb-4 inline-flex rounded-lg bg-[#EA5D19] p-3">
+                  <benefit.icon className="h-6 w-6 text-white" />
+                </div>
+                <h3 className="text-xl font-bold text-gray-900 mb-3">
+                  {benefit.title}
+                </h3>
+                <p className="text-gray-600">{benefit.description}</p>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
 
-            <div className="grid grid-cols-2 gap-6 md:grid-cols-3 lg:grid-cols-5 items-center relative z-20 min-h-[120px]">
-              {brands.map((brand, index) => (
-                <motion.div
-                  key={brand.name}
-                  initial={{ opacity: 0, scale: 0.85 }}
-                  whileInView={{ opacity: 1, scale: 1 }}
-                  transition={{ duration: 0.5, delay: index * 0.1 }}
-                  viewport={{ once: true }}
-                  className="flex items-center justify-center grayscale hover:grayscale-0 transition-all duration-300"
-                >
-                  <div className="relative h-20 w-28 mx-auto z-20">
-                    <Image
-                      src={brand.image}
-                      alt={`${brand.name} logo - trusted water heater brand`}
-                      fill
-                      sizes="100px"
-                      className="object-contain z-20"
-                    />
-                  </div>
-                </motion.div>
-              ))}
+      {/* CTA Section */}
+      <section className="py-20 bg-gradient-to-r from-[#EA5D19] to-[#FF6E2E]">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 text-center">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5 }}
+          >
+            <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl mb-6">
+              Get a Free Estimate Today!
+            </h2>
+            <p className="text-xl text-white/90 mb-8 max-w-2xl mx-auto">
+              Don't wait for old pipes to fail and cause expensive damage. Contact us today for expert whole-house repiping services.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Link
+                href="tel:+18006974014"
+                className="inline-flex items-center justify-center gap-2 rounded-full bg-white px-8 py-4 text-lg font-semibold text-[#EA5D19] shadow-lg hover:shadow-xl transition-all duration-200 hover:scale-105"
+              >
+                <Phone className="h-5 w-5" />
+                (800) 697-4014
+              </Link>
+              <Link
+                href="/quote"
+                className="inline-flex items-center justify-center gap-2 rounded-full bg-[#11110E] px-8 py-4 text-lg font-semibold text-white shadow-lg hover:shadow-xl transition-all duration-200 hover:scale-105"
+              >
+                Get Free Quote
+                <ArrowRight className="h-5 w-5" />
+              </Link>
             </div>
           </motion.div>
         </div>
       </section>
 
       {/* FAQ Section */}
-      <section className="py-16 lg:py-24">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <section className="py-20 bg-white">
+        <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
             viewport={{ once: true }}
-            className="mx-auto max-w-6xl"
+            transition={{ duration: 0.5 }}
+            className="text-center mb-16"
           >
-            <h2 className="text-3xl font-bold text-[#11110E] sm:text-4xl mb-8 text-center">
+            <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl mb-4">
               Frequently Asked Questions
             </h2>
-
-            <div className="h-1 w-20 bg-[#EA5D19] mx-auto rounded-full mb-8" />
-            <Accordion type="single" collapsible className="space-y-4">
-              {faqs.map((faq, index) => (
-                <motion.div
-                  key={index}
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.5, delay: index * 0.05 }}
-                  viewport={{ once: true }}
-                >
-                  <AccordionItem
-                    value={`item-${index}`}
-                    className="rounded-2xl bg-white px-6 shadow-md border-0"
-                  >
-                    <AccordionTrigger className="text-left font-semibold text-[#11110E] hover:text-[#EA5D19] py-6 flex items-start justify-between gap-2">
-                      <span className="flex-shrink-0 mr-2 text-[#EA5D19] font-bold">
-                        {String(index + 1).padStart(2, "0")}
-                      </span>
-                      <span className="flex-grow text-collapse-fix">
-                        {faq.question}
-                      </span>
-                    </AccordionTrigger>
-                    <AccordionContent className="text-gray-700 pb-6">
-                      {faq.answer}
-                    </AccordionContent>
-                  </AccordionItem>
-                </motion.div>
-              ))}
-            </Accordion>
-          </motion.div>
-        </div>
-      </section>
-
-      {/* CTA Section */}
-      <section className="bg-gradient-to-r from-[#EA5D19] to-[#FF6E2E] py-16 lg:py-24">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-            viewport={{ once: true }}
-            className="text-center"
-          >
-            <h2 className="text-3xl font-bold text-white sm:text-4xl mb-6">
-              Get a Free Estimate Now!
-            </h2>
-
-            <div className="h-1 w-20 bg-[#FFFF] mx-auto rounded-full mb-8" />
-
-            <p className="text-xl text-white/90 mb-8 max-w-7xl mx-auto">
-              Don't wait for old pipes to fail. Contact us today for expert whole-house repiping services and protect your home from costly damage.
+            <p className="text-xl text-gray-600">
+              Common questions about whole-house repiping
             </p>
-            <Link
-              href="/quote"
-              className="inline-flex items-center gap-2 rounded-full bg-white px-8 py-4 text-lg font-bold text-[#EA5D19] shadow-lg hover:shadow-xl transition-all hover:scale-105"
-            >
-              <Phone className="h-5 w-5" />
-              Request Your Free Quote
-            </Link>
           </motion.div>
+
+          <Accordion type="single" collapsible className="space-y-4">
+            <AccordionItem value="item-1" className="border rounded-lg px-6 bg-gray-50">
+              <AccordionTrigger className="text-left text-lg font-semibold hover:text-[#EA5D19] transition-colors">
+                How do I know if my home needs repiping?
+              </AccordionTrigger>
+              <AccordionContent className="text-gray-600 text-base leading-relaxed">
+                Signs include frequent leaks in multiple locations, discolored or rusty water, consistently low water pressure, visible corrosion on exposed pipes, or if your home has galvanized steel or polybutylene pipes. If you're making frequent repair calls, repiping is often more cost-effective.
+              </AccordionContent>
+            </AccordionItem>
+
+            <AccordionItem value="item-2" className="border rounded-lg px-6 bg-gray-50">
+              <AccordionTrigger className="text-left text-lg font-semibold hover:text-[#EA5D19] transition-colors">
+                How long does a whole-house repipe take?
+              </AccordionTrigger>
+              <AccordionContent className="text-gray-600 text-base leading-relaxed">
+                Most residential repipes take 3-7 days depending on home size and complexity. We work efficiently to minimize disruption, and in most cases, water service is restored each evening so you can use your plumbing overnight.
+              </AccordionContent>
+            </AccordionItem>
+
+            <AccordionItem value="item-3" className="border rounded-lg px-6 bg-gray-50">
+              <AccordionTrigger className="text-left text-lg font-semibold hover:text-[#EA5D19] transition-colors">
+                What's the difference between copper and PEX pipes?
+              </AccordionTrigger>
+              <AccordionContent className="text-gray-600 text-base leading-relaxed">
+                Both are excellent long-term solutions. Copper pipes are traditional, extremely durable, and last 50-100 years but cost more. PEX is flexible, freeze-resistant, faster to install, and typically less expensive. We'll recommend the best option based on your home's needs and budget.
+              </AccordionContent>
+            </AccordionItem>
+
+            <AccordionItem value="item-4" className="border rounded-lg px-6 bg-gray-50">
+              <AccordionTrigger className="text-left text-lg font-semibold hover:text-[#EA5D19] transition-colors">
+                Will repiping damage my walls and ceilings?
+              </AccordionTrigger>
+              <AccordionContent className="text-gray-600 text-base leading-relaxed">
+                Some access points need to be opened to reach pipes, but we minimize damage by using strategic access points and careful workmanship. Any necessary drywall repairs are part of the service. The long-term benefits far outweigh the temporary inconvenience.
+              </AccordionContent>
+            </AccordionItem>
+
+            <AccordionItem value="item-5" className="border rounded-lg px-6 bg-gray-50">
+              <AccordionTrigger className="text-left text-lg font-semibold hover:text-[#EA5D19] transition-colors">
+                How much does a whole-house repipe cost?
+              </AccordionTrigger>
+              <AccordionContent className="text-gray-600 text-base leading-relaxed">
+                Costs vary based on home size, pipe material choice, and complexity. While it's a significant investment, repiping eliminates ongoing repair costs, prevents major water damage, and adds value to your home. Contact us for a free, detailed estimate tailored to your specific situation.
+              </AccordionContent>
+            </AccordionItem>
+
+            <AccordionItem value="item-6" className="border rounded-lg px-6 bg-gray-50">
+              <AccordionTrigger className="text-left text-lg font-semibold hover:text-[#EA5D19] transition-colors">
+                Can I stay in my home during the repipe?
+              </AccordionTrigger>
+              <AccordionContent className="text-gray-600 text-base leading-relaxed">
+                Yes, most homeowners stay in their homes during repiping. We restore water service each evening and work efficiently to minimize disruption. You'll have temporary interruptions during work hours, but we coordinate with you to make the process as convenient as possible.
+              </AccordionContent>
+            </AccordionItem>
+
+            <AccordionItem value="item-7" className="border rounded-lg px-6 bg-gray-50">
+              <AccordionTrigger className="text-left text-lg font-semibold hover:text-[#EA5D19] transition-colors">
+                Why are galvanized pipes so problematic?
+              </AccordionTrigger>
+              <AccordionContent className="text-gray-600 text-base leading-relaxed">
+                Galvanized pipes corrode from the inside due to mineral buildup in the water. This causes rust contamination, reduced water pressure, frequent leaks, and poor water quality. They typically fail after 40-50 years and should be replaced before causing serious water damage.
+              </AccordionContent>
+            </AccordionItem>
+          </Accordion>
         </div>
       </section>
     </>

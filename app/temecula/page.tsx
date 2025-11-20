@@ -1,11 +1,25 @@
-import { StubPage } from "@/components/StubPage";
 import type { Metadata } from "next";
+import { TemeculaContent } from "@/components/temecula/TemeculaContent";
 
 export const metadata: Metadata = {
-  title: "Water Heater Services in Temecula, CA",
-  description: "Expert water heater repair and installation services in Temecula, CA. Same-day service available.",
+  title: "Temecula Plumbers & Water Heater Repair | Water Heater SOS",
+  description:
+    "5-Star rated plumbing services in Temecula, CA. Fast water heater repair, installation, drain cleaning & more. Licensed, insured & available 24/7. Call now!",
+  keywords: [
+    "Temecula plumber",
+    "water heater repair Temecula",
+    "emergency plumbing Temecula",
+    "drain cleaning Temecula",
+    "tankless water heater Temecula",
+  ],
+  openGraph: {
+    title: "Temecula Plumbers & Water Heater Repair | Water Heater SOS",
+    description:
+      "5-Star rated plumbing services in Temecula, CA. Fast water heater repair, installation, drain cleaning & more. Licensed, insured & available 24/7.",
+    type: "website",
+  },
 };
 
 export default function TemeculaPage() {
-  return <StubPage title="Water Heater Services in Temecula, CA" />;
+  return <TemeculaContent />;
 }

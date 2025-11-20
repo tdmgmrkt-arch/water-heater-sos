@@ -1,11 +1,28 @@
-import { StubPage } from "@/components/StubPage";
 import type { Metadata } from "next";
+import { HighlandContent } from "@/components/highland/HighlandContent";
 
 export const metadata: Metadata = {
-  title: "Water Heater Services in Highland, CA",
-  description: "Expert water heater repair and installation services in Highland, CA. Same-day service available.",
+  title: "Highland Plumbers & Water Heater Repair | Water Heater SOS",
+  description:
+    "Expert plumbing services in Highland, CA. Water heater repair & replacement, leak detection, drain cleaning, and more. Call (800) 697-4014!",
+  keywords: [
+    "Highland plumber",
+    "water heater repair Highland",
+    "plumbing services Highland CA",
+    "tankless water heater Highland",
+    "emergency plumber Highland",
+    "leak detection Highland",
+    "drain cleaning Highland",
+  ],
+  openGraph: {
+    title: "Highland Plumbers & Water Heater Repair | Water Heater SOS",
+    description:
+      "Expert plumbing services in Highland, CA. Water heater repair & replacement, leak detection, and more.",
+    type: "website",
+    url: "https://waterheatersos.com/highland",
+  },
 };
 
 export default function HighlandPage() {
-  return <StubPage title="Water Heater Services in Highland, CA" />;
+  return <HighlandContent />;
 }

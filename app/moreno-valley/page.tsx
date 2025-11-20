@@ -1,11 +1,25 @@
-import { StubPage } from "@/components/StubPage";
 import type { Metadata } from "next";
+import { MorenoValleyContent } from "@/components/moreno-valley/MorenoValleyContent";
 
 export const metadata: Metadata = {
-  title: "Water Heater Services in Moreno Valley, CA",
-  description: "Expert water heater repair and installation services in Moreno Valley, CA. Same-day service available.",
+  title: "Moreno Valley Plumbers & Water Heater Repair | Water Heater SOS",
+  description:
+    "Expert plumbing services in Moreno Valley, CA. Fast water heater repair, installation, drain cleaning & more. Licensed, insured & available 24/7. Call now!",
+  keywords: [
+    "Moreno Valley plumber",
+    "water heater repair Moreno Valley",
+    "emergency plumbing Moreno Valley",
+    "drain cleaning Moreno Valley",
+    "tankless water heater Moreno Valley",
+  ],
+  openGraph: {
+    title: "Moreno Valley Plumbers & Water Heater Repair | Water Heater SOS",
+    description:
+      "Expert plumbing services in Moreno Valley, CA. Fast water heater repair, installation, drain cleaning & more. Licensed, insured & available 24/7.",
+    type: "website",
+  },
 };
 
 export default function MorenoValleyPage() {
-  return <StubPage title="Water Heater Services in Moreno Valley, CA" />;
+  return <MorenoValleyContent />;
 }

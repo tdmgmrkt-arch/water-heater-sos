@@ -1,11 +1,25 @@
-import { StubPage } from "@/components/StubPage";
 import type { Metadata } from "next";
+import { AnaheimHillsContent } from "@/components/anaheim-hills/AnaheimHillsContent";
 
 export const metadata: Metadata = {
-  title: "Water Heater Services in Anaheim Hills, CA",
-  description: "Expert water heater repair and installation services in Anaheim Hills, CA. Same-day service available.",
+  title: "Anaheim Hills Plumbers & Water Heater Repair | Water Heater SOS",
+  description:
+    "Quality plumbing services in Anaheim Hills, CA. Fast water heater repair, installation, drain cleaning & more. Licensed, insured & available 24/7. Call now!",
+  keywords: [
+    "Anaheim Hills plumber",
+    "water heater repair Anaheim Hills",
+    "emergency plumbing Anaheim Hills",
+    "drain cleaning Anaheim Hills",
+    "tankless water heater Anaheim Hills",
+  ],
+  openGraph: {
+    title: "Anaheim Hills Plumbers & Water Heater Repair | Water Heater SOS",
+    description:
+      "Quality plumbing services in Anaheim Hills, CA. Fast water heater repair, installation, drain cleaning & more. Licensed, insured & available 24/7.",
+    type: "website",
+  },
 };
 
 export default function AnaheimHillsPage() {
-  return <StubPage title="Water Heater Services in Anaheim Hills, CA" />;
+  return <AnaheimHillsContent />;
 }

@@ -1,11 +1,25 @@
-import { StubPage } from "@/components/StubPage";
 import type { Metadata } from "next";
+import { PerrisContent } from "@/components/perris/PerrisContent";
 
 export const metadata: Metadata = {
-  title: "Water Heater Services in Perris, CA",
-  description: "Expert water heater repair and installation services in Perris, CA. Same-day service available.",
+  title: "Perris Plumbers & Water Heater Repair | Water Heater SOS",
+  description:
+    "Professional plumbing services in Perris, CA. Fast water heater repair, installation, drain cleaning & more. Licensed, insured & available 24/7. Call now!",
+  keywords: [
+    "Perris plumber",
+    "water heater repair Perris",
+    "emergency plumbing Perris",
+    "drain cleaning Perris",
+    "tankless water heater Perris",
+  ],
+  openGraph: {
+    title: "Perris Plumbers & Water Heater Repair | Water Heater SOS",
+    description:
+      "Professional plumbing services in Perris, CA. Fast water heater repair, installation, drain cleaning & more. Licensed, insured & available 24/7.",
+    type: "website",
+  },
 };
 
 export default function PerrisPage() {
-  return <StubPage title="Water Heater Services in Perris, CA" />;
+  return <PerrisContent />;
 }

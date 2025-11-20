@@ -1,11 +1,25 @@
-import { StubPage } from "@/components/StubPage";
 import type { Metadata } from "next";
+import { YorbaLindaContent } from "@/components/yorba-linda/YorbaLindaContent";
 
 export const metadata: Metadata = {
-  title: "Water Heater Services in Yorba Linda, CA",
-  description: "Expert water heater repair and installation services in Yorba Linda, CA. Same-day service available.",
+  title: "Yorba Linda Plumbers & Water Heater Repair | Water Heater SOS",
+  description:
+    "Your plumbing pros in Yorba Linda, CA. Fast water heater repair, installation, drain cleaning & more. Licensed, insured & available 24/7. Call now!",
+  keywords: [
+    "Yorba Linda plumber",
+    "water heater repair Yorba Linda",
+    "emergency plumbing Yorba Linda",
+    "drain cleaning Yorba Linda",
+    "tankless water heater Yorba Linda",
+  ],
+  openGraph: {
+    title: "Yorba Linda Plumbers & Water Heater Repair | Water Heater SOS",
+    description:
+      "Your plumbing pros in Yorba Linda, CA. Fast water heater repair, installation, drain cleaning & more. Licensed, insured & available 24/7.",
+    type: "website",
+  },
 };
 
 export default function YorbaLindaPage() {
-  return <StubPage title="Water Heater Services in Yorba Linda, CA" />;
+  return <YorbaLindaContent />;
 }
