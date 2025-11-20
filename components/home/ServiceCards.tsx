@@ -8,6 +8,7 @@ import { ArrowRight, Flame, Droplets, Zap, Check } from "lucide-react";
 const services = [
   {
     title: "Gas Water Heaters",
+    subtitle: "",
     image: "/gas-water-heater-.webp",
     href: "/gas-water-heaters",
     description: "Traditional, reliable, and cost-effective heating solutions",
@@ -17,6 +18,7 @@ const services = [
   },
   {
     title: "Water Filtration System",
+    subtitle: "",
     image: "/water-filtration-system.webp",
     href: "/water-filtration",
     description: "Whole-house water purification for healthier living",
@@ -26,6 +28,7 @@ const services = [
   },
   {
     title: "Tankless Water Heaters",
+    subtitle: "",
     image: "/tankless-water-heater.webp",
     href: "/tankless-water-heaters",
     description: "Energy-efficient, endless hot water on demand",
@@ -110,7 +113,7 @@ export function ServiceCards() {
                       {/* Title Overlay */}
                       <div className=" absolute bottom-4 left-4 right-4 z-20">
                         {service.subtitle && (
-                          <p className="text-sm text-white/90 font-medium">{service.subtitle}</p>
+                          <p className="text-sm text-[#EA5D19] font-medium">{service.subtitle}</p>
                         )}
                       </div>
                     </div>
