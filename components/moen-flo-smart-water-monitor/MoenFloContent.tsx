@@ -3,7 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
-import { ArrowRight, Search, Phone, Shield, Clock } from "lucide-react";
+import { ArrowRight, Droplets, Wrench, Phone, CheckCircle2, Shield, Bell, Smartphone } from "lucide-react";
 import {
   Accordion,
   AccordionContent,
@@ -11,7 +11,7 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 
-export function LeakDetectionServicesContent() {
+export function MoenFloContent() {
   return (
     <>
       {/* Hero Section */}
@@ -24,16 +24,16 @@ export function LeakDetectionServicesContent() {
               transition={{ duration: 0.5 }}
             >
               <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl lg:text-6xl mb-6">
-                Leak Detection Services
+                Moen Flo Leak Detection Installation
               </h1>
               <p className="text-xl text-gray-600 mb-6">
-                Advanced Technology to Find Hidden Leaks Fast
+                Redlands, Yucaipa, Highland, Loma Linda & San Bernardino
               </p>
               <p className="text-lg text-gray-700 leading-relaxed mb-4">
-                Suspect a slab leak or hidden leak in your walls?
+                Are you looking to protect your home from water damage?
               </p>
               <p className="text-lg text-gray-700 leading-relaxed mb-8">
-                Hidden water leaks cause serious damage to foundations, walls, and floors while wasting water and driving up bills. Our advanced leak detection services use specialized equipment to locate leaks without destructive digging or wall removal.
+                Does your homeowner's insurance policy require a plumber to install a Moen Flo leak detection device?
               </p>
               <Link
                 href="/quote"
@@ -52,8 +52,8 @@ export function LeakDetectionServicesContent() {
             >
               <div className="relative h-[500px] w-full rounded-2xl overflow-hidden shadow-2xl">
                 <Image
-                  src="/placeholderimage.webp"
-                  alt="Professional leak detection services"
+                  src="/Moen.webp"
+                  alt="Moen Flo Smart Water Monitor installation"
                   fill
                   className="object-cover"
                   priority
@@ -64,13 +64,13 @@ export function LeakDetectionServicesContent() {
 
           <div className="mt-12 bg-white rounded-3xl shadow-lg border border-gray-200 p-8 space-y-6 text-lg leading-relaxed text-gray-700">
             <p>
-              Leak detection services use advanced technology including acoustic listening devices, infrared cameras, moisture detectors, and video inspection equipment to locate hidden water leaks in walls, under slabs, and throughout your plumbing system without causing property damage. Signs of hidden leaks include unexplained water bill increases, damp or warm floor spots, reduced water pressure, cracks in floors or walls, musty odors, visible mold growth, and sounds of running water when fixtures are off. Our professional <Link href="/plumbing" className="text-[#EA5D19] hover:underline font-semibold">plumbing services</Link> quickly identify leak locations so repairs can begin immediately, preventing extensive damage and costly restoration work.
+              We install Moen Flo leak detection shut-off systems. In fact, we install several of these devices every week in the nearby cities of <Link href="/redlands" className="text-[#EA5D19] hover:underline font-semibold">Redlands</Link>, <Link href="/loma-linda" className="text-[#EA5D19] hover:underline font-semibold">Loma Linda</Link>, <Link href="/highland" className="text-[#EA5D19] hover:underline font-semibold">Highland</Link>, <Link href="/san-bernardino" className="text-[#EA5D19] hover:underline font-semibold">San Bernardino</Link>, <Link href="/rialto" className="text-[#EA5D19] hover:underline font-semibold">Rialto</Link>, <Link href="/yucaipa" className="text-[#EA5D19] hover:underline font-semibold">Yucaipa</Link>, and <Link href="/riverside" className="text-[#EA5D19] hover:underline font-semibold">Riverside</Link>. Once installed by one of our professional plumbers, we will provide you with a letter for your homeowner's insurance that verifies you had a Moen Flo leak shut-off professionally installed.
             </p>
             <p>
-              Slab leaks occur when water lines running beneath your home's concrete foundation develop cracks or corrosion, allowing water to escape under pressure. These leaks are particularly dangerous because they go unnoticed for extended periods, saturating soil beneath foundations, causing structural shifts, cracking floors and walls, and creating ideal conditions for mold growth. Common causes include ground settling shifting pipes, corrosion from soil chemistry or water quality, poor installation during construction, and excessive water pressure stressing pipe connections. We also handle <Link href="/whole-house-repipe" className="text-[#EA5D19] hover:underline font-semibold">whole-house repiping</Link> when multiple leaks indicate systemic plumbing problems.
+              Water damage can be costly and devastating for homeowners. It can cause extensive damage to property and belongings, and the longer it goes untreated, the worse it gets. With a Moen Flo Smart Water Monitor, you can help deter a water leak emergency and appease your homeowner's insurance at the same time.
             </p>
             <p>
-              Our leak detection process begins with comprehensive testing including pressure tests to verify system integrity, acoustic detection to hear water escaping pipes, infrared thermal imaging to identify temperature variations from leaking water, and video camera inspection for visual confirmation. Once we locate the leak precisely, we recommend the most effective repair approach - spot repairs for isolated leaks, trenchless repairs to minimize excavation, pipe rerouting to bypass damaged sections, or complete line replacement for extensively corroded pipes. Early detection prevents minor leaks from becoming major disasters, protecting your home and saving thousands in potential damage repairs. We proudly serve homeowners throughout the Inland Empire, including <Link href="/redlands" className="text-[#EA5D19] hover:underline font-semibold">Redlands</Link>, <Link href="/loma-linda" className="text-[#EA5D19] hover:underline font-semibold">Loma Linda</Link>, <Link href="/highland" className="text-[#EA5D19] hover:underline font-semibold">Highland</Link>, and <Link href="/san-bernardino" className="text-[#EA5D19] hover:underline font-semibold">San Bernardino</Link>.
+              We offer expert installation of the Moen Flo Leak Detection device across the Inland Empire, serving areas like <Link href="/rancho-cucamonga" className="text-[#EA5D19] hover:underline font-semibold">Rancho Cucamonga</Link>, Big Bear, and <Link href="/riverside" className="text-[#EA5D19] hover:underline font-semibold">Riverside</Link>.
             </p>
           </div>
         </div>
@@ -87,34 +87,34 @@ export function LeakDetectionServicesContent() {
             className="text-center mb-16"
           >
             <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl mb-4">
-              Why Choose Professional Leak Detection?
+              Why Install A Moen Flo Smart Water Monitor?
             </h2>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-              Advanced technology finds leaks without damaging your property
+              Protect your home with advanced leak detection technology
             </p>
           </motion.div>
 
           <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
             {[
               {
-                title: "Non-Invasive Detection",
-                description: "Our advanced equipment locates leaks behind walls, under slabs, and throughout your plumbing without tearing up floors, cutting walls, or digging up yards. Acoustic devices, infrared cameras, and moisture detectors pinpoint exact leak locations, preserving your property while providing accurate results.",
-                icon: Search,
+                title: "Leak Detection",
+                description: "The Moen Flo Smart Water Monitor can detect leaks in your plumbing system. It uses advanced technology to monitor water flow and pressure and can alert you if it detects a leak. This can help you catch problems early and prevent costly water damage.",
+                icon: Droplets,
               },
               {
-                title: "Prevent Major Damage",
-                description: "Hidden leaks cause foundation damage, mold growth, structural deterioration, and costly repairs if left undetected. Early leak detection stops small problems before they become disasters. Protect your home's foundation, walls, and floors by catching leaks early.",
+                title: "Water Usage Monitoring",
+                description: "The Moen Flo Smart Water Monitor tracks your water usage, allowing you to see how much water you use and where it goes. This can help you identify areas where you can conserve water and save money on your water bill.",
+                icon: CheckCircle2,
+              },
+              {
+                title: "Automatic Shutoff",
+                description: "If the Moen Flo Smart Water Monitor detects a leak, it can automatically shut off your water supply to prevent further damage. This can be a lifesaver if you're away from home and a pipe bursts.",
                 icon: Shield,
               },
               {
-                title: "Fast & Accurate",
-                description: "Most leak detection services complete within 1-2 hours, immediately identifying problem locations without guesswork. Once we locate the leak, repairs can begin right away, minimizing water damage and restoration costs while getting your plumbing fixed quickly.",
-                icon: Clock,
-              },
-              {
-                title: "Save Money",
-                description: "Hidden leaks waste thousands of gallons monthly, spiking water bills dramatically. Leak detection identifies the source immediately, stopping water waste and preventing expensive damage repairs. Early detection saves money on bills, repairs, and restoration work.",
-                icon: ArrowRight,
+                title: "Remote Access",
+                description: "The Moen Flo Smart Water Monitor can be controlled remotely using a smartphone.",
+                icon: Smartphone,
               },
             ].map((benefit, index) => (
               <motion.div
@@ -148,10 +148,10 @@ export function LeakDetectionServicesContent() {
             transition={{ duration: 0.5 }}
           >
             <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl mb-6">
-              Get a Free Estimate Today!
+              Schedule an Appointment Today!
             </h2>
             <p className="text-xl text-white/90 mb-8 max-w-2xl mx-auto">
-              Don't let hidden leaks damage your home. Contact us today for professional leak detection and repair services.
+              Protect your home from water damage with professional Moen Flo installation. Call now!
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
@@ -187,80 +187,71 @@ export function LeakDetectionServicesContent() {
               Frequently Asked Questions
             </h2>
             <p className="text-xl text-gray-600">
-              Common questions about leak detection services
+              Common questions about Moen Flo Smart Water Monitor
             </p>
           </motion.div>
 
           <Accordion type="single" collapsible className="space-y-4">
             <AccordionItem value="item-1" className="border rounded-lg px-6 bg-gray-50">
               <AccordionTrigger className="text-left text-lg font-semibold hover:text-[#EA5D19] transition-colors">
-                What are leak detection services?
+                What is a smart home water shut-off valve?
               </AccordionTrigger>
               <AccordionContent className="text-gray-600 text-base leading-relaxed">
-                Leak detection services use advanced tools like acoustic devices, infrared cameras, moisture detectors, and video inspection equipment to find hidden water leaks in your home's plumbing without tearing up property. We locate leaks in pipes, slabs, and walls with precision to prevent damage and save money through non-invasive methods.
+                A smart home water shut-off valve is a device that can automatically shut off the water supply to your home in case of a leak or burst pipe. It's usually installed on the main water supply line and can be controlled remotely through a smartphone app.
               </AccordionContent>
             </AccordionItem>
 
             <AccordionItem value="item-2" className="border rounded-lg px-6 bg-gray-50">
               <AccordionTrigger className="text-left text-lg font-semibold hover:text-[#EA5D19] transition-colors">
-                Can leak detection find slab leaks under my foundation?
+                How does a smart home water shut-off valve work?
               </AccordionTrigger>
               <AccordionContent className="text-gray-600 text-base leading-relaxed">
-                Yes, our advanced tools including acoustic leak detection and infrared cameras are specifically designed to locate slab leaks hidden beneath your home's foundation. These leaks can be difficult to spot but cause serious damage if ignored, so professional detection is essential.
+                Smart home water shut-off valves use sensors to detect leaks or abnormal water usage. When a leak is detected, the valve automatically shuts off the water supply to prevent further damage. Some valves can also send alerts to your smartphone or email.
               </AccordionContent>
             </AccordionItem>
 
             <AccordionItem value="item-3" className="border rounded-lg px-6 bg-gray-50">
               <AccordionTrigger className="text-left text-lg font-semibold hover:text-[#EA5D19] transition-colors">
-                How long does a leak detection service take?
+                How much does a smart home water shut-off valve cost?
               </AccordionTrigger>
               <AccordionContent className="text-gray-600 text-base leading-relaxed">
-                Most leak detection jobs take one to two hours, depending on your home's size and the complexity of the issue. Once we locate the leak, we can often begin repairs immediately.
+                The cost varies depending on the brand and features. The Moen Flo Smart Water Monitor costs about $500 but there are some less expensive models on the market. This price does not include installation by a professional plumber.
               </AccordionContent>
             </AccordionItem>
 
             <AccordionItem value="item-4" className="border rounded-lg px-6 bg-gray-50">
               <AccordionTrigger className="text-left text-lg font-semibold hover:text-[#EA5D19] transition-colors">
-                What happens after you find a leak?
+                Do I need a plumber to install a smart home water shut-off valve?
               </AccordionTrigger>
               <AccordionContent className="text-gray-600 text-base leading-relaxed">
-                Once we locate the leak, our team explains the issue and recommends the best repair options like pipe rerouting, trenchless repairs, or targeted spot repairs. We work quickly to fix the leak, preventing further damage to your home with minimal hassle. You'll know exactly what's happening every step of the way.
+                In most cases, yes. Smart home water shut-off valves require professional installation by a licensed plumber, and if your homeowner's insurance requires one, they will want a letter stating it was done by a certified professional.
               </AccordionContent>
             </AccordionItem>
 
             <AccordionItem value="item-5" className="border rounded-lg px-6 bg-gray-50">
               <AccordionTrigger className="text-left text-lg font-semibold hover:text-[#EA5D19] transition-colors">
-                Can leak detection help prevent mold in my home?
+                Do I need Wi-Fi for my smart water shut-off monitor?
               </AccordionTrigger>
               <AccordionContent className="text-gray-600 text-base leading-relaxed">
-                Yes, leak detection prevents mold growth by finding hidden leaks that create damp conditions where mold thrives. Fixing leaks early keeps your home safe and healthy. We work fast to protect your property from costly mold remediation.
+                Yes, nearly all devices connect to Wi-Fi, so if there is a problem with your home plumbing, your smartphone will be notified.
               </AccordionContent>
             </AccordionItem>
 
             <AccordionItem value="item-6" className="border rounded-lg px-6 bg-gray-50">
               <AccordionTrigger className="text-left text-lg font-semibold hover:text-[#EA5D19] transition-colors">
-                Will my water need to be shut off during leak detection?
+                Will the Moen Flo work if I have high water pressure?
               </AccordionTrigger>
               <AccordionContent className="text-gray-600 text-base leading-relaxed">
-                In most cases, we can perform leak detection without shutting off your water, using non-invasive tools like acoustic devices and infrared cameras. For certain pressure tests, we may briefly turn off water to get accurate results. We keep you informed and ensure your home stays functional during the process.
+                Many homeowners think having high water pressure is a good thing, but it's not. High water pressure often leads to costly water leaks, as many of your home's plumbing fixtures are only rated for a specific PSI. The Moen Flo device constantly notifies you if your water pressure is above 80 PSI. Our plumbers must test your water pressure and replace your water pressure regulator if it's high. Please also note that when our plumbers test your PSI, the reading is a screenshot in time. Often, in the evening, when most of your neighborhood is asleep and nobody is using their water, your water pressure spikes. A reading of 70 PSI during the day can easily be over 80 PSI at night. Water pressure can vary within each city, but some of the cities with the highest pressure we have encountered are Redlands, Loma Linda, Highland, and San Bernardino. Several times, we have tested homes in Redlands with 120+ PSI in water pressure.
               </AccordionContent>
             </AccordionItem>
 
             <AccordionItem value="item-7" className="border rounded-lg px-6 bg-gray-50">
               <AccordionTrigger className="text-left text-lg font-semibold hover:text-[#EA5D19] transition-colors">
-                How often should I get leak detection done?
+                Will you provide me with a letter of installation for my insurance?
               </AccordionTrigger>
               <AccordionContent className="text-gray-600 text-base leading-relaxed">
-                You only need leak detection if you suspect a potential leak somewhere in your home or property. If you're unsure, call us for a pressure test to check if your plumbing systems are holding correctly. This quick test reveals whether leaks exist.
-              </AccordionContent>
-            </AccordionItem>
-
-            <AccordionItem value="item-8" className="border rounded-lg px-6 bg-gray-50">
-              <AccordionTrigger className="text-left text-lg font-semibold hover:text-[#EA5D19] transition-colors">
-                Can leak detection find leaks in walls or ceilings?
-              </AccordionTrigger>
-              <AccordionContent className="text-gray-600 text-base leading-relaxed">
-                Yes, our advanced tools including moisture detectors and infrared cameras can find leaks hidden in walls or ceilings without causing damage. These leaks often come from faulty pipes or fittings and can lead to mold or structural issues if ignored.
+                Yes, we will provide you with a certificate of completion that you can forward to your homeowner's insurance company. This letter states that you had a Moen Flo device installed by one of our plumbers with our California license number.
               </AccordionContent>
             </AccordionItem>
           </Accordion>
