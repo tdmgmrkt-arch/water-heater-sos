@@ -172,7 +172,7 @@ export function MenifeeContent() {
             </h2>
           </motion.div>
 
-          <div className="space-y-4 max-w-3xl mx-auto">
+          <div className="space-y-4 max-w-7xl mx-auto">
             {[
               {
                 title: "Fast Response Times",
