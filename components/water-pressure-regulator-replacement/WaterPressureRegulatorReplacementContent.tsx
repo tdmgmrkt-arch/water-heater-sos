@@ -52,7 +52,7 @@ export function WaterPressureRegulatorReplacementContent() {
             >
               <div className="relative h-[500px] w-full rounded-2xl overflow-hidden shadow-2xl">
                 <Image
-                  src="/water-pressure-regulator.webp"
+                  src="/water-pressure-regulator-install.webp"
                   alt="Professional water pressure regulator replacement service"
                   fill
                   className="object-cover"

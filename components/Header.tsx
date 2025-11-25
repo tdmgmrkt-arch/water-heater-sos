@@ -73,40 +73,49 @@ export function Header() {
           <div className="flex h-20 items-center justify-between">
 
             {/* LOGO — NO BLUR FIX */}
-            <Link href="/" className="flex items-center">
+            <Link href="/" className="flex items-left z-51">
               <Image
                 src="/wh-sos-logo.webp"
                 alt="Water Heater SOS Logo"
-                width={180}
-                height={0}
+                width={220}
+                height={40}
                 priority
-                className="w-[143px] h-auto"
+                className="w-[140px] h-auto"
               />
             </Link>
 
             {/* DESKTOP NAV */}
             <nav className="hidden lg:flex items-center gap-1.5">
-              {Object.entries(menuStructure).map(([category, { icon: Icon }]) => (
-                <div
-                  key={category}
-                  className="relative"
-                  onMouseEnter={() => setActiveMenu(category)}
-                  onMouseLeave={() => setActiveMenu(null)}
-                >
-                  <button
-                    className={`
-                      group flex items-center gap-1.5 rounded-xl px-4 py-2.5 text-sm font-semibold transition-all
-                      ${activeMenu === category
-                        ? "bg-[#EA5D19] text-white shadow-md"
-                        : "text-white/95 hover:text-[#EA5D19] hover:bg-white/10"}
-                    `}
+              {Object.entries(menuStructure).map(([category, { icon: Icon }]) => {
+                const getCategoryHref = () => {
+                  if (category === "Water Heaters") return "/water-heater-services";
+                  if (category === "Plumbing Services") return "/plumbing-services";
+                  return "#";
+                };
+
+                return (
+                  <div
+                    key={category}
+                    className="relative"
+                    onMouseEnter={() => setActiveMenu(category)}
+                    onMouseLeave={() => setActiveMenu(null)}
                   >
-                    <Icon className="h-4 w-4" />
-                    {category}
-                    <ChevronDown className={`h-4 w-4 transition ${activeMenu === category ? "rotate-180" : ""}`} />
-                  </button>
-                </div>
-              ))}
+                    <Link
+                      href={getCategoryHref()}
+                      className={`
+                        group flex items-center gap-1.5 rounded-xl px-4 py-2.5 text-sm font-semibold transition-all
+                        ${activeMenu === category
+                          ? "bg-[#EA5D19] text-white shadow-md"
+                          : "text-white/95 hover:text-[#EA5D19] hover:bg-white/10"}
+                      `}
+                    >
+                      <Icon className="h-4 w-4" />
+                      {category}
+                      <ChevronDown className={`h-4 w-4 transition ${activeMenu === category ? "rotate-180" : ""}`} />
+                    </Link>
+                  </div>
+                );
+              })}
 
               {/* CTA */}
               <a

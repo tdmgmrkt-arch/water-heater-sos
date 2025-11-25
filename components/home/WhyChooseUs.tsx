@@ -73,7 +73,7 @@ export function WhyChooseUs() {
 
               {/* FIXED SUBHEADER */}
               <p className="!text-gray-300 text-base leading-normal sm:text-lg">
-                The Inland Empire's most trusted and highest-rated plumbing company that is dedicated to water heaters. We will restore your hot water quickly and with the highest quality standards.
+              The Inland Empire’s most trusted, highest-rated plumbing team — with specialized expertise in water heaters. We restore your hot water quickly and with uncompromising quality, every single time.
               </p>
 
             </div>

@@ -3,44 +3,44 @@
 import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
-import { ArrowRight, Flame, Droplets, Zap, Check } from "lucide-react";
+import { ArrowRight, Droplet, Zap, Search, Check } from "lucide-react";
 
 const services = [
   {
-    title: "Gas Water Heaters",
+    title: "Drain Cleaning",
     subtitle: "",
-    image: "/gas-water-heater-.webp",
-    href: "/gas-water-heaters",
-    description: "Traditional, reliable, and cost-effective heating solutions",
-    icon: Flame,
-    badge: "Most Popular",
-    features: ["Fast Installation", "Proven Technology", "Budget Friendly"],
+    image: "/drain-cleaning.webp",
+    href: "/drain-cleaning",
+    description: "Fast, effective drain cleaning",
+    icon: Droplet,
+    badge: "Popular",
+    features: ["Fast Service", "Clear Clogs", "Prevent Backups"],
   },
   {
-    title: "Water Filtration System",
+    title: "Hydro-Jetting",
     subtitle: "",
-    image: "/water-filtration-system.webp",
-    href: "/water-filtration",
-    description: "Whole-house water purification for healthier living",
-    icon: Droplets,
-    badge: "Premium Choice",
-    features: ["Cleaner Water", "Healthier Living", "Eco-Friendly"],
-  },
-  {
-    title: "Tankless Water Heaters",
-    subtitle: "",
-    image: "/tankless-water-heater.webp",
-    href: "/tankless-water-heaters",
-    description: "Energy-efficient, endless hot water on demand",
+    image: "/hydro-jet.webp",
+    href: "/hydro-jetting",
+    description: "High-pressure pipe cleaning",
     icon: Zap,
-    badge: "Energy Saver",
-    features: ["Endless Hot Water", "Space Saving", "Lower Bills"],
+    badge: "Professional",
+    features: ["Deep Cleaning", "Long-lasting", "Eco-Friendly"],
+  },
+  {
+    title: "Leak Detection Services",
+    subtitle: "",
+    image: "/leak-detection.webp",
+    href: "/leak-detection-services",
+    description: "Advanced leak detection",
+    icon: Search,
+    badge: "Advanced",
+    features: ["Find Hidden Leaks", "Save Water", "Prevent Damage"],
   },
 ];
 
-export function ServiceCards() {
+export function PlumbingServiceCards() {
   return (
-    <section className="relative overflow-hidden py-16 lg:py-24">
+    <section className="relative overflow-hidden py-16 lg:py-24 bg-gray-50">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
       {/* Premium Section Header */}
         <motion.div
@@ -48,7 +48,7 @@ export function ServiceCards() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
-          className="mx-auto max-w-5xl text-center mb-12 min-w-0" 
+          className="mx-auto max-w-5xl text-center mb-12 min-w-0"
         >
           <motion.div
             initial={{ opacity: 0, scale: 0.9 }}
@@ -61,11 +61,11 @@ export function ServiceCards() {
           </motion.div>
 
           <h2 className="text-3xl font-bold text-[#11110E] sm:text-7xl lg:text-5xl mb-6">
-            Water Heater Repair or Replacement
+            Plumbing Services
           </h2>
 
           <p className="text-lg leading-relaxed text-gray-600 max-w-7xl mx-auto">
-            Most people just want to repair or replace their existing water heater with the same type they currently have. In most cases, this makes the most sense and is a cost effective way to restore your hot water. However, we can discuss energy efficient options.
+            From drain cleaning to leak detection, we provide comprehensive plumbing solutions to keep your home running smoothly. Our expert technicians use advanced tools and techniques to solve any plumbing challenge.
           </p>
         </motion.div>
 
@@ -121,18 +121,14 @@ export function ServiceCards() {
                     {/* Content Section */}
                     <div className="p-6 space-y-4 text-left">
                     <h3 className="text-2xl font-bold text-[#11110E] mb-1 leading-tight">
-                          {service.title === "Gas Water Heaters" ? (
-                            <>Gas Water Heaters</>
-                          ) : (
-                            service.title
-                          )}
+                          {service.title}
                         </h3>
                       <p className="text-gray-600 leading-relaxed">
                         {service.description}
                       </p>
 
                       {/* Features List */}
-                      
+
                       <div className="space-y-2">
                         {service.features.map((feature, idx) => (
                           <div key={idx} className="flex items-center gap-2">
@@ -173,10 +169,10 @@ export function ServiceCards() {
           className="mt-12 text-center"
         >
           <Link
-            href="/water-heater-services"
+            href="/plumbing-services"
             className="inline-flex items-center gap-2 rounded-full border-2 border-[#EA5D19] bg-transparent px-8 py-4 text-lg font-semibold text-[#EA5D19] hover:bg-[#EA5D19] hover:text-white transition-all duration-200 hover:scale-105 shadow-md hover:shadow-lg"
           >
-            View All Water Heater Services
+            View All Plumbing Services
             <ArrowRight className="h-5 w-5" />
           </Link>
         </motion.div>

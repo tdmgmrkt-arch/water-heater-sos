@@ -75,7 +75,7 @@ export function Hero() {
                 ))}
               </div>
               <span className="text-sm font-bold text-gradient">
-                #1 Rated Water Heater Experts
+              Top-Rated Water Heater & Plumbing Service
               </span>
             </motion.div>
 
@@ -85,9 +85,9 @@ export function Hero() {
               transition={{ delay: 0.4, duration: 0.8 }}
               className="text-4xl leading-[1.15] font-extrabold tracking-tight text-white! sm:text-5xl lg:text-6xl"
             >
-              Expert Water Heater{" "}
+              The Water Heater{" "}
               <span className="relative inline-block">
-                <span className="text-gradient">Services</span>
+                <span className="text-gradient">& Plumbing Experts</span>
                 <motion.span
                   className="absolute -bottom-2 left-0 right-0 h-1 bg-gradient-to-r from-[#EA5D19] to-[#FF6E2E] rounded-full"
                   initial={{ scaleX: 0 }}
@@ -107,7 +107,7 @@ export function Hero() {
               transition={{ delay: 0.6, duration: 0.6 }}
               className="text-lg leading-relaxed text-gray-300"
             >
-              Whether you need to replace or repair your water heater, our expert plumbers can do it quickly and at some of the most competitive prices. Our vans are stocked and ready to complete your job on the same visit.
+              Whether you need a water heater replacement, repairs, or full-service plumbing, our licensed experts handle it all — fast and at competitive prices. Our vans are fully stocked and ready to complete your job on the same visit.
             </motion.p>
 
             <motion.div

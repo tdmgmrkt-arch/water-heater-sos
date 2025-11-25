@@ -45,8 +45,7 @@ export function Footer() {
                   Ready for 5-Star Service?
                 </h3>
                 <p className="text-base text-white/90 max-w-5xl"> {/* text-lg -> text-base (Reduced description size) */}
-                  Get same-day water heater installation or repair from licensed experts.
-                  Available 24/7 for emergencies.
+                Get same-day water heater installation or full-service plumbing repair from our licensed experts. Available 24/7 for emergencies and urgent service calls.
                 </p>
               </div>
 
@@ -87,8 +86,7 @@ export function Footer() {
               </Link>
 
               <p className="text-sm text-gray-400 leading-relaxed block">
-                The Inland Empire's most trusted water heater experts since day one.
-                Licensed, insured, and committed to 5-star service.
+              The Inland Empire’s most trusted team for water heater and plumbing services since day one—licensed, insured, and committed to delivering 5-star service on every job.
               </p>
             </div>
             

@@ -52,7 +52,7 @@ export function SewerCameraInspectionContent() {
             >
               <div className="relative h-[500px] w-full rounded-2xl overflow-hidden shadow-2xl">
                 <Image
-                  src="/wh-sos-service-rep.webp"
+                  src="/sewer-camera-inspection.webp"
                   alt="Professional sewer camera inspection services"
                   fill
                   className="object-cover"
