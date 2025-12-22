@@ -23,6 +23,7 @@ const menuStructure = {
     icon: Droplet,
     items: [
       { name: "Gas Water Heaters", href: "/gas-water-heaters", desc: "Traditional gas water heater installation", icon: Flame, featured: true },
+      { name: "Electric Water Heaters", href: "/electric-water-heaters", desc: "Reliable electric water heater service", icon: Zap, featured: true },
       { name: "Tankless Water Heaters", href: "/tankless-water-heaters", desc: "Energy-efficient on-demand hot water", icon: Zap, featured: true },
       { name: "Water Heater Flush", href: "/water-heater-flush", desc: "Maintenance and flushing services", icon: Settings },
       { name: "Heat Pump Water Heaters", href: "/heat-pump-water-heaters", desc: "Eco-friendly heat pump systems", icon: FlaskConical },

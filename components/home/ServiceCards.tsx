@@ -3,7 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
-import { ArrowRight, Flame, Droplets, Zap, Check } from "lucide-react";
+import { ArrowRight, Flame, Zap, Check } from "lucide-react";
 
 const services = [
   {
@@ -17,14 +17,14 @@ const services = [
     features: ["Fast Installation", "Proven Technology", "Budget Friendly"],
   },
   {
-    title: "Water Filtration System",
+    title: "Electric Water Heaters",
     subtitle: "",
-    image: "/water-filtration-system.webp",
-    href: "/water-filtration",
-    description: "Whole-house water purification for healthier living",
-    icon: Droplets,
-    badge: "Premium Choice",
-    features: ["Cleaner Water", "Healthier Living", "Eco-Friendly"],
+    image: "/electric-water-heater.webp",
+    href: "/electric-water-heaters",
+    description: "Reliable electric heating for any home, consistent hot water, and low maintenance.",
+    icon: Zap,
+    badge: "Reliable",
+    features: ["Easy Installation", "No Gas Required", "Safe & Efficient"],
   },
   {
     title: "Tankless Water Heaters",
