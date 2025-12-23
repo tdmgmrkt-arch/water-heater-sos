@@ -15,32 +15,32 @@ export function GrandTerraceContent() {
   return (
     <>
       {/* Hero Section */}
-      <section className="relative overflow-hidden bg-gradient-to-b from-gray-50 to-white pt-20 pb-16 lg:pt-32 lg:pb-24">
+      <section className="relative overflow-hidden bg-gradient-to-b from-gray-50 to-white pt-12 pb-10 sm:pt-20 sm:pb-16 lg:pt-32 lg:pb-24">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="grid gap-12 lg:grid-cols-2 lg:gap-16 items-center">
+          <div className="grid gap-8 sm:gap-12 lg:grid-cols-2 lg:gap-16 items-center">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 }}
             >
-              <span className="inline-block px-4 py-1 rounded-full bg-[#EA5D19] text-white text-sm font-semibold mb-4">
+              <span className="inline-block px-3 py-1 rounded-full bg-[#EA5D19] text-white text-xs sm:px-4 sm:text-sm font-semibold mb-4">
                 Serving Grand Terrace, CA
               </span>
-              <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl lg:text-6xl mb-6">
+              <h1 className="text-3xl sm:text-5xl font-bold tracking-tight text-gray-900 lg:text-6xl mb-6">
                 Grand Terrace – Plumbing & Water Heater Services
               </h1>
-              <p className="text-xl text-gray-600 mb-6">
+              <p className="text-base sm:text-xl text-gray-600 mb-6">
                 Trusted for All Your Plumbing Needs in Grand Terrace, CA
               </p>
-              <p className="text-lg text-gray-700 leading-relaxed mb-8">
+              <p className="text-sm sm:text-lg text-gray-700 leading-relaxed mb-8">
                 Water Heater SOS is your trusted local plumbing company serving Grand Terrace and the surrounding areas. We specialize in <Link href="/water-heater-repair" className="text-[#EA5D19] hover:underline font-semibold">water heater repairs</Link>, <Link href="/drain-cleaning" className="text-[#EA5D19] hover:underline font-semibold">drain cleaning</Link>, <Link href="/faucet-repair-replacement" className="text-[#EA5D19] hover:underline font-semibold">faucet repairs</Link>, and <Link href="/tankless-water-heaters" className="text-[#EA5D19] hover:underline font-semibold">tankless water heater installations</Link>. Our experienced Grand Terrace plumbers are ready to solve any plumbing problem you have.
               </p>
               <Link
                 href="/quote"
-                className="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-[#EA5D19] to-[#FF6E2E] px-8 py-4 text-lg font-semibold text-white shadow-lg hover:shadow-xl transition-all duration-200 hover:scale-105"
-              >
-                Get Free Quote
-                <ArrowRight className="h-5 w-5" />
+                className="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-[#EA5D19] to-[#FF6E2E] px-5 py-3 sm:px-8 sm:py-4 text-sm sm:text-lg font-semibold text-white shadow-lg hover:shadow-xl transition-all duration-200 hover:scale-105">
+                <span className="sm:hidden">Get Quote</span>
+                <span className="hidden sm:inline">Get Free Quote</span>
+                <ArrowRight className="h-4 w-4 sm:h-5 sm:w-5" />
               </Link>
             </motion.div>
 
@@ -50,7 +50,7 @@ export function GrandTerraceContent() {
               transition={{ duration: 0.5, delay: 0.2 }}
               className="relative"
             >
-              <div className="relative h-[500px] w-full rounded-2xl overflow-hidden shadow-2xl">
+              <div className="relative h-[280px] sm:h-[400px] lg:h-[500px] w-full rounded-2xl sm:rounded-3xl overflow-hidden shadow-2xl">
                 <Image
                   src="/wh-sos-service-rep.webp"
                   alt="Professional plumber in Grand Terrace"
@@ -80,7 +80,7 @@ export function GrandTerraceContent() {
       </section>
 
       {/* Plumbing Services Section */}
-      <section className="py-20 bg-gray-50">
+      <section className="py-10 sm:py-16 lg:py-20 bg-gray-50">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -89,15 +89,15 @@ export function GrandTerraceContent() {
             transition={{ duration: 0.5 }}
             className="text-center mb-16"
           >
-            <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl mb-4">
+            <h2 className="text-2xl sm:text-4xl font-bold tracking-tight text-gray-900 mb-4">
               Our Plumbing Services in Grand Terrace
             </h2>
-            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+            <p className="text-base sm:text-xl text-gray-600 max-w-2xl mx-auto">
               Complete plumbing solutions to keep your home running smoothly
             </p>
           </motion.div>
 
-          <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+          <div className="grid gap-4 sm:gap-6 lg:gap-8 md:grid-cols-2 lg:grid-cols-3">
             {[
               {
                 title: "Water Heater Repair",
@@ -144,14 +144,14 @@ export function GrandTerraceContent() {
                 transition={{ duration: 0.5, delay: index * 0.1 }}
               >
                 <Link href={service.link}>
-                  <div className="h-full rounded-2xl bg-white p-8 shadow-lg hover:shadow-xl transition-all duration-200 hover:scale-105 border border-gray-200">
+                  <div className="h-full rounded-xl sm:rounded-2xl bg-white p-4 sm:p-6 lg:p-8 shadow-lg hover:shadow-xl transition-all duration-200 hover:scale-105 border border-gray-200">
                     <div className="mb-4 inline-flex rounded-lg bg-[#EA5D19] p-3">
-                      <service.icon className="h-6 w-6 text-white" />
+                      <service.icon className="w-6 h-6 sm:w-8 sm:h-8 text-white" />
                     </div>
-                    <h3 className="text-xl font-bold text-gray-900 mb-3">
+                    <h3 className="text-base sm:text-xl font-bold text-gray-900 mb-3">
                       {service.title}
                     </h3>
-                    <p className="text-gray-600">{service.description}</p>
+                    <p className="text-sm sm:text-base text-gray-600">{service.description}</p>
                   </div>
                 </Link>
               </motion.div>
@@ -161,7 +161,7 @@ export function GrandTerraceContent() {
       </section>
 
       {/* Water Heater Problems Section */}
-      <section className="py-20 bg-white">
+      <section className="py-10 sm:py-16 lg:py-20 bg-white">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -170,12 +170,12 @@ export function GrandTerraceContent() {
             transition={{ duration: 0.5 }}
             className="text-center mb-16"
           >
-            <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl mb-4">
+            <h2 className="text-2xl sm:text-4xl font-bold tracking-tight text-gray-900 mb-4">
               Why Water Heaters Fail
             </h2>
           </motion.div>
 
-          <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+          <div className="grid gap-4 sm:gap-6 lg:gap-8 md:grid-cols-2 lg:grid-cols-3">
             {[
               {
                 title: "Pressure Relief Valve Failure",
@@ -196,15 +196,15 @@ export function GrandTerraceContent() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
-                className="rounded-2xl bg-gray-50 p-8 border border-gray-200"
+                className="rounded-xl sm:rounded-2xl bg-gray-50 p-4 sm:p-6 lg:p-8 border border-gray-200"
               >
                 <div className="flex items-center gap-2 mb-3">
-                  <AlertCircle className="h-5 w-5 text-[#EA5D19]" />
-                  <h3 className="text-xl font-bold text-gray-900">
+                  <AlertCircle className="h-4 w-4 sm:h-5 sm:w-5 text-[#EA5D19]" />
+                  <h3 className="text-base sm:text-xl font-bold text-gray-900">
                     {problem.title}
                   </h3>
                 </div>
-                <p className="text-gray-600">{problem.description}</p>
+                <p className="text-sm sm:text-base text-gray-600">{problem.description}</p>
               </motion.div>
             ))}
           </div>
@@ -212,7 +212,7 @@ export function GrandTerraceContent() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-r from-[#EA5D19] to-[#FF6E2E]">
+      <section className="py-10 sm:py-16 lg:py-20 bg-gradient-to-r from-[#EA5D19] to-[#FF6E2E]">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 text-center">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -220,26 +220,25 @@ export function GrandTerraceContent() {
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
           >
-            <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl mb-6">
+            <h2 className="text-2xl sm:text-4xl font-bold tracking-tight text-white mb-6">
               Need Plumbing Services in Grand Terrace?
             </h2>
-            <p className="text-xl text-white/90 mb-8 max-w-2xl mx-auto">
+            <p className="text-base sm:text-xl text-white/90 mb-8 max-w-2xl mx-auto">
               Our expert plumbers are ready to help. Call now for fast, reliable service!
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
                 href="tel:+18006974014"
-                className="inline-flex items-center justify-center gap-2 rounded-full bg-white px-8 py-4 text-lg font-semibold text-[#EA5D19] shadow-lg hover:shadow-xl transition-all duration-200 hover:scale-105"
-              >
-                <Phone className="h-5 w-5" />
+                className="inline-flex items-center justify-center gap-2 rounded-full bg-white px-5 py-3 sm:px-8 sm:py-4 text-sm sm:text-lg font-semibold text-[#EA5D19] shadow-lg hover:shadow-xl transition-all duration-200 hover:scale-105">
+                <Phone className="h-4 w-4 sm:h-5 sm:w-5" />
                 (800) 697-4014
               </Link>
               <Link
                 href="/quote"
-                className="inline-flex items-center justify-center gap-2 rounded-full bg-[#11110E] px-8 py-4 text-lg font-semibold text-white shadow-lg hover:shadow-xl transition-all duration-200 hover:scale-105"
-              >
-                Get Free Quote
-                <ArrowRight className="h-5 w-5" />
+                className="inline-flex items-center justify-center gap-2 rounded-full bg-[#11110E] px-5 py-3 sm:px-8 sm:py-4 text-sm sm:text-lg font-semibold text-white shadow-lg hover:shadow-xl transition-all duration-200 hover:scale-105">
+                <span className="sm:hidden">Get Quote</span>
+                <span className="hidden sm:inline">Get Free Quote</span>
+                <ArrowRight className="h-4 w-4 sm:h-5 sm:w-5" />
               </Link>
             </div>
           </motion.div>
@@ -247,7 +246,7 @@ export function GrandTerraceContent() {
       </section>
 
       {/* Trusted Brands Section */}
-      <section className="py-20 bg-gray-50">
+      <section className="py-10 sm:py-16 lg:py-20 bg-gray-50">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -256,7 +255,7 @@ export function GrandTerraceContent() {
             transition={{ duration: 0.5 }}
             className="text-center mb-16"
           >
-            <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl mb-4">
+            <h2 className="text-2xl sm:text-4xl font-bold tracking-tight text-gray-900 mb-4">
               Trusted Brands We Install & Service
             </h2>
           </motion.div>
@@ -275,7 +274,7 @@ export function GrandTerraceContent() {
                 whileInView={{ opacity: 1, scale: 1 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.3, delay: index * 0.1 }}
-                className="relative h-20 w-32 grayscale hover:grayscale-0 transition-all duration-200"
+                className="relative h-14 w-20 sm:h-20 sm:w-28 grayscale hover:grayscale-0 transition-all duration-200"
               >
                 <Image
                   src={brand.logo}
@@ -290,7 +289,7 @@ export function GrandTerraceContent() {
       </section>
 
       {/* FAQ Section */}
-      <section className="py-20 bg-white">
+      <section className="py-10 sm:py-16 lg:py-20 bg-white">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -299,56 +298,56 @@ export function GrandTerraceContent() {
             transition={{ duration: 0.5 }}
             className="text-center mb-16"
           >
-            <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl mb-4">
+            <h2 className="text-2xl sm:text-4xl font-bold tracking-tight text-gray-900 mb-4">
               Frequently Asked Questions
             </h2>
-            <p className="text-xl text-gray-600">
+            <p className="text-base sm:text-xl text-gray-600">
               Common questions from Grand Terrace homeowners
             </p>
           </motion.div>
 
-          <Accordion type="single" collapsible className="space-y-4">
-            <AccordionItem value="item-1" className="border rounded-lg px-6 bg-gray-50">
-              <AccordionTrigger className="text-left text-lg font-semibold hover:text-[#EA5D19] transition-colors">
+          <Accordion type="single" collapsible className="space-y-2 sm:space-y-4">
+            <AccordionItem value="item-1" className="border rounded-lg px-4 sm:px-6 bg-gray-50">
+              <AccordionTrigger className="text-left text-sm sm:text-base lg:text-lg font-semibold hover:text-[#EA5D19] transition-colors py-3 sm:py-4">
                 How can I tell if my water heater needs repair or replacement?
               </AccordionTrigger>
-              <AccordionContent className="text-gray-600 text-base leading-relaxed">
+              <AccordionContent className="text-gray-600 text-xs sm:text-sm lg:text-base leading-relaxed pb-3 sm:pb-4">
                 If your water heater is over 10 years old, leaking, making loud noises, or not heating water consistently, it may need repair or replacement. Our technicians will inspect your system and recommend the most cost‑effective solution based on its condition.
               </AccordionContent>
             </AccordionItem>
 
-            <AccordionItem value="item-2" className="border rounded-lg px-6 bg-gray-50">
-              <AccordionTrigger className="text-left text-lg font-semibold hover:text-[#EA5D19] transition-colors">
+            <AccordionItem value="item-2" className="border rounded-lg px-4 sm:px-6 bg-gray-50">
+              <AccordionTrigger className="text-left text-sm sm:text-base lg:text-lg font-semibold hover:text-[#EA5D19] transition-colors py-3 sm:py-4">
                 What are the benefits of a tankless water heater?
               </AccordionTrigger>
-              <AccordionContent className="text-gray-600 text-base leading-relaxed">
+              <AccordionContent className="text-gray-600 text-xs sm:text-sm lg:text-base leading-relaxed pb-3 sm:pb-4">
                 Tankless water heaters provide hot water on demand, saving energy and space. They last longer than traditional tank models and provide endless hot water for your household. We'll help you choose the right size for your needs.
               </AccordionContent>
             </AccordionItem>
 
-            <AccordionItem value="item-3" className="border rounded-lg px-6 bg-gray-50">
-              <AccordionTrigger className="text-left text-lg font-semibold hover:text-[#EA5D19] transition-colors">
+            <AccordionItem value="item-3" className="border rounded-lg px-4 sm:px-6 bg-gray-50">
+              <AccordionTrigger className="text-left text-sm sm:text-base lg:text-lg font-semibold hover:text-[#EA5D19] transition-colors py-3 sm:py-4">
                 How quickly can you respond to a plumbing emergency in Grand Terrace?
               </AccordionTrigger>
-              <AccordionContent className="text-gray-600 text-base leading-relaxed">
+              <AccordionContent className="text-gray-600 text-xs sm:text-sm lg:text-base leading-relaxed pb-3 sm:pb-4">
                 We offer same‑day service for most plumbing emergencies in Grand Terrace and the surrounding areas. Call us at (800) 697‑4014, and we'll dispatch a technician as soon as possible.
               </AccordionContent>
             </AccordionItem>
 
-            <AccordionItem value="item-4" className="border rounded-lg px-6 bg-gray-50">
-              <AccordionTrigger className="text-left text-lg font-semibold hover:text-[#EA5D19] transition-colors">
+            <AccordionItem value="item-4" className="border rounded-lg px-4 sm:px-6 bg-gray-50">
+              <AccordionTrigger className="text-left text-sm sm:text-base lg:text-lg font-semibold hover:text-[#EA5D19] transition-colors py-3 sm:py-4">
                 Do you offer drain cleaning for all types of clogs?
               </AccordionTrigger>
-              <AccordionContent className="text-gray-600 text-base leading-relaxed">
+              <AccordionContent className="text-gray-600 text-xs sm:text-sm lg:text-base leading-relaxed pb-3 sm:pb-4">
                 Yes! We clear clogs in kitchen sinks, bathroom drains, tubs, showers, and main sewer lines. Whether it's hair, grease, soap scum, or tree roots, we have the tools and expertise to restore your drains.
               </AccordionContent>
             </AccordionItem>
 
-            <AccordionItem value="item-5" className="border rounded-lg px-6 bg-gray-50">
-              <AccordionTrigger className="text-left text-lg font-semibold hover:text-[#EA5D19] transition-colors">
+            <AccordionItem value="item-5" className="border rounded-lg px-4 sm:px-6 bg-gray-50">
+              <AccordionTrigger className="text-left text-sm sm:text-base lg:text-lg font-semibold hover:text-[#EA5D19] transition-colors py-3 sm:py-4">
                 Can you help with water quality issues in Grand Terrace?
               </AccordionTrigger>
-              <AccordionContent className="text-gray-600 text-base leading-relaxed">
+              <AccordionContent className="text-gray-600 text-xs sm:text-sm lg:text-base leading-relaxed pb-3 sm:pb-4">
                 Absolutely. We install water filtration systems, water softeners, and reverse‑osmosis systems to remove contaminants, reduce hardness, and improve the taste and safety of your tap water. We'll test your water and recommend the best solution for your needs.
               </AccordionContent>
             </AccordionItem>

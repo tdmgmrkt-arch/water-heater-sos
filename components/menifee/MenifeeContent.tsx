@@ -15,32 +15,32 @@ export function MenifeeContent() {
   return (
     <>
       {/* Hero Section */}
-      <section className="relative overflow-hidden bg-gradient-to-b from-gray-50 to-white pt-20 pb-16 lg:pt-32 lg:pb-24">
+      <section className="relative overflow-hidden bg-gradient-to-b from-gray-50 to-white pt-12 pb-10 sm:pt-20 sm:pb-16 lg:pt-32 lg:pb-24">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="grid gap-12 lg:grid-cols-2 lg:gap-16 items-center">
+          <div className="grid gap-8 sm:gap-12 lg:grid-cols-2 lg:gap-16 items-center">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 }}
             >
-              <span className="inline-block px-4 py-1 rounded-full bg-[#EA5D19] text-white text-sm font-semibold mb-4">
+              <span className="inline-block px-3 py-1 sm:px-4 rounded-full bg-[#EA5D19] text-white text-xs sm:text-sm font-semibold mb-3 sm:mb-4">
                 Serving Menifee, CA
               </span>
-              <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl lg:text-6xl mb-6">
+              <h1 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-5xl lg:text-6xl mb-6">
                 Menifee Plumbers & Water Heater Repair
               </h1>
-              <p className="text-xl text-gray-600 mb-6">
+              <p className="text-lg sm:text-xl text-gray-600 mb-4 sm:mb-6">
                 Plumbing Services for Your Menifee, CA Home
               </p>
-              <p className="text-lg text-gray-700 leading-relaxed mb-8">
+              <p className="text-base sm:text-lg text-gray-700 leading-relaxed mb-6 sm:mb-8">
                 A backed‑up drain or a dripping faucet can throw off your routine. Water Heater SOS in Menifee fixes these issues fast. Our brand‑certified technicians clear <Link href="/toilet-repair-replacement" className="text-[#EA5D19] hover:underline font-semibold">toilet clogs</Link>, clean drains, repair showers, and restore <Link href="/garbage-disposal" className="text-[#EA5D19] hover:underline font-semibold">garbage disposals</Link>. Spot a water leak, gas leak, or slab leak? We act quickly to protect your home.
               </p>
               <Link
                 href="/quote"
-                className="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-[#EA5D19] to-[#FF6E2E] px-8 py-4 text-lg font-semibold text-white shadow-lg hover:shadow-xl transition-all duration-200 hover:scale-105"
+                className="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-[#EA5D19] to-[#FF6E2E] px-5 py-3 sm:px-8 sm:py-4 text-sm sm:text-lg font-semibold text-white shadow-lg hover:shadow-xl transition-all duration-200 hover:scale-105"
               >
-                Get Free Quote
-                <ArrowRight className="h-5 w-5" />
+                <span className="sm:hidden">Get Quote</span><span className="hidden sm:inline">Get Free Quote</span>
+                <ArrowRight className="h-4 w-4 sm:h-5 sm:w-5" />
               </Link>
             </motion.div>
 
@@ -50,7 +50,7 @@ export function MenifeeContent() {
               transition={{ duration: 0.5, delay: 0.2 }}
               className="relative"
             >
-              <div className="relative h-[500px] w-full rounded-2xl overflow-hidden shadow-2xl">
+              <div className="relative h-[280px] sm:h-[400px] lg:h-[500px] w-full rounded-2xl sm:rounded-3xl overflow-hidden shadow-2xl">
                 <Image
                   src="/wh-sos-service-rep.webp"
                   alt="Professional plumber in Menifee"
@@ -62,7 +62,7 @@ export function MenifeeContent() {
             </motion.div>
           </div>
 
-          <div className="mt-12 bg-white rounded-3xl shadow-lg border border-gray-200 p-8 space-y-6 text-lg leading-relaxed text-gray-700">
+          <div className="mt-8 sm:mt-12 bg-white rounded-2xl sm:rounded-3xl shadow-lg border border-gray-200 p-5 sm:p-8 space-y-4 sm:space-y-6 text-base sm:text-lg leading-relaxed text-gray-700">
             <p>
               Our <Link href="/leak-detection-services" className="text-[#EA5D19] hover:underline font-semibold">leak detection</Link> services find hidden problems, and our <Link href="/repiping" className="text-[#EA5D19] hover:underline font-semibold">whole‑house repipe</Link> keeps your plumbing strong. As the homeowner, you need reliable plumbing. Water Heater SOS provides emergency service to fix or replace your plumbing emergency. We offer routine maintenance to stop issues before they start, keeping your pipes in great shape.
             </p>
@@ -77,24 +77,24 @@ export function MenifeeContent() {
       </section>
 
       {/* Plumbing Services Section */}
-      <section className="py-20 bg-gray-50">
+      <section className="py-12 sm:py-20 bg-gray-50">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
-            className="text-center mb-16"
+            className="text-center mb-10 sm:mb-16"
           >
-            <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl mb-4">
+            <h2 className="text-2xl sm:text-4xl font-bold tracking-tight text-gray-900 mb-3 sm:mb-4">
               Our Plumbing Services in Menifee
             </h2>
-            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+            <p className="text-lg sm:text-xl text-gray-600 max-w-2xl mx-auto">
               Complete plumbing solutions for your home
             </p>
           </motion.div>
 
-          <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+          <div className="grid gap-5 sm:gap-8 md:grid-cols-2 lg:grid-cols-3">
             {[
               {
                 title: "Water Heater Repair",
@@ -141,14 +141,14 @@ export function MenifeeContent() {
                 transition={{ duration: 0.5, delay: index * 0.1 }}
               >
                 <Link href={service.link}>
-                  <div className="h-full rounded-2xl bg-white p-8 shadow-lg hover:shadow-xl transition-all duration-200 hover:scale-105 border border-gray-200">
-                    <div className="mb-4 inline-flex rounded-lg bg-[#EA5D19] p-3">
-                      <service.icon className="h-6 w-6 text-white" />
+                  <div className="h-full rounded-xl sm:rounded-2xl bg-white p-5 sm:p-8 shadow-lg hover:shadow-xl transition-all duration-200 hover:scale-105 border border-gray-200">
+                    <div className="mb-3 sm:mb-4 inline-flex rounded-lg bg-[#EA5D19] p-2.5 sm:p-3">
+                      <service.icon className="h-5 w-5 sm:h-6 sm:w-6 text-white" />
                     </div>
-                    <h3 className="text-xl font-bold text-gray-900 mb-3">
+                    <h3 className="text-lg sm:text-xl font-bold text-gray-900 mb-2 sm:mb-3">
                       {service.title}
                     </h3>
-                    <p className="text-gray-600">{service.description}</p>
+                    <p className="text-sm sm:text-base text-gray-600">{service.description}</p>
                   </div>
                 </Link>
               </motion.div>
@@ -158,7 +158,7 @@ export function MenifeeContent() {
       </section>
 
       {/* Why Choose Us Section */}
-      <section className="py-20 bg-white">
+      <section className="py-12 sm:py-20 bg-white">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -215,7 +215,7 @@ export function MenifeeContent() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-r from-[#EA5D19] to-[#FF6E2E]">
+      <section className="py-12 sm:py-20 bg-gradient-to-r from-[#EA5D19] to-[#FF6E2E]">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 text-center">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -223,26 +223,26 @@ export function MenifeeContent() {
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
           >
-            <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl mb-6">
+            <h2 className="text-2xl sm:text-4xl font-bold tracking-tight text-white mb-4 sm:mb-6">
               Need Plumbing Services in Menifee?
             </h2>
-            <p className="text-xl text-white/90 mb-8 max-w-2xl mx-auto">
+            <p className="text-lg sm:text-xl text-white/90 mb-6 sm:mb-8 max-w-2xl mx-auto">
               Our expert plumbers are ready to help. Call now for fast, reliable service!
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
                 href="tel:+18006974014"
-                className="inline-flex items-center justify-center gap-2 rounded-full bg-white px-8 py-4 text-lg font-semibold text-[#EA5D19] shadow-lg hover:shadow-xl transition-all duration-200 hover:scale-105"
+                className="inline-flex items-center justify-center gap-2 rounded-full bg-white px-5 py-3 sm:px-8 sm:py-4 text-sm sm:text-lg font-semibold text-[#EA5D19] shadow-lg hover:shadow-xl transition-all duration-200 hover:scale-105"
               >
-                <Phone className="h-5 w-5" />
-                (800) 697-4014
+                <Phone className="h-4 w-4 sm:h-5 sm:w-5" />
+                <span className="sm:hidden">Call Now</span><span className="hidden sm:inline">(800) 697-4014</span>
               </Link>
               <Link
                 href="/quote"
-                className="inline-flex items-center justify-center gap-2 rounded-full bg-[#11110E] px-8 py-4 text-lg font-semibold text-white shadow-lg hover:shadow-xl transition-all duration-200 hover:scale-105"
+                className="inline-flex items-center justify-center gap-2 rounded-full bg-[#11110E] px-5 py-3 sm:px-8 sm:py-4 text-sm sm:text-lg font-semibold text-white shadow-lg hover:shadow-xl transition-all duration-200 hover:scale-105"
               >
-                Get Free Quote
-                <ArrowRight className="h-5 w-5" />
+                <span className="sm:hidden">Get Quote</span><span className="hidden sm:inline">Get Free Quote</span>
+                <ArrowRight className="h-4 w-4 sm:h-5 sm:w-5" />
               </Link>
             </div>
           </motion.div>
@@ -250,7 +250,7 @@ export function MenifeeContent() {
       </section>
 
       {/* Trusted Brands Section */}
-      <section className="py-20 bg-gray-50">
+      <section className="py-12 sm:py-20 bg-gray-50">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -264,7 +264,7 @@ export function MenifeeContent() {
             </h2>
           </motion.div>
 
-          <div className="grid grid-cols-2 gap-8 md:grid-cols-3 lg:grid-cols-6 items-center justify-items-center">
+          <div className="grid grid-cols-2 gap-6 sm:gap-8 md:grid-cols-3 lg:grid-cols-6 items-center justify-items-center">
             {[
               { name: "Rheem", logo: "/rheem_logo-1.webp" },
               { name: "Bradford White", logo: "/bradford-white-logo-1.webp" },
@@ -278,7 +278,7 @@ export function MenifeeContent() {
                 whileInView={{ opacity: 1, scale: 1 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.3, delay: index * 0.1 }}
-                className="relative h-20 w-32 grayscale hover:grayscale-0 transition-all duration-200"
+                className="relative h-16 w-24 sm:h-20 sm:w-32 grayscale hover:grayscale-0 transition-all duration-200"
               >
                 <Image
                   src={brand.logo}
@@ -293,7 +293,7 @@ export function MenifeeContent() {
       </section>
 
       {/* FAQ Section */}
-      <section className="py-20 bg-white">
+      <section className="py-12 sm:py-20 bg-white">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -305,14 +305,14 @@ export function MenifeeContent() {
             <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl mb-4">
               Frequently Asked Questions
             </h2>
-            <p className="text-xl text-gray-600">
+            <p className="text-lg sm:text-xl text-gray-600">
               Common questions from Menifee homeowners
             </p>
           </motion.div>
 
-          <Accordion type="single" collapsible className="space-y-4">
-            <AccordionItem value="item-1" className="border rounded-lg px-6 bg-gray-50">
-              <AccordionTrigger className="text-left text-lg font-semibold hover:text-[#EA5D19] transition-colors">
+          <Accordion type="single" collapsible className="space-y-3 sm:space-y-4">
+            <AccordionItem value="item-1" className="border rounded-lg px-4 sm:px-6 bg-gray-50">
+              <AccordionTrigger className="text-left text-base sm:text-lg font-semibold hover:text-[#EA5D19] transition-colors">
                 What should I do if my garbage disposal stops working?
               </AccordionTrigger>
               <AccordionContent className="text-gray-600 text-base leading-relaxed">
@@ -320,8 +320,8 @@ export function MenifeeContent() {
               </AccordionContent>
             </AccordionItem>
 
-            <AccordionItem value="item-2" className="border rounded-lg px-6 bg-gray-50">
-              <AccordionTrigger className="text-left text-lg font-semibold hover:text-[#EA5D19] transition-colors">
+            <AccordionItem value="item-2" className="border rounded-lg px-4 sm:px-6 bg-gray-50">
+              <AccordionTrigger className="text-left text-base sm:text-lg font-semibold hover:text-[#EA5D19] transition-colors">
                 How often should I schedule plumbing maintenance?
               </AccordionTrigger>
               <AccordionContent className="text-gray-600 text-base leading-relaxed">
@@ -329,8 +329,8 @@ export function MenifeeContent() {
               </AccordionContent>
             </AccordionItem>
 
-            <AccordionItem value="item-3" className="border rounded-lg px-6 bg-gray-50">
-              <AccordionTrigger className="text-left text-lg font-semibold hover:text-[#EA5D19] transition-colors">
+            <AccordionItem value="item-3" className="border rounded-lg px-4 sm:px-6 bg-gray-50">
+              <AccordionTrigger className="text-left text-base sm:text-lg font-semibold hover:text-[#EA5D19] transition-colors">
                 Can you install a new toilet?
               </AccordionTrigger>
               <AccordionContent className="text-gray-600 text-base leading-relaxed">
@@ -338,8 +338,8 @@ export function MenifeeContent() {
               </AccordionContent>
             </AccordionItem>
 
-            <AccordionItem value="item-4" className="border rounded-lg px-6 bg-gray-50">
-              <AccordionTrigger className="text-left text-lg font-semibold hover:text-[#EA5D19] transition-colors">
+            <AccordionItem value="item-4" className="border rounded-lg px-4 sm:px-6 bg-gray-50">
+              <AccordionTrigger className="text-left text-base sm:text-lg font-semibold hover:text-[#EA5D19] transition-colors">
                 What happens if I ignore a slab leak?
               </AccordionTrigger>
               <AccordionContent className="text-gray-600 text-base leading-relaxed">
@@ -347,8 +347,8 @@ export function MenifeeContent() {
               </AccordionContent>
             </AccordionItem>
 
-            <AccordionItem value="item-5" className="border rounded-lg px-6 bg-gray-50">
-              <AccordionTrigger className="text-left text-lg font-semibold hover:text-[#EA5D19] transition-colors">
+            <AccordionItem value="item-5" className="border rounded-lg px-4 sm:px-6 bg-gray-50">
+              <AccordionTrigger className="text-left text-base sm:text-lg font-semibold hover:text-[#EA5D19] transition-colors">
                 Do you handle sewer line issues?
               </AccordionTrigger>
               <AccordionContent className="text-gray-600 text-base leading-relaxed">
@@ -356,8 +356,8 @@ export function MenifeeContent() {
               </AccordionContent>
             </AccordionItem>
 
-            <AccordionItem value="item-6" className="border rounded-lg px-6 bg-gray-50">
-              <AccordionTrigger className="text-left text-lg font-semibold hover:text-[#EA5D19] transition-colors">
+            <AccordionItem value="item-6" className="border rounded-lg px-4 sm:px-6 bg-gray-50">
+              <AccordionTrigger className="text-left text-base sm:text-lg font-semibold hover:text-[#EA5D19] transition-colors">
                 Can you fix a water heater that's making noises?
               </AccordionTrigger>
               <AccordionContent className="text-gray-600 text-base leading-relaxed">
@@ -365,8 +365,8 @@ export function MenifeeContent() {
               </AccordionContent>
             </AccordionItem>
 
-            <AccordionItem value="item-7" className="border rounded-lg px-6 bg-gray-50">
-              <AccordionTrigger className="text-left text-lg font-semibold hover:text-[#EA5D19] transition-colors">
+            <AccordionItem value="item-7" className="border rounded-lg px-4 sm:px-6 bg-gray-50">
+              <AccordionTrigger className="text-left text-base sm:text-lg font-semibold hover:text-[#EA5D19] transition-colors">
                 How do I prepare for a plumbing service visit?
               </AccordionTrigger>
               <AccordionContent className="text-gray-600 text-base leading-relaxed">

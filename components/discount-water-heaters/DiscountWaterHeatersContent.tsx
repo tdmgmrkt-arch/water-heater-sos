@@ -67,7 +67,7 @@ export function DiscountWaterHeatersContent() {
   return (
     <>
       {/* -------------------- SECTION 1: HERO (HIGH-IMPACT VALUE) -------------------- */}
-      <section className="relative overflow-hidden bg-gradient-to-br from-gray-50 to-gray-100 pt-28 pb-20 lg:pt-40 lg:pb-32">
+      <section className="relative overflow-hidden bg-gradient-to-br from-gray-50 to-gray-100 pt-12 pb-10 sm:pt-20 sm:pb-16 lg:pt-40 lg:pb-32">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="text-center mx-auto max-w-4xl">
 
@@ -77,27 +77,27 @@ export function DiscountWaterHeatersContent() {
               transition={{ duration: 0.6 }}
             >
               {/* Trust Badge */}
-              <div className="inline-flex items-center justify-center space-x-2 mb-6 text-xl font-bold text-[#EA5D19]">
-                  <Star className="h-6 w-6 fill-amber-400 text-amber-400" />
+              <div className="inline-flex items-center justify-center space-x-2 mb-6 text-sm sm:text-lg lg:text-xl font-bold text-[#EA5D19]">
+                  <Star className="h-4 w-4 sm:h-5 sm:w-5 lg:h-6 lg:w-6 fill-amber-400 text-amber-400" />
                   <span className="text-[#11110E]">Trusted 5-Star Service</span>
               </div>
 
               {/* Heading */}
-              <h1 className="text-5xl font-extrabold text-[#11110E] sm:text-6xl lg:text-7xl mb-4 leading-tight">
+              <h1 className="text-3xl sm:text-5xl lg:text-6xl font-extrabold text-[#11110E] mb-4 leading-tight">
                 Unlock Exclusive <span className="text-[#EA5D19]">Water Heater Discounts</span>
               </h1>
 
               {/* Subheading */}
-              <p className="text-2xl text-gray-600 mb-8">
+              <p className="text-sm sm:text-lg lg:text-2xl text-gray-600 mb-8">
                 Quality, certified plumbing services shouldn't break the bank. Claim our current special offers today for immediate savings!
               </p>
 
               {/* CTA Button */}
               <Link
                 href="/quote"
-                className="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-[#EA5D19] to-[#FF6E2E] px-10 py-5 text-xl font-extrabold text-white shadow-xl ring-4 ring-orange-200 hover:shadow-2xl transition-all hover:scale-[1.03]"
+                className="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-[#EA5D19] to-[#FF6E2E] px-5 py-3 sm:px-8 sm:py-4 lg:px-10 lg:py-5 text-sm sm:text-lg lg:text-xl font-extrabold text-white shadow-xl ring-4 ring-orange-200 hover:shadow-2xl transition-all hover:scale-[1.03]"
               >
-                <Phone className="h-6 w-6" />
+                <Phone className="h-4 w-4 sm:h-5 sm:w-5 lg:h-6 lg:w-6" />
                 See All Offers & Get Started
               </Link>
             </motion.div>
@@ -114,16 +114,16 @@ export function DiscountWaterHeatersContent() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="text-center mb-16"
+            className="text-center mb-8 sm:mb-12 lg:mb-16"
           >
-            <h2 className="text-4xl sm:text-5xl font-extrabold text-[#11110E] mb-6">
+            <h2 className="text-2xl sm:text-4xl lg:text-5xl font-extrabold text-[#11110E] mb-6">
               Claim Your Savings Now
             </h2>
             <div className="h-1 w-20 bg-[#EA5D19] mx-auto rounded-full" />
           </motion.div>
 
           {/* Discount Grid (2-column layout kept for larger card size, but cards are enhanced) */}
-          <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-4">
+          <div className="grid gap-4 sm:gap-8 lg:gap-12 grid-cols-2 lg:grid-cols-4">
             {discounts.map((discount, index) => (
               <motion.div
                 key={index}
@@ -132,15 +132,15 @@ export function DiscountWaterHeatersContent() {
                 transition={{ duration: 0.6, delay: index * 0.1 }}
                 viewport={{ once: true }}
                 // Enhanced "Coupon Look" Design
-                className="relative bg-white shadow-2xl border-4 border-dashed border-[#FF6E2E] rounded-3xl overflow-hidden group transition-all duration-300 hover:shadow-3xl"
+                className="relative bg-white shadow-2xl border-4 border-dashed border-[#FF6E2E] rounded-xl sm:rounded-2xl lg:rounded-3xl overflow-hidden group transition-all duration-300 hover:shadow-3xl"
               >
                 {/* Coupon Header (The main discount value) */}
-                <div className="p-6 bg-[#EA5D19] text-white text-center">
-                    <h3 className="text-1xl font-extrabold mb-1">{discount.title}</h3>
+                <div className="p-3 sm:p-4 lg:p-6 bg-[#EA5D19] text-white text-center">
+                    <h3 className="text-xs sm:text-sm lg:text-base font-extrabold mb-1">{discount.title}</h3>
                 </div>
 
                 {/* Image Area */}
-                <div className="relative h-[250px] w-full bg-gray-50 flex items-center justify-center p-8">
+                <div className="relative h-[120px] sm:h-[180px] lg:h-[250px] w-full bg-gray-50 flex items-center justify-center p-2 sm:p-4 lg:p-8">
                   <Image
                     src={discount.image}
                     alt={discount.title}
@@ -151,15 +151,15 @@ export function DiscountWaterHeatersContent() {
                 </div>
                 
                 {/* Coupon Footer (CTA) */}
-                <div className="p-4 bg-white text-center">
+                <div className="p-2 sm:p-3 lg:p-4 bg-white text-center">
                   <Link
                     href="/quote"
-                    className="w-full inline-flex items-center justify-center gap-2 rounded-full bg-[#11110E] px-8 py-3 text-lg font-bold text-white shadow-md transition-all group-hover:bg-[#EA5D19] group-hover:scale-[1.02] duration-300"
+                    className="w-full inline-flex items-center justify-center gap-2 rounded-full bg-[#11110E] px-4 py-2 sm:px-6 sm:py-2 lg:px-8 lg:py-3 text-xs sm:text-sm lg:text-lg font-bold text-white shadow-md transition-all group-hover:bg-[#EA5D19] group-hover:scale-[1.02] duration-300"
                   >
-                    <Tag className="h-3 w-3" />
+                    <Tag className="h-2 w-2 sm:h-3 sm:w-3" />
                     {discount.linkText}
                   </Link>
-                  <p className="mt-5 text-sm text-gray-500">
+                  <p className="mt-2 sm:mt-3 lg:mt-5 text-[10px] sm:text-xs lg:text-sm text-gray-500">
                       *Mention code at time of booking. Cannot be combined with other offers.
                   </p>
                 </div>
@@ -170,7 +170,7 @@ export function DiscountWaterHeatersContent() {
       </section>
 
       {/* -------------------- SECTION 3: VALUE & TRUST GUARANTEE -------------------- */}
-      <section className="bg-[#11110E] py-20">
+      <section className="bg-[#11110E] py-10 sm:py-16 lg:py-20">
         <div className="mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 25 }}
@@ -179,34 +179,34 @@ export function DiscountWaterHeatersContent() {
             transition={{ duration: 0.6 }}
             className="mx-auto text-center max-w-6xl text-white"
           >
-            <h2 className="text-4xl sm:text-5xl font-extrabold mb-6">
+            <h2 className="text-2xl sm:text-4xl lg:text-5xl font-extrabold mb-6">
               Our 5-Star Value Guarantee
             </h2>
             <div className="h-1 w-20 bg-[#EA5D19] mx-auto rounded-full mb-12" />
             
             <div className="grid md:grid-cols-3 gap-8 text-left">
-                <div className="p-4">
-                    <CheckCircle className="h-10 w-10 text-[#FF6E2E] mb-4" />
-                    <h3 className="text-xl font-bold mb-2">Quality & Savings Combined</h3>
-                    <p className="text-gray-300">Our discounts are paired with the same certified, high-quality work that earned us hundreds of 5-star reviews across Southern California.</p>
+                <div className="p-3 sm:p-4">
+                    <CheckCircle className="h-6 w-6 sm:h-8 sm:w-8 lg:h-10 lg:w-10 text-[#FF6E2E] mb-4" />
+                    <h3 className="text-sm sm:text-base lg:text-xl font-bold mb-2">Quality & Savings Combined</h3>
+                    <p className="text-xs sm:text-sm lg:text-base text-gray-300">Our discounts are paired with the same certified, high-quality work that earned us hundreds of 5-star reviews across Southern California.</p>
                 </div>
-                <div className="p-4">
-                    <CheckCircle className="h-10 w-10 text-[#FF6E2E] mb-4" />
-                    <h3 className="text-xl font-bold mb-2">Local & Reliable</h3>
-                    <p className="text-gray-300">As a family-owned and locally operated business since 2019, we pride ourselves on honesty, punctuality, and transparent pricing on every job.</p>
+                <div className="p-3 sm:p-4">
+                    <CheckCircle className="h-6 w-6 sm:h-8 sm:w-8 lg:h-10 lg:w-10 text-[#FF6E2E] mb-4" />
+                    <h3 className="text-sm sm:text-base lg:text-xl font-bold mb-2">Local & Reliable</h3>
+                    <p className="text-xs sm:text-sm lg:text-base text-gray-300">As a family-owned and locally operated business since 2019, we pride ourselves on honesty, punctuality, and transparent pricing on every job.</p>
                 </div>
-                <div className="p-4">
-                    <CheckCircle className="h-10 w-10 text-[#FF6E2E] mb-4" />
-                    <h3 className="text-xl font-bold mb-2">Zero Hassle Redemption</h3>
-                    <p className="text-gray-300">Simply mention the coupon or claim it online. We handle the rest, ensuring your discount is applied correctly without hidden fees or fine print surprises.</p>
+                <div className="p-3 sm:p-4">
+                    <CheckCircle className="h-6 w-6 sm:h-8 sm:w-8 lg:h-10 lg:w-10 text-[#FF6E2E] mb-4" />
+                    <h3 className="text-sm sm:text-base lg:text-xl font-bold mb-2">Zero Hassle Redemption</h3>
+                    <p className="text-xs sm:text-sm lg:text-base text-gray-300">Simply mention the coupon or claim it online. We handle the rest, ensuring your discount is applied correctly without hidden fees or fine print surprises.</p>
                 </div>
             </div>
             
             <Link
               href="/quote"
-              className="mt-12 inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-[#EA5D19] to-[#FF6E2E] px-10 py-5 text-xl font-extrabold text-white shadow-lg hover:shadow-xl transition-all hover:scale-[1.03] ring-4 ring-[#EA5D19]/30"
+              className="mt-6 sm:mt-8 lg:mt-12 inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-[#EA5D19] to-[#FF6E2E] px-5 py-3 sm:px-8 sm:py-4 lg:px-10 lg:py-5 text-sm sm:text-lg lg:text-xl font-extrabold text-white shadow-lg hover:shadow-xl transition-all hover:scale-[1.03] ring-4 ring-[#EA5D19]/30"
             >
-              <Phone className="h-6 w-6" />
+              <Phone className="h-4 w-4 sm:h-5 sm:w-5 lg:h-6 lg:w-6" />
               Schedule Today & Lock In Your Savings
             </Link>
           </motion.div>
@@ -214,7 +214,7 @@ export function DiscountWaterHeatersContent() {
       </section>
 
       {/* -------------------- SECTION 4: FAQ (CLEAN & PROFESSIONAL) -------------------- */}
-      <section className="py-16 lg:py-24 bg-white">
+      <section className="py-10 sm:py-16 lg:py-24 bg-white">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -223,11 +223,11 @@ export function DiscountWaterHeatersContent() {
             viewport={{ once: true }}
             className="mx-auto max-w-6xl"
           >
-            <h2 className="text-3xl font-extrabold text-[#11110E] sm:text-4xl mb-8 text-center">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-[#11110E] mb-8 text-center">
               Discount & Service Questions
             </h2>
             <div className="h-1 w-20 bg-[#EA5D19] mx-auto rounded-full mb-12" />
-            <Accordion type="single" collapsible className="space-y-4">
+            <Accordion type="single" collapsible className="space-y-2 sm:space-y-4">
               {faqs.map((faq, index) => (
                 <motion.div
                   key={index}
@@ -238,12 +238,12 @@ export function DiscountWaterHeatersContent() {
                 >
                   <AccordionItem
                     value={`item-${index}`}
-                    className="rounded-xl bg-gray-50 px-6 shadow-md border-0"
+                    className="rounded-xl bg-gray-50 px-4 sm:px-6 shadow-md border-0"
                   >
-                    <AccordionTrigger className="text-left font-semibold text-lg text-[#11110E] hover:text-[#EA5D19] py-5 flex items-start justify-between gap-2">
+                    <AccordionTrigger className="text-left font-semibold text-sm sm:text-base lg:text-lg text-[#11110E] hover:text-[#EA5D19] py-3 sm:py-4 lg:py-5 flex items-start justify-between gap-2">
                       <span className="flex-grow">{faq.question}</span>
                     </AccordionTrigger>
-                    <AccordionContent className="text-gray-700 pb-5 border-t border-gray-200 pt-4">
+                    <AccordionContent className="text-xs sm:text-sm lg:text-base text-gray-700 pb-3 sm:pb-4 lg:pb-5 border-t border-gray-200 pt-2 sm:pt-3 lg:pt-4">
                       {faq.answer}
                     </AccordionContent>
                   </AccordionItem>
@@ -255,7 +255,7 @@ export function DiscountWaterHeatersContent() {
       </section>
 
       {/* -------------------- SECTION 5: FINAL CTA (COLOR POP) -------------------- */}
-      <section className="bg-gradient-to-r from-[#EA5D19] to-[#FF6E2E] py-16 lg:py-24">
+      <section className="bg-gradient-to-r from-[#EA5D19] to-[#FF6E2E] py-10 sm:py-16 lg:py-24">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -264,17 +264,17 @@ export function DiscountWaterHeatersContent() {
             viewport={{ once: true }}
             className="text-center"
           >
-            <h2 className="text-3xl font-extrabold text-white sm:text-4xl mb-6">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-white mb-6">
               Don't Miss Out! Claim Your Water Heater Discount Today.
             </h2>
-            <p className="text-xl text-white/90 mb-8 max-w-3xl mx-auto">
+            <p className="text-sm sm:text-lg lg:text-xl text-white/90 mb-8 max-w-3xl mx-auto">
               Ready to experience 5-star service and immediate savings? Click below to schedule your appointment and lock in your exclusive offer.
             </p>
             <Link
               href="/quote"
-              className="inline-flex items-center gap-2 rounded-full bg-white px-10 py-5 text-xl font-extrabold text-[#EA5D19] shadow-lg hover:shadow-2xl transition-all hover:scale-105 ring-4 ring-white/30"
+              className="inline-flex items-center gap-2 rounded-full bg-white px-5 py-3 sm:px-8 sm:py-4 lg:px-10 lg:py-5 text-sm sm:text-lg lg:text-xl font-extrabold text-[#EA5D19] shadow-lg hover:shadow-2xl transition-all hover:scale-105 ring-4 ring-white/30"
             >
-              <Phone className="h-6 w-6" />
+              <Phone className="h-4 w-4 sm:h-5 sm:w-5 lg:h-6 lg:w-6" />
               Schedule & Claim Discount
             </Link>
           </motion.div>

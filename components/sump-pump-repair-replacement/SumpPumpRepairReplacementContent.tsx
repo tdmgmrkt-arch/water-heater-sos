@@ -15,32 +15,32 @@ export function SumpPumpRepairReplacementContent() {
   return (
     <>
       {/* Hero Section */}
-      <section className="relative overflow-hidden bg-gradient-to-b from-gray-50 to-white pt-20 pb-16 lg:pt-32 lg:pb-24">
+      <section className="relative overflow-hidden bg-gradient-to-b from-gray-50 to-white pt-12 pb-10 sm:pt-20 sm:pb-16 lg:pt-32 lg:pb-24">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="grid gap-12 lg:grid-cols-2 lg:gap-16 items-center">
+          <div className="grid gap-8 sm:gap-12 lg:grid-cols-2 lg:gap-16 items-center">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 }}
             >
-              <span className="inline-block px-4 py-1 rounded-full bg-[#EA5D19] text-sm text-white font-semibold mb-4 tracking-wide">
+              <span className="inline-block px-3 py-1 rounded-full bg-[#EA5D19] text-xs sm:text-sm text-white font-semibold mb-4 tracking-wide">
                 Protect Your Home From Basement Flooding
               </span>
-              <h1 className="text-5xl font-extrabold text-[#11110E] sm:text-6xl lg:text-7xl mb-4 leading-tight">
+              <h1 className="text-3xl sm:text-5xl font-extrabold text-[#11110E] lg:text-7xl mb-4 leading-tight">
                 <span className="text-[#EA5D19]">Sump Pump </span>Repair & Replacement
               </h1>
-              <p className="text-lg text-gray-700 leading-relaxed mb-4">
+              <p className="text-sm sm:text-lg text-gray-700 leading-relaxed mb-4">
                 Is your sump pump making strange noises, running constantly, or not working at all?
               </p>
-              <p className="text-lg text-gray-700 leading-relaxed mb-8">
+              <p className="text-sm sm:text-lg text-gray-700 leading-relaxed mb-8">
                 A failing sump pump leaves your basement vulnerable to flooding and water damage during heavy rains. Our expert plumbers provide fast sump pump repairs and professional installations to keep your home dry and protected.
               </p>
               <Link
                 href="/quote"
-                className="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-[#EA5D19] to-[#FF6E2E] px-8 py-4 text-lg font-semibold text-white shadow-lg hover:shadow-xl transition-all duration-200 hover:scale-105"
+                className="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-[#EA5D19] to-[#FF6E2E] px-5 py-3 sm:px-8 sm:py-4 text-sm sm:text-lg font-semibold text-white shadow-lg hover:shadow-xl transition-all duration-200 hover:scale-105"
               >
                 Schedule an Appointment
-                <ArrowRight className="h-5 w-5" />
+                <ArrowRight className="h-4 w-4 sm:h-5 sm:w-5" />
               </Link>
             </motion.div>
 
@@ -50,7 +50,7 @@ export function SumpPumpRepairReplacementContent() {
               transition={{ duration: 0.5, delay: 0.2 }}
               className="relative"
             >
-              <div className="relative h-[500px] w-full rounded-2xl overflow-hidden shadow-2xl">
+              <div className="relative h-[280px] sm:h-[400px] lg:h-[500px] w-full rounded-2xl sm:rounded-3xl overflow-hidden shadow-2xl">
                 <Image
                   src="/sump-pump.webp"
                   alt="Professional sump pump repair and replacement services"
@@ -77,7 +77,7 @@ export function SumpPumpRepairReplacementContent() {
       </section>
 
       {/* Benefits Section */}
-      <section className="py-20 bg-gray-50">
+      <section className="py-10 sm:py-16 lg:py-20 bg-gray-50">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -86,7 +86,7 @@ export function SumpPumpRepairReplacementContent() {
             transition={{ duration: 0.5 }}
             className="text-center mb-16"
           >
-            <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl mb-4">
+            <h2 className="text-2xl sm:text-4xl font-bold tracking-tight text-gray-900 mb-4">
               Why Choose Professional Sump Pump Service?
             </h2>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
@@ -94,7 +94,7 @@ export function SumpPumpRepairReplacementContent() {
             </p>
           </motion.div>
 
-          <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
+          <div className="grid gap-4 sm:gap-6 lg:gap-10 md:grid-cols-2 lg:grid-cols-4">
             {[
               {
                 title: "Prevent Flooding",
@@ -123,15 +123,15 @@ export function SumpPumpRepairReplacementContent() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
-                className="rounded-2xl bg-white p-8 shadow-lg border border-gray-200"
+                className="rounded-xl sm:rounded-2xl bg-white p-4 sm:p-6 lg:p-8 shadow-lg border border-gray-200"
               >
                 <div className="mb-4 inline-flex rounded-lg bg-[#EA5D19] p-3">
                   <benefit.icon className="h-6 w-6 text-white" />
                 </div>
-                <h3 className="text-xl font-bold text-gray-900 mb-3">
+                <h3 className="text-base sm:text-xl font-bold text-gray-900 mb-3">
                   {benefit.title}
                 </h3>
-                <p className="text-gray-600">{benefit.description}</p>
+                <p className="text-sm sm:text-base text-gray-600">{benefit.description}</p>
               </motion.div>
             ))}
           </div>
@@ -139,7 +139,7 @@ export function SumpPumpRepairReplacementContent() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-r from-[#EA5D19] to-[#FF6E2E]">
+      <section className="py-10 sm:py-16 bg-gradient-to-r from-[#EA5D19] to-[#FF6E2E]">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 text-center">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -147,7 +147,7 @@ export function SumpPumpRepairReplacementContent() {
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
           >
-            <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl mb-6">
+            <h2 className="text-2xl sm:text-4xl font-bold tracking-tight text-white mb-6">
               Get a Free Estimate Today!
             </h2>
             <p className="text-xl text-white/90 mb-8 max-w-2xl mx-auto">
@@ -156,17 +156,17 @@ export function SumpPumpRepairReplacementContent() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
                 href="tel:+18006974014"
-                className="inline-flex items-center justify-center gap-2 rounded-full bg-white px-8 py-4 text-lg font-semibold text-[#EA5D19] shadow-lg hover:shadow-xl transition-all duration-200 hover:scale-105"
+                className="inline-flex items-center justify-center gap-2 rounded-full bg-white px-5 py-3 sm:px-8 sm:py-4 text-sm sm:text-lg font-semibold text-[#EA5D19] shadow-lg hover:shadow-xl transition-all duration-200 hover:scale-105"
               >
-                <Phone className="h-5 w-5" />
+                <Phone className="h-4 w-4 sm:h-5 sm:w-5" />
                 (800) 697-4014
               </Link>
               <Link
                 href="/quote"
-                className="inline-flex items-center justify-center gap-2 rounded-full bg-[#11110E] px-8 py-4 text-lg font-semibold text-white shadow-lg hover:shadow-xl transition-all duration-200 hover:scale-105"
+                className="inline-flex items-center justify-center gap-2 rounded-full bg-[#11110E] px-5 py-3 sm:px-8 sm:py-4 text-sm sm:text-lg font-semibold text-white shadow-lg hover:shadow-xl transition-all duration-200 hover:scale-105"
               >
                 Get Free Quote
-                <ArrowRight className="h-5 w-5" />
+                <ArrowRight className="h-4 w-4 sm:h-5 sm:w-5" />
               </Link>
             </div>
           </motion.div>
@@ -174,7 +174,7 @@ export function SumpPumpRepairReplacementContent() {
       </section>
 
       {/* FAQ Section */}
-      <section className="py-20 bg-white">
+      <section className="py-10 sm:py-16 lg:py-20 bg-white">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -183,7 +183,7 @@ export function SumpPumpRepairReplacementContent() {
             transition={{ duration: 0.5 }}
             className="text-center mb-16"
           >
-            <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl mb-4">
+            <h2 className="text-2xl sm:text-4xl font-bold tracking-tight text-gray-900 mb-4">
               Frequently Asked Questions
             </h2>
             <p className="text-xl text-gray-600">
@@ -191,75 +191,75 @@ export function SumpPumpRepairReplacementContent() {
             </p>
           </motion.div>
 
-          <Accordion type="single" collapsible className="space-y-4">
-            <AccordionItem value="item-1" className="border rounded-lg px-6 bg-gray-50">
-              <AccordionTrigger className="text-left text-lg font-semibold hover:text-[#EA5D19] transition-colors">
+          <Accordion type="single" collapsible className="space-y-2 sm:space-y-4">
+            <AccordionItem value="item-1" className="border rounded-lg px-4 sm:px-6 bg-gray-50">
+              <AccordionTrigger className="text-left text-sm sm:text-base lg:text-lg font-semibold hover:text-[#EA5D19] transition-colors py-3 sm:py-4">
                 What does a sump pump do?
               </AccordionTrigger>
-              <AccordionContent className="text-gray-600 text-base leading-relaxed">
+              <AccordionContent className="text-gray-600 text-xs sm:text-sm lg:text-base leading-relaxed pb-3 sm:pb-4">
                 A sump pump removes water that collects in a basement or crawlspace sump pit, preventing flooding and protecting your home's foundation. It automatically activates when water levels rise, pumping water out to a safe drainage area away from your home.
               </AccordionContent>
             </AccordionItem>
 
-            <AccordionItem value="item-2" className="border rounded-lg px-6 bg-gray-50">
-              <AccordionTrigger className="text-left text-lg font-semibold hover:text-[#EA5D19] transition-colors">
+            <AccordionItem value="item-2" className="border rounded-lg px-4 sm:px-6 bg-gray-50">
+              <AccordionTrigger className="text-left text-sm sm:text-base lg:text-lg font-semibold hover:text-[#EA5D19] transition-colors py-3 sm:py-4">
                 How do I know if my sump pump is working?
               </AccordionTrigger>
-              <AccordionContent className="text-gray-600 text-base leading-relaxed">
+              <AccordionContent className="text-gray-600 text-xs sm:text-sm lg:text-base leading-relaxed pb-3 sm:pb-4">
                 Test it by pouring water into the sump pit until the float switch activates and the pump turns on. If it doesn't start, struggles to clear water, or makes unusual noises, it may need repairs or replacement. Test your pump every 3-6 months.
               </AccordionContent>
             </AccordionItem>
 
-            <AccordionItem value="item-3" className="border rounded-lg px-6 bg-gray-50">
-              <AccordionTrigger className="text-left text-lg font-semibold hover:text-[#EA5D19] transition-colors">
+            <AccordionItem value="item-3" className="border rounded-lg px-4 sm:px-6 bg-gray-50">
+              <AccordionTrigger className="text-left text-sm sm:text-base lg:text-lg font-semibold hover:text-[#EA5D19] transition-colors py-3 sm:py-4">
                 Why does my sump pump keep running?
               </AccordionTrigger>
-              <AccordionContent className="text-gray-600 text-base leading-relaxed">
+              <AccordionContent className="text-gray-600 text-xs sm:text-sm lg:text-base leading-relaxed pb-3 sm:pb-4">
                 A pump that runs constantly might have a stuck float switch, a clogged discharge line preventing water removal, or extremely high groundwater levels overwhelming the system. Check for blockages or contact a professional to diagnose the issue before the pump burns out.
               </AccordionContent>
             </AccordionItem>
 
-            <AccordionItem value="item-4" className="border rounded-lg px-6 bg-gray-50">
-              <AccordionTrigger className="text-left text-lg font-semibold hover:text-[#EA5D19] transition-colors">
+            <AccordionItem value="item-4" className="border rounded-lg px-4 sm:px-6 bg-gray-50">
+              <AccordionTrigger className="text-left text-sm sm:text-base lg:text-lg font-semibold hover:text-[#EA5D19] transition-colors py-3 sm:py-4">
                 What happens if my sump pump fails?
               </AccordionTrigger>
-              <AccordionContent className="text-gray-600 text-base leading-relaxed">
+              <AccordionContent className="text-gray-600 text-xs sm:text-sm lg:text-base leading-relaxed pb-3 sm:pb-4">
                 A failed sump pump leads to basement flooding, damaging walls, floors, stored belongings, and furniture. Water can weaken your home's foundation, cause mold growth, and create costly structural issues. Quick replacement prevents these expensive problems.
               </AccordionContent>
             </AccordionItem>
 
-            <AccordionItem value="item-5" className="border rounded-lg px-6 bg-gray-50">
-              <AccordionTrigger className="text-left text-lg font-semibold hover:text-[#EA5D19] transition-colors">
+            <AccordionItem value="item-5" className="border rounded-lg px-4 sm:px-6 bg-gray-50">
+              <AccordionTrigger className="text-left text-sm sm:text-base lg:text-lg font-semibold hover:text-[#EA5D19] transition-colors py-3 sm:py-4">
                 Can a sump pump work during a power outage?
               </AccordionTrigger>
-              <AccordionContent className="text-gray-600 text-base leading-relaxed">
+              <AccordionContent className="text-gray-600 text-xs sm:text-sm lg:text-base leading-relaxed pb-3 sm:pb-4">
                 Standard sump pumps require electricity and stop during power outages. Since storms that cause flooding often knock out power, a battery backup system or generator is essential. Battery backup pumps keep running when the power fails, protecting your home when you need it most.
               </AccordionContent>
             </AccordionItem>
 
-            <AccordionItem value="item-6" className="border rounded-lg px-6 bg-gray-50">
-              <AccordionTrigger className="text-left text-lg font-semibold hover:text-[#EA5D19] transition-colors">
+            <AccordionItem value="item-6" className="border rounded-lg px-4 sm:px-6 bg-gray-50">
+              <AccordionTrigger className="text-left text-sm sm:text-base lg:text-lg font-semibold hover:text-[#EA5D19] transition-colors py-3 sm:py-4">
                 How often should I maintain my sump pump?
               </AccordionTrigger>
-              <AccordionContent className="text-gray-600 text-base leading-relaxed">
+              <AccordionContent className="text-gray-600 text-xs sm:text-sm lg:text-base leading-relaxed pb-3 sm:pb-4">
                 Check your sump pump every 3-6 months by pouring water in the pit to ensure it activates and clears debris. Annual professional maintenance catches problems before they lead to failure. Clean the pit, check the float switch, and test the discharge line regularly.
               </AccordionContent>
             </AccordionItem>
 
-            <AccordionItem value="item-7" className="border rounded-lg px-6 bg-gray-50">
-              <AccordionTrigger className="text-left text-lg font-semibold hover:text-[#EA5D19] transition-colors">
+            <AccordionItem value="item-7" className="border rounded-lg px-4 sm:px-6 bg-gray-50">
+              <AccordionTrigger className="text-left text-sm sm:text-base lg:text-lg font-semibold hover:text-[#EA5D19] transition-colors py-3 sm:py-4">
                 Should I repair or replace my sump pump?
               </AccordionTrigger>
-              <AccordionContent className="text-gray-600 text-base leading-relaxed">
+              <AccordionContent className="text-gray-600 text-xs sm:text-sm lg:text-base leading-relaxed pb-3 sm:pb-4">
                 Replacement is usually better than repair because repair costs often approach new pump prices, and fixing one part doesn't prevent other components from failing. If your pump is over 7-10 years old or has recurring problems, replacement with a modern, reliable system makes more sense.
               </AccordionContent>
             </AccordionItem>
 
-            <AccordionItem value="item-8" className="border rounded-lg px-6 bg-gray-50">
-              <AccordionTrigger className="text-left text-lg font-semibold hover:text-[#EA5D19] transition-colors">
+            <AccordionItem value="item-8" className="border rounded-lg px-4 sm:px-6 bg-gray-50">
+              <AccordionTrigger className="text-left text-sm sm:text-base lg:text-lg font-semibold hover:text-[#EA5D19] transition-colors py-3 sm:py-4">
                 Why is my sump pump making loud noises?
               </AccordionTrigger>
-              <AccordionContent className="text-gray-600 text-base leading-relaxed">
+              <AccordionContent className="text-gray-600 text-xs sm:text-sm lg:text-base leading-relaxed pb-3 sm:pb-4">
                 Loud grinding or rattling noises indicate a worn-out motor, loose parts, or debris in the pump. These issues can lead to complete failure if not addressed quickly. Contact a professional to inspect and repair or replace the pump before it stops working entirely.
               </AccordionContent>
             </AccordionItem>

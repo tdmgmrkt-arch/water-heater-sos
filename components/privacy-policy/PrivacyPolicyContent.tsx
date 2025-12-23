@@ -46,7 +46,7 @@ export function PrivacyPolicyContent() {
   return (
     <main className="min-h-screen bg-white">
       {/* Hero Section */}
-      <section className="relative overflow-hidden bg-gradient-to-br from-[#11110E] via-[#1a1917] to-[#11110E] py-16 lg:py-20">
+      <section className="relative overflow-hidden bg-gradient-to-br from-[#11110E] via-[#1a1917] to-[#11110E] py-12 sm:py-16 lg:py-20">
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
           <motion.div
             className="absolute -top-40 -right-40 w-80 h-80 bg-[#EA5D19]/20 rounded-full blur-3xl"
@@ -62,27 +62,27 @@ export function PrivacyPolicyContent() {
             transition={{ duration: 0.6 }}
             className="text-center"
           >
-            <div className="inline-flex items-center gap-2 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 px-4 py-2 mb-6">
-              <Shield className="h-4 w-4 text-[#EA5D19]" />
-              <span className="text-sm font-semibold text-white">Your Privacy Matters</span>
+            <div className="inline-flex items-center gap-2 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 px-3 py-1 sm:px-4 sm:py-2 mb-4 sm:mb-6">
+              <Shield className="h-3 w-3 sm:h-4 sm:w-4 text-[#EA5D19]" />
+              <span className="text-xs sm:text-sm font-semibold text-white">Your Privacy Matters</span>
             </div>
 
-            <h1 className="text-4xl font-bold text-white sm:text-5xl lg:text-6xl mb-4">
+            <h1 className="text-2xl font-bold text-white sm:text-4xl lg:text-5xl mb-3 sm:mb-4">
               Privacy Policy
             </h1>
 
             <div className="flex items-center justify-center gap-2 text-gray-300">
-              <Calendar className="h-4 w-4" />
-              <p className="text-lg">Effective Date: August 3, 2024</p>
+              <Calendar className="h-3 w-3 sm:h-4 sm:w-4" />
+              <p className="text-sm sm:text-base lg:text-lg">Effective Date: August 3, 2024</p>
             </div>
           </motion.div>
         </div>
       </section>
 
       {/* Main Content */}
-      <section className="py-16 lg:py-24">
+      <section className="py-10 sm:py-16 lg:py-24">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="grid gap-12 lg:grid-cols-12">
+          <div className="grid gap-6 sm:gap-8 lg:gap-12 lg:grid-cols-12">
             {/* Table of Contents - Sticky Sidebar */}
             <aside className="lg:col-span-3">
               <div className="lg:sticky lg:top-24">
@@ -90,15 +90,15 @@ export function PrivacyPolicyContent() {
                   initial={{ opacity: 0, x: -20 }}
                   animate={{ opacity: 1, x: 0 }}
                   transition={{ duration: 0.6 }}
-                  className="bg-gradient-to-br from-gray-50 to-white p-6 rounded-2xl shadow-lg border border-gray-100"
+                  className="bg-gradient-to-br from-gray-50 to-white p-4 sm:p-6 rounded-xl sm:rounded-2xl shadow-lg border border-gray-100"
                 >
-                  <h2 className="text-lg font-bold text-[#11110E] mb-4">Table of Contents</h2>
+                  <h2 className="text-base sm:text-lg font-bold text-[#11110E] mb-3 sm:mb-4">Table of Contents</h2>
                   <nav className="space-y-2">
                     {sections.map((section) => (
                       <button
                         key={section.id}
                         onClick={() => scrollToSection(section.id)}
-                        className={`block w-full text-left text-sm py-2 px-3 rounded-lg transition-all ${
+                        className={`block w-full text-left text-xs sm:text-sm py-2 px-2 sm:px-3 rounded-lg transition-all ${
                           activeSection === section.id
                             ? "bg-[#EA5D19] text-white font-semibold"
                             : "text-gray-700 hover:bg-gray-100 hover:text-[#EA5D19]"
@@ -121,8 +121,8 @@ export function PrivacyPolicyContent() {
                 className="prose prose-lg max-w-none"
               >
                 {/* Introduction */}
-                <div className="bg-white p-8 rounded-2xl shadow-lg border border-gray-100 mb-8">
-                  <p className="text-gray-700 leading-relaxed">
+                <div className="bg-white p-4 sm:p-6 lg:p-8 rounded-xl sm:rounded-2xl shadow-lg border border-gray-100 mb-6 sm:mb-8">
+                  <p className="text-sm sm:text-base text-gray-700 leading-relaxed">
                     Water Heater SOS ("us", "we", or "our") operates the WaterHeaterSOS.com website (the "Service").
                   </p>
                   <p className="text-gray-700 leading-relaxed mt-4">
@@ -138,39 +138,39 @@ export function PrivacyPolicyContent() {
                 </div>
 
                 {/* Definitions */}
-                <div id="definitions" className="scroll-mt-24 mb-12">
-                  <h2 className="text-3xl font-bold text-[#11110E] mb-6 flex items-center gap-3">
+                <div id="definitions" className="scroll-mt-24 mb-6 sm:mb-8 lg:mb-12">
+                  <h2 className="text-2xl sm:text-3xl font-bold text-[#11110E] mb-4 sm:mb-6 flex items-center gap-2 sm:gap-3">
                     <span className="w-1 h-8 bg-gradient-to-b from-[#EA5D19] to-[#FF6E2E] rounded-full"></span>
                     Definitions
                   </h2>
-                  <div className="bg-white p-8 rounded-2xl shadow-lg border border-gray-100 space-y-4">
+                  <div className="bg-white p-4 sm:p-6 lg:p-8 rounded-xl sm:rounded-2xl shadow-lg border border-gray-100 space-y-3 sm:space-y-4">
                     <div>
-                      <h3 className="font-bold text-[#11110E] mb-2">Service</h3>
-                      <p className="text-gray-700">Service is the https://www.waterheatersos.com website operated by Water Heater SOS.</p>
+                      <h3 className="font-bold text-sm sm:text-base text-[#11110E] mb-2">Service</h3>
+                      <p className="text-xs sm:text-sm lg:text-base text-gray-700">Service is the https://www.waterheatersos.com website operated by Water Heater SOS.</p>
                     </div>
                     <div>
-                      <h3 className="font-bold text-[#11110E] mb-2">Personal Data</h3>
-                      <p className="text-gray-700">Personal Data means data about a living individual who can be identified from those data (or from those and other information either in our possession or likely to come into our possession).</p>
+                      <h3 className="font-bold text-sm sm:text-base text-[#11110E] mb-2">Personal Data</h3>
+                      <p className="text-xs sm:text-sm lg:text-base text-gray-700">Personal Data means data about a living individual who can be identified from those data (or from those and other information either in our possession or likely to come into our possession).</p>
                     </div>
                     <div>
-                      <h3 className="font-bold text-[#11110E] mb-2">Usage Data</h3>
-                      <p className="text-gray-700">Usage Data is data collected automatically either generated by the use of the Service or from the Service infrastructure itself (for example, the duration of a page visit).</p>
+                      <h3 className="font-bold text-sm sm:text-base text-[#11110E] mb-2">Usage Data</h3>
+                      <p className="text-xs sm:text-sm lg:text-base text-gray-700">Usage Data is data collected automatically either generated by the use of the Service or from the Service infrastructure itself (for example, the duration of a page visit).</p>
                     </div>
                     <div>
-                      <h3 className="font-bold text-[#11110E] mb-2">Cookies</h3>
-                      <p className="text-gray-700">Cookies are small pieces of data stored on your device (computer or mobile device).</p>
+                      <h3 className="font-bold text-sm sm:text-base text-[#11110E] mb-2">Cookies</h3>
+                      <p className="text-xs sm:text-sm lg:text-base text-gray-700">Cookies are small pieces of data stored on your device (computer or mobile device).</p>
                     </div>
                     <div>
-                      <h3 className="font-bold text-[#11110E] mb-2">Data Controller</h3>
-                      <p className="text-gray-700">Data Controller means the natural or legal person who (either alone or jointly or in common with other persons) determines the purposes for which and the manner in which any personal information are, or are to be, processed. For the purpose of this Privacy Policy, we are a Data Controller of your Personal Data.</p>
+                      <h3 className="font-bold text-sm sm:text-base text-[#11110E] mb-2">Data Controller</h3>
+                      <p className="text-xs sm:text-sm lg:text-base text-gray-700">Data Controller means the natural or legal person who (either alone or jointly or in common with other persons) determines the purposes for which and the manner in which any personal information are, or are to be, processed. For the purpose of this Privacy Policy, we are a Data Controller of your Personal Data.</p>
                     </div>
                     <div>
-                      <h3 className="font-bold text-[#11110E] mb-2">Data Processors (or Service Providers)</h3>
-                      <p className="text-gray-700">Data Processor (or Service Provider) means any natural or legal person who processes the data on behalf of the Data Controller. We may use the services of various Service Providers in order to process your data more effectively.</p>
+                      <h3 className="font-bold text-sm sm:text-base text-[#11110E] mb-2">Data Processors (or Service Providers)</h3>
+                      <p className="text-xs sm:text-sm lg:text-base text-gray-700">Data Processor (or Service Provider) means any natural or legal person who processes the data on behalf of the Data Controller. We may use the services of various Service Providers in order to process your data more effectively.</p>
                     </div>
                     <div>
-                      <h3 className="font-bold text-[#11110E] mb-2">Data Subject (or User)</h3>
-                      <p className="text-gray-700">Data Subject is any living individual who is using our Service and is the subject of Personal Data.</p>
+                      <h3 className="font-bold text-sm sm:text-base text-[#11110E] mb-2">Data Subject (or User)</h3>
+                      <p className="text-xs sm:text-sm lg:text-base text-gray-700">Data Subject is any living individual who is using our Service and is the subject of Personal Data.</p>
                     </div>
                   </div>
                 </div>
@@ -181,8 +181,8 @@ export function PrivacyPolicyContent() {
                     <span className="w-1 h-8 bg-gradient-to-b from-[#EA5D19] to-[#FF6E2E] rounded-full"></span>
                     Information Collection and Use
                   </h2>
-                  <div className="bg-white p-8 rounded-2xl shadow-lg border border-gray-100">
-                    <p className="text-gray-700 leading-relaxed">
+                  <div className="bg-white p-4 sm:p-6 lg:p-8 rounded-xl sm:rounded-2xl shadow-lg border border-gray-100">
+                    <p className="text-sm sm:text-base text-gray-700 leading-relaxed">
                       We collect several different types of information for various purposes to provide and improve our Service to you.
                     </p>
                   </div>
@@ -194,11 +194,11 @@ export function PrivacyPolicyContent() {
                     <span className="w-1 h-8 bg-gradient-to-b from-[#EA5D19] to-[#FF6E2E] rounded-full"></span>
                     Personal Data
                   </h2>
-                  <div className="bg-white p-8 rounded-2xl shadow-lg border border-gray-100">
-                    <p className="text-gray-700 leading-relaxed mb-4">
+                  <div className="bg-white p-4 sm:p-6 lg:p-8 rounded-xl sm:rounded-2xl shadow-lg border border-gray-100">
+                    <p className="text-sm sm:text-base text-gray-700 leading-relaxed mb-3 sm:mb-4">
                       While using our Service, we may ask you to provide us with certain personally identifiable information that can be used to contact or identify you ("Personal Data"). Personally identifiable information may include, but is not limited to:
                     </p>
-                    <ul className="list-disc list-inside space-y-2 text-gray-700 ml-4">
+                    <ul className="list-disc list-inside space-y-2 text-xs sm:text-sm lg:text-base text-gray-700 ml-3 sm:ml-4">
                       <li>Email address</li>
                       <li>First name and last name</li>
                       <li>Phone number</li>
@@ -213,8 +213,8 @@ export function PrivacyPolicyContent() {
                     <span className="w-1 h-8 bg-gradient-to-b from-[#EA5D19] to-[#FF6E2E] rounded-full"></span>
                     Usage Data
                   </h2>
-                  <div className="bg-white p-8 rounded-2xl shadow-lg border border-gray-100">
-                    <p className="text-gray-700 leading-relaxed">
+                  <div className="bg-white p-4 sm:p-6 lg:p-8 rounded-xl sm:rounded-2xl shadow-lg border border-gray-100">
+                    <p className="text-sm sm:text-base text-gray-700 leading-relaxed">
                       We may also collect information on how the Service is accessed and used ("Usage Data"). This Usage Data may include information such as your computer's Internet Protocol address (e.g. IP address), browser type, browser version, the pages of our Service that you visit, the time and date of your visit, the time spent on those pages, unique device identifiers and other diagnostic data.
                     </p>
                   </div>
@@ -226,18 +226,18 @@ export function PrivacyPolicyContent() {
                     <span className="w-1 h-8 bg-gradient-to-b from-[#EA5D19] to-[#FF6E2E] rounded-full"></span>
                     Tracking &amp; Cookies Data
                   </h2>
-                  <div className="bg-white p-8 rounded-2xl shadow-lg border border-gray-100">
-                    <p className="text-gray-700 leading-relaxed mb-4">
+                  <div className="bg-white p-4 sm:p-6 lg:p-8 rounded-xl sm:rounded-2xl shadow-lg border border-gray-100">
+                    <p className="text-sm sm:text-base text-gray-700 leading-relaxed mb-3 sm:mb-4">
                       We use cookies and similar tracking technologies to track the activity on our Service and hold certain information.
                     </p>
-                    <p className="text-gray-700 leading-relaxed mb-4">
+                    <p className="text-sm sm:text-base text-gray-700 leading-relaxed mb-3 sm:mb-4">
                       Cookies are files with a small amount of data which may include an anonymous unique identifier. Cookies are sent to your browser from a website and stored on your device. Tracking technologies also used are beacons, tags, and scripts to collect and track information and to improve and analyze our Service.
                     </p>
-                    <p className="text-gray-700 leading-relaxed mb-4">
+                    <p className="text-sm sm:text-base text-gray-700 leading-relaxed mb-3 sm:mb-4">
                       You can instruct your browser to refuse all cookies or to indicate when a cookie is being sent. However, if you do not accept cookies, you may not be able to use some portions of our Service.
                     </p>
                     <p className="text-gray-700 leading-relaxed mb-4 font-semibold">Examples of Cookies we use:</p>
-                    <ul className="list-disc list-inside space-y-2 text-gray-700 ml-4">
+                    <ul className="list-disc list-inside space-y-2 text-xs sm:text-sm lg:text-base text-gray-700 ml-3 sm:ml-4">
                       <li><strong>Session Cookies:</strong> We use Session Cookies to operate our Service.</li>
                       <li><strong>Preference Cookies:</strong> We use Preference Cookies to remember your preferences and various settings.</li>
                       <li><strong>Security Cookies:</strong> We use Security Cookies for security purposes.</li>
@@ -251,11 +251,11 @@ export function PrivacyPolicyContent() {
                     <span className="w-1 h-8 bg-gradient-to-b from-[#EA5D19] to-[#FF6E2E] rounded-full"></span>
                     Use of Data
                   </h2>
-                  <div className="bg-white p-8 rounded-2xl shadow-lg border border-gray-100">
-                    <p className="text-gray-700 leading-relaxed mb-4">
+                  <div className="bg-white p-4 sm:p-6 lg:p-8 rounded-xl sm:rounded-2xl shadow-lg border border-gray-100">
+                    <p className="text-sm sm:text-base text-gray-700 leading-relaxed mb-3 sm:mb-4">
                       Water Heater SOS uses the collected data for various purposes:
                     </p>
-                    <ul className="list-disc list-inside space-y-2 text-gray-700 ml-4">
+                    <ul className="list-disc list-inside space-y-2 text-xs sm:text-sm lg:text-base text-gray-700 ml-3 sm:ml-4">
                       <li>To provide and maintain our Service</li>
                       <li>To notify you about changes to our Service</li>
                       <li>To allow you to participate in interactive features of our Service when you choose to do so</li>
@@ -273,14 +273,14 @@ export function PrivacyPolicyContent() {
                     <span className="w-1 h-8 bg-gradient-to-b from-[#EA5D19] to-[#FF6E2E] rounded-full"></span>
                     Legal Basis for Processing Personal Data Under GDPR
                   </h2>
-                  <div className="bg-white p-8 rounded-2xl shadow-lg border border-gray-100">
-                    <p className="text-gray-700 leading-relaxed mb-4">
+                  <div className="bg-white p-4 sm:p-6 lg:p-8 rounded-xl sm:rounded-2xl shadow-lg border border-gray-100">
+                    <p className="text-sm sm:text-base text-gray-700 leading-relaxed mb-3 sm:mb-4">
                       If you are from the European Economic Area (EEA), Water Heater SOS legal basis for collecting and using the personal information described in this Privacy Policy depends on the Personal Data we collect and the specific context in which we collect it.
                     </p>
-                    <p className="text-gray-700 leading-relaxed mb-4">
+                    <p className="text-sm sm:text-base text-gray-700 leading-relaxed mb-3 sm:mb-4">
                       Water Heater SOS may process your Personal Data because:
                     </p>
-                    <ul className="list-disc list-inside space-y-2 text-gray-700 ml-4">
+                    <ul className="list-disc list-inside space-y-2 text-xs sm:text-sm lg:text-base text-gray-700 ml-3 sm:ml-4">
                       <li>We need to perform a contract with you</li>
                       <li>You have given us permission to do so</li>
                       <li>The processing is in our legitimate interests and it's not overridden by your rights</li>
@@ -296,11 +296,11 @@ export function PrivacyPolicyContent() {
                     <span className="w-1 h-8 bg-gradient-to-b from-[#EA5D19] to-[#FF6E2E] rounded-full"></span>
                     Retention of Data
                   </h2>
-                  <div className="bg-white p-8 rounded-2xl shadow-lg border border-gray-100">
-                    <p className="text-gray-700 leading-relaxed mb-4">
+                  <div className="bg-white p-4 sm:p-6 lg:p-8 rounded-xl sm:rounded-2xl shadow-lg border border-gray-100">
+                    <p className="text-sm sm:text-base text-gray-700 leading-relaxed mb-3 sm:mb-4">
                       Water Heater SOS will retain your Personal Data only for as long as is necessary for the purposes set out in this Privacy Policy. We will retain and use your Personal Data to the extent necessary to comply with our legal obligations (for example, if we are required to retain your data to comply with applicable laws), resolve disputes, and enforce our legal agreements and policies.
                     </p>
-                    <p className="text-gray-700 leading-relaxed">
+                    <p className="text-sm sm:text-base text-gray-700 leading-relaxed">
                       Water Heater SOS will also retain Usage Data for internal analysis purposes. Usage Data is generally retained for a shorter period of time, except when this data is used to strengthen the security or to improve the functionality of our Service, or we are legally obligated to retain this data for longer time periods.
                     </p>
                   </div>
@@ -312,17 +312,17 @@ export function PrivacyPolicyContent() {
                     <span className="w-1 h-8 bg-gradient-to-b from-[#EA5D19] to-[#FF6E2E] rounded-full"></span>
                     Transfer of Data
                   </h2>
-                  <div className="bg-white p-8 rounded-2xl shadow-lg border border-gray-100">
-                    <p className="text-gray-700 leading-relaxed mb-4">
+                  <div className="bg-white p-4 sm:p-6 lg:p-8 rounded-xl sm:rounded-2xl shadow-lg border border-gray-100">
+                    <p className="text-sm sm:text-base text-gray-700 leading-relaxed mb-3 sm:mb-4">
                       Your information, including Personal Data, may be transferred to — and maintained on — computers located outside of your state, province, country or other governmental jurisdiction where the data protection laws may differ than those from your jurisdiction.
                     </p>
-                    <p className="text-gray-700 leading-relaxed mb-4">
+                    <p className="text-sm sm:text-base text-gray-700 leading-relaxed mb-3 sm:mb-4">
                       If you are located outside the United States and choose to provide information to us, please note that we transfer the data, including Personal Data, to the United States and process it there.
                     </p>
-                    <p className="text-gray-700 leading-relaxed mb-4">
+                    <p className="text-sm sm:text-base text-gray-700 leading-relaxed mb-3 sm:mb-4">
                       Your consent to this Privacy Policy followed by your submission of such information represents your agreement to that transfer.
                     </p>
-                    <p className="text-gray-700 leading-relaxed">
+                    <p className="text-sm sm:text-base text-gray-700 leading-relaxed">
                       Water Heater SOS will take all steps reasonably necessary to ensure that your data is treated securely and in accordance with this Privacy Policy and no transfer of your Personal Data will take place to an organization or a country unless there are adequate controls in place including the security of your data and other personal information.
                     </p>
                   </div>
@@ -334,25 +334,25 @@ export function PrivacyPolicyContent() {
                     <span className="w-1 h-8 bg-gradient-to-b from-[#EA5D19] to-[#FF6E2E] rounded-full"></span>
                     Disclosure of Data
                   </h2>
-                  <div className="bg-white p-8 rounded-2xl shadow-lg border border-gray-100 space-y-6">
+                  <div className="bg-white p-4 sm:p-6 lg:p-8 rounded-xl sm:rounded-2xl shadow-lg border border-gray-100 space-y-4 sm:space-y-6">
                     <div>
-                      <h3 className="font-bold text-[#11110E] mb-3 text-xl">Business Transaction</h3>
-                      <p className="text-gray-700 leading-relaxed">
+                      <h3 className="font-bold text-base sm:text-lg lg:text-xl text-[#11110E] mb-2 sm:mb-3">Business Transaction</h3>
+                      <p className="text-sm sm:text-base text-gray-700 leading-relaxed">
                         If Water Heater SOS is involved in a merger, acquisition or asset sale, your Personal Data may be transferred. We will provide notice before your Personal Data is transferred and becomes subject to a different Privacy Policy.
                       </p>
                     </div>
                     <div>
-                      <h3 className="font-bold text-[#11110E] mb-3 text-xl">Disclosure for Law Enforcement</h3>
-                      <p className="text-gray-700 leading-relaxed">
+                      <h3 className="font-bold text-base sm:text-lg lg:text-xl text-[#11110E] mb-2 sm:mb-3">Disclosure for Law Enforcement</h3>
+                      <p className="text-sm sm:text-base text-gray-700 leading-relaxed">
                         Under certain circumstances, Water Heater SOS may be required to disclose your Personal Data if required to do so by law or in response to valid requests by public authorities (e.g. a court or a government agency).
                       </p>
                     </div>
                     <div>
-                      <h3 className="font-bold text-[#11110E] mb-3 text-xl">Legal Requirements</h3>
+                      <h3 className="font-bold text-base sm:text-lg lg:text-xl text-[#11110E] mb-2 sm:mb-3">Legal Requirements</h3>
                       <p className="text-gray-700 leading-relaxed mb-3">
                         Water Heater SOS may disclose your Personal Data in the good faith belief that such action is necessary to:
                       </p>
-                      <ul className="list-disc list-inside space-y-2 text-gray-700 ml-4">
+                      <ul className="list-disc list-inside space-y-2 text-xs sm:text-sm lg:text-base text-gray-700 ml-3 sm:ml-4">
                         <li>To comply with a legal obligation</li>
                         <li>To protect and defend the rights or property of Water Heater SOS</li>
                         <li>To prevent or investigate possible wrongdoing in connection with the Service</li>
@@ -369,8 +369,8 @@ export function PrivacyPolicyContent() {
                     <span className="w-1 h-8 bg-gradient-to-b from-[#EA5D19] to-[#FF6E2E] rounded-full"></span>
                     Security of Data
                   </h2>
-                  <div className="bg-white p-8 rounded-2xl shadow-lg border border-gray-100">
-                    <p className="text-gray-700 leading-relaxed">
+                  <div className="bg-white p-4 sm:p-6 lg:p-8 rounded-xl sm:rounded-2xl shadow-lg border border-gray-100">
+                    <p className="text-sm sm:text-base text-gray-700 leading-relaxed">
                       The security of your data is important to us, but remember that no method of transmission over the Internet, or method of electronic storage is 100% secure. While we strive to use commercially acceptable means to protect your Personal Data, we cannot guarantee its absolute security.
                     </p>
                   </div>
@@ -382,11 +382,11 @@ export function PrivacyPolicyContent() {
                     <span className="w-1 h-8 bg-gradient-to-b from-[#EA5D19] to-[#FF6E2E] rounded-full"></span>
                     &quot;Do Not Track&quot; Signals
                   </h2>
-                  <div className="bg-white p-8 rounded-2xl shadow-lg border border-gray-100">
-                    <p className="text-gray-700 leading-relaxed mb-4">
+                  <div className="bg-white p-4 sm:p-6 lg:p-8 rounded-xl sm:rounded-2xl shadow-lg border border-gray-100">
+                    <p className="text-sm sm:text-base text-gray-700 leading-relaxed mb-3 sm:mb-4">
                       We do not support Do Not Track ("DNT"). Do Not Track is a preference you can set in your web browser to inform websites that you do not want to be tracked.
                     </p>
-                    <p className="text-gray-700 leading-relaxed">
+                    <p className="text-sm sm:text-base text-gray-700 leading-relaxed">
                       You can enable or disable Do Not Track by visiting the Preferences or Settings page of your web browser.
                     </p>
                   </div>
@@ -398,17 +398,17 @@ export function PrivacyPolicyContent() {
                     <span className="w-1 h-8 bg-gradient-to-b from-[#EA5D19] to-[#FF6E2E] rounded-full"></span>
                     Your Data Protection Rights Under GDPR
                   </h2>
-                  <div className="bg-white p-8 rounded-2xl shadow-lg border border-gray-100">
-                    <p className="text-gray-700 leading-relaxed mb-4">
+                  <div className="bg-white p-4 sm:p-6 lg:p-8 rounded-xl sm:rounded-2xl shadow-lg border border-gray-100">
+                    <p className="text-sm sm:text-base text-gray-700 leading-relaxed mb-3 sm:mb-4">
                       If you are a resident of the European Economic Area (EEA), you have certain data protection rights. Water Heater SOS aims to take reasonable steps to allow you to correct, amend, delete, or limit the use of your Personal Data.
                     </p>
-                    <p className="text-gray-700 leading-relaxed mb-4">
+                    <p className="text-sm sm:text-base text-gray-700 leading-relaxed mb-3 sm:mb-4">
                       If you wish to be informed of what Personal Data we hold about you and if you want it to be removed from our systems, please contact us.
                     </p>
-                    <p className="text-gray-700 leading-relaxed mb-4">
+                    <p className="text-sm sm:text-base text-gray-700 leading-relaxed mb-3 sm:mb-4">
                       In certain circumstances, you have the following data protection rights:
                     </p>
-                    <ul className="list-disc list-inside space-y-2 text-gray-700 ml-4">
+                    <ul className="list-disc list-inside space-y-2 text-xs sm:text-sm lg:text-base text-gray-700 ml-3 sm:ml-4">
                       <li><strong>The right to access, update or to delete</strong> the information we have on you.</li>
                       <li><strong>The right of rectification.</strong> You have the right to have your information rectified if that information is inaccurate or incomplete.</li>
                       <li><strong>The right to object.</strong> You have the right to object to our processing of your Personal Data.</li>
@@ -432,20 +432,20 @@ export function PrivacyPolicyContent() {
                     Service Providers
                   </h2>
                   <div className="bg-white p-8 rounded-2xl shadow-lg border border-gray-100 space-y-6">
-                    <p className="text-gray-700 leading-relaxed">
+                    <p className="text-sm sm:text-base text-gray-700 leading-relaxed">
                       We may employ third party companies and individuals to facilitate our Service ("Service Providers"), to provide the Service on our behalf, to perform Service-related services or to assist us in analyzing how our Service is used.
                     </p>
-                    <p className="text-gray-700 leading-relaxed">
+                    <p className="text-sm sm:text-base text-gray-700 leading-relaxed">
                       These third parties have access to your Personal Data only to perform these tasks on our behalf and are obligated not to disclose or use it for any other purpose.
                     </p>
 
                     <div>
-                      <h3 className="font-bold text-[#11110E] mb-3 text-xl">Analytics</h3>
+                      <h3 className="font-bold text-base sm:text-lg lg:text-xl text-[#11110E] mb-2 sm:mb-3">Analytics</h3>
                       <p className="text-gray-700 leading-relaxed mb-3">
                         We may use third-party Service Providers to monitor and analyze the use of our Service.
                       </p>
                       <div className="bg-gray-50 p-4 rounded-lg">
-                        <p className="text-gray-700 leading-relaxed">
+                        <p className="text-sm sm:text-base text-gray-700 leading-relaxed">
                           <strong>Google Analytics:</strong> Google Analytics is a web analytics service offered by Google that tracks and reports website traffic. Google uses the data collected to track and monitor the use of our Service. This data is shared with other Google services. Google may use the collected data to contextualize and personalize the ads of its own advertising network. You can opt-out of having made your activity on the Service available to Google Analytics by installing the Google Analytics opt-out browser add-on. For more information on the privacy practices of Google, please visit:{" "}
                           <a href="https://policies.google.com/privacy?hl=en" target="_blank" rel="noopener noreferrer" className="text-[#EA5D19] hover:underline">
                             https://policies.google.com/privacy?hl=en
@@ -455,7 +455,7 @@ export function PrivacyPolicyContent() {
                     </div>
 
                     <div>
-                      <h3 className="font-bold text-[#11110E] mb-3 text-xl">Payments</h3>
+                      <h3 className="font-bold text-base sm:text-lg lg:text-xl text-[#11110E] mb-2 sm:mb-3">Payments</h3>
                       <p className="text-gray-700 leading-relaxed mb-3">
                         We may provide paid products and/or services within the Service. In that case, we use third-party services for payment processing (e.g. payment processors).
                       </p>
@@ -467,7 +467,7 @@ export function PrivacyPolicyContent() {
                       </p>
                       <div className="space-y-3">
                         <div className="bg-gray-50 p-4 rounded-lg">
-                          <p className="text-gray-700">
+                          <p className="text-xs sm:text-sm lg:text-base text-gray-700">
                             <strong>Housecall Pro:</strong>{" "}
                             <a href="https://www.housecallpro.com/privacy/" target="_blank" rel="noopener noreferrer" className="text-[#EA5D19] hover:underline">
                               https://www.housecallpro.com/privacy/
@@ -475,7 +475,7 @@ export function PrivacyPolicyContent() {
                           </p>
                         </div>
                         <div className="bg-gray-50 p-4 rounded-lg">
-                          <p className="text-gray-700">
+                          <p className="text-xs sm:text-sm lg:text-base text-gray-700">
                             <strong>PayPal or Braintree:</strong>{" "}
                             <a href="https://www.paypal.com/webapps/mpp/ua/privacy-full" target="_blank" rel="noopener noreferrer" className="text-[#EA5D19] hover:underline">
                               https://www.paypal.com/webapps/mpp/ua/privacy-full
@@ -483,7 +483,7 @@ export function PrivacyPolicyContent() {
                           </p>
                         </div>
                         <div className="bg-gray-50 p-4 rounded-lg">
-                          <p className="text-gray-700">
+                          <p className="text-xs sm:text-sm lg:text-base text-gray-700">
                             <strong>QuickBooks Online (Intuit Inc.):</strong>{" "}
                             <a href="https://www.intuit.com/privacy/protect-your-privacy/" target="_blank" rel="noopener noreferrer" className="text-[#EA5D19] hover:underline">
                               https://www.intuit.com/privacy/protect-your-privacy/
@@ -501,11 +501,11 @@ export function PrivacyPolicyContent() {
                     <span className="w-1 h-8 bg-gradient-to-b from-[#EA5D19] to-[#FF6E2E] rounded-full"></span>
                     Links to Other Sites
                   </h2>
-                  <div className="bg-white p-8 rounded-2xl shadow-lg border border-gray-100">
-                    <p className="text-gray-700 leading-relaxed mb-4">
+                  <div className="bg-white p-4 sm:p-6 lg:p-8 rounded-xl sm:rounded-2xl shadow-lg border border-gray-100">
+                    <p className="text-sm sm:text-base text-gray-700 leading-relaxed mb-3 sm:mb-4">
                       Our Service may contain links to other sites that are not operated by us. If you click on a third party link, you will be directed to that third party's site. We strongly advise you to review the Privacy Policy of every site you visit.
                     </p>
-                    <p className="text-gray-700 leading-relaxed">
+                    <p className="text-sm sm:text-base text-gray-700 leading-relaxed">
                       We have no control over and assume no responsibility for the content, privacy policies or practices of any third party sites or services.
                     </p>
                   </div>
@@ -517,14 +517,14 @@ export function PrivacyPolicyContent() {
                     <span className="w-1 h-8 bg-gradient-to-b from-[#EA5D19] to-[#FF6E2E] rounded-full"></span>
                     Children&apos;s Privacy
                   </h2>
-                  <div className="bg-white p-8 rounded-2xl shadow-lg border border-gray-100">
-                    <p className="text-gray-700 leading-relaxed mb-4">
+                  <div className="bg-white p-4 sm:p-6 lg:p-8 rounded-xl sm:rounded-2xl shadow-lg border border-gray-100">
+                    <p className="text-sm sm:text-base text-gray-700 leading-relaxed mb-3 sm:mb-4">
                       Our Service does not address anyone under the age of 18 ("Children").
                     </p>
-                    <p className="text-gray-700 leading-relaxed mb-4">
+                    <p className="text-sm sm:text-base text-gray-700 leading-relaxed mb-3 sm:mb-4">
                       We do not knowingly collect personally identifiable information from anyone under the age of 18. If you are a parent or guardian and you are aware that your child has provided us with Personal Data, please contact us.
                     </p>
-                    <p className="text-gray-700 leading-relaxed">
+                    <p className="text-sm sm:text-base text-gray-700 leading-relaxed">
                       If we become aware that we have collected Personal Data from children without verification of parental consent, we take steps to remove that information from our servers.
                     </p>
                   </div>
@@ -536,34 +536,34 @@ export function PrivacyPolicyContent() {
                     <span className="w-1 h-8 bg-gradient-to-b from-[#EA5D19] to-[#FF6E2E] rounded-full"></span>
                     Changes to This Privacy Policy
                   </h2>
-                  <div className="bg-white p-8 rounded-2xl shadow-lg border border-gray-100">
-                    <p className="text-gray-700 leading-relaxed mb-4">
+                  <div className="bg-white p-4 sm:p-6 lg:p-8 rounded-xl sm:rounded-2xl shadow-lg border border-gray-100">
+                    <p className="text-sm sm:text-base text-gray-700 leading-relaxed mb-3 sm:mb-4">
                       We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page.
                     </p>
-                    <p className="text-gray-700 leading-relaxed mb-4">
+                    <p className="text-sm sm:text-base text-gray-700 leading-relaxed mb-3 sm:mb-4">
                       We will let you know via email and/or a prominent notice on our Service, prior to the change becoming effective and update the "effective date" at the top of this Privacy Policy.
                     </p>
-                    <p className="text-gray-700 leading-relaxed">
+                    <p className="text-sm sm:text-base text-gray-700 leading-relaxed">
                       You are advised to review this Privacy Policy periodically for any changes. Changes to this Privacy Policy are effective when they are posted on this page.
                     </p>
                   </div>
                 </div>
 
                 {/* Contact Us */}
-                <div id="contact" className="scroll-mt-24 mb-12">
-                  <h2 className="text-3xl font-bold text-[#11110E] mb-6 flex items-center gap-3">
-                    <span className="w-1 h-8 bg-gradient-to-b from-[#EA5D19] to-[#FF6E2E] rounded-full"></span>
+                <div id="contact" className="scroll-mt-24 mb-6 sm:mb-8 lg:mb-12">
+                  <h2 className="text-2xl sm:text-3xl font-bold text-[#11110E] mb-4 sm:mb-6 flex items-center gap-2 sm:gap-3">
+                    <span className="w-1 h-6 sm:h-8 bg-gradient-to-b from-[#EA5D19] to-[#FF6E2E] rounded-full"></span>
                     Contact Us
                   </h2>
-                  <div className="bg-gradient-to-br from-[#EA5D19] to-[#FF6E2E] p-8 rounded-2xl shadow-lg">
-                    <p className="text-white text-lg leading-relaxed mb-6">
+                  <div className="bg-gradient-to-br from-[#EA5D19] to-[#FF6E2E] p-4 sm:p-6 lg:p-8 rounded-xl sm:rounded-2xl shadow-lg">
+                    <p className="text-white text-sm sm:text-base lg:text-lg leading-relaxed mb-4 sm:mb-6">
                       If you have any questions about this Privacy Policy, please contact us:
                     </p>
                     <a
                       href="mailto:help@waterheatersos.com"
-                      className="inline-flex items-center gap-3 bg-white px-6 py-3 rounded-xl text-[#EA5D19] font-semibold hover:bg-gray-100 transition-all shadow-lg"
+                      className="inline-flex items-center gap-2 sm:gap-3 bg-white px-4 py-2 sm:px-6 sm:py-3 rounded-lg sm:rounded-xl text-sm sm:text-base text-[#EA5D19] font-semibold hover:bg-gray-100 transition-all shadow-lg"
                     >
-                      <Mail className="h-5 w-5" />
+                      <Mail className="h-4 w-4 sm:h-5 sm:w-5" />
                       help@waterheatersos.com
                     </a>
                   </div>

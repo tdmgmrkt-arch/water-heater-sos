@@ -82,9 +82,9 @@ export function PlumbingContent() {
   return (
     <>
       {/* Hero Section */}
-      <section className="relative overflow-hidden bg-gradient-to-b from-gray-50 to-white pt-20 pb-16 lg:pt-32 lg:pb-24">
+      <section className="relative overflow-hidden bg-gradient-to-b from-gray-50 to-white pt-12 pb-10 sm:pt-20 sm:pb-16 lg:pt-32 lg:pb-24">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="grid gap-12 lg:grid-cols-2 lg:gap-16 items-center">
+          <div className="grid gap-8 sm:gap-12 lg:grid-cols-2 lg:gap-16 items-center">
             {/* Content */}
             <motion.div
               initial={{ opacity: 0, x: -30 }}
@@ -92,20 +92,20 @@ export function PlumbingContent() {
               transition={{ duration: 0.6 }}
             >
 
-            <span className="inline-block px-4 py-1 rounded-full bg-[#EA5D19] text-sm text-white font-semibold mb-4 tracking-wide">
+            <span className="inline-block px-3 py-1 rounded-full bg-[#EA5D19] text-xs sm:text-sm text-white font-semibold mb-4 tracking-wide">
               Premium Plumbing Services
             </span>
-              <h1 className="text-4xl font-bold text-[#11110E] sm:text-5xl lg:text-6xl mb-6">
+              <h1 className="text-3xl sm:text-4xl font-bold text-[#11110E] lg:text-6xl mb-6">
                 Plumbing Services
               </h1>
-              <p className="text-xl text-gray-600 mb-8">
+              <p className="text-sm sm:text-xl text-gray-600 mb-8">
                 Complete Plumbing Solutions for Your Home and Business
               </p>
               <Link
                 href="/quote"
-                className="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-[#EA5D19] to-[#FF6E2E] px-8 py-4 text-lg font-bold text-white shadow-lg hover:shadow-xl transition-all hover:scale-105"
+                className="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-[#EA5D19] to-[#FF6E2E] px-5 py-3 sm:px-8 sm:py-4 text-sm sm:text-lg font-bold text-white shadow-lg hover:shadow-xl transition-all hover:scale-105"
               >
-                <Phone className="h-5 w-5" />
+                <Phone className="h-4 w-4 sm:h-5 sm:w-5" />
                 Schedule an Appointment Today!
               </Link>
             </motion.div>
@@ -115,7 +115,7 @@ export function PlumbingContent() {
               initial={{ opacity: 0, x: 30 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
-              className="relative h-[400px] lg:h-[500px] rounded-3xl overflow-hidden shadow-2xl"
+              className="relative h-[280px] sm:h-[400px] lg:h-[500px] rounded-2xl sm:rounded-3xl overflow-hidden shadow-2xl"
             >
               <Image
                 src="/wh-sos-service-rep.webp"
@@ -130,7 +130,7 @@ export function PlumbingContent() {
       </section>
 
 {/* Main Content Section */}
-<section className="py-20 bg-white">
+<section className="py-10 sm:py-16 lg:py-20 bg-white">
   <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
     <motion.div
       initial={{ opacity: 0, y: 25 }}
@@ -147,7 +147,7 @@ export function PlumbingContent() {
 </section>
 
 {/* Services Section */}
-<section className="bg-gray-50 py-20">
+<section className="bg-gray-50 py-10 sm:py-16 lg:py-20">
   <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
     <motion.div
       initial={{ opacity: 0, y: 25 }}
@@ -209,7 +209,7 @@ export function PlumbingContent() {
 </section>
 
 {/* Water Heater Repairs Section */}
-<section className="py-20 bg-white">
+<section className="py-10 sm:py-16 lg:py-20 bg-white">
   <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
     <motion.div
       initial={{ opacity: 0, y: 25 }}
@@ -235,15 +235,15 @@ export function PlumbingContent() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: index * 0.1 }}
           viewport={{ once: true }}
-          className="rounded-2xl bg-gray-50 p-8 shadow-md border border-gray-100 hover:shadow-xl transition-shadow"
+          className="rounded-xl sm:rounded-2xl bg-gray-50 p-4 sm:p-6 lg:p-8 shadow-md border border-gray-100 hover:shadow-xl transition-shadow"
         >
           <div className="mb-4 inline-flex rounded-full bg-[#EA5D19]/10 p-3">
             <repair.icon className="h-6 w-6 text-[#EA5D19]" />
           </div>
-          <h3 className="text-xl font-bold text-[#11110E] mb-3">
+          <h3 className="text-base sm:text-xl font-bold text-[#11110E] mb-3">
             {repair.title}
           </h3>
-          <p className="text-gray-700 leading-relaxed">
+          <p className="text-sm sm:text-base text-gray-700 leading-relaxed">
             {repair.description}
           </p>
         </motion.div>
@@ -295,7 +295,7 @@ export function PlumbingContent() {
       </section>
 
       {/* FAQ Section */}
-      <section className="py-16 lg:py-24">
+      <section className="py-10 sm:py-16 lg:py-24">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -309,7 +309,7 @@ export function PlumbingContent() {
             </h2>
 
             <div className="h-1 w-20 bg-[#EA5D19] mx-auto rounded-full mb-8" />
-            <Accordion type="single" collapsible className="space-y-4">
+            <Accordion type="single" collapsible className="space-y-2 sm:space-y-4">
               {faqs.map((faq, index) => (
                 <motion.div
                   key={index}
@@ -320,9 +320,9 @@ export function PlumbingContent() {
                 >
                   <AccordionItem
                     value={`item-${index}`}
-                    className="rounded-2xl bg-white px-6 shadow-md border-0"
+                    className="rounded-xl sm:rounded-2xl bg-white px-4 sm:px-6 shadow-md border-0"
                   >
-                    <AccordionTrigger className="text-left font-semibold text-[#11110E] hover:text-[#EA5D19] py-6 flex items-start justify-between gap-2">
+                    <AccordionTrigger className="text-left text-sm sm:text-base lg:text-lg font-semibold text-[#11110E] hover:text-[#EA5D19] py-3 sm:py-6 flex items-start justify-between gap-2">
                       <span className="flex-shrink-0 mr-2 text-[#EA5D19] font-bold">
                         {String(index + 1).padStart(2, "0")}
                       </span>
@@ -330,7 +330,7 @@ export function PlumbingContent() {
                         {faq.question}
                       </span>
                     </AccordionTrigger>
-                    <AccordionContent className="text-gray-700 pb-6">
+                    <AccordionContent className="text-xs sm:text-sm lg:text-base text-gray-700 pb-3 sm:pb-6">
                       {faq.answer}
                     </AccordionContent>
                   </AccordionItem>
@@ -342,7 +342,7 @@ export function PlumbingContent() {
       </section>
 
       {/* CTA Section */}
-      <section className="bg-gradient-to-r from-[#EA5D19] to-[#FF6E2E] py-16 lg:py-24">
+      <section className="bg-gradient-to-r from-[#EA5D19] to-[#FF6E2E] py-10 sm:py-16 lg:py-24">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -351,7 +351,7 @@ export function PlumbingContent() {
             viewport={{ once: true }}
             className="text-center"
           >
-            <h2 className="text-3xl font-bold text-white sm:text-4xl mb-6">
+            <h2 className="text-2xl sm:text-4xl font-bold text-white mb-6">
               Schedule an Appointment Today!
             </h2>
 
@@ -362,9 +362,9 @@ export function PlumbingContent() {
             </p>
             <Link
               href="/quote"
-              className="inline-flex items-center gap-2 rounded-full bg-white px-8 py-4 text-lg font-bold text-[#EA5D19] shadow-lg hover:shadow-xl transition-all hover:scale-105"
+              className="inline-flex items-center gap-2 rounded-full bg-white px-5 py-3 sm:px-8 sm:py-4 text-sm sm:text-lg font-bold text-[#EA5D19] shadow-lg hover:shadow-xl transition-all hover:scale-105"
             >
-              <Phone className="h-5 w-5" />
+              <Phone className="h-4 w-4 sm:h-5 sm:w-5" />
               Request Your Free Quote
             </Link>
           </motion.div>

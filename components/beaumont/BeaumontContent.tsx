@@ -130,38 +130,39 @@ export function BeaumontContent() {
   return (
     <>
       {/* Hero Section */}
-      <section className="relative overflow-hidden bg-gradient-to-b from-gray-50 to-white pt-20 pb-16 lg:pt-32 lg:pb-24">
+      <section className="relative overflow-hidden bg-gradient-to-b from-gray-50 to-white pt-12 pb-10 sm:pt-20 sm:pb-16 lg:pt-32 lg:pb-24">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           {/* GRID: Left Content + Right Image */}
-          <div className="grid gap-12 lg:grid-cols-2 lg:gap-16 items-center">
+          <div className="grid gap-8 sm:gap-12 lg:grid-cols-2 lg:gap-16 items-center">
             {/* LEFT CONTENT */}
             <motion.div
               initial={{ opacity: 0, x: -30 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.6 }}
             >
-              <span className="inline-block px-4 py-1 rounded-full bg-[#EA5D19] text-sm text-white font-semibold mb-4 tracking-wide">
+              <span className="inline-block px-3 py-1 rounded-full bg-[#EA5D19] text-xs sm:px-4 sm:text-sm text-white font-semibold mb-4 tracking-wide">
                 Beaumont Plumbing Experts
               </span>
 
-              <h1 className="text-4xl font-bold text-[#11110E] sm:text-5xl lg:text-6xl mb-6">
+              <h1 className="text-3xl sm:text-5xl font-bold text-[#11110E] lg:text-6xl mb-6">
                 Beaumont Plumbers & Water Heater Repair
               </h1>
 
-              <p className="text-xl text-gray-600 mb-6">
+              <p className="text-base sm:text-xl text-gray-600 mb-6">
                 Need a plumbing company in Beaumont, CA?
               </p>
 
-              <p className="text-lg text-gray-700 leading-relaxed mb-8">
+              <p className="text-sm sm:text-lg text-gray-700 leading-relaxed mb-8">
                 Nobody likes a cold shower or a sink full of dirty dishes because the hot water's gone out. At Water Heater SOS, we know how annoying it is when your <Link href="/gas-water-heaters" className="text-[#EA5D19] hover:underline font-semibold">water heater</Link> leaks or won't stay lit, and we're here to fix it fast! But we don't stop at water heaters. We are your go‑to team for all kinds of plumbing repairs and installations. From <Link href="/drain-cleaning" className="text-[#EA5D19] hover:underline font-semibold">clogged drains</Link> to <Link href="/faucet-repair-replacement" className="text-[#EA5D19] hover:underline font-semibold">leaky faucets</Link>, we handle every plumbing issue with care to keep your home running smoothly.
               </p>
 
               <Link
                 href="/quote"
-                className="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-[#EA5D19] to-[#FF6E2E] px-8 py-4 text-lg font-bold text-white shadow-lg hover:shadow-xl transition-all hover:scale-105"
+                className="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-[#EA5D19] to-[#FF6E2E] px-5 py-3 sm:px-8 sm:py-4 text-sm sm:text-lg font-bold text-white shadow-lg hover:shadow-xl transition-all hover:scale-105"
               >
-                <Phone className="h-5 w-5" />
-                Schedule an Appointment Today!
+                <Phone className="h-4 w-4 sm:h-5 sm:w-5" />
+                <span className="hidden sm:inline">Schedule an Appointment Today!</span>
+                <span className="sm:hidden">Get Started</span>
               </Link>
             </motion.div>
 
@@ -170,7 +171,7 @@ export function BeaumontContent() {
               initial={{ opacity: 0, x: 30 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
-              className="relative h-[400px] lg:h-[500px] rounded-3xl overflow-hidden shadow-2xl"
+              className="relative h-[280px] sm:h-[400px] lg:h-[500px] rounded-2xl sm:rounded-3xl overflow-hidden shadow-2xl"
             >
               <Image
                 src="/wh-sos-service-rep.webp"
@@ -196,7 +197,7 @@ export function BeaumontContent() {
       </section>
 
       {/* Plumbing Services Section */}
-      <section className="py-20 bg-white">
+      <section className="py-10 sm:py-16 lg:py-20 bg-white">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 25 }}
@@ -205,16 +206,16 @@ export function BeaumontContent() {
             transition={{ duration: 0.6 }}
             className="text-center mb-14"
           >
-            <h2 className="text-4xl sm:text-5xl font-extrabold text-[#11110E] mb-6">
+            <h2 className="text-2xl sm:text-4xl lg:text-5xl font-extrabold text-[#11110E] mb-6">
               Our Beaumont Plumbing Services
             </h2>
-            <div className="h-1 w-20 bg-[#EA5D19] mx-auto rounded-full mb-6" />
-            <p className="text-lg text-gray-700 leading-relaxed max-w-4xl mx-auto">
+            <div className="h-1 w-16 sm:w-20 bg-[#EA5D19] mx-auto rounded-full mb-6" />
+            <p className="text-sm sm:text-base lg:text-lg text-gray-700 leading-relaxed max-w-4xl mx-auto">
               Here's what we can fix or install for you
             </p>
           </motion.div>
 
-          <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-3">
+          <div className="grid gap-4 sm:gap-6 lg:gap-10 md:grid-cols-2 lg:grid-cols-3">
             {plumbingServices.map((service, index) => (
               <motion.div
                 key={index}

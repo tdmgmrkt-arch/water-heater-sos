@@ -15,32 +15,32 @@ export function FaucetRepairReplacementContent() {
   return (
     <>
       {/* Hero Section */}
-      <section className="relative overflow-hidden bg-gradient-to-b from-gray-50 to-white pt-20 pb-16 lg:pt-32 lg:pb-24">
+      <section className="relative overflow-hidden bg-gradient-to-b from-gray-50 to-white pt-12 pb-10 sm:pt-20 sm:pb-16 lg:pt-32 lg:pb-24">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="grid gap-12 lg:grid-cols-2 lg:gap-16 items-center">
+          <div className="grid gap-8 sm:gap-12 lg:grid-cols-2 lg:gap-16 items-center">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 }}
             >
-              <span className="inline-block px-4 py-1 rounded-full bg-[#EA5D19] text-sm text-white font-semibold mb-4 tracking-wide">
+              <span className="inline-block px-3 py-1 rounded-full bg-[#EA5D19] text-xs sm:text-sm text-white font-semibold mb-4 tracking-wide">
                 Expert Faucet Solutions For Your Kitchen And Bathroom
               </span>
-              <h1 className="text-5xl font-extrabold text-[#11110E] sm:text-6xl lg:text-7xl mb-4 leading-tight">
+              <h1 className="text-3xl sm:text-5xl font-extrabold text-[#11110E] lg:text-7xl mb-4 leading-tight">
                 <span className="text-[#EA5D19]">Faucet </span>Repair & Replacement
               </h1>
-              <p className="text-lg text-gray-700 leading-relaxed mb-4">
+              <p className="text-sm sm:text-lg text-gray-700 leading-relaxed mb-4">
                 Is your faucet dripping and driving you crazy?
               </p>
-              <p className="text-lg text-gray-700 leading-relaxed mb-8">
+              <p className="text-sm sm:text-lg text-gray-700 leading-relaxed mb-8">
                 A dripping or malfunctioning faucet can keep you awake at night and waste water that adds up on your bill. We're here to fix it with expert repair and replacement services.
               </p>
               <Link
                 href="/quote"
-                className="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-[#EA5D19] to-[#FF6E2E] px-8 py-4 text-lg font-semibold text-white shadow-lg hover:shadow-xl transition-all duration-200 hover:scale-105"
+                className="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-[#EA5D19] to-[#FF6E2E] px-5 py-3 sm:px-8 sm:py-4 text-sm sm:text-lg font-semibold text-white shadow-lg hover:shadow-xl transition-all duration-200 hover:scale-105"
               >
                 Schedule an Appointment
-                <ArrowRight className="h-5 w-5" />
+                <ArrowRight className="h-4 w-4 sm:h-5 sm:w-5" />
               </Link>
             </motion.div>
 
@@ -50,7 +50,7 @@ export function FaucetRepairReplacementContent() {
               transition={{ duration: 0.5, delay: 0.2 }}
               className="relative"
             >
-              <div className="relative h-[500px] w-full rounded-2xl overflow-hidden shadow-2xl">
+              <div className="relative h-[280px] sm:h-[400px] lg:h-[500px] w-full rounded-2xl sm:rounded-3xl overflow-hidden shadow-2xl">
                 <Image
                   src="/faucet-repair-replacement.webp"
                   alt="Professional faucet repair and replacement services"
@@ -77,7 +77,7 @@ export function FaucetRepairReplacementContent() {
       </section>
 
       {/* Benefits Section */}
-      <section className="py-20 bg-gray-50">
+      <section className="py-10 sm:py-16 lg:py-20 bg-gray-50">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -86,7 +86,7 @@ export function FaucetRepairReplacementContent() {
             transition={{ duration: 0.5 }}
             className="text-center mb-16"
           >
-            <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl mb-4">
+            <h2 className="text-2xl sm:text-4xl font-bold tracking-tight text-gray-900 mb-4">
               Why Choose Our Faucet Services?
             </h2>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
@@ -94,7 +94,7 @@ export function FaucetRepairReplacementContent() {
             </p>
           </motion.div>
 
-          <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
+          <div className="grid gap-4 sm:gap-6 lg:gap-10 md:grid-cols-2 lg:grid-cols-4">
             {[
               {
                 title: "Stop Water Waste",
@@ -123,15 +123,15 @@ export function FaucetRepairReplacementContent() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
-                className="rounded-2xl bg-white p-8 shadow-lg border border-gray-200"
+                className="rounded-xl sm:rounded-2xl bg-white p-4 sm:p-6 lg:p-8 shadow-lg border border-gray-200"
               >
                 <div className="mb-4 inline-flex rounded-lg bg-[#EA5D19] p-3">
                   <benefit.icon className="h-6 w-6 text-white" />
                 </div>
-                <h3 className="text-xl font-bold text-gray-900 mb-3">
+                <h3 className="text-base sm:text-xl font-bold text-gray-900 mb-3">
                   {benefit.title}
                 </h3>
-                <p className="text-gray-600">{benefit.description}</p>
+                <p className="text-sm sm:text-base text-gray-600">{benefit.description}</p>
               </motion.div>
             ))}
           </div>
@@ -139,7 +139,7 @@ export function FaucetRepairReplacementContent() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-r from-[#EA5D19] to-[#FF6E2E]">
+      <section className="py-10 sm:py-16 bg-gradient-to-r from-[#EA5D19] to-[#FF6E2E]">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 text-center">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -147,7 +147,7 @@ export function FaucetRepairReplacementContent() {
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
           >
-            <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl mb-6">
+            <h2 className="text-2xl sm:text-4xl font-bold tracking-tight text-white mb-6">
               Get a Free Estimate Today!
             </h2>
             <p className="text-xl text-white/90 mb-8 max-w-2xl mx-auto">
@@ -156,17 +156,17 @@ export function FaucetRepairReplacementContent() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
                 href="tel:+18006974014"
-                className="inline-flex items-center justify-center gap-2 rounded-full bg-white px-8 py-4 text-lg font-semibold text-[#EA5D19] shadow-lg hover:shadow-xl transition-all duration-200 hover:scale-105"
+                className="inline-flex items-center justify-center gap-2 rounded-full bg-white px-5 py-3 sm:px-8 sm:py-4 text-sm sm:text-lg font-semibold text-[#EA5D19] shadow-lg hover:shadow-xl transition-all duration-200 hover:scale-105"
               >
-                <Phone className="h-5 w-5" />
+                <Phone className="h-4 w-4 sm:h-5 sm:w-5" />
                 (800) 697-4014
               </Link>
               <Link
                 href="/quote"
-                className="inline-flex items-center justify-center gap-2 rounded-full bg-[#11110E] px-8 py-4 text-lg font-semibold text-white shadow-lg hover:shadow-xl transition-all duration-200 hover:scale-105"
+                className="inline-flex items-center justify-center gap-2 rounded-full bg-[#11110E] px-5 py-3 sm:px-8 sm:py-4 text-sm sm:text-lg font-semibold text-white shadow-lg hover:shadow-xl transition-all duration-200 hover:scale-105"
               >
                 Get Free Quote
-                <ArrowRight className="h-5 w-5" />
+                <ArrowRight className="h-4 w-4 sm:h-5 sm:w-5" />
               </Link>
             </div>
           </motion.div>
@@ -174,7 +174,7 @@ export function FaucetRepairReplacementContent() {
       </section>
 
       {/* FAQ Section */}
-      <section className="py-20 bg-white">
+      <section className="py-10 sm:py-16 lg:py-20 bg-white">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -183,7 +183,7 @@ export function FaucetRepairReplacementContent() {
             transition={{ duration: 0.5 }}
             className="text-center mb-16"
           >
-            <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl mb-4">
+            <h2 className="text-2xl sm:text-4xl font-bold tracking-tight text-gray-900 mb-4">
               Frequently Asked Questions
             </h2>
             <p className="text-xl text-gray-600">
@@ -191,66 +191,66 @@ export function FaucetRepairReplacementContent() {
             </p>
           </motion.div>
 
-          <Accordion type="single" collapsible className="space-y-4">
-            <AccordionItem value="item-1" className="border rounded-lg px-6 bg-gray-50">
-              <AccordionTrigger className="text-left text-lg font-semibold hover:text-[#EA5D19] transition-colors">
+          <Accordion type="single" collapsible className="space-y-2 sm:space-y-4">
+            <AccordionItem value="item-1" className="border rounded-lg px-4 sm:px-6 bg-gray-50">
+              <AccordionTrigger className="text-left text-sm sm:text-base lg:text-lg font-semibold hover:text-[#EA5D19] transition-colors py-3 sm:py-4">
                 Can a leaky faucet increase my water bill?
               </AccordionTrigger>
-              <AccordionContent className="text-gray-600 text-base leading-relaxed">
+              <AccordionContent className="text-gray-600 text-xs sm:text-sm lg:text-base leading-relaxed pb-3 sm:pb-4">
                 Yes, a single dripping faucet can waste hundreds of gallons of water per year, raising your water bill. Fixing the leak promptly can save money and conserve water.
               </AccordionContent>
             </AccordionItem>
 
-            <AccordionItem value="item-2" className="border rounded-lg px-6 bg-gray-50">
-              <AccordionTrigger className="text-left text-lg font-semibold hover:text-[#EA5D19] transition-colors">
+            <AccordionItem value="item-2" className="border rounded-lg px-4 sm:px-6 bg-gray-50">
+              <AccordionTrigger className="text-left text-sm sm:text-base lg:text-lg font-semibold hover:text-[#EA5D19] transition-colors py-3 sm:py-4">
                 What causes low water pressure in my faucet?
               </AccordionTrigger>
-              <AccordionContent className="text-gray-600 text-base leading-relaxed">
+              <AccordionContent className="text-gray-600 text-xs sm:text-sm lg:text-base leading-relaxed pb-3 sm:pb-4">
                 Low pressure can result from a clogged aerator, mineral buildup in the pipes, or a faulty cartridge. Cleaning the aerator or replacing worn parts usually restores normal flow.
               </AccordionContent>
             </AccordionItem>
 
-            <AccordionItem value="item-3" className="border rounded-lg px-6 bg-gray-50">
-              <AccordionTrigger className="text-left text-lg font-semibold hover:text-[#EA5D19] transition-colors">
+            <AccordionItem value="item-3" className="border rounded-lg px-4 sm:px-6 bg-gray-50">
+              <AccordionTrigger className="text-left text-sm sm:text-base lg:text-lg font-semibold hover:text-[#EA5D19] transition-colors py-3 sm:py-4">
                 How long does a faucet typically last?
               </AccordionTrigger>
-              <AccordionContent className="text-gray-600 text-base leading-relaxed">
+              <AccordionContent className="text-gray-600 text-xs sm:text-sm lg:text-base leading-relaxed pb-3 sm:pb-4">
                 Most faucets last 15-20 years with proper maintenance, but heavy use or hard water can shorten their lifespan. Older faucets may need replacement due to wear or outdated technology.
               </AccordionContent>
             </AccordionItem>
 
-            <AccordionItem value="item-4" className="border rounded-lg px-6 bg-gray-50">
-              <AccordionTrigger className="text-left text-lg font-semibold hover:text-[#EA5D19] transition-colors">
+            <AccordionItem value="item-4" className="border rounded-lg px-4 sm:px-6 bg-gray-50">
+              <AccordionTrigger className="text-left text-sm sm:text-base lg:text-lg font-semibold hover:text-[#EA5D19] transition-colors py-3 sm:py-4">
                 Why is my faucet dripping even when turned off?
               </AccordionTrigger>
-              <AccordionContent className="text-gray-600 text-base leading-relaxed">
+              <AccordionContent className="text-gray-600 text-xs sm:text-sm lg:text-base leading-relaxed pb-3 sm:pb-4">
                 A dripping faucet is often caused by worn-out washers, gaskets, or O-rings inside the faucet. Replacing these parts can stop the drip and prevent water waste.
               </AccordionContent>
             </AccordionItem>
 
-            <AccordionItem value="item-5" className="border rounded-lg px-6 bg-gray-50">
-              <AccordionTrigger className="text-left text-lg font-semibold hover:text-[#EA5D19] transition-colors">
+            <AccordionItem value="item-5" className="border rounded-lg px-4 sm:px-6 bg-gray-50">
+              <AccordionTrigger className="text-left text-sm sm:text-base lg:text-lg font-semibold hover:text-[#EA5D19] transition-colors py-3 sm:py-4">
                 Why does my faucet make a squeaking noise when turned on?
               </AccordionTrigger>
-              <AccordionContent className="text-gray-600 text-base leading-relaxed">
+              <AccordionContent className="text-gray-600 text-xs sm:text-sm lg:text-base leading-relaxed pb-3 sm:pb-4">
                 Squeaking is usually caused by worn or dry seals, O-rings, or loose valve stems. Lubricating or replacing these parts can eliminate the noise and restore smooth operation.
               </AccordionContent>
             </AccordionItem>
 
-            <AccordionItem value="item-6" className="border rounded-lg px-6 bg-gray-50">
-              <AccordionTrigger className="text-left text-lg font-semibold hover:text-[#EA5D19] transition-colors">
+            <AccordionItem value="item-6" className="border rounded-lg px-4 sm:px-6 bg-gray-50">
+              <AccordionTrigger className="text-left text-sm sm:text-base lg:text-lg font-semibold hover:text-[#EA5D19] transition-colors py-3 sm:py-4">
                 What's the difference between repairing and replacing a faucet?
               </AccordionTrigger>
-              <AccordionContent className="text-gray-600 text-base leading-relaxed">
+              <AccordionContent className="text-gray-600 text-xs sm:text-sm lg:text-base leading-relaxed pb-3 sm:pb-4">
                 Repair involves fixing specific parts like washers or seals to stop leaks or improve function. Replacement is needed when the faucet is too old, damaged, or inefficient to repair.
               </AccordionContent>
             </AccordionItem>
 
-            <AccordionItem value="item-7" className="border rounded-lg px-6 bg-gray-50">
-              <AccordionTrigger className="text-left text-lg font-semibold hover:text-[#EA5D19] transition-colors">
+            <AccordionItem value="item-7" className="border rounded-lg px-4 sm:px-6 bg-gray-50">
+              <AccordionTrigger className="text-left text-sm sm:text-base lg:text-lg font-semibold hover:text-[#EA5D19] transition-colors py-3 sm:py-4">
                 How much does it cost to repair or replace a faucet?
               </AccordionTrigger>
-              <AccordionContent className="text-gray-600 text-base leading-relaxed">
+              <AccordionContent className="text-gray-600 text-xs sm:text-sm lg:text-base leading-relaxed pb-3 sm:pb-4">
                 Faucet repairs will depend on the age and brand of the faucet. Often times older faucets are harder to get parts for and end up costing more to repair. Replacing a faucet will also depend on the brand and how fancy the faucet is you want. Give us a call so we can provide a free estimate and give you an accurate price on your project.
               </AccordionContent>
             </AccordionItem>

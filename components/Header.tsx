@@ -18,6 +18,55 @@ import { Container } from "./Container";
 import { Button } from "./ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "./ui/sheet";
 
+// Mobile Menu Section Component
+function MobileMenuSection({
+  category,
+  Icon,
+  items,
+  onClose
+}: {
+  category: string;
+  Icon: React.ElementType;
+  items: Array<{ name: string; href: string; desc?: string; icon?: React.ElementType }>;
+  onClose: () => void;
+}) {
+  const [isOpen, setIsOpen] = useState(false);
+
+  return (
+    <div className="border-b border-white/10 pb-2">
+      <button
+        onClick={() => setIsOpen(!isOpen)}
+        className="flex items-center justify-between w-full py-3 px-2 text-white font-semibold"
+      >
+        <div className="flex items-center gap-3">
+          <Icon className="h-5 w-5 text-[#EA5D19]" />
+          <span>{category}</span>
+        </div>
+        <ChevronDown className={`h-5 w-5 transition-transform ${isOpen ? "rotate-180" : ""}`} />
+      </button>
+
+      {isOpen && (
+        <div className="pl-4 pb-2 space-y-1">
+          {items.map((item) => {
+            const ItemIcon = item.icon;
+            return (
+              <Link
+                key={item.href}
+                href={item.href}
+                onClick={onClose}
+                className="flex items-center gap-3 py-2 px-2 rounded-lg text-gray-300 hover:text-white hover:bg-white/10 transition-colors"
+              >
+                {ItemIcon && <ItemIcon className="h-4 w-4 text-[#EA5D19]" />}
+                <span className="text-sm">{item.name}</span>
+              </Link>
+            );
+          })}
+        </div>
+      )}
+    </div>
+  );
+}
+
 const menuStructure = {
   "Water Heaters": {
     icon: Droplet,
@@ -141,8 +190,50 @@ export function Header() {
                 </Button>
               </SheetTrigger>
 
-              <SheetContent side="right" className="w-full sm:w-96 p-0 bg-[#11110E]">
-                {/* mobile content unchanged */}
+              <SheetContent side="right" className="w-full sm:w-96 p-0 bg-[#11110E] overflow-y-auto">
+                <div className="flex flex-col h-full">
+                  {/* Mobile Header */}
+                  <div className="flex items-center justify-between p-4 border-b border-white/10">
+                    <Image
+                      src="/wh-sos-logo.webp"
+                      alt="Water Heater SOS Logo"
+                      width={140}
+                      height={30}
+                      className="h-auto"
+                    />
+                  </div>
+
+                  {/* Mobile Navigation */}
+                  <nav className="flex-1 p-4 space-y-2">
+                    {Object.entries(menuStructure).map(([category, { icon: Icon, items }]) => (
+                      <MobileMenuSection
+                        key={category}
+                        category={category}
+                        Icon={Icon}
+                        items={items}
+                        onClose={() => setMobileOpen(false)}
+                      />
+                    ))}
+                  </nav>
+
+                  {/* Mobile CTA */}
+                  <div className="p-4 border-t border-white/10 space-y-3">
+                    <a
+                      href="tel:8006974014"
+                      className="flex items-center justify-center gap-2 w-full rounded-xl bg-gradient-to-r from-[#EA5D19] to-[#FF6E2E] px-6 py-4 text-base font-bold text-white shadow-lg"
+                    >
+                      <Phone className="h-5 w-5" />
+                      Call (800) 697-4014
+                    </a>
+                    <Link
+                      href="/quote"
+                      onClick={() => setMobileOpen(false)}
+                      className="flex items-center justify-center gap-2 w-full rounded-xl border-2 border-[#EA5D19] px-6 py-4 text-base font-bold text-[#EA5D19]"
+                    >
+                      Get Free Quote
+                    </Link>
+                  </div>
+                </div>
               </SheetContent>
             </Sheet>
           </div>

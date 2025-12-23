@@ -87,9 +87,9 @@ export function QuoteContent() {
   return (
     <>
       {/* -------------------- SECTION 1: HERO (CONVERSION FOCUSED) -------------------- */}
-      <section className="relative overflow-hidden bg-gradient-to-b from-gray-50 to-white pt-20 pb-16 lg:pt-32 lg:pb-24">
+      <section className="relative overflow-hidden bg-gradient-to-b from-gray-50 to-white pt-12 pb-10 sm:pt-20 sm:pb-16 lg:pt-32 lg:pb-24">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="grid gap-16 lg:grid-cols-12 items-start">
+          <div className="grid gap-8 sm:gap-12 lg:gap-16 lg:grid-cols-12 items-start">
 
             {/* --- Left Column (L-Col): Value Proposition & Trust Signals (Col span 7) --- */}
             <motion.div
@@ -98,35 +98,35 @@ export function QuoteContent() {
               transition={{ duration: 0.6 }}
               className="lg:col-span-7"
             >
-              <h1 className="text-5xl font-extrabold text-[#11110E] sm:text-6xl lg:text-7xl mb-4 leading-tight">
+              <h1 className="text-3xl font-extrabold text-[#11110E] sm:text-5xl lg:text-6xl mb-4 leading-tight">
               <span className="text-[#EA5D19]">Free Online </span> Water Heater Estimate.
               </h1>
-              <p className="text-2xl text-gray-600 leading-relaxed mb-10">
+              <p className="text-base sm:text-xl lg:text-2xl text-gray-600 leading-relaxed mb-6 sm:mb-10">
                 Submit photos and details to receive an accurate, same-day quote from our certified local experts. Protect your home and budget.
               </p>
 
               {/* --- Trust Element: Key Guarantees --- */}
-              <div className="mb-10 p-6 bg-white rounded-2xl shadow-lg border border-gray-100 space-y-3">
-                <h3 className="text-xl font-bold text-[#11110E] mb-4 flex items-center gap-3">
-                    <CheckCircle className="h-6 w-6 text-[#EA5D19]" /> Why Choose Water Heater SOS?
+              <div className="mb-6 sm:mb-10 p-4 sm:p-6 bg-white rounded-xl sm:rounded-2xl shadow-lg border border-gray-100 space-y-2 sm:space-y-3">
+                <h3 className="text-base sm:text-xl font-bold text-[#11110E] mb-3 sm:mb-4 flex items-center gap-2 sm:gap-3">
+                    <CheckCircle className="h-5 w-5 sm:h-6 sm:w-6 text-[#EA5D19]" /> Why Choose Water Heater SOS?
                 </h3>
-                <ul className="list-none space-y-2 text-lg text-gray-700">
-                    <li className="flex items-start gap-2"><CheckCircle className="h-5 w-5 text-green-500 mt-1 flex-shrink-0" /> Same-Day Service: Installation available within 24 hours in most cases.</li>
-                    <li className="flex items-start gap-2"><CheckCircle className="h-5 w-5 text-green-500 mt-1 flex-shrink-0" /> Zero Hidden Fees: Transparent pricing guaranteed from your estimate.</li>
-                    <li className="flex items-start gap-2"><CheckCircle className="h-5 w-5 text-green-500 mt-1 flex-shrink-0" /> Licensed & Insured: Fully certified professional installation and repairs.</li>
+                <ul className="list-none space-y-2 text-sm sm:text-base lg:text-lg text-gray-700">
+                    <li className="flex items-start gap-2"><CheckCircle className="h-4 w-4 sm:h-5 sm:w-5 text-green-500 mt-1 flex-shrink-0" /> Same-Day Service: Installation available within 24 hours in most cases.</li>
+                    <li className="flex items-start gap-2"><CheckCircle className="h-4 w-4 sm:h-5 sm:w-5 text-green-500 mt-1 flex-shrink-0" /> Zero Hidden Fees: Transparent pricing guaranteed from your estimate.</li>
+                    <li className="flex items-start gap-2"><CheckCircle className="h-4 w-4 sm:h-5 sm:w-5 text-green-500 mt-1 flex-shrink-0" /> Licensed & Insured: Fully certified professional installation and repairs.</li>
                 </ul>
               </div>
 
               {/* --- Quick FAQ Section (Addressing immediate concerns) --- */}
-              <div className="mb-10 space-y-4">
-                <h3 className="text-3xl font-extrabold text-[#11110E] mb-4">Quick Answers</h3>
-                <Accordion type="single" collapsible className="w-full bg-white rounded-xl shadow-md border border-gray-100 p-4">
+              <div className="mb-6 sm:mb-10 space-y-3 sm:space-y-4">
+                <h3 className="text-xl sm:text-2xl lg:text-3xl font-extrabold text-[#11110E] mb-3 sm:mb-4">Quick Answers</h3>
+                <Accordion type="single" collapsible className="w-full bg-white rounded-lg sm:rounded-xl shadow-md border border-gray-100 p-3 sm:p-4">
                   {heroFaqs.map((faq, index) => (
                     <AccordionItem key={index} value={`item-${index}`} className="border-b last:border-b-0 border-gray-100">
-                      <AccordionTrigger className="font-semibold text-left py-4 text-lg hover:text-[#EA5D19]">
+                      <AccordionTrigger className="font-semibold text-left py-3 sm:py-4 text-sm sm:text-base lg:text-lg hover:text-[#EA5D19]">
                         {faq.question}
                       </AccordionTrigger>
-                      <AccordionContent className="text-gray-700 pb-4 whitespace-pre-line">
+                      <AccordionContent className="text-xs sm:text-sm lg:text-base text-gray-700 pb-3 sm:pb-4 whitespace-pre-line">
                         {faq.answer}
                       </AccordionContent>
                     </AccordionItem>
@@ -146,41 +146,41 @@ export function QuoteContent() {
               initial={{ opacity: 0, x: 30 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
-              className="lg:col-span-5 lg:sticky lg:top-8" 
+              className="lg:col-span-5 lg:sticky lg:top-8"
             >
-              <form onSubmit={handleSubmit} className="bg-white rounded-3xl p-8 shadow-2xl space-y-6 border border-gray-200">
-                <h2 className="text-3xl font-extrabold text-[#11110E] text-center mb-4 border-b pb-4">
+              <form onSubmit={handleSubmit} className="bg-white rounded-2xl sm:rounded-3xl p-4 sm:p-6 lg:p-8 shadow-2xl space-y-4 sm:space-y-6 border border-gray-200">
+                <h2 className="text-xl sm:text-2xl lg:text-3xl font-extrabold text-[#11110E] text-center mb-3 sm:mb-4 border-b pb-3 sm:pb-4">
                   Request Your Estimate Now
                 </h2>
                 
                 {/* Form Fields (Condensed) */}
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                  <div><label htmlFor="firstName" className="block text-sm font-semibold text-[#11110E] mb-2">First Name</label><input type="text" id="firstName" name="firstName" value={formData.firstName} onChange={handleInputChange} className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-[#EA5D19] focus:border-transparent outline-none transition-all" placeholder="First Name" required/></div>
-                  <div><label htmlFor="lastName" className="block text-sm font-semibold text-[#11110E] mb-2">Last Name</label><input type="text" id="lastName" name="lastName" value={formData.lastName} onChange={handleInputChange} className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-[#EA5D19] focus:border-transparent outline-none transition-all" placeholder="Last Name" required/></div>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6">
+                  <div><label htmlFor="firstName" className="block text-xs sm:text-sm font-semibold text-[#11110E] mb-2">First Name</label><input type="text" id="firstName" name="firstName" value={formData.firstName} onChange={handleInputChange} className="w-full px-3 py-2 sm:px-4 sm:py-3 text-sm sm:text-base rounded-lg border border-gray-300 focus:ring-2 focus:ring-[#EA5D19] focus:border-transparent outline-none transition-all" placeholder="First Name" required/></div>
+                  <div><label htmlFor="lastName" className="block text-xs sm:text-sm font-semibold text-[#11110E] mb-2">Last Name</label><input type="text" id="lastName" name="lastName" value={formData.lastName} onChange={handleInputChange} className="w-full px-3 py-2 sm:px-4 sm:py-3 text-sm sm:text-base rounded-lg border border-gray-300 focus:ring-2 focus:ring-[#EA5D19] focus:border-transparent outline-none transition-all" placeholder="Last Name" required/></div>
                 </div>
-                <div><label htmlFor="phone" className="block text-sm font-semibold text-[#11110E] mb-2">Phone</label><input type="tel" id="phone" name="phone" value={formData.phone} onChange={handleInputChange} className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-[#EA5D19] focus:border-transparent outline-none transition-all" placeholder="phone" required/></div>
-                <div><label htmlFor="email" className="block text-sm font-semibold text-[#11110E] mb-2">Email</label><input type="email" id="email" name="email" value={formData.email} onChange={handleInputChange} className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-[#EA5D19] focus:border-transparent outline-none transition-all" placeholder="email" required/></div>
-                <div><label htmlFor="address" className="block text-sm font-semibold text-[#11110E] mb-2">Service Address</label><input type="text" id="address" name="address" value={formData.address} onChange={handleInputChange} className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-[#EA5D19] focus:border-transparent outline-none transition-all" placeholder="123 Main St, Redlands, CA" required/></div>
-                
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                  <div><label htmlFor="heaterType" className="block text-sm font-semibold text-[#11110E] mb-2">Tankless or Tank Heater?</label><select id="heaterType" name="heaterType" value={formData.heaterType} onChange={handleInputChange} className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-[#EA5D19] focus:border-transparent outline-none transition-all" required><option value="">Select...</option><option value="tankless">Tankless</option><option value="tank">Traditional Tank</option></select></div>
-                  <div><label htmlFor="serviceType" className="block text-sm font-semibold text-[#11110E] mb-2">Service Needed?</label><select id="serviceType" name="serviceType" value={formData.serviceType} onChange={handleInputChange} className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-[#EA5D19] focus:border-transparent outline-none transition-all" required><option value="">Select...</option><option value="repairs">Repairs</option><option value="replacement">Replacement</option><option value="unsure">Not Sure</option></select></div>
+                <div><label htmlFor="phone" className="block text-xs sm:text-sm font-semibold text-[#11110E] mb-2">Phone</label><input type="tel" id="phone" name="phone" value={formData.phone} onChange={handleInputChange} className="w-full px-3 py-2 sm:px-4 sm:py-3 text-sm sm:text-base rounded-lg border border-gray-300 focus:ring-2 focus:ring-[#EA5D19] focus:border-transparent outline-none transition-all" placeholder="phone" required/></div>
+                <div><label htmlFor="email" className="block text-xs sm:text-sm font-semibold text-[#11110E] mb-2">Email</label><input type="email" id="email" name="email" value={formData.email} onChange={handleInputChange} className="w-full px-3 py-2 sm:px-4 sm:py-3 text-sm sm:text-base rounded-lg border border-gray-300 focus:ring-2 focus:ring-[#EA5D19] focus:border-transparent outline-none transition-all" placeholder="email" required/></div>
+                <div><label htmlFor="address" className="block text-xs sm:text-sm font-semibold text-[#11110E] mb-2">Service Address</label><input type="text" id="address" name="address" value={formData.address} onChange={handleInputChange} className="w-full px-3 py-2 sm:px-4 sm:py-3 text-sm sm:text-base rounded-lg border border-gray-300 focus:ring-2 focus:ring-[#EA5D19] focus:border-transparent outline-none transition-all" placeholder="123 Main St, Redlands, CA" required/></div>
+
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6">
+                  <div><label htmlFor="heaterType" className="block text-xs sm:text-sm font-semibold text-[#11110E] mb-2">Tankless or Tank Heater?</label><select id="heaterType" name="heaterType" value={formData.heaterType} onChange={handleInputChange} className="w-full px-3 py-2 sm:px-4 sm:py-3 text-sm sm:text-base rounded-lg border border-gray-300 focus:ring-2 focus:ring-[#EA5D19] focus:border-transparent outline-none transition-all" required><option value="">Select...</option><option value="tankless">Tankless</option><option value="tank">Traditional Tank</option></select></div>
+                  <div><label htmlFor="serviceType" className="block text-xs sm:text-sm font-semibold text-[#11110E] mb-2">Service Needed?</label><select id="serviceType" name="serviceType" value={formData.serviceType} onChange={handleInputChange} className="w-full px-3 py-2 sm:px-4 sm:py-3 text-sm sm:text-base rounded-lg border border-gray-300 focus:ring-2 focus:ring-[#EA5D19] focus:border-transparent outline-none transition-all" required><option value="">Select...</option><option value="repairs">Repairs</option><option value="replacement">Replacement</option><option value="unsure">Not Sure</option></select></div>
                 </div>
 
-                <div className='border-t pt-4'>
-                    <label htmlFor="issue" className="block text-sm font-semibold text-[#11110E] mb-2">What is currently wrong with your water heater?</label>
-                    <textarea id="issue" name="issue" value={formData.issue} onChange={handleInputChange} rows={3} className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-[#EA5D19] focus:border-transparent outline-none transition-all resize-none" placeholder="Is it leaking, making noise, or not heating?" />
+                <div className='border-t pt-3 sm:pt-4'>
+                    <label htmlFor="issue" className="block text-xs sm:text-sm font-semibold text-[#11110E] mb-2">What is currently wrong with your water heater?</label>
+                    <textarea id="issue" name="issue" value={formData.issue} onChange={handleInputChange} rows={3} className="w-full px-3 py-2 sm:px-4 sm:py-3 text-sm sm:text-base rounded-lg border border-gray-300 focus:ring-2 focus:ring-[#EA5D19] focus:border-transparent outline-none transition-all resize-none" placeholder="Is it leaking, making noise, or not heating?" />
                 </div>
                 
                 {/* File Upload (Highlighted) */}
-                <div className="p-4 bg-gray-50 rounded-lg border border-dashed border-gray-300">
-                  <label htmlFor="photo" className="block text-sm font-extrabold text-[#11110E] mb-2">Upload Photo for Best Accuracy</label>
-                  <input type="file" id="photo" name="photo" accept="image/*" onChange={handleFileChange} className="w-full file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:text-sm file:font-semibold file:bg-[#EA5D19] file:text-white hover:file:bg-[#FF6E2E] file:cursor-pointer" required/>
-                  <p className="mt-2 text-sm text-gray-600">{selectedFile ? selectedFile.name : "No file chosen"}</p>
+                <div className="p-3 sm:p-4 bg-gray-50 rounded-lg border border-dashed border-gray-300">
+                  <label htmlFor="photo" className="block text-xs sm:text-sm font-extrabold text-[#11110E] mb-2">Upload Photo for Best Accuracy</label>
+                  <input type="file" id="photo" name="photo" accept="image/*" onChange={handleFileChange} className="w-full text-sm file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:text-xs sm:file:text-sm file:font-semibold file:bg-[#EA5D19] file:text-white hover:file:bg-[#FF6E2E] file:cursor-pointer" required/>
+                  <p className="mt-2 text-xs sm:text-sm text-gray-600">{selectedFile ? selectedFile.name : "No file chosen"}</p>
                 </div>
 
                 {/* Submit Button */}
-                <button type="submit" className="w-full bg-gradient-to-r from-[#EA5D19] to-[#FF6E2E] text-white font-extrabold text-xl py-4 rounded-full shadow-lg hover:shadow-xl transition-all hover:scale-[1.01]">
+                <button type="submit" className="w-full bg-gradient-to-r from-[#EA5D19] to-[#FF6E2E] text-white font-extrabold text-base sm:text-lg lg:text-xl py-3 sm:py-4 rounded-full shadow-lg hover:shadow-xl transition-all hover:scale-[1.01]">
                   GET MY FREE ESTIMATE
                 </button>
               </form>
@@ -191,12 +191,12 @@ export function QuoteContent() {
       </section>
 
       {/* -------------------- SECTION 2: TRUSTED BRANDS SHOWCASE -------------------- */}
-      <section className="bg-white py-12 lg:py-16 border-t border-b border-gray-100">
+      <section className="bg-white py-10 sm:py-16 lg:py-24 border-t border-b border-gray-100">
          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-             <h2 className="text-xl font-bold text-center text-gray-600 uppercase tracking-widest mb-8">
+             <h2 className="text-base sm:text-lg lg:text-xl font-bold text-center text-gray-600 uppercase tracking-widest mb-6 sm:mb-8">
                  We Repair & Install Products From All Leading Manufacturers
              </h2>
-             <div className="flex flex-wrap justify-center items-center gap-x-10 gap-y-6">
+             <div className="flex flex-wrap justify-center items-center gap-x-6 gap-y-4 sm:gap-x-10 sm:gap-y-6">
                  {brands.map((brand, index) => (
                      <motion.div
                          key={brand.name}
@@ -204,7 +204,7 @@ export function QuoteContent() {
                          whileInView={{ opacity: 1, y: 0 }}
                          transition={{ duration: 0.5, delay: index * 0.1 }}
                          viewport={{ once: true, amount: 0.8 }}
-                         className="relative h-14 w-32 grayscale hover:grayscale-0 transition-all duration-300"
+                         className="relative h-12 w-24 sm:h-14 sm:w-32 grayscale hover:grayscale-0 transition-all duration-300"
                      >
                          <Image
                              src={brand.image}
@@ -220,7 +220,7 @@ export function QuoteContent() {
       </section>
 
       {/* -------------------- SECTION 3: EXPERT EDUCATION (REPAIR VS REPLACE) -------------------- */}
-      <section className="py-20 bg-gray-50">
+      <section className="py-10 sm:py-16 lg:py-20 bg-gray-50">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 25 }}
@@ -229,44 +229,44 @@ export function QuoteContent() {
             transition={{ duration: 0.6 }}
             className="mx-auto max-w-7xl text-left"
           >
-            <h2 className="text-4xl sm:text-5xl font-extrabold text-[#11110E] mb-6 text-center">
+            <h2 className="text-2xl sm:text-4xl lg:text-5xl font-extrabold text-[#11110E] mb-4 sm:mb-6 text-center">
               Guidance from Certified Water Heater Professionals
             </h2>
-            <div className="h-1 w-20 bg-[#EA5D19] mx-auto rounded-full mb-16" />
+            <div className="h-1 w-16 sm:w-20 bg-[#EA5D19] mx-auto rounded-full mb-8 sm:mb-14 lg:mb-16" />
 
             {/* When to Replace or Repair */}
-            <h3 className="text-3xl font-extrabold text-[#11110E] mt-10 mb-6 flex items-center gap-3">
-                <Phone className="h-7 w-7 text-[#EA5D19]" /> When to Choose Repair vs. Replacement
+            <h3 className="text-xl sm:text-2xl lg:text-3xl font-extrabold text-[#11110E] mt-6 sm:mt-10 mb-4 sm:mb-6 flex items-center gap-2 sm:gap-3">
+                <Phone className="h-5 w-5 sm:h-6 sm:w-6 lg:h-7 lg:w-7 text-[#EA5D19]" /> When to Choose Repair vs. Replacement
             </h3>
-            <div className="p-6 bg-white rounded-xl shadow-lg border border-gray-100 mb-12">
-                <p className="text-lg text-gray-700 leading-relaxed mb-4">
+            <div className="p-4 sm:p-6 bg-white rounded-lg sm:rounded-xl shadow-lg border border-gray-100 mb-6 sm:mb-8 lg:mb-12">
+                <p className="text-sm sm:text-base lg:text-lg text-gray-700 leading-relaxed mb-4">
                   Deciding whether to repair or replace can save you thousands. While minor issues can be repaired, a replacement is often necessary if:
                 </p>
-                <ul className="list-disc list-outside text-lg text-gray-700 leading-relaxed space-y-2 pl-6">
+                <ul className="list-disc list-outside text-sm sm:text-base lg:text-lg text-gray-700 leading-relaxed space-y-2 pl-4 sm:pl-6">
                     <li>The warranty on your unit has expired (usually after 8-12 years).</li>
                     <li>The cost of repairs is more than 50% of the price of a new unit.</li>
                     <li>The unit is actively leaking, which often signals tank failure.</li>
                 </ul>
-                <p className="text-lg text-gray-700 leading-relaxed mt-4">
+                <p className="text-sm sm:text-base lg:text-lg text-gray-700 leading-relaxed mt-4">
                     Our team will always provide a detailed, unbiased analysis of your situation to help you make the most cost-effective decision.
                 </p>
             </div>
 
             {/* Determining Needs */}
-            <h3 className="text-3xl font-extrabold text-[#11110E] mt-10 mb-6 flex items-center gap-3">
-                <CheckCircle className="h-7 w-7 text-[#EA5D19]" /> Determining Your Specific Water Heater Needs
+            <h3 className="text-xl sm:text-2xl lg:text-3xl font-extrabold text-[#11110E] mt-6 sm:mt-10 mb-4 sm:mb-6 flex items-center gap-2 sm:gap-3">
+                <CheckCircle className="h-5 w-5 sm:h-6 sm:w-6 lg:h-7 lg:w-7 text-[#EA5D19]" /> Determining Your Specific Water Heater Needs
             </h3>
-            <p className="text-lg text-gray-700 leading-relaxed mb-6">
+            <p className="text-sm sm:text-base lg:text-lg text-gray-700 leading-relaxed mb-4 sm:mb-6">
               Our comprehensive approach ensures your new system is perfectly matched to your home's usage, whether you choose a tankless or traditional model.
             </p>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <div className="p-6 bg-white rounded-xl shadow-lg border border-gray-100">
-                    <h4 className="text-2xl font-bold text-[#EA5D19] mb-3">Tankless Systems</h4>
-                    <p className="text-gray-700">We assess your household's hot water consumption, fixture flow rates, and local groundwater temperatures to ensure the system delivers endless hot water without capacity issues.</p>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6 lg:gap-8">
+                <div className="p-4 sm:p-6 bg-white rounded-lg sm:rounded-xl shadow-lg border border-gray-100">
+                    <h4 className="text-lg sm:text-xl lg:text-2xl font-bold text-[#EA5D19] mb-2 sm:mb-3">Tankless Systems</h4>
+                    <p className="text-sm sm:text-base text-gray-700">We assess your household's hot water consumption, fixture flow rates, and local groundwater temperatures to ensure the system delivers endless hot water without capacity issues.</p>
                 </div>
-                <div className="p-6 bg-white rounded-xl shadow-lg border border-gray-100">
-                    <h4 className="text-2xl font-bold text-[#EA5D19] mb-3">Traditional Tank Systems</h4>
-                    <p className="text-gray-700">We calculate the specific volume of water necessary to meet your household's peak demand times, ensuring you never run out of hot water when you need it most.</p>
+                <div className="p-4 sm:p-6 bg-white rounded-lg sm:rounded-xl shadow-lg border border-gray-100">
+                    <h4 className="text-lg sm:text-xl lg:text-2xl font-bold text-[#EA5D19] mb-2 sm:mb-3">Traditional Tank Systems</h4>
+                    <p className="text-sm sm:text-base text-gray-700">We calculate the specific volume of water necessary to meet your household's peak demand times, ensuring you never run out of hot water when you need it most.</p>
                 </div>
             </div>
             
@@ -275,7 +275,7 @@ export function QuoteContent() {
       </section>
 
       {/* -------------------- SECTION 4: DETAILED FAQ (Final Trust Builder) -------------------- */}
-      <section className="py-16 lg:py-24 bg-white">
+      <section className="py-10 sm:py-16 lg:py-20 mb-8 sm:mb-12 lg:mb-16 bg-white">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -284,11 +284,11 @@ export function QuoteContent() {
             viewport={{ once: true }}
             className="mx-auto max-w-6xl"
           >
-            <h2 className="text-3xl font-extrabold text-[#11110E] sm:text-4xl mb-8 text-center">
+            <h2 className="text-2xl font-extrabold text-[#11110E] sm:text-3xl lg:text-4xl mb-2 sm:mb-4 text-center">
               Have More Questions? We Have Answers.
             </h2>
-            <div className="h-1 w-20 bg-[#EA5D19] mx-auto rounded-full mb-12" />
-            <Accordion type="single" collapsible className="space-y-4">
+            <div className="h-1 w-16 sm:w-20 bg-[#EA5D19] mx-auto rounded-full mb-6 sm:mb-8 lg:mb-12" />
+            <Accordion type="single" collapsible className="space-y-2 sm:space-y-4">
               {detailedFaqs.map((faq, index) => (
                 <motion.div
                   key={index}
@@ -299,13 +299,13 @@ export function QuoteContent() {
                 >
                   <AccordionItem
                     value={`item-detailed-${index}`}
-                    className="rounded-xl bg-gray-50 px-6 shadow-md border-0"
+                    className="rounded-lg sm:rounded-xl bg-gray-50 px-4 sm:px-6 shadow-md border-0"
                   >
-                    <AccordionTrigger className="text-left font-semibold text-xl text-[#11110E] hover:text-[#EA5D19] py-5 flex items-start justify-between gap-2">
-                      <span className="text-[#EA5D19] font-extrabold mr-3">Q:</span>
+                    <AccordionTrigger className="text-left font-semibold text-sm sm:text-base lg:text-lg text-[#11110E] hover:text-[#EA5D19] py-3 sm:py-4 flex items-start justify-between gap-2">
+                      <span className="text-[#EA5D19] font-extrabold mr-2 sm:mr-3">Q:</span>
                       <span className="flex-grow">{faq.question}</span>
                     </AccordionTrigger>
-                    <AccordionContent className="text-gray-700 pb-5 whitespace-pre-line border-t border-gray-200 pt-4">
+                    <AccordionContent className="text-xs sm:text-sm lg:text-base text-gray-700 pb-3 sm:pb-4 whitespace-pre-line border-t border-gray-200 pt-3 sm:pt-4">
                       <span className="text-[#EA5D19] font-extrabold mr-3">A:</span>
                       {faq.answer}
                     </AccordionContent>

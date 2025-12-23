@@ -13,7 +13,7 @@ const brands = [
 
 export function TrustedBrands() {
   return (
-    <section className="py-16 lg:py-24">
+    <section className="py-10 sm:py-16 lg:py-24">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -22,12 +22,12 @@ export function TrustedBrands() {
           viewport={{ once: true }}
           className="mx-auto text-center relative z-20"
         >
-          <h2 className="text-3xl font-bold text-[#11110E] sm:text-4xl mb-8">
+          <h2 className="text-xl sm:text-3xl lg:text-4xl font-bold text-[#11110E] mb-6 sm:mb-8">
             Trusted Brands
           </h2>
 
           {/* FIXED GRID (z-20 + min height) */}
-          <div className="grid grid-cols-2 gap-6 md:grid-cols-3 lg:grid-cols-5 items-center relative z-20 min-h-[120px]">
+          <div className="grid grid-cols-2 gap-4 sm:gap-6 md:grid-cols-3 lg:grid-cols-5 items-center relative z-20 min-h-[80px] sm:min-h-[120px]">
             {brands.map((brand, index) => (
               <motion.div
                 key={brand.name}
@@ -38,7 +38,7 @@ export function TrustedBrands() {
                 className="flex items-center justify-center grayscale hover:grayscale-0 transition-all duration-300"
               >
                 {/* FIXED IMAGE WRAPPER (height + z-index) */}
-                <div className="relative h-20 w-28 mx-auto z-20">
+                <div className="relative h-14 w-20 sm:h-20 sm:w-28 mx-auto z-20">
                   <Image
                     src={brand.image}
                     alt={`${brand.name} logo - trusted water heater brand`}

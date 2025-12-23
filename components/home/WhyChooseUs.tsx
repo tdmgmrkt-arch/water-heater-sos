@@ -33,7 +33,7 @@ const benefits = [
 
 export function WhyChooseUs() {
   return (
-    <section className="bg-[#11110E] py-16 lg:py-24">
+    <section className="bg-[#11110E] py-10 sm:py-16 lg:py-24">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="grid gap-6 lg:grid-cols-2 lg:gap-10 items-center">
 
@@ -45,7 +45,7 @@ export function WhyChooseUs() {
             viewport={{ once: true }}
             className="relative order-2 lg:order-1"
           >
-            <div className="relative overflow-hidden rounded-xl shadow-2xl">
+            <div className="relative overflow-hidden rounded-xl sm:rounded-2xl shadow-2xl">
               <Image
                 src="/wh-sos-service-rep.webp"
                 alt="Water Heater SOS professional technician"
@@ -62,23 +62,24 @@ export function WhyChooseUs() {
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
-            className="space-y-6 order-1 lg:order-2 w-full min-w-0 relative z-20"
+            className="space-y-4 sm:space-y-6 order-1 lg:order-2 w-full min-w-0 relative z-20"
           >
-            <div className="space-y-3">
+            <div className="space-y-2 sm:space-y-3">
 
               {/* FIXED HEADER */}
-              <h2 className="!text-white text-5xl leading-tight font-bold sm:text-4xl">
+              <h2 className="!text-white text-2xl sm:text-4xl lg:text-5xl leading-tight font-bold">
                 Why Choose Water Heater SOS?
               </h2>
 
               {/* FIXED SUBHEADER */}
-              <p className="!text-gray-300 text-base leading-normal sm:text-lg">
-              The Inland Empire’s most trusted, highest-rated plumbing team — with specialized expertise in water heaters. We restore your hot water quickly and with uncompromising quality, every single time.
+              <p className="!text-gray-300 text-sm sm:text-base lg:text-lg leading-normal">
+                <span className="hidden sm:inline">The Inland Empire's most trusted, highest-rated plumbing team — with specialized expertise in water heaters. We restore your hot water quickly and with uncompromising quality, every single time.</span>
+                <span className="sm:hidden">The Inland Empire's most trusted plumbing team. We restore your hot water quickly with uncompromising quality.</span>
               </p>
 
             </div>
 
-            <div className="space-y-4">
+            <div className="space-y-3 sm:space-y-4">
             {benefits.map((benefit, index) => (
               <motion.div
                 key={benefit.title}
@@ -88,20 +89,20 @@ export function WhyChooseUs() {
                 viewport={{ once: true }}
                 className="flex gap-3"
               >
-                <div className="flex-shrink-0">
-                  <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-[#EA5D19]">
-                    <benefit.icon className="h-5 w-5 text-white" />
+                <div className="shrink-0">
+                  <div className="flex h-8 w-8 sm:h-10 sm:w-10 items-center justify-center rounded-lg bg-[#EA5D19]">
+                    <benefit.icon className="h-4 w-4 sm:h-5 sm:w-5 text-white" />
                   </div>
                 </div>
 
                 <div>
                   {/* FIXED TITLE */}
-                  <h3 className="!text-white text-lg font-bold mb-1">
+                  <h3 className="!text-white text-base sm:text-lg font-bold mb-0.5 sm:mb-1">
                     {benefit.title}
                   </h3>
 
                   {/* FIXED DESCRIPTION */}
-                  <p className="!text-gray-300 text-sm leading-normal">
+                  <p className="!text-gray-300 text-xs sm:text-sm leading-normal">
                     {benefit.description}
                   </p>
                 </div>
@@ -109,10 +110,10 @@ export function WhyChooseUs() {
               ))}
             </div>
 
-            <div className="pt-2">
+            <div className="pt-1 sm:pt-2">
               <a
                 href="/quote"
-                className="inline-flex items-center justify-center rounded-xl border-2 border-white bg-transparent px-6 py-3.5 text-base font-semibold text-white hover:bg-white hover:text-[#11110E] transition-all"
+                className="inline-flex items-center justify-center rounded-xl border-2 border-white bg-transparent px-5 py-3 sm:px-6 sm:py-3.5 text-sm sm:text-base font-semibold text-white hover:bg-white hover:text-[#11110E] transition-all"
               >
                 Schedule an Appointment Now!
               </a>

@@ -1,0 +1,33 @@
+Mobile Optimization Patterns Applied:
+
+Files completed:
+1. LeakDetectionServicesContent.tsx ✓
+2. SewerCameraInspectionContent.tsx ✓
+
+Files remaining:
+3. WholeHouseRepipeContent.tsx
+4. GasLeakRepairsContent.tsx
+5. WaterServiceRepairReplacementContent.tsx
+6. ShowerRepairReplacementContent.tsx
+7. ToiletRepairReplacementContent.tsx
+
+Patterns:
+- Hero: pt-20 pb-16 → pt-12 pb-10 sm:pt-20 sm:pb-16
+- Hero gap: gap-12 → gap-8 sm:gap-12
+- Badge: px-4 text-sm → px-3 text-xs sm:text-sm
+- H1: text-5xl → text-3xl sm:text-5xl
+- Description: text-lg → text-sm sm:text-lg
+- Button: px-8 py-4 text-lg → px-5 py-3 sm:px-8 sm:py-4 text-sm sm:text-lg
+- Icons: h-5 w-5 → h-4 w-4 sm:h-5 sm:w-5
+- Image: h-[500px] rounded-2xl → h-[280px] sm:h-[400px] lg:h-[500px] rounded-2xl sm:rounded-3xl
+- Sections: py-20 → py-10 sm:py-16 lg:py-20
+- H2: text-3xl sm:text-4xl → text-2xl sm:text-4xl
+- Cards gap: gap-8 → gap-4 sm:gap-6 lg:gap-10
+- Cards: rounded-2xl p-8 → rounded-xl sm:rounded-2xl p-4 sm:p-6 lg:p-8
+- Card title: text-xl → text-base sm:text-xl
+- Card desc: add text-sm sm:text-base
+- CTA section: py-20 → py-10 sm:py-16
+- FAQ accordion: space-y-4 → space-y-2 sm:space-y-4
+- FAQ items: px-6 → px-4 sm:px-6
+- FAQ trigger: text-lg → text-sm sm:text-base lg:text-lg + py-3 sm:py-4
+- FAQ content: text-base → text-xs sm:text-sm lg:text-base + pb-3 sm:pb-4

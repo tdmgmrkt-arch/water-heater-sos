@@ -116,39 +116,40 @@ export function YucaipaContent() {
   return (
     <>
       {/* Hero Section */}
-      <section className="relative overflow-hidden bg-gradient-to-b from-gray-50 to-white pt-20 pb-16 lg:pt-32 lg:pb-24">
+      <section className="relative overflow-hidden bg-gradient-to-b from-gray-50 to-white pt-12 pb-10 sm:pt-20 sm:pb-16 lg:pt-32 lg:pb-24">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="grid gap-12 lg:grid-cols-2 lg:gap-16 items-center">
+          <div className="grid gap-8 sm:gap-12 lg:grid-cols-2 lg:gap-16 items-center">
             {/* Content */}
             <motion.div
               initial={{ opacity: 0, x: -30 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.6 }}
             >
-              <span className="inline-block px-4 py-1 rounded-full bg-[#EA5D19] text-sm text-white font-semibold mb-4 tracking-wide">
+              <span className="inline-block px-3 py-1 rounded-full bg-[#EA5D19] text-xs sm:px-4 sm:text-sm text-white font-semibold mb-4 tracking-wide">
                 Yucaipa Plumbing Experts
               </span>
-              <h1 className="text-4xl font-bold text-[#11110E] sm:text-5xl lg:text-6xl mb-6">
+              <h1 className="text-3xl font-bold text-[#11110E] sm:text-5xl lg:text-6xl mb-6">
                 Yucaipa Plumbing Services & Water Heater Repair
               </h1>
-              <p className="text-xl text-gray-600 mb-8">
+              <p className="text-base sm:text-xl text-gray-600 mb-8">
                 Do You Need a Plumber in Yucaipa?
               </p>
-              <p className="text-lg text-gray-700 leading-relaxed mb-4">
+              <p className="text-sm sm:text-lg text-gray-700 leading-relaxed mb-4">
                 At Water Heater SOS, we&apos;re not just about water heaters anymore—we&apos;ve expanded to handle all plumbing repairs and installations in Yucaipa, CA! Our skilled team is dedicated to fixing your plumbing problems, from dripping faucets to clogged drains, and making sure everything works perfectly.
               </p>
-              <p className="text-lg text-gray-700 leading-relaxed mb-4">
+              <p className="text-sm sm:text-lg text-gray-700 leading-relaxed mb-4">
                 We focus on giving you top-notch service, tailored to your needs, so your home&apos;s plumbing runs smoothly and efficiently. With our commitment to customer satisfaction, you can trust us to put you first and deliver reliable solutions every time.
               </p>
-              <p className="text-lg text-gray-700 leading-relaxed mb-8">
+              <p className="text-sm sm:text-lg text-gray-700 leading-relaxed mb-8">
                 Hot water is something we all rely on, but when your water heater starts acting up, it can mess up your whole day. A leaky water heater, one that won&apos;t stay lit, or one that doesn&apos;t heat well can leave you with cold showers and a big headache. That&apos;s where we come in!
               </p>
               <Link
                 href="/quote"
-                className="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-[#EA5D19] to-[#FF6E2E] px-8 py-4 text-lg font-bold text-white shadow-lg hover:shadow-xl transition-all hover:scale-105"
+                className="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-[#EA5D19] to-[#FF6E2E] px-5 py-3 sm:px-8 sm:py-4 text-sm sm:text-lg font-bold text-white shadow-lg hover:shadow-xl transition-all hover:scale-105"
               >
-                <Phone className="h-5 w-5" />
-                Schedule an Appointment Today!
+                <Phone className="h-4 w-4 sm:h-5 sm:w-5" />
+                <span className="hidden sm:inline">Schedule an Appointment Today!</span>
+                <span className="sm:hidden">Get Free Estimate</span>
               </Link>
             </motion.div>
 
@@ -157,7 +158,7 @@ export function YucaipaContent() {
               initial={{ opacity: 0, x: 30 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
-              className="relative h-[400px] lg:h-[500px] rounded-3xl overflow-hidden shadow-2xl"
+              className="relative h-[280px] sm:h-[400px] lg:h-[500px] rounded-2xl sm:rounded-3xl overflow-hidden shadow-2xl"
             >
               <Image
                 src="/wh-sos-service-rep.webp"
@@ -172,7 +173,7 @@ export function YucaipaContent() {
       </section>
 
       {/* Common Plumbing Services Section */}
-      <section className="py-20 bg-white">
+      <section className="py-10 sm:py-16 lg:py-20 bg-white">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 25 }}
@@ -181,16 +182,16 @@ export function YucaipaContent() {
             transition={{ duration: 0.6 }}
             className="text-center mb-14"
           >
-            <h2 className="text-4xl sm:text-5xl font-extrabold text-[#11110E] mb-6">
+            <h2 className="text-2xl sm:text-4xl lg:text-5xl font-extrabold text-[#11110E] mb-6">
               Common Plumbing Services in Yucaipa
             </h2>
-            <div className="h-1 w-20 bg-[#EA5D19] mx-auto rounded-full mb-6" />
-            <p className="text-lg text-gray-700 leading-relaxed max-w-4xl mx-auto">
+            <div className="h-1 w-16 sm:w-20 bg-[#EA5D19] mx-auto rounded-full mb-6" />
+            <p className="text-sm sm:text-lg text-gray-700 leading-relaxed max-w-4xl mx-auto">
               Our experienced technicians in Yucaipa are experts at diagnosing, repairing, and replacing all types of water heaters—gas, electric, or tankless. But our services don&apos;t stop there. We now fix a wide range of plumbing issues to keep your home in great shape.
             </p>
           </motion.div>
 
-          <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-3">
+          <div className="grid gap-4 sm:gap-6 lg:gap-10 md:grid-cols-2 lg:grid-cols-3">
             {plumbingServices.map((service, index) => (
               <motion.div
                 key={index}
@@ -202,17 +203,17 @@ export function YucaipaContent() {
               >
                 <Link
                   href={service.link}
-                  className="flex flex-col h-full rounded-2xl bg-white p-6 shadow-lg border border-gray-200 hover:shadow-xl hover:-translate-y-1 transition-all group"
+                  className="flex flex-col h-full rounded-xl sm:rounded-2xl bg-white p-4 sm:p-6 shadow-lg border border-gray-200 hover:shadow-xl hover:-translate-y-1 transition-all group"
                 >
                   <div className="flex items-start gap-4 mb-4">
-                    <div className="flex-shrink-0 w-8 h-8 rounded-full bg-[#EA5D19] flex items-center justify-center shadow-md group-hover:scale-110 transition-transform">
-                      <Check className="h-4 w-4 text-white" />
+                    <div className="flex-shrink-0 w-6 h-6 sm:w-8 sm:h-8 rounded-full bg-[#EA5D19] flex items-center justify-center shadow-md group-hover:scale-110 transition-transform">
+                      <Check className="h-3 w-3 sm:h-4 sm:w-4 text-white" />
                     </div>
-                    <h3 className="text-xl font-bold text-[#11110E] flex-1 leading-snug group-hover:text-[#EA5D19] transition-colors">
+                    <h3 className="text-base sm:text-xl font-bold text-[#11110E] flex-1 leading-snug group-hover:text-[#EA5D19] transition-colors">
                       {service.title}
                     </h3>
                   </div>
-                  <p className="text-gray-700 leading-relaxed">
+                  <p className="text-sm sm:text-base text-gray-700 leading-relaxed">
                     {service.description}
                   </p>
                 </Link>
@@ -223,7 +224,7 @@ export function YucaipaContent() {
       </section>
 
       {/* Hard Water Problems Section */}
-      <section className="bg-gray-50 py-20">
+      <section className="bg-gray-50 py-10 sm:py-16 lg:py-20">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 25 }}
@@ -232,24 +233,24 @@ export function YucaipaContent() {
             transition={{ duration: 0.6 }}
             className="mx-auto text-center max-w-7xl"
           >
-            <h2 className="text-4xl sm:text-5xl font-extrabold text-[#11110E] mb-6">
+            <h2 className="text-2xl sm:text-4xl lg:text-5xl font-extrabold text-[#11110E] mb-6">
               Hard Water Problems in Yucaipa?
             </h2>
-            <div className="h-1 w-20 bg-[#EA5D19] mx-auto rounded-full mb-8" />
-            <p className="text-lg text-gray-700 leading-relaxed mb-4">
+            <div className="h-1 w-16 sm:w-20 bg-[#EA5D19] mx-auto rounded-full mb-8" />
+            <p className="text-sm sm:text-lg text-gray-700 leading-relaxed mb-4">
               Yucaipa&apos;s hard water can be tough on your plumbing, especially water heaters. The minerals in the water build up in pipes and tanks, causing clogs, corrosion, and shorter equipment life. Our team knows how to tackle these issues.
             </p>
-            <p className="text-lg text-gray-700 leading-relaxed mb-4">
+            <p className="text-sm sm:text-lg text-gray-700 leading-relaxed mb-4">
               We can install water softeners to reduce mineral buildup, protect your plumbing, and make your water heater last longer. This saves you from frequent repairs and keeps your system running efficiently.
             </p>
-            <p className="text-lg text-gray-700 leading-relaxed">
+            <p className="text-sm sm:text-lg text-gray-700 leading-relaxed">
               When you choose Water Heater SOS, you&apos;re getting a team that&apos;s friendly, reliable, and ready to work. We show up on time, explain the problem in a way that&apos;s easy to understand, and use high-quality parts to ensure our repairs last. Whether we&apos;re fixing a leaky pipe, installing a new toilet, or replacing a water heater, we clean up after ourselves and leave your home neat.
             </p>
           </motion.div>
         </div>
       </section>
       {/* Common Water Heater Issues Section */}
-      <section className="py-20 bg-white">
+      <section className="py-10 sm:py-16 lg:py-20 bg-white">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 25 }}
@@ -258,13 +259,13 @@ export function YucaipaContent() {
             transition={{ duration: 0.6 }}
             className="text-center mb-14"
           >
-            <h2 className="text-4xl sm:text-5xl font-extrabold text-[#11110E] mb-6">
+            <h2 className="text-2xl sm:text-4xl lg:text-5xl font-extrabold text-[#11110E] mb-6">
               Common Water Heater Issues
             </h2>
-            <div className="h-1 w-20 bg-[#EA5D19] mx-auto rounded-full" />
+            <div className="h-1 w-16 sm:w-20 bg-[#EA5D19] mx-auto rounded-full" />
           </motion.div>
 
-          <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-3">
+          <div className="grid gap-4 sm:gap-6 lg:gap-10 md:grid-cols-2 lg:grid-cols-3">
             {waterHeaterIssues.map((issue, index) => (
               <motion.div
                 key={index}
@@ -272,17 +273,17 @@ export function YucaipaContent() {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: index * 0.08 }}
                 viewport={{ once: true }}
-                className="h-full flex flex-col rounded-2xl bg-white p-6 shadow-lg border border-gray-200 hover:shadow-xl hover:-translate-y-1 transition-all"
+                className="h-full flex flex-col rounded-xl sm:rounded-2xl bg-white p-4 sm:p-6 shadow-lg border border-gray-200 hover:shadow-xl hover:-translate-y-1 transition-all"
               >
                 <div className="flex items-start gap-4 mb-4">
-                  <div className="flex-shrink-0 w-8 h-8 rounded-full bg-[#EA5D19] flex items-center justify-center shadow-md">
-                    <Check className="h-4 w-4 text-white" />
+                  <div className="flex-shrink-0 w-6 h-6 sm:w-8 sm:h-8 rounded-full bg-[#EA5D19] flex items-center justify-center shadow-md">
+                    <Check className="h-3 w-3 sm:h-4 sm:w-4 text-white" />
                   </div>
-                  <h3 className="text-xl font-bold text-[#11110E] flex-1 leading-snug">
+                  <h3 className="text-base sm:text-xl font-bold text-[#11110E] flex-1 leading-snug">
                     {issue.title}
                   </h3>
                 </div>
-                <p className="text-gray-700 leading-relaxed">
+                <p className="text-sm sm:text-base text-gray-700 leading-relaxed">
                   {issue.description}
                 </p>
               </motion.div>
@@ -292,7 +293,7 @@ export function YucaipaContent() {
       </section>
 
       {/* CTA Section */}
-      <section className="bg-gradient-to-br from-[#11110E] via-[#1a1917] to-[#11110E] py-16">
+      <section className="bg-gradient-to-br from-[#11110E] via-[#1a1917] to-[#11110E] py-10 sm:py-16">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -301,22 +302,23 @@ export function YucaipaContent() {
             transition={{ duration: 0.6 }}
             className="text-center"
           >
-            <h2 className="text-3xl font-bold text-white sm:text-4xl mb-6">
+            <h2 className="text-2xl sm:text-3xl font-bold text-white mb-6">
               Schedule an Appointment Today!
             </h2>
             <Link
               href="/quote"
-              className="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-[#EA5D19] to-[#FF6E2E] px-8 py-4 text-lg font-bold text-white shadow-lg hover:shadow-xl transition-all hover:scale-105"
+              className="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-[#EA5D19] to-[#FF6E2E] px-5 py-3 sm:px-8 sm:py-4 text-sm sm:text-lg font-bold text-white shadow-lg hover:shadow-xl transition-all hover:scale-105"
             >
-              <Phone className="h-5 w-5" />
-              Get Free Estimate
+              <Phone className="h-4 w-4 sm:h-5 sm:w-5" />
+              <span className="hidden sm:inline">Get Free Estimate</span>
+              <span className="sm:hidden">Get Estimate</span>
             </Link>
           </motion.div>
         </div>
       </section>
 
       {/* Trusted Brands Section */}
-      <section className="bg-gray-50 py-16 lg:py-24">
+      <section className="bg-gray-50 py-10 sm:py-16">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -325,11 +327,11 @@ export function YucaipaContent() {
             viewport={{ once: true }}
             className="mx-auto max-w-7xl text-center relative z-20"
           >
-            <h2 className="text-3xl font-bold text-[#11110E] sm:text-4xl mb-8">
+            <h2 className="text-xl sm:text-3xl font-bold text-[#11110E] mb-8">
               Trusted Brands
             </h2>
-            <div className="h-1 w-20 bg-[#EA5D19] mx-auto rounded-full mb-8" />
-            <div className="grid grid-cols-2 gap-6 md:grid-cols-3 lg:grid-cols-5 items-center relative z-20 min-h-[120px]">
+            <div className="h-1 w-16 sm:w-20 bg-[#EA5D19] mx-auto rounded-full mb-8" />
+            <div className="grid grid-cols-2 gap-4 sm:gap-6 md:grid-cols-3 lg:grid-cols-5 items-center relative z-20 min-h-20 sm:min-h-[120px]">
               {brands.map((brand, index) => (
                 <motion.div
                   key={brand.name}
@@ -339,7 +341,7 @@ export function YucaipaContent() {
                   viewport={{ once: true }}
                   className="flex items-center justify-center grayscale hover:grayscale-0 transition-all duration-300"
                 >
-                  <div className="relative h-20 w-28 mx-auto z-20">
+                  <div className="relative h-14 w-20 sm:h-20 sm:w-28 mx-auto z-20">
                     <Image
                       src={brand.image}
                       alt={`${brand.name} logo - trusted water heater brand`}
@@ -356,7 +358,7 @@ export function YucaipaContent() {
       </section>
 
       {/* FAQ Section */}
-      <section className="py-16 lg:py-24">
+      <section className="py-10 sm:py-16 lg:py-20">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -365,10 +367,10 @@ export function YucaipaContent() {
             viewport={{ once: true }}
             className="mx-auto max-w-5xl"
           >
-            <h2 className="text-5xl font-bold text-[#11110E] sm:text-4xl mb-8 text-center">
+            <h2 className="text-2xl sm:text-3xl font-bold text-[#11110E] mb-8 text-center">
               Frequently Asked Questions
             </h2>
-            <Accordion type="single" collapsible className="space-y-4">
+            <Accordion type="single" collapsible className="space-y-2 sm:space-y-4">
               {faqs.map((faq, index) => (
                 <motion.div
                   key={index}
@@ -379,9 +381,9 @@ export function YucaipaContent() {
                 >
                   <AccordionItem
                     value={`item-${index}`}
-                    className="rounded-2xl bg-white px-6 shadow-md border-0"
+                    className="rounded-xl sm:rounded-2xl bg-white px-4 sm:px-6 shadow-md border-0"
                   >
-                    <AccordionTrigger className="text-left font-semibold text-[#11110E] hover:text-[#EA5D19] py-6">
+                    <AccordionTrigger className="text-left font-semibold text-[#11110E] hover:text-[#EA5D19] text-sm sm:text-base lg:text-lg py-3 sm:py-4">
                       <span className="flex-shrink-0 mr-2 text-[#EA5D19] font-bold">
                         {String(index + 1).padStart(2, "0")}
                       </span>
@@ -389,7 +391,7 @@ export function YucaipaContent() {
                         {faq.question}
                       </span>
                     </AccordionTrigger>
-                    <AccordionContent className="text-gray-700 pb-6">
+                    <AccordionContent className="text-gray-700 text-xs sm:text-sm lg:text-base pb-3 sm:pb-4">
                       {faq.answer}
                     </AccordionContent>
                   </AccordionItem>
