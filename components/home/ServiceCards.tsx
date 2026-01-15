@@ -85,7 +85,7 @@ export function ServiceCards() {
                     <div className="relative h-85 overflow-hidden">
                       <Image
                         src={service.image}
-                        alt={service.subtitle ? `${service.title} ${service.subtitle}` : service.title}
+                        alt={service.title}
                         fill
                         className="object-contain"
                       />
@@ -107,12 +107,6 @@ export function ServiceCards() {
                         </div>
                       </div>
 
-                      {/* Title Overlay */}
-                      <div className=" absolute bottom-4 left-4 right-4 z-20">
-                        {service.subtitle && (
-                          <p className="text-sm text-white/90 font-medium">{service.subtitle}</p>
-                        )}
-                      </div>
                     </div>
 
                     {/* Content Section */}

@@ -1,5 +1,6 @@
 import { QuoteContent } from "@/components/quote/QuoteContent";
 import type { Metadata } from "next";
+import { Suspense } from "react";
 
 export const metadata: Metadata = {
   title: "Free Water Heater Estimate | Get Your Quote Today | Water Heater SOS",
@@ -13,5 +14,9 @@ export const metadata: Metadata = {
 };
 
 export default function QuotePage() {
-  return <QuoteContent />;
+  return (
+    <Suspense fallback={<div className="min-h-screen" />}>
+      <QuoteContent />
+    </Suspense>
+  );
 }

@@ -99,7 +99,7 @@ const faqs = [
 
 // --- Helper Components (Enhanced Visuals) ---
 
-const LisaReview = ({ imageSrc }) => (
+const LisaReview = ({ imageSrc }: { imageSrc: string }) => (
     <div className="p-6 bg-white rounded-2xl shadow-xl border-t-4 border-[#EA5D19] flex items-start gap-4">
       <div className="relative w-16 h-16 flex-shrink-0 rounded-full overflow-hidden border-2 border-[#EA5D19]">
         <Image src={imageSrc} alt="Lisa B. customer profile picture" fill sizes="64px" className="object-cover"/>
@@ -124,9 +124,9 @@ const RECAPTCHA_SITE_KEY = "6LdLs0ssAAAAAGh7XxBMgc_5JNXWo5_61U0M-Xvg";
 // Extend Window interface for Google Maps and reCAPTCHA
 declare global {
   interface Window {
-    google: typeof google;
-    initGooglePlaces: () => void;
-    grecaptcha: {
+    google?: typeof google;
+    initGooglePlaces?: () => void;
+    grecaptcha?: {
       enterprise: {
         ready: (callback: () => void) => void;
         execute: (siteKey: string, options: { action: string }) => Promise<string>;
@@ -256,11 +256,12 @@ export function QuoteContent() {
     try {
       // Execute reCAPTCHA Enterprise
       let recaptchaToken = "";
-      if (window.grecaptcha?.enterprise) {
+      const grecaptcha = window.grecaptcha;
+      if (grecaptcha?.enterprise) {
         await new Promise<void>((resolve) => {
-          window.grecaptcha.enterprise.ready(resolve);
+          grecaptcha.enterprise.ready(resolve);
         });
-        recaptchaToken = await window.grecaptcha.enterprise.execute(RECAPTCHA_SITE_KEY, {
+        recaptchaToken = await grecaptcha.enterprise.execute(RECAPTCHA_SITE_KEY, {
           action: "submit_quote",
         });
       }

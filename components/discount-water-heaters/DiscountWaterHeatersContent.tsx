@@ -136,8 +136,7 @@ export function DiscountWaterHeatersContent() {
               >
                 {/* Coupon Header (The main discount value) */}
                 <div className="p-6 bg-[#EA5D19] text-white text-center">
-                    <h3 className="text-1xl font-extrabold mb-1">{discount.title}</h3>
-                    <p className="text-lg font-medium">{discount.description}</p>
+                    <h3 className="text-xl font-extrabold">{discount.title}</h3>
                 </div>
 
                 {/* Image Area */}
