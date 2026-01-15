@@ -488,13 +488,14 @@ export function QuoteContent() {
 
                 {/* Success Message */}
                 {submitStatus === "success" && (
-                  <div className="p-4 bg-green-50 border border-green-200 rounded-lg">
-                    <p className="text-green-800 font-semibold text-sm flex items-start gap-2 mb-2">
-                      <CheckCircle className="h-4 w-4 mt-0.5 flex-shrink-0" />
+                  <div className="p-5 bg-green-50 border border-green-200 rounded-xl text-center">
+                    <CheckCircle className="h-8 w-8 text-green-600 mx-auto mb-3" />
+                    <p className="text-green-800 font-semibold text-base mb-2">
                       A local Water Heater SOS specialist will review your request and contact you shortly — often within the same day.
                     </p>
-                    <p className="text-green-700 text-sm ml-6">
-                      If this is urgent, call us now at <a href="tel:8006974014" className="font-bold underline hover:text-green-900">(800) 697-4014</a> for immediate help.
+                    <p className="text-green-700 text-sm">
+                      If this is urgent, call us now at{" "}
+                      <a href="tel:8006974014" className="font-bold underline hover:text-green-900">(800) 697-4014</a>
                     </p>
                   </div>
                 )}
