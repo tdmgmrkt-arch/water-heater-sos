@@ -202,40 +202,7 @@ export function AboutContent() {
         </div>
       </section>
 
-      {/* Call to Action Section */}
-      <section className="py-16 lg:py-24 bg-gradient-to-br from-[#11110E] to-gray-900">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
-            className="text-center"
-          >
-            <h2 className="text-7xl font-bold text-white sm:text-4xl mb-6">
-              Ready to Experience the Water Heater SOS Difference?
-            </h2>
-            <p className="text-3xl text-gray-300 mb-8 mx-auto">
-              Join thousands of satisfied customers throughout the Inland Empire who trust us for their water heater and plumbing needs.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a
-                href="tel:8006974014"
-                className="inline-flex items-center justify-center gap-3 rounded-full bg-[#EA5D19] px-8 py-4 text-lg font-semibold text-white shadow-lg transition-all hover:bg-[#d54d0f] hover:shadow-xl"
-              >
-                <Phone className="h-6 w-6" />
-                (800) 697-4014
-              </a>
-              <a
-                href="/quote"
-                className="inline-flex items-center justify-center gap-3 rounded-full bg-white px-8 py-4 text-lg font-semibold text-[#11110E] shadow-lg transition-all hover:bg-gray-100 hover:shadow-xl"
-              >
-                Get Free Estimate
-              </a>
-            </div>
-          </motion.div>
-        </div>
-      </section>
+      
     </main>
   );
 }

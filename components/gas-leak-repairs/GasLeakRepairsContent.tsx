@@ -36,7 +36,7 @@ export function GasLeakRepairsContent() {
                 Gas leaks pose serious safety hazards including fire, explosion, and health risks. Our licensed plumbers provide emergency gas leak detection, repairs, and complete gas line installations to keep your family safe.
               </p>
               <Link
-                href="/quote"
+                href="/quote?category=Gas%20%26%20Other%20Services&service=Gas%20Leak%20Repair"
                 className="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-[#EA5D19] to-[#FF6E2E] px-8 py-4 text-lg font-semibold text-white shadow-lg hover:shadow-xl transition-all duration-200 hover:scale-105"
               >
                 Schedule an Appointment
@@ -162,7 +162,7 @@ export function GasLeakRepairsContent() {
                 (800) 697-4014
               </Link>
               <Link
-                href="/quote"
+                href="/quote?category=Gas%20%26%20Other%20Services&service=Gas%20Leak%20Repair"
                 className="inline-flex items-center justify-center gap-2 rounded-full bg-[#11110E] px-8 py-4 text-lg font-semibold text-white shadow-lg hover:shadow-xl transition-all duration-200 hover:scale-105"
               >
                 Get Free Quote

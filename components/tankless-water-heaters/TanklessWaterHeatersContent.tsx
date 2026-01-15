@@ -130,7 +130,7 @@ export function TanklessWaterHeatersContent() {
                 If your tankless water heater needs repair, we can help! Our technicians are experts in working on electric and gas tankless water heaters, as well as all sorts of tankless water heater brands.
               </p>
               <Link
-                href="/quote"
+                href="/quote?category=Water%20Heaters&service=Tankless%20Water%20Heater%20Installation%2FRepair"
                 className="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-[#EA5D19] to-[#FF6E2E] px-8 py-4 text-lg font-bold text-white shadow-lg hover:shadow-xl transition-all hover:scale-105"
               >
                 <Phone className="h-5 w-5" />
@@ -346,7 +346,7 @@ export function TanklessWaterHeatersContent() {
               Ready to upgrade to a tankless water heater or need repairs? Contact us today for expert service and installation.
             </p>
             <Link
-              href="/quote"
+              href="/quote?category=Water%20Heaters&service=Tankless%20Water%20Heater%20Installation%2FRepair"
               className="inline-flex items-center gap-2 rounded-full bg-white px-8 py-4 text-lg font-bold text-[#EA5D19] shadow-lg hover:shadow-xl transition-all hover:scale-105"
             >
               <Phone className="h-5 w-5" />

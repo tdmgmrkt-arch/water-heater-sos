@@ -36,7 +36,7 @@ export function WaterPressureRegulatorReplacementContent() {
                 A faulty water pressure regulator can damage pipes, destroy appliances, and waste water. Our expert plumbers install and replace pressure regulators to protect your plumbing system and maintain safe water pressure.
               </p>
               <Link
-                href="/quote"
+                href="/quote?category=Leak%20%26%20Water%20Services&service=Water%20Pressure%20Regulator%20Replacement"
                 className="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-[#EA5D19] to-[#FF6E2E] px-8 py-4 text-lg font-semibold text-white shadow-lg hover:shadow-xl transition-all duration-200 hover:scale-105"
               >
                 Schedule an Appointment
@@ -162,7 +162,7 @@ export function WaterPressureRegulatorReplacementContent() {
                 (800) 697-4014
               </Link>
               <Link
-                href="/quote"
+                href="/quote?category=Leak%20%26%20Water%20Services&service=Water%20Pressure%20Regulator%20Replacement"
                 className="inline-flex items-center justify-center gap-2 rounded-full bg-[#11110E] px-8 py-4 text-lg font-semibold text-white shadow-lg hover:shadow-xl transition-all duration-200 hover:scale-105"
               >
                 Get Free Quote

@@ -100,7 +100,7 @@ export function WaterFiltrationContent() {
                 Having a water filtration system installed in your home is a crucial step toward ensuring the health and well-being of your family. A properly installed system can provide you and your family with bottled water quality from your tap.
               </p>
               <Link
-                href="/quote"
+                href="/quote?category=Water%20Heaters&service=Water%20Filtration%20System%20Installation"
                 className="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-[#EA5D19] to-[#FF6E2E] px-8 py-4 text-lg font-bold text-white shadow-lg hover:shadow-xl transition-all hover:scale-105"
               >
                 <Phone className="h-5 w-5" />
@@ -290,7 +290,7 @@ export function WaterFiltrationContent() {
               Ready to enjoy clean, filtered water throughout your home? Contact us today for a free water quality test and professional installation.
             </p>
             <Link
-              href="/quote"
+              href="/quote?category=Water%20Heaters&service=Water%20Filtration%20System%20Installation"
               className="inline-flex items-center gap-2 rounded-full bg-white px-8 py-4 text-lg font-bold text-[#EA5D19] shadow-lg hover:shadow-xl transition-all hover:scale-105"
             >
               <Phone className="h-5 w-5" />

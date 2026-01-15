@@ -90,7 +90,7 @@ export function HeatPumpWaterHeatersContent() {
               </p>
 
               <Link
-                href="/quote"
+                href="/quote?category=Water%20Heaters&service=Heat%20Pump%20Water%20Heater%20Installation"
                 className="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-[#EA5D19] to-[#FF6E2E] px-8 py-4 text-lg font-bold text-white shadow-lg hover:shadow-xl transition-all hover:scale-105"
               >
                 <Phone className="h-5 w-5" />
@@ -327,7 +327,7 @@ export function HeatPumpWaterHeatersContent() {
               Ready to upgrade to a heat pump water heater or need expert repairs? Contact us today for professional service and installation.
             </p>
             <Link
-              href="/quote"
+              href="/quote?category=Water%20Heaters&service=Heat%20Pump%20Water%20Heater%20Installation"
               className="inline-flex items-center gap-2 rounded-full bg-white px-8 py-4 text-lg font-bold text-[#EA5D19] shadow-lg hover:shadow-xl transition-all hover:scale-105"
             >
               <Phone className="h-5 w-5" />

@@ -99,7 +99,7 @@ export function GasWaterHeatersContent() {
                 Gas water heaters are a vital part of any home, providing us with hot showers, clean dishes, and laundry. However, like any appliance, they can experience issues that require a plumber.
               </p>
               <Link
-                href="/quote"
+                href="/quote?category=Water%20Heaters&service=Gas%20Water%20Heater%20Installation%2FRepair"
                 className="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-[#EA5D19] to-[#FF6E2E] px-8 py-4 text-lg font-bold text-white shadow-lg hover:shadow-xl transition-all hover:scale-105"
               >
                 <Phone className="h-5 w-5" />
@@ -293,7 +293,7 @@ export function GasWaterHeatersContent() {
               Don't let a broken gas water heater disrupt your daily routine. Contact us today for fast, reliable repair and replacement services.
             </p>
             <Link
-              href="/quote"
+              href="/quote?category=Water%20Heaters&service=Gas%20Water%20Heater%20Installation%2FRepair"
               className="inline-flex items-center gap-2 rounded-full bg-white px-8 py-4 text-lg font-bold text-[#EA5D19] shadow-lg hover:shadow-xl transition-all hover:scale-105"
             >
               <Phone className="h-5 w-5" />

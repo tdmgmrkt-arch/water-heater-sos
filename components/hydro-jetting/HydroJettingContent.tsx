@@ -36,7 +36,7 @@ export function HydroJettingContent() {
                 Over time, your home's drains can slow down as hair, grease, soap scum, and other debris build up and cause clogs. When that happens, hydro-jetting is a powerful way to clear out blockages and get your drains flowing like new again.
               </p>
               <Link
-                href="/quote"
+                href="/quote?category=Drain%20%26%20Sewer%20Services&service=Hydro-Jetting"
                 className="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-[#EA5D19] to-[#FF6E2E] px-8 py-4 text-lg font-semibold text-white shadow-lg hover:shadow-xl transition-all duration-200 hover:scale-105"
               >
                 Get a Free Estimate
@@ -162,7 +162,7 @@ export function HydroJettingContent() {
                 (800) 697-4014
               </Link>
               <Link
-                href="/quote"
+                href="/quote?category=Drain%20%26%20Sewer%20Services&service=Hydro-Jetting"
                 className="inline-flex items-center justify-center gap-2 rounded-full bg-[#11110E] px-8 py-4 text-lg font-semibold text-white shadow-lg hover:shadow-xl transition-all duration-200 hover:scale-105"
               >
                 Get Free Quote

@@ -96,7 +96,7 @@ export function WaterHeaterFlushContent() {
                 A tankless water heater is designed to provide hot water only when needed, which can lead to significant energy savings compared to traditional tank heaters. However, regular maintenance, particularly flushing, is essential to maintain its efficiency and longevity.
               </p>
               <Link
-                href="/quote"
+                href="/quote?category=Water%20Heaters&service=Water%20Heater%20Flush%2FMaintenance"
                 className="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-[#EA5D19] to-[#FF6E2E] px-8 py-4 text-lg font-bold text-white shadow-lg hover:shadow-xl transition-all hover:scale-105"
               >
                 <Phone className="h-5 w-5" />
@@ -342,7 +342,7 @@ export function WaterHeaterFlushContent() {
               Keep your water heater running efficiently with professional flushing services. Contact us today to schedule your maintenance.
             </p>
             <Link
-              href="/quote"
+              href="/quote?category=Water%20Heaters&service=Water%20Heater%20Flush%2FMaintenance"
               className="inline-flex items-center gap-2 rounded-full bg-white px-8 py-4 text-lg font-bold text-[#EA5D19] shadow-lg hover:shadow-xl transition-all hover:scale-105"
             >
               <Phone className="h-5 w-5" />

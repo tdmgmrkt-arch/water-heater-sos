@@ -36,7 +36,7 @@ export function FaucetRepairReplacementContent() {
                 A dripping or malfunctioning faucet can keep you awake at night and waste water that adds up on your bill. We're here to fix it with expert repair and replacement services.
               </p>
               <Link
-                href="/quote"
+                href="/quote?category=Fixtures%20%26%20Appliances&service=Faucet%20Repair%2FReplacement"
                 className="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-[#EA5D19] to-[#FF6E2E] px-8 py-4 text-lg font-semibold text-white shadow-lg hover:shadow-xl transition-all duration-200 hover:scale-105"
               >
                 Schedule an Appointment
@@ -162,7 +162,7 @@ export function FaucetRepairReplacementContent() {
                 (800) 697-4014
               </Link>
               <Link
-                href="/quote"
+                href="/quote?category=Fixtures%20%26%20Appliances&service=Faucet%20Repair%2FReplacement"
                 className="inline-flex items-center justify-center gap-2 rounded-full bg-[#11110E] px-8 py-4 text-lg font-semibold text-white shadow-lg hover:shadow-xl transition-all duration-200 hover:scale-105"
               >
                 Get Free Quote

@@ -335,6 +335,7 @@ export function Header() {
                               </a>
                               <Link
                                 href="/quote"
+                                onClick={() => setActiveMenu(null)}
                                 className="group flex items-center justify-center rounded-xl border-2 border-white px-6 py-3 text-sm font-bold text-white hover:bg-white/10 transition-all whitespace-nowrap relative overflow-hidden"
                               >
                                 <span className="relative z-10">Get Free Quote</span>

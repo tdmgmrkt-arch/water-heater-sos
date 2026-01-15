@@ -36,7 +36,7 @@ export function SewerCameraInspectionContent() {
                 Our sewer camera inspection service pinpoints the exact cause of your plumbing problems without guesswork or unnecessary digging. We use high-tech video cameras to see inside your pipes and diagnose issues accurately.
               </p>
               <Link
-                href="/quote"
+                href="/quote?category=Drain%20%26%20Sewer%20Services&service=Sewer%20Camera%20Inspection"
                 className="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-[#EA5D19] to-[#FF6E2E] px-8 py-4 text-lg font-semibold text-white shadow-lg hover:shadow-xl transition-all duration-200 hover:scale-105"
               >
                 Schedule an Appointment
@@ -162,7 +162,7 @@ export function SewerCameraInspectionContent() {
                 (800) 697-4014
               </Link>
               <Link
-                href="/quote"
+                href="/quote?category=Drain%20%26%20Sewer%20Services&service=Sewer%20Camera%20Inspection"
                 className="inline-flex items-center justify-center gap-2 rounded-full bg-[#11110E] px-8 py-4 text-lg font-semibold text-white shadow-lg hover:shadow-xl transition-all duration-200 hover:scale-105"
               >
                 Get Free Quote
