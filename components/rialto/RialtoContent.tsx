@@ -4,12 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { ArrowRight, Droplets, Wrench, Phone, AlertCircle } from "lucide-react";
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "@/components/ui/accordion";
+import { FAQ } from "@/components/home/FAQ";
 
 export function RialtoContent() {
   return (
@@ -26,7 +21,7 @@ export function RialtoContent() {
               <span className="inline-block px-4 py-1 rounded-full bg-[#EA5D19] text-white text-sm font-semibold mb-4">
                 Serving Rialto, CA
               </span>
-              <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl lg:text-6xl mb-6">
+              <h1 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl lg:text-5xl mb-4 lg:mb-6">
                 Rialto – Plumbing & Water Heater Services
               </h1>
               <p className="text-xl text-gray-600 mb-6">
@@ -291,80 +286,7 @@ export function RialtoContent() {
       </section>
 
       {/* FAQ Section */}
-      <section className="py-20 bg-white">
-        <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.5 }}
-            className="text-center mb-16"
-          >
-            <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl mb-4">
-              Frequently Asked Questions
-            </h2>
-            <p className="text-xl text-gray-600">
-              Common questions from Rialto homeowners
-            </p>
-          </motion.div>
-
-          <Accordion type="single" collapsible className="space-y-4">
-            <AccordionItem value="item-1" className="border rounded-lg px-6 bg-gray-50">
-              <AccordionTrigger className="text-left text-lg font-semibold hover:text-[#EA5D19] transition-colors">
-                What brands of water heaters do you repair?
-              </AccordionTrigger>
-              <AccordionContent className="text-gray-600 text-base leading-relaxed">
-                We service and repair brands including Rheem, AO Smith, Bradford White, Kenmore, State, Whirlpool and many others.
-              </AccordionContent>
-            </AccordionItem>
-
-            <AccordionItem value="item-2" className="border rounded-lg px-6 bg-gray-50">
-              <AccordionTrigger className="text-left text-lg font-semibold hover:text-[#EA5D19] transition-colors">
-                Why does my water heater run out of hot water?
-              </AccordionTrigger>
-              <AccordionContent className="text-gray-600 text-base leading-relaxed">
-                Aging units lose efficiency. Undersized heaters can't meet a growing household's demands. Mineral buildup reduces tank capacity, and thermostat malfunctions can also cause shortages.
-              </AccordionContent>
-            </AccordionItem>
-
-            <AccordionItem value="item-3" className="border rounded-lg px-6 bg-gray-50">
-              <AccordionTrigger className="text-left text-lg font-semibold hover:text-[#EA5D19] transition-colors">
-                When should I replace my water heater?
-              </AccordionTrigger>
-              <AccordionContent className="text-gray-600 text-base leading-relaxed">
-                Proactive replacement helps avoid emergencies. Traditional tank heaters store hot water, while tankless models heat on demand and last longer. Age, sediment buildup or repeated repairs are signs it's time to replace.
-              </AccordionContent>
-            </AccordionItem>
-
-            <AccordionItem value="item-4" className="border rounded-lg px-6 bg-gray-50">
-              <AccordionTrigger className="text-left text-lg font-semibold hover:text-[#EA5D19] transition-colors">
-                Is it better to have a tankless water heater in Rialto?
-              </AccordionTrigger>
-              <AccordionContent className="text-gray-600 text-base leading-relaxed">
-                A tankless system can be more efficient and provide an unlimited supply of hot water, saving money on monthly utility bills. Tankless heaters have longer lifespans and eliminate the risk of tank ruptures, offering added peace of mind.
-              </AccordionContent>
-            </AccordionItem>
-
-            <AccordionItem value="item-5" className="border rounded-lg px-6 bg-gray-50">
-              <AccordionTrigger className="text-left text-lg font-semibold hover:text-[#EA5D19] transition-colors">
-                Can your plumbers fix a leaking water heater?
-              </AccordionTrigger>
-              <AccordionContent className="text-gray-600 text-base leading-relaxed">
-                It depends on the source of the leak. Top leaks are usually more manageable and may not require a full replacement. Prompt repairs prevent larger, costly problems.
-              </AccordionContent>
-            </AccordionItem>
-
-            <AccordionItem value="item-6" className="border rounded-lg px-6 bg-gray-50">
-              <AccordionTrigger className="text-left text-lg font-semibold hover:text-[#EA5D19] transition-colors">
-                Can you fix any plumbing problem I have?
-              </AccordionTrigger>
-              <AccordionContent className="text-gray-600 text-base leading-relaxed">
-                Yes! We repair leaky pipes, clogged drains, dripping faucets, toilets, showers, garbage disposals and more. Our plumbers can fix 99% of the problems you may face.
-              </AccordionContent>
-            </AccordionItem>
-          </Accordion>
-        </div>
-      </section>
+      <FAQ category="rialto" />
     </>
   );
 }

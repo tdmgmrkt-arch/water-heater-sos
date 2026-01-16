@@ -4,43 +4,39 @@ import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { ArrowRight, Eye, Phone, Search, Shield, Clock } from "lucide-react";
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "@/components/ui/accordion";
+import { FAQ } from "@/components/home/FAQ";
 
 export function SewerCameraInspectionContent() {
   return (
     <>
       {/* Hero Section */}
-      <section className="relative overflow-hidden bg-gradient-to-b from-gray-50 to-white pt-20 pb-16 lg:pt-32 lg:pb-24">
+      <section className="relative overflow-hidden bg-gradient-to-b from-gray-50 to-white pt-12 pb-10 sm:pt-16 sm:pb-14 lg:pt-32 lg:pb-24">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="grid gap-12 lg:grid-cols-2 lg:gap-16 items-center">
+          <div className="grid gap-6 sm:gap-8 lg:grid-cols-2 lg:gap-16 items-center">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 }}
             >
-              <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl lg:text-6xl mb-6">
+              <h1 className="text-2xl font-bold tracking-tight text-gray-900 sm:text-3xl lg:text-5xl mb-3 lg:mb-6">
                 Sewer Camera Inspection
               </h1>
-              <p className="text-xl text-gray-600 mb-6">
+              <p className="text-base sm:text-xl text-gray-600 mb-4 sm:mb-6">
                 Advanced Video Inspection for Accurate Diagnoses
               </p>
-              <p className="text-lg text-gray-700 leading-relaxed mb-4">
+              <p className="text-sm sm:text-lg text-gray-700 leading-relaxed mb-3 sm:mb-4">
                 Experiencing slow drains, frequent clogs, or foul odors from your plumbing?
               </p>
-              <p className="text-lg text-gray-700 leading-relaxed mb-8">
+              <p className="text-sm sm:text-lg text-gray-700 leading-relaxed mb-5 sm:mb-8">
                 Our sewer camera inspection service pinpoints the exact cause of your plumbing problems without guesswork or unnecessary digging. We use high-tech video cameras to see inside your pipes and diagnose issues accurately.
               </p>
               <Link
                 href="/quote?category=Drain%20%26%20Sewer%20Services&service=Sewer%20Camera%20Inspection"
-                className="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-[#EA5D19] to-[#FF6E2E] px-8 py-4 text-lg font-semibold text-white shadow-lg hover:shadow-xl transition-all duration-200 hover:scale-105"
+                className="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-[#EA5D19] to-[#FF6E2E] px-5 py-3 sm:px-8 sm:py-4 text-sm sm:text-lg font-semibold text-white shadow-lg hover:shadow-xl transition-all duration-200 hover:scale-105"
               >
-                Schedule an Appointment
-                <ArrowRight className="h-5 w-5" />
+                <span className="sm:hidden">Get Quote</span>
+                <span className="hidden sm:inline">Schedule an Appointment</span>
+                <ArrowRight className="h-4 w-4 sm:h-5 sm:w-5" />
               </Link>
             </motion.div>
 
@@ -50,7 +46,7 @@ export function SewerCameraInspectionContent() {
               transition={{ duration: 0.5, delay: 0.2 }}
               className="relative"
             >
-              <div className="relative h-[500px] w-full rounded-2xl overflow-hidden shadow-2xl">
+              <div className="relative h-[250px] sm:h-[350px] lg:h-[500px] w-full rounded-2xl lg:rounded-3xl overflow-hidden shadow-xl lg:shadow-2xl">
                 <Image
                   src="/placeholderimage.webp"
                   alt="Professional sewer camera inspection services"
@@ -62,7 +58,7 @@ export function SewerCameraInspectionContent() {
             </motion.div>
           </div>
 
-          <div className="mt-12 bg-white rounded-3xl shadow-lg border border-gray-200 p-8 space-y-6 text-lg leading-relaxed text-gray-700">
+          <div className="mt-8 sm:mt-12 bg-white rounded-2xl sm:rounded-3xl shadow-md sm:shadow-lg border border-gray-200 p-4 sm:p-8 space-y-4 sm:space-y-6 text-sm sm:text-lg leading-relaxed text-gray-700">
             <p>
               Sewer camera inspection is a non-invasive diagnostic method that uses waterproof cameras to see inside your sewer and drain lines, revealing clogs, cracks, tree root intrusions, and other hidden problems without excavating your yard. This advanced technology allows our professional <Link href="/plumbing" className="text-[#EA5D19] hover:underline font-semibold">plumbing services</Link> to pinpoint exact problem locations, saving you time and money by eliminating guesswork and preventing unnecessary digging or exploratory work.
             </p>
@@ -77,24 +73,24 @@ export function SewerCameraInspectionContent() {
       </section>
 
       {/* Benefits Section */}
-      <section className="py-20 bg-gray-50">
+      <section className="py-10 sm:py-14 lg:py-20 bg-gray-50">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
-            className="text-center mb-16"
+            className="text-center mb-8 sm:mb-16"
           >
-            <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl mb-4">
+            <h2 className="text-xl sm:text-2xl font-bold tracking-tight text-gray-900 lg:text-4xl mb-3 sm:mb-4">
               Why Choose Camera Inspection?
             </h2>
-            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+            <p className="text-sm sm:text-xl text-gray-600 max-w-2xl mx-auto">
               Advanced diagnostics that save time, money, and your property
             </p>
           </motion.div>
 
-          <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
+          <div className="grid gap-4 sm:gap-6 grid-cols-2 lg:grid-cols-4 lg:gap-8">
             {[
               {
                 title: "Precise Diagnosis",
@@ -123,15 +119,15 @@ export function SewerCameraInspectionContent() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
-                className="rounded-2xl bg-white p-8 shadow-lg border border-gray-200"
+                className="rounded-xl sm:rounded-2xl bg-white p-4 sm:p-8 shadow-md sm:shadow-lg border border-gray-200"
               >
-                <div className="mb-4 inline-flex rounded-lg bg-[#EA5D19] p-3">
-                  <benefit.icon className="h-6 w-6 text-white" />
+                <div className="mb-3 sm:mb-4 inline-flex rounded-lg bg-[#EA5D19] p-2 sm:p-3">
+                  <benefit.icon className="h-4 w-4 sm:h-6 sm:w-6 text-white" />
                 </div>
-                <h3 className="text-xl font-bold text-gray-900 mb-3">
+                <h3 className="text-sm sm:text-xl font-bold text-gray-900 mb-2 sm:mb-3">
                   {benefit.title}
                 </h3>
-                <p className="text-gray-600">{benefit.description}</p>
+                <p className="text-xs sm:text-base text-gray-600">{benefit.description}</p>
               </motion.div>
             ))}
           </div>
@@ -139,7 +135,7 @@ export function SewerCameraInspectionContent() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-r from-[#EA5D19] to-[#FF6E2E]">
+      <section className="py-10 sm:py-14 lg:py-20 bg-gradient-to-r from-[#EA5D19] to-[#FF6E2E]">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 text-center">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -147,26 +143,26 @@ export function SewerCameraInspectionContent() {
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
           >
-            <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl mb-6">
+            <h2 className="text-xl sm:text-2xl font-bold tracking-tight text-white lg:text-4xl mb-4 sm:mb-6">
               Get a Free Estimate Today!
             </h2>
-            <p className="text-xl text-white/90 mb-8 max-w-2xl mx-auto">
+            <p className="text-sm sm:text-xl text-white/90 mb-5 sm:mb-8 max-w-2xl mx-auto">
               Don't let hidden plumbing problems become expensive disasters. Contact us today for professional sewer camera inspection.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center">
               <Link
                 href="tel:+18006974014"
-                className="inline-flex items-center justify-center gap-2 rounded-full bg-white px-8 py-4 text-lg font-semibold text-[#EA5D19] shadow-lg hover:shadow-xl transition-all duration-200 hover:scale-105"
+                className="inline-flex items-center justify-center gap-2 rounded-full bg-white px-5 py-3 sm:px-8 sm:py-4 text-sm sm:text-lg font-semibold text-[#EA5D19] shadow-lg hover:shadow-xl transition-all duration-200 hover:scale-105"
               >
-                <Phone className="h-5 w-5" />
+                <Phone className="h-4 w-4 sm:h-5 sm:w-5" />
                 (800) 697-4014
               </Link>
               <Link
                 href="/quote?category=Drain%20%26%20Sewer%20Services&service=Sewer%20Camera%20Inspection"
-                className="inline-flex items-center justify-center gap-2 rounded-full bg-[#11110E] px-8 py-4 text-lg font-semibold text-white shadow-lg hover:shadow-xl transition-all duration-200 hover:scale-105"
+                className="inline-flex items-center justify-center gap-2 rounded-full bg-[#11110E] px-5 py-3 sm:px-8 sm:py-4 text-sm sm:text-lg font-semibold text-white shadow-lg hover:shadow-xl transition-all duration-200 hover:scale-105"
               >
                 Get Free Quote
-                <ArrowRight className="h-5 w-5" />
+                <ArrowRight className="h-4 w-4 sm:h-5 sm:w-5" />
               </Link>
             </div>
           </motion.div>
@@ -174,89 +170,7 @@ export function SewerCameraInspectionContent() {
       </section>
 
       {/* FAQ Section */}
-      <section className="py-20 bg-white">
-        <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.5 }}
-            className="text-center mb-16"
-          >
-            <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl mb-4">
-              Frequently Asked Questions
-            </h2>
-            <p className="text-xl text-gray-600">
-              Common questions about sewer camera inspection
-            </p>
-          </motion.div>
-
-          <Accordion type="single" collapsible className="space-y-4">
-            <AccordionItem value="item-1" className="border rounded-lg px-6 bg-gray-50">
-              <AccordionTrigger className="text-left text-lg font-semibold hover:text-[#EA5D19] transition-colors">
-                Why would I need a sewer camera inspection?
-              </AccordionTrigger>
-              <AccordionContent className="text-gray-600 text-base leading-relaxed">
-                If you're dealing with slow drains, frequent clogs, bad odors, or sewage backups, a camera inspection pinpoints the exact cause like tree roots, cracks, or damaged pipes. It's also essential for pre-purchase home inspections to avoid surprise sewer repairs.
-              </AccordionContent>
-            </AccordionItem>
-
-            <AccordionItem value="item-2" className="border rounded-lg px-6 bg-gray-50">
-              <AccordionTrigger className="text-left text-lg font-semibold hover:text-[#EA5D19] transition-colors">
-                How long does a sewer camera inspection take?
-              </AccordionTrigger>
-              <AccordionContent className="text-gray-600 text-base leading-relaxed">
-                Most sewer camera inspections take 30 minutes to an hour, depending on your home's size and pipe layout. If repairs are needed, we can often start immediately, minimizing disruption to your day.
-              </AccordionContent>
-            </AccordionItem>
-
-            <AccordionItem value="item-3" className="border rounded-lg px-6 bg-gray-50">
-              <AccordionTrigger className="text-left text-lg font-semibold hover:text-[#EA5D19] transition-colors">
-                Is a sewer camera inspection safe for my pipes?
-              </AccordionTrigger>
-              <AccordionContent className="text-gray-600 text-base leading-relaxed">
-                Yes, sewer camera inspections are completely safe and non-invasive. The camera slides through your plumbing without causing damage. This gentle method diagnoses problems without harming your system or property.
-              </AccordionContent>
-            </AccordionItem>
-
-            <AccordionItem value="item-4" className="border rounded-lg px-6 bg-gray-50">
-              <AccordionTrigger className="text-left text-lg font-semibold hover:text-[#EA5D19] transition-colors">
-                Can a sewer camera inspection find tree roots in my pipes?
-              </AccordionTrigger>
-              <AccordionContent className="text-gray-600 text-base leading-relaxed">
-                Absolutely. Sewer camera inspections excel at spotting tree root intrusions, which are common in older homes. The camera shows exactly where roots are growing and how severe the blockage is, allowing us to locate the problem area on your property with pinpoint accuracy.
-              </AccordionContent>
-            </AccordionItem>
-
-            <AccordionItem value="item-5" className="border rounded-lg px-6 bg-gray-50">
-              <AccordionTrigger className="text-left text-lg font-semibold hover:text-[#EA5D19] transition-colors">
-                Will I see the results of the sewer camera inspection?
-              </AccordionTrigger>
-              <AccordionContent className="text-gray-600 text-base leading-relaxed">
-                Yes, we show you the real-time video from the camera so you can see what's happening inside your pipes. Our plumbers explain the findings in plain language, helping you understand the problem and our recommended solution. This transparency helps you make confident decisions.
-              </AccordionContent>
-            </AccordionItem>
-
-            <AccordionItem value="item-6" className="border rounded-lg px-6 bg-gray-50">
-              <AccordionTrigger className="text-left text-lg font-semibold hover:text-[#EA5D19] transition-colors">
-                Should I get a sewer camera inspection when buying a house?
-              </AccordionTrigger>
-              <AccordionContent className="text-gray-600 text-base leading-relaxed">
-                Absolutely, especially if the house isn't brand new. Sewer repairs can be among the most costly issues homeowners face. A camera inspection gives you peace of mind and reveals the true condition of the sewer line before you purchase, potentially saving thousands in unexpected repairs.
-              </AccordionContent>
-            </AccordionItem>
-
-            <AccordionItem value="item-7" className="border rounded-lg px-6 bg-gray-50">
-              <AccordionTrigger className="text-left text-lg font-semibold hover:text-[#EA5D19] transition-colors">
-                Is a sewer camera inspection worth the cost?
-              </AccordionTrigger>
-              <AccordionContent className="text-gray-600 text-base leading-relaxed">
-                Yes, a camera inspection saves money by catching small issues before they become expensive emergencies like broken sewer lines. It's a precise diagnostic method that avoids unnecessary digging, keeping costs down while providing accurate fixes that last. It's a smart investment to protect your home.
-              </AccordionContent>
-            </AccordionItem>
-          </Accordion>
-        </div>
-      </section>
+      <FAQ category="sewerCameraInspection" subtitle="Common questions about sewer camera inspection" />
     </>
   );
 }

@@ -4,20 +4,8 @@ import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { Check, Phone } from "lucide-react";
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "@/components/ui/accordion";
-
-const brands = [
-  { name: "Rheem", image: "/Rheem_logo-1.webp" },
-  { name: "Hajoca", image: "/hajoca-1.webp" },
-  { name: "Rinnai", image: "/rinnai-1.webp" },
-  { name: "Bradford White", image: "/Bradford-White-logo-1.webp" },
-  { name: "Navien", image: "/navien-1.webp" },
-];
+import { FAQ } from "@/components/home/FAQ";
+import { TrustedBrands } from "@/components/home/TrustedBrands";
 
 const commonProblems = [
   {
@@ -90,33 +78,6 @@ const plumbingServices = [
   },
 ];
 
-const faqs = [
-  {
-    question: "What brand of water heaters do you guys repair?",
-    answer: "Our Moreno Valley plumbers are well‑versed in fixing water heaters from various brands. Bradford White, A. O. Smith, Rheem, Kenmore, and Whirlpool are some of the most common ones we work on.",
-  },
-  {
-    question: "Can your plumbers fix a water heater that is leaking?",
-    answer: "Well, it depends on where the leak is coming from and the age of the water heater. If the water heater is over seven years old, replace it because the lifespan is generally rated at 7‑15 years. If the water's leaking from the tank itself, it usually means the tank's rusted through from the inside, and you'll need a whole new water heater. But if the leak comes from a water line or valve, we can usually replace the leaking part.",
-  },
-  {
-    question: "How long will a water heater last for?",
-    answer: "The lifespan of a gas water heater usually falls between 7 to 15 years. But here's the kicker: a bunch of factors can affect how long it actually lasts, like the quality of your water and how well you take care of it. If your water's not great, it can speed up corrosion and rust on your water heater. On the flip side, keeping up with maintenance can help it stick around a bit longer.",
-  },
-  {
-    question: "Would switching to a tankless water heater save me money?",
-    answer: "Swapping out your old tank water heater for a shiny new tankless model could be a savvy move that'll save you some dough on your monthly utility bills. But, heads up, the initial cost of going tankless can be steeper. If you're curious about making the switch, give us a ring. We'll look at your setup and determine the best way to keep your hot water flowing and your wallet happy.",
-  },
-  {
-    question: "Why is Moreno Valley stopping gas water heater sales?",
-    answer: "It's not a City of Moreno Valley law; however, California's making a big move to ditch gas‑powered home appliances to give the air a break. Starting in 2030, you won't be able to buy a new gas water heater in the Golden State. When the time comes to replace your old one, you'll have to go electric or opt for a heat pump water heater instead.",
-  },
-  {
-    question: "Can you fix other plumbing issues?",
-    answer: "Yes, we do way more than just water heaters! We fix dripping sinks, clogged drains, leaky pipes, toilets, showers, garbage disposals, and other plumbing headaches.",
-  },
-];
-
 export function MorenoValleyContent() {
   return (
     <>
@@ -135,7 +96,7 @@ export function MorenoValleyContent() {
                 Moreno Valley Plumbing Experts
               </span>
 
-              <h1 className="text-4xl font-bold text-[#11110E] sm:text-5xl lg:text-6xl mb-6">
+              <h1 className="text-3xl font-bold text-[#11110E] sm:text-4xl lg:text-5xl mb-4 lg:mb-6">
                 Moreno Valley Plumbers & Water Heater Repair
               </h1>
 
@@ -196,7 +157,7 @@ export function MorenoValleyContent() {
             transition={{ duration: 0.6 }}
             className="text-center mb-14"
           >
-            <h2 className="text-4xl sm:text-5xl font-extrabold text-[#11110E] mb-6">
+            <h2 className="text-2xl sm:text-3xl lg:text-5xl font-extrabold text-[#11110E] mb-4 lg:mb-6">
               Moreno Valley Plumbing Services
             </h2>
             <div className="h-1 w-20 bg-[#EA5D19] mx-auto rounded-full mb-6" />
@@ -247,7 +208,7 @@ export function MorenoValleyContent() {
             transition={{ duration: 0.6 }}
             className="text-center mb-14"
           >
-            <h2 className="text-4xl sm:text-5xl font-extrabold text-[#11110E] mb-6">
+            <h2 className="text-2xl sm:text-3xl lg:text-5xl font-extrabold text-[#11110E] mb-4 lg:mb-6">
               Common Water Heater Problems
             </h2>
             <div className="h-1 w-20 bg-[#EA5D19] mx-auto rounded-full mb-6" />
@@ -308,89 +269,10 @@ export function MorenoValleyContent() {
       </section>
 
       {/* Trusted Brands Section */}
-      <section className="bg-gray-50 py-16 lg:py-24">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-            viewport={{ once: true }}
-            className="mx-auto max-w-7xl text-center relative z-20"
-          >
-            <h2 className="text-3xl font-bold text-[#11110E] sm:text-4xl mb-8">
-              Trusted Brands
-            </h2>
-            <div className="h-1 w-20 bg-[#EA5D19] mx-auto rounded-full mb-8" />
-            <div className="grid grid-cols-2 gap-6 md:grid-cols-3 lg:grid-cols-5 items-center relative z-20 min-h-[120px]">
-              {brands.map((brand, index) => (
-                <motion.div
-                  key={brand.name}
-                  initial={{ opacity: 0, scale: 0.85 }}
-                  whileInView={{ opacity: 1, scale: 1 }}
-                  transition={{ duration: 0.5, delay: index * 0.1 }}
-                  viewport={{ once: true }}
-                  className="flex items-center justify-center grayscale hover:grayscale-0 transition-all duration-300"
-                >
-                  <div className="relative h-20 w-28 mx-auto z-20">
-                    <Image
-                      src={brand.image}
-                      alt={`${brand.name} logo - trusted water heater brand`}
-                      fill
-                      sizes="100px"
-                      className="object-contain z-20"
-                    />
-                  </div>
-                </motion.div>
-              ))}
-            </div>
-          </motion.div>
-        </div>
-      </section>
+      <TrustedBrands className="bg-gray-50" />
 
       {/* FAQ Section */}
-      <section className="py-16 lg:py-24">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-            viewport={{ once: true }}
-            className="mx-auto max-w-5xl"
-          >
-            <h2 className="text-5xl font-bold text-[#11110E] sm:text-4xl mb-8 text-center">
-              Frequently Asked Questions
-            </h2>
-            <Accordion type="single" collapsible className="space-y-4">
-              {faqs.map((faq, index) => (
-                <motion.div
-                  key={index}
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.5, delay: index * 0.05 }}
-                  viewport={{ once: true }}
-                >
-                  <AccordionItem
-                    value={`item-${index}`}
-                    className="rounded-2xl bg-white px-6 shadow-md border-0"
-                  >
-                    <AccordionTrigger className="text-left font-semibold text-[#11110E] hover:text-[#EA5D19] py-6">
-                      <span className="flex-shrink-0 mr-2 text-[#EA5D19] font-bold">
-                        {String(index + 1).padStart(2, "0")}
-                      </span>
-                      <span className="flex-grow text-collapse-fix">
-                        {faq.question}
-                      </span>
-                    </AccordionTrigger>
-                    <AccordionContent className="text-gray-700 pb-6">
-                      {faq.answer}
-                    </AccordionContent>
-                  </AccordionItem>
-                </motion.div>
-              ))}
-            </Accordion>
-          </motion.div>
-        </div>
-      </section>
+      <FAQ category="morenoValley" />
     </>
   );
 }

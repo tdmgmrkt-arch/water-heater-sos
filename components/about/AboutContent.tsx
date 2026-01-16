@@ -17,7 +17,7 @@ export function AboutContent() {
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.6 }}
             >
-              <h1 className="text-4xl font-bold text-[#11110E] sm:text-5xl lg:text-6xl mb-6">
+              <h1 className="text-3xl font-bold text-[#11110E] sm:text-4xl lg:text-5xl mb-4 lg:mb-6">
                 About Water Heater SOS
               </h1>
               <div className="prose prose-lg max-w-none">
@@ -70,7 +70,7 @@ export function AboutContent() {
             transition={{ duration: 0.6 }}
             className="text-center mb-12"
           >
-            <h2 className="text-3xl font-bold text-[#11110E] sm:text-4xl mb-4">
+            <h2 className="text-2xl font-bold text-[#11110E] sm:text-3xl lg:text-4xl mb-4">
               Our Specialties
             </h2>
             <div className="h-1 w-24 bg-[#EA5D19] mx-auto"></div>
@@ -144,12 +144,12 @@ export function AboutContent() {
             transition={{ duration: 0.6 }}
             className="max-w-7xl mx-auto text-center"
           >
-            <h2 className="text-7xl font-bold text-[#11110E] sm:text-4xl mb-4">
+            <h2 className="text-2xl font-bold text-[#11110E] sm:text-3xl lg:text-4xl mb-4">
               Our History
             </h2>
             <div className="h-1 w-24 bg-[#EA5D19] mx-auto mb-8"></div>
             <div className="bg-white p-8 rounded-2xl shadow-lg">
-              <div className="text-6xl font-bold text-[#EA5D19] mb-4">2019</div>
+              <div className="text-4xl sm:text-5xl lg:text-6xl font-bold text-[#EA5D19] mb-4">2019</div>
               <p className="text-lg text-gray-700 leading-relaxed">
                 Water Heater SOS was established in 2019 with a simple mission: to provide the Inland Empire with reliable, professional water heater and plumbing services. Since our founding, we&apos;ve grown from a small family operation to a trusted name in water heater installation and repair throughout Southern California. Our commitment to quality service and customer satisfaction has remained unchanged since day one.
               </p>
@@ -168,7 +168,7 @@ export function AboutContent() {
             transition={{ duration: 0.6 }}
             className="text-center mb-12"
           >
-            <h2 className="text-7xl font-bold text-[#11110E] sm:text-4xl mb-4">
+            <h2 className="text-2xl font-bold text-[#11110E] sm:text-3xl lg:text-4xl mb-4">
               Meet the Business Owner
             </h2>
             <div className="h-1 w-24 bg-[#EA5D19] mx-auto"></div>

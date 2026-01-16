@@ -4,12 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { ArrowRight, Droplets, Wrench, Phone, AlertCircle } from "lucide-react";
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "@/components/ui/accordion";
+import { FAQ } from "@/components/home/FAQ";
 
 export function PerrisContent() {
   return (
@@ -26,7 +21,7 @@ export function PerrisContent() {
               <span className="inline-block px-4 py-1 rounded-full bg-[#EA5D19] text-white text-sm font-semibold mb-4">
                 Serving Perris, CA
               </span>
-              <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl lg:text-6xl mb-6">
+              <h1 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl lg:text-5xl mb-4 lg:mb-6">
                 Perris Plumbers & Water Heater Repair
               </h1>
               <p className="text-xl text-gray-600 mb-6">
@@ -295,89 +290,7 @@ export function PerrisContent() {
       </section>
 
       {/* FAQ Section */}
-      <section className="py-20 bg-white">
-        <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.5 }}
-            className="text-center mb-16"
-          >
-            <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl mb-4">
-              Frequently Asked Questions
-            </h2>
-            <p className="text-xl text-gray-600">
-              Common questions from Perris homeowners
-            </p>
-          </motion.div>
-
-          <Accordion type="single" collapsible className="space-y-4">
-            <AccordionItem value="item-1" className="border rounded-lg px-6 bg-gray-50">
-              <AccordionTrigger className="text-left text-lg font-semibold hover:text-[#EA5D19] transition-colors">
-                Why does my sink drain slowly?
-              </AccordionTrigger>
-              <AccordionContent className="text-gray-600 text-base leading-relaxed">
-                Clogs from grease, hair, or debris block the pipe. Water Heater SOS clears drains fast to restore flow.
-              </AccordionContent>
-            </AccordionItem>
-
-            <AccordionItem value="item-2" className="border rounded-lg px-6 bg-gray-50">
-              <AccordionTrigger className="text-left text-lg font-semibold hover:text-[#EA5D19] transition-colors">
-                How do I know if I have a slab leak?
-              </AccordionTrigger>
-              <AccordionContent className="text-gray-600 text-base leading-relaxed">
-                Wet spots or warm spots on floors combined with high water bills signal a slab leak. Their team uses advanced detection to find and fix it.
-              </AccordionContent>
-            </AccordionItem>
-
-            <AccordionItem value="item-3" className="border rounded-lg px-6 bg-gray-50">
-              <AccordionTrigger className="text-left text-lg font-semibold hover:text-[#EA5D19] transition-colors">
-                What causes low water pressure in my shower?
-              </AccordionTrigger>
-              <AccordionContent className="text-gray-600 text-base leading-relaxed">
-                Mineral deposits or pipe issues reduce water flow. Water Heater SOS inspects and repairs showers to boost pressure.
-              </AccordionContent>
-            </AccordionItem>
-
-            <AccordionItem value="item-4" className="border rounded-lg px-6 bg-gray-50">
-              <AccordionTrigger className="text-left text-lg font-semibold hover:text-[#EA5D19] transition-colors">
-                Can you fix a noisy garbage disposal?
-              </AccordionTrigger>
-              <AccordionContent className="text-gray-600 text-base leading-relaxed">
-                Loose parts or trapped debris cause grinding sounds. Our plumbers can diagnose and repair disposals quickly.
-              </AccordionContent>
-            </AccordionItem>
-
-            <AccordionItem value="item-5" className="border rounded-lg px-6 bg-gray-50">
-              <AccordionTrigger className="text-left text-lg font-semibold hover:text-[#EA5D19] transition-colors">
-                How do you detect gas leaks?
-              </AccordionTrigger>
-              <AccordionContent className="text-gray-600 text-base leading-relaxed">
-                We use specialized tools to find gas leaks safely. Usually, we do a pressurized test to look for leaks, and other times we use leak detection devices.
-              </AccordionContent>
-            </AccordionItem>
-
-            <AccordionItem value="item-6" className="border rounded-lg px-6 bg-gray-50">
-              <AccordionTrigger className="text-left text-lg font-semibold hover:text-[#EA5D19] transition-colors">
-                Can you install a new bathroom sink?
-              </AccordionTrigger>
-              <AccordionContent className="text-gray-600 text-base leading-relaxed">
-                Yes, we can install sinks with proper plumbing connections. Our work ensures a leak‑free, functional setup.
-              </AccordionContent>
-            </AccordionItem>
-
-            <AccordionItem value="item-7" className="border rounded-lg px-6 bg-gray-50">
-              <AccordionTrigger className="text-left text-lg font-semibold hover:text-[#EA5D19] transition-colors">
-                Why is my water bill so high?
-              </AccordionTrigger>
-              <AccordionContent className="text-gray-600 text-base leading-relaxed">
-                Hidden leaks or faulty fixtures waste water. Our leak detection and repair services solve the problem as we quickly locate the leak and fix your plumbing problem.
-              </AccordionContent>
-            </AccordionItem>
-          </Accordion>
-        </div>
-      </section>
+      <FAQ category="perris" />
     </>
   );
 }

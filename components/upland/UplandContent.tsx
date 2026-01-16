@@ -4,12 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { ArrowRight, Droplets, Wrench, Phone, AlertCircle, CheckCircle2 } from "lucide-react";
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "@/components/ui/accordion";
+import { FAQ } from "@/components/home/FAQ";
 
 export function UplandContent() {
   return (
@@ -26,7 +21,7 @@ export function UplandContent() {
               <span className="inline-block px-4 py-1 rounded-full bg-[#EA5D19] text-white text-sm font-semibold mb-4">
                 Serving Upland, CA
               </span>
-              <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl lg:text-6xl mb-6">
+              <h1 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl lg:text-5xl mb-4 lg:mb-6">
                 Upland – Plumbing & Water Heater Services
               </h1>
               <p className="text-xl text-gray-600 mb-6">
@@ -290,71 +285,7 @@ export function UplandContent() {
       </section>
 
       {/* FAQ Section */}
-      <section className="py-20 bg-white">
-        <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.5 }}
-            className="text-center mb-16"
-          >
-            <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl mb-4">
-              Frequently Asked Questions
-            </h2>
-            <p className="text-xl text-gray-600">
-              Common questions from Upland homeowners
-            </p>
-          </motion.div>
-
-          <Accordion type="single" collapsible className="space-y-4">
-            <AccordionItem value="item-1" className="border rounded-lg px-6 bg-gray-50">
-              <AccordionTrigger className="text-left text-lg font-semibold hover:text-[#EA5D19] transition-colors">
-                How do I know if I need to repair or replace my water heater?
-              </AccordionTrigger>
-              <AccordionContent className="text-gray-600 text-base leading-relaxed">
-                If your water heater is over 10 years old, leaking, making loud noises, or not heating water consistently, it may need replacement. Our technicians will inspect your system and recommend repair or replacement based on its condition and your budget.
-              </AccordionContent>
-            </AccordionItem>
-
-            <AccordionItem value="item-2" className="border rounded-lg px-6 bg-gray-50">
-              <AccordionTrigger className="text-left text-lg font-semibold hover:text-[#EA5D19] transition-colors">
-                What are the benefits of a tankless water heater?
-              </AccordionTrigger>
-              <AccordionContent className="text-gray-600 text-base leading-relaxed">
-                Tankless water heaters provide hot water on demand, saving energy and space. They last longer than traditional tank models and provide endless hot water for your household. We'll help you choose the right size for your needs.
-              </AccordionContent>
-            </AccordionItem>
-
-            <AccordionItem value="item-3" className="border rounded-lg px-6 bg-gray-50">
-              <AccordionTrigger className="text-left text-lg font-semibold hover:text-[#EA5D19] transition-colors">
-                How quickly can you respond to a plumbing emergency in Upland?
-              </AccordionTrigger>
-              <AccordionContent className="text-gray-600 text-base leading-relaxed">
-                We offer same‑day service for most plumbing emergencies in Upland and the surrounding areas. Call us at (800) 697‑4014, and we'll dispatch a technician as soon as possible.
-              </AccordionContent>
-            </AccordionItem>
-
-            <AccordionItem value="item-4" className="border rounded-lg px-6 bg-gray-50">
-              <AccordionTrigger className="text-left text-lg font-semibold hover:text-[#EA5D19] transition-colors">
-                Do you offer drain cleaning for all types of clogs?
-              </AccordionTrigger>
-              <AccordionContent className="text-gray-600 text-base leading-relaxed">
-                Yes! We clear clogs in kitchen sinks, bathroom drains, tubs, showers, and main sewer lines. Whether it's hair, grease, soap scum, or tree roots, we have the tools and expertise to restore your drains.
-              </AccordionContent>
-            </AccordionItem>
-
-            <AccordionItem value="item-5" className="border rounded-lg px-6 bg-gray-50">
-              <AccordionTrigger className="text-left text-lg font-semibold hover:text-[#EA5D19] transition-colors">
-                Can you help with water quality issues in Upland?
-              </AccordionTrigger>
-              <AccordionContent className="text-gray-600 text-base leading-relaxed">
-                Absolutely. We install water filtration systems, water softeners, and reverse‑osmosis systems to remove contaminants, reduce hardness, and improve the taste and safety of your tap water. We'll test your water and recommend the best solution for your needs.
-              </AccordionContent>
-            </AccordionItem>
-          </Accordion>
-        </div>
-      </section>
+      <FAQ category="upland" />
     </>
   );
 }

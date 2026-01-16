@@ -4,20 +4,8 @@ import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { Check, Phone } from "lucide-react";
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "@/components/ui/accordion";
-
-const brands = [
-  { name: "Rheem", image: "/Rheem_logo-1.webp" },
-  { name: "Hajoca", image: "/hajoca-1.webp" },
-  { name: "Rinnai", image: "/rinnai-1.webp" },
-  { name: "Bradford White", image: "/Bradford-White-logo-1.webp" },
-  { name: "Navien", image: "/navien-1.webp" },
-];
+import { FAQ } from "@/components/home/FAQ";
+import { TrustedBrands } from "@/components/home/TrustedBrands";
 
 const plumbingServices = [
   {
@@ -94,29 +82,6 @@ const commonProblems = [
   },
 ];
 
-const faqs = [
-  {
-    question: "What brand of gas water heaters do you repair?",
-    answer: "Our expert water heater technicians can work on an extensive variety of brands, ensuring that no matter what model you have, we likely have the expertise to service it. Commonly, we handle repairs for Bradford White, A. O. Smith, Rheem, Kenmore, Whirlpool, and now proudly, we include Noritz water heaters in our service list. Our technicians are trained to diagnose and fix issues across these brands, providing reliable repair and installation services for both traditional and tankless units. So, when you're facing water heater troubles, remember, our team is equipped to restore functionality to virtually any brand, keeping your home's hot water supply uninterrupted.",
-  },
-  {
-    question: "Can you fix a gas water heater that is leaking?",
-    answer: "The source of a leak in your gas water heater determines the repair strategy. Should the leak stem from the tank itself, this generally points to rust within the tank, suggesting the need for a whole new unit. However, if the leak is from an external part such as a water connection or a valve, our experts are often able to address the problem by replacing just the faulty part.",
-  },
-  {
-    question: "How long should a gas water heater last?",
-    answer: "On average, a gas water heater can serve your home for 7 to 15 years, though this duration varies based on multiple factors. The quality of water in your area is a pivotal element; regions with hard water or high mineral content can accelerate corrosion and rust within the heater. However, with regular maintenance and attention to water quality, such as installing water softeners or regular tank flushes, you can substantially extend the service life of your water heater.",
-  },
-  {
-    question: "Should I switch to a tankless water heater?",
-    answer: "Transitioning to a tankless water heater can be a game‑changer for your home's energy efficiency and comfort. Tankless units provide hot water on demand, eliminating the need for a storage tank, which not only saves space but also reduces energy waste since you're not constantly heating a large volume of water that might not be used. This means you enjoy the luxury of endless hot water with potentially up to 30‑40% savings on your utility bills. Although the initial cost of installation can be higher, the long‑term benefits include lower operating costs, a longer lifespan, and reduced risk of leaks from a tank. Furthermore, modern tankless systems can be more environmentally friendly, often producing fewer greenhouse emissions. Give us a call, and let's explore how we can upgrade your home with this efficient, space‑saving technology tailored to your specific requirements.",
-  },
-  {
-    question: "What other plumbing services do you perform?",
-    answer: "Just about everything plumbing‑related we can handle, so don't let our name fool you. We repair water leaks, sinks, drains, garbage disposals, showers, faucets, and more!",
-  },
-];
-
 export function CalimesaContent() {
   return (
     <>
@@ -135,7 +100,7 @@ export function CalimesaContent() {
                 Calimesa Plumbing Experts
               </span>
 
-              <h1 className="text-4xl font-bold text-[#11110E] sm:text-5xl lg:text-6xl mb-6">
+              <h1 className="text-3xl font-bold text-[#11110E] sm:text-4xl lg:text-5xl mb-4 lg:mb-6">
                 Calimesa Plumbers & Water Heater Repair
               </h1>
 
@@ -196,7 +161,7 @@ export function CalimesaContent() {
             transition={{ duration: 0.6 }}
             className="text-center mb-14"
           >
-            <h2 className="text-4xl sm:text-5xl font-extrabold text-[#11110E] mb-6">
+            <h2 className="text-2xl sm:text-3xl lg:text-5xl font-extrabold text-[#11110E] mb-4 lg:mb-6">
               Plumbing Services in Calimesa
             </h2>
             <div className="h-1 w-20 bg-[#EA5D19] mx-auto rounded-full mb-6" />
@@ -247,7 +212,7 @@ export function CalimesaContent() {
             transition={{ duration: 0.6 }}
             className="text-center mb-14"
           >
-            <h2 className="text-4xl sm:text-5xl font-extrabold text-[#11110E] mb-6">
+            <h2 className="text-2xl sm:text-3xl lg:text-5xl font-extrabold text-[#11110E] mb-4 lg:mb-6">
               Common Problems on Gas Water Heaters
             </h2>
             <div className="h-1 w-20 bg-[#EA5D19] mx-auto rounded-full mb-6" />
@@ -308,89 +273,10 @@ export function CalimesaContent() {
       </section>
 
       {/* Trusted Brands Section */}
-      <section className="bg-gray-50 py-16 lg:py-24">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-            viewport={{ once: true }}
-            className="mx-auto max-w-7xl text-center relative z-20"
-          >
-            <h2 className="text-3xl font-bold text-[#11110E] sm:text-4xl mb-8">
-              Trusted Brands
-            </h2>
-            <div className="h-1 w-20 bg-[#EA5D19] mx-auto rounded-full mb-8" />
-            <div className="grid grid-cols-2 gap-6 md:grid-cols-3 lg:grid-cols-5 items-center relative z-20 min-h-[120px]">
-              {brands.map((brand, index) => (
-                <motion.div
-                  key={brand.name}
-                  initial={{ opacity: 0, scale: 0.85 }}
-                  whileInView={{ opacity: 1, scale: 1 }}
-                  transition={{ duration: 0.5, delay: index * 0.1 }}
-                  viewport={{ once: true }}
-                  className="flex items-center justify-center grayscale hover:grayscale-0 transition-all duration-300"
-                >
-                  <div className="relative h-20 w-28 mx-auto z-20">
-                    <Image
-                      src={brand.image}
-                      alt={`${brand.name} logo - trusted water heater brand`}
-                      fill
-                      sizes="100px"
-                      className="object-contain z-20"
-                    />
-                  </div>
-                </motion.div>
-              ))}
-            </div>
-          </motion.div>
-        </div>
-      </section>
+      <TrustedBrands className="bg-gray-50" />
 
       {/* FAQ Section */}
-      <section className="py-16 lg:py-24">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-            viewport={{ once: true }}
-            className="mx-auto max-w-5xl"
-          >
-            <h2 className="text-5xl font-bold text-[#11110E] sm:text-4xl mb-8 text-center">
-              Frequently Asked Questions
-            </h2>
-            <Accordion type="single" collapsible className="space-y-4">
-              {faqs.map((faq, index) => (
-                <motion.div
-                  key={index}
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.5, delay: index * 0.05 }}
-                  viewport={{ once: true }}
-                >
-                  <AccordionItem
-                    value={`item-${index}`}
-                    className="rounded-2xl bg-white px-6 shadow-md border-0"
-                  >
-                    <AccordionTrigger className="text-left font-semibold text-[#11110E] hover:text-[#EA5D19] py-6">
-                      <span className="flex-shrink-0 mr-2 text-[#EA5D19] font-bold">
-                        {String(index + 1).padStart(2, "0")}
-                      </span>
-                      <span className="flex-grow text-collapse-fix">
-                        {faq.question}
-                      </span>
-                    </AccordionTrigger>
-                    <AccordionContent className="text-gray-700 pb-6">
-                      {faq.answer}
-                    </AccordionContent>
-                  </AccordionItem>
-                </motion.div>
-              ))}
-            </Accordion>
-          </motion.div>
-        </div>
-      </section>
+      <FAQ category="calimesa" />
     </>
   );
 }

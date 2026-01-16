@@ -4,12 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { ArrowRight, Droplets, Wrench, Phone, AlertCircle, CheckCircle2 } from "lucide-react";
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "@/components/ui/accordion";
+import { FAQ } from "@/components/home/FAQ";
 
 export function YorbaLindaContent() {
   return (
@@ -26,7 +21,7 @@ export function YorbaLindaContent() {
               <span className="inline-block px-4 py-1 rounded-full bg-[#EA5D19] text-white text-sm font-semibold mb-4">
                 Serving Yorba Linda, CA
               </span>
-              <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl lg:text-6xl mb-6">
+              <h1 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl lg:text-5xl mb-4 lg:mb-6">
                 Yorba Linda – Plumbing & Water Heater Services
               </h1>
               <p className="text-xl text-gray-600 mb-6">
@@ -294,89 +289,7 @@ export function YorbaLindaContent() {
       </section>
 
       {/* FAQ Section */}
-      <section className="py-20 bg-white">
-        <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.5 }}
-            className="text-center mb-16"
-          >
-            <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl mb-4">
-              Frequently Asked Questions
-            </h2>
-            <p className="text-xl text-gray-600">
-              Common questions from Yorba Linda homeowners
-            </p>
-          </motion.div>
-
-          <Accordion type="single" collapsible className="space-y-4">
-            <AccordionItem value="item-1" className="border rounded-lg px-6 bg-gray-50">
-              <AccordionTrigger className="text-left text-lg font-semibold hover:text-[#EA5D19] transition-colors">
-                Can you install a new kitchen faucet?
-              </AccordionTrigger>
-              <AccordionContent className="text-gray-600 text-base leading-relaxed">
-                Yes. We install new faucets securely, test for smooth operation and ensure no drips.
-              </AccordionContent>
-            </AccordionItem>
-
-            <AccordionItem value="item-2" className="border rounded-lg px-6 bg-gray-50">
-              <AccordionTrigger className="text-left text-lg font-semibold hover:text-[#EA5D19] transition-colors">
-                Why does my water smell bad?
-              </AccordionTrigger>
-              <AccordionContent className="text-gray-600 text-base leading-relaxed">
-                Bacteria in pipes or water heaters cause bad‑smelling water. Our plumbers flush the heater or clean pipes and may install filtration systems.
-              </AccordionContent>
-            </AccordionItem>
-
-            <AccordionItem value="item-3" className="border rounded-lg px-6 bg-gray-50">
-              <AccordionTrigger className="text-left text-lg font-semibold hover:text-[#EA5D19] transition-colors">
-                How do you fix a clogged bathtub drain?
-              </AccordionTrigger>
-              <AccordionContent className="text-gray-600 text-base leading-relaxed">
-                Hair or soap buildup clogs drains. We use drain snakes or hydro‑jetting to clear blockages and check for deeper clogs.
-              </AccordionContent>
-            </AccordionItem>
-
-            <AccordionItem value="item-4" className="border rounded-lg px-6 bg-gray-50">
-              <AccordionTrigger className="text-left text-lg font-semibold hover:text-[#EA5D19] transition-colors">
-                Can you repair a gas water heater that won't ignite?
-              </AccordionTrigger>
-              <AccordionContent className="text-gray-600 text-base leading-relaxed">
-                Yes. Broken pilot lights or gas valves cause ignition failures. Our plumbers replace faulty parts and test the system.
-              </AccordionContent>
-            </AccordionItem>
-
-            <AccordionItem value="item-5" className="border rounded-lg px-6 bg-gray-50">
-              <AccordionTrigger className="text-left text-lg font-semibold hover:text-[#EA5D19] transition-colors">
-                Why is my dishwasher not draining?
-              </AccordionTrigger>
-              <AccordionContent className="text-gray-600 text-base leading-relaxed">
-                Food debris or a faulty pump clogs dishwashers. Our plumbers clear the drain line, check the pump and ensure proper drainage.
-              </AccordionContent>
-            </AccordionItem>
-
-            <AccordionItem value="item-6" className="border rounded-lg px-6 bg-gray-50">
-              <AccordionTrigger className="text-left text-lg font-semibold hover:text-[#EA5D19] transition-colors">
-                Can you install a new shower valve?
-              </AccordionTrigger>
-              <AccordionContent className="text-gray-600 text-base leading-relaxed">
-                Yes. We install new shower valves to improve flow and temperature control, testing for smooth operation and leak‑free performance.
-              </AccordionContent>
-            </AccordionItem>
-
-            <AccordionItem value="item-7" className="border rounded-lg px-6 bg-gray-50">
-              <AccordionTrigger className="text-left text-lg font-semibold hover:text-[#EA5D19] transition-colors">
-                Why does my outdoor faucet drip?
-              </AccordionTrigger>
-              <AccordionContent className="text-gray-600 text-base leading-relaxed">
-                A worn washer or loose packing nut causes outdoor faucets to drip. Our plumbers replace the washer and tighten fittings to stop the leak.
-              </AccordionContent>
-            </AccordionItem>
-          </Accordion>
-        </div>
-      </section>
+      <FAQ category="yorbaLinda" />
     </>
   );
 }

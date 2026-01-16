@@ -3,7 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
-import { ArrowRight, Flame, Droplets, Zap, Check } from "lucide-react";
+import { ArrowRight, Flame, Zap, Check } from "lucide-react";
 
 const services = [
   {
@@ -16,13 +16,13 @@ const services = [
     features: ["Fast Installation", "Proven Technology", "Budget Friendly"],
   },
   {
-    title: "Water Filtration System",
-    image: "/water-filtration-system.webp",
-    href: "/water-filtration",
-    description: "Whole-house water purification for healthier living",
-    icon: Droplets,
-    badge: "Premium Choice",
-    features: ["Cleaner Water", "Healthier Living", "Eco-Friendly"],
+    title: "Electric Water Heaters",
+    image: "/electric-water-heater.webp",
+    href: "/electric-water-heaters",
+    description: "Reliable and efficient electric heating for any home",
+    icon: Zap,
+    badge: "Easy Install",
+    features: ["No Gas Required", "Simple Setup", "Consistent Heat"],
   },
   {
     title: "Tankless Water Heaters",
@@ -37,7 +37,7 @@ const services = [
 
 export function ServiceCards() {
   return (
-    <section className="relative overflow-hidden py-16 lg:py-24">
+    <section className="relative overflow-hidden py-12 lg:py-24">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
       {/* Premium Section Header */}
         <motion.div
@@ -45,7 +45,7 @@ export function ServiceCards() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
-          className="mx-auto max-w-5xl text-center mb-12 min-w-0" 
+          className="mx-auto max-w-5xl text-center mb-8 lg:mb-12 min-w-0"
         >
           <motion.div
             initial={{ opacity: 0, scale: 0.9 }}
@@ -57,17 +57,17 @@ export function ServiceCards() {
             <span className="text-sm font-bold text-gradient">Popular Services</span>
           </motion.div>
 
-          <h2 className="text-3xl font-bold text-[#11110E] sm:text-7xl lg:text-5xl mb-6">
+          <h2 className="text-2xl font-bold text-[#11110E] sm:text-3xl lg:text-5xl mb-4 lg:mb-6">
             Water Heater Repair or Replacement
           </h2>
 
-          <p className="text-lg leading-relaxed text-gray-600 max-w-7xl mx-auto">
+          <p className="text-base lg:text-lg leading-relaxed text-gray-600 max-w-7xl mx-auto">
             Most people just want to repair or replace their existing water heater with the same type they currently have. In most cases, this makes the most sense and is a cost effective way to restore your hot water. However, we can discuss energy efficient options.
           </p>
         </motion.div>
 
         {/* Premium Service Cards Grid */}
-        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+        <div className="grid gap-6 lg:gap-8 md:grid-cols-2 lg:grid-cols-3">
           {services.map((service, index) => {
             const IconComponent = service.icon;
 
@@ -82,7 +82,7 @@ export function ServiceCards() {
                 <Link href={service.href} className="block group">
                   <div className="relative h-full rounded-3xl overflow-hidden card-elevated bg-white">
                     {/* Image Container with Zoom Effect */}
-                    <div className="relative h-85 overflow-hidden">
+                    <div className="relative h-52 sm:h-80 overflow-hidden">
                       <Image
                         src={service.image}
                         alt={service.title}

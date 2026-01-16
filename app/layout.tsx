@@ -3,6 +3,7 @@ import "./globals.css";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { FloatingActions } from "@/components/FloatingActions";
+import { FooterCTAProvider } from "@/contexts/FooterCTAContext";
 
 export const metadata: Metadata = {
   title: {
@@ -148,10 +149,12 @@ export default function RootLayout({
         />
       </head>
       <body className="antialiased">
-        <Header />
-        <main>{children}</main>
-        <Footer />
-        <FloatingActions />
+        <FooterCTAProvider>
+          <Header />
+          <main>{children}</main>
+          <Footer />
+          <FloatingActions />
+        </FooterCTAProvider>
       </body>
     </html>
   );

@@ -7,23 +7,16 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import React, { useState, useEffect, useRef } from "react";
 import { useSearchParams } from "next/navigation";
-import { CheckCircle, Phone } from "lucide-react"; // Importing an iconic symbol for trust
+import { CheckCircle, Phone } from "lucide-react";
 import {
   Accordion,
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
-} from "@/components/ui/accordion"; 
+} from "@/components/ui/accordion";
+import { TrustedBrands } from "@/components/home/TrustedBrands";
 
 // --- Data ---
-const brands = [
-  { name: "Rheem", image: "/rheem_logo-1.webp" },
-  { name: "Hajoca", image: "/hajoca-1.webp" },
-  { name: "Rinnai", image: "/rinnai-1.webp" },
-  { name: "Bradford White", image: "/bradford-white-logo-1.webp" },
-  { name: "Navien", image: "/navien-1.webp" },
-];
-
 const serviceCategories = [
   {
     label: "Water Heaters",
@@ -548,33 +541,7 @@ export function QuoteContent() {
       </section>
 
       {/* -------------------- SECTION 2: TRUSTED BRANDS SHOWCASE -------------------- */}
-      <section className="bg-white py-12 lg:py-16 border-t border-b border-gray-100">
-         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-             <h2 className="text-xl font-bold text-center text-gray-600 uppercase tracking-widest mb-8">
-                 Trusted Brands We Work With
-             </h2>
-             <div className="flex flex-wrap justify-center items-center gap-x-10 gap-y-6">
-                 {brands.map((brand, index) => (
-                     <motion.div
-                         key={brand.name}
-                         initial={{ opacity: 0, y: 10 }}
-                         whileInView={{ opacity: 1, y: 0 }}
-                         transition={{ duration: 0.5, delay: index * 0.1 }}
-                         viewport={{ once: true, amount: 0.8 }}
-                         className="relative h-14 w-32 grayscale hover:grayscale-0 transition-all duration-300"
-                     >
-                         <Image
-                             src={brand.image}
-                             alt={`${brand.name} logo - trusted water heater brand`}
-                             fill
-                             sizes="128px"
-                             className="object-contain"
-                         />
-                     </motion.div>
-                 ))}
-             </div>
-         </div>
-      </section>
+      <TrustedBrands className="border-t border-b border-gray-100" />
 
       {/* -------------------- SECTION 3: EXPERT EDUCATION (OUR SERVICES) -------------------- */}
       <section className="py-20 bg-gray-50">
@@ -586,7 +553,7 @@ export function QuoteContent() {
             transition={{ duration: 0.6 }}
             className="mx-auto max-w-7xl text-left"
           >
-            <h2 className="text-4xl sm:text-5xl font-extrabold text-[#11110E] mb-6 text-center">
+            <h2 className="text-2xl sm:text-3xl lg:text-5xl font-extrabold text-[#11110E] mb-4 lg:mb-6 text-center">
               Expert Guidance from Licensed Professionals
             </h2>
             <div className="h-1 w-20 bg-[#EA5D19] mx-auto rounded-full mb-16" />

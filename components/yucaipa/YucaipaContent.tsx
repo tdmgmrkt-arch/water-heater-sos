@@ -4,20 +4,8 @@ import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { Check, Phone } from "lucide-react";
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "@/components/ui/accordion";
-
-const brands = [
-  { name: "Rheem", image: "/Rheem_logo-1.webp" },
-  { name: "Hajoca", image: "/hajoca-1.webp" },
-  { name: "Rinnai", image: "/rinnai-1.webp" },
-  { name: "Bradford White", image: "/Bradford-White-logo-1.webp" },
-  { name: "Navien", image: "/navien-1.webp" },
-];
+import { FAQ } from "@/components/home/FAQ";
+import { TrustedBrands } from "@/components/home/TrustedBrands";
 
 const plumbingServices = [
   {
@@ -85,33 +73,6 @@ const waterHeaterIssues = [
   },
 ];
 
-const faqs = [
-  {
-    question: "What brands of water heaters do you work on?",
-    answer: "No matter the nature of your water heater needs, our extensive range of services ensures that we have you covered. From water heater installation and replacement to maintenance, repair, and emergency services, our team of experts is equipped to handle all aspects of water heater care. We proudly service a wide array of water heater brands, including Rheem, AO Smith, Bradford White, Kenmore, State, Whirlpool, and many more. Our commitment to excellence and customer satisfaction is unwavering and is reflected in our ability to provide top-quality services for a diverse range of water heater brands.",
-  },
-  {
-    question: "What's the difference between a tank water heater and a tankless water heater?",
-    answer: "Their operational principles distinguish between a tankless water heater and a traditional storage tank model. A traditional water heater is equipped with a tank that stores a predetermined volume of water, which it continuously heats to provide hot water whenever needed. In contrast, a tankless water heater employs a heating element that the water flows over only when hot water is required, heating the water on demand.",
-  },
-  {
-    question: "What is the average cost to replace a water heater in Yucaipa, CA?",
-    answer: "We provide free online estimates for water heater replacements in Yucaipa. To get started, please provide some information via our online estimate form, including pictures and some basic information about your current system. The cost of water heater services in Yucaipa depends on the specific service required. For replacement services, the price can vary even more widely, starting at around $1,500 for a smaller basic model and going up to $6,500 or more for high-end, energy-efficient tankless models. Factors influencing the cost include the type of water heater (tankless or traditional), its size, the complexity of the installation, and whether any additional plumbing or electrical work is needed.",
-  },
-  {
-    question: "How long should a hot water heater last in Yucaipa?",
-    answer: "Yucaipa has hard water which is harsher on a water heater and all your plumbing fixtures. Determining when to replace your water heater can be crucial for maintaining a consistent hot water supply in your home. The lifespan of a high-quality hot water tank typically ranges from 7 to 15 years, contingent upon proper installation and regular maintenance. An early indicator that it's time for a replacement is if your hot water temperature has significantly decreased, only reaching lukewarm levels. While this may seem like a relatively short lifespan, it's essential to consider that your hot water tank operates continuously, 24 hours a day, 365 days a year.",
-  },
-  {
-    question: "Do tankless water heaters require maintenance?",
-    answer: "Regular water heater maintenance is crucial to ensure a continuous hot water supply and prevent potential issues. Over time, sediment can accumulate in the system, primarily consisting of naturally occurring minerals. These minerals are more prevalent in hard water, exacerbating the buildup. To mitigate this, it's advisable to flush your water heater at least once a year or more frequently if you have hard water. Neglecting maintenance can lead to a buildup of mineral scale, which can significantly reduce your water heater's efficiency and potentially shorten its lifespan.",
-  },
-  {
-    question: "Do your Yucaipa plumbers only work on water heaters?",
-    answer: "Don't let our name trick you. Water Heater SOS does way more than just water heaters! We tackle all sorts of plumbing repairs, like fixing leaky faucets, clearing clogged drains, repairing pipes, toilets, showers, and garbage disposals. Of course, we're experts at installing and fixing gas, electric, and tankless water heaters too. Our friendly team is here to solve your plumbing problems quickly and keep your home running smoothly.",
-  },
-];
-
 export function YucaipaContent() {
   return (
     <>
@@ -128,7 +89,7 @@ export function YucaipaContent() {
               <span className="inline-block px-4 py-1 rounded-full bg-[#EA5D19] text-sm text-white font-semibold mb-4 tracking-wide">
                 Yucaipa Plumbing Experts
               </span>
-              <h1 className="text-4xl font-bold text-[#11110E] sm:text-5xl lg:text-6xl mb-6">
+              <h1 className="text-3xl font-bold text-[#11110E] sm:text-4xl lg:text-5xl mb-4 lg:mb-6">
                 Yucaipa Plumbing Services & Water Heater Repair
               </h1>
               <p className="text-xl text-gray-600 mb-8">
@@ -181,7 +142,7 @@ export function YucaipaContent() {
             transition={{ duration: 0.6 }}
             className="text-center mb-14"
           >
-            <h2 className="text-4xl sm:text-5xl font-extrabold text-[#11110E] mb-6">
+            <h2 className="text-2xl sm:text-3xl lg:text-5xl font-extrabold text-[#11110E] mb-4 lg:mb-6">
               Common Plumbing Services in Yucaipa
             </h2>
             <div className="h-1 w-20 bg-[#EA5D19] mx-auto rounded-full mb-6" />
@@ -232,7 +193,7 @@ export function YucaipaContent() {
             transition={{ duration: 0.6 }}
             className="mx-auto text-center max-w-7xl"
           >
-            <h2 className="text-4xl sm:text-5xl font-extrabold text-[#11110E] mb-6">
+            <h2 className="text-2xl sm:text-3xl lg:text-5xl font-extrabold text-[#11110E] mb-4 lg:mb-6">
               Hard Water Problems in Yucaipa?
             </h2>
             <div className="h-1 w-20 bg-[#EA5D19] mx-auto rounded-full mb-8" />
@@ -258,7 +219,7 @@ export function YucaipaContent() {
             transition={{ duration: 0.6 }}
             className="text-center mb-14"
           >
-            <h2 className="text-4xl sm:text-5xl font-extrabold text-[#11110E] mb-6">
+            <h2 className="text-2xl sm:text-3xl lg:text-5xl font-extrabold text-[#11110E] mb-4 lg:mb-6">
               Common Water Heater Issues
             </h2>
             <div className="h-1 w-20 bg-[#EA5D19] mx-auto rounded-full" />
@@ -316,89 +277,10 @@ export function YucaipaContent() {
       </section>
 
       {/* Trusted Brands Section */}
-      <section className="bg-gray-50 py-16 lg:py-24">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-            viewport={{ once: true }}
-            className="mx-auto max-w-7xl text-center relative z-20"
-          >
-            <h2 className="text-3xl font-bold text-[#11110E] sm:text-4xl mb-8">
-              Trusted Brands
-            </h2>
-            <div className="h-1 w-20 bg-[#EA5D19] mx-auto rounded-full mb-8" />
-            <div className="grid grid-cols-2 gap-6 md:grid-cols-3 lg:grid-cols-5 items-center relative z-20 min-h-[120px]">
-              {brands.map((brand, index) => (
-                <motion.div
-                  key={brand.name}
-                  initial={{ opacity: 0, scale: 0.85 }}
-                  whileInView={{ opacity: 1, scale: 1 }}
-                  transition={{ duration: 0.5, delay: index * 0.1 }}
-                  viewport={{ once: true }}
-                  className="flex items-center justify-center grayscale hover:grayscale-0 transition-all duration-300"
-                >
-                  <div className="relative h-20 w-28 mx-auto z-20">
-                    <Image
-                      src={brand.image}
-                      alt={`${brand.name} logo - trusted water heater brand`}
-                      fill
-                      sizes="100px"
-                      className="object-contain z-20"
-                    />
-                  </div>
-                </motion.div>
-              ))}
-            </div>
-          </motion.div>
-        </div>
-      </section>
+      <TrustedBrands className="bg-gray-50" />
 
       {/* FAQ Section */}
-      <section className="py-16 lg:py-24">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-            viewport={{ once: true }}
-            className="mx-auto max-w-5xl"
-          >
-            <h2 className="text-5xl font-bold text-[#11110E] sm:text-4xl mb-8 text-center">
-              Frequently Asked Questions
-            </h2>
-            <Accordion type="single" collapsible className="space-y-4">
-              {faqs.map((faq, index) => (
-                <motion.div
-                  key={index}
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.5, delay: index * 0.05 }}
-                  viewport={{ once: true }}
-                >
-                  <AccordionItem
-                    value={`item-${index}`}
-                    className="rounded-2xl bg-white px-6 shadow-md border-0"
-                  >
-                    <AccordionTrigger className="text-left font-semibold text-[#11110E] hover:text-[#EA5D19] py-6">
-                      <span className="flex-shrink-0 mr-2 text-[#EA5D19] font-bold">
-                        {String(index + 1).padStart(2, "0")}
-                      </span>
-                      <span className="flex-grow text-collapse-fix">
-                        {faq.question}
-                      </span>
-                    </AccordionTrigger>
-                    <AccordionContent className="text-gray-700 pb-6">
-                      {faq.answer}
-                    </AccordionContent>
-                  </AccordionItem>
-                </motion.div>
-              ))}
-            </Accordion>
-          </motion.div>
-        </div>
-      </section>
+      <FAQ category="yucaipa" />
     </>
   );
 }

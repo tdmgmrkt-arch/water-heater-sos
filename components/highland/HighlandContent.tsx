@@ -4,20 +4,8 @@ import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { Check, Phone } from "lucide-react";
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "@/components/ui/accordion";
-
-const brands = [
-  { name: "Rheem", image: "/Rheem_logo-1.webp" },
-  { name: "Hajoca", image: "/hajoca-1.webp" },
-  { name: "Rinnai", image: "/rinnai-1.webp" },
-  { name: "Bradford White", image: "/Bradford-White-logo-1.webp" },
-  { name: "Navien", image: "/navien-1.webp" },
-];
+import { FAQ } from "@/components/home/FAQ";
+import { TrustedBrands } from "@/components/home/TrustedBrands";
 
 const plumbingServices = [
   {
@@ -90,37 +78,6 @@ const whyChooseUs = [
   },
 ];
 
-const faqs = [
-  {
-    question: "How does my water quality affect my water heater in Highland?",
-    answer: "Highland and parts of San Bernardino homeowners get their water from the East Valley Water District. Eighty‑five percent of the homes in the USA have moderately hard water, with parts per million of 60‑120 on the hardness scale. The city of Highland has a hardness rating of 167 ppm and a 9.8 rating on the grains per gallon. Both of these ratings are high, and hard water is considered to be hard water on the scale. Why is this important? Hard water causes calcium buildup and minerals that can cause fixtures in your house, such as your water heater and faucets, to clog and fail faster.",
-  },
-  {
-    question: "Can you fix a water heater that is leaking?",
-    answer: "Addressing a gas water heater leak depends on the source of the issue. If the tank itself is the leak's origin, it typically indicates internal corrosion, necessitating a complete replacement of the water heater. Conversely, leaks stemming from water lines or valves are usually repairable by replacing the specific faulty components.",
-  },
-  {
-    question: "How long should a water heater last?",
-    answer: "A water heater's lifespan generally ranges from 7 to 15 years, influenced by various factors such as water quality and maintenance practices. Subpar water quality, similar to that found in Highland, can accelerate corrosion and rusting, whereas regular maintenance can extend the heater's longevity.",
-  },
-  {
-    question: "Would a tankless water heater make more sense for houses in Highland, CA?",
-    answer: "Transitioning from a traditional tank water heater to a more efficient tankless model can be cost‑effective and reduce utility expenses over time. However, the initial investment for a tankless water heater is typically higher. Contact us for a personalized evaluation of your needs and recommendations tailored to your home's requirements.",
-  },
-  {
-    question: "What is the cost to replace my water heater?",
-    answer: "This is the question we get the most, and it will depend on several factors. The cost will depend on the size of the water heater, location, and whether code upgrades are needed. Feel free to use our free estimate form to provide us with the necessary information so we can provide a quote.",
-  },
-  {
-    question: "Can you handle other plumbing repairs?",
-    answer: "Think Water Heater SOS only does water heaters? Think again! We fix all kinds of plumbing issues, like leaky pipes, clogged drains, dripping faucets, toilets, showers, and garbage disposals. We're also experts at repairing or installing tankless water heaters to keep your hot water steady. Our skilled team gets the job done quickly and leaves your home's plumbing in great shape.",
-  },
-  {
-    question: "I have multiple properties – what other cities do you service?",
-    answer: "We proudly serve Highland and surrounding areas like San Bernardino, Redlands, Rialto, Grand Terrace, Yucaipa, and Mentone. Not sure if we cover your city? Just call or text us at (800) 697‑4014, and our friendly team will be happy to help you!",
-  },
-];
-
 export function HighlandContent() {
   return (
     <>
@@ -139,7 +96,7 @@ export function HighlandContent() {
                 Highland Plumbing Experts
               </span>
 
-              <h1 className="text-4xl font-bold text-[#11110E] sm:text-5xl lg:text-6xl mb-6">
+              <h1 className="text-3xl font-bold text-[#11110E] sm:text-4xl lg:text-5xl mb-4 lg:mb-6">
                 Highland Plumbers & Water Heater Repair
               </h1>
 
@@ -200,7 +157,7 @@ export function HighlandContent() {
             transition={{ duration: 0.6 }}
             className="text-center mb-14"
           >
-            <h2 className="text-4xl sm:text-5xl font-extrabold text-[#11110E] mb-6">
+            <h2 className="text-2xl sm:text-3xl lg:text-5xl font-extrabold text-[#11110E] mb-4 lg:mb-6">
               Why call Water Heater SOS?
             </h2>
             <div className="h-1 w-20 bg-[#EA5D19] mx-auto rounded-full" />
@@ -243,7 +200,7 @@ export function HighlandContent() {
             transition={{ duration: 0.6 }}
             className="text-center mb-14"
           >
-            <h2 className="text-4xl sm:text-5xl font-extrabold text-[#11110E] mb-6">
+            <h2 className="text-2xl sm:text-3xl lg:text-5xl font-extrabold text-[#11110E] mb-4 lg:mb-6">
               Highland Plumbing Services
             </h2>
             <div className="h-1 w-20 bg-[#EA5D19] mx-auto rounded-full" />
@@ -306,89 +263,10 @@ export function HighlandContent() {
       </section>
 
       {/* Trusted Brands Section */}
-      <section className="bg-gray-50 py-16 lg:py-24">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-            viewport={{ once: true }}
-            className="mx-auto max-w-7xl text-center relative z-20"
-          >
-            <h2 className="text-3xl font-bold text-[#11110E] sm:text-4xl mb-8">
-              Trusted Brands
-            </h2>
-            <div className="h-1 w-20 bg-[#EA5D19] mx-auto rounded-full mb-8" />
-            <div className="grid grid-cols-2 gap-6 md:grid-cols-3 lg:grid-cols-5 items-center relative z-20 min-h-[120px]">
-              {brands.map((brand, index) => (
-                <motion.div
-                  key={brand.name}
-                  initial={{ opacity: 0, scale: 0.85 }}
-                  whileInView={{ opacity: 1, scale: 1 }}
-                  transition={{ duration: 0.5, delay: index * 0.1 }}
-                  viewport={{ once: true }}
-                  className="flex items-center justify-center grayscale hover:grayscale-0 transition-all duration-300"
-                >
-                  <div className="relative h-20 w-28 mx-auto z-20">
-                    <Image
-                      src={brand.image}
-                      alt={`${brand.name} logo - trusted water heater brand`}
-                      fill
-                      sizes="100px"
-                      className="object-contain z-20"
-                    />
-                  </div>
-                </motion.div>
-              ))}
-            </div>
-          </motion.div>
-        </div>
-      </section>
+      <TrustedBrands className="bg-gray-50" />
 
       {/* FAQ Section */}
-      <section className="py-16 lg:py-24">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-            viewport={{ once: true }}
-            className="mx-auto max-w-5xl"
-          >
-            <h2 className="text-5xl font-bold text-[#11110E] sm:text-4xl mb-8 text-center">
-              Frequently Asked Questions
-            </h2>
-            <Accordion type="single" collapsible className="space-y-4">
-              {faqs.map((faq, index) => (
-                <motion.div
-                  key={index}
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.5, delay: index * 0.05 }}
-                  viewport={{ once: true }}
-                >
-                  <AccordionItem
-                    value={`item-${index}`}
-                    className="rounded-2xl bg-white px-6 shadow-md border-0"
-                  >
-                    <AccordionTrigger className="text-left font-semibold text-[#11110E] hover:text-[#EA5D19] py-6">
-                      <span className="flex-shrink-0 mr-2 text-[#EA5D19] font-bold">
-                        {String(index + 1).padStart(2, "0")}
-                      </span>
-                      <span className="flex-grow text-collapse-fix">
-                        {faq.question}
-                      </span>
-                    </AccordionTrigger>
-                    <AccordionContent className="text-gray-700 pb-6">
-                      {faq.answer}
-                    </AccordionContent>
-                  </AccordionItem>
-                </motion.div>
-              ))}
-            </Accordion>
-          </motion.div>
-        </div>
-      </section>
+      <FAQ category="highland" />
     </>
   );
 }

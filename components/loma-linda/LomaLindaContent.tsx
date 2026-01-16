@@ -4,20 +4,8 @@ import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { Check, Phone } from "lucide-react";
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "@/components/ui/accordion";
-
-const brands = [
-  { name: "Rheem", image: "/Rheem_logo-1.webp" },
-  { name: "Hajoca", image: "/hajoca-1.webp" },
-  { name: "Rinnai", image: "/rinnai-1.webp" },
-  { name: "Bradford White", image: "/Bradford-White-logo-1.webp" },
-  { name: "Navien", image: "/navien-1.webp" },
-];
+import { FAQ } from "@/components/home/FAQ";
+import { TrustedBrands } from "@/components/home/TrustedBrands";
 
 const typicalReasons = [
   {
@@ -82,33 +70,6 @@ const plumbingServices = [
   },
 ];
 
-const faqs = [
-  {
-    question: "What are the most common brands of water heaters?",
-    answer: "There are several brands known for producing reliable and efficient water heaters. Among the most common are Rheem, A. O. Smith, Bradford White, and Rinnai. These brands offer a variety of models, including tankless, hybrid, and traditional storage tank water heaters. Each brand has unique features and benefits, catering to different needs and preferences. For instance, Rheem is known for its high‑efficiency models, Bradford White is recognized for its durability, A. O. Smith offers a wide range of products from basic to high-end, ensuring a suitable option for most budgets, and Rinnai is popular for its tankless water heaters, which provide an endless hot water supply on demand.",
-  },
-  {
-    question: "Why is my water heater making noise?",
-    answer: "Water heaters can produce sounds like rumbling, popping, or whistling. These noises can be caused by sediment buildup at the bottom of the tank, resulting in a popping noise as the water bubbles through the sediment layer. If your water heater is making a loud banging or rumbling noise, it could be due to a water hammer, which occurs when water flow is suddenly stopped or started, causing a pressure surge. Regular maintenance, such as flushing the tank and checking the anode rod, can help prevent these issues.",
-  },
-  {
-    question: "Can I install a water heater in a closet or a small space?",
-    answer: "While installing a water heater in a closet or a small space is possible, it's essential to ensure the area meets the manufacturer's installation requirements and local building codes. Most water heaters require a certain amount of clearance around the unit for proper ventilation and to prevent fire risk. Additionally, the closet or space should be well‑ventilated to avoid the buildup of carbon monoxide or other harmful gases.",
-  },
-  {
-    question: "What is an anode rod, and why is it important?",
-    answer: "An anode rod is a long, thin rod made of a metal like magnesium or aluminum installed inside a water heater tank. Its purpose is to protect the tank from corrosion by attracting corrosive elements in the water. Over time, especially in Loma Linda, the anode rod can become corroded and must be replaced. Regular maintenance and replacement of the anode rod can help extend the life of your water heater.",
-  },
-  {
-    question: "Can I use a tankless water heater in Loma Linda?",
-    answer: "Tankless water heaters can be used in cold climates but may require additional equipment to ensure they operate efficiently. In very cold climates, the incoming water temperature can be so low that it affects the water heater's performance. In these situations, a recirculation pump or a water heater with a built‑in freeze protection system may be necessary. It's also essential to insulate the water heater to prevent freezing.",
-  },
-  {
-    question: "Are you a full service plumbing company?",
-    answer: "Yes! Water Heater SOS fixes all your plumbing problems! We handle leaky faucets, clogged drains, broken pipes, toilets, showers, garbage disposals, and more. Our team is also awesome at repairing and installing tankless water heaters to keep your hot water flowing.",
-  },
-];
-
 export function LomaLindaContent() {
   return (
     <>
@@ -127,7 +88,7 @@ export function LomaLindaContent() {
                 Loma Linda Plumbing Experts
               </span>
 
-              <h1 className="text-4xl font-bold text-[#11110E] sm:text-5xl lg:text-6xl mb-6">
+              <h1 className="text-3xl font-bold text-[#11110E] sm:text-4xl lg:text-5xl mb-4 lg:mb-6">
                 Loma Linda Plumbers & Water Heater Repair
               </h1>
 
@@ -188,7 +149,7 @@ export function LomaLindaContent() {
             transition={{ duration: 0.6 }}
             className="text-center mb-14"
           >
-            <h2 className="text-4xl sm:text-5xl font-extrabold text-[#11110E] mb-6">
+            <h2 className="text-2xl sm:text-3xl lg:text-5xl font-extrabold text-[#11110E] mb-4 lg:mb-6">
               Plumbing Repairs You Need in Loma Linda
             </h2>
             <div className="h-1 w-20 bg-[#EA5D19] mx-auto rounded-full mb-6" />
@@ -239,7 +200,7 @@ export function LomaLindaContent() {
             transition={{ duration: 0.6 }}
             className="text-center mb-14"
           >
-            <h2 className="text-4xl sm:text-5xl font-extrabold text-[#11110E] mb-6">
+            <h2 className="text-2xl sm:text-3xl lg:text-5xl font-extrabold text-[#11110E] mb-4 lg:mb-6">
               Typical Reasons Your Water Heater Breaks Down
             </h2>
             <div className="h-1 w-20 bg-[#EA5D19] mx-auto rounded-full mb-6" />
@@ -303,89 +264,10 @@ export function LomaLindaContent() {
       </section>
 
       {/* Trusted Brands Section */}
-      <section className="bg-gray-50 py-16 lg:py-24">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-            viewport={{ once: true }}
-            className="mx-auto max-w-7xl text-center relative z-20"
-          >
-            <h2 className="text-3xl font-bold text-[#11110E] sm:text-4xl mb-8">
-              Trusted Brands
-            </h2>
-            <div className="h-1 w-20 bg-[#EA5D19] mx-auto rounded-full mb-8" />
-            <div className="grid grid-cols-2 gap-6 md:grid-cols-3 lg:grid-cols-5 items-center relative z-20 min-h-[120px]">
-              {brands.map((brand, index) => (
-                <motion.div
-                  key={brand.name}
-                  initial={{ opacity: 0, scale: 0.85 }}
-                  whileInView={{ opacity: 1, scale: 1 }}
-                  transition={{ duration: 0.5, delay: index * 0.1 }}
-                  viewport={{ once: true }}
-                  className="flex items-center justify-center grayscale hover:grayscale-0 transition-all duration-300"
-                >
-                  <div className="relative h-20 w-28 mx-auto z-20">
-                    <Image
-                      src={brand.image}
-                      alt={`${brand.name} logo - trusted water heater brand`}
-                      fill
-                      sizes="100px"
-                      className="object-contain z-20"
-                    />
-                  </div>
-                </motion.div>
-              ))}
-            </div>
-          </motion.div>
-        </div>
-      </section>
+      <TrustedBrands className="bg-gray-50" />
 
       {/* FAQ Section */}
-      <section className="py-16 lg:py-24">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-            viewport={{ once: true }}
-            className="mx-auto max-w-5xl"
-          >
-            <h2 className="text-5xl font-bold text-[#11110E] sm:text-4xl mb-8 text-center">
-              Frequently Asked Questions
-            </h2>
-            <Accordion type="single" collapsible className="space-y-4">
-              {faqs.map((faq, index) => (
-                <motion.div
-                  key={index}
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.5, delay: index * 0.05 }}
-                  viewport={{ once: true }}
-                >
-                  <AccordionItem
-                    value={`item-${index}`}
-                    className="rounded-2xl bg-white px-6 shadow-md border-0"
-                  >
-                    <AccordionTrigger className="text-left font-semibold text-[#11110E] hover:text-[#EA5D19] py-6">
-                      <span className="flex-shrink-0 mr-2 text-[#EA5D19] font-bold">
-                        {String(index + 1).padStart(2, "0")}
-                      </span>
-                      <span className="flex-grow text-collapse-fix">
-                        {faq.question}
-                      </span>
-                    </AccordionTrigger>
-                    <AccordionContent className="text-gray-700 pb-6">
-                      {faq.answer}
-                    </AccordionContent>
-                  </AccordionItem>
-                </motion.div>
-              ))}
-            </Accordion>
-          </motion.div>
-        </div>
-      </section>
+      <FAQ category="lomaLinda" />
     </>
   );
 }

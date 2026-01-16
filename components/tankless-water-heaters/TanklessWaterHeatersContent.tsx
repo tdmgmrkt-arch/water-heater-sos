@@ -4,20 +4,9 @@ import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { Check, Phone } from "lucide-react";
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "@/components/ui/accordion";
-
-const brands = [
-  { name: "Rheem", image: "/Rheem_logo-1.webp" },
-  { name: "Hajoca", image: "/hajoca-1.webp" },
-  { name: "Rinnai", image: "/rinnai-1.webp" },
-  { name: "Bradford White", image: "/Bradford-White-logo-1.webp" },
-  { name: "Navien", image: "/navien-1.webp" },
-];
+import { FAQ } from "@/components/home/FAQ";
+import { TrustedBrands } from "@/components/home/TrustedBrands";
+import { SetFooterCTA } from "@/components/SetFooterCTA";
 
 const breakdownReasons = [
   {
@@ -77,64 +66,46 @@ const benefits = [
   },
 ];
 
-const faqs = [
-  {
-    question: "How do tankless water heaters work?",
-    answer: "Tankless water heaters use a heat exchanger to heat water as it flows through the unit. When you turn on a hot water faucet or start a hot water appliance, the tankless water heater senses the flow and activates, heating the water to your desired temperature.",
-  },
-  {
-    question: "What size tankless water heater do I need?",
-    answer: "The size of your tankless water heater depends on the number of fixtures in your home, the flow rate of each fixture, and the temperature rise required. We can help you determine the right size for your needs.",
-  },
-  {
-    question: "How much does it cost to install a tankless water heater?",
-    answer: "The cost varies depending on the unit's size, the installation's complexity, and your location. Call or text us to discuss your situation and what your installation would take.",
-  },
-  {
-    question: "Are tankless water heaters more expensive than tank water heaters?",
-    answer: "While tankless water heaters may have a higher upfront cost, they can save you money in the long run due to their energy efficiency and longer lifespan. In addition, many utility companies and government agencies offer rebates and incentives for installing energy-efficient appliances like tankless water heaters.",
-  },
-  {
-    question: "Can I install a tankless water heater myself?",
-    answer: "While it is possible to install a tankless water heater yourself, hiring a plumber is recommended to ensure the installation is done correctly and safely. Improper installation can lead to inefficiency, breakdowns, and even safety hazards.",
-  },
-];
-
 export function TanklessWaterHeatersContent() {
   return (
     <>
+      <SetFooterCTA
+        title="Need Tankless Water Heater Service?"
+        description="Ready to upgrade to a tankless water heater or need repairs? Contact us today for expert service and installation."
+        quoteLink="/quote?category=Water%20Heaters&service=Tankless%20Water%20Heater%20Installation%2FRepair"
+      />
       {/* Hero Section */}
-      <section className="relative overflow-hidden bg-gradient-to-b from-gray-50 to-white pt-20 pb-16 lg:pt-32 lg:pb-24">
+      <section className="relative overflow-hidden bg-gradient-to-b from-gray-50 to-white pt-12 pb-10 sm:pt-16 sm:pb-14 lg:pt-32 lg:pb-24">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="grid gap-12 lg:grid-cols-2 lg:gap-16 items-center">
+          <div className="grid gap-6 sm:gap-8 lg:grid-cols-2 lg:gap-16 items-center">
             {/* Content */}
             <motion.div
               initial={{ opacity: 0, x: -30 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.6 }}
             >
-
-            <span className="inline-block px-4 py-1 rounded-full bg-[#EA5D19] text-sm text-white font-semibold mb-4 tracking-wide">
-              Premium Tankless Water Heater Service
-            </span>
-              <h1 className="text-4xl font-bold text-[#11110E] sm:text-5xl lg:text-6xl mb-6">
+              <span className="inline-block px-3 py-1 rounded-full bg-[#EA5D19] text-xs sm:text-sm text-white font-semibold mb-3 sm:mb-4 tracking-wide">
+                Premium Tankless Water Heater Service
+              </span>
+              <h1 className="text-2xl font-bold text-[#11110E] sm:text-3xl lg:text-5xl mb-3 lg:mb-6">
                 Tankless Water Heaters
               </h1>
-              <p className="text-xl text-gray-600 mb-8">
+              <p className="text-base sm:text-xl text-gray-600 mb-4 sm:mb-8">
                 Is your tankless water heater displaying an error code?
               </p>
-              <p className="text-lg text-gray-700 leading-relaxed mb-4">
+              <p className="text-sm sm:text-lg text-gray-700 leading-relaxed mb-3 sm:mb-4">
                 Tankless water heaters are great because they are energy efficient and will last considerably longer than traditional tank water heaters. However, many people neglect the yearly maintenance needed to ensure their unit's longevity.
               </p>
-              <p className="text-lg text-gray-700 leading-relaxed mb-8">
+              <p className="text-sm sm:text-lg text-gray-700 leading-relaxed mb-5 sm:mb-8">
                 If your tankless water heater needs repair, we can help! Our technicians are experts in working on electric and gas tankless water heaters, as well as all sorts of tankless water heater brands.
               </p>
               <Link
                 href="/quote?category=Water%20Heaters&service=Tankless%20Water%20Heater%20Installation%2FRepair"
-                className="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-[#EA5D19] to-[#FF6E2E] px-8 py-4 text-lg font-bold text-white shadow-lg hover:shadow-xl transition-all hover:scale-105"
+                className="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-[#EA5D19] to-[#FF6E2E] px-5 py-3 sm:px-8 sm:py-4 text-sm sm:text-lg font-bold text-white shadow-lg hover:shadow-xl transition-all hover:scale-105"
               >
-                <Phone className="h-5 w-5" />
-                Schedule an Appointment Today!
+                <Phone className="h-4 w-4 sm:h-5 sm:w-5" />
+                <span className="sm:hidden">Get Free Quote</span>
+                <span className="hidden sm:inline">Schedule an Appointment Today!</span>
               </Link>
             </motion.div>
 
@@ -143,7 +114,7 @@ export function TanklessWaterHeatersContent() {
               initial={{ opacity: 0, x: 30 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
-              className="relative h-[400px] lg:h-[500px] rounded-3xl overflow-hidden shadow-2xl"
+              className="relative h-[250px] sm:h-[350px] lg:h-[500px] rounded-2xl lg:rounded-3xl overflow-hidden shadow-xl lg:shadow-2xl"
             >
               <Image
                 src="/tankless-water-heater.webp"
@@ -158,23 +129,23 @@ export function TanklessWaterHeatersContent() {
       </section>
 
 {/* Common Reasons Tankless Water Heaters Breakdown */}
-<section className="py-20 bg-white">
+<section className="py-10 sm:py-14 lg:py-20 bg-white">
   <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
     <motion.div
       initial={{ opacity: 0, y: 25 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       transition={{ duration: 0.6 }}
-      className="text-center mb-14"
+      className="text-center mb-8 sm:mb-14"
     >
-      <h2 className="text-4xl sm:text-5xl font-extrabold text-[#11110E] mb-6">
+      <h2 className="text-xl sm:text-2xl lg:text-4xl font-extrabold text-[#11110E] mb-3 lg:mb-6">
         Common Reasons Tankless Water Heaters Breakdown
       </h2>
 
-      <div className="h-1 w-20 bg-[#EA5D19] mx-auto rounded-full" />
+      <div className="h-1 w-16 sm:w-20 bg-[#EA5D19] mx-auto rounded-full" />
     </motion.div>
 
-    <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-3">
+    <div className="grid gap-4 sm:gap-6 md:grid-cols-2 lg:grid-cols-3 lg:gap-10">
       {breakdownReasons.map((reason, index) => (
         <motion.div
           key={index}
@@ -182,18 +153,18 @@ export function TanklessWaterHeatersContent() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: index * 0.08 }}
           viewport={{ once: true }}
-          className="rounded-2xl bg-white p-6 shadow-lg border border-gray-200 hover:shadow-xl hover:-translate-y-1 transition-all"
+          className="rounded-xl sm:rounded-2xl bg-white p-4 sm:p-6 shadow-md sm:shadow-lg border border-gray-200 hover:shadow-xl hover:-translate-y-1 transition-all"
         >
-          <div className="flex items-start gap-4 mb-4">
-            <div className="flex-shrink-0 w-8 h-8 rounded-full bg-[#EA5D19] flex items-center justify-center shadow-md">
-              <Check className="h-4 w-4 text-white" />
+          <div className="flex items-start gap-3 sm:gap-4 mb-3 sm:mb-4">
+            <div className="flex-shrink-0 w-7 h-7 sm:w-8 sm:h-8 rounded-full bg-[#EA5D19] flex items-center justify-center shadow-md">
+              <Check className="h-3.5 w-3.5 sm:h-4 sm:w-4 text-white" />
             </div>
-            <h3 className="text-xl font-bold text-[#11110E] flex-1 leading-snug">
+            <h3 className="text-base sm:text-xl font-bold text-[#11110E] flex-1 leading-snug">
               {reason.title}
             </h3>
           </div>
 
-          <p className="text-gray-700 leading-relaxed">
+          <p className="text-sm sm:text-base text-gray-700 leading-relaxed">
             {reason.description}
           </p>
         </motion.div>
@@ -203,27 +174,27 @@ export function TanklessWaterHeatersContent() {
 </section>
 
 {/* Considering a Tankless Water Heater Section */}
-<section className="bg-gray-50 py-20">
+<section className="bg-gray-50 py-10 sm:py-14 lg:py-20">
   <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
     <motion.div
       initial={{ opacity: 0, y: 25 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       transition={{ duration: 0.6 }}
-      className="mx-auto text-center mb-14"
+      className="mx-auto text-center mb-8 sm:mb-14"
     >
-      <h2 className="text-4xl sm:text-5xl font-extrabold text-[#11110E] mb-6">
+      <h2 className="text-xl sm:text-2xl lg:text-4xl font-extrabold text-[#11110E] mb-3 lg:mb-6">
         Considering a Tankless Water Heater?
       </h2>
 
-      <div className="h-1 w-20 bg-[#EA5D19] mx-auto rounded-full mb-8" />
+      <div className="h-1 w-16 sm:w-20 bg-[#EA5D19] mx-auto rounded-full mb-5 sm:mb-8" />
 
-      <p className="text-lg text-gray-700 leading-relaxed mx-auto">
+      <p className="text-sm sm:text-lg text-gray-700 leading-relaxed mx-auto">
         If you have a tank water heater and are trying to determine if a tankless water heater is the way to go, we can help. An energy-efficient tankless water heater can save you money in the long run; however, the upfront costs are more considerable. Below are some key benefits of installing a tankless water heater at your home.
       </p>
     </motion.div>
 
-    <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-3 max-w-6xl mx-auto">
+    <div className="grid gap-4 sm:gap-6 md:grid-cols-2 lg:grid-cols-3 lg:gap-10 max-w-6xl mx-auto">
       {benefits.map((benefit, index) => (
         <motion.div
           key={index}
@@ -231,18 +202,18 @@ export function TanklessWaterHeatersContent() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: index * 0.08 }}
           viewport={{ once: true }}
-          className="rounded-2xl bg-white p-6 shadow-lg border border-gray-200 hover:shadow-xl hover:-translate-y-1 transition-all"
+          className="rounded-xl sm:rounded-2xl bg-white p-4 sm:p-6 shadow-md sm:shadow-lg border border-gray-200 hover:shadow-xl hover:-translate-y-1 transition-all"
         >
-          <div className="flex items-start gap-4 mb-4">
-            <div className="flex-shrink-0 w-8 h-8 rounded-full bg-[#EA5D19] flex items-center justify-center shadow-md">
-              <Check className="h-4 w-4 text-white" />
+          <div className="flex items-start gap-3 sm:gap-4 mb-3 sm:mb-4">
+            <div className="flex-shrink-0 w-7 h-7 sm:w-8 sm:h-8 rounded-full bg-[#EA5D19] flex items-center justify-center shadow-md">
+              <Check className="h-3.5 w-3.5 sm:h-4 sm:w-4 text-white" />
             </div>
-            <h3 className="text-xl font-bold text-[#11110E] flex-1 leading-snug">
+            <h3 className="text-base sm:text-xl font-bold text-[#11110E] flex-1 leading-snug">
               {benefit.title}
             </h3>
           </div>
 
-          <p className="text-gray-700 leading-relaxed">
+          <p className="text-sm sm:text-base text-gray-700 leading-relaxed">
             {benefit.description}
           </p>
         </motion.div>
@@ -252,109 +223,10 @@ export function TanklessWaterHeatersContent() {
 </section>
 
       {/* Trusted Brands Section */}
-      <section className="bg-gray-50 py-16 lg:py-24">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-            viewport={{ once: true }}
-            className="mx-auto max-w-7xl text-center relative z-20"
-          >
-            <h2 className="text-3xl font-bold text-[#11110E] sm:text-4xl mb-8">
-              Trusted Brands
-            </h2>
-
-            <div className="h-1 w-20 bg-[#EA5D19] mx-auto rounded-full mb-8" />
-
-            <div className="grid grid-cols-2 gap-6 md:grid-cols-3 lg:grid-cols-5 items-center relative z-20 min-h-[120px]">
-              {brands.map((brand, index) => (
-                <motion.div
-                  key={brand.name}
-                  initial={{ opacity: 0, scale: 0.85 }}
-                  whileInView={{ opacity: 1, scale: 1 }}
-                  transition={{ duration: 0.5, delay: index * 0.1 }}
-                  viewport={{ once: true }}
-                  className="flex items-center justify-center grayscale hover:grayscale-0 transition-all duration-300"
-                >
-                  <div className="relative h-20 w-28 mx-auto z-20">
-                    <Image
-                      src={brand.image}
-                      alt={`${brand.name} logo - trusted water heater brand`}
-                      fill
-                      sizes="100px"
-                      className="object-contain z-20"
-                    />
-                  </div>
-                </motion.div>
-              ))}
-            </div>
-          </motion.div>
-        </div>
-      </section>
+      <TrustedBrands className="bg-gray-50" />
 
       {/* FAQ Section */}
-      <section className="py-20 bg-white">
-        <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.5 }}
-            className="text-center mb-16"
-          >
-            <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl mb-4">
-              Frequently Asked Questions
-            </h2>
-            <p className="text-xl text-gray-600">
-              Common questions about tankless water heaters
-            </p>
-          </motion.div>
-
-          <Accordion type="single" collapsible className="space-y-4">
-            {faqs.map((faq, index) => (
-              <AccordionItem key={index} value={`item-${index}`} className="border rounded-lg px-6 bg-gray-50">
-                <AccordionTrigger className="text-left text-lg font-semibold hover:text-[#EA5D19] transition-colors">
-                  {faq.question}
-                </AccordionTrigger>
-                <AccordionContent className="text-gray-600 text-base leading-relaxed">
-                  {faq.answer}
-                </AccordionContent>
-              </AccordionItem>
-            ))}
-          </Accordion>
-        </div>
-      </section>
-
-      {/* CTA Section */}
-      <section className="bg-gradient-to-r from-[#EA5D19] to-[#FF6E2E] py-16 lg:py-24">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-            viewport={{ once: true }}
-            className="text-center"
-          >
-            <h2 className="text-3xl font-bold text-white sm:text-4xl mb-6">
-              Schedule an Appointment Today!
-            </h2>
-
-            <div className="h-1 w-20 bg-[#FFFF] mx-auto rounded-full mb-8" />
-
-            <p className="text-xl text-white/90 mb-8 max-w-7xl mx-auto">
-              Ready to upgrade to a tankless water heater or need repairs? Contact us today for expert service and installation.
-            </p>
-            <Link
-              href="/quote?category=Water%20Heaters&service=Tankless%20Water%20Heater%20Installation%2FRepair"
-              className="inline-flex items-center gap-2 rounded-full bg-white px-8 py-4 text-lg font-bold text-[#EA5D19] shadow-lg hover:shadow-xl transition-all hover:scale-105"
-            >
-              <Phone className="h-5 w-5" />
-              Request Your Free Quote
-            </Link>
-          </motion.div>
-        </div>
-      </section>
+      <FAQ category="tanklessWaterHeaters" subtitle="Common questions about tankless water heaters" />
     </>
   );
 }

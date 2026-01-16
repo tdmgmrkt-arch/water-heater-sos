@@ -33,7 +33,7 @@ const benefits = [
 
 export function WhyChooseUs() {
   return (
-    <section className="bg-[#11110E] py-16 lg:py-24">
+    <section className="bg-[#11110E] py-12 lg:py-24">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="grid gap-6 lg:grid-cols-2 lg:gap-10 items-center">
 
@@ -46,8 +46,8 @@ export function WhyChooseUs() {
             className="flex flex-col w-full min-w-0 relative z-20"
           >
             {/* Headline - Always first */}
-            <div className="mb-3">
-              <h2 className="!text-white text-5xl leading-tight font-bold sm:text-4xl">
+            <div className="mb-3 lg:mb-4">
+              <h2 className="text-white text-2xl leading-tight font-bold sm:text-3xl lg:text-5xl">
                 Why Choose Water Heater SOS?
               </h2>
             </div>
@@ -66,7 +66,7 @@ export function WhyChooseUs() {
             </div>
 
             {/* Paragraph */}
-            <p className="!text-gray-300 text-base leading-normal sm:text-lg mb-6">
+            <p className="text-gray-300 text-base leading-normal lg:text-lg mb-4 lg:mb-6">
               The Inland Empire's most trusted and highest-rated plumbing company that is dedicated to water heaters. We will restore your hot water quickly and with the highest quality standards.
             </p>
 
@@ -88,10 +88,10 @@ export function WhyChooseUs() {
                   </div>
 
                   <div>
-                    <h3 className="!text-white text-lg font-bold mb-1">
+                    <h3 className="text-white text-base lg:text-lg font-bold mb-1">
                       {benefit.title}
                     </h3>
-                    <p className="!text-gray-300 text-sm leading-normal">
+                    <p className="text-gray-300 text-sm leading-normal">
                       {benefit.description}
                     </p>
                   </div>

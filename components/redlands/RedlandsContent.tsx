@@ -4,20 +4,8 @@ import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { Check, Phone } from "lucide-react";
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "@/components/ui/accordion";
-
-const brands = [
-  { name: "Rheem", image: "/Rheem_logo-1.webp" },
-  { name: "Hajoca", image: "/hajoca-1.webp" },
-  { name: "Rinnai", image: "/rinnai-1.webp" },
-  { name: "Bradford White", image: "/Bradford-White-logo-1.webp" },
-  { name: "Navien", image: "/navien-1.webp" },
-];
+import { FAQ } from "@/components/home/FAQ";
+import { TrustedBrands } from "@/components/home/TrustedBrands";
 
 const plumbingServices = [
   {
@@ -80,29 +68,6 @@ const whyChooseUs = [
   },
 ];
 
-const faqs = [
-  {
-    question: "What will the cost be to replace my water heater?",
-    answer: "This is the most frequently asked question, and the answer depends on various factors. The cost can vary based on the size of the water heater, its location, and if any code upgrades are required. Please use our free estimate form to provide the necessary details, and we will gladly provide you with a quote for a new water heater in your Redlands home.",
-  },
-  {
-    question: "Can you repair a leaking water heater?",
-    answer: "The approach to fixing a gas water heater leak depends on the source of the problem. If the leak originates from the tank itself, it usually indicates internal corrosion, which would require replacing the entire water heater. However, if the leak comes from the water lines or valves, it is generally possible to repair by replacing the specific faulty components.",
-  },
-  {
-    question: "How long should a water heater last?",
-    answer: "On average, a water heater can last anywhere from 7 to 15 years. However, this lifespan can be affected by several factors, including the quality of the water it's heating and how well it's maintained. If the water is particularly hard or corrosive, like in Highland, it can cause the heater to rust and deteriorate more quickly. Conversely, if the heater is regularly maintained and cared for, it can last on the higher end of that range.",
-  },
-  {
-    question: "Would a tankless water heater be a better option for homes in Redlands, CA?",
-    answer: "Switching from a conventional tank water heater to a more efficient tankless model can lead to long‑term savings on utility bills. However, the initial cost for a tankless water heater is usually higher. We can provide a personalized assessment of your needs and offer recommendations that best fit your home's requirements.",
-  },
-  {
-    question: "How does water quality impact water heaters in Redlands?",
-    answer: "In Redlands and some of the surrounding cities, residents receive their water supply from the Redlands Water District. It's worth noting that about 85% of households across the United States have moderately hard water, with hardness levels ranging from 60 to 120 parts per million (ppm). Highland specifically has a hardness rating of 1149 ppm and a 8.7 rating on the grains per gallon scale. Both of these ratings indicate a high hardness level, placing the water firmly in the 'hard water' category. This is significant because hard water contains calcium and minerals that can lead to buildup in your home's fixtures, including your water heater and faucets. Over time, this buildup can cause these fixtures to clog and wear out more quickly.",
-  },
-];
-
 export function RedlandsContent() {
   return (
     <>
@@ -123,7 +88,7 @@ export function RedlandsContent() {
           Redlands Plumbing Experts
         </span>
 
-        <h1 className="text-4xl font-bold text-[#11110E] sm:text-5xl lg:text-6xl mb-6">
+        <h1 className="text-3xl font-bold text-[#11110E] sm:text-4xl lg:text-5xl mb-4 lg:mb-6">
           Redlands Plumbing Services & Water Heater Repair
         </h1>
 
@@ -203,7 +168,7 @@ export function RedlandsContent() {
             transition={{ duration: 0.6 }}
             className="text-center mb-14"
           >
-            <h2 className="text-4xl sm:text-5xl font-extrabold text-[#11110E] mb-6">
+            <h2 className="text-2xl sm:text-3xl lg:text-5xl font-extrabold text-[#11110E] mb-4 lg:mb-6">
               Why call Water Heater SOS?
             </h2>
             <div className="h-1 w-20 bg-[#EA5D19] mx-auto rounded-full" />
@@ -247,7 +212,7 @@ export function RedlandsContent() {
             transition={{ duration: 0.6 }}
             className="text-center mb-14"
           >
-            <h2 className="text-4xl sm:text-5xl font-extrabold text-[#11110E] mb-6">
+            <h2 className="text-2xl sm:text-3xl lg:text-5xl font-extrabold text-[#11110E] mb-4 lg:mb-6">
               Most Common Redlands Plumbing Services
             </h2>
             <div className="h-1 w-20 bg-[#EA5D19] mx-auto rounded-full mb-6" />
@@ -313,89 +278,10 @@ export function RedlandsContent() {
       </section>
 
       {/* Trusted Brands Section */}
-      <section className="bg-gray-50 py-16 lg:py-24">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-            viewport={{ once: true }}
-            className="mx-auto max-w-7xl text-center relative z-20"
-          >
-            <h2 className="text-3xl font-bold text-[#11110E] sm:text-4xl mb-8">
-              Trusted Brands
-            </h2>
-            <div className="h-1 w-20 bg-[#EA5D19] mx-auto rounded-full mb-8" />
-            <div className="grid grid-cols-2 gap-6 md:grid-cols-3 lg:grid-cols-5 items-center relative z-20 min-h-[120px]">
-              {brands.map((brand, index) => (
-                <motion.div
-                  key={brand.name}
-                  initial={{ opacity: 0, scale: 0.85 }}
-                  whileInView={{ opacity: 1, scale: 1 }}
-                  transition={{ duration: 0.5, delay: index * 0.1 }}
-                  viewport={{ once: true }}
-                  className="flex items-center justify-center grayscale hover:grayscale-0 transition-all duration-300"
-                >
-                  <div className="relative h-20 w-28 mx-auto z-20">
-                    <Image
-                      src={brand.image}
-                      alt={`${brand.name} logo - trusted water heater brand`}
-                      fill
-                      sizes="100px"
-                      className="object-contain z-20"
-                    />
-                  </div>
-                </motion.div>
-              ))}
-            </div>
-          </motion.div>
-        </div>
-      </section>
+      <TrustedBrands className="bg-gray-50" />
 
       {/* FAQ Section */}
-      <section className="py-16 lg:py-24">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-            viewport={{ once: true }}
-            className="mx-auto max-w-5xl"
-          >
-            <h2 className="text-5xl font-bold text-[#11110E] sm:text-4xl mb-8 text-center">
-              Frequently Asked Questions
-            </h2>
-            <Accordion type="single" collapsible className="space-y-4">
-              {faqs.map((faq, index) => (
-                <motion.div
-                  key={index}
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.5, delay: index * 0.05 }}
-                  viewport={{ once: true }}
-                >
-                  <AccordionItem
-                    value={`item-${index}`}
-                    className="rounded-2xl bg-white px-6 shadow-md border-0"
-                  >
-                    <AccordionTrigger className="text-left font-semibold text-[#11110E] hover:text-[#EA5D19] py-6">
-                      <span className="flex-shrink-0 mr-2 text-[#EA5D19] font-bold">
-                        {String(index + 1).padStart(2, "0")}
-                      </span>
-                      <span className="flex-grow text-collapse-fix">
-                        {faq.question}
-                      </span>
-                    </AccordionTrigger>
-                    <AccordionContent className="text-gray-700 pb-6">
-                      {faq.answer}
-                    </AccordionContent>
-                  </AccordionItem>
-                </motion.div>
-              ))}
-            </Accordion>
-          </motion.div>
-        </div>
-      </section>
+      <FAQ category="redlands" />
     </>
   );
 }

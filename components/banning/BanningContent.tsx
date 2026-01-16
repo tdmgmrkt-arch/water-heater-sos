@@ -4,20 +4,8 @@ import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { Check, Phone } from "lucide-react";
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "@/components/ui/accordion";
-
-const brands = [
-  { name: "Rheem", image: "/Rheem_logo-1.webp" },
-  { name: "Hajoca", image: "/hajoca-1.webp" },
-  { name: "Rinnai", image: "/rinnai-1.webp" },
-  { name: "Bradford White", image: "/Bradford-White-logo-1.webp" },
-  { name: "Navien", image: "/navien-1.webp" },
-];
+import { FAQ } from "@/components/home/FAQ";
+import { TrustedBrands } from "@/components/home/TrustedBrands";
 
 const plumbingServices = [
   {
@@ -89,33 +77,6 @@ const commonReasons = [
   },
 ];
 
-const faqs = [
-  {
-    question: "What water heaters do you repair?",
-    answer: "We're skilled at fixing many different brands of water heaters. Some of the most common ones we work on are Bradford White, A. O. Smith, Rheem, Kenmore, and Whirlpool. Our services are available in Banning and the surrounding areas, where we have been providing reliable and efficient water heater repair and installation for years.",
-  },
-  {
-    question: "Can you fix a leaking water heater?",
-    answer: "Whether we can fix a leaking water heater depends on where the leak is coming from. If the tank leaks because it has rusted from the inside, it usually means the water heater must be replaced. However, if the leak is coming from a water pipe or valve, we can often replace the leaking part. If you notice a leak from your water heater, it's important to act quickly to prevent further damage. Our team of experienced technicians is available to diagnose the problem and provide a solution. Whether a simple fix or a complete replacement, we'll ensure your water heater is back in working order. Don't let a leaky water heater disrupt your daily routine. Call us today for prompt and reliable service.",
-  },
-  {
-    question: "How long does it take to repair a water heater?",
-    answer: "The time it takes to repair a water heater depends on the issue. Simple fixes can be done in a few hours, while more complex problems require a day or two. Our team will provide you with an estimated timeline for the repair.",
-  },
-  {
-    question: "How much does it cost to replace my water heater?",
-    answer: "We often get asked about the cost of a new water heater installation. The price can vary depending on several factors, such as the size of the water heater, its location, and whether any code upgrades are needed. To get a precise quote, please use our free estimate form and provide us with the necessary details. We'll be happy to give you a detailed quote based on your specific needs. Replacing a tankless water heater can be more complex than replacing a traditional one. Since tankless water heaters are often installed in tight spaces and require specific ventilation, it's best to leave the installation to a professional. Our team of experienced technicians can help you choose the right tankless water heater for your home and ensure it's installed correctly and safely.",
-  },
-  {
-    question: "Is the city of Banning or the state of California stopping gas water heater sales?",
-    answer: "To improve air quality, California is gradually phasing out gas‑powered home appliances. Starting in 2030, the state will prohibit the sale of gas water heaters. Homeowners must opt for either electric or heat pump water heaters as alternatives. These changes are part of California's broader strategy to reduce carbon emissions and meet federal air quality standards. The transition away from gas appliances is expected to reduce nitrogen oxide emissions significantly, a key component of smog, and contribute to cleaner air for all Californians.",
-  },
-  {
-    question: "What else plumbing related do you do?",
-    answer: "Our name might be Water Heater SOS, but we handle every plumbing problem! From fixing leaky sinks, clogged drains, and broken faucets to repairing toilets, showers, and garbage disposals, we do it all. We also specialize in repairing and installing gas, electric, and tankless water heaters to keep your showers hot. Our team uses the best tools to fix your plumbing fast and right.",
-  },
-];
-
 export function BanningContent() {
   return (
     <>
@@ -134,7 +95,7 @@ export function BanningContent() {
                 Banning Plumbing Experts
               </span>
 
-              <h1 className="text-4xl font-bold text-[#11110E] sm:text-5xl lg:text-6xl mb-6">
+              <h1 className="text-3xl font-bold text-[#11110E] sm:text-4xl lg:text-5xl mb-4 lg:mb-6">
                 Banning Plumbers & Water Heater Repair
               </h1>
 
@@ -195,7 +156,7 @@ export function BanningContent() {
             transition={{ duration: 0.6 }}
             className="text-center mb-14"
           >
-            <h2 className="text-4xl sm:text-5xl font-extrabold text-[#11110E] mb-6">
+            <h2 className="text-2xl sm:text-3xl lg:text-5xl font-extrabold text-[#11110E] mb-4 lg:mb-6">
               Banning Plumbing Services
             </h2>
             <div className="h-1 w-20 bg-[#EA5D19] mx-auto rounded-full" />
@@ -243,7 +204,7 @@ export function BanningContent() {
             transition={{ duration: 0.6 }}
             className="text-center mb-14"
           >
-            <h2 className="text-4xl sm:text-5xl font-extrabold text-[#11110E] mb-6">
+            <h2 className="text-2xl sm:text-3xl lg:text-5xl font-extrabold text-[#11110E] mb-4 lg:mb-6">
               Common Reasons Why Water Heaters Go Out
             </h2>
             <div className="h-1 w-20 bg-[#EA5D19] mx-auto rounded-full" />
@@ -301,89 +262,10 @@ export function BanningContent() {
       </section>
 
       {/* Trusted Brands Section */}
-      <section className="bg-gray-50 py-16 lg:py-24">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-            viewport={{ once: true }}
-            className="mx-auto max-w-7xl text-center relative z-20"
-          >
-            <h2 className="text-3xl font-bold text-[#11110E] sm:text-4xl mb-8">
-              Trusted Brands
-            </h2>
-            <div className="h-1 w-20 bg-[#EA5D19] mx-auto rounded-full mb-8" />
-            <div className="grid grid-cols-2 gap-6 md:grid-cols-3 lg:grid-cols-5 items-center relative z-20 min-h-[120px]">
-              {brands.map((brand, index) => (
-                <motion.div
-                  key={brand.name}
-                  initial={{ opacity: 0, scale: 0.85 }}
-                  whileInView={{ opacity: 1, scale: 1 }}
-                  transition={{ duration: 0.5, delay: index * 0.1 }}
-                  viewport={{ once: true }}
-                  className="flex items-center justify-center grayscale hover:grayscale-0 transition-all duration-300"
-                >
-                  <div className="relative h-20 w-28 mx-auto z-20">
-                    <Image
-                      src={brand.image}
-                      alt={`${brand.name} logo - trusted water heater brand`}
-                      fill
-                      sizes="100px"
-                      className="object-contain z-20"
-                    />
-                  </div>
-                </motion.div>
-              ))}
-            </div>
-          </motion.div>
-        </div>
-      </section>
+      <TrustedBrands className="bg-gray-50" />
 
       {/* FAQ Section */}
-      <section className="py-16 lg:py-24">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-            viewport={{ once: true }}
-            className="mx-auto max-w-5xl"
-          >
-            <h2 className="text-5xl font-bold text-[#11110E] sm:text-4xl mb-8 text-center">
-              Frequently Asked Questions
-            </h2>
-            <Accordion type="single" collapsible className="space-y-4">
-              {faqs.map((faq, index) => (
-                <motion.div
-                  key={index}
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.5, delay: index * 0.05 }}
-                  viewport={{ once: true }}
-                >
-                  <AccordionItem
-                    value={`item-${index}`}
-                    className="rounded-2xl bg-white px-6 shadow-md border-0"
-                  >
-                    <AccordionTrigger className="text-left font-semibold text-[#11110E] hover:text-[#EA5D19] py-6">
-                      <span className="flex-shrink-0 mr-2 text-[#EA5D19] font-bold">
-                        {String(index + 1).padStart(2, "0")}
-                      </span>
-                      <span className="flex-grow text-collapse-fix">
-                        {faq.question}
-                      </span>
-                    </AccordionTrigger>
-                    <AccordionContent className="text-gray-700 pb-6">
-                      {faq.answer}
-                    </AccordionContent>
-                  </AccordionItem>
-                </motion.div>
-              ))}
-            </Accordion>
-          </motion.div>
-        </div>
-      </section>
+      <FAQ category="banning" />
     </>
   );
 }

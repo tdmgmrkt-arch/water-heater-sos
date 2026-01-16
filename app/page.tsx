@@ -1,5 +1,6 @@
 import { Hero } from "@/components/home/Hero";
 import { ServiceCards } from "@/components/home/ServiceCards";
+import { PlumbingServiceCards } from "@/components/home/PlumbingServiceCards";
 import { WhyChooseUs } from "@/components/home/WhyChooseUs";
 import { Reviews } from "@/components/home/Reviews";
 import { TrustedBrands } from "@/components/home/TrustedBrands";
@@ -10,6 +11,7 @@ export default function HomePage() {
     <>
       <Hero />
       <ServiceCards />
+      <PlumbingServiceCards />
       <WhyChooseUs />
       <Reviews />
       <TrustedBrands />

@@ -4,43 +4,39 @@ import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { ArrowRight, Droplets, Phone, Gauge, Thermometer, Shield } from "lucide-react";
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "@/components/ui/accordion";
+import { FAQ } from "@/components/home/FAQ";
 
 export function ShowerRepairReplacementContent() {
   return (
     <>
       {/* Hero Section */}
-      <section className="relative overflow-hidden bg-gradient-to-b from-gray-50 to-white pt-20 pb-16 lg:pt-32 lg:pb-24">
+      <section className="relative overflow-hidden bg-gradient-to-b from-gray-50 to-white pt-12 pb-10 sm:pt-16 sm:pb-14 lg:pt-32 lg:pb-24">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="grid gap-12 lg:grid-cols-2 lg:gap-16 items-center">
+          <div className="grid gap-6 sm:gap-8 lg:grid-cols-2 lg:gap-16 items-center">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 }}
             >
-              <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl lg:text-6xl mb-6">
+              <h1 className="text-2xl font-bold tracking-tight text-gray-900 sm:text-3xl lg:text-5xl mb-3 lg:mb-6">
                 Shower Repair & Replacement
               </h1>
-              <p className="text-xl text-gray-600 mb-6">
+              <p className="text-base sm:text-xl text-gray-600 mb-4 sm:mb-6">
                 Expert Shower Solutions for Your Bathroom
               </p>
-              <p className="text-lg text-gray-700 leading-relaxed mb-4">
+              <p className="text-sm sm:text-lg text-gray-700 leading-relaxed mb-3 sm:mb-4">
                 Is your shower leaking or losing pressure?
               </p>
-              <p className="text-lg text-gray-700 leading-relaxed mb-8">
+              <p className="text-sm sm:text-lg text-gray-700 leading-relaxed mb-5 sm:mb-8">
                 A malfunctioning shower can waste water, damage your bathroom, and disrupt your daily routine. Our expert plumbers provide fast, reliable shower repair and replacement services.
               </p>
               <Link
                 href="/quote?category=Fixtures%20%26%20Appliances&service=Shower%20Repair%2FReplacement"
-                className="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-[#EA5D19] to-[#FF6E2E] px-8 py-4 text-lg font-semibold text-white shadow-lg hover:shadow-xl transition-all duration-200 hover:scale-105"
+                className="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-[#EA5D19] to-[#FF6E2E] px-5 py-3 sm:px-8 sm:py-4 text-sm sm:text-lg font-semibold text-white shadow-lg hover:shadow-xl transition-all duration-200 hover:scale-105"
               >
-                Schedule an Appointment
-                <ArrowRight className="h-5 w-5" />
+                <span className="sm:hidden">Get Quote</span>
+                <span className="hidden sm:inline">Schedule an Appointment</span>
+                <ArrowRight className="h-4 w-4 sm:h-5 sm:w-5" />
               </Link>
             </motion.div>
 
@@ -50,7 +46,7 @@ export function ShowerRepairReplacementContent() {
               transition={{ duration: 0.5, delay: 0.2 }}
               className="relative"
             >
-              <div className="relative h-[500px] w-full rounded-2xl overflow-hidden shadow-2xl">
+              <div className="relative h-[250px] sm:h-[350px] lg:h-[500px] w-full rounded-2xl lg:rounded-3xl overflow-hidden shadow-xl lg:shadow-2xl">
                 <Image
                   src="/placeholderimage.webp"
                   alt="Professional shower repair and replacement services"
@@ -62,7 +58,7 @@ export function ShowerRepairReplacementContent() {
             </motion.div>
           </div>
 
-          <div className="mt-12 bg-white rounded-3xl shadow-lg border border-gray-200 p-8 space-y-6 text-lg leading-relaxed text-gray-700">
+          <div className="mt-8 sm:mt-12 bg-white rounded-2xl sm:rounded-3xl shadow-md sm:shadow-lg border border-gray-200 p-4 sm:p-8 space-y-4 sm:space-y-6 text-sm sm:text-lg leading-relaxed text-gray-700">
             <p>
               A leaky shower can waste gallons of water daily, raising your utility bills while potentially damaging walls, floors, and ceilings. Whether it's a dripping shower head, faulty valve, or clogged drain, our professional <Link href="/plumbing" className="text-[#EA5D19] hover:underline font-semibold">plumbing services</Link> restore your shower to perfect working condition.
             </p>
@@ -77,24 +73,24 @@ export function ShowerRepairReplacementContent() {
       </section>
 
       {/* Benefits Section */}
-      <section className="py-20 bg-gray-50">
+      <section className="py-10 sm:py-14 lg:py-20 bg-gray-50">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
-            className="text-center mb-16"
+            className="text-center mb-8 sm:mb-16"
           >
-            <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl mb-4">
+            <h2 className="text-xl sm:text-2xl font-bold tracking-tight text-gray-900 lg:text-4xl mb-3 sm:mb-4">
               Why Choose Our Shower Services?
             </h2>
-            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+            <p className="text-sm sm:text-xl text-gray-600 max-w-2xl mx-auto">
               Professional repair and replacement for all shower types
             </p>
           </motion.div>
 
-          <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
+          <div className="grid gap-4 sm:gap-6 grid-cols-2 lg:grid-cols-4 lg:gap-8">
             {[
               {
                 title: "Fix Leaks & Save Water",
@@ -123,15 +119,15 @@ export function ShowerRepairReplacementContent() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
-                className="rounded-2xl bg-white p-8 shadow-lg border border-gray-200"
+                className="rounded-xl sm:rounded-2xl bg-white p-4 sm:p-8 shadow-md sm:shadow-lg border border-gray-200"
               >
-                <div className="mb-4 inline-flex rounded-lg bg-[#EA5D19] p-3">
-                  <benefit.icon className="h-6 w-6 text-white" />
+                <div className="mb-3 sm:mb-4 inline-flex rounded-lg bg-[#EA5D19] p-2 sm:p-3">
+                  <benefit.icon className="h-4 w-4 sm:h-6 sm:w-6 text-white" />
                 </div>
-                <h3 className="text-xl font-bold text-gray-900 mb-3">
+                <h3 className="text-sm sm:text-xl font-bold text-gray-900 mb-2 sm:mb-3">
                   {benefit.title}
                 </h3>
-                <p className="text-gray-600">{benefit.description}</p>
+                <p className="text-xs sm:text-base text-gray-600">{benefit.description}</p>
               </motion.div>
             ))}
           </div>
@@ -139,7 +135,7 @@ export function ShowerRepairReplacementContent() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-r from-[#EA5D19] to-[#FF6E2E]">
+      <section className="py-10 sm:py-14 lg:py-20 bg-gradient-to-r from-[#EA5D19] to-[#FF6E2E]">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 text-center">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -147,26 +143,26 @@ export function ShowerRepairReplacementContent() {
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
           >
-            <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl mb-6">
+            <h2 className="text-xl sm:text-2xl font-bold tracking-tight text-white lg:text-4xl mb-4 sm:mb-6">
               Get a Free Estimate Today!
             </h2>
-            <p className="text-xl text-white/90 mb-8 max-w-2xl mx-auto">
+            <p className="text-sm sm:text-xl text-white/90 mb-5 sm:mb-8 max-w-2xl mx-auto">
               Don't let a faulty shower disrupt your routine. Contact us today for expert shower repair and replacement services.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center">
               <Link
                 href="tel:+18006974014"
-                className="inline-flex items-center justify-center gap-2 rounded-full bg-white px-8 py-4 text-lg font-semibold text-[#EA5D19] shadow-lg hover:shadow-xl transition-all duration-200 hover:scale-105"
+                className="inline-flex items-center justify-center gap-2 rounded-full bg-white px-5 py-3 sm:px-8 sm:py-4 text-sm sm:text-lg font-semibold text-[#EA5D19] shadow-lg hover:shadow-xl transition-all duration-200 hover:scale-105"
               >
-                <Phone className="h-5 w-5" />
+                <Phone className="h-4 w-4 sm:h-5 sm:w-5" />
                 (800) 697-4014
               </Link>
               <Link
                 href="/quote?category=Fixtures%20%26%20Appliances&service=Shower%20Repair%2FReplacement"
-                className="inline-flex items-center justify-center gap-2 rounded-full bg-[#11110E] px-8 py-4 text-lg font-semibold text-white shadow-lg hover:shadow-xl transition-all duration-200 hover:scale-105"
+                className="inline-flex items-center justify-center gap-2 rounded-full bg-[#11110E] px-5 py-3 sm:px-8 sm:py-4 text-sm sm:text-lg font-semibold text-white shadow-lg hover:shadow-xl transition-all duration-200 hover:scale-105"
               >
                 Get Free Quote
-                <ArrowRight className="h-5 w-5" />
+                <ArrowRight className="h-4 w-4 sm:h-5 sm:w-5" />
               </Link>
             </div>
           </motion.div>
@@ -174,98 +170,7 @@ export function ShowerRepairReplacementContent() {
       </section>
 
       {/* FAQ Section */}
-      <section className="py-20 bg-white">
-        <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.5 }}
-            className="text-center mb-16"
-          >
-            <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl mb-4">
-              Frequently Asked Questions
-            </h2>
-            <p className="text-xl text-gray-600">
-              Common questions about shower repair & replacement
-            </p>
-          </motion.div>
-
-          <Accordion type="single" collapsible className="space-y-4">
-            <AccordionItem value="item-1" className="border rounded-lg px-6 bg-gray-50">
-              <AccordionTrigger className="text-left text-lg font-semibold hover:text-[#EA5D19] transition-colors">
-                Why is my shower leaking even when it's turned off?
-              </AccordionTrigger>
-              <AccordionContent className="text-gray-600 text-base leading-relaxed">
-                A leak often comes from a worn out shower valve, cartridge, or seals. Replacing these parts stops the drip and prevents water waste. Leaks can also damage your bathroom if not fixed quickly.
-              </AccordionContent>
-            </AccordionItem>
-
-            <AccordionItem value="item-2" className="border rounded-lg px-6 bg-gray-50">
-              <AccordionTrigger className="text-left text-lg font-semibold hover:text-[#EA5D19] transition-colors">
-                How do I know if my shower valve needs replacing?
-              </AccordionTrigger>
-              <AccordionContent className="text-gray-600 text-base leading-relaxed">
-                If your shower leaks, has inconsistent temperatures or has low pressure despite cleaning, the valve may be too worn out. Replacing it fixes these issues and improves shower performance. A plumber can confirm if a replacement is needed.
-              </AccordionContent>
-            </AccordionItem>
-
-            <AccordionItem value="item-3" className="border rounded-lg px-6 bg-gray-50">
-              <AccordionTrigger className="text-left text-lg font-semibold hover:text-[#EA5D19] transition-colors">
-                What types of shower valves are there?
-              </AccordionTrigger>
-              <AccordionContent className="text-gray-600 text-base leading-relaxed">
-                Common types include single-handle, dual-handle, and thermostatic valves. Each controls water flow and temperature differently, with thermostatic valves offering precise temperature control. One of our plumbing technicians can recommend the best type for your shower.
-              </AccordionContent>
-            </AccordionItem>
-
-            <AccordionItem value="item-4" className="border rounded-lg px-6 bg-gray-50">
-              <AccordionTrigger className="text-left text-lg font-semibold hover:text-[#EA5D19] transition-colors">
-                Can a new shower valve save water?
-              </AccordionTrigger>
-              <AccordionContent className="text-gray-600 text-base leading-relaxed">
-                Modern shower valves, like thermostatic or low-flow models, use less water while maintaining pressure. Upgrading an old valve reduces water bills and helps the environment. Proper installation ensures maximum efficiency.
-              </AccordionContent>
-            </AccordionItem>
-
-            <AccordionItem value="item-5" className="border rounded-lg px-6 bg-gray-50">
-              <AccordionTrigger className="text-left text-lg font-semibold hover:text-[#EA5D19] transition-colors">
-                What causes low water pressure in my shower?
-              </AccordionTrigger>
-              <AccordionContent className="text-gray-600 text-base leading-relaxed">
-                Low pressure is usually due to mineral buildup in the shower head or a clogged shower valve. Cleaning or replacing the affected parts restores strong water flow. Sometimes, pipe issues may also need checking.
-              </AccordionContent>
-            </AccordionItem>
-
-            <AccordionItem value="item-6" className="border rounded-lg px-6 bg-gray-50">
-              <AccordionTrigger className="text-left text-lg font-semibold hover:text-[#EA5D19] transition-colors">
-                How long does a shower repair take?
-              </AccordionTrigger>
-              <AccordionContent className="text-gray-600 text-base leading-relaxed">
-                Most shower repairs, like fixing a valve or unclogging a drain, take 1-2 hours. Complex issues, like pipe problems, may take longer. Our plumbers work quickly to minimize disruption.
-              </AccordionContent>
-            </AccordionItem>
-
-            <AccordionItem value="item-7" className="border rounded-lg px-6 bg-gray-50">
-              <AccordionTrigger className="text-left text-lg font-semibold hover:text-[#EA5D19] transition-colors">
-                When should I replace my shower instead of repairing it?
-              </AccordionTrigger>
-              <AccordionContent className="text-gray-600 text-base leading-relaxed">
-                If your shower has frequent leaks, cracks, or an outdated design that wastes water, replacement is often better. A new shower improves efficiency and refreshes your bathroom. Repairs are best for minor, fixable issues.
-              </AccordionContent>
-            </AccordionItem>
-
-            <AccordionItem value="item-8" className="border rounded-lg px-6 bg-gray-50">
-              <AccordionTrigger className="text-left text-lg font-semibold hover:text-[#EA5D19] transition-colors">
-                Why does my shower water temperature keep changing?
-              </AccordionTrigger>
-              <AccordionContent className="text-gray-600 text-base leading-relaxed">
-                A faulty shower valve or cartridge can cause sudden hot or cold water shifts. Repairing or replacing the valve ensures steady, safe temperatures. Old valves may need updating for better performance.
-              </AccordionContent>
-            </AccordionItem>
-          </Accordion>
-        </div>
-      </section>
+      <FAQ category="showerRepair" subtitle="Common questions about shower repair & replacement" />
     </>
   );
 }

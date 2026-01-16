@@ -25,7 +25,8 @@ const menuStructure = {
     icon: Droplet,
     items: [
       { name: "Gas Water Heaters", href: "/gas-water-heaters", desc: "Traditional gas water heater installation", icon: Flame, featured: true },
-      { name: "Tankless Water Heaters", href: "/tankless-water-heaters", desc: "Energy-efficient on-demand hot water", icon: Zap, featured: true },
+      { name: "Electric Water Heaters", href: "/electric-water-heaters", desc: "Reliable electric heating solutions", icon: Zap, featured: true },
+      { name: "Tankless Water Heaters", href: "/tankless-water-heaters", desc: "Energy-efficient on-demand hot water", icon: Zap },
       { name: "Water Heater Flush", href: "/water-heater-flush", desc: "Maintenance and flushing services", icon: Settings },
       { name: "Heat Pump Water Heaters", href: "/heat-pump-water-heaters", desc: "Eco-friendly heat pump systems", icon: FlaskConical },
       { name: "Water Filtration Systems", href: "/water-filtration", desc: "Whole-house water filtration", icon: Filter },
@@ -54,8 +55,9 @@ const menuStructure = {
   Contact: {
     icon: Mail,
     items: [
+      { name: "Free Online Quote", href: "/quote", desc: "Get instant pricing", icon: Ticket, featured: true },
       { name: "About", href: "/about", desc: "Learn about our team", icon: Mail },
-      { name: "Free Online Quote", href: "/quote", desc: "Get instant pricing", icon: Phone },
+      { name: "Contact Us", href: "/contact", desc: "Get in touch with our team", icon: Phone },
       { name: "Discounts", href: "/discount-water-heaters", desc: "Get Water Heater Discounts", icon: Ticket },
       { name: "Service Area", href: "/service-area", desc: "Areas We Service", icon: MapIcon  }
     ],

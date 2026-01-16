@@ -4,43 +4,39 @@ import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { ArrowRight, Search, Phone, Shield, Clock } from "lucide-react";
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "@/components/ui/accordion";
+import { FAQ } from "@/components/home/FAQ";
 
 export function LeakDetectionServicesContent() {
   return (
     <>
       {/* Hero Section */}
-      <section className="relative overflow-hidden bg-gradient-to-b from-gray-50 to-white pt-20 pb-16 lg:pt-32 lg:pb-24">
+      <section className="relative overflow-hidden bg-gradient-to-b from-gray-50 to-white pt-12 pb-10 sm:pt-16 sm:pb-14 lg:pt-32 lg:pb-24">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="grid gap-12 lg:grid-cols-2 lg:gap-16 items-center">
+          <div className="grid gap-6 sm:gap-8 lg:grid-cols-2 lg:gap-16 items-center">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 }}
             >
-              <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl lg:text-6xl mb-6">
+              <h1 className="text-2xl font-bold tracking-tight text-gray-900 sm:text-3xl lg:text-5xl mb-3 lg:mb-6">
                 Leak Detection Services
               </h1>
-              <p className="text-xl text-gray-600 mb-6">
+              <p className="text-base sm:text-xl text-gray-600 mb-4 sm:mb-6">
                 Advanced Technology to Find Hidden Leaks Fast
               </p>
-              <p className="text-lg text-gray-700 leading-relaxed mb-4">
+              <p className="text-sm sm:text-lg text-gray-700 leading-relaxed mb-3 sm:mb-4">
                 Suspect a slab leak or hidden leak in your walls?
               </p>
-              <p className="text-lg text-gray-700 leading-relaxed mb-8">
+              <p className="text-sm sm:text-lg text-gray-700 leading-relaxed mb-5 sm:mb-8">
                 Hidden water leaks cause serious damage to foundations, walls, and floors while wasting water and driving up bills. Our advanced leak detection services use specialized equipment to locate leaks without destructive digging or wall removal.
               </p>
               <Link
                 href="/quote?category=Leak%20%26%20Water%20Services&service=Leak%20Detection"
-                className="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-[#EA5D19] to-[#FF6E2E] px-8 py-4 text-lg font-semibold text-white shadow-lg hover:shadow-xl transition-all duration-200 hover:scale-105"
+                className="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-[#EA5D19] to-[#FF6E2E] px-5 py-3 sm:px-8 sm:py-4 text-sm sm:text-lg font-semibold text-white shadow-lg hover:shadow-xl transition-all duration-200 hover:scale-105"
               >
-                Schedule an Appointment
-                <ArrowRight className="h-5 w-5" />
+                <span className="sm:hidden">Get Quote</span>
+                <span className="hidden sm:inline">Schedule an Appointment</span>
+                <ArrowRight className="h-4 w-4 sm:h-5 sm:w-5" />
               </Link>
             </motion.div>
 
@@ -50,7 +46,7 @@ export function LeakDetectionServicesContent() {
               transition={{ duration: 0.5, delay: 0.2 }}
               className="relative"
             >
-              <div className="relative h-[500px] w-full rounded-2xl overflow-hidden shadow-2xl">
+              <div className="relative h-[250px] sm:h-[350px] lg:h-[500px] w-full rounded-2xl lg:rounded-3xl overflow-hidden shadow-xl lg:shadow-2xl">
                 <Image
                   src="/placeholderimage.webp"
                   alt="Professional leak detection services"
@@ -62,7 +58,7 @@ export function LeakDetectionServicesContent() {
             </motion.div>
           </div>
 
-          <div className="mt-12 bg-white rounded-3xl shadow-lg border border-gray-200 p-8 space-y-6 text-lg leading-relaxed text-gray-700">
+          <div className="mt-8 sm:mt-12 bg-white rounded-2xl sm:rounded-3xl shadow-md sm:shadow-lg border border-gray-200 p-4 sm:p-8 space-y-4 sm:space-y-6 text-sm sm:text-lg leading-relaxed text-gray-700">
             <p>
               Leak detection services use advanced technology including acoustic listening devices, infrared cameras, moisture detectors, and video inspection equipment to locate hidden water leaks in walls, under slabs, and throughout your plumbing system without causing property damage. Signs of hidden leaks include unexplained water bill increases, damp or warm floor spots, reduced water pressure, cracks in floors or walls, musty odors, visible mold growth, and sounds of running water when fixtures are off. Our professional <Link href="/plumbing" className="text-[#EA5D19] hover:underline font-semibold">plumbing services</Link> quickly identify leak locations so repairs can begin immediately, preventing extensive damage and costly restoration work.
             </p>
@@ -77,24 +73,24 @@ export function LeakDetectionServicesContent() {
       </section>
 
       {/* Benefits Section */}
-      <section className="py-20 bg-gray-50">
+      <section className="py-10 sm:py-14 lg:py-20 bg-gray-50">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
-            className="text-center mb-16"
+            className="text-center mb-8 sm:mb-16"
           >
-            <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl mb-4">
+            <h2 className="text-xl sm:text-2xl font-bold tracking-tight text-gray-900 lg:text-4xl mb-3 sm:mb-4">
               Why Choose Professional Leak Detection?
             </h2>
-            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+            <p className="text-sm sm:text-xl text-gray-600 max-w-2xl mx-auto">
               Advanced technology finds leaks without damaging your property
             </p>
           </motion.div>
 
-          <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
+          <div className="grid gap-4 sm:gap-6 grid-cols-2 lg:grid-cols-4 lg:gap-8">
             {[
               {
                 title: "Non-Invasive Detection",
@@ -123,15 +119,15 @@ export function LeakDetectionServicesContent() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
-                className="rounded-2xl bg-white p-8 shadow-lg border border-gray-200"
+                className="rounded-xl sm:rounded-2xl bg-white p-4 sm:p-8 shadow-md sm:shadow-lg border border-gray-200"
               >
-                <div className="mb-4 inline-flex rounded-lg bg-[#EA5D19] p-3">
-                  <benefit.icon className="h-6 w-6 text-white" />
+                <div className="mb-3 sm:mb-4 inline-flex rounded-lg bg-[#EA5D19] p-2 sm:p-3">
+                  <benefit.icon className="h-4 w-4 sm:h-6 sm:w-6 text-white" />
                 </div>
-                <h3 className="text-xl font-bold text-gray-900 mb-3">
+                <h3 className="text-sm sm:text-xl font-bold text-gray-900 mb-2 sm:mb-3">
                   {benefit.title}
                 </h3>
-                <p className="text-gray-600">{benefit.description}</p>
+                <p className="text-xs sm:text-base text-gray-600">{benefit.description}</p>
               </motion.div>
             ))}
           </div>
@@ -139,7 +135,7 @@ export function LeakDetectionServicesContent() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-r from-[#EA5D19] to-[#FF6E2E]">
+      <section className="py-10 sm:py-14 lg:py-20 bg-gradient-to-r from-[#EA5D19] to-[#FF6E2E]">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 text-center">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -147,26 +143,26 @@ export function LeakDetectionServicesContent() {
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
           >
-            <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl mb-6">
+            <h2 className="text-xl sm:text-2xl font-bold tracking-tight text-white lg:text-4xl mb-4 sm:mb-6">
               Get a Free Estimate Today!
             </h2>
-            <p className="text-xl text-white/90 mb-8 max-w-2xl mx-auto">
+            <p className="text-sm sm:text-xl text-white/90 mb-5 sm:mb-8 max-w-2xl mx-auto">
               Don't let hidden leaks damage your home. Contact us today for professional leak detection and repair services.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center">
               <Link
                 href="tel:+18006974014"
-                className="inline-flex items-center justify-center gap-2 rounded-full bg-white px-8 py-4 text-lg font-semibold text-[#EA5D19] shadow-lg hover:shadow-xl transition-all duration-200 hover:scale-105"
+                className="inline-flex items-center justify-center gap-2 rounded-full bg-white px-5 py-3 sm:px-8 sm:py-4 text-sm sm:text-lg font-semibold text-[#EA5D19] shadow-lg hover:shadow-xl transition-all duration-200 hover:scale-105"
               >
-                <Phone className="h-5 w-5" />
+                <Phone className="h-4 w-4 sm:h-5 sm:w-5" />
                 (800) 697-4014
               </Link>
               <Link
                 href="/quote?category=Leak%20%26%20Water%20Services&service=Leak%20Detection"
-                className="inline-flex items-center justify-center gap-2 rounded-full bg-[#11110E] px-8 py-4 text-lg font-semibold text-white shadow-lg hover:shadow-xl transition-all duration-200 hover:scale-105"
+                className="inline-flex items-center justify-center gap-2 rounded-full bg-[#11110E] px-5 py-3 sm:px-8 sm:py-4 text-sm sm:text-lg font-semibold text-white shadow-lg hover:shadow-xl transition-all duration-200 hover:scale-105"
               >
                 Get Free Quote
-                <ArrowRight className="h-5 w-5" />
+                <ArrowRight className="h-4 w-4 sm:h-5 sm:w-5" />
               </Link>
             </div>
           </motion.div>
@@ -174,98 +170,7 @@ export function LeakDetectionServicesContent() {
       </section>
 
       {/* FAQ Section */}
-      <section className="py-20 bg-white">
-        <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.5 }}
-            className="text-center mb-16"
-          >
-            <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl mb-4">
-              Frequently Asked Questions
-            </h2>
-            <p className="text-xl text-gray-600">
-              Common questions about leak detection services
-            </p>
-          </motion.div>
-
-          <Accordion type="single" collapsible className="space-y-4">
-            <AccordionItem value="item-1" className="border rounded-lg px-6 bg-gray-50">
-              <AccordionTrigger className="text-left text-lg font-semibold hover:text-[#EA5D19] transition-colors">
-                What are leak detection services?
-              </AccordionTrigger>
-              <AccordionContent className="text-gray-600 text-base leading-relaxed">
-                Leak detection services use advanced tools like acoustic devices, infrared cameras, moisture detectors, and video inspection equipment to find hidden water leaks in your home's plumbing without tearing up property. We locate leaks in pipes, slabs, and walls with precision to prevent damage and save money through non-invasive methods.
-              </AccordionContent>
-            </AccordionItem>
-
-            <AccordionItem value="item-2" className="border rounded-lg px-6 bg-gray-50">
-              <AccordionTrigger className="text-left text-lg font-semibold hover:text-[#EA5D19] transition-colors">
-                Can leak detection find slab leaks under my foundation?
-              </AccordionTrigger>
-              <AccordionContent className="text-gray-600 text-base leading-relaxed">
-                Yes, our advanced tools including acoustic leak detection and infrared cameras are specifically designed to locate slab leaks hidden beneath your home's foundation. These leaks can be difficult to spot but cause serious damage if ignored, so professional detection is essential.
-              </AccordionContent>
-            </AccordionItem>
-
-            <AccordionItem value="item-3" className="border rounded-lg px-6 bg-gray-50">
-              <AccordionTrigger className="text-left text-lg font-semibold hover:text-[#EA5D19] transition-colors">
-                How long does a leak detection service take?
-              </AccordionTrigger>
-              <AccordionContent className="text-gray-600 text-base leading-relaxed">
-                Most leak detection jobs take one to two hours, depending on your home's size and the complexity of the issue. Once we locate the leak, we can often begin repairs immediately.
-              </AccordionContent>
-            </AccordionItem>
-
-            <AccordionItem value="item-4" className="border rounded-lg px-6 bg-gray-50">
-              <AccordionTrigger className="text-left text-lg font-semibold hover:text-[#EA5D19] transition-colors">
-                What happens after you find a leak?
-              </AccordionTrigger>
-              <AccordionContent className="text-gray-600 text-base leading-relaxed">
-                Once we locate the leak, our team explains the issue and recommends the best repair options like pipe rerouting, trenchless repairs, or targeted spot repairs. We work quickly to fix the leak, preventing further damage to your home with minimal hassle. You'll know exactly what's happening every step of the way.
-              </AccordionContent>
-            </AccordionItem>
-
-            <AccordionItem value="item-5" className="border rounded-lg px-6 bg-gray-50">
-              <AccordionTrigger className="text-left text-lg font-semibold hover:text-[#EA5D19] transition-colors">
-                Can leak detection help prevent mold in my home?
-              </AccordionTrigger>
-              <AccordionContent className="text-gray-600 text-base leading-relaxed">
-                Yes, leak detection prevents mold growth by finding hidden leaks that create damp conditions where mold thrives. Fixing leaks early keeps your home safe and healthy. We work fast to protect your property from costly mold remediation.
-              </AccordionContent>
-            </AccordionItem>
-
-            <AccordionItem value="item-6" className="border rounded-lg px-6 bg-gray-50">
-              <AccordionTrigger className="text-left text-lg font-semibold hover:text-[#EA5D19] transition-colors">
-                Will my water need to be shut off during leak detection?
-              </AccordionTrigger>
-              <AccordionContent className="text-gray-600 text-base leading-relaxed">
-                In most cases, we can perform leak detection without shutting off your water, using non-invasive tools like acoustic devices and infrared cameras. For certain pressure tests, we may briefly turn off water to get accurate results. We keep you informed and ensure your home stays functional during the process.
-              </AccordionContent>
-            </AccordionItem>
-
-            <AccordionItem value="item-7" className="border rounded-lg px-6 bg-gray-50">
-              <AccordionTrigger className="text-left text-lg font-semibold hover:text-[#EA5D19] transition-colors">
-                How often should I get leak detection done?
-              </AccordionTrigger>
-              <AccordionContent className="text-gray-600 text-base leading-relaxed">
-                You only need leak detection if you suspect a potential leak somewhere in your home or property. If you're unsure, call us for a pressure test to check if your plumbing systems are holding correctly. This quick test reveals whether leaks exist.
-              </AccordionContent>
-            </AccordionItem>
-
-            <AccordionItem value="item-8" className="border rounded-lg px-6 bg-gray-50">
-              <AccordionTrigger className="text-left text-lg font-semibold hover:text-[#EA5D19] transition-colors">
-                Can leak detection find leaks in walls or ceilings?
-              </AccordionTrigger>
-              <AccordionContent className="text-gray-600 text-base leading-relaxed">
-                Yes, our advanced tools including moisture detectors and infrared cameras can find leaks hidden in walls or ceilings without causing damage. These leaks often come from faulty pipes or fittings and can lead to mold or structural issues if ignored.
-              </AccordionContent>
-            </AccordionItem>
-          </Accordion>
-        </div>
-      </section>
+      <FAQ category="leakDetection" subtitle="Common questions about leak detection services" />
     </>
   );
 }

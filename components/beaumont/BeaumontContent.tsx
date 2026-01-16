@@ -4,20 +4,8 @@ import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { Check, Phone } from "lucide-react";
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "@/components/ui/accordion";
-
-const brands = [
-  { name: "Rheem", image: "/Rheem_logo-1.webp" },
-  { name: "Hajoca", image: "/hajoca-1.webp" },
-  { name: "Rinnai", image: "/rinnai-1.webp" },
-  { name: "Bradford White", image: "/Bradford-White-logo-1.webp" },
-  { name: "Navien", image: "/navien-1.webp" },
-];
+import { FAQ } from "@/components/home/FAQ";
+import { TrustedBrands } from "@/components/home/TrustedBrands";
 
 const plumbingServices = [
   {
@@ -99,33 +87,6 @@ const commonProblems = [
   },
 ];
 
-const faqs = [
-  {
-    question: "What brand of water heaters do you repair?",
-    answer: "Our team of skilled technicians specializes in repairing a variety of water heater brands, ensuring that your system is back up and running in no time. We have extensive experience working with some of the most popular and reliable brands in the industry, including Bradford White, A. O. Smith, Rheem, Kenmore, and Whirlpool. Our expertise allows us to quickly diagnose and fix issues, no matter the make or model of your water heater.",
-  },
-  {
-    question: "Can you fix a water heater that is leaking?",
-    answer: "The source of a leak in your gas water heater can significantly impact the necessary course of action. If the leak originates from the tank itself, it's likely due to internal corrosion, which, unfortunately, means the tank will need to be replaced. On the other hand, if the leak is coming from a water line or valve, we can typically repair or replace the part causing the issue. This targeted approach not only saves time but also helps reduce repair costs. Our experienced technicians will carefully inspect your water heater to determine the source of the leak and provide you with the most effective solution.",
-  },
-  {
-    question: "How long should a residential water heater last?",
-    answer: "The lifespan of a gas water heater can vary significantly, generally ranging from 7 to 15 years. Several factors can influence this timeline, including the quality of your water supply and the level of maintenance your water heater receives. Poor water quality can accelerate corrosion and rust, significantly shortening your water heater's lifespan. Conversely, regular maintenance can extend its life and ensure optimal performance. Our team can assist with routine maintenance, including flushing out sediment and checking for signs of corrosion, to help keep your water heater in top condition for as long as possible.",
-  },
-  {
-    question: "Should I switch to a tankless water heater?",
-    answer: "Upgrading from a traditional tank water heater to a more efficient tankless model can be a wise investment that can lead to significant savings on your utility bills over time. While the initial cost of installing a tankless water heater may be higher than a traditional tank model, the long‑term benefits of energy efficiency and cost savings can make it a worthwhile investment. Our experienced plumbing technicians can assess your situation and provide customized solutions tailored to your home's needs. We will conduct a thorough evaluation of your hot water usage, the condition of your current water heater, and your budget to determine the best course of action. Whether you need a new tankless water heater installed or repairs to your existing system, we have the expertise to handle it all.",
-  },
-  {
-    question: "Why is the city of Beaumont stopping gas water heater sales?",
-    answer: "In an effort to improve air quality and reduce greenhouse gas emissions, California is taking steps to phase out gas‑powered appliances in homes. As part of this initiative, the state will ban the purchase of new gas water heaters starting in 2030. This means that homeowners will need to consider alternative options, such as electric or heat pump water heaters when it comes time to replace their existing gas‑powered units. Our team of experienced technicians can help you navigate this transition and determine the best solution for your home. We can provide expert advice and professional installation services if you're interested in a traditional electric water heater or a more efficient heat pump water heater.",
-  },
-  {
-    question: "What other type of plumbing stuff do you do?",
-    answer: "At Water Heater SOS we are not just about water heaters. We are your go‑to for all plumbing fixes! We repair dripping faucets, clogged drains, leaky pipes, leak detection services, toilets, showers, garbage disposals, and more. Plus, we're pros at fixing or installing gas, electric, and tankless water heaters to make sure you've got hot water.",
-  },
-];
-
 export function BeaumontContent() {
   return (
     <>
@@ -144,7 +105,7 @@ export function BeaumontContent() {
                 Beaumont Plumbing Experts
               </span>
 
-              <h1 className="text-4xl font-bold text-[#11110E] sm:text-5xl lg:text-6xl mb-6">
+              <h1 className="text-3xl font-bold text-[#11110E] sm:text-4xl lg:text-5xl mb-4 lg:mb-6">
                 Beaumont Plumbers & Water Heater Repair
               </h1>
 
@@ -205,7 +166,7 @@ export function BeaumontContent() {
             transition={{ duration: 0.6 }}
             className="text-center mb-14"
           >
-            <h2 className="text-4xl sm:text-5xl font-extrabold text-[#11110E] mb-6">
+            <h2 className="text-2xl sm:text-3xl lg:text-5xl font-extrabold text-[#11110E] mb-4 lg:mb-6">
               Our Beaumont Plumbing Services
             </h2>
             <div className="h-1 w-20 bg-[#EA5D19] mx-auto rounded-full mb-6" />
@@ -256,7 +217,7 @@ export function BeaumontContent() {
             transition={{ duration: 0.6 }}
             className="text-center mb-14"
           >
-            <h2 className="text-4xl sm:text-5xl font-extrabold text-[#11110E] mb-6">
+            <h2 className="text-2xl sm:text-3xl lg:text-5xl font-extrabold text-[#11110E] mb-4 lg:mb-6">
               Common Water Heater Problems
             </h2>
             <div className="h-1 w-20 bg-[#EA5D19] mx-auto rounded-full" />
@@ -314,89 +275,10 @@ export function BeaumontContent() {
       </section>
 
       {/* Trusted Brands Section */}
-      <section className="bg-gray-50 py-16 lg:py-24">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-            viewport={{ once: true }}
-            className="mx-auto max-w-7xl text-center relative z-20"
-          >
-            <h2 className="text-3xl font-bold text-[#11110E] sm:text-4xl mb-8">
-              Trusted Brands
-            </h2>
-            <div className="h-1 w-20 bg-[#EA5D19] mx-auto rounded-full mb-8" />
-            <div className="grid grid-cols-2 gap-6 md:grid-cols-3 lg:grid-cols-5 items-center relative z-20 min-h-[120px]">
-              {brands.map((brand, index) => (
-                <motion.div
-                  key={brand.name}
-                  initial={{ opacity: 0, scale: 0.85 }}
-                  whileInView={{ opacity: 1, scale: 1 }}
-                  transition={{ duration: 0.5, delay: index * 0.1 }}
-                  viewport={{ once: true }}
-                  className="flex items-center justify-center grayscale hover:grayscale-0 transition-all duration-300"
-                >
-                  <div className="relative h-20 w-28 mx-auto z-20">
-                    <Image
-                      src={brand.image}
-                      alt={`${brand.name} logo - trusted water heater brand`}
-                      fill
-                      sizes="100px"
-                      className="object-contain z-20"
-                    />
-                  </div>
-                </motion.div>
-              ))}
-            </div>
-          </motion.div>
-        </div>
-      </section>
+      <TrustedBrands className="bg-gray-50" />
 
       {/* FAQ Section */}
-      <section className="py-16 lg:py-24">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-            viewport={{ once: true }}
-            className="mx-auto max-w-5xl"
-          >
-            <h2 className="text-5xl font-bold text-[#11110E] sm:text-4xl mb-8 text-center">
-              Frequently Asked Questions
-            </h2>
-            <Accordion type="single" collapsible className="space-y-4">
-              {faqs.map((faq, index) => (
-                <motion.div
-                  key={index}
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.5, delay: index * 0.05 }}
-                  viewport={{ once: true }}
-                >
-                  <AccordionItem
-                    value={`item-${index}`}
-                    className="rounded-2xl bg-white px-6 shadow-md border-0"
-                  >
-                    <AccordionTrigger className="text-left font-semibold text-[#11110E] hover:text-[#EA5D19] py-6">
-                      <span className="flex-shrink-0 mr-2 text-[#EA5D19] font-bold">
-                        {String(index + 1).padStart(2, "0")}
-                      </span>
-                      <span className="flex-grow text-collapse-fix">
-                        {faq.question}
-                      </span>
-                    </AccordionTrigger>
-                    <AccordionContent className="text-gray-700 pb-6">
-                      {faq.answer}
-                    </AccordionContent>
-                  </AccordionItem>
-                </motion.div>
-              ))}
-            </Accordion>
-          </motion.div>
-        </div>
-      </section>
+      <FAQ category="beaumont" />
     </>
   );
 }

@@ -4,43 +4,39 @@ import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { ArrowRight, Wind, Phone, Heart, Flame } from "lucide-react";
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "@/components/ui/accordion";
+import { FAQ } from "@/components/home/FAQ";
 
 export function AirDuctCleaningContent() {
   return (
     <>
       {/* Hero Section */}
-      <section className="relative overflow-hidden bg-gradient-to-b from-gray-50 to-white pt-20 pb-16 lg:pt-32 lg:pb-24">
+      <section className="relative overflow-hidden bg-gradient-to-b from-gray-50 to-white pt-12 pb-10 sm:pt-16 sm:pb-14 lg:pt-32 lg:pb-24">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="grid gap-12 lg:grid-cols-2 lg:gap-16 items-center">
+          <div className="grid gap-6 sm:gap-8 lg:grid-cols-2 lg:gap-16 items-center">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 }}
             >
-              <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl lg:text-6xl mb-6">
+              <h1 className="text-2xl font-bold tracking-tight text-gray-900 sm:text-3xl lg:text-5xl mb-3 lg:mb-6">
                 Air Duct & Dryer Vent Cleaning
               </h1>
-              <p className="text-xl text-gray-600 mb-6">
+              <p className="text-base sm:text-xl text-gray-600 mb-4 sm:mb-6">
                 Professional Vent Cleaning for Safer, Healthier Homes
               </p>
-              <p className="text-lg text-gray-700 leading-relaxed mb-4">
+              <p className="text-sm sm:text-lg text-gray-700 leading-relaxed mb-3 sm:mb-4">
                 Experiencing poor air quality, high energy bills, or slow dryer performance?
               </p>
-              <p className="text-lg text-gray-700 leading-relaxed mb-8">
+              <p className="text-sm sm:text-lg text-gray-700 leading-relaxed mb-5 sm:mb-8">
                 Dirty air ducts and clogged dryer vents reduce efficiency, worsen allergies, and create fire hazards. Our expert cleaning services improve indoor air quality, lower energy costs, and protect your home from dangerous lint buildup.
               </p>
               <Link
                 href="/quote?category=Gas%20%26%20Other%20Services&service=Air%20Duct%20Cleaning"
-                className="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-[#EA5D19] to-[#FF6E2E] px-8 py-4 text-lg font-semibold text-white shadow-lg hover:shadow-xl transition-all duration-200 hover:scale-105"
+                className="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-[#EA5D19] to-[#FF6E2E] px-5 py-3 sm:px-8 sm:py-4 text-sm sm:text-lg font-semibold text-white shadow-lg hover:shadow-xl transition-all duration-200 hover:scale-105"
               >
-                Schedule an Appointment
-                <ArrowRight className="h-5 w-5" />
+                <span className="sm:hidden">Get Quote</span>
+                <span className="hidden sm:inline">Schedule an Appointment</span>
+                <ArrowRight className="h-4 w-4 sm:h-5 sm:w-5" />
               </Link>
             </motion.div>
 
@@ -50,7 +46,7 @@ export function AirDuctCleaningContent() {
               transition={{ duration: 0.5, delay: 0.2 }}
               className="relative"
             >
-              <div className="relative h-[500px] w-full rounded-2xl overflow-hidden shadow-2xl">
+              <div className="relative h-[250px] sm:h-[350px] lg:h-[500px] w-full rounded-2xl lg:rounded-3xl overflow-hidden shadow-xl lg:shadow-2xl">
                 <Image
                   src="/placeholderimage.webp"
                   alt="Professional air duct and dryer vent cleaning services"
@@ -62,7 +58,7 @@ export function AirDuctCleaningContent() {
             </motion.div>
           </div>
 
-          <div className="mt-12 bg-white rounded-3xl shadow-lg border border-gray-200 p-8 space-y-6 text-lg leading-relaxed text-gray-700">
+          <div className="mt-8 sm:mt-12 bg-white rounded-2xl sm:rounded-3xl shadow-md sm:shadow-lg border border-gray-200 p-4 sm:p-8 space-y-4 sm:space-y-6 text-sm sm:text-lg leading-relaxed text-gray-700">
             <p>
               Your home's air ducts and dryer vents play critical roles in comfort, safety, and efficiency, but over time they accumulate dust, allergens, pet dander, mold spores, and lint that reduce air quality and create hazards. Dirty air ducts circulate contaminants throughout your home with every HVAC cycle, triggering allergies, asthma, and respiratory issues while forcing your heating and cooling systems to work harder, raising energy bills. Professional air duct cleaning removes years of buildup, improving indoor air quality and HVAC efficiency.
             </p>
@@ -77,24 +73,24 @@ export function AirDuctCleaningContent() {
       </section>
 
       {/* Benefits Section */}
-      <section className="py-20 bg-gray-50">
+      <section className="py-10 sm:py-14 lg:py-20 bg-gray-50">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
-            className="text-center mb-16"
+            className="text-center mb-8 sm:mb-16"
           >
-            <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl mb-4">
+            <h2 className="text-xl sm:text-2xl font-bold tracking-tight text-gray-900 lg:text-4xl mb-3 sm:mb-4">
               Why Choose Professional Vent Cleaning?
             </h2>
-            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+            <p className="text-sm sm:text-xl text-gray-600 max-w-2xl mx-auto">
               Cleaner air, safer homes, and lower energy costs
             </p>
           </motion.div>
 
-          <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
+          <div className="grid gap-4 sm:gap-6 grid-cols-2 lg:grid-cols-4 lg:gap-8">
             {[
               {
                 title: "Improve Air Quality",
@@ -123,15 +119,15 @@ export function AirDuctCleaningContent() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
-                className="rounded-2xl bg-white p-8 shadow-lg border border-gray-200"
+                className="rounded-xl sm:rounded-2xl bg-white p-4 sm:p-8 shadow-md sm:shadow-lg border border-gray-200"
               >
-                <div className="mb-4 inline-flex rounded-lg bg-[#EA5D19] p-3">
-                  <benefit.icon className="h-6 w-6 text-white" />
+                <div className="mb-3 sm:mb-4 inline-flex rounded-lg bg-[#EA5D19] p-2 sm:p-3">
+                  <benefit.icon className="h-4 w-4 sm:h-6 sm:w-6 text-white" />
                 </div>
-                <h3 className="text-xl font-bold text-gray-900 mb-3">
+                <h3 className="text-sm sm:text-xl font-bold text-gray-900 mb-2 sm:mb-3">
                   {benefit.title}
                 </h3>
-                <p className="text-gray-600">{benefit.description}</p>
+                <p className="text-xs sm:text-base text-gray-600">{benefit.description}</p>
               </motion.div>
             ))}
           </div>
@@ -139,7 +135,7 @@ export function AirDuctCleaningContent() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-r from-[#EA5D19] to-[#FF6E2E]">
+      <section className="py-10 sm:py-14 lg:py-20 bg-gradient-to-r from-[#EA5D19] to-[#FF6E2E]">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 text-center">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -147,26 +143,26 @@ export function AirDuctCleaningContent() {
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
           >
-            <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl mb-6">
+            <h2 className="text-xl sm:text-2xl font-bold tracking-tight text-white lg:text-4xl mb-4 sm:mb-6">
               Get a Free Estimate Today!
             </h2>
-            <p className="text-xl text-white/90 mb-8 max-w-2xl mx-auto">
+            <p className="text-sm sm:text-xl text-white/90 mb-5 sm:mb-8 max-w-2xl mx-auto">
               Don't wait to improve your home's air quality and safety. Contact us today for professional air duct and dryer vent cleaning services.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center">
               <Link
                 href="tel:+18006974014"
-                className="inline-flex items-center justify-center gap-2 rounded-full bg-white px-8 py-4 text-lg font-semibold text-[#EA5D19] shadow-lg hover:shadow-xl transition-all duration-200 hover:scale-105"
+                className="inline-flex items-center justify-center gap-2 rounded-full bg-white px-5 py-3 sm:px-8 sm:py-4 text-sm sm:text-lg font-semibold text-[#EA5D19] shadow-lg hover:shadow-xl transition-all duration-200 hover:scale-105"
               >
-                <Phone className="h-5 w-5" />
+                <Phone className="h-4 w-4 sm:h-5 sm:w-5" />
                 (800) 697-4014
               </Link>
               <Link
                 href="/quote?category=Gas%20%26%20Other%20Services&service=Air%20Duct%20Cleaning"
-                className="inline-flex items-center justify-center gap-2 rounded-full bg-[#11110E] px-8 py-4 text-lg font-semibold text-white shadow-lg hover:shadow-xl transition-all duration-200 hover:scale-105"
+                className="inline-flex items-center justify-center gap-2 rounded-full bg-[#11110E] px-5 py-3 sm:px-8 sm:py-4 text-sm sm:text-lg font-semibold text-white shadow-lg hover:shadow-xl transition-all duration-200 hover:scale-105"
               >
                 Get Free Quote
-                <ArrowRight className="h-5 w-5" />
+                <ArrowRight className="h-4 w-4 sm:h-5 sm:w-5" />
               </Link>
             </div>
           </motion.div>
@@ -174,62 +170,7 @@ export function AirDuctCleaningContent() {
       </section>
 
       {/* FAQ Section */}
-      <section className="py-20 bg-white">
-        <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.5 }}
-            className="text-center mb-16"
-          >
-            <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl mb-4">
-              Frequently Asked Questions
-            </h2>
-            <p className="text-xl text-gray-600">
-              Common questions about air duct & dryer vent cleaning
-            </p>
-          </motion.div>
-
-          <Accordion type="single" collapsible className="space-y-4">
-            <AccordionItem value="item-1" className="border rounded-lg px-6 bg-gray-50">
-              <AccordionTrigger className="text-left text-lg font-semibold hover:text-[#EA5D19] transition-colors">
-                How often should I have my dryer vent cleaned?
-              </AccordionTrigger>
-              <AccordionContent className="text-gray-600 text-base leading-relaxed">
-                We recommend dryer vent cleaning at least once a year. However, if you do a lot of laundry, have a large family, or notice your dryer taking longer to dry clothes, you may need more frequent cleanings. Regular cleaning prevents lint buildup, reduces fire risk, and improves dryer efficiency.
-              </AccordionContent>
-            </AccordionItem>
-
-            <AccordionItem value="item-2" className="border rounded-lg px-6 bg-gray-50">
-              <AccordionTrigger className="text-left text-lg font-semibold hover:text-[#EA5D19] transition-colors">
-                What are the signs that my air ducts need cleaning?
-              </AccordionTrigger>
-              <AccordionContent className="text-gray-600 text-base leading-relaxed">
-                Common signs include visible dust buildup around vents, musty odors when your HVAC system runs, increased allergy symptoms, inconsistent airflow between rooms, and higher energy bills. If you've recently moved into a new home or completed renovations, it's also a good time for professional air duct cleaning.
-              </AccordionContent>
-            </AccordionItem>
-
-            <AccordionItem value="item-3" className="border rounded-lg px-6 bg-gray-50">
-              <AccordionTrigger className="text-left text-lg font-semibold hover:text-[#EA5D19] transition-colors">
-                Will air duct cleaning help with my allergies?
-              </AccordionTrigger>
-              <AccordionContent className="text-gray-600 text-base leading-relaxed">
-                Yes, professional air duct cleaning significantly improves indoor air quality by removing dust, pollen, pet dander, mold spores, and other allergens that accumulate in your HVAC system. This can help reduce allergy symptoms and create a healthier living environment for you and your family.
-              </AccordionContent>
-            </AccordionItem>
-
-            <AccordionItem value="item-4" className="border rounded-lg px-6 bg-gray-50">
-              <AccordionTrigger className="text-left text-lg font-semibold hover:text-[#EA5D19] transition-colors">
-                Do you offer both dryer vent cleaning and air duct cleaning?
-              </AccordionTrigger>
-              <AccordionContent className="text-gray-600 text-base leading-relaxed">
-                Yes, we offer both services. Formerly known as Vent Gator, we've provided professional vent cleaning for years. Our skilled technicians deliver reliable, professional service with transparent pricing and no hidden fees. Whether you need air duct or dryer vent cleaning, we're your local experts dedicated to keeping your home safe and efficient.
-              </AccordionContent>
-            </AccordionItem>
-          </Accordion>
-        </div>
-      </section>
+      <FAQ category="airDuctCleaning" subtitle="Common questions about air duct & dryer vent cleaning" />
     </>
   );
 }

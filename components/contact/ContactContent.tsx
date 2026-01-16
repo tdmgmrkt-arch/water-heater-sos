@@ -48,7 +48,7 @@ export function ContactContent() {
             <span className="inline-block px-4 py-1 rounded-full bg-[#EA5D19] text-sm text-white font-semibold mb-4 tracking-wide">
               Get In Touch
             </span>
-            <h1 className="text-4xl font-extrabold text-[#11110E] sm:text-5xl lg:text-6xl mb-4 leading-tight">
+            <h1 className="text-3xl font-extrabold text-[#11110E] sm:text-4xl lg:text-5xl mb-4 leading-tight">
               Contact <span className="text-[#EA5D19]">Us</span>
             </h1>
             <p className="text-xl text-gray-600 leading-relaxed max-w-2xl mx-auto">
