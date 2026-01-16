@@ -28,7 +28,8 @@
       "Bash(timeout /t 10 /nobreak)",
       "Bash(if not exist \"app\\discount-water-heaters\" mkdir \"app\\discount-water-heaters\")",
       "Bash(findstr:*)",
-      "Bash(powershell -Command:*)"
+      "Bash(powershell -Command:*)",
+      "Bash(find:*)"
     ],
     "deny": [],
     "ask": []

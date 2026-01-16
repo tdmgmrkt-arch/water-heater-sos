@@ -33,7 +33,7 @@ export function MenifeeContent() {
                 Plumbing Services for Your Menifee, CA Home
               </p>
               <p className="text-lg text-gray-700 leading-relaxed mb-8">
-                A backed‑up drain or a dripping faucet can throw off your routine. Water Heater SOS in Menifee fixes these issues fast. Our brand‑certified technicians clear <Link href="/toilet-repair-replacement" className="text-[#EA5D19] hover:underline font-semibold">toilet clogs</Link>, clean drains, repair showers, and restore <Link href="/garbage-disposal" className="text-[#EA5D19] hover:underline font-semibold">garbage disposals</Link>. Spot a water leak, gas leak, or slab leak? We act quickly to protect your home.
+                A backed‑up drain or a dripping faucet can throw off your routine. Water Heater SOS in Menifee fixes these issues fast. Our brand‑certified technicians clear <Link href="/toilet-repair-replacement" className="text-[#EA5D19] hover:underline font-semibold">toilet clogs</Link>, clean drains, repair showers, and restore <Link href="/garbage-disposal-repair-replacement" className="text-[#EA5D19] hover:underline font-semibold">garbage disposals</Link>. Spot a water leak, gas leak, or slab leak? We act quickly to protect your home.
               </p>
               <Link
                 href="/quote"
@@ -64,10 +64,10 @@ export function MenifeeContent() {
 
           <div className="mt-12 bg-white rounded-3xl shadow-lg border border-gray-200 p-8 space-y-6 text-lg leading-relaxed text-gray-700">
             <p>
-              Our <Link href="/leak-detection-services" className="text-[#EA5D19] hover:underline font-semibold">leak detection</Link> services find hidden problems, and our <Link href="/repiping" className="text-[#EA5D19] hover:underline font-semibold">whole‑house repipe</Link> keeps your plumbing strong. As the homeowner, you need reliable plumbing. Water Heater SOS provides emergency service to fix or replace your plumbing emergency. We offer routine maintenance to stop issues before they start, keeping your pipes in great shape.
+              Our <Link href="/leak-detection-services" className="text-[#EA5D19] hover:underline font-semibold">leak detection</Link> services find hidden problems, and our <Link href="/whole-house-repipe" className="text-[#EA5D19] hover:underline font-semibold">whole‑house repipe</Link> keeps your plumbing strong. As the homeowner, you need reliable plumbing. Water Heater SOS provides emergency service to fix or replace your plumbing emergency. We offer routine maintenance to stop issues before they start, keeping your pipes in great shape.
             </p>
             <p>
-              Our team shows up with fully stocked trucks, ready for small fixes or big installations. Menifee homeowners pick us for fair prices and military or senior discounts that show we care about our community. Stepping into a freezing shower can start your day wrong. Water Heater SOS focuses on <Link href="/water-heater-repair" className="text-[#EA5D19] hover:underline font-semibold">water heater repair</Link>, bringing back your hot water fast.
+              Our team shows up with fully stocked trucks, ready for small fixes or big installations. Menifee homeowners pick us for fair prices and military or senior discounts that show we care about our community. Stepping into a freezing shower can start your day wrong. Water Heater SOS focuses on <Link href="/gas-water-heaters" className="text-[#EA5D19] hover:underline font-semibold">water heater repair</Link>, bringing back your hot water fast.
             </p>
             <p>
               Our skilled technicians, trained on all major brands, pinpoint problems quickly and often fix your system within hours. From corroded tanks to broken thermostats, we handle every issue with accuracy. For <Link href="/tankless-water-heaters" className="text-[#EA5D19] hover:underline font-semibold">tankless units</Link>, we optimize performance to cut your energy costs and keep water hot. You enjoy reliable hot water without delay.

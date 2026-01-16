@@ -1,5 +1,6 @@
 import { ContactContent } from "@/components/contact/ContactContent";
 import type { Metadata } from "next";
+import { Suspense } from "react";
 
 export const metadata: Metadata = {
   title: "Contact Us | Water Heater SOS | 24/7 Service Available",
@@ -13,5 +14,9 @@ export const metadata: Metadata = {
 };
 
 export default function ContactPage() {
-  return <ContactContent />;
+  return (
+    <Suspense fallback={<div className="min-h-screen" />}>
+      <ContactContent />
+    </Suspense>
+  );
 }

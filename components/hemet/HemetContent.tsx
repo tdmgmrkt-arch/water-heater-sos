@@ -33,7 +33,7 @@ export function HemetContent() {
                 Fast Response Plumbing Company in Hemet, CA
               </p>
               <p className="text-lg text-gray-700 leading-relaxed mb-8">
-                Water Heater SOS is a family‑run plumbing business serving Hemet. We fix leaky pipes, blocked drains, <Link href="/toilet-repair-replacement" className="text-[#EA5D19] hover:underline font-semibold">toilet repairs</Link>, shower fixes, <Link href="/garbage-disposal" className="text-[#EA5D19] hover:underline font-semibold">garbage disposal</Link> issues and slab leak detection, offering fair prices and skilled service. We also handle <Link href="/repiping" className="text-[#EA5D19] hover:underline font-semibold">whole‑house repipes</Link> and <Link href="/drain-cleaning" className="text-[#EA5D19] hover:underline font-semibold">drain cleaning</Link>.
+                Water Heater SOS is a family‑run plumbing business serving Hemet. We fix leaky pipes, blocked drains, <Link href="/toilet-repair-replacement" className="text-[#EA5D19] hover:underline font-semibold">toilet repairs</Link>, shower fixes, <Link href="/garbage-disposal-repair-replacement" className="text-[#EA5D19] hover:underline font-semibold">garbage disposal</Link> issues and slab leak detection, offering fair prices and skilled service. We also handle <Link href="/whole-house-repipe" className="text-[#EA5D19] hover:underline font-semibold">whole‑house repipes</Link> and <Link href="/drain-cleaning" className="text-[#EA5D19] hover:underline font-semibold">drain cleaning</Link>.
               </p>
               <Link
                 href="/quote"

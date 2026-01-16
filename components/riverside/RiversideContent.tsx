@@ -33,7 +33,7 @@ export function RiversideContent() {
                 Plumbing Company in Riverside, CA
               </p>
               <p className="text-lg text-gray-700 leading-relaxed mb-8">
-                Water Heater SOS is a family‑owned plumbing company ready to fix any problem you've got. No job is too big or too small—from unclogging drains to fixing <Link href="/water-heater-repair" className="text-[#EA5D19] hover:underline font-semibold">water heaters</Link>—and we treat every home like it's our own. Our friendly Riverside plumbers know their stuff and work hard to get your plumbing back in shape fast.
+                Water Heater SOS is a family‑owned plumbing company ready to fix any problem you've got. No job is too big or too small—from unclogging drains to fixing <Link href="/gas-water-heaters" className="text-[#EA5D19] hover:underline font-semibold">water heaters</Link>—and we treat every home like it's our own. Our friendly Riverside plumbers know their stuff and work hard to get your plumbing back in shape fast.
               </p>
               <Link
                 href="/quote"
@@ -67,7 +67,7 @@ export function RiversideContent() {
               We're experts at fixing water heaters when they leak or stop heating, getting your hot showers and clean dishes back in no time. But we do a lot more than that! We offer <Link href="/drain-cleaning" className="text-[#EA5D19] hover:underline font-semibold">drain cleaning services</Link> that clear clogs in sinks, tubs or showers caused by hair or grease. We fix dripping <Link href="/faucet-repair-replacement" className="text-[#EA5D19] hover:underline font-semibold">faucets</Link> to save water and lower your bills, and repair <Link href="/toilet-repair-replacement" className="text-[#EA5D19] hover:underline font-semibold">toilets</Link> that won't flush or keep running.
             </p>
             <p>
-              Our pipe leak repair service mends leaky pipes to prevent water damage, while our sewer line cleaning clears blocked sewer lines to stop smelly backups. We use advanced <Link href="/leak-detection-services" className="text-[#EA5D19] hover:underline font-semibold">leak detection services</Link> to locate slab or wall leaks with advanced equipment. For homes with old plumbing, our <Link href="/repiping" className="text-[#EA5D19] hover:underline font-semibold">whole‑house repipe</Link> service replaces old pipes for cleaner, faster‑flowing water. We also install or fix showers for a fresh look.
+              Our pipe leak repair service mends leaky pipes to prevent water damage, while our sewer line cleaning clears blocked sewer lines to stop smelly backups. We use advanced <Link href="/leak-detection-services" className="text-[#EA5D19] hover:underline font-semibold">leak detection services</Link> to locate slab or wall leaks with advanced equipment. For homes with old plumbing, our <Link href="/whole-house-repipe" className="text-[#EA5D19] hover:underline font-semibold">whole‑house repipe</Link> service replaces old pipes for cleaner, faster‑flowing water. We also install or fix showers for a fresh look.
             </p>
             <p>
               We service the greater Riverside area, including Jurupa Valley, Norco, Eastvale, Lake Elsinore, Menifee, Murrieta and Temecula. If you aren't sure if we service your city, call or text us at (800) 697‑4014.

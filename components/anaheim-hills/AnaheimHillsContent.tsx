@@ -33,7 +33,7 @@ export function AnaheimHillsContent() {
                 Quality Plumbing Services in Anaheim Hills
               </p>
               <p className="text-lg text-gray-700 leading-relaxed mb-8">
-                Plumbing troubles? We at Water Heater SOS fix them fast. Our family‑run team in Anaheim Hills brings years of skill to every job. We handle all plumbing repairs and installations with care. From unclogging <Link href="/toilet-repair-replacement" className="text-[#EA5D19] hover:underline font-semibold">toilets</Link> to <Link href="/repiping" className="text-[#EA5D19] hover:underline font-semibold">repiping your whole house</Link>, we get it done right.
+                Plumbing troubles? We at Water Heater SOS fix them fast. Our family‑run team in Anaheim Hills brings years of skill to every job. We handle all plumbing repairs and installations with care. From unclogging <Link href="/toilet-repair-replacement" className="text-[#EA5D19] hover:underline font-semibold">toilets</Link> to <Link href="/whole-house-repipe" className="text-[#EA5D19] hover:underline font-semibold">repiping your whole house</Link>, we get it done right.
               </p>
               <Link
                 href="/quote"
@@ -64,13 +64,13 @@ export function AnaheimHillsContent() {
 
           <div className="mt-12 bg-white rounded-3xl shadow-lg border border-gray-200 p-8 space-y-6 text-lg leading-relaxed text-gray-700">
             <p>
-              Our plumbers tackle <Link href="/drain-cleaning" className="text-[#EA5D19] hover:underline font-semibold">drain cleaning</Link>, shower fixes, <Link href="/garbage-disposal" className="text-[#EA5D19] hover:underline font-semibold">garbage disposals</Link>, gas leaks, water leaks and slab leaks. Every task matters to us. We offer complete plumbing solutions. Our <Link href="/leak-detection-services" className="text-[#EA5D19] hover:underline font-semibold">leak‑detection service</Link> finds hidden water loss quickly. We clear blocked drains and repair broken garbage disposals.
+              Our plumbers tackle <Link href="/drain-cleaning" className="text-[#EA5D19] hover:underline font-semibold">drain cleaning</Link>, shower fixes, <Link href="/garbage-disposal-repair-replacement" className="text-[#EA5D19] hover:underline font-semibold">garbage disposals</Link>, gas leaks, water leaks and slab leaks. Every task matters to us. We offer complete plumbing solutions. Our <Link href="/leak-detection-services" className="text-[#EA5D19] hover:underline font-semibold">leak‑detection service</Link> finds hidden water loss quickly. We clear blocked drains and repair broken garbage disposals.
             </p>
             <p>
               Got a gas leak or a shower that won't work? We act fast to keep your home safe. For big projects like water‑line replacements or whole‑house repipes, we ensure strong, lasting results. Emergency plumbing issue? Call us—we're ready to help.
             </p>
             <p>
-              We excel at fixing traditional tank and <Link href="/tankless-water-heaters" className="text-[#EA5D19] hover:underline font-semibold">tankless water heaters</Link>. If your tank heater leaks or stops heating, we find the problem and repair it fast. For tankless units, we fix issues such as uneven water temperatures or weak flow. Our team ensures your <Link href="/water-heater-repair" className="text-[#EA5D19] hover:underline font-semibold">water heater</Link> works perfectly, no matter the type. Need a <Link href="/water-heater-installation" className="text-[#EA5D19] hover:underline font-semibold">new water heater</Link>? We install both tank and tankless models. We help you choose the best unit for your home.
+              We excel at fixing traditional tank and <Link href="/tankless-water-heaters" className="text-[#EA5D19] hover:underline font-semibold">tankless water heaters</Link>. If your tank heater leaks or stops heating, we find the problem and repair it fast. For tankless units, we fix issues such as uneven water temperatures or weak flow. Our team ensures your <Link href="/gas-water-heaters" className="text-[#EA5D19] hover:underline font-semibold">water heater</Link> works perfectly, no matter the type. Need a <Link href="/gas-water-heaters" className="text-[#EA5D19] hover:underline font-semibold">new water heater</Link>? We install both tank and tankless models. We help you choose the best unit for your home.
             </p>
           </div>
         </div>

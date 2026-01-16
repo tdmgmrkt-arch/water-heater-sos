@@ -33,7 +33,7 @@ export function YorbaLindaContent() {
                 Your Plumbing Pros in Yorba Linda, CA
               </p>
               <p className="text-lg text-gray-700 leading-relaxed mb-8">
-                Water Heater SOS is Yorba Linda's trusted local plumbing team. We prioritize your comfort with fast, reliable service and fair prices, handling everything from <Link href="/water-heater-repair" className="text-[#EA5D19] hover:underline font-semibold">water heater repairs</Link> and leaky pipes to major plumbing upgrades. Hot water is essential for daily tasks, so our team repairs gas, electric or <Link href="/tankless-water-heaters" className="text-[#EA5D19] hover:underline font-semibold">tankless water heaters</Link> quickly.
+                Water Heater SOS is Yorba Linda's trusted local plumbing team. We prioritize your comfort with fast, reliable service and fair prices, handling everything from <Link href="/gas-water-heaters" className="text-[#EA5D19] hover:underline font-semibold">water heater repairs</Link> and leaky pipes to major plumbing upgrades. Hot water is essential for daily tasks, so our team repairs gas, electric or <Link href="/tankless-water-heaters" className="text-[#EA5D19] hover:underline font-semibold">tankless water heaters</Link> quickly.
               </p>
               <Link
                 href="/quote"

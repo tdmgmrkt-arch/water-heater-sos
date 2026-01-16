@@ -33,7 +33,7 @@ export function LakeElsinoreContent() {
                 5‑Star Plumbing Company in Lake Elsinore, CA
               </p>
               <p className="text-lg text-gray-700 leading-relaxed mb-8">
-                A dripping faucet or a clogged toilet can throw your whole day off track. When plumbing problems strike in Lake Elsinore, CA, Water Heater SOS is your go‑to solution. Our certified technicians handle everything from <Link href="/drain-cleaning" className="text-[#EA5D19] hover:underline font-semibold">drain cleaning</Link> and shower repairs to getting your <Link href="/garbage-disposal" className="text-[#EA5D19] hover:underline font-semibold">garbage disposal</Link> back in action.
+                A dripping faucet or a clogged toilet can throw your whole day off track. When plumbing problems strike in Lake Elsinore, CA, Water Heater SOS is your go‑to solution. Our certified technicians handle everything from <Link href="/drain-cleaning" className="text-[#EA5D19] hover:underline font-semibold">drain cleaning</Link> and shower repairs to getting your <Link href="/garbage-disposal-repair-replacement" className="text-[#EA5D19] hover:underline font-semibold">garbage disposal</Link> back in action.
               </p>
               <Link
                 href="/quote"
@@ -64,13 +64,13 @@ export function LakeElsinoreContent() {
 
           <div className="mt-12 bg-white rounded-3xl shadow-lg border border-gray-200 p-8 space-y-6 text-lg leading-relaxed text-gray-700">
             <p>
-              Noticed a leak? Whether it's water, gas, or even a hidden slab leak, our team jumps into action to safeguard your home. With advanced <Link href="/leak-detection-services" className="text-[#EA5D19] hover:underline font-semibold">leak detection</Link> and expert <Link href="/repiping" className="text-[#EA5D19] hover:underline font-semibold">house repiping</Link> services, we ensure your plumbing stays reliable—no surprises. Plus, we explain everything in plain terms and tailor solutions to fit your home's needs.
+              Noticed a leak? Whether it's water, gas, or even a hidden slab leak, our team jumps into action to safeguard your home. With advanced <Link href="/leak-detection-services" className="text-[#EA5D19] hover:underline font-semibold">leak detection</Link> and expert <Link href="/whole-house-repipe" className="text-[#EA5D19] hover:underline font-semibold">house repiping</Link> services, we ensure your plumbing stays reliable—no surprises. Plus, we explain everything in plain terms and tailor solutions to fit your home's needs.
             </p>
             <p>
               Your home deserves plumbing that just works. That's why Water Heater SOS offers emergency services, so a burst pipe doesn't turn into a disaster. From routine maintenance (to prevent leaks before they happen) to major installations, our fully stocked trucks mean we're ready for anything. We proudly serve Lake Elsinore and nearby areas like Menifee, Murrieta, Temecula, Canyon Lake, and Wildomar.
             </p>
             <p>
-              A cold shower on a Lake Elsinore morning? No thanks. Our specialists get your hot water flowing again, fast. Water Heater SOS specializes in <Link href="/water-heater-repair" className="text-[#EA5D19] hover:underline font-semibold">water heater repair</Link>, getting your hot water back fast. Our brand‑certified technicians know every major brand and fix problems with precision. For <Link href="/tankless-water-heaters" className="text-[#EA5D19] hover:underline font-semibold">tankless water heaters</Link>, we ensure efficient performance, cutting your energy bills and keeping water hot. You deserve a reliable system that works when you need it.
+              A cold shower on a Lake Elsinore morning? No thanks. Our specialists get your hot water flowing again, fast. Water Heater SOS specializes in <Link href="/gas-water-heaters" className="text-[#EA5D19] hover:underline font-semibold">water heater repair</Link>, getting your hot water back fast. Our brand‑certified technicians know every major brand and fix problems with precision. For <Link href="/tankless-water-heaters" className="text-[#EA5D19] hover:underline font-semibold">tankless water heaters</Link>, we ensure efficient performance, cutting your energy bills and keeping water hot. You deserve a reliable system that works when you need it.
             </p>
           </div>
         </div>

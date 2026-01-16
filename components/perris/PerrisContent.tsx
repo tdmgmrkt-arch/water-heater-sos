@@ -33,7 +33,7 @@ export function PerrisContent() {
                 Professional Plumbers in Perris, CA
               </p>
               <p className="text-lg text-gray-700 leading-relaxed mb-8">
-                Got plumbing problems in Perris? Water Heater SOS is your solution. We are a family‑owned business that offers fast and dependable plumbing repair and installation services. We handle everything from clearing <Link href="/toilet-repair-replacement" className="text-[#EA5D19] hover:underline font-semibold">toilet clogs</Link> to performing <Link href="/repiping" className="text-[#EA5D19] hover:underline font-semibold">whole‑house repipes</Link>. Our skilled plumbers fix <Link href="/drain-cleaning" className="text-[#EA5D19] hover:underline font-semibold">drain issues</Link>, repair showers, and tackle <Link href="/garbage-disposal" className="text-[#EA5D19] hover:underline font-semibold">garbage disposals</Link>.
+                Got plumbing problems in Perris? Water Heater SOS is your solution. We are a family‑owned business that offers fast and dependable plumbing repair and installation services. We handle everything from clearing <Link href="/toilet-repair-replacement" className="text-[#EA5D19] hover:underline font-semibold">toilet clogs</Link> to performing <Link href="/whole-house-repipe" className="text-[#EA5D19] hover:underline font-semibold">whole‑house repipes</Link>. Our skilled plumbers fix <Link href="/drain-cleaning" className="text-[#EA5D19] hover:underline font-semibold">drain issues</Link>, repair showers, and tackle <Link href="/garbage-disposal-repair-replacement" className="text-[#EA5D19] hover:underline font-semibold">garbage disposals</Link>.
               </p>
               <Link
                 href="/quote"

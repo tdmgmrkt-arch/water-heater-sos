@@ -33,7 +33,7 @@ export function MurrietaContent() {
                 Highly Rated Plumbing Company in Murrieta, CA
               </p>
               <p className="text-lg text-gray-700 leading-relaxed mb-8">
-                A backed‑up sink or a dripping showerhead can throw off your day. Water Heater SOS steps in to solve these issues quickly. Our skilled technicians tackle <Link href="/toilet-repair-replacement" className="text-[#EA5D19] hover:underline font-semibold">clogged toilets</Link>, clear drains, fix showers, and repair <Link href="/garbage-disposal" className="text-[#EA5D19] hover:underline font-semibold">garbage disposals</Link>. Notice a water leak, gas leak, or slab leak? We act fast to keep your home safe.
+                A backed‑up sink or a dripping showerhead can throw off your day. Water Heater SOS steps in to solve these issues quickly. Our skilled technicians tackle <Link href="/toilet-repair-replacement" className="text-[#EA5D19] hover:underline font-semibold">clogged toilets</Link>, clear drains, fix showers, and repair <Link href="/garbage-disposal-repair-replacement" className="text-[#EA5D19] hover:underline font-semibold">garbage disposals</Link>. Notice a water leak, gas leak, or slab leak? We act fast to keep your home safe.
               </p>
               <Link
                 href="/quote"
@@ -64,13 +64,13 @@ export function MurrietaContent() {
 
           <div className="mt-12 bg-white rounded-3xl shadow-lg border border-gray-200 p-8 space-y-6 text-lg leading-relaxed text-gray-700">
             <p>
-              Our advanced <Link href="/leak-detection-services" className="text-[#EA5D19] hover:underline font-semibold">leak detection</Link> pinpoints problems, and our <Link href="/repiping" className="text-[#EA5D19] hover:underline font-semibold">whole‑house repipes</Link> upgrade your plumbing for years of reliability. You get straightforward answers in plain English and solutions tailored to your home. Your house needs plumbing that works without fail. Water Heater SOS offers emergency service, so a pipe burst won't leave you stranded.
+              Our advanced <Link href="/leak-detection-services" className="text-[#EA5D19] hover:underline font-semibold">leak detection</Link> pinpoints problems, and our <Link href="/whole-house-repipe" className="text-[#EA5D19] hover:underline font-semibold">whole‑house repipes</Link> upgrade your plumbing for years of reliability. You get straightforward answers in plain English and solutions tailored to your home. Your house needs plumbing that works without fail. Water Heater SOS offers emergency service, so a pipe burst won't leave you stranded.
             </p>
             <p>
               We provide regular maintenance to catch issues early, keeping your pipes in top condition. Our team shows up with fully stocked trucks, ready to handle everything from minor fixes to major installations. Murrieta homeowners pick us for honest pricing and discounts for military or seniors, showing we care about our community.
             </p>
             <p>
-              Starting your day with a freezing shower in Murrieta is no fun. Water Heater SOS specializes in <Link href="/water-heater-repair" className="text-[#EA5D19] hover:underline font-semibold">water heater repair</Link>, getting your hot water flowing fast. Our brand‑certified technicians diagnose problems like rusty tanks or faulty thermostats and often fix them the same day. We know every major brand, ensuring precise repairs that last. For <Link href="/tankless-water-heaters" className="text-[#EA5D19] hover:underline font-semibold">tankless water heaters</Link>, we optimize performance to save you energy and keep water hot. Need a <Link href="/water-heater-installation" className="text-[#EA5D19] hover:underline font-semibold">new water heater</Link>? We install modern tank or tankless units that fit your home's needs, boosting efficiency and reliability.
+              Starting your day with a freezing shower in Murrieta is no fun. Water Heater SOS specializes in <Link href="/gas-water-heaters" className="text-[#EA5D19] hover:underline font-semibold">water heater repair</Link>, getting your hot water flowing fast. Our brand‑certified technicians diagnose problems like rusty tanks or faulty thermostats and often fix them the same day. We know every major brand, ensuring precise repairs that last. For <Link href="/tankless-water-heaters" className="text-[#EA5D19] hover:underline font-semibold">tankless water heaters</Link>, we optimize performance to save you energy and keep water hot. Need a <Link href="/gas-water-heaters" className="text-[#EA5D19] hover:underline font-semibold">new water heater</Link>? We install modern tank or tankless units that fit your home's needs, boosting efficiency and reliability.
             </p>
           </div>
         </div>

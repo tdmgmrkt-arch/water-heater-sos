@@ -33,7 +33,7 @@ export function ClaremontContent() {
                 Expert Water Heater Services & Complete Plumbing Solutions
               </p>
               <p className="text-lg text-gray-700 leading-relaxed mb-8">
-                Water Heater SOS proudly serves Claremont, CA, with top-tier <Link href="/water-heater-services" className="text-[#EA5D19] hover:underline font-semibold">water heater services</Link> and comprehensive plumbing solutions. Our licensed and insured plumbers are committed to delivering exceptional service, ensuring your home's plumbing system operates efficiently all year long.
+                Water Heater SOS proudly serves Claremont, CA, with top-tier <Link href="/gas-water-heaters" className="text-[#EA5D19] hover:underline font-semibold">water heater services</Link> and comprehensive plumbing solutions. Our licensed and insured plumbers are committed to delivering exceptional service, ensuring your home's plumbing system operates efficiently all year long.
               </p>
               <Link
                 href="/quote"
@@ -64,7 +64,7 @@ export function ClaremontContent() {
 
           <div className="mt-12 bg-white rounded-3xl shadow-lg border border-gray-200 p-8 space-y-6 text-lg leading-relaxed text-gray-700">
             <p>
-              Whether you need emergency <Link href="/water-heater-repair" className="text-[#EA5D19] hover:underline font-semibold">water heater repair</Link>, a new <Link href="/tankless-water-heaters" className="text-[#EA5D19] hover:underline font-semibold">tankless water heater</Link> installation, or routine plumbing maintenance, we're here to help. Our experienced technicians arrive on time, accurately diagnose problems, and deliver long-lasting solutions that keep your home comfortable and efficient.
+              Whether you need emergency <Link href="/gas-water-heaters" className="text-[#EA5D19] hover:underline font-semibold">water heater repair</Link>, a new <Link href="/tankless-water-heaters" className="text-[#EA5D19] hover:underline font-semibold">tankless water heater</Link> installation, or routine plumbing maintenance, we're here to help. Our experienced technicians arrive on time, accurately diagnose problems, and deliver long-lasting solutions that keep your home comfortable and efficient.
             </p>
             <p>
               We know plumbing emergencies don't follow a schedule. That's why we offer 24/7 emergency services to handle urgent situations like <Link href="/leak-detection-services" className="text-[#EA5D19] hover:underline font-semibold">leak detection</Link>, burst pipes, and water heater failures. From <Link href="/drain-cleaning" className="text-[#EA5D19] hover:underline font-semibold">drain cleaning</Link> to <Link href="/faucet-repair-replacement" className="text-[#EA5D19] hover:underline font-semibold">faucet repairs</Link>, we handle everything with professionalism and care.

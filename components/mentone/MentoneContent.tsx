@@ -33,7 +33,7 @@ export function MentoneContent() {
                 Expert Water Heater Services & Complete Plumbing Solutions
               </p>
               <p className="text-lg text-gray-700 leading-relaxed mb-8">
-                Water Heater SOS is proud to serve the Mentone community with reliable, professional <Link href="/water-heater-services" className="text-[#EA5D19] hover:underline font-semibold">water heater services</Link> and comprehensive plumbing solutions. Our team of licensed and insured plumbers is dedicated to delivering exceptional service, ensuring your home's plumbing system runs smoothly year-round.
+                Water Heater SOS is proud to serve the Mentone community with reliable, professional <Link href="/gas-water-heaters" className="text-[#EA5D19] hover:underline font-semibold">water heater services</Link> and comprehensive plumbing solutions. Our team of licensed and insured plumbers is dedicated to delivering exceptional service, ensuring your home's plumbing system runs smoothly year-round.
               </p>
               <Link
                 href="/quote"
@@ -64,7 +64,7 @@ export function MentoneContent() {
 
           <div className="mt-12 bg-white rounded-3xl shadow-lg border border-gray-200 p-8 space-y-6 text-lg leading-relaxed text-gray-700">
             <p>
-              Whether you need emergency <Link href="/water-heater-repair" className="text-[#EA5D19] hover:underline font-semibold">water heater repair</Link>, a new <Link href="/tankless-water-heaters" className="text-[#EA5D19] hover:underline font-semibold">tankless water heater</Link> installation, or routine maintenance, we're here to help. Our experienced technicians arrive promptly, diagnose issues accurately, and provide lasting solutions that keep your home comfortable and efficient.
+              Whether you need emergency <Link href="/gas-water-heaters" className="text-[#EA5D19] hover:underline font-semibold">water heater repair</Link>, a new <Link href="/tankless-water-heaters" className="text-[#EA5D19] hover:underline font-semibold">tankless water heater</Link> installation, or routine maintenance, we're here to help. Our experienced technicians arrive promptly, diagnose issues accurately, and provide lasting solutions that keep your home comfortable and efficient.
             </p>
             <p>
               We understand that plumbing emergencies don't wait for business hours. That's why we offer 24/7 emergency services to address urgent issues like <Link href="/leak-detection-services" className="text-[#EA5D19] hover:underline font-semibold">leak detection</Link>, burst pipes, and water heater failures. From <Link href="/drain-cleaning" className="text-[#EA5D19] hover:underline font-semibold">drain cleaning</Link> to <Link href="/faucet-repair-replacement" className="text-[#EA5D19] hover:underline font-semibold">faucet repairs</Link>, we handle it all with professionalism and care.

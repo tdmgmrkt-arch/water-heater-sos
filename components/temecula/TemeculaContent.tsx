@@ -33,7 +33,7 @@ export function TemeculaContent() {
                 5‑Star Rated Plumbers in Temecula, CA
               </p>
               <p className="text-lg text-gray-700 leading-relaxed mb-8">
-                Need a plumber in Temecula? Look no further—Water Heater SOS has you covered. As a trusted family‑owned business, we pride ourselves on delivering fast, dependable plumbing repairs and installations. Whether it's a stubborn <Link href="/toilet-repair-replacement" className="text-[#EA5D19] hover:underline font-semibold">toilet clog</Link>, a full‑house <Link href="/repiping" className="text-[#EA5D19] hover:underline font-semibold">repipe</Link>, or a slow‑draining sink, our skilled team handles it all with care.
+                Need a plumber in Temecula? Look no further—Water Heater SOS has you covered. As a trusted family‑owned business, we pride ourselves on delivering fast, dependable plumbing repairs and installations. Whether it's a stubborn <Link href="/toilet-repair-replacement" className="text-[#EA5D19] hover:underline font-semibold">toilet clog</Link>, a full‑house <Link href="/whole-house-repipe" className="text-[#EA5D19] hover:underline font-semibold">repipe</Link>, or a slow‑draining sink, our skilled team handles it all with care.
               </p>
               <Link
                 href="/quote"
@@ -64,7 +64,7 @@ export function TemeculaContent() {
 
           <div className="mt-12 bg-white rounded-3xl shadow-lg border border-gray-200 p-8 space-y-6 text-lg leading-relaxed text-gray-700">
             <p>
-              From shower repairs and <Link href="/garbage-disposal" className="text-[#EA5D19] hover:underline font-semibold">garbage disposal</Link> fixes to detecting gas leaks, water leaks, and even tricky slab leaks, we give every job the attention it deserves. At Water Heater SOS, we offer comprehensive plumbing solutions tailored to your needs. Our professional <Link href="/leak-detection-services" className="text-[#EA5D19] hover:underline font-semibold">leak detection</Link> services quickly pinpoint issues to prevent water waste.
+              From shower repairs and <Link href="/garbage-disposal-repair-replacement" className="text-[#EA5D19] hover:underline font-semibold">garbage disposal</Link> fixes to detecting gas leaks, water leaks, and even tricky slab leaks, we give every job the attention it deserves. At Water Heater SOS, we offer comprehensive plumbing solutions tailored to your needs. Our professional <Link href="/leak-detection-services" className="text-[#EA5D19] hover:underline font-semibold">leak detection</Link> services quickly pinpoint issues to prevent water waste.
             </p>
             <p>
               Got a backed‑up drain or a malfunctioning garbage disposal? We'll clear it up in no time. Shower acting up or suspect a gas leak? Our rapid response keeps your home safe and sound. For larger projects like water line repairs or a repipe, we ensure durable, long‑lasting results. And if a plumbing emergency strikes, give us a call.
