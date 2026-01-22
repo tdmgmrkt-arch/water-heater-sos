@@ -131,7 +131,7 @@ export function PrivacyPolicyContent() {
                   <p className="text-gray-700 leading-relaxed mt-4">
                     We use your data to provide and improve the Service. By using the Service, you agree to the collection and use of information in accordance with this policy. Unless otherwise defined in this Privacy Policy, terms used in this Privacy Policy have the same meanings as in our Terms and Conditions, accessible from{" "}
                     <a href="https://www.waterheatersos.com/" className="text-[#EA5D19] hover:underline">
-                      https://www.waterheatersos.com/
+                      our website
                     </a>
                     .
                   </p>
@@ -446,10 +446,11 @@ export function PrivacyPolicyContent() {
                       </p>
                       <div className="bg-gray-50 p-4 rounded-lg">
                         <p className="text-gray-700 leading-relaxed">
-                          <strong>Google Analytics:</strong> Google Analytics is a web analytics service offered by Google that tracks and reports website traffic. Google uses the data collected to track and monitor the use of our Service. This data is shared with other Google services. Google may use the collected data to contextualize and personalize the ads of its own advertising network. You can opt-out of having made your activity on the Service available to Google Analytics by installing the Google Analytics opt-out browser add-on. For more information on the privacy practices of Google, please visit:{" "}
+                          <strong>Google Analytics:</strong> Google Analytics is a web analytics service offered by Google that tracks and reports website traffic. Google uses the data collected to track and monitor the use of our Service. This data is shared with other Google services. Google may use the collected data to contextualize and personalize the ads of its own advertising network. You can opt-out of having made your activity on the Service available to Google Analytics by installing the Google Analytics opt-out browser add-on. For more information on the privacy practices of Google, please visit the{" "}
                           <a href="https://policies.google.com/privacy?hl=en" target="_blank" rel="noopener noreferrer" className="text-[#EA5D19] hover:underline">
-                            https://policies.google.com/privacy?hl=en
+                            Google Privacy Policy
                           </a>
+                          .
                         </p>
                       </div>
                     </div>
@@ -470,7 +471,7 @@ export function PrivacyPolicyContent() {
                           <p className="text-gray-700">
                             <strong>Housecall Pro:</strong>{" "}
                             <a href="https://www.housecallpro.com/privacy/" target="_blank" rel="noopener noreferrer" className="text-[#EA5D19] hover:underline">
-                              https://www.housecallpro.com/privacy/
+                              Housecall Pro Privacy Policy
                             </a>
                           </p>
                         </div>
@@ -478,7 +479,7 @@ export function PrivacyPolicyContent() {
                           <p className="text-gray-700">
                             <strong>PayPal or Braintree:</strong>{" "}
                             <a href="https://www.paypal.com/webapps/mpp/ua/privacy-full" target="_blank" rel="noopener noreferrer" className="text-[#EA5D19] hover:underline">
-                              https://www.paypal.com/webapps/mpp/ua/privacy-full
+                              PayPal Privacy Policy
                             </a>
                           </p>
                         </div>
@@ -486,7 +487,7 @@ export function PrivacyPolicyContent() {
                           <p className="text-gray-700">
                             <strong>QuickBooks Online (Intuit Inc.):</strong>{" "}
                             <a href="https://www.intuit.com/privacy/protect-your-privacy/" target="_blank" rel="noopener noreferrer" className="text-[#EA5D19] hover:underline">
-                              https://www.intuit.com/privacy/protect-your-privacy/
+                              Intuit Privacy Policy
                             </a>
                           </p>
                         </div>
