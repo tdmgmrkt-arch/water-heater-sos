@@ -5,6 +5,7 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import { ArrowRight, Droplets, Wrench, Phone, AlertCircle, CheckCircle2 } from "lucide-react";
 import { FAQ } from "@/components/home/FAQ";
+import { TrustedBrands } from "@/components/home/TrustedBrands";
 
 export function UplandContent() {
   return (
@@ -242,47 +243,7 @@ export function UplandContent() {
       </section>
 
       {/* Trusted Brands Section */}
-      <section className="py-20 bg-gray-50">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.5 }}
-            className="text-center mb-16"
-          >
-            <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl mb-4">
-              Trusted Brands We Install & Service
-            </h2>
-          </motion.div>
-
-          <div className="grid grid-cols-2 gap-8 md:grid-cols-3 lg:grid-cols-6 items-center justify-items-center">
-            {[
-              { name: "Rheem", logo: "/rheem_logo-1.webp" },
-              { name: "Bradford White", logo: "/bradford-white-logo-1.webp" },
-              { name: "Rinnai", logo: "/rinnai-1.webp" },
-              { name: "Navien", logo: "/navien-1.webp" },
-              { name: "Hajoca", logo: "/hajoca-1.webp" },
-            ].map((brand, index) => (
-              <motion.div
-                key={brand.name}
-                initial={{ opacity: 0, scale: 0.9 }}
-                whileInView={{ opacity: 1, scale: 1 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.3, delay: index * 0.1 }}
-                className="relative h-20 w-32 grayscale hover:grayscale-0 transition-all duration-200"
-              >
-                <Image
-                  src={brand.logo}
-                  alt={brand.name}
-                  fill
-                  className="object-contain"
-                />
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
+      <TrustedBrands className="bg-gray-50" />
 
       {/* FAQ Section */}
       <FAQ category="upland" />
