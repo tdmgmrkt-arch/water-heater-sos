@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { MenifeeContent } from "@/components/menifee/MenifeeContent";
 
 export const metadata: Metadata = {
-  title: "Menifee Plumbers & Water Heater Repair | Water Heater SOS",
+  title: "Menifee Plumbers & Water Heater Repair",
   description:
     "Expert plumbing services in Menifee, CA. Fast water heater repair, installation, drain cleaning & more. Licensed, insured & available 24/7. Call now!",
   keywords: [
@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     "tankless water heater Menifee",
   ],
   openGraph: {
-    title: "Menifee Plumbers & Water Heater Repair | Water Heater SOS",
+    title: "Menifee Plumbers & Water Heater Repair",
     description:
       "Expert plumbing services in Menifee, CA. Fast water heater repair, installation, drain cleaning & more. Licensed, insured & available 24/7.",
     type: "website",

@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { ClaremontContent } from "@/components/claremont/ClaremontContent";
 
 export const metadata: Metadata = {
-  title: "Claremont Plumbers & Water Heater Repair | Water Heater SOS",
+  title: "Claremont Plumbers & Water Heater Repair",
   description:
     "Expert plumbing services in Claremont, CA. Fast water heater repair, installation, drain cleaning & more. Licensed, insured & available 24/7. Call now!",
   keywords: [
@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     "tankless water heater Claremont",
   ],
   openGraph: {
-    title: "Claremont Plumbers & Water Heater Repair | Water Heater SOS",
+    title: "Claremont Plumbers & Water Heater Repair",
     description:
       "Expert plumbing services in Claremont, CA. Fast water heater repair, installation, drain cleaning & more. Licensed, insured & available 24/7.",
     type: "website",

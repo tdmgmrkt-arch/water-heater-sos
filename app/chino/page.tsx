@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { ChinoContent } from "@/components/chino/ChinoContent";
 
 export const metadata: Metadata = {
-  title: "Chino Plumbers & Water Heater Repair | Water Heater SOS",
+  title: "Chino Plumbers & Water Heater Repair",
   description:
     "Your go-to plumbing experts in Chino, CA. Fast water heater repair, installation, drain cleaning & more. Licensed, insured & available 24/7. Call now!",
   keywords: [
@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     "tankless water heater Chino",
   ],
   openGraph: {
-    title: "Chino Plumbers & Water Heater Repair | Water Heater SOS",
+    title: "Chino Plumbers & Water Heater Repair",
     description:
       "Your go-to plumbing experts in Chino, CA. Fast water heater repair, installation, drain cleaning & more. Licensed, insured & available 24/7.",
     type: "website",

@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { MorenoValleyContent } from "@/components/moreno-valley/MorenoValleyContent";
 
 export const metadata: Metadata = {
-  title: "Moreno Valley Plumbers & Water Heater Repair | Water Heater SOS",
+  title: "Moreno Valley Plumbers & Water Heater Repair",
   description:
     "Expert plumbing services in Moreno Valley, CA. Fast water heater repair, installation, drain cleaning & more. Licensed, insured & available 24/7. Call now!",
   keywords: [
@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     "tankless water heater Moreno Valley",
   ],
   openGraph: {
-    title: "Moreno Valley Plumbers & Water Heater Repair | Water Heater SOS",
+    title: "Moreno Valley Plumbers & Water Heater Repair",
     description:
       "Expert plumbing services in Moreno Valley, CA. Fast water heater repair, installation, drain cleaning & more. Licensed, insured & available 24/7.",
     type: "website",

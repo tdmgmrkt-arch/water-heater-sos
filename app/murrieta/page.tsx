@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { MurrietaContent } from "@/components/murrieta/MurrietaContent";
 
 export const metadata: Metadata = {
-  title: "Murrieta Plumbers & Water Heater Repair | Water Heater SOS",
+  title: "Murrieta Plumbers & Water Heater Repair",
   description:
     "Highly rated plumbing services in Murrieta, CA. Fast water heater repair, installation, drain cleaning & more. Licensed, insured & available 24/7. Call now!",
   keywords: [
@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     "tankless water heater Murrieta",
   ],
   openGraph: {
-    title: "Murrieta Plumbers & Water Heater Repair | Water Heater SOS",
+    title: "Murrieta Plumbers & Water Heater Repair",
     description:
       "Highly rated plumbing services in Murrieta, CA. Fast water heater repair, installation, drain cleaning & more. Licensed, insured & available 24/7.",
     type: "website",

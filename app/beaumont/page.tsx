@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { BeaumontContent } from "@/components/beaumont/BeaumontContent";
 
 export const metadata: Metadata = {
-  title: "Beaumont Plumbers & Water Heater Repair | Water Heater SOS",
+  title: "Beaumont Plumbers & Water Heater Repair",
   description:
     "Expert plumbing services in Beaumont, CA. Water heater repair & replacement, drain cleaning, and more. Fast, reliable service. Call (800) 697-4014!",
   keywords: [
@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     "drain cleaning Beaumont",
   ],
   openGraph: {
-    title: "Beaumont Plumbers & Water Heater Repair | Water Heater SOS",
+    title: "Beaumont Plumbers & Water Heater Repair",
     description:
       "Expert plumbing services in Beaumont, CA. Water heater repair & replacement, drain cleaning, and more.",
     type: "website",

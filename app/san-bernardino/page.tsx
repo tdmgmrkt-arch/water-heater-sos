@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { SanBernardinoContent } from "@/components/san-bernardino/SanBernardinoContent";
 
 export const metadata: Metadata = {
-  title: "San Bernardino Plumbers & Water Heater Services | Water Heater SOS",
+  title: "San Bernardino Plumbers & Water Heater Services",
   description:
     "Plumbing problem solvers in San Bernardino, CA. Fast water heater repair, installation, drain cleaning & more. Licensed, insured & available 24/7. Call now!",
   keywords: [
@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     "tankless water heater San Bernardino",
   ],
   openGraph: {
-    title: "San Bernardino Plumbers & Water Heater Services | Water Heater SOS",
+    title: "San Bernardino Plumbers & Water Heater Services",
     description:
       "Plumbing problem solvers in San Bernardino, CA. Fast water heater repair, installation, drain cleaning & more. Licensed, insured & available 24/7.",
     type: "website",

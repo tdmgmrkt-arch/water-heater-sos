@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { DrainCleaningContent } from "@/components/drain-cleaning/DrainCleaningContent";
 
 export const metadata: Metadata = {
-  title: "Drain Cleaning Services | Water Heater SOS",
+  title: "Drain Cleaning Services",
   description:
     "Expert drain cleaning services to clear clogs and restore proper drainage. Fast, professional service for backed up drains, sewer lines & more. Call now!",
   keywords: [
@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     "backed up drain",
   ],
   openGraph: {
-    title: "Drain Cleaning Services | Water Heater SOS",
+    title: "Drain Cleaning Services",
     description:
       "Expert drain cleaning services to clear clogs and restore proper drainage. Fast, professional service for backed up drains, sewer lines & more.",
     type: "website",

@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { RedlandsContent } from "@/components/redlands/RedlandsContent";
 
 export const metadata: Metadata = {
-  title: "Redlands Plumbers & Water Heater Repair | Water Heater SOS",
+  title: "Redlands Plumbers & Water Heater Repair",
   description:
     "Expert plumbing services in Redlands, CA. Fast water heater repair & replacement, drain cleaning, faucet repairs, and more. Upfront pricing. Call (800) 697-4014!",
   keywords: [
@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     "emergency plumber Redlands",
   ],
   openGraph: {
-    title: "Redlands Plumbers & Water Heater Repair | Water Heater SOS",
+    title: "Redlands Plumbers & Water Heater Repair",
     description:
       "Expert plumbing services in Redlands, CA. Fast water heater repair & replacement, drain cleaning, faucet repairs, and more.",
     type: "website",

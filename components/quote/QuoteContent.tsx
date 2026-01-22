@@ -128,7 +128,11 @@ declare global {
   }
 }
 
-export function QuoteContent() {
+interface QuoteContentProps {
+  hideH1?: boolean;
+}
+
+export function QuoteContent({ hideH1 = false }: QuoteContentProps) {
   const searchParams = useSearchParams();
   const [formData, setFormData] = useState({
     firstName: "", lastName: "", phone: "", email: "", address: "",
@@ -354,9 +358,15 @@ export function QuoteContent() {
               transition={{ duration: 0.6 }}
               className="lg:col-span-7"
             >
-              <h1 className="text-5xl font-extrabold text-[#11110E] sm:text-6xl lg:text-7xl mb-4 leading-tight">
-              <span className="text-[#EA5D19]">Free </span> Service Estimate.
-              </h1>
+              {hideH1 ? (
+                <p className="text-5xl font-extrabold text-[#11110E] sm:text-6xl lg:text-7xl mb-4 leading-tight">
+                  <span className="text-[#EA5D19]">Free </span> Service Estimate.
+                </p>
+              ) : (
+                <h1 className="text-5xl font-extrabold text-[#11110E] sm:text-6xl lg:text-7xl mb-4 leading-tight">
+                  <span className="text-[#EA5D19]">Free </span> Service Estimate.
+                </h1>
+              )}
               <p className="text-2xl text-gray-600 leading-relaxed mb-10">
                 Submit your details to receive an accurate, same-day quote for any plumbing or water heater service. Our certified local experts are ready to help.
               </p>

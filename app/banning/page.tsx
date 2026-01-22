@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { BanningContent } from "@/components/banning/BanningContent";
 
 export const metadata: Metadata = {
-  title: "Banning Plumbers & Water Heater Repair | Water Heater SOS",
+  title: "Banning Plumbers & Water Heater Repair",
   description:
     "Expert plumbing services in Banning, CA. Water heater repair & replacement, tankless installations, drain cleaning, and more. Call (800) 697-4014!",
   keywords: [
@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     "drain cleaning Banning",
   ],
   openGraph: {
-    title: "Banning Plumbers & Water Heater Repair | Water Heater SOS",
+    title: "Banning Plumbers & Water Heater Repair",
     description:
       "Expert plumbing services in Banning, CA. Water heater repair & replacement, tankless installations, and more.",
     type: "website",

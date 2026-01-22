@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { UplandContent } from "@/components/upland/UplandContent";
 
 export const metadata: Metadata = {
-  title: "Upland Plumbers & Water Heater Services | Water Heater SOS",
+  title: "Upland Plumbers & Water Heater Services",
   description:
     "Fantastic 5-star plumbers in Upland, CA. Fast water heater repair, installation, drain cleaning & more. Licensed, insured & available 24/7. Call now!",
   keywords: [
@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     "tankless water heater Upland",
   ],
   openGraph: {
-    title: "Upland Plumbers & Water Heater Services | Water Heater SOS",
+    title: "Upland Plumbers & Water Heater Services",
     description:
       "Fantastic 5-star plumbers in Upland, CA. Fast water heater repair, installation, drain cleaning & more. Licensed, insured & available 24/7.",
     type: "website",

@@ -2,7 +2,7 @@ import { AboutContent } from "@/components/about/AboutContent";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "About Us | Family-Owned Water Heater & Plumbing Experts | Water Heater SOS",
+  title: "About Us | Family-Owned Water Heater & Plumbing Experts",
   description: "Learn about Water Heater SOS, a family-owned business serving the Inland Empire since 2019. Expert water heater installation, repair, and full-service plumbing. Call (800) 697-4014.",
   keywords: "about us, family-owned plumber, Water Heater SOS, Inland Empire plumbing, water heater experts, Redlands plumber, Anna M., plumbing services",
   openGraph: {

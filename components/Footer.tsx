@@ -6,6 +6,7 @@ import Image from "next/image";
 import { Phone, MapPin, Clock, Star, Shield, ChevronDown } from "lucide-react";
 import { Container } from "./Container";
 import { useFooterCTA, defaultCTA } from "@/contexts/FooterCTAContext";
+import { FooterDirectory } from "./FooterDirectory";
 
 const footerLinks = {
   quickLinks: [
@@ -300,6 +301,9 @@ export function Footer() {
             </div>
           </div>
         </div>
+
+        {/* Footer Directory - All Services & Service Areas */}
+        <FooterDirectory />
 
         {/* Bottom Bar */}
         <div className="border-t border-white/10 py-4 md:py-5">

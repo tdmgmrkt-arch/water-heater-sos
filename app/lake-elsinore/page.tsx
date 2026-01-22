@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { LakeElsinoreContent } from "@/components/lake-elsinore/LakeElsinoreContent";
 
 export const metadata: Metadata = {
-  title: "Lake Elsinore Plumbers & Water Heater Repair | Water Heater SOS",
+  title: "Lake Elsinore Plumbers & Water Heater Repair",
   description:
     "5-Star plumbing services in Lake Elsinore, CA. Fast water heater repair, installation, drain cleaning & more. Licensed, insured & available 24/7. Call now!",
   keywords: [
@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     "tankless water heater Lake Elsinore",
   ],
   openGraph: {
-    title: "Lake Elsinore Plumbers & Water Heater Repair | Water Heater SOS",
+    title: "Lake Elsinore Plumbers & Water Heater Repair",
     description:
       "5-Star plumbing services in Lake Elsinore, CA. Fast water heater repair, installation, drain cleaning & more. Licensed, insured & available 24/7.",
     type: "website",

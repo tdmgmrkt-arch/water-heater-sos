@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { AnaheimHillsContent } from "@/components/anaheim-hills/AnaheimHillsContent";
 
 export const metadata: Metadata = {
-  title: "Anaheim Hills Plumbers & Water Heater Repair | Water Heater SOS",
+  title: "Anaheim Hills Plumbers & Water Heater Repair",
   description:
     "Quality plumbing services in Anaheim Hills, CA. Fast water heater repair, installation, drain cleaning & more. Licensed, insured & available 24/7. Call now!",
   keywords: [
@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     "tankless water heater Anaheim Hills",
   ],
   openGraph: {
-    title: "Anaheim Hills Plumbers & Water Heater Repair | Water Heater SOS",
+    title: "Anaheim Hills Plumbers & Water Heater Repair",
     description:
       "Quality plumbing services in Anaheim Hills, CA. Fast water heater repair, installation, drain cleaning & more. Licensed, insured & available 24/7.",
     type: "website",

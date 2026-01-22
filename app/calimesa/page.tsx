@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { CalimesaContent } from "@/components/calimesa/CalimesaContent";
 
 export const metadata: Metadata = {
-  title: "Calimesa Plumbers & Water Heater Repair | Water Heater SOS",
+  title: "Calimesa Plumbers & Water Heater Repair",
   description:
     "Expert plumbing services in Calimesa, CA. Water heater repair & replacement, drain cleaning, leak detection, and more. Call (800) 697-4014!",
   keywords: [
@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     "emergency plumber Calimesa",
   ],
   openGraph: {
-    title: "Calimesa Plumbers & Water Heater Repair | Water Heater SOS",
+    title: "Calimesa Plumbers & Water Heater Repair",
     description:
       "Expert plumbing services in Calimesa, CA. Water heater repair & replacement, drain cleaning, leak detection, and more.",
     type: "website",

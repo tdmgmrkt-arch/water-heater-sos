@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { MoenFloContent } from "@/components/moen-flo-smart-water-monitor/MoenFloContent";
 
 export const metadata: Metadata = {
-  title: "Moen Flo Leak Detection Installation | Water Heater SOS",
+  title: "Moen Flo Leak Detection Installation",
   description:
     "Professional Moen Flo Smart Water Monitor installation in Redlands, Yucaipa, Highland, Loma Linda & San Bernardino. Protect your home from water damage. Call now!",
   keywords: [
@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     "water damage prevention",
   ],
   openGraph: {
-    title: "Moen Flo Leak Detection Installation | Water Heater SOS",
+    title: "Moen Flo Leak Detection Installation",
     description:
       "Professional Moen Flo Smart Water Monitor installation in Redlands, Yucaipa, Highland, Loma Linda & San Bernardino. Protect your home from water damage.",
     type: "website",

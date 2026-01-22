@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { FontanaContent } from "@/components/fontana/FontanaContent";
 
 export const metadata: Metadata = {
-  title: "Fontana Plumbers & Water Heater Services | Water Heater SOS",
+  title: "Fontana Plumbers & Water Heater Services",
   description:
     "Delivering plumbing services in Fontana, CA. Fast water heater repair, installation, drain cleaning & more. Licensed, insured & available 24/7. Call now!",
   keywords: [
@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     "tankless water heater Fontana",
   ],
   openGraph: {
-    title: "Fontana Plumbers & Water Heater Services | Water Heater SOS",
+    title: "Fontana Plumbers & Water Heater Services",
     description:
       "Delivering plumbing services in Fontana, CA. Fast water heater repair, installation, drain cleaning & more. Licensed, insured & available 24/7.",
     type: "website",

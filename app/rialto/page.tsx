@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { RialtoContent } from "@/components/rialto/RialtoContent";
 
 export const metadata: Metadata = {
-  title: "Rialto Plumbers & Water Heater Services | Water Heater SOS",
+  title: "Rialto Plumbers & Water Heater Services",
   description:
     "Top-rated plumbing company in Rialto, CA. Fast water heater repair, installation, drain cleaning & more. Licensed, insured & available 24/7. Call now!",
   keywords: [
@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     "tankless water heater Rialto",
   ],
   openGraph: {
-    title: "Rialto Plumbers & Water Heater Services | Water Heater SOS",
+    title: "Rialto Plumbers & Water Heater Services",
     description:
       "Top-rated plumbing company in Rialto, CA. Fast water heater repair, installation, drain cleaning & more. Licensed, insured & available 24/7.",
     type: "website",

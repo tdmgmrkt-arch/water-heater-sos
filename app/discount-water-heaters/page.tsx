@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { DiscountWaterHeatersContent } from "@/components/discount-water-heaters/DiscountWaterHeatersContent";
 
 export const metadata: Metadata = {
-  title: "Water Heater Discounts & Special Offers | Water Heater SOS",
+  title: "Water Heater Discounts & Special Offers",
   description:
     "Save big on water heater services! Get $100 off replacements, $250 off tankless installations, $25 off flushes, and $300 off whole house water filtration. Affordable pricing, 5-star service in Southern California.",
   keywords: [
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     "Riverside water heater specials",
   ],
   openGraph: {
-    title: "Water Heater Discounts & Special Offers | Water Heater SOS",
+    title: "Water Heater Discounts & Special Offers",
     description:
       "Save big on water heater services! Get $100 off replacements, $250 off tankless installations, $25 off flushes, and $300 off whole house water filtration.",
     type: "website",

@@ -136,7 +136,7 @@ export function ContactContent() {
       </section>
 
       {/* Quote Form Section */}
-      <QuoteContent />
+      <QuoteContent hideH1 />
     </>
   );
 }
