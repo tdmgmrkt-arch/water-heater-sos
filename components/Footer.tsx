@@ -25,7 +25,7 @@ const footerLinks = {
     { name: "Free Online Quote", href: "/quote" },
     { name: "Air Duct Cleaning", href: "/air-duct-cleaning" },
     { name: "Blog & Tips", href: "/service" },
-    { name: "Privacy Policy", href: "/privacy-policy-2" },
+    { name: "Discounts & Specials", href: "/discount-water-heaters" },
   ],
 };
 

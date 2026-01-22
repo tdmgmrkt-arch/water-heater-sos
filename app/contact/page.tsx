@@ -18,8 +18,12 @@ export const metadata: Metadata = {
 
 export default function ContactPage() {
   return (
-    <Suspense fallback={<div className="min-h-screen" />}>
-      <ContactContent />
-    </Suspense>
+    <>
+      {/* Server-rendered H1 for SEO - hidden when client component loads */}
+      <h1 className="sr-only">Contact Us</h1>
+      <Suspense fallback={<div className="min-h-screen" />}>
+        <ContactContent />
+      </Suspense>
+    </>
   );
 }

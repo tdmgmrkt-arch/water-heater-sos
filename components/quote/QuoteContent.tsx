@@ -128,11 +128,7 @@ declare global {
   }
 }
 
-interface QuoteContentProps {
-  hideH1?: boolean;
-}
-
-export function QuoteContent({ hideH1 = false }: QuoteContentProps) {
+export function QuoteContent() {
   const searchParams = useSearchParams();
   const [formData, setFormData] = useState({
     firstName: "", lastName: "", phone: "", email: "", address: "",
@@ -358,17 +354,11 @@ export function QuoteContent({ hideH1 = false }: QuoteContentProps) {
               transition={{ duration: 0.6 }}
               className="lg:col-span-7"
             >
-              {hideH1 ? (
-                <p className="text-5xl font-extrabold text-[#11110E] sm:text-6xl lg:text-7xl mb-4 leading-tight">
-                  <span className="text-[#EA5D19]">Free </span> Service Estimate.
-                </p>
-              ) : (
-                <h1 className="text-5xl font-extrabold text-[#11110E] sm:text-6xl lg:text-7xl mb-4 leading-tight">
-                  <span className="text-[#EA5D19]">Free </span> Service Estimate.
-                </h1>
-              )}
+              <p className="text-5xl font-extrabold text-[#11110E] sm:text-6xl lg:text-7xl mb-4 leading-tight" aria-hidden="true">
+                <span className="text-[#EA5D19]">Free </span> Service Estimate.
+              </p>
               <p className="text-2xl text-gray-600 leading-relaxed mb-10">
-                Submit your details to receive an accurate, same-day quote for any plumbing or water heater service. Our certified local experts are ready to help.
+                Submit your details to receive an accurate, same-day quote for any plumbing or water heater service. Our certified local experts proudly serve homeowners throughout the Inland Empire, including Redlands, Riverside, San Bernardino, Corona, and surrounding communities. Whether you need emergency water heater repair, routine plumbing maintenance, or a complete system installation, we provide transparent pricing with no hidden fees.
               </p>
 
               {/* --- Trust Element: Key Guarantees --- */}

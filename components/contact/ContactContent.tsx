@@ -48,11 +48,11 @@ export function ContactContent() {
             <span className="inline-block px-4 py-1 rounded-full bg-[#EA5D19] text-sm text-white font-semibold mb-4 tracking-wide">
               Get In Touch
             </span>
-            <h1 className="text-3xl font-extrabold text-[#11110E] sm:text-4xl lg:text-5xl mb-4 leading-tight">
+            <p className="text-3xl font-extrabold text-[#11110E] sm:text-4xl lg:text-5xl mb-4 leading-tight" aria-hidden="true">
               Contact <span className="text-[#EA5D19]">Us</span>
-            </h1>
+            </p>
             <p className="text-xl text-gray-600 leading-relaxed max-w-2xl mx-auto">
-              Have a question or need assistance? We're here to help 24/7. Reach out through any channel that works best for you.
+              Have a question or need assistance? Our friendly team is here to help 24/7. Whether you need emergency water heater repair, want to schedule routine plumbing maintenance, or have questions about our services, reach out through any channel that works best for you. We proudly serve homeowners throughout the Inland Empire with fast, reliable plumbing and water heater services.
             </p>
           </motion.div>
 
@@ -136,7 +136,7 @@ export function ContactContent() {
       </section>
 
       {/* Quote Form Section */}
-      <QuoteContent hideH1 />
+      <QuoteContent />
     </>
   );
 }
