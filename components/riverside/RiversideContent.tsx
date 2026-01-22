@@ -133,7 +133,7 @@ export function RiversideContent() {
                 title: "Whole‑House Repipe",
                 description: "Replaces old pipes for cleaner, faster‑flowing water",
                 icon: Wrench,
-                link: "/whole-house-repiping",
+                link: "/whole-house-repipe",
               },
             ].map((service, index) => (
               <motion.div
