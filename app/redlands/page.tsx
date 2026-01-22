@@ -23,6 +23,9 @@ export const metadata: Metadata = {
     type: "website",
     url: "https://waterheatersos.com/redlands",
   },
+  alternates: {
+    canonical: "https://www.waterheatersos.com/redlands",
+  },
 };
 
 export default function RedlandsPage() {

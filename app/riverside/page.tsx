@@ -18,6 +18,9 @@ export const metadata: Metadata = {
       "Family-owned plumbing company in Riverside, CA. Fast water heater repair, installation, drain cleaning & more. Licensed, insured & available 24/7.",
     type: "website",
   },
+  alternates: {
+    canonical: "https://www.waterheatersos.com/riverside",
+  },
 };
 
 export default function RiversidePage() {

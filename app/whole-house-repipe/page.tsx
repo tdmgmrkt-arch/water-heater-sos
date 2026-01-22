@@ -10,6 +10,9 @@ export const metadata: Metadata = {
     description: "Expert whole-house repiping to replace old, corroded pipes. Modern PEX and copper solutions for reliable plumbing. Free estimates available.",
     type: "website",
   },
+  alternates: {
+    canonical: "https://www.waterheatersos.com/whole-house-repipe",
+  },
 };
 
 export default function WholeHouseRepipePage() {

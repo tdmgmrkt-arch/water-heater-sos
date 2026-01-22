@@ -7,6 +7,7 @@ import { Check, Phone } from "lucide-react";
 import { FAQ } from "@/components/home/FAQ";
 import { TrustedBrands } from "@/components/home/TrustedBrands";
 import { SetFooterCTA } from "@/components/SetFooterCTA";
+import { Breadcrumb } from "@/components/Breadcrumb";
 
 const reasons = [
   {
@@ -38,6 +39,12 @@ export function WaterFiltrationContent() {
         title="Need Water Filtration Services?"
         description="Ready to enjoy clean, filtered water throughout your home? Contact us today for a free water quality test and professional installation."
         quoteLink="/quote?category=Water%20Heaters&service=Water%20Filtration%20System%20Installation"
+      />
+      <Breadcrumb
+        items={[
+          { label: "Services", href: "/#services" },
+          { label: "Water Filtration" },
+        ]}
       />
       {/* Hero Section */}
       <section className="relative overflow-hidden bg-gradient-to-b from-gray-50 to-white pt-12 pb-10 sm:pt-16 sm:pb-14 lg:pt-32 lg:pb-24">

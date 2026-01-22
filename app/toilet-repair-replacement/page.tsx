@@ -10,6 +10,9 @@ export const metadata: Metadata = {
     description: "Professional toilet repair and replacement services. Fix leaks, clogs, and running toilets with expert plumbing solutions for your bathroom.",
     type: "website",
   },
+  alternates: {
+    canonical: "https://www.waterheatersos.com/toilet-repair-replacement",
+  },
 };
 
 export default function ToiletRepairReplacementPage() {

@@ -7,6 +7,7 @@ import { Check, Phone } from "lucide-react";
 import { FAQ } from "@/components/home/FAQ";
 import { TrustedBrands } from "@/components/home/TrustedBrands";
 import { SetFooterCTA } from "@/components/SetFooterCTA";
+import { Breadcrumb } from "@/components/Breadcrumb";
 
 const repairIssues = [
   {
@@ -38,6 +39,12 @@ export function HeatPumpWaterHeatersContent() {
         title="Need Heat Pump Water Heater Service?"
         description="Ready to upgrade to a heat pump water heater or need expert repairs? Contact us today for professional service and installation."
         quoteLink="/quote?category=Water%20Heaters&service=Heat%20Pump%20Water%20Heater%20Installation"
+      />
+      <Breadcrumb
+        items={[
+          { label: "Services", href: "/#services" },
+          { label: "Heat Pump Water Heaters" },
+        ]}
       />
       {/* Hero Section */}
       <section className="relative overflow-hidden bg-gradient-to-b from-gray-50 to-white pt-12 pb-10 sm:pt-16 sm:pb-14 lg:pt-32 lg:pb-24">

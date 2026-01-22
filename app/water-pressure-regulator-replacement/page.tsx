@@ -10,6 +10,9 @@ export const metadata: Metadata = {
     description: "Professional water pressure regulator replacement and installation. Protect your plumbing from high pressure damage with expert PRV services.",
     type: "website",
   },
+  alternates: {
+    canonical: "https://www.waterheatersos.com/water-pressure-regulator-replacement",
+  },
 };
 
 export default function WaterPressureRegulatorReplacementPage() {

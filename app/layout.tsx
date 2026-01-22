@@ -26,11 +26,20 @@ export const metadata: Metadata = {
     siteName: "Water Heater SOS",
     title: "Water Heater SOS - Expert Water Heater Services",
     description: "The Inland Empire's most trusted water heater experts. Fast, affordable repair and replacement services.",
+    images: [
+      {
+        url: "https://www.waterheatersos.com/wh-sos-service-van.webp",
+        width: 1200,
+        height: 630,
+        alt: "Water Heater SOS Service Van - Expert Water Heater Services",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "Water Heater SOS",
     description: "Expert water heater services in the Inland Empire",
+    images: ["https://www.waterheatersos.com/wh-sos-service-van.webp"],
   },
   robots: {
     index: true,
@@ -136,7 +145,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <link rel="icon" href="/favicon.jfif" sizes="any" />
+        <link rel="icon" href="/favicon.ico" sizes="any" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link

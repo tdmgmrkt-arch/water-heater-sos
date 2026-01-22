@@ -10,6 +10,9 @@ export const metadata: Metadata = {
     description: "Expert water filtration system installation. Clean, safe drinking water for your entire home. Free water quality testing available.",
     type: "website",
   },
+  alternates: {
+    canonical: "https://www.waterheatersos.com/water-filtration",
+  },
 };
 
 export default function WaterFiltrationPage() {

@@ -10,6 +10,9 @@ export const metadata: Metadata = {
     description: "Professional water service line repair and replacement. Fix leaks and restore water flow with expert plumbing solutions for your home.",
     type: "website",
   },
+  alternates: {
+    canonical: "https://www.waterheatersos.com/water-service-repair-replacement",
+  },
 };
 
 export default function WaterServiceRepairReplacementPage() {

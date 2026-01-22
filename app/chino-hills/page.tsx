@@ -18,6 +18,9 @@ export const metadata: Metadata = {
       "Professional top-rated plumbers in Chino Hills, CA. Fast water heater repair, installation, drain cleaning & more. Licensed, insured & available 24/7.",
     type: "website",
   },
+  alternates: {
+    canonical: "https://www.waterheatersos.com/chino-hills",
+  },
 };
 
 export default function ChinoHillsPage() {

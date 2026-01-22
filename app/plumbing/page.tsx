@@ -10,6 +10,9 @@ export const metadata: Metadata = {
     description: "Professional plumbing services for your home and business. From water heaters to leak repairs, we handle all your plumbing needs with expert care.",
     type: "website",
   },
+  alternates: {
+    canonical: "https://www.waterheatersos.com/plumbing",
+  },
 };
 
 export default function PlumbingPage() {

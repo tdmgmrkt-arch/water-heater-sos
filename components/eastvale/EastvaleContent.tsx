@@ -6,10 +6,17 @@ import { motion } from "framer-motion";
 import { ArrowRight, Droplets, Wrench, Phone, AlertCircle, CheckCircle2 } from "lucide-react";
 import { FAQ } from "@/components/home/FAQ";
 import { TrustedBrands } from "@/components/home/TrustedBrands";
+import { Breadcrumb } from "@/components/Breadcrumb";
 
 export function EastvaleContent() {
   return (
     <>
+      <Breadcrumb
+        items={[
+          { label: "Service Areas", href: "/#service-areas" },
+          { label: "Eastvale" },
+        ]}
+      />
       {/* Hero Section */}
       <section className="relative overflow-hidden bg-gradient-to-b from-gray-50 to-white pt-20 pb-16 lg:pt-32 lg:pb-24">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -129,7 +136,7 @@ export function EastvaleContent() {
                 title: "Garbage Disposal Service",
                 description: "Repair or install garbage disposals for smooth operation",
                 icon: Wrench,
-                link: "/garbage-disposal",
+                link: "/garbage-disposal-repair-replacement",
               },
             ].map((service, index) => (
               <motion.div

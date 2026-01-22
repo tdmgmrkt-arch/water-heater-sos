@@ -10,6 +10,9 @@ export const metadata: Metadata = {
     description: "Expert heat pump water heater services. Energy-efficient solutions with up to 73% less energy usage. Professional installation and repairs.",
     type: "website",
   },
+  alternates: {
+    canonical: "https://www.waterheatersos.com/heat-pump-water-heaters",
+  },
 };
 
 export default function HeatPumpWaterHeatersPage() {

@@ -18,6 +18,9 @@ export const metadata: Metadata = {
       "Trusted for all your plumbing needs in Grand Terrace, CA. Fast water heater repair, installation, drain cleaning & more. Licensed, insured & available 24/7.",
     type: "website",
   },
+  alternates: {
+    canonical: "https://www.waterheatersos.com/grand-terrace",
+  },
 };
 
 export default function GrandTerracePage() {

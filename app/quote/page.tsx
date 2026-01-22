@@ -11,6 +11,9 @@ export const metadata: Metadata = {
     description: "Get your free water heater estimate today. Same-day quotes and installation available throughout the Inland Empire.",
     type: "website",
   },
+  alternates: {
+    canonical: "https://www.waterheatersos.com/quote",
+  },
 };
 
 export default function QuotePage() {

@@ -7,6 +7,7 @@ import { Check, Phone } from "lucide-react";
 import { FAQ } from "@/components/home/FAQ";
 import { TrustedBrands } from "@/components/home/TrustedBrands";
 import { SetFooterCTA } from "@/components/SetFooterCTA";
+import { Breadcrumb } from "@/components/Breadcrumb";
 
 const commonProblems = [
   {
@@ -42,6 +43,12 @@ export function GasWaterHeatersContent() {
         title="Need Gas Water Heater Service?"
         description="Don't let a broken gas water heater disrupt your daily routine. Contact us today for fast, reliable repair and replacement services."
         quoteLink="/quote?category=Water%20Heaters&service=Gas%20Water%20Heater%20Installation%2FRepair"
+      />
+      <Breadcrumb
+        items={[
+          { label: "Services", href: "/#services" },
+          { label: "Gas Water Heaters" },
+        ]}
       />
       {/* Hero Section */}
       <section className="relative overflow-hidden bg-gradient-to-b from-gray-50 to-white pt-12 pb-10 sm:pt-16 sm:pb-14 lg:pt-32 lg:pb-24">

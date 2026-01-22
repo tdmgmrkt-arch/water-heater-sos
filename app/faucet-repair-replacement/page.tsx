@@ -10,6 +10,9 @@ export const metadata: Metadata = {
     description: "Professional faucet repair and replacement for kitchen and bathroom. Fix leaks, drips, and install modern water-saving faucets with expert plumbing services.",
     type: "website",
   },
+  alternates: {
+    canonical: "https://www.waterheatersos.com/faucet-repair-replacement",
+  },
 };
 
 export default function FaucetRepairReplacementPage() {

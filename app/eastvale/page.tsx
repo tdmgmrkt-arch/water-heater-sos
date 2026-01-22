@@ -18,6 +18,9 @@ export const metadata: Metadata = {
       "Your trusted plumbing experts in Eastvale, CA. Fast water heater repair, installation, drain cleaning & more. Licensed, insured & available 24/7.",
     type: "website",
   },
+  alternates: {
+    canonical: "https://www.waterheatersos.com/eastvale",
+  },
 };
 
 export default function EastvalePage() {

@@ -11,6 +11,9 @@ export const metadata: Metadata = {
     description: "Reach out to Water Heater SOS for fast, reliable service. Call, text, or email us anytime.",
     type: "website",
   },
+  alternates: {
+    canonical: "https://www.waterheatersos.com/contact",
+  },
 };
 
 export default function ContactPage() {

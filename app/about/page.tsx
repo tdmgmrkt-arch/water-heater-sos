@@ -10,6 +10,9 @@ export const metadata: Metadata = {
     description: "Discover the story behind Water Heater SOS, your trusted family-owned water heater and plumbing service provider in the Inland Empire since 2019.",
     type: "website",
   },
+  alternates: {
+    canonical: "https://www.waterheatersos.com/about",
+  },
 };
 
 export default function AboutPage() {

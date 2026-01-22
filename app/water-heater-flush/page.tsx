@@ -10,6 +10,9 @@ export const metadata: Metadata = {
     description: "Expert water heater flushing services. Prevent mineral buildup and extend your water heater's lifespan. Professional maintenance available 24/7.",
     type: "website",
   },
+  alternates: {
+    canonical: "https://www.waterheatersos.com/water-heater-flush",
+  },
 };
 
 export default function WaterHeaterFlushPage() {

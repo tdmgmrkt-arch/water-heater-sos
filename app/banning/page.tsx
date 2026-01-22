@@ -20,6 +20,9 @@ export const metadata: Metadata = {
     type: "website",
     url: "https://waterheatersos.com/banning",
   },
+  alternates: {
+    canonical: "https://www.waterheatersos.com/banning",
+  },
 };
 
 export default function BanningPage() {

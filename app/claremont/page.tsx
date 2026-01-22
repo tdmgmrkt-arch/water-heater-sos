@@ -18,6 +18,9 @@ export const metadata: Metadata = {
       "Expert plumbing services in Claremont, CA. Fast water heater repair, installation, drain cleaning & more. Licensed, insured & available 24/7.",
     type: "website",
   },
+  alternates: {
+    canonical: "https://www.waterheatersos.com/claremont",
+  },
 };
 
 export default function ClaremontPage() {

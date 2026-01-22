@@ -18,6 +18,9 @@ export const metadata: Metadata = {
       "5-Star rated plumbers in Rancho Cucamonga, CA. Fast water heater repair, installation, drain cleaning & more. Licensed, insured & available 24/7.",
     type: "website",
   },
+  alternates: {
+    canonical: "https://www.waterheatersos.com/rancho-cucamonga",
+  },
 };
 
 export default function RanchoCucamongaPage() {

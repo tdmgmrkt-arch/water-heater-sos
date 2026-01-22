@@ -10,6 +10,9 @@ export const metadata: Metadata = {
     description: "Expert leak detection using advanced tools. Find hidden slab and foundation leaks without tearing up your property. Fast, accurate, and reliable.",
     type: "website",
   },
+  alternates: {
+    canonical: "https://www.waterheatersos.com/leak-detection-services",
+  },
 };
 
 export default function LeakDetectionServicesPage() {

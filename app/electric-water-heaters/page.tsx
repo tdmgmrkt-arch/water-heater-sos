@@ -10,6 +10,9 @@ export const metadata: Metadata = {
     description: "Expert electric water heater services. Safe, reliable, and efficient solutions for your home. Fast, professional service.",
     type: "website",
   },
+  alternates: {
+    canonical: "https://www.waterheatersos.com/electric-water-heaters",
+  },
 };
 
 export default function ElectricWaterHeatersPage() {

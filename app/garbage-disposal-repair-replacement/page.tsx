@@ -10,6 +10,9 @@ export const metadata: Metadata = {
     description: "Professional garbage disposal repair and replacement services. Fix jams, leaks, and clogs with expert plumbing solutions for your kitchen.",
     type: "website",
   },
+  alternates: {
+    canonical: "https://www.waterheatersos.com/garbage-disposal-repair-replacement",
+  },
 };
 
 export default function GarbageDisposalRepairReplacementPage() {

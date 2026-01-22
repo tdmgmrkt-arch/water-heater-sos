@@ -19,6 +19,9 @@ export const metadata: Metadata = {
       "Professional Moen Flo Smart Water Monitor installation in Redlands, Yucaipa, Highland, Loma Linda & San Bernardino. Protect your home from water damage.",
     type: "website",
   },
+  alternates: {
+    canonical: "https://www.waterheatersos.com/moen-flo-smart-water-monitor",
+  },
 };
 
 export default function MoenFloSmartWaterMonitorPage() {

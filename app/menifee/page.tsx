@@ -18,6 +18,9 @@ export const metadata: Metadata = {
       "Expert plumbing services in Menifee, CA. Fast water heater repair, installation, drain cleaning & more. Licensed, insured & available 24/7.",
     type: "website",
   },
+  alternates: {
+    canonical: "https://www.waterheatersos.com/menifee",
+  },
 };
 
 export default function MenifeePage() {

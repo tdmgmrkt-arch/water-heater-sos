@@ -10,6 +10,9 @@ export const metadata: Metadata = {
     description: "Expert gas water heater repair and replacement services. Fast, reliable, and affordable. Available 24/7.",
     type: "website",
   },
+  alternates: {
+    canonical: "https://www.waterheatersos.com/gas-water-heaters",
+  },
 };
 
 export default function GasWaterHeatersPage() {

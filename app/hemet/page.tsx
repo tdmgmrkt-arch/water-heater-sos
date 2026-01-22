@@ -18,6 +18,9 @@ export const metadata: Metadata = {
       "Fast response plumbing company in Hemet, CA. Fast water heater repair, installation, drain cleaning & more. Licensed, insured & available 24/7.",
     type: "website",
   },
+  alternates: {
+    canonical: "https://www.waterheatersos.com/hemet",
+  },
 };
 
 export default function HemetPage() {

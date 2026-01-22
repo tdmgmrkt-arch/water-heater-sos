@@ -18,6 +18,9 @@ export const metadata: Metadata = {
       "Fantastic 5-star plumbers in Upland, CA. Fast water heater repair, installation, drain cleaning & more. Licensed, insured & available 24/7.",
     type: "website",
   },
+  alternates: {
+    canonical: "https://www.waterheatersos.com/upland",
+  },
 };
 
 export default function UplandPage() {

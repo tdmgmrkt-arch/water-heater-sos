@@ -4,6 +4,9 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Water Heater Services in Lodimav, CA",
   description: "Expert water heater repair and installation services in Lodimav, CA. Same-day service available.",
+  alternates: {
+    canonical: "https://www.waterheatersos.com/lodimav",
+  },
 };
 
 export default function LodimavPage() {

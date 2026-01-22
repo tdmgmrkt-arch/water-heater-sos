@@ -5,6 +5,7 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import { Phone, Tag, Star, CheckCircle } from "lucide-react";
 import { FAQ } from "@/components/home/FAQ";
+import { Breadcrumb } from "@/components/Breadcrumb";
 
 // --- Data (Unchanged) ---
 const discounts = [
@@ -38,6 +39,12 @@ const discounts = [
 export function DiscountWaterHeatersContent() {
   return (
     <>
+      <Breadcrumb
+        items={[
+          { label: "Services", href: "/#services" },
+          { label: "Discount Water Heaters" },
+        ]}
+      />
       {/* -------------------- SECTION 1: HERO (HIGH-IMPACT VALUE) -------------------- */}
       <section className="relative overflow-hidden bg-gradient-to-br from-gray-50 to-gray-100 pt-16 pb-12 sm:pt-20 sm:pb-16 lg:pt-40 lg:pb-32">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">

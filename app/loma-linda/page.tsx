@@ -20,6 +20,9 @@ export const metadata: Metadata = {
     type: "website",
     url: "https://waterheatersos.com/loma-linda",
   },
+  alternates: {
+    canonical: "https://www.waterheatersos.com/loma-linda",
+  },
 };
 
 export default function LomaLindaPage() {

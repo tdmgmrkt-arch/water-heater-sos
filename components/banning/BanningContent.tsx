@@ -6,6 +6,7 @@ import { motion } from "framer-motion";
 import { Check, Phone } from "lucide-react";
 import { FAQ } from "@/components/home/FAQ";
 import { TrustedBrands } from "@/components/home/TrustedBrands";
+import { Breadcrumb } from "@/components/Breadcrumb";
 
 const plumbingServices = [
   {
@@ -80,6 +81,12 @@ const commonReasons = [
 export function BanningContent() {
   return (
     <>
+      <Breadcrumb
+        items={[
+          { label: "Service Areas", href: "/#service-areas" },
+          { label: "Banning" },
+        ]}
+      />
       {/* Hero Section */}
       <section className="relative overflow-hidden bg-gradient-to-b from-gray-50 to-white pt-20 pb-16 lg:pt-32 lg:pb-24">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">

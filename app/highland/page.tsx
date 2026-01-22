@@ -21,6 +21,9 @@ export const metadata: Metadata = {
     type: "website",
     url: "https://waterheatersos.com/highland",
   },
+  alternates: {
+    canonical: "https://www.waterheatersos.com/highland",
+  },
 };
 
 export default function HighlandPage() {

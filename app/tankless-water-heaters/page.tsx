@@ -10,6 +10,9 @@ export const metadata: Metadata = {
     description: "Expert tankless water heater services. Energy-efficient solutions with endless hot water. Fast, reliable, and professional.",
     type: "website",
   },
+  alternates: {
+    canonical: "https://www.waterheatersos.com/tankless-water-heaters",
+  },
 };
 
 export default function TanklessWaterHeatersPage() {

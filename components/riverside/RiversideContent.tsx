@@ -6,10 +6,17 @@ import { motion } from "framer-motion";
 import { ArrowRight, Droplets, Wrench, Phone, AlertCircle, CheckCircle2 } from "lucide-react";
 import { FAQ } from "@/components/home/FAQ";
 import { TrustedBrands } from "@/components/home/TrustedBrands";
+import { Breadcrumb } from "@/components/Breadcrumb";
 
 export function RiversideContent() {
   return (
     <>
+      <Breadcrumb
+        items={[
+          { label: "Service Areas", href: "/#service-areas" },
+          { label: "Riverside" },
+        ]}
+      />
       {/* Hero Section */}
       <section className="relative overflow-hidden bg-gradient-to-b from-gray-50 to-white pt-20 pb-16 lg:pt-32 lg:pb-24">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -126,7 +133,7 @@ export function RiversideContent() {
                 title: "Whole‑House Repipe",
                 description: "Replaces old pipes for cleaner, faster‑flowing water",
                 icon: Wrench,
-                link: "/repiping",
+                link: "/whole-house-repiping",
               },
             ].map((service, index) => (
               <motion.div

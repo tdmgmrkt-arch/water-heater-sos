@@ -21,6 +21,9 @@ export const metadata: Metadata = {
     type: "website",
     url: "https://waterheatersos.com/calimesa",
   },
+  alternates: {
+    canonical: "https://www.waterheatersos.com/calimesa",
+  },
 };
 
 export default function CalimesaPage() {

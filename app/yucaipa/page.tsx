@@ -10,6 +10,9 @@ export const metadata: Metadata = {
     description: "Professional plumbing and water heater services in Yucaipa, CA. From leaky faucets to water heater replacements, we handle all your plumbing needs.",
     type: "website",
   },
+  alternates: {
+    canonical: "https://www.waterheatersos.com/yucaipa",
+  },
 };
 
 export default function YucaipaPage() {

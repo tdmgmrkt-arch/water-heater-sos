@@ -19,6 +19,9 @@ export const metadata: Metadata = {
       "Expert drain cleaning services to clear clogs and restore proper drainage. Fast, professional service for backed up drains, sewer lines & more.",
     type: "website",
   },
+  alternates: {
+    canonical: "https://www.waterheatersos.com/drain-cleaning",
+  },
 };
 
 export default function DrainCleaningPage() {

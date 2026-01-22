@@ -18,6 +18,9 @@ export const metadata: Metadata = {
       "Quality plumbing services in Anaheim Hills, CA. Fast water heater repair, installation, drain cleaning & more. Licensed, insured & available 24/7.",
     type: "website",
   },
+  alternates: {
+    canonical: "https://www.waterheatersos.com/anaheim-hills",
+  },
 };
 
 export default function AnaheimHillsPage() {

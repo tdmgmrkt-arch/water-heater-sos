@@ -10,6 +10,9 @@ export const metadata: Metadata = {
     description: "Expert air duct and dryer vent cleaning to improve air quality and safety. Formerly Vent Gator, serving the Inland Empire with trusted, professional service.",
     type: "website",
   },
+  alternates: {
+    canonical: "https://www.waterheatersos.com/air-duct-cleaning",
+  },
 };
 
 export default function AirDuctCleaningPage() {

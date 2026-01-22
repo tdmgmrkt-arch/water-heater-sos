@@ -10,6 +10,9 @@ export const metadata: Metadata = {
     description: "Expert gas leak repair and gas line installation services. Fast emergency response to protect your family. Licensed and certified technicians.",
     type: "website",
   },
+  alternates: {
+    canonical: "https://www.waterheatersos.com/gas-leak-repairs",
+  },
 };
 
 export default function GasLeakRepairsPage() {

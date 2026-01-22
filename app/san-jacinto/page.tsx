@@ -18,6 +18,9 @@ export const metadata: Metadata = {
       "Top-rated plumbers in San Jacinto, CA. Fast water heater repair, installation, drain cleaning & more. Licensed, insured & available 24/7.",
     type: "website",
   },
+  alternates: {
+    canonical: "https://www.waterheatersos.com/san-jacinto",
+  },
 };
 
 export default function SanJacintoPage() {

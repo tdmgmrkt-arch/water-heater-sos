@@ -18,6 +18,9 @@ export const metadata: Metadata = {
       "Highly rated plumbing services in Murrieta, CA. Fast water heater repair, installation, drain cleaning & more. Licensed, insured & available 24/7.",
     type: "website",
   },
+  alternates: {
+    canonical: "https://www.waterheatersos.com/murrieta",
+  },
 };
 
 export default function MurrietaPage() {

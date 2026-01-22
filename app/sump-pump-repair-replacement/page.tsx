@@ -10,6 +10,9 @@ export const metadata: Metadata = {
     description: "Professional sump pump repair and replacement services. Protect your home from flooding with expert installation and reliable maintenance.",
     type: "website",
   },
+  alternates: {
+    canonical: "https://www.waterheatersos.com/sump-pump-repair-replacement",
+  },
 };
 
 export default function SumpPumpRepairReplacementPage() {

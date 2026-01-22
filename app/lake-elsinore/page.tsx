@@ -18,6 +18,9 @@ export const metadata: Metadata = {
       "5-Star plumbing services in Lake Elsinore, CA. Fast water heater repair, installation, drain cleaning & more. Licensed, insured & available 24/7.",
     type: "website",
   },
+  alternates: {
+    canonical: "https://www.waterheatersos.com/lake-elsinore",
+  },
 };
 
 export default function LakeElsinorePage() {

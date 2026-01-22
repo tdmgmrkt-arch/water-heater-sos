@@ -18,6 +18,9 @@ export const metadata: Metadata = {
       "Your plumbing pros in Yorba Linda, CA. Fast water heater repair, installation, drain cleaning & more. Licensed, insured & available 24/7.",
     type: "website",
   },
+  alternates: {
+    canonical: "https://www.waterheatersos.com/yorba-linda",
+  },
 };
 
 export default function YorbaLindaPage() {

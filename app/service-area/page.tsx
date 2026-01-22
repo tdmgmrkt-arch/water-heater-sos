@@ -10,6 +10,9 @@ export const metadata: Metadata = {
     description: "Serving 30+ cities across the Inland Empire with expert water heater installation and repair services.",
     type: "website",
   },
+  alternates: {
+    canonical: "https://www.waterheatersos.com/service-area",
+  },
 };
 
 export default function ServiceAreaPage() {

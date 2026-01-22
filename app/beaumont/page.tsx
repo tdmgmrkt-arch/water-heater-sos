@@ -20,6 +20,9 @@ export const metadata: Metadata = {
     type: "website",
     url: "https://waterheatersos.com/beaumont",
   },
+  alternates: {
+    canonical: "https://www.waterheatersos.com/beaumont",
+  },
 };
 
 export default function BeaumontPage() {

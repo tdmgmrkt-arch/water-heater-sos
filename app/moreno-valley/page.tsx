@@ -18,6 +18,9 @@ export const metadata: Metadata = {
       "Expert plumbing services in Moreno Valley, CA. Fast water heater repair, installation, drain cleaning & more. Licensed, insured & available 24/7.",
     type: "website",
   },
+  alternates: {
+    canonical: "https://www.waterheatersos.com/moreno-valley",
+  },
 };
 
 export default function MorenoValleyPage() {

@@ -18,6 +18,9 @@ export const metadata: Metadata = {
       "5-Star rated plumbing services in Temecula, CA. Fast water heater repair, installation, drain cleaning & more. Licensed, insured & available 24/7.",
     type: "website",
   },
+  alternates: {
+    canonical: "https://www.waterheatersos.com/temecula",
+  },
 };
 
 export default function TemeculaPage() {

@@ -17,7 +17,27 @@ interface FAQProps {
 
 export function FAQ({ category = "home", title = "Frequently Asked Questions", subtitle }: FAQProps) {
   const faqItems = faqData[category] || faqData.home;
+
+  // Generate FAQPage JSON-LD schema for rich snippets
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": faqItems.map((faq) => ({
+      "@type": "Question",
+      "name": faq.question,
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": faq.answer,
+      },
+    })),
+  };
+
   return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
     <section className="bg-gray-50 py-10 sm:py-14 lg:py-24">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <motion.div
@@ -65,5 +85,6 @@ export function FAQ({ category = "home", title = "Frequently Asked Questions", s
         </motion.div>
       </div>
     </section>
+    </>
   );
 }

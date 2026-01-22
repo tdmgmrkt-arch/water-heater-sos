@@ -10,6 +10,9 @@ export const metadata: Metadata = {
     description: "Our terms and conditions for using Water Heater SOS services.",
     type: "website",
   },
+  alternates: {
+    canonical: "https://www.waterheatersos.com/terms-of-service",
+  },
 };
 
 export default function TermsOfServicePage() {

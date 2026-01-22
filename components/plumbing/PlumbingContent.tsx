@@ -7,6 +7,7 @@ import { Phone, Droplets, Thermometer, Volume2, Flame, AlertCircle } from "lucid
 import { FAQ } from "@/components/home/FAQ";
 import { TrustedBrands } from "@/components/home/TrustedBrands";
 import { SetFooterCTA } from "@/components/SetFooterCTA";
+import { Breadcrumb } from "@/components/Breadcrumb";
 
 const repairs = [
   {
@@ -43,6 +44,12 @@ export function PlumbingContent() {
         title="Need Plumbing Services?"
         description="From water heaters to full plumbing services, we're here to help. Contact us today for expert plumbing solutions."
         quoteLink="/quote"
+      />
+      <Breadcrumb
+        items={[
+          { label: "Services", href: "/#services" },
+          { label: "Plumbing Services" },
+        ]}
       />
       {/* Hero Section */}
       <section className="relative overflow-hidden bg-gradient-to-b from-gray-50 to-white pt-12 pb-10 sm:pt-16 sm:pb-14 lg:pt-32 lg:pb-24">

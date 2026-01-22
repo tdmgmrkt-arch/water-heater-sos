@@ -18,6 +18,9 @@ export const metadata: Metadata = {
       "Your go-to plumbing experts in Norco, CA. Fast water heater repair, installation, drain cleaning & more. Licensed, insured & available 24/7.",
     type: "website",
   },
+  alternates: {
+    canonical: "https://www.waterheatersos.com/norco",
+  },
 };
 
 export default function NorcoPage() {

@@ -10,6 +10,9 @@ export const metadata: Metadata = {
     description: "Professional sewer camera inspection services to identify plumbing issues without digging. Fast, accurate, and non-invasive diagnostics.",
     type: "website",
   },
+  alternates: {
+    canonical: "https://www.waterheatersos.com/sewer-camera-inspection",
+  },
 };
 
 export default function SewerCameraInspectionPage() {

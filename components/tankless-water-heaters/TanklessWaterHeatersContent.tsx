@@ -7,6 +7,7 @@ import { Check, Phone } from "lucide-react";
 import { FAQ } from "@/components/home/FAQ";
 import { TrustedBrands } from "@/components/home/TrustedBrands";
 import { SetFooterCTA } from "@/components/SetFooterCTA";
+import { Breadcrumb } from "@/components/Breadcrumb";
 
 const breakdownReasons = [
   {
@@ -73,6 +74,12 @@ export function TanklessWaterHeatersContent() {
         title="Need Tankless Water Heater Service?"
         description="Ready to upgrade to a tankless water heater or need repairs? Contact us today for expert service and installation."
         quoteLink="/quote?category=Water%20Heaters&service=Tankless%20Water%20Heater%20Installation%2FRepair"
+      />
+      <Breadcrumb
+        items={[
+          { label: "Services", href: "/#services" },
+          { label: "Tankless Water Heaters" },
+        ]}
       />
       {/* Hero Section */}
       <section className="relative overflow-hidden bg-gradient-to-b from-gray-50 to-white pt-12 pb-10 sm:pt-16 sm:pb-14 lg:pt-32 lg:pb-24">

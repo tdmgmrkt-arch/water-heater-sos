@@ -18,6 +18,9 @@ export const metadata: Metadata = {
       "Full-service plumbing company in Colton, CA. Fast water heater repair, installation, drain cleaning & more. Licensed, insured & available 24/7.",
     type: "website",
   },
+  alternates: {
+    canonical: "https://www.waterheatersos.com/colton",
+  },
 };
 
 export default function ColtonPage() {

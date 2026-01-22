@@ -10,6 +10,9 @@ export const metadata: Metadata = {
     description: "Professional shower repair and replacement services. Fix leaks, valves, and drains with expert plumbing solutions for your bathroom.",
     type: "website",
   },
+  alternates: {
+    canonical: "https://www.waterheatersos.com/shower-repair-replacement",
+  },
 };
 
 export default function ShowerRepairReplacementPage() {

@@ -10,6 +10,9 @@ export const metadata: Metadata = {
     description: "Our commitment to protecting your privacy and personal information.",
     type: "website",
   },
+  alternates: {
+    canonical: "https://www.waterheatersos.com/privacy-policy-2",
+  },
 };
 
 export default function PrivacyPolicyPage() {
