@@ -103,7 +103,7 @@ export function ColtonContent() {
                 title: "Water Heater Repairs",
                 description: "Fast repair of gas, electric, and tankless water heaters",
                 icon: Wrench,
-                link: "/water-heater-repair",
+                link: "/water-heater-services",
               },
               {
                 title: "Drain Cleaning",
@@ -133,7 +133,7 @@ export function ColtonContent() {
                 title: "Whole‑House Repiping",
                 description: "Replace old pipes for better water flow",
                 icon: Wrench,
-                link: "/repiping",
+                link: "/whole-house-repipe",
               },
             ].map((service, index) => (
               <motion.div

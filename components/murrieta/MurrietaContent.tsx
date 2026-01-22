@@ -103,13 +103,13 @@ export function MurrietaContent() {
                 title: "Water Heater Installation",
                 description: "Professional installation of gas, electric, and tankless water heaters",
                 icon: Droplets,
-                link: "/water-heater-installation",
+                link: "/water-heater-services",
               },
               {
                 title: "Water Heater Repair",
                 description: "Fast diagnosis and repair of all water heater issues",
                 icon: Wrench,
-                link: "/water-heater-repair",
+                link: "/water-heater-services",
               },
               {
                 title: "Tankless Water Heaters",

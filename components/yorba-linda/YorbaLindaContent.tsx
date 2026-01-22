@@ -106,7 +106,7 @@ export function YorbaLindaContent() {
                 title: "Water Heater Repair",
                 description: "Fast repairs for gas, electric, and tankless water heaters",
                 icon: Wrench,
-                link: "/water-heater-repair",
+                link: "/water-heater-services",
               },
               {
                 title: "Drain Cleaning",

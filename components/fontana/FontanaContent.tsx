@@ -106,7 +106,7 @@ export function FontanaContent() {
                 title: "Water Heater Repair",
                 description: "Expert repairs for gas, electric, and tankless water heaters",
                 icon: Wrench,
-                link: "/water-heater-repair",
+                link: "/water-heater-services",
               },
               {
                 title: "Drain Cleaning Services",
@@ -136,7 +136,7 @@ export function FontanaContent() {
                 title: "Whole‑House Repipe",
                 description: "Replace old pipes for improved water quality",
                 icon: Wrench,
-                link: "/repiping",
+                link: "/whole-house-repipe",
               },
             ].map((service, index) => (
               <motion.div

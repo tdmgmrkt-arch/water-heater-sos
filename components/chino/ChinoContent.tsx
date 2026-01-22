@@ -106,7 +106,7 @@ export function ChinoContent() {
                 title: "Water Heater Repair & Upgrades",
                 description: "Expert repairs for traditional and tankless water heaters",
                 icon: Wrench,
-                link: "/water-heater-repair",
+                link: "/water-heater-services",
               },
               {
                 title: "Drain Cleaning",
@@ -130,13 +130,13 @@ export function ChinoContent() {
                 title: "Pipe Replacements",
                 description: "Boost water pressure and stop leaks",
                 icon: Wrench,
-                link: "/repiping",
+                link: "/whole-house-repipe",
               },
               {
                 title: "Garbage Disposal Care",
                 description: "Keep your kitchen sink running smoothly",
                 icon: Wrench,
-                link: "/garbage-disposal",
+                link: "/garbage-disposal-repair-replacement",
               },
             ].map((service, index) => (
               <motion.div

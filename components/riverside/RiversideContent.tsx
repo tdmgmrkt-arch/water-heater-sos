@@ -103,7 +103,7 @@ export function RiversideContent() {
                 title: "Water Heater Repair",
                 description: "Fixes leaks or heating issues in gas, electric or tankless water heaters",
                 icon: Wrench,
-                link: "/water-heater-repair",
+                link: "/water-heater-services",
               },
               {
                 title: "Drain Cleaning Services",

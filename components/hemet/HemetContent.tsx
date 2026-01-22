@@ -106,7 +106,7 @@ export function HemetContent() {
                 title: "Gas & Tankless Water Heater Repair",
                 description: "Expert repairs for gas and tankless water heaters",
                 icon: Wrench,
-                link: "/water-heater-repair",
+                link: "/water-heater-services",
               },
               {
                 title: "Drain Cleaning",
@@ -130,7 +130,7 @@ export function HemetContent() {
                 title: "Whole‑House Repipe",
                 description: "Replace old pipes throughout your home",
                 icon: Wrench,
-                link: "/repiping",
+                link: "/whole-house-repipe",
               },
               {
                 title: "Water Filtration Systems",

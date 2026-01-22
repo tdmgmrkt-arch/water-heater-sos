@@ -106,7 +106,7 @@ export function SanJacintoContent() {
                 title: "Water Heater Repair",
                 description: "Fast repairs for gas, electric, and tankless water heaters",
                 icon: Wrench,
-                link: "/water-heater-repair",
+                link: "/water-heater-services",
               },
               {
                 title: "Drain Cleaning",
@@ -130,13 +130,13 @@ export function SanJacintoContent() {
                 title: "Whole‑House Repipe",
                 description: "Major plumbing upgrades for your home",
                 icon: Wrench,
-                link: "/repiping",
+                link: "/whole-house-repipe",
               },
               {
                 title: "Garbage Disposal Repair",
                 description: "Routine maintenance and repairs",
                 icon: Wrench,
-                link: "/garbage-disposal",
+                link: "/garbage-disposal-repair-replacement",
               },
             ].map((service, index) => (
               <motion.div

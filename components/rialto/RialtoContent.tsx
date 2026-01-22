@@ -103,7 +103,7 @@ export function RialtoContent() {
                 title: "Water Heater Fixes",
                 description: "Repairs leaks or heating problems in gas, electric or tankless water heaters",
                 icon: Wrench,
-                link: "/water-heater-repair",
+                link: "/water-heater-services",
               },
               {
                 title: "Drain Clearing",
@@ -133,7 +133,7 @@ export function RialtoContent() {
                 title: "Whole‑House Repiping",
                 description: "Replaces old pipes with new ones for cleaner, faster‑flowing water",
                 icon: Wrench,
-                link: "/repiping",
+                link: "/whole-house-repipe",
               },
             ].map((service, index) => (
               <motion.div

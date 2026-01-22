@@ -123,7 +123,7 @@ export function ServiceCards() {
                       </p>
 
                       {/* Features List */}
-                      
+
                       <div className="space-y-2">
                         {service.features.map((feature, idx) => (
                           <div key={idx} className="flex items-center gap-2">
@@ -154,6 +154,24 @@ export function ServiceCards() {
             );
           })}
         </div>
+
+        {/* View All Services Button */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.3 }}
+          viewport={{ once: true }}
+          className="mt-8 sm:mt-12 text-center"
+        >
+          <Link
+            href="/water-heater-services"
+            className="inline-flex items-center gap-2 rounded-full border-2 border-[#EA5D19] bg-transparent px-5 py-3 sm:px-8 sm:py-4 text-sm sm:text-lg font-semibold text-[#EA5D19] hover:bg-[#EA5D19] hover:text-white transition-all duration-200 hover:scale-105 shadow-md hover:shadow-lg"
+          >
+            <span className="sm:hidden">All Water Heater Services</span>
+            <span className="hidden sm:inline">View All Water Heater Services</span>
+            <ArrowRight className="h-4 w-4 sm:h-5 sm:w-5" />
+          </Link>
+        </motion.div>
       </div>
     </section>
   );

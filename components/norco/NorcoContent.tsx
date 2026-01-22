@@ -106,7 +106,7 @@ export function NorcoContent() {
                 title: "Water Heater Repair",
                 description: "Expert repairs for traditional and tankless water heaters",
                 icon: Wrench,
-                link: "/water-heater-repair",
+                link: "/water-heater-services",
               },
               {
                 title: "Drain Cleaning",
@@ -130,13 +130,13 @@ export function NorcoContent() {
                 title: "Whole‑House Repipe",
                 description: "Replace old pipes for better water flow",
                 icon: Wrench,
-                link: "/repiping",
+                link: "/whole-house-repipe",
               },
               {
                 title: "Garbage Disposal Service",
                 description: "Repair or install garbage disposals",
                 icon: Wrench,
-                link: "/garbage-disposal",
+                link: "/garbage-disposal-repair-replacement",
               },
             ].map((service, index) => (
               <motion.div

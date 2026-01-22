@@ -106,7 +106,7 @@ export function ChinoHillsContent() {
                 title: "Gas & Tankless Water Heater Repair",
                 description: "Expert repairs for gas and tankless water heaters",
                 icon: Wrench,
-                link: "/water-heater-repair",
+                link: "/water-heater-services",
               },
               {
                 title: "Drain Cleaning",
@@ -130,13 +130,13 @@ export function ChinoHillsContent() {
                 title: "Whole‑House Repipe",
                 description: "Replace old pipes throughout your home",
                 icon: Wrench,
-                link: "/repiping",
+                link: "/whole-house-repipe",
               },
               {
                 title: "Garbage Disposal Repair",
                 description: "Fix or replace garbage disposals",
                 icon: Wrench,
-                link: "/garbage-disposal",
+                link: "/garbage-disposal-repair-replacement",
               },
             ].map((service, index) => (
               <motion.div

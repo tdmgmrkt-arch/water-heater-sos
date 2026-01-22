@@ -106,7 +106,7 @@ export function EastvaleContent() {
                 title: "Water Heater Installation & Repair",
                 description: "Expert installation and repair for traditional and tankless water heaters",
                 icon: Wrench,
-                link: "/water-heater-repair",
+                link: "/water-heater-services",
               },
               {
                 title: "Drain Cleaning & Maintenance",
@@ -130,7 +130,7 @@ export function EastvaleContent() {
                 title: "Whole‑House Repipe",
                 description: "Replace old pipes for improved water flow",
                 icon: Wrench,
-                link: "/repiping",
+                link: "/whole-house-repipe",
               },
               {
                 title: "Garbage Disposal Service",

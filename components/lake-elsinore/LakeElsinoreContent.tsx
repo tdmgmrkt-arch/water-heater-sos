@@ -103,7 +103,7 @@ export function LakeElsinoreContent() {
                 title: "Water Heater Repair",
                 description: "Fast diagnosis and repair of all water heater issues",
                 icon: Wrench,
-                link: "/water-heater-repair",
+                link: "/water-heater-services",
               },
               {
                 title: "Tankless Water Heaters",
@@ -115,7 +115,7 @@ export function LakeElsinoreContent() {
                 title: "Water Heater Installation",
                 description: "Professional installation of gas and electric water heaters",
                 icon: Droplets,
-                link: "/water-heater-installation",
+                link: "/water-heater-services",
               },
               {
                 title: "Drain Cleaning",
