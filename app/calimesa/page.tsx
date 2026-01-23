@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     url: "https://waterheatersos.com/calimesa",
   },
   alternates: {
-    canonical: "https://www.waterheatersos.com/calimesa",
+    canonical: "https://waterheatersos.com/calimesa",
   },
 };
 

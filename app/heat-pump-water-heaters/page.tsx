@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     type: "website",
   },
   alternates: {
-    canonical: "https://www.waterheatersos.com/heat-pump-water-heaters",
+    canonical: "https://waterheatersos.com/heat-pump-water-heaters",
   },
 };
 

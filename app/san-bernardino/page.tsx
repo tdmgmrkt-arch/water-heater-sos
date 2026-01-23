@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     type: "website",
   },
   alternates: {
-    canonical: "https://www.waterheatersos.com/san-bernardino",
+    canonical: "https://waterheatersos.com/san-bernardino",
   },
 };
 

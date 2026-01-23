@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     type: "website",
   },
   alternates: {
-    canonical: "https://www.waterheatersos.com/water-pressure-regulator-replacement",
+    canonical: "https://waterheatersos.com/water-pressure-regulator-replacement",
   },
 };
 

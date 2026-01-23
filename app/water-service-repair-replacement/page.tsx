@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     type: "website",
   },
   alternates: {
-    canonical: "https://www.waterheatersos.com/water-service-repair-replacement",
+    canonical: "https://waterheatersos.com/water-service-repair-replacement",
   },
 };
 

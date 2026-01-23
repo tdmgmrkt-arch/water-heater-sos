@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     type: "website",
   },
   alternates: {
-    canonical: "https://www.waterheatersos.com/moen-flo-smart-water-monitor",
+    canonical: "https://waterheatersos.com/moen-flo-smart-water-monitor",
   },
 };
 

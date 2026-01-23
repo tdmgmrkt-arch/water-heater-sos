@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     type: "website",
   },
   alternates: {
-    canonical: "https://www.waterheatersos.com/moreno-valley",
+    canonical: "https://waterheatersos.com/moreno-valley",
   },
 };
 

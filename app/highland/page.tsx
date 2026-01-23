@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     url: "https://waterheatersos.com/highland",
   },
   alternates: {
-    canonical: "https://www.waterheatersos.com/highland",
+    canonical: "https://waterheatersos.com/highland",
   },
 };
 

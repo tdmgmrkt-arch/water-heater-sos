@@ -3,4 +3,4 @@ User-agent: *
 Allow: /
 
 # Sitemap
-Sitemap: https://www.waterheatersos.com/sitemap.xml
+Sitemap: https://waterheatersos.com/sitemap.xml

@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     type: "website",
   },
   alternates: {
-    canonical: "https://www.waterheatersos.com/privacy-policy",
+    canonical: "https://waterheatersos.com/privacy-policy",
   },
 };
 

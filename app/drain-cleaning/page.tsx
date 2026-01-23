@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     type: "website",
   },
   alternates: {
-    canonical: "https://www.waterheatersos.com/drain-cleaning",
+    canonical: "https://waterheatersos.com/drain-cleaning",
   },
 };
 

@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     type: "website",
   },
   alternates: {
-    canonical: "https://www.waterheatersos.com/upland",
+    canonical: "https://waterheatersos.com/upland",
   },
 };
 

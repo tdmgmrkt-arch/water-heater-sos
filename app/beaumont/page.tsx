@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     url: "https://waterheatersos.com/beaumont",
   },
   alternates: {
-    canonical: "https://www.waterheatersos.com/beaumont",
+    canonical: "https://waterheatersos.com/beaumont",
   },
 };
 

@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     url: "https://waterheatersos.com/banning",
   },
   alternates: {
-    canonical: "https://www.waterheatersos.com/banning",
+    canonical: "https://waterheatersos.com/banning",
   },
 };
 

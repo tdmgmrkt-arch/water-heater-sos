@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     url: "https://waterheatersos.com/loma-linda",
   },
   alternates: {
-    canonical: "https://www.waterheatersos.com/loma-linda",
+    canonical: "https://waterheatersos.com/loma-linda",
   },
 };
 

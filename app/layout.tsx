@@ -15,20 +15,20 @@ export const metadata: Metadata = {
   authors: [{ name: "Water Heater SOS" }],
   creator: "Water Heater SOS",
   publisher: "Water Heater SOS",
-  metadataBase: new URL("https://www.waterheatersos.com"),
+  metadataBase: new URL("https://waterheatersos.com"),
   alternates: {
     canonical: "/",
   },
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://www.waterheatersos.com",
+    url: "https://waterheatersos.com",
     siteName: "Water Heater SOS",
     title: "Water Heater SOS - Expert Water Heater Services",
     description: "The Inland Empire's most trusted water heater experts. Fast, affordable repair and replacement services.",
     images: [
       {
-        url: "https://www.waterheatersos.com/wh-sos-service-van.webp",
+        url: "https://waterheatersos.com/wh-sos-service-van.webp",
         width: 1200,
         height: 630,
         alt: "Water Heater SOS Service Van - Expert Water Heater Services",
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Water Heater SOS",
     description: "Expert water heater services in the Inland Empire",
-    images: ["https://www.waterheatersos.com/wh-sos-service-van.webp"],
+    images: ["https://waterheatersos.com/wh-sos-service-van.webp"],
   },
   robots: {
     index: true,
@@ -67,9 +67,9 @@ export default function RootLayout({
     "@graph": [
       {
         "@type": "LocalBusiness",
-        "@id": "https://www.waterheatersos.com/#organization",
+        "@id": "https://waterheatersos.com/#organization",
         name: "Water Heater SOS",
-        url: "https://www.waterheatersos.com",
+        url: "https://waterheatersos.com",
         telephone: "(800) 697-4014",
         email: "info@waterheatersos.com",
         address: {
@@ -104,8 +104,8 @@ export default function RootLayout({
           },
         ],
         priceRange: "$$",
-        image: "https://www.waterheatersos.com/wh-sos-logo.webp",
-        logo: "https://www.waterheatersos.com/wh-sos-logo.webp",
+        image: "https://waterheatersos.com/wh-sos-logo.webp",
+        logo: "https://waterheatersos.com/wh-sos-logo.webp",
         openingHours: "Mo-Su 00:00-23:59",
         aggregateRating: {
           "@type": "AggregateRating",
@@ -115,27 +115,27 @@ export default function RootLayout({
       },
       {
         "@type": "WebSite",
-        "@id": "https://www.waterheatersos.com/#website",
-        url: "https://www.waterheatersos.com",
+        "@id": "https://waterheatersos.com/#website",
+        url: "https://waterheatersos.com",
         name: "Water Heater SOS",
         publisher: {
-          "@id": "https://www.waterheatersos.com/#organization",
+          "@id": "https://waterheatersos.com/#organization",
         },
         potentialAction: {
           "@type": "SearchAction",
-          target: "https://www.waterheatersos.com/?s={search_term_string}",
+          target: "https://waterheatersos.com/?s={search_term_string}",
           "query-input": "required name=search_term_string",
         },
       },
       {
         "@type": "BreadcrumbList",
-        "@id": "https://www.waterheatersos.com/#breadcrumb",
+        "@id": "https://waterheatersos.com/#breadcrumb",
         itemListElement: [
           {
             "@type": "ListItem",
             position: 1,
             name: "Home",
-            item: "https://www.waterheatersos.com",
+            item: "https://waterheatersos.com",
           },
         ],
       },

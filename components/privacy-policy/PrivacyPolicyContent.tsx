@@ -130,7 +130,7 @@ export function PrivacyPolicyContent() {
                   </p>
                   <p className="text-gray-700 leading-relaxed mt-4">
                     We use your data to provide and improve the Service. By using the Service, you agree to the collection and use of information in accordance with this policy. Unless otherwise defined in this Privacy Policy, terms used in this Privacy Policy have the same meanings as in our Terms and Conditions, accessible from{" "}
-                    <a href="https://www.waterheatersos.com/" className="text-[#EA5D19] hover:underline">
+                    <a href="https://waterheatersos.com/" className="text-[#EA5D19] hover:underline">
                       our website
                     </a>
                     .
@@ -146,7 +146,7 @@ export function PrivacyPolicyContent() {
                   <div className="bg-white p-8 rounded-2xl shadow-lg border border-gray-100 space-y-4">
                     <div>
                       <h3 className="font-bold text-[#11110E] mb-2">Service</h3>
-                      <p className="text-gray-700">Service is the https://www.waterheatersos.com website operated by Water Heater SOS.</p>
+                      <p className="text-gray-700">Service is the https://waterheatersos.com website operated by Water Heater SOS.</p>
                     </div>
                     <div>
                       <h3 className="font-bold text-[#11110E] mb-2">Personal Data</h3>

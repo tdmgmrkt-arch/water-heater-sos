@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     url: "https://waterheatersos.com/discount-water-heaters",
   },
   alternates: {
-    canonical: "https://www.waterheatersos.com/discount-water-heaters",
+    canonical: "https://waterheatersos.com/discount-water-heaters",
   },
 };
 
