@@ -47,7 +47,7 @@ const menuStructure = {
       { name: "Toilet Repair & Replacement", href: "/toilet-repair-replacement", desc: "Toilet services", icon: Toilet },
       { name: "Faucet Repair & Replacement", href: "/faucet-repair-replacement", desc: "Faucet installation", icon: CircleDot },
       { name: "Garbage Disposal Repair & Replacement", href: "/garbage-disposal-repair-replacement", desc: "Disposal services", icon: Trash2 },
-      { name: "Moen Flo Leak Detection Installation", href: "/moen-flo-installation", desc: "Smart water monitoring", icon: Shield },
+      { name: "Moen Flo Leak Detection Installation", href: "/moen-flo-smart-water-monitor", desc: "Smart water monitoring", icon: Shield },
       { name: "Sump Pump Repair & Replacement", href: "/sump-pump-repair-replacement", desc: "Sump pump services", icon: Grip },
       { name: "Air Duct Cleaning", href: "/air-duct-cleaning", desc: "HVAC duct cleaning", icon: Sparkles },
     ],

@@ -58,7 +58,7 @@ const serviceCategories = [
     icon: Shield,
     services: [
       { name: "Gas Leak Repairs", href: "/gas-leak-repairs" },
-      { name: "Moen Flo Installation", href: "/moen-flo-installation" },
+      { name: "Moen Flo Installation", href: "/moen-flo-smart-water-monitor" },
       { name: "Water Pressure Regulator", href: "/water-pressure-regulator-replacement" },
     ],
   },

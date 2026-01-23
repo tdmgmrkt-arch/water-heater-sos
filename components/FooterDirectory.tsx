@@ -14,7 +14,6 @@ const services = [
   { name: "Heat Pump Water Heaters", href: "/heat-pump-water-heaters" },
   { name: "Hydro-Jetting", href: "/hydro-jetting" },
   { name: "Leak Detection Services", href: "/leak-detection-services" },
-  { name: "Moen Flo Installation", href: "/moen-flo-installation" },
   { name: "Moen Flo Smart Monitor", href: "/moen-flo-smart-water-monitor" },
   { name: "Reverse Osmosis", href: "/reverse-osmosis" },
   { name: "Sewer Camera Inspection", href: "/sewer-camera-inspection" },
