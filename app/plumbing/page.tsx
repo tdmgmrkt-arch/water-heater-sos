@@ -2,7 +2,7 @@ import { PlumbingContent } from "@/components/plumbing/PlumbingContent";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Plumbing Services | Water Heater Repair & Full Service Plumbing",
+  title: "Full Service Plumbing & Water Heater Repair",
   description: "Complete plumbing services in the Inland Empire. Water heater repair, leak detection, shower repair, toilet installation, faucet repair, and garbage disposal services. Call (800) 697-4014.",
   keywords: "plumbing services, water heater repair, leak detection, shower repair, toilet installation, faucet repair, garbage disposal, Inland Empire plumber, emergency plumbing",
   openGraph: {

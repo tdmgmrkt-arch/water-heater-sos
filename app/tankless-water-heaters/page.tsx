@@ -2,7 +2,7 @@ import { TanklessWaterHeatersContent } from "@/components/tankless-water-heaters
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Tankless Water Heater Repair & Installation | Energy Efficient",
+  title: "Tankless Water Heater Repair & Installation",
   description: "Professional tankless water heater repair and installation services in the Inland Empire. Energy-efficient, endless hot water, and expert service. Call (800) 697-4014.",
   keywords: "tankless water heater repair, tankless water heater installation, on-demand water heater, energy efficient water heater, Inland Empire plumber",
   openGraph: {

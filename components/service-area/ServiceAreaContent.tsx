@@ -36,7 +36,7 @@ const cities = [
   { name: "Norco", slug: "/norco" },
   { name: "Chino", slug: "/chino" },
   { name: "Chino Hills", slug: "/chino-hills" },
-  { name: "Hemet", slug: "/hemel" },
+  { name: "Hemet", slug: "/hemet" },
   { name: "San Jacinto", slug: "/san-jacinto" },
   { name: "Yorba Linda", slug: "/yorba-linda" },
 ];

@@ -2,7 +2,7 @@ import { GasLeakRepairsContent } from "@/components/gas-leak-repairs/GasLeakRepa
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Gas Leak Repair & Gas Line Installation | Emergency Service",
+  title: "Gas Leak Repair & Line Installation",
   description: "Emergency gas leak repair and professional gas line installation in the Inland Empire. Licensed technicians available 24/7 for gas leak detection and repair. Call (800) 697-4014.",
   keywords: "gas leak repair, gas line installation, emergency gas leak, gas line repair, gas leak detection, Inland Empire plumber, SoCal Gas",
   openGraph: {

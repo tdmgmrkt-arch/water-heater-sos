@@ -311,7 +311,7 @@ export function Footer() {
             <div className="flex flex-col sm:flex-row items-center gap-2 md:gap-3 text-xs text-gray-400">
               <p>© 2025 Water Heater SOS. All Rights Reserved.</p>
               <span className="hidden sm:inline text-gray-700">•</span>
-              <Link href="/privacy-policy-2" className="hover:text-[#EA5D19] transition-colors">
+              <Link href="/privacy-policy" className="hover:text-[#EA5D19] transition-colors">
                 Privacy Policy
               </Link>
             </div>
