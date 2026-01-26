@@ -3,7 +3,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { Phone, MapPin, Clock, Star, Shield, ChevronDown } from "lucide-react";
+import { Phone, MapPin, Clock, Star, Shield, ChevronDown, Facebook, Instagram } from "lucide-react";
 import { Container } from "./Container";
 import { useFooterCTA, defaultCTA } from "@/contexts/FooterCTAContext";
 import { FooterDirectory } from "./FooterDirectory";
@@ -315,9 +315,37 @@ export function Footer() {
                 Privacy Policy
               </Link>
             </div>
-            <p className="text-xs text-gray-500 hidden md:block">
-              Built with precision & care
-            </p>
+            <div className="flex items-center gap-3">
+              <a
+                href="https://www.facebook.com/WaterHeaterSOS/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-400 hover:text-[#EA5D19] transition-colors"
+                aria-label="Facebook"
+              >
+                <Facebook className="h-5 w-5" />
+              </a>
+              <a
+                href="https://www.instagram.com/waterheatersos/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-400 hover:text-[#EA5D19] transition-colors"
+                aria-label="Instagram"
+              >
+                <Instagram className="h-5 w-5" />
+              </a>
+              <a
+                href="https://www.yelp.com/biz/water-heater-sos-lake-elsinore"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-400 hover:text-[#EA5D19] transition-colors"
+                aria-label="Yelp"
+              >
+                <svg className="h-5 w-5" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M21.111 18.226c-.141.969-2.119 3.483-3.029 3.847-.311.125-.611.055-.867-.213l-4.173-4.366c-.291-.305-.334-.753-.109-1.124.224-.371.635-.515 1.032-.396l5.195 1.569c.395.119.718.418.793.832.015.082.043.26-.006.609-.043.306.12-.588.164-.758zm-9.449-3.975c-.258-.349-.803-1.616-.61-2.025l4.356-9.166c.18-.379.533-.591.917-.54.97.127 3.773 1.394 4.293 2.215.177.281.193.59.063.877-.104.229-.296.391-.543.473l-7.582 2.627c-.164.057-.356.072-.535.032zm-2.839 5.252c-.26.148-.631.111-.9-.165l-5.118-5.27c-.318-.327-.34-.792-.052-1.107.099-.108.226-.195.399-.231l7.636-1.592c.425-.089.788.176.893.543.067.232.032.467-.103.673l-2.755 7.149zm.566-9.392c.113.349.078.642-.015.888l-2.177 5.786c-.15.398-.521.657-.951.637-.988-.047-3.86-.95-4.461-1.686-.205-.251-.263-.551-.175-.865.07-.249.223-.452.437-.573l7.159-4.069c.32-.182.668-.167.882.004.18.144.257.319.301.478v-.6zM11.792 10.49c.199-.152.453-.19.697-.106l2.168.745c.378.13.545.541.381.917-.04.091-.108.178-.204.244l-2.07 1.417a.652.652 0 0 1-.678.027.609.609 0 0 1-.302-.601l.008-2.643z"/>
+                </svg>
+              </a>
+            </div>
           </div>
         </div>
       </Container>
