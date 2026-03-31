@@ -74,16 +74,16 @@ export default function RootLayout({
         email: "info@waterheatersos.com",
         address: {
           "@type": "PostalAddress",
-          streetAddress: "",
-          addressLocality: "Redlands",
+          streetAddress: "571 Crane St, Unit H",
+          addressLocality: "Lake Elsinore",
           addressRegion: "CA",
-          postalCode: "92373",
+          postalCode: "92530",
           addressCountry: "US",
         },
         geo: {
           "@type": "GeoCoordinates",
-          latitude: "34.0556",
-          longitude: "-117.1825",
+          latitude: "33.6681",
+          longitude: "-117.3273",
         },
         areaServed: [
           {

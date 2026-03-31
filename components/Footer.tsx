@@ -192,7 +192,7 @@ export function Footer() {
               <div className="flex items-center gap-3">
                 <MapPin className="h-4 w-4 text-[#EA5D19] shrink-0" />
                 <div className="flex items-center gap-2 text-sm">
-                  <span className="text-white font-semibold">Redlands, CA 92373</span>
+                  <span className="text-white font-semibold">571 Crane St, Unit H, Lake Elsinore, CA 92530</span>
                   <span className="text-gray-500">|</span>
                   <span className="text-gray-400 text-xs">LIC# 1140776</span>
                 </div>
@@ -236,7 +236,7 @@ export function Footer() {
                   </div>
                   <div className="flex flex-col">
                     <p className="text-xs text-gray-400 uppercase tracking-wider">Our Location</p>
-                    <p className="text-lg font-extrabold text-white">Redlands, CA 92373</p>
+                    <p className="text-lg font-extrabold text-white">571 Crane St, Unit H<br />Lake Elsinore, CA 92530</p>
                     <p className="text-xs text-gray-500 mt-0.5">CA LIC# 1140776</p>
                   </div>
                 </div>
