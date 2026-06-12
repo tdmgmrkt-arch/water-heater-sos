@@ -1,0 +1,888 @@
+- generic:
+  - banner:
+    - generic:
+      - generic:
+        - link:
+          - /url: /
+          - img
+        - button [expanded]:
+          - img
+  - main:
+    - navigation:
+      - generic:
+        - list:
+          - listitem:
+            - link:
+              - /url: /
+              - img
+              - generic: Home
+          - listitem:
+            - img
+            - link:
+              - /url: /#services
+              - text: Services
+          - listitem:
+            - img
+            - generic: AC Repair
+    - generic:
+      - generic:
+        - generic:
+          - generic:
+            - generic: 24/7 Emergency AC Repair
+            - heading [level=1]: AC Repair in the Inland Empire
+            - paragraph: Your AC stopped working. We can fix it today.
+            - paragraph: When your air conditioner breaks down in Riverside, Moreno Valley, or anywhere across the Inland Empire, you don’t have time to wait. Water Heater SOS provides AC repair throughout the Inland Empire with same-day appointments and 24/7 emergency service. Most AC repairs run between $150 and $800 — a diagnostic call starts at the low end, while a refrigerant recharge or capacitor replacement typically falls in the middle range. We give you an upfront price before we touch anything.
+            - paragraph: Our licensed technicians (CA LIC# 1140776) service all major AC brands and arrive fully stocked. Whether your system is blowing warm air, tripping the breaker, or simply won’t turn on, we diagnose the problem fast and fix it right the first time. No runaround, no upsell pressure — just cold air back in your home.
+            - generic:
+              - link:
+                - /url: /quote?category=HVAC&service=AC%20Repair
+                - text: Get a Free Quote
+              - link:
+                - /url: tel:8006974014
+                - img
+                - text: "Call Now: (800) 697-4014"
+          - generic:
+            - img
+    - generic:
+      - generic:
+        - generic:
+          - heading [level=2]: Common AC Problems We Fix
+          - paragraph: Inland Empire summers regularly push past 100°F — here are the six AC issues our techs see most often.
+        - generic:
+          - generic:
+            - generic:
+              - generic:
+                - img
+              - heading [level=3]: AC Blowing Warm Air
+            - paragraph: An AC that runs but pushes out warm or room-temperature air is most often caused by low refrigerant, a dirty evaporator coil, or a failed compressor. We check refrigerant levels, inspect the coil, and test system pressure to pinpoint the cause. Most warm-air calls are resolved same day. If refrigerant is low, we also find and seal the leak — not just recharge the system.
+          - generic:
+            - generic:
+              - generic:
+                - img
+              - heading [level=3]: Refrigerant Leak
+            - paragraph: A refrigerant leak means your system can't absorb heat, so the AC runs nonstop but never cools the house. Signs include ice on the refrigerant line, a hissing sound near the unit, and rising electric bills. Topping off refrigerant without fixing the leak is a short-term patch — we locate the leak, repair it, and restore the correct charge so the fix actually holds. Most Inland Empire systems use R-410A refrigerant; newer installations may use R-454B, the lower-GWP replacement being phased in under the EPA's AIM Act schedule.
+          - generic:
+            - generic:
+              - generic:
+                - img
+              - heading [level=3]: Frozen Evaporator Coil
+            - paragraph:
+              - text: A frozen coil shuts down airflow and can damage the compressor if ignored. Causes include restricted airflow (dirty filter, blocked vents), low refrigerant, or a failing blower fan. We thaw the coil safely, identify why it froze, and address the root cause. Running your AC with a frozen coil for more than a few hours often turns a $200 repair into a $1,500 compressor job. Issues with airflow can also be related to
+              - link:
+                - /url: /air-duct-cleaning
+                - text: air duct issues affecting AC performance
+              - text: .
+          - generic:
+            - generic:
+              - generic:
+                - img
+              - heading [level=3]: Capacitor Failure
+            - paragraph: The capacitor is the part that starts and runs the compressor and fan motors. When it fails, your AC may hum, click repeatedly, or simply not start. Capacitor failure is one of the most common AC repairs in the Inland Empire — the extreme summer heat degrades capacitors faster than in cooler climates. Replacement is typically a same-day fix and falls on the lower end of the repair cost range.
+          - generic:
+            - generic:
+              - generic:
+                - img
+              - heading [level=3]: Clogged Condensate Drain Line
+            - paragraph: Your AC removes humidity from the air and drains the water out through a condensate line. When that line clogs with algae or debris, water backs up, trips the float switch, and shuts the system off — or worse, leaks into ceilings and walls. We clear the drain line, flush it with a safe cleaning solution, and check the float switch so you don't deal with water damage on top of a broken AC.
+          - generic:
+            - generic:
+              - generic:
+                - img
+              - heading [level=3]: Failed Compressor
+            - paragraph: The compressor is the heart of your AC system — it pressurizes the refrigerant and drives the entire cooling cycle. A failed compressor usually means the unit is making a grinding or clanking noise and the home isn't cooling at all. Compressor replacement is the most expensive AC repair, typically $800–$1,800 for the part and labor. If your system is 10+ years old, we'll give you an honest comparison between repair and replacement so you can make the right call for your budget.
+    - generic:
+      - generic:
+        - generic:
+          - heading [level=2]: What to Expect When You Call Our HVAC Team
+        - generic:
+          - generic:
+            - generic: "01"
+            - generic:
+              - img
+            - heading [level=3]: Call or Book Online
+            - paragraph: Call (800) 697-4014 or submit a quote request. Tell us what the system is doing (or not doing) and we'll give you an arrival window. Same-day appointments are available seven days a week across the Inland Empire.
+          - generic:
+            - generic: "02"
+            - generic:
+              - img
+            - heading [level=3]: Diagnosis
+            - paragraph: Your technician arrives, inspects the system, and runs a full diagnostic. We check refrigerant levels, electrical components, airflow, coil condition, and drainage. You'll know exactly what's wrong before we quote any work.
+          - generic:
+            - generic: "03"
+            - generic:
+              - img
+            - heading [level=3]: Upfront Price, No Surprises
+            - paragraph: We quote the repair before starting. The price you approve is the price on your invoice. No "additional charges discovered mid-job."
+          - generic:
+            - generic: "04"
+            - generic:
+              - img
+            - heading [level=3]: Repair + Warranty
+            - paragraph: We complete the repair, test the system through a full cooling cycle, and walk you through what was done. All repairs carry a workmanship warranty — if the same issue returns, we return to fix it at no charge.
+    - generic:
+      - generic:
+        - generic:
+          - heading [level=2]: How Much Does AC Repair Cost?
+          - paragraph:
+            - strong: AC repair in the Inland Empire costs between $150 and $1,800, with most service calls falling in the $150–$800 range. A diagnostic call starts at $75–$150 (typically applied toward the repair), while a full compressor replacement is the highest-cost repair at $800–$1,800.
+          - paragraph: "Here’s how that repair range breaks down by service type:"
+          - list:
+            - listitem:
+              - generic: Diagnostic fee
+              - generic: $75–$150 (applied toward the repair if you proceed)
+            - listitem:
+              - generic: Capacitor replacement
+              - generic: $150–$350
+            - listitem:
+              - generic: Refrigerant recharge (plus leak repair)
+              - generic: $200–$600
+            - listitem:
+              - generic: Condensate drain cleaning
+              - generic: $100–$250
+            - listitem:
+              - generic: Evaporator coil cleaning
+              - generic: $150–$400
+            - listitem:
+              - generic: Fan motor replacement
+              - generic: $300–$700
+            - listitem:
+              - generic: Compressor replacement
+              - generic: $800–$1,800
+          - paragraph: Cost varies by system age, refrigerant type, and accessibility. We give you an exact number before any work begins.
+          - heading [level=3]: Repair vs. Replace
+          - paragraph:
+            - strong: Replace your AC when the repair cost exceeds 50% of a new system’s price AND your unit is 10 or more years old; otherwise, repair is typically the better investment. According to ENERGY STAR, the average central AC has a useful lifespan of 10–15 years, which is why the age threshold matters as much as the cost threshold.
+          - paragraph: When a repair quote feels high, the question becomes whether it’s smarter to replace the system. A 15-year-old unit using R-22 refrigerant (now phased out and expensive) is almost always a replacement candidate. Replacement also unlocks a meaningful efficiency upgrade — current minimum-efficiency residential systems in California must meet SEER2 14.3 (raised from the prior SEER 14 standard in 2023), and high-efficiency units run SEER2 18 or higher, which can cut summer cooling costs noticeably given the Inland Empire’s long cooling season.
+          - paragraph: We’ll tell you honestly where your system stands. If replacement makes more sense, we’ll walk you through AC installation options and can schedule that same week. If the repair is solid, we’ll do the repair.
+    - generic:
+      - generic:
+        - generic:
+          - heading [level=2]: Why Inland Empire Homeowners Choose Us for AC Repair
+          - paragraph: Water Heater SOS is a licensed Inland Empire HVAC contractor (CA LIC# 1140776) serving Riverside County and San Bernardino County with 24/7 emergency AC repair and same-day service.
+        - generic:
+          - generic:
+            - generic:
+              - img
+              - heading [level=3]: Licensed and insured
+            - paragraph: "California Contractor License #1140776 — the C-20 (Warm-Air Heating, Ventilating and Air-Conditioning) classification required by the California State License Board (CSLB) for HVAC and mechanical work. Every technician is background-checked and trained on current refrigerant handling regulations."
+          - generic:
+            - generic:
+              - img
+              - heading [level=3]: 24/7 availability
+            - paragraph: We answer the phone day and night. A 107-degree day in Fontana at 10 PM is still an emergency — we treat it that way.
+          - generic:
+            - generic:
+              - img
+              - heading [level=3]: Same-day service, seven days a week
+            - paragraph: Most Inland Empire AC repair calls are scheduled and completed the same day, including weekends.
+          - generic:
+            - generic:
+              - img
+              - heading [level=3]: Upfront pricing
+            - paragraph: You see the price before we start. No surprises on the invoice.
+          - generic:
+            - generic:
+              - img
+              - heading [level=3]: 5-star rated
+            - paragraph: Our customers across Riverside County and San Bernardino County consistently rate us on service speed, technician professionalism, and honest recommendations.
+          - generic:
+            - generic:
+              - img
+              - heading [level=3]: Financing available
+            - paragraph: For larger repairs or replacements, we offer financing options. Ask when you call.
+          - generic:
+            - generic:
+              - img
+              - heading [level=3]: All major brands serviced
+            - paragraph: Carrier, Trane, Lennox, Rheem, York, Goodman, and more. We arrive stocked with the most common parts so most repairs finish in one visit.
+    - generic:
+      - generic:
+        - generic:
+          - heading [level=2]: AC Repair Service Area — Inland Empire, CA
+          - paragraph: We provide AC repair throughout Riverside County and San Bernardino County. Our technicians are dispatched from the Inland Empire, which means faster arrival times and no out-of-area travel fees.
+        - generic:
+          - generic:
+            - heading [level=3]: Riverside County
+            - paragraph:
+              - text: Whether you’re dealing with triple-digit summer heat in
+              - link:
+                - /url: /moreno-valley
+                - text: Moreno Valley
+              - text: or need a same-day tech in
+              - link:
+                - /url: /murrieta
+                - text: Murrieta
+              - text: or
+              - link:
+                - /url: /temecula
+                - text: Temecula
+              - text: ", we cover all of Riverside County."
+            - generic:
+              - link:
+                - /url: /moreno-valley
+                - text: Moreno Valley
+              - link:
+                - /url: /murrieta
+                - text: Murrieta
+              - link:
+                - /url: /temecula
+                - text: Temecula
+              - link:
+                - /url: /riverside
+                - text: Riverside
+              - link:
+                - /url: /corona
+                - text: Corona
+              - link:
+                - /url: /hemet
+                - text: Hemet
+              - link:
+                - /url: /lake-elsinore
+                - text: Lake Elsinore
+              - link:
+                - /url: /menifee
+                - text: Menifee
+              - link:
+                - /url: /perris
+                - text: Perris
+              - link:
+                - /url: /norco
+                - text: Norco
+              - link:
+                - /url: /eastvale
+                - text: Eastvale
+              - link:
+                - /url: /san-jacinto
+                - text: San Jacinto
+              - link:
+                - /url: /banning
+                - text: Banning
+          - generic:
+            - heading [level=3]: San Bernardino County
+            - paragraph:
+              - text: From the high-desert edge of
+              - link:
+                - /url: /yucaipa
+                - text: Yucaipa
+              - text: and
+              - link:
+                - /url: /redlands
+                - text: Redlands
+              - text: to the western corridor cities of
+              - link:
+                - /url: /rancho-cucamonga
+                - text: Rancho Cucamonga
+              - text: ", we dispatch across all of San Bernardino County."
+            - generic:
+              - link:
+                - /url: /yucaipa
+                - text: Yucaipa
+              - link:
+                - /url: /redlands
+                - text: Redlands
+              - link:
+                - /url: /rancho-cucamonga
+                - text: Rancho Cucamonga
+              - link:
+                - /url: /chino
+                - text: Chino
+              - link:
+                - /url: /chino-hills
+                - text: Chino Hills
+              - link:
+                - /url: /upland
+                - text: Upland
+              - link:
+                - /url: /claremont
+                - text: Claremont
+              - link:
+                - /url: /san-bernardino
+                - text: San Bernardino
+              - link:
+                - /url: /fontana
+                - text: Fontana
+              - link:
+                - /url: /ontario
+                - text: Ontario
+              - link:
+                - /url: /rialto
+                - text: Rialto
+              - link:
+                - /url: /colton
+                - text: Colton
+              - link:
+                - /url: /loma-linda
+                - text: Loma Linda
+              - link:
+                - /url: /highland
+                - text: Highland
+              - link:
+                - /url: /beaumont
+                - text: Beaumont
+              - link:
+                - /url: /calimesa
+                - text: Calimesa
+              - link:
+                - /url: /mentone
+                - text: Mentone
+              - link:
+                - /url: /grand-terrace
+                - text: Grand Terrace
+    - generic:
+      - generic:
+        - generic:
+          - heading [level=2]: Trusted Brands
+          - generic:
+            - generic:
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - img
+                - generic:
+                  - generic:
+                    - generic:
+                      - img
+                - generic:
+                  - generic:
+                    - generic:
+                      - img
+                - generic:
+                  - generic:
+                    - generic:
+                      - img
+                - generic:
+                  - generic:
+                    - generic:
+                      - img
+            - button:
+              - img
+            - button:
+              - img
+            - generic:
+              - button
+              - button
+              - button
+              - button
+              - button
+    - generic:
+      - generic:
+        - generic:
+          - heading [level=2]: Frequently Asked Questions About AC Repair
+          - paragraph: Common questions about AC repair in the Inland Empire
+          - generic:
+            - generic:
+              - generic:
+                - heading [level=3]:
+                  - button [expanded]:
+                    - generic: "01"
+                    - generic: How much does AC repair cost?
+                    - img
+                - region:
+                  - generic: Most AC repairs in the Inland Empire range from $150 to $800, depending on the problem. Simple fixes like a capacitor replacement run $150–$350. Refrigerant leaks and recharges typically cost $200–$600. Compressor replacement is the most expensive repair, usually $800–$1,800. We provide a firm, upfront quote before starting any work so you know exactly what you’re paying.
+            - generic:
+              - generic:
+                - heading [level=3]:
+                  - button:
+                    - generic: "02"
+                    - generic: Should I repair or replace my AC?
+                    - img
+            - generic:
+              - generic:
+                - heading [level=3]:
+                  - button:
+                    - generic: "03"
+                    - generic: How long does AC repair take?
+                    - img
+            - generic:
+              - generic:
+                - heading [level=3]:
+                  - button:
+                    - generic: "04"
+                    - generic: Why is my AC blowing warm air?
+                    - img
+            - generic:
+              - generic:
+                - heading [level=3]:
+                  - button:
+                    - generic: "05"
+                    - generic: Do you offer emergency AC repair?
+                    - img
+            - generic:
+              - generic:
+                - heading [level=3]:
+                  - button:
+                    - generic: "06"
+                    - generic: How quickly can you arrive?
+                    - img
+            - generic:
+              - generic:
+                - heading [level=3]:
+                  - button:
+                    - generic: "07"
+                    - generic: Are you licensed to do AC repair in California?
+                    - img
+            - generic:
+              - generic:
+                - heading [level=3]:
+                  - button:
+                    - generic: "08"
+                    - generic: Do you service all AC brands?
+                    - img
+  - contentinfo:
+    - generic:
+      - generic:
+        - generic:
+          - generic:
+            - generic:
+              - heading [level=3]: Need AC Repair in the Inland Empire?
+              - paragraph: Don't wait out a broken AC in the Inland Empire heat. Same-day service, upfront pricing, and licensed technicians ready now.
+            - generic:
+              - link:
+                - /url: tel:8006974014
+                - img
+                - text: (800) 697-4014
+              - link:
+                - /url: /quote?category=HVAC&service=AC%20Repair
+                - text: Get Free Quote
+      - generic:
+        - generic:
+          - generic:
+            - link:
+              - /url: /
+              - img
+          - generic:
+            - generic:
+              - button:
+                - generic: Quick Links
+                - img
+              - listitem:
+                - link:
+                  - /url: /
+                  - text: Home
+              - listitem:
+                - link:
+                  - /url: /about
+                  - text: About Us
+              - listitem:
+                - link:
+                  - /url: /contact
+                  - text: Contact
+              - listitem:
+                - link:
+                  - /url: /service-area
+                  - text: Service Area
+            - generic:
+              - button:
+                - generic: Our Services
+                - img
+              - listitem:
+                - link:
+                  - /url: /gas-water-heaters
+                  - text: Gas Water Heaters
+              - listitem:
+                - link:
+                  - /url: /tankless-water-heaters
+                  - text: Tankless Water Heaters
+              - listitem:
+                - link:
+                  - /url: /water-filtration
+                  - text: Water Filtration
+              - listitem:
+                - link:
+                  - /url: /drain-cleaning
+                  - text: Drain Cleaning
+            - generic:
+              - button:
+                - generic: Resources
+                - img
+              - listitem:
+                - link:
+                  - /url: /quote
+                  - text: Free Online Quote
+              - listitem:
+                - link:
+                  - /url: /air-duct-cleaning
+                  - text: Air Duct Cleaning
+              - listitem:
+                - link:
+                  - /url: /service
+                  - text: Blog & Tips
+              - listitem:
+                - link:
+                  - /url: /discount-water-heaters
+                  - text: Discounts & Specials
+        - generic:
+          - generic:
+            - generic:
+              - img
+              - generic:
+                - generic: 571 Crane St, Unit H, Lake Elsinore, CA 92530
+                - generic: "|"
+                - generic: LIC# 1140776
+            - generic:
+              - img
+              - generic: 24/7 Emergency Service
+            - link:
+              - /url: tel:8006974014
+              - img
+              - generic: (800) 697-4014
+            - generic:
+              - generic:
+                - img
+                - generic: Licensed
+              - generic:
+                - img
+                - generic: 5.0 Rating
+              - generic:
+                - generic: Same-Day Service
+      - generic:
+        - generic:
+          - generic:
+            - button:
+              - heading [level=3]: Our Services
+              - img
+            - link:
+              - /url: /air-duct-cleaning
+              - text: Air Duct Cleaning
+            - link:
+              - /url: /drain-cleaning
+              - text: Drain Cleaning
+            - link:
+              - /url: /faucet-repair-replacement
+              - text: Faucet Repair & Replacement
+            - link:
+              - /url: /garbage-disposal-repair-replacement
+              - text: Garbage Disposal Services
+            - link:
+              - /url: /gas-leak-repairs
+              - text: Gas Leak Repairs
+            - link:
+              - /url: /gas-water-heaters
+              - text: Gas Water Heaters
+            - link:
+              - /url: /heat-pump-water-heaters
+              - text: Heat Pump Water Heaters
+            - link:
+              - /url: /hydro-jetting
+              - text: Hydro-Jetting
+            - link:
+              - /url: /leak-detection-services
+              - text: Leak Detection Services
+            - link:
+              - /url: /moen-flo-smart-water-monitor
+              - text: Moen Flo Smart Monitor
+            - link:
+              - /url: /reverse-osmosis
+              - text: Reverse Osmosis
+            - link:
+              - /url: /sewer-camera-inspection
+              - text: Sewer Camera Inspection
+            - link:
+              - /url: /shower-repair-replacement
+              - text: Shower Repair & Replacement
+            - link:
+              - /url: /sump-pump-repair-replacement
+              - text: Sump Pump Services
+            - link:
+              - /url: /tankless-water-heaters
+              - text: Tankless Water Heaters
+            - link:
+              - /url: /toilet-repair-replacement
+              - text: Toilet Repair & Replacement
+            - link:
+              - /url: /water-filtration
+              - text: Water Filtration
+            - link:
+              - /url: /water-pressure-regulator-replacement
+              - text: Water Pressure Regulator
+            - link:
+              - /url: /water-service-repair-replacement
+              - text: Water Service Repair
+            - link:
+              - /url: /whole-house-repipe
+              - text: Whole House Repipe
+          - generic:
+            - button:
+              - heading [level=3]: Areas We Serve
+              - img
+            - link:
+              - /url: /anaheim-hills
+              - text: Anaheim Hills
+            - link:
+              - /url: /banning
+              - text: Banning
+            - link:
+              - /url: /beaumont
+              - text: Beaumont
+            - link:
+              - /url: /calimesa
+              - text: Calimesa
+            - link:
+              - /url: /chino
+              - text: Chino
+            - link:
+              - /url: /chino-hills
+              - text: Chino Hills
+            - link:
+              - /url: /claremont
+              - text: Claremont
+            - link:
+              - /url: /colton
+              - text: Colton
+            - link:
+              - /url: /corona
+              - text: Corona
+            - link:
+              - /url: /eastvale
+              - text: Eastvale
+            - link:
+              - /url: /fontana
+              - text: Fontana
+            - link:
+              - /url: /grand-terrace
+              - text: Grand Terrace
+            - link:
+              - /url: /hemet
+              - text: Hemet
+            - link:
+              - /url: /highland
+              - text: Highland
+            - link:
+              - /url: /lake-elsinore
+              - text: Lake Elsinore
+            - link:
+              - /url: /loma-linda
+              - text: Loma Linda
+            - link:
+              - /url: /menifee
+              - text: Menifee
+            - link:
+              - /url: /mentone
+              - text: Mentone
+            - link:
+              - /url: /moreno-valley
+              - text: Moreno Valley
+            - link:
+              - /url: /murrieta
+              - text: Murrieta
+            - link:
+              - /url: /norco
+              - text: Norco
+            - link:
+              - /url: /ontario
+              - text: Ontario
+            - link:
+              - /url: /perris
+              - text: Perris
+            - link:
+              - /url: /rancho-cucamonga
+              - text: Rancho Cucamonga
+            - link:
+              - /url: /redlands
+              - text: Redlands
+            - link:
+              - /url: /rialto
+              - text: Rialto
+            - link:
+              - /url: /riverside
+              - text: Riverside
+            - link:
+              - /url: /san-bernardino
+              - text: San Bernardino
+            - link:
+              - /url: /san-jacinto
+              - text: San Jacinto
+            - link:
+              - /url: /temecula
+              - text: Temecula
+            - link:
+              - /url: /upland
+              - text: Upland
+            - link:
+              - /url: /yorba-linda
+              - text: Yorba Linda
+      - generic:
+        - generic:
+          - generic:
+            - paragraph: © 2025 Water Heater SOS. All Rights Reserved.
+            - link:
+              - /url: /privacy-policy
+              - text: Privacy Policy
+          - generic:
+            - link:
+              - /url: https://www.facebook.com/WaterHeaterSOS/
+              - img
+            - link:
+              - /url: https://www.instagram.com/waterheatersos/
+              - img
+            - link:
+              - /url: https://www.yelp.com/biz/water-heater-sos-lake-elsinore
+              - img
+  - generic [ref=e593] [cursor=pointer]:
+    - button "Open Next.js Dev Tools" [ref=e594]:
+      - img [ref=e595]
+    - generic [ref=e900]:
+      - button "Open issues overlay" [ref=e901]:
+        - generic [ref=e902]:
+          - generic [ref=e903]: "0"
+          - generic [ref=e904]: "1"
+        - generic [ref=e905]: Issue
+      - button "Collapse issues badge" [ref=e906]:
+        - img [ref=e907]
+  - alert
+  - generic:
+    - generic:
+      - generic:
+        - link:
+          - /url: tel:8006974014
+          - generic:
+            - img
+          - generic:
+            - paragraph: Call Now
+            - paragraph: (800) 697-4014
+        - link:
+          - /url: /quote
+          - generic:
+            - img
+          - generic:
+            - paragraph: Get Quote
+            - paragraph: Free Estimate
+      - button:
+        - generic:
+          - img
+  - dialog [ref=e910]:
+    - generic [ref=e911]:
+      - generic [ref=e912]:
+        - link "Water Heater SOS Logo" [ref=e913] [cursor=pointer]:
+          - /url: /
+          - img "Water Heater SOS Logo" [ref=e914]
+        - button [active] [ref=e915]:
+          - img [ref=e916]
+      - generic [ref=e919]:
+        - generic [ref=e920]:
+          - generic [ref=e921]:
+            - img [ref=e922]
+            - heading "Water Heaters" [level=3] [ref=e924]
+          - generic [ref=e925]:
+            - link "Gas Water Heaters" [ref=e926] [cursor=pointer]:
+              - /url: /gas-water-heaters
+            - link "Electric Water Heaters" [ref=e927] [cursor=pointer]:
+              - /url: /electric-water-heaters
+            - link "Tankless Water Heaters" [ref=e928] [cursor=pointer]:
+              - /url: /tankless-water-heaters
+            - link "Water Heater Flush" [ref=e929] [cursor=pointer]:
+              - /url: /water-heater-flush
+            - link "Heat Pump Water Heaters" [ref=e930] [cursor=pointer]:
+              - /url: /heat-pump-water-heaters
+            - link "Water Filtration Systems" [ref=e931] [cursor=pointer]:
+              - /url: /water-filtration
+        - generic [ref=e932]:
+          - generic [ref=e933]:
+            - img [ref=e934]
+            - heading "Plumbing Services" [level=3] [ref=e936]
+          - generic [ref=e937]:
+            - link "Drain Cleaning" [ref=e938] [cursor=pointer]:
+              - /url: /drain-cleaning
+            - link "Hydro-Jetting" [ref=e939] [cursor=pointer]:
+              - /url: /hydro-jetting
+            - link "Leak Detection Services" [ref=e940] [cursor=pointer]:
+              - /url: /leak-detection-services
+            - link "Sewer Camera Inspection" [ref=e941] [cursor=pointer]:
+              - /url: /sewer-camera-inspection
+            - link "Whole-House Repipe" [ref=e942] [cursor=pointer]:
+              - /url: /whole-house-repipe
+            - link "Gas Leak Repair & Installation" [ref=e943] [cursor=pointer]:
+              - /url: /gas-leak-repairs
+            - link "Water Service Repair & Replacement" [ref=e944] [cursor=pointer]:
+              - /url: /water-service-repair-replacement
+            - link "Water Pressure Regulator Replacement" [ref=e945] [cursor=pointer]:
+              - /url: /water-pressure-regulator-replacement
+            - link "Shower Repair & Replacement" [ref=e946] [cursor=pointer]:
+              - /url: /shower-repair-replacement
+            - link "Toilet Repair & Replacement" [ref=e947] [cursor=pointer]:
+              - /url: /toilet-repair-replacement
+            - link "Faucet Repair & Replacement" [ref=e948] [cursor=pointer]:
+              - /url: /faucet-repair-replacement
+            - link "Garbage Disposal Repair & Replacement" [ref=e949] [cursor=pointer]:
+              - /url: /garbage-disposal-repair-replacement
+            - link "Moen Flo Leak Detection Installation" [ref=e950] [cursor=pointer]:
+              - /url: /moen-flo-smart-water-monitor
+            - link "Sump Pump Repair & Replacement" [ref=e951] [cursor=pointer]:
+              - /url: /sump-pump-repair-replacement
+        - generic [ref=e952]:
+          - generic [ref=e953]:
+            - img [ref=e954]
+            - heading "HVAC Services" [level=3] [ref=e967]
+          - generic [ref=e968]:
+            - generic [ref=e969]:
+              - paragraph [ref=e970]: AC
+              - generic [ref=e971]:
+                - link "AC Repair" [ref=e972] [cursor=pointer]:
+                  - /url: /ac-repair
+                - generic [ref=e973]:
+                  - generic [ref=e974]: AC Installation
+                  - generic [ref=e975]: Soon
+                - generic [ref=e976]:
+                  - generic [ref=e977]: AC Maintenance
+                  - generic [ref=e978]: Soon
+                - generic [ref=e979]:
+                  - generic [ref=e980]: Mini-Split / Ductless AC
+                  - generic [ref=e981]: Soon
+                - generic [ref=e982]:
+                  - generic [ref=e983]: Thermostat Installation
+                  - generic [ref=e984]: Soon
+            - generic [ref=e985]:
+              - paragraph [ref=e986]: Heating
+              - generic [ref=e987]:
+                - generic [ref=e988]:
+                  - generic [ref=e989]: Furnace Repair
+                  - generic [ref=e990]: Soon
+                - generic [ref=e991]:
+                  - generic [ref=e992]: Furnace Installation
+                  - generic [ref=e993]: Soon
+                - generic [ref=e994]:
+                  - generic [ref=e995]: Furnace Maintenance
+                  - generic [ref=e996]: Soon
+                - generic [ref=e997]:
+                  - generic [ref=e998]: Heat Pump Systems
+                  - generic [ref=e999]: Soon
+                - generic [ref=e1000]:
+                  - generic [ref=e1001]: HVAC Maintenance Plans
+                  - generic [ref=e1002]: Soon
+            - generic [ref=e1003]:
+              - paragraph [ref=e1004]: Indoor Air Quality
+              - generic [ref=e1005]:
+                - link "Air Duct Cleaning" [ref=e1006] [cursor=pointer]:
+                  - /url: /air-duct-cleaning
+                - generic [ref=e1007]:
+                  - generic [ref=e1008]: Air Filtration Systems
+                  - generic [ref=e1009]: Soon
+                - generic [ref=e1010]:
+                  - generic [ref=e1011]: Whole-Home Humidifiers
+                  - generic [ref=e1012]: Soon
+                - generic [ref=e1013]:
+                  - generic [ref=e1014]: Whole-Home Dehumidifiers
+                  - generic [ref=e1015]: Soon
+        - generic [ref=e1016]:
+          - generic [ref=e1017]:
+            - img [ref=e1018]
+            - heading "Contact" [level=3] [ref=e1021]
+          - generic [ref=e1022]:
+            - link "Free Online Quote" [ref=e1023] [cursor=pointer]:
+              - /url: /quote
+            - link "About" [ref=e1024] [cursor=pointer]:
+              - /url: /about
+            - link "Contact Us" [ref=e1025] [cursor=pointer]:
+              - /url: /contact
+            - link "Discounts" [ref=e1026] [cursor=pointer]:
+              - /url: /discount-water-heaters
+            - link "Service Area" [ref=e1027] [cursor=pointer]:
+              - /url: /service-area
+      - link "CALL NOW" [ref=e1029] [cursor=pointer]:
+        - /url: tel:8006974014
+        - img [ref=e1030]
+        - text: CALL NOW
+    - button "Close" [ref=e1032]:
+      - img [ref=e1033]
+      - generic [ref=e1036]: Close

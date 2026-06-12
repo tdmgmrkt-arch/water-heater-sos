@@ -2,14 +2,35 @@
 
 import { useEffect, useState } from "react";
 import Image from "next/image";
-import { Phone, Star, Award, Shield, TrendingUp, Zap, Truck, Clock } from "lucide-react";
+import { Phone, Star, Shield, TrendingUp, Zap, Truck, Clock } from "lucide-react";
 import { motion } from "framer-motion";
 
-export function Hero() {
-  const [customerCount, setCustomerCount] = useState(0);
+interface HeroProps {
+  rating: number;
+  reviewCount: number;
+}
+
+function GoogleG({ className = "h-4 w-4" }: { className?: string }) {
+  return (
+    <svg
+      className={className}
+      viewBox="0 0 48 48"
+      xmlns="http://www.w3.org/2000/svg"
+      aria-hidden="true"
+    >
+      <path fill="#4285F4" d="M45.12 24.5c0-1.56-.14-3.06-.4-4.5H24v8.51h11.84c-.51 2.75-2.06 5.08-4.39 6.64v5.52h7.11c4.16-3.83 6.56-9.47 6.56-16.17z" />
+      <path fill="#34A853" d="M24 46c5.94 0 10.92-1.97 14.56-5.33l-7.11-5.52c-1.97 1.32-4.49 2.1-7.45 2.1-5.73 0-10.58-3.87-12.31-9.07H4.34v5.7C7.96 41.07 15.4 46 24 46z" />
+      <path fill="#FBBC05" d="M11.69 28.18c-.44-1.32-.69-2.73-.69-4.18s.25-2.86.69-4.18v-5.7H4.34A21.99 21.99 0 0 0 2 24c0 3.55.85 6.91 2.34 9.88l7.35-5.7z" />
+      <path fill="#EA4335" d="M24 10.75c3.23 0 6.13 1.11 8.41 3.29l6.31-6.31C34.91 4.18 29.93 2 24 2 15.4 2 7.96 6.93 4.34 14.12l7.35 5.7c1.73-5.2 6.58-9.07 12.31-9.07z" />
+    </svg>
+  );
+}
+
+export function Hero({ rating, reviewCount }: HeroProps) {
+  const [animatedCount, setAnimatedCount] = useState(0);
 
   useEffect(() => {
-    const target = 500;
+    const target = reviewCount;
     const duration = 2000;
     const steps = 50;
     const increment = target / steps;
@@ -19,15 +40,15 @@ export function Hero() {
     const timer = setInterval(() => {
       current += increment;
       if (current >= target) {
-        setCustomerCount(target);
+        setAnimatedCount(target);
         clearInterval(timer);
       } else {
-        setCustomerCount(Math.floor(current));
+        setAnimatedCount(Math.floor(current));
       }
     }, stepDuration);
 
     return () => clearInterval(timer);
-  }, []);
+  }, [reviewCount]);
 
   return (
     <section className="relative overflow-hidden bg-gradient-to-br from-[#11110E] via-[#1a1917] to-[#11110E] py-8 sm:py-16 lg:py-24">
@@ -58,23 +79,33 @@ export function Hero() {
             transition={{ duration: 0.8, ease: [0.4, 0, 0.2, 1] }}
             className="w-full min-w-0"
           >
-            {/* Top Badge */}
-            <motion.div
+            {/* Google Reviews Badge */}
+            <motion.a
+              href="https://g.page/r/CUVYr3DJoTqZEBM/review"
+              target="_blank"
+              rel="noopener noreferrer"
               initial={{ opacity: 0, scale: 0.9 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ delay: 0.2, duration: 0.5 }}
-              className="inline-flex items-center gap-2 rounded-full border-2 border-[#EA5D19]/20 bg-gradient-to-r from-[#FFF5F0] via-white to-[#FFF5F0] px-3 py-1.5 sm:px-5 sm:py-2.5 shadow-md"
+              className="inline-flex items-center gap-2 sm:gap-2.5 rounded-full border-2 border-[#EA5D19]/20 bg-gradient-to-r from-[#FFF5F0] via-white to-[#FFF5F0] px-3 py-1.5 sm:px-5 sm:py-2.5 shadow-md hover:shadow-lg transition-shadow"
+              aria-label={`Rated ${rating.toFixed(1)} out of 5 stars from ${reviewCount} Google Reviews — leave a review`}
             >
+              <GoogleG className="h-4 w-4 sm:h-5 sm:w-5 shrink-0" />
+              <span className="text-sm sm:text-base font-extrabold text-[#11110E] tabular-nums leading-none">
+                {rating.toFixed(1)}
+              </span>
               <div className="flex gap-0.5">
                 {[...Array(5)].map((_, i) => (
-                  <Star key={i} className="h-3 w-3 sm:h-4 sm:w-4 fill-[#EA5D19] text-[#EA5D19]" />
+                  <Star key={i} className="h-3 w-3 sm:h-4 sm:w-4 fill-[#FBBC05] text-[#FBBC05]" />
                 ))}
               </div>
-              <span className="text-xs sm:text-sm font-bold text-gradient">
-                Top-Rated Service
-                <span className="hidden sm:inline"> - Water Heater & Plumbing</span>
+              <span className="text-xs sm:text-sm font-bold text-[#11110E]/70 leading-none">
+                <span className="tabular-nums">{reviewCount}</span>
+                <span className="hidden xs:inline"> </span>
+                <span className="hidden sm:inline"> Google Reviews</span>
+                <span className="sm:hidden"> Reviews</span>
               </span>
-            </motion.div>
+            </motion.a>
 
             {/* Headline */}
             <motion.h1
@@ -83,9 +114,9 @@ export function Hero() {
               transition={{ delay: 0.4, duration: 0.8 }}
               className="mt-4 sm:mt-6 text-[1.75rem] leading-[1.1] font-extrabold tracking-tight text-white sm:text-5xl lg:text-6xl"
             >
-              The Water Heater{" "}
+              The Inland Empire&apos;s{" "}
               <span className="relative inline-block">
-                <span className="text-gradient">& Plumbing Experts</span>
+                <span className="text-gradient">Water Heater, HVAC & Plumbing Experts</span>
                 <motion.span
                   className="absolute -bottom-0.5 sm:-bottom-2 left-0 right-0 h-0.5 sm:h-1 bg-gradient-to-r from-[#EA5D19] to-[#FF6E2E] rounded-full"
                   initial={{ scaleX: 0 }}
@@ -106,7 +137,7 @@ export function Hero() {
               className="mt-3 sm:mt-6 text-sm sm:text-lg leading-relaxed text-gray-300"
             >
               Licensed experts. Fast service. Competitive prices.
-              <span className="hidden sm:inline"> Whether you need a water heater replacement, repairs, or full-service plumbing — our vans are fully stocked and ready to complete your job on the same visit.</span>
+              <span className="hidden sm:inline"> Whether you need AC repair, furnace service, water heater replacement, or full-service plumbing — our fully stocked vans are ready to finish the job on the first visit.</span>
             </motion.p>
 
             {/* CTA Buttons - Prominent and tap-friendly */}
@@ -176,20 +207,20 @@ export function Hero() {
             >
               <div className="flex flex-col items-center sm:items-start gap-0.5 sm:gap-1 p-2 sm:p-3 rounded-lg bg-white/10 backdrop-blur-sm border border-white/20">
                 <div className="flex items-center gap-1 sm:gap-1.5">
-                  <Star className="h-3.5 w-3.5 sm:h-4 sm:w-4 fill-[#EA5D19] text-[#EA5D19]" />
-                  <span className="text-base sm:text-lg font-bold text-white">5.0</span>
+                  <Star className="h-3.5 w-3.5 sm:h-4 sm:w-4 fill-[#FBBC05] text-[#FBBC05]" />
+                  <span className="text-base sm:text-lg font-bold text-white tabular-nums">{rating.toFixed(1)}</span>
                 </div>
-                <span className="text-[10px] sm:text-xs text-gray-400 font-medium">Rating</span>
+                <span className="text-[10px] sm:text-xs text-gray-400 font-medium">Google Rating</span>
               </div>
 
               <div className="flex flex-col items-center sm:items-start gap-0.5 sm:gap-1 p-2 sm:p-3 rounded-lg bg-white/10 backdrop-blur-sm border border-white/20">
                 <div className="flex items-center gap-1 sm:gap-1.5">
-                  <Award className="h-3.5 w-3.5 sm:h-4 sm:w-4 text-[#EA5D19]" />
+                  <GoogleG className="h-3.5 w-3.5 sm:h-4 sm:w-4" />
                   <span className="text-base sm:text-lg font-bold text-white tabular-nums">
-                    {customerCount}+
+                    {animatedCount}+
                   </span>
                 </div>
-                <span className="text-[10px] sm:text-xs text-gray-400 font-medium">Customers</span>
+                <span className="text-[10px] sm:text-xs text-gray-400 font-medium">Reviews</span>
               </div>
 
               <div className="flex flex-col items-center sm:items-start gap-0.5 sm:gap-1 p-2 sm:p-3 rounded-lg bg-white/10 backdrop-blur-sm border border-white/20">

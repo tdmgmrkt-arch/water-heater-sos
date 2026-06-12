@@ -1,38 +1,78 @@
 # Water Heater SOS
 
-> Water Heater SOS is the Inland Empire's most trusted water heater and plumbing service company. We provide professional repair, installation, and maintenance services for gas, electric, tankless, and heat pump water heaters. Licensed (CA LIC# 1140776), insured, and 5-star rated. Available 24/7 for emergency service.
+> Water Heater SOS is the Inland Empire's licensed water heater, HVAC, and plumbing contractor. We provide 24/7 emergency service across Riverside County and San Bernardino County for water heaters (gas, electric, tankless, heat pump), full HVAC (AC, heating, indoor air quality), and home plumbing. Licensed (CA LIC# 1140776, C-20 classification under CSLB), insured, and 5-star rated.
 
 Contact: (800) 697-4014
 Email: info@waterheatersos.com
-Location: Redlands, CA (serving the entire Inland Empire)
+Location: 571 Crane St, Unit H, Lake Elsinore, CA 92530 (serving the entire Inland Empire)
 
-## Services
+## HVAC Services
+
+- [HVAC Services](https://waterheatersos.com/hvac-services): Full-service HVAC contractor — AC, heating, and indoor air quality solutions across the Inland Empire.
+- [AC Services](https://waterheatersos.com/ac-services): Air conditioning repair, installation, and maintenance for residential systems.
+- [AC Repair](https://waterheatersos.com/ac-repair): 24/7 emergency AC repair. Most repairs $150–$800. Same-day service across Riverside and San Bernardino counties.
+- [AC Installation](https://waterheatersos.com/ac-installation): New AC system installation and replacement. SEER2 14.3 minimum CA standard, high-efficiency upsell available.
+- [AC Maintenance](https://waterheatersos.com/ac-maintenance): Pre-summer tune-ups and annual maintenance to extend AC lifespan and reduce energy bills.
+- [Mini-Split Installation](https://waterheatersos.com/mini-split-installation): Ductless mini-split installation for ADUs, garage conversions, and zone-by-zone cooling.
+- [Thermostat Installation](https://waterheatersos.com/thermostat-installation): Smart thermostat installation (Nest, ecobee, Honeywell) with C-wire troubleshooting.
+- [Heating Services](https://waterheatersos.com/heating-services): Furnace repair, installation, maintenance, and heat pump systems for Inland Empire homes.
+- [Furnace Repair](https://waterheatersos.com/furnace-repair): Emergency furnace repair including ignitor, blower motor, gas valve, and heat exchanger issues.
+- [Furnace Installation](https://waterheatersos.com/furnace-installation): High-efficiency gas furnace replacement and installation. AFUE 90%+ standard.
+- [Furnace Maintenance](https://waterheatersos.com/furnace-maintenance): Pre-winter furnace tune-ups including CO safety inspection.
+- [Heat Pump Systems](https://waterheatersos.com/heat-pump-systems): All-electric heating and cooling. CA + IRA rebates available. Designed for the Inland Empire's mild climate.
+- [HVAC Maintenance Plan](https://waterheatersos.com/hvac-maintenance-plan): Annual maintenance plans with tune-ups, repair discounts, priority scheduling, and waived diagnostic fees.
+- [Indoor Air Quality](https://waterheatersos.com/indoor-air-quality): Whole-home air quality solutions including filtration, UV-C purifiers, humidifiers, and dehumidifiers.
+- [Air Filtration Systems](https://waterheatersos.com/air-filtration): Whole-home air filtration including MERV 13+ media, HEPA bypass systems, and UV-C add-ons. Wildfire smoke protection.
+- [Air Duct Cleaning](https://waterheatersos.com/air-duct-cleaning): Whole-home duct cleaning for HVAC efficiency and indoor air quality.
+- [Whole-Home Humidifier](https://waterheatersos.com/whole-home-humidifier): Whole-home humidifier installation to address dry winter air typical in the Inland Empire's Mediterranean climate.
+- [Whole-Home Dehumidifier](https://waterheatersos.com/whole-home-dehumidifier): Whole-home dehumidifier installation for summer monsoon and coastal-influenced humidity periods.
+
+## Water Heater Services
 
 - [Water Heater Services](https://waterheatersos.com/water-heater-services): Overview of all water heater repair, installation, and replacement services.
 - [Gas Water Heaters](https://waterheatersos.com/gas-water-heaters): Repair and replacement of gas water heaters, including pilot light issues, thermostat problems, and tank replacements.
 - [Tankless Water Heaters](https://waterheatersos.com/tankless-water-heaters): Installation and repair of energy-efficient tankless water heater systems.
-- [Heat Pump Water Heaters](https://waterheatersos.com/heat-pump-water-heaters): Installation and service of eco-friendly heat pump water heaters.
+- [Heat Pump Water Heaters](https://waterheatersos.com/heat-pump-water-heaters): Installation and service of eco-friendly heat pump water heaters. Pairs naturally with heat pump HVAC systems.
 - [Electric Water Heaters](https://waterheatersos.com/electric-water-heaters): Repair and installation of electric water heater systems.
+- [Water Heater Flush](https://waterheatersos.com/water-heater-flush): Annual sediment flush maintenance to extend water heater lifespan.
+
+## Plumbing Services
+
 - [Plumbing Services](https://waterheatersos.com/plumbing): Comprehensive plumbing services including repairs and installations.
 - [Drain Cleaning](https://waterheatersos.com/drain-cleaning): Professional drain cleaning and clog removal services.
 - [Hydro-Jetting](https://waterheatersos.com/hydro-jetting): High-pressure water jetting for tough clogs and pipe cleaning.
 - [Leak Detection](https://waterheatersos.com/leak-detection-services): Advanced leak detection technology to find hidden leaks.
-- [Whole-House Repiping](https://waterheatersos.com/whole-house-repiping): Complete home repiping services for older plumbing systems.
+- [Whole-House Repiping](https://waterheatersos.com/whole-house-repipe): Complete home repiping services for older plumbing systems.
 - [Water Filtration](https://waterheatersos.com/water-filtration): Water softeners and filtration system installation.
 - [Gas Leak Repairs](https://waterheatersos.com/gas-leak-repairs): Emergency gas leak detection and repair services.
+- [Sewer Camera Inspection](https://waterheatersos.com/sewer-camera-inspection): Video pipe inspection for diagnosis without excavation.
+- [Toilet Repair & Replacement](https://waterheatersos.com/toilet-repair-replacement): Toilet repair, replacement, and new installation.
+- [Faucet Repair & Replacement](https://waterheatersos.com/faucet-repair-replacement): Faucet repair and replacement throughout the home.
+- [Shower Repair & Replacement](https://waterheatersos.com/shower-repair-replacement): Shower installation and repair.
+- [Garbage Disposal](https://waterheatersos.com/garbage-disposal-repair-replacement): Garbage disposal repair and replacement.
+- [Sump Pump Services](https://waterheatersos.com/sump-pump-repair-replacement): Sump pump installation, repair, and replacement.
+- [Water Pressure Regulator](https://waterheatersos.com/water-pressure-regulator-replacement): Water pressure regulator replacement and pressure problem diagnosis.
+- [Water Service Repair](https://waterheatersos.com/water-service-repair-replacement): Main water service line repair and replacement.
+- [Moen Flo Smart Water Monitor](https://waterheatersos.com/moen-flo-smart-water-monitor): Smart water monitoring system installation.
+- [Reverse Osmosis](https://waterheatersos.com/reverse-osmosis): Reverse osmosis drinking water system installation.
 
 ## Service Areas
 
-- [Redlands](https://waterheatersos.com/redlands): Plumbing and water heater services in Redlands, CA.
-- [Riverside](https://waterheatersos.com/riverside): Plumbing and water heater services in Riverside, CA.
-- [San Bernardino](https://waterheatersos.com/san-bernardino): Plumbing and water heater services in San Bernardino, CA.
-- [Corona](https://waterheatersos.com/corona): Plumbing and water heater services in Corona, CA.
-- [Fontana](https://waterheatersos.com/fontana): Plumbing and water heater services in Fontana, CA.
-- [Rancho Cucamonga](https://waterheatersos.com/rancho-cucamonga): Plumbing and water heater services in Rancho Cucamonga, CA.
-- [Ontario](https://waterheatersos.com/ontario): Plumbing and water heater services in Ontario, CA.
-- [Moreno Valley](https://waterheatersos.com/moreno-valley): Plumbing and water heater services in Moreno Valley, CA.
-- [Temecula](https://waterheatersos.com/temecula): Plumbing and water heater services in Temecula, CA.
-- [Murrieta](https://waterheatersos.com/murrieta): Plumbing and water heater services in Murrieta, CA.
+- [Redlands](https://waterheatersos.com/redlands): HVAC, water heater, and plumbing services in Redlands, CA.
+- [Riverside](https://waterheatersos.com/riverside): HVAC, water heater, and plumbing services in Riverside, CA.
+- [San Bernardino](https://waterheatersos.com/san-bernardino): HVAC, water heater, and plumbing services in San Bernardino, CA.
+- [Corona](https://waterheatersos.com/corona): HVAC, water heater, and plumbing services in Corona, CA.
+- [Fontana](https://waterheatersos.com/fontana): HVAC, water heater, and plumbing services in Fontana, CA.
+- [Rancho Cucamonga](https://waterheatersos.com/rancho-cucamonga): HVAC, water heater, and plumbing services in Rancho Cucamonga, CA.
+- [Ontario](https://waterheatersos.com/ontario): HVAC, water heater, and plumbing services in Ontario, CA.
+- [Moreno Valley](https://waterheatersos.com/moreno-valley): HVAC, water heater, and plumbing services in Moreno Valley, CA.
+- [Temecula](https://waterheatersos.com/temecula): HVAC, water heater, and plumbing services in Temecula, CA.
+- [Murrieta](https://waterheatersos.com/murrieta): HVAC, water heater, and plumbing services in Murrieta, CA.
+- [Lake Elsinore](https://waterheatersos.com/lake-elsinore): HVAC, water heater, and plumbing services in Lake Elsinore, CA (our headquarters).
+- [Menifee](https://waterheatersos.com/menifee): HVAC, water heater, and plumbing services in Menifee, CA.
+- [Perris](https://waterheatersos.com/perris): HVAC, water heater, and plumbing services in Perris, CA.
+- [Hemet](https://waterheatersos.com/hemet): HVAC, water heater, and plumbing services in Hemet, CA.
+- [Yucaipa](https://waterheatersos.com/yucaipa): HVAC, water heater, and plumbing services in Yucaipa, CA.
 
 ## Key Pages
 
@@ -44,4 +84,3 @@ Location: Redlands, CA (serving the entire Inland Empire)
 ## Optional
 
 - [Discount Water Heaters](https://waterheatersos.com/discount-water-heaters): Special offers on water heater installations.
-- [Moen Flo Smart Water Monitor](https://waterheatersos.com/moen-flo-smart-water-monitor): Smart water monitoring system installation.

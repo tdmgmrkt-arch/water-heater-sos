@@ -13,14 +13,46 @@ import {
   Map,
   HomeIcon,
   MapIcon,
-  TrendingUp
+  TrendingUp,
+  Snowflake,
 } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Container } from "./Container";
 import { Button } from "./ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "./ui/sheet";
 
-const menuStructure = {
+// ---------------------------------------------------------------------------
+// Menu type definitions
+// ---------------------------------------------------------------------------
+
+interface MenuItem {
+  name: string;
+  href: string;
+  desc: string;
+  icon: React.ComponentType<{ className?: string }>;
+  featured?: boolean;
+  comingSoon?: boolean;
+}
+
+interface FlatCategory {
+  icon: React.ComponentType<{ className?: string }>;
+  items: MenuItem[];
+  subcategories?: never;
+}
+
+interface SubcategoryCategory {
+  icon: React.ComponentType<{ className?: string }>;
+  subcategories: Record<string, MenuItem[]>;
+  items?: never;
+}
+
+type MenuCategory = FlatCategory | SubcategoryCategory;
+
+// ---------------------------------------------------------------------------
+// Menu data
+// ---------------------------------------------------------------------------
+
+const menuStructure: Record<string, MenuCategory> = {
   "Water Heaters": {
     icon: Droplet,
     items: [
@@ -49,8 +81,33 @@ const menuStructure = {
       { name: "Garbage Disposal Repair & Replacement", href: "/garbage-disposal-repair-replacement", desc: "Disposal services", icon: Trash2 },
       { name: "Moen Flo Leak Detection Installation", href: "/moen-flo-smart-water-monitor", desc: "Smart water monitoring", icon: Shield },
       { name: "Sump Pump Repair & Replacement", href: "/sump-pump-repair-replacement", desc: "Sump pump services", icon: Grip },
-      { name: "Air Duct Cleaning", href: "/air-duct-cleaning", desc: "HVAC duct cleaning", icon: Sparkles },
+      // Air Duct Cleaning moved to HVAC Services > Indoor Air Quality
     ],
+  },
+  "HVAC Services": {
+    icon: Snowflake,
+    subcategories: {
+      "AC": [
+        { name: "AC Repair", href: "/ac-repair", desc: "24/7 emergency AC repair", icon: Wrench, featured: true },
+        { name: "AC Installation", href: "/ac-installation", desc: "New AC system installation", icon: Snowflake },
+        { name: "AC Maintenance", href: "/ac-maintenance", desc: "Tune-ups & preventive care", icon: Settings },
+        { name: "Mini-Split / Ductless AC", href: "/mini-split-installation", desc: "Ductless cooling solutions", icon: Wind },
+        { name: "Thermostat Installation", href: "/thermostat-installation", desc: "Smart & programmable thermostats", icon: Gauge },
+      ],
+      "Heating": [
+        { name: "Furnace Repair", href: "/furnace-repair", desc: "Fast furnace diagnostics & repair", icon: Flame, featured: true },
+        { name: "Furnace Installation", href: "/furnace-installation", desc: "New furnace installation", icon: Flame },
+        { name: "Furnace Maintenance", href: "/furnace-maintenance", desc: "Annual furnace tune-ups", icon: Settings },
+        { name: "Heat Pump Systems", href: "/heat-pump-systems", desc: "Efficient heating & cooling", icon: Zap },
+        { name: "HVAC Maintenance Plans", href: "/hvac-maintenance-plan", desc: "Scheduled preventive service", icon: Shield },
+      ],
+      "Indoor Air Quality": [
+        { name: "Air Duct Cleaning", href: "/air-duct-cleaning", desc: "Whole-home duct cleaning", icon: Sparkles },
+        { name: "Air Filtration Systems", href: "/air-filtration", desc: "Whole-home air purification", icon: Filter, featured: true },
+        { name: "Whole-Home Humidifiers", href: "/whole-home-humidifier", desc: "Balanced indoor humidity", icon: Droplets },
+        { name: "Whole-Home Dehumidifiers", href: "/whole-home-dehumidifier", desc: "Moisture control solutions", icon: Droplets },
+      ],
+    },
   },
   Contact: {
     icon: Mail,
@@ -59,7 +116,7 @@ const menuStructure = {
       { name: "About", href: "/about", desc: "Learn about our team", icon: Mail },
       { name: "Contact Us", href: "/contact", desc: "Get in touch with our team", icon: Phone },
       { name: "Discounts", href: "/discount-water-heaters", desc: "Get Water Heater Discounts", icon: Ticket },
-      { name: "Service Area", href: "/service-area", desc: "Areas We Service", icon: MapIcon  }
+      { name: "Service Area", href: "/service-area", desc: "Areas We Service", icon: MapIcon },
     ],
   },
 };
@@ -190,6 +247,8 @@ export function Header() {
                                     ? "Expert installation, repair, and maintenance for all types of water heating systems."
                                     : activeMenu === "Plumbing Services"
                                     ? "Comprehensive plumbing solutions for your home or business. From emergency repairs to expert installations, our licensed technicians deliver fast, reliable service backed by years of industry experience."
+                                    : activeMenu === "HVAC Services"
+                                    ? "Complete HVAC solutions for your home. Expert installation, repair, and maintenance for AC, heating, and indoor air quality systems across the Inland Empire."
                                     : "Get in touch with our expert team for fast, reliable service."}
                                 </p>
                               </div>
@@ -228,87 +287,159 @@ export function Header() {
 
                       {/* Menu Items - Right Columns */}
                       <div className="lg:col-span-9 relative flex flex-col h-full">
-                      <div className="grid auto-rows-min grid-cols-2 gap-4 md:grid-cols-3 flex-1">
-                          {menuStructure[activeMenu as keyof typeof menuStructure].items.map((item, index) => {
-                            const ItemIcon = 'icon' in item ? item.icon : null;
-                            const isFeatured = 'featured' in item && item.featured;
+                        {(() => {
+                          const category = menuStructure[activeMenu as keyof typeof menuStructure];
+                          const hasSubcategories = category.subcategories != null;
 
+                          // ---- Flat layout (Water Heaters, Plumbing, Contact) ----
+                          if (!hasSubcategories) {
+                            const items = (category as FlatCategory).items;
                             return (
-                              <motion.div
-                              key={item.href}
-                              initial={{ opacity: 0, y: 10 }}
-                              animate={{ opacity: 1, y: 0 }}
-                              transition={{ delay: index * 0.01, duration: 0.15 }}
-                              whileHover={{ y: -4 }}
-                              whileTap={{ scale: 0.98 }}
-                            >
-                              <Link
-                                href={item.href}
-                                onClick={() => setActiveMenu(null)}
-                                className={`group relative flex items-start gap-3 rounded-xl px-4 py-4 h-full border
-                                  transition duration-200 ease-out overflow-visible
-                                  ${
-                                    isFeatured
-                                      ? "border-[#EA5D19]/40 bg-[#EA5D19]/10 backdrop-blur-sm shadow-sm hover:shadow-md"
-                                      : "border-white/10 hover:border-[#EA5D19]/40 hover:bg-white/5 hover:shadow-md"
-                                  }`}
-                              >
-                                {isFeatured && (
-                                    <div className="absolute -top-4 left-[18px] z-20">
-                                    <span
-                                      className="
-                                        inline-flex items-center gap-1
-                                        rounded-md
-                                        px-3 py-[2px]
-                                        text-[10px] font-semibold text-[#EA5D19]
-                                        uppercase tracking-wide
-                                        bg-[#fffdf9]/95
-                                        shadow-[0_0_6px_rgba(234,93,25,0.35)]
-                                        border border-[#EA5D19]/30
-                                      "
+                              <div className="grid auto-rows-min grid-cols-2 gap-4 md:grid-cols-3 flex-1">
+                                {items.map((item, index) => {
+                                  const ItemIcon = item.icon;
+                                  const isFeatured = item.featured === true;
+                                  return (
+                                    <motion.div
+                                      key={item.href}
+                                      initial={{ opacity: 0, y: 10 }}
+                                      animate={{ opacity: 1, y: 0 }}
+                                      transition={{ delay: index * 0.01, duration: 0.15 }}
+                                      whileHover={{ y: -4 }}
+                                      whileTap={{ scale: 0.98 }}
                                     >
-                                      <TrendingUp className="h-3 w-3 text-[#EA5D19]" />
-                                      Popular
-                                    </span>
-                                  </div>
-                                )}
-
-                                {ItemIcon && (
-                                  <div
-                                    className={`flex-shrink-0 rounded-lg p-2
-                                      transition-colors transition-transform duration-200 ease-out
-                                      ${
-                                        isFeatured
-                                          ? "bg-[#EA5D19] text-white"
-                                          : "bg-white/10 text-[#EA5D19] group-hover:bg-[#EA5D19] group-hover:text-white group-hover:scale-105"
-                                      }`}
-                                  >
-                                    <ItemIcon className="h-4 w-4" />
-                                  </div>
-                                )}
-
-                                <div className="flex-1 min-w-0">
-                                  <span
-                                    className={`block text-sm font-semibold transition-colors leading-tight
-                                      ${
-                                        isFeatured
-                                          ? "text-white"
-                                          : "text-white group-hover:text-[#EA5D19]"
-                                      }`}
-                                  >
-                                    {item.name}
-                                  </span>
-                                  {"desc" in item && item.desc && (
-                                    <span className="mt-1 block text-xs text-gray-400 leading-snug">
-                                      {item.desc}
-                                    </span>
-                                  )}
-                                </div>
-                              </Link>
-                              </motion.div>
+                                      <Link
+                                        href={item.href}
+                                        onClick={() => setActiveMenu(null)}
+                                        className={`group relative flex items-start gap-3 rounded-xl px-4 py-4 h-full border
+                                          transition duration-200 ease-out overflow-visible
+                                          ${isFeatured
+                                            ? "border-[#EA5D19]/40 bg-[#EA5D19]/10 backdrop-blur-sm shadow-sm hover:shadow-md"
+                                            : "border-white/10 hover:border-[#EA5D19]/40 hover:bg-white/5 hover:shadow-md"
+                                          }`}
+                                      >
+                                        {isFeatured && (
+                                          <div className="absolute -top-4 left-[18px] z-20">
+                                            <span className="inline-flex items-center gap-1 rounded-md px-3 py-0.5 text-[10px] font-semibold text-[#EA5D19] uppercase tracking-wide bg-[#fffdf9]/95 shadow-[0_0_6px_rgba(234,93,25,0.35)] border border-[#EA5D19]/30">
+                                              <TrendingUp className="h-3 w-3 text-[#EA5D19]" />
+                                              Popular
+                                            </span>
+                                          </div>
+                                        )}
+                                        <div className={`shrink-0 rounded-lg p-2 transition duration-200 ease-out ${isFeatured ? "bg-[#EA5D19] text-white" : "bg-white/10 text-[#EA5D19] group-hover:bg-[#EA5D19] group-hover:text-white group-hover:scale-105"}`}>
+                                          <ItemIcon className="h-4 w-4" />
+                                        </div>
+                                        <div className="flex-1 min-w-0">
+                                          <span className={`block text-sm font-semibold transition-colors leading-tight ${isFeatured ? "text-white" : "text-white group-hover:text-[#EA5D19]"}`}>
+                                            {item.name}
+                                          </span>
+                                          {item.desc && (
+                                            <span className="mt-1 block text-xs text-gray-400 leading-snug">
+                                              {item.desc}
+                                            </span>
+                                          )}
+                                        </div>
+                                      </Link>
+                                    </motion.div>
+                                  );
+                                })}
+                              </div>
                             );
-                          })}
-                        </div>
+                          }
+
+                          // ---- Subcategory layout (HVAC Services — 3 columns) ----
+                          const subcategories = (category as SubcategoryCategory).subcategories;
+                          return (
+                            <div className="grid grid-cols-3 gap-6 flex-1">
+                              {Object.entries(subcategories).map(([subcatName, items], colIndex) => (
+                                <div key={subcatName}>
+                                  <p className="mb-3 text-xs font-bold uppercase tracking-widest text-[#EA5D19]">
+                                    {subcatName}
+                                  </p>
+                                  <div className="space-y-1">
+                                    {items.map((item, index) => {
+                                      const ItemIcon = item.icon;
+                                      const isFeatured = item.featured === true;
+                                      const isComingSoon = item.comingSoon === true;
+
+                                      if (isComingSoon) {
+                                        return (
+                                          <motion.div
+                                            key={item.href}
+                                            initial={{ opacity: 0, y: 8 }}
+                                            animate={{ opacity: 1, y: 0 }}
+                                            transition={{ delay: (colIndex * 5 + index) * 0.015, duration: 0.15 }}
+                                          >
+                                            <div
+                                              className="group flex items-center gap-3 rounded-xl px-3 py-3 border border-white/5 cursor-not-allowed opacity-50"
+                                              aria-disabled="true"
+                                            >
+                                              <div className="shrink-0 rounded-lg p-1.5 bg-white/5 text-gray-600">
+                                                <ItemIcon className="h-4 w-4" />
+                                              </div>
+                                              <div className="flex-1 min-w-0">
+                                                <span className="block text-sm font-semibold text-gray-500 leading-tight">
+                                                  {item.name}
+                                                </span>
+                                              </div>
+                                              <span className="shrink-0 rounded-full bg-white/10 px-2 py-0.5 text-[9px] font-semibold uppercase tracking-wide text-gray-500">
+                                                Soon
+                                              </span>
+                                            </div>
+                                          </motion.div>
+                                        );
+                                      }
+
+                                      return (
+                                        <motion.div
+                                          key={item.href}
+                                          initial={{ opacity: 0, y: 8 }}
+                                          animate={{ opacity: 1, y: 0 }}
+                                          transition={{ delay: (colIndex * 5 + index) * 0.015, duration: 0.15 }}
+                                          whileHover={{ y: -2 }}
+                                          whileTap={{ scale: 0.98 }}
+                                        >
+                                          <Link
+                                            href={item.href}
+                                            onClick={() => setActiveMenu(null)}
+                                            className={`group relative flex items-center gap-3 rounded-xl px-3 py-3 border transition duration-200 ease-out
+                                              ${isFeatured
+                                                ? "border-[#EA5D19]/40 bg-[#EA5D19]/10 shadow-sm hover:shadow-md"
+                                                : "border-white/10 hover:border-[#EA5D19]/40 hover:bg-white/5 hover:shadow-md"
+                                              }`}
+                                          >
+                                            {isFeatured && (
+                                              <div className="absolute -top-3.5 left-[14px] z-20">
+                                                <span className="inline-flex items-center gap-1 rounded-md px-2 py-0.5 text-[9px] font-semibold text-[#EA5D19] uppercase tracking-wide bg-[#fffdf9]/95 shadow-[0_0_6px_rgba(234,93,25,0.35)] border border-[#EA5D19]/30">
+                                                  <TrendingUp className="h-2.5 w-2.5" />
+                                                  Popular
+                                                </span>
+                                              </div>
+                                            )}
+                                            <div className={`shrink-0 rounded-lg p-1.5 transition duration-200 ease-out ${isFeatured ? "bg-[#EA5D19] text-white" : "bg-white/10 text-[#EA5D19] group-hover:bg-[#EA5D19] group-hover:text-white group-hover:scale-105"}`}>
+                                              <ItemIcon className="h-4 w-4" />
+                                            </div>
+                                            <div className="flex-1 min-w-0">
+                                              <span className={`block text-sm font-semibold leading-tight ${isFeatured ? "text-white" : "text-white group-hover:text-[#EA5D19]"}`}>
+                                                {item.name}
+                                              </span>
+                                              {item.desc && (
+                                                <span className="mt-0.5 block text-xs text-gray-400 leading-snug">
+                                                  {item.desc}
+                                                </span>
+                                              )}
+                                            </div>
+                                          </Link>
+                                        </motion.div>
+                                      );
+                                    })}
+                                  </div>
+                                </div>
+                              ))}
+                            </div>
+                          );
+                        })()}
+
 
 
                         {/* Bottom CTA Bar */}
@@ -387,26 +518,74 @@ export function Header() {
 
                 {/* Mobile Menu Items */}
                 <div className="flex-1 overflow-y-auto p-6 bg-[#11110E]">
-                  {Object.entries(menuStructure).map(([category, { icon: Icon, items }]) => (
-                    <div key={category} className="mb-6">
-                      <div className="mb-3 flex items-center gap-2">
-                        <Icon className="h-5 w-5 text-[#EA5D19]" />
-                        <h3 className="text-lg font-bold text-white">{category}</h3>
+                  {Object.entries(menuStructure).map(([category, categoryData]) => {
+                    const Icon = categoryData.icon;
+                    const hasSubcategories = categoryData.subcategories != null;
+
+                    return (
+                      <div key={category} className="mb-6">
+                        <div className="mb-3 flex items-center gap-2">
+                          <Icon className="h-5 w-5 text-[#EA5D19]" />
+                          <h3 className="text-lg font-bold text-white">{category}</h3>
+                        </div>
+
+                        {!hasSubcategories ? (
+                          // Flat category (Water Heaters, Plumbing, Contact)
+                          <div className="space-y-1 pl-7">
+                            {(categoryData as FlatCategory).items.map((item) => (
+                              <Link
+                                key={item.href}
+                                href={item.href}
+                                onClick={() => setMobileOpen(false)}
+                                className="flex items-center rounded-lg px-3 py-2 text-sm text-gray-300 hover:bg-white/10 hover:text-[#EA5D19] transition-colors min-h-11"
+                              >
+                                {item.name}
+                              </Link>
+                            ))}
+                          </div>
+                        ) : (
+                          // Subcategory category (HVAC Services)
+                          <div className="pl-7 space-y-4">
+                            {Object.entries((categoryData as SubcategoryCategory).subcategories).map(([subcatName, items]) => (
+                              <div key={subcatName}>
+                                <p className="mb-1.5 text-[10px] font-bold uppercase tracking-widest text-[#EA5D19]">
+                                  {subcatName}
+                                </p>
+                                <div className="space-y-1">
+                                  {items.map((item) => {
+                                    if (item.comingSoon) {
+                                      return (
+                                        <div
+                                          key={item.href}
+                                          className="flex items-center justify-between rounded-lg px-3 py-2 text-sm text-gray-600 cursor-not-allowed min-h-11"
+                                          aria-disabled="true"
+                                        >
+                                          <span>{item.name}</span>
+                                          <span className="rounded-full bg-white/5 px-2 py-0.5 text-[9px] font-semibold uppercase tracking-wide text-gray-600">
+                                            Soon
+                                          </span>
+                                        </div>
+                                      );
+                                    }
+                                    return (
+                                      <Link
+                                        key={item.href}
+                                        href={item.href}
+                                        onClick={() => setMobileOpen(false)}
+                                        className="flex items-center rounded-lg px-3 py-2 text-sm text-gray-300 hover:bg-white/10 hover:text-[#EA5D19] transition-colors min-h-11"
+                                      >
+                                        {item.name}
+                                      </Link>
+                                    );
+                                  })}
+                                </div>
+                              </div>
+                            ))}
+                          </div>
+                        )}
                       </div>
-                      <div className="space-y-1 pl-7">
-                        {items.map((item) => (
-                          <Link
-                            key={item.href}
-                            href={item.href}
-                            onClick={() => setMobileOpen(false)}
-                            className="block rounded-lg px-3 py-2 text-sm text-gray-300 hover:bg-white/10 hover:text-[#EA5D19] transition-colors"
-                          >
-                            {item.name}
-                          </Link>
-                        ))}
-                      </div>
-                    </div>
-                  ))}
+                    );
+                  })}
                 </div>
 
                 {/* Mobile CTA */}

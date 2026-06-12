@@ -154,8 +154,8 @@ export function Footer() {
               </Link>
 
               <p className="text-xs md:text-sm text-gray-400 leading-relaxed hidden md:block">
-                The Inland Empire&apos;s most trusted water heater experts since day one.
-                Licensed, insured, and committed to 5-star service.
+                The Inland Empire&apos;s licensed water heater, HVAC, and plumbing contractor.
+                Riverside &amp; San Bernardino counties — same-day service, 24/7 emergencies, upfront pricing.
               </p>
             </div>
 

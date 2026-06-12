@@ -8,11 +8,11 @@ import { FooterCTAProvider } from "@/contexts/FooterCTAContext";
 
 export const metadata: Metadata = {
   title: {
-    default: "Water Heater SOS - Expert Water Heater Services | Inland Empire",
+    default: "Water Heater, HVAC & Plumbing in the Inland Empire | Water Heater SOS",
     template: "%s | Water Heater SOS",
   },
-  description: "The Inland Empire's most trusted water heater experts. Professional repair, installation, and maintenance services. Licensed, insured, and 5-star rated. Call (800) 697-4014.",
-  keywords: ["water heater repair", "water heater installation", "tankless water heater", "plumbing services", "Inland Empire", "Redlands", "Riverside", "San Bernardino"],
+  description: "The Inland Empire's licensed water heater, HVAC, and plumbing contractor. Water heater installation, AC repair, heating service, and 24/7 emergency plumbing. CA LIC# 1140776. Call (800) 697-4014.",
+  keywords: ["HVAC contractor Inland Empire", "AC repair Riverside", "furnace repair", "water heater repair", "water heater installation", "tankless water heater", "plumbing services", "Inland Empire", "Riverside", "San Bernardino", "Lake Elsinore"],
   authors: [{ name: "Water Heater SOS" }],
   creator: "Water Heater SOS",
   publisher: "Water Heater SOS",
@@ -25,8 +25,8 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: "https://waterheatersos.com",
     siteName: "Water Heater SOS",
-    title: "Water Heater SOS - Expert Water Heater Services",
-    description: "The Inland Empire's most trusted water heater experts. Fast, affordable repair and replacement services.",
+    title: "Water Heater SOS — Water Heater, HVAC & Plumbing in the Inland Empire",
+    description: "Licensed water heater, HVAC, and plumbing contractor serving Riverside and San Bernardino counties. Same-day service, 24/7 emergencies, upfront pricing.",
     images: [
       {
         url: "https://waterheatersos.com/wh-sos-service-van.webp",

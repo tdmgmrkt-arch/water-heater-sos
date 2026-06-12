@@ -11,7 +11,15 @@ export const faqs: Record<string, FAQ[]> = {
     },
     {
       question: "Are you licensed and insured?",
-      answer: "Yes, we are fully licensed (CA LIC# 1140776) and insured to provide plumbing and water heater services throughout California.",
+      answer: "Yes — we hold California Contractor License #1140776 under the C-20 (Warm-Air Heating, Ventilating and Air-Conditioning) classification required by the California State License Board (CSLB) for HVAC work, and we are fully insured to provide HVAC, water heater, and plumbing services throughout California.",
+    },
+    {
+      question: "Do you offer HVAC services?",
+      answer: "Yes — we provide full-service HVAC across the Inland Empire including AC repair and installation, mini-split / ductless installation, furnace repair and installation, heat pump systems, thermostat installation, and indoor air quality solutions (filtration, UV-C purifiers, humidifiers, dehumidifiers). Same-day service, 24/7 emergencies.",
+    },
+    {
+      question: "Do you do AC repair?",
+      answer: "Yes — 24/7 emergency AC repair throughout Riverside and San Bernardino counties. Most repairs run $150–$800 with upfront pricing before we start. Same-day service is typical, including weekends.",
     },
     {
       question: "Do you offer financing?",
@@ -35,11 +43,11 @@ export const faqs: Record<string, FAQ[]> = {
     },
     {
       question: "Are you open 24/7?",
-      answer: "We offer emergency water heater services and same-day appointments. Contact us at (800) 697-4014 to schedule service or for emergency assistance.",
+      answer: "Yes — we provide 24/7 emergency service for HVAC failures (no AC in 100°F+ heat, no heat in a cold snap), water heater leaks, and plumbing emergencies. Call (800) 697-4014 any time, day or night, weekday or weekend.",
     },
     {
-      question: "Do you offer other plumbing services?",
-      answer: "Yes! In addition to water heater services, we offer comprehensive plumbing services including drain cleaning, hydro-jetting, leak detection, whole-house repiping, and more.",
+      question: "What services do you offer beyond water heaters?",
+      answer: "We are a full-service home contractor: HVAC (AC, heating, indoor air quality), water heaters (gas, electric, tankless, heat pump), and plumbing (drain cleaning, hydro-jetting, leak detection, whole-house repiping, gas line repair, and more). One licensed team for the whole home.",
     },
   ],
 
@@ -1586,6 +1594,682 @@ export const faqs: Record<string, FAQ[]> = {
     {
       question: "What other plumbing problems can you fix?",
       answer: "We handle all plumbing needs: fixing leaky faucets, clearing clogged drains, repairing pipes, toilets, showers and garbage disposals, providing leak-detection services and more.",
+    },
+  ],
+
+  acRepair: [
+    {
+      question: "How much does AC repair cost?",
+      answer:
+        "Most AC repairs in the Inland Empire range from $150 to $800, depending on the problem. Simple fixes like a capacitor replacement run $150\u2013$350. Refrigerant leaks and recharges typically cost $200\u2013$600. Compressor replacement is the most expensive repair, usually $800\u2013$1,800. We provide a firm, upfront quote before starting any work so you know exactly what you\u2019re paying.",
+    },
+    {
+      question: "Should I repair or replace my AC?",
+      answer:
+        "Repair your AC when the repair cost is less than 50% of a new system and your unit is under 10 years old; replace it when the repair exceeds that threshold or the system is over 10 years old. Older units also use R-22 refrigerant, which is expensive and being phased out. If your system is newer or the repair is minor, fixing it usually makes sense. We\u2019ll give you an honest assessment \u2014 we don\u2019t push replacement to drive a larger sale.",
+    },
+    {
+      question: "How long does AC repair take?",
+      answer:
+        "Most AC repairs are completed in one visit, typically one to three hours. Capacitor replacements, drain line cleanings, and minor electrical repairs can take under an hour. Refrigerant leak repairs take two to three hours depending on where the leak is located. Compressor replacements may require a return visit if the part needs to be ordered, but we carry common components on the truck to minimize wait time.",
+    },
+    {
+      question: "Why is my AC blowing warm air?",
+      answer:
+        "An AC blows warm air for one of four main reasons: low refrigerant due to a leak, a frozen evaporator coil, a dirty condenser coil, or a failed compressor. A quick check: make sure the thermostat is set to \u201cCool\u201d and the air filter isn\u2019t completely blocked. If those are fine and the system still blows warm, call us \u2014 this is one of the most common AC problems we fix across the Inland Empire and we diagnose it on the first visit.",
+    },
+    {
+      question: "Do you offer emergency AC repair?",
+      answer:
+        "Yes \u2014 Water Heater SOS provides 24/7 emergency AC repair throughout the Inland Empire. When temperatures hit triple digits in Riverside, Moreno Valley, or Fontana, a broken AC is a health emergency for families with young children, elderly residents, or pets. Call (800) 697-4014 any time \u2014 day or night, weekday or weekend \u2014 and we\u2019ll dispatch a technician.",
+    },
+    {
+      question: "How quickly can you arrive?",
+      answer:
+        "In most of the Inland Empire, we aim to arrive the same day you call \u2014 often within a few hours. Response times can vary across Riverside County and San Bernardino County depending on call volume and how far you are from our service hub, but we\u2019ll give you an honest window when you call. For true emergencies \u2014 elderly or medically vulnerable household members, indoor temperatures above 105\u00b0F \u2014 tell us upfront and we prioritize your call accordingly.",
+    },
+    {
+      question: "Are you licensed to do AC repair in California?",
+      answer:
+        "Yes. Water Heater SOS holds California Contractor License #1140776 under the C-20 (Warm-Air Heating, Ventilating and Air-Conditioning) classification required by the California State License Board (CSLB) for HVAC work. Our technicians are EPA 608 certified for refrigerant handling, as federally required for anyone servicing systems containing R-22, R-410A, or R-454B refrigerants. You can verify our license at the CSLB website.",
+    },
+    {
+      question: "Do you service all AC brands?",
+      answer:
+        "We service all major AC brands, including Carrier, Trane, Lennox, Rheem, York, Goodman, American Standard, Bryant, and Daikin. We also service older and less common brands. If you\u2019re unsure whether we work on your system, call us \u2014 we\u2019ll confirm before scheduling.",
+    },
+  ],
+
+  hvacServices: [
+    {
+      question: "What HVAC services do you offer in the Inland Empire?",
+      answer:
+        "We offer a full range of residential HVAC services throughout Riverside County and San Bernardino County: AC repair, AC installation, AC maintenance, ductless mini-split installation, thermostat installation, furnace repair, furnace installation, furnace maintenance, heat pump systems, HVAC maintenance plans, air duct cleaning, whole-home air filtration, UV air purifiers, whole-home humidifiers, and whole-home dehumidifiers. All work is performed by licensed technicians (CA LIC# 1140776).",
+    },
+    {
+      question: "Do you offer 24/7 HVAC service in the Inland Empire?",
+      answer:
+        "Yes. We provide 24/7 emergency HVAC service throughout the Inland Empire. When your AC fails on a triple-digit day in Riverside, Fontana, or Moreno Valley, or your furnace stops working on a cold November night in Yucaipa or Banning, we dispatch a technician regardless of the hour. Call (800) 697-4014 any time.",
+    },
+    {
+      question: "Are you licensed to do HVAC work in California?",
+      answer:
+        "Yes. Water Heater SOS holds California Contractor License #1140776 under the C-20 (Warm-Air Heating, Ventilating and Air-Conditioning) classification required by the California State License Board (CSLB) for HVAC and mechanical work. Our technicians are EPA 608 certified for refrigerant handling.",
+    },
+    {
+      question: "Do you service both Riverside County and San Bernardino County?",
+      answer:
+        "Yes. We serve the full Inland Empire including Riverside, Corona, Moreno Valley, Murrieta, Temecula, Hemet, Lake Elsinore, Menifee, Perris, Norco, Eastvale, San Jacinto, and Banning in Riverside County, and San Bernardino, Fontana, Rancho Cucamonga, Ontario, Rialto, Colton, Loma Linda, Highland, Redlands, Yucaipa, Calimesa, Beaumont, Mentone, Grand Terrace, Chino, Chino Hills, Upland, and Claremont in San Bernardino County.",
+    },
+    {
+      question: "What brands of HVAC equipment do you service and install?",
+      answer:
+        "We service all major brands including Carrier, Trane, Lennox, Rheem, York, Goodman, American Standard, Bryant, Daikin, and Mitsubishi. We also work on older and less common brands. For installations, we recommend the brand and model that best fits your home and budget \u2014 not whatever has the best margin.",
+    },
+    {
+      question: "Do you offer HVAC financing?",
+      answer:
+        "Yes. Financing options are available for new HVAC equipment installations. Ask about financing when you call for a quote. For qualifying high-efficiency systems, the federal IRA tax credit (up to $2,000 for heat pumps, up to $600 for qualifying AC and furnace systems) can also reduce your net cost significantly.",
+    },
+  ],
+
+  acServices: [
+    {
+      question: "What AC services do you offer in the Inland Empire?",
+      answer:
+        "We offer AC repair, AC installation, AC maintenance and tune-ups, ductless mini-split installation, and thermostat installation throughout Riverside County and San Bernardino County. Emergency AC repair is available 24/7. All work performed by licensed technicians (CA LIC# 1140776).",
+    },
+    {
+      question: "When should I call for AC service vs. schedule ahead?",
+      answer:
+        "Call immediately (24/7) if: your AC has completely stopped working during a heat wave, indoor temperatures are above 90\u00b0F, or you have elderly, medically vulnerable, or infant household members without cooling. Schedule ahead (same-day or next available) for: warm air from a working system, unusual sounds, reduced airflow, or an AC that cycles on and off. Book in advance for: annual tune-ups, thermostat upgrades, and system replacements.",
+    },
+    {
+      question: "How long does an AC service call take?",
+      answer:
+        "A diagnostic and repair call typically takes 1 to 3 hours depending on the problem. Common repairs (capacitor replacement, drain line clearing, flame sensor cleaning) take under an hour. Refrigerant leak repairs take 2 to 3 hours. We carry common parts on the truck so most repairs don\u2019t require a return visit for parts.",
+    },
+    {
+      question: "Do you service window AC units or just central air?",
+      answer:
+        "We focus on central AC systems, heat pumps, and ductless mini-splits. We don\u2019t service window or portable AC units \u2014 those are typically not worth the service cost relative to replacement price.",
+    },
+    {
+      question: "What is the best time of year to replace my AC in the Inland Empire?",
+      answer:
+        "Fall (October\u2013November) or late winter (February\u2013March) are the best times for AC replacement in the Inland Empire. Equipment availability is highest, installation scheduling is most flexible, and you\u2019ll have a new system ready before the summer cooling season. Emergency replacements during peak summer (June\u2013August) have longer lead times and less scheduling flexibility.",
+    },
+  ],
+
+  heatingServices: [
+    {
+      question: "What heating services do you offer in the Inland Empire?",
+      answer:
+        "We offer furnace repair, furnace installation, annual furnace maintenance, heat pump system installation and service, and HVAC maintenance plans covering both heating and cooling. We service all gas and electric heating systems throughout Riverside County and San Bernardino County, with 24/7 emergency availability for heating failures.",
+    },
+    {
+      question: "Do I need a furnace tune-up every year in the Inland Empire?",
+      answer:
+        "Yes \u2014 annual furnace maintenance is recommended even in the Inland Empire\u2019s short heating season. A furnace that runs for only 10\u201314 weeks per year is still subject to component wear, igniter degradation, and heat exchanger stress from repeated heating cycles. The risk of failure is higher after a long summer idle. A fall tune-up also includes a carbon monoxide safety check, which is not something to skip on a gas appliance.",
+    },
+    {
+      question: "Is a heat pump better than a furnace for the Inland Empire?",
+      answer:
+        "For most Inland Empire homes, a heat pump makes strong financial sense when replacing aging equipment \u2014 especially when combined with California utility rebates and the federal IRA tax credit of up to $2,000 for qualifying installations. Heat pumps are highly efficient in the IE\u2019s mild winters and deliver significant cooling efficiency gains in summer. For homeowners with existing gas infrastructure and good ductwork, a high-efficiency gas furnace is also a solid choice. We\u2019ll walk you through both options with actual cost estimates for your specific home.",
+    },
+    {
+      question: "Do you offer emergency furnace repair?",
+      answer:
+        "Yes. We provide 24/7 emergency furnace repair throughout the Inland Empire. Call (800) 697-4014 any time. Heating failures are less frequent here than in colder climates, but they\u2019re still emergencies \u2014 especially for elderly household members or homes in the high-desert areas of Yucaipa, Banning, or Beaumont where overnight temperatures can drop below 30\u00b0F.",
+    },
+    {
+      question: "What brands of furnaces and heating systems do you service?",
+      answer:
+        "We service all major furnace and heat pump brands including Carrier, Trane, Lennox, Rheem, York, Goodman, American Standard, Bryant, and Daikin. We also work on older and less common brands. Call us if you\u2019re unsure whether we service your specific system.",
+    },
+  ],
+
+  indoorAirQuality: [
+    {
+      question: "What indoor air quality services do you offer in the Inland Empire?",
+      answer:
+        "We offer air duct cleaning, whole-home air filtration system installation, UV air purifier installation, whole-home humidifier installation, and whole-home dehumidifier installation throughout Riverside County and San Bernardino County. We also provide IAQ assessments to help homeowners identify which combination of services addresses their specific needs.",
+    },
+    {
+      question: "How does wildfire smoke affect indoor air quality in the Inland Empire?",
+      answer:
+        "During active wildfire events, outdoor PM2.5 particulate concentrations can spike to hazardous levels across the Inland Empire \u2014 even when fires are dozens of miles away. Standard HVAC filters (MERV 8 or below) do not effectively capture PM2.5 particles. A whole-home air filtration system rated MERV 13 or higher, or a HEPA media filter installation, significantly reduces indoor particle concentrations during smoke events. Running your HVAC on \u201cfan\u201d mode with a high-efficiency filter circulates air through the filter more frequently, which helps clear smoke faster than sealed windows alone.",
+    },
+    {
+      question: "How often should air ducts be cleaned?",
+      answer:
+        "The National Air Duct Cleaners Association (NADCA) recommends air duct cleaning every 3 to 5 years under normal conditions. In the Inland Empire, more frequent cleaning may be warranted if your home experienced a major wildfire smoke intrusion, a renovation or construction project, evidence of rodent activity in the ducts, or visible mold growth. If you haven\u2019t had your ducts cleaned in 5+ years, an inspection is a reasonable starting point.",
+    },
+    {
+      question: "Do I need a humidifier or dehumidifier in the Inland Empire?",
+      answer:
+        "Many IE homes need both at different times of year. During heating season (roughly November through March), the dry desert climate combined with forced-air heating drives indoor relative humidity below 30% \u2014 the threshold where dry skin, cracking wood, and increased airborne virus transmission become problems. A whole-home humidifier addresses this. During the summer monsoon season (July through September), Pacific moisture can push indoor humidity above 60% in poorly ventilated homes, creating conditions for mold growth and musty odors. A whole-home dehumidifier handles that.",
+    },
+    {
+      question: "What is the difference between an air filtration system and a UV air purifier?",
+      answer:
+        "Air filtration systems physically capture particles \u2014 dust, pollen, smoke particulates, and allergens \u2014 in a filter media as air passes through. UV air purifiers use ultraviolet light to kill biological contaminants like mold, bacteria, and viruses on the evaporator coil and in circulating air. They do not remove particles. The two systems address different threats and work well together: filtration handles particles, UV handles biological growth. For wildfire smoke and allergy concerns, filtration is the more impactful investment.",
+    },
+  ],
+
+  acInstallation: [
+    {
+      question: "How much does AC installation cost in the Inland Empire?",
+      answer:
+        "A new central AC system in the Inland Empire typically costs $4,500 to $12,000 installed, depending on system size (tonnage), efficiency rating (SEER2), and whether ductwork modifications are needed. A standard 3-ton, 16 SEER2 system for a 1,500\u20132,000 sq ft home falls in the $5,500\u2013$8,000 range. Higher-efficiency systems (18+ SEER2) and larger homes push toward the top of the range. We provide a written, itemized quote after a load calculation \u2014 no guessing on size.",
+    },
+    {
+      question: "How long does AC installation take?",
+      answer:
+        "Most standard central AC replacements take one full day \u2014 roughly 6 to 8 hours for a two-person crew. New installations in homes without existing ductwork take longer, sometimes two to three days depending on the duct layout. We handle the city permit (required by California for new HVAC installations) and schedule the inspection so you don\u2019t have to.",
+    },
+    {
+      question: "What size AC do I need for my Inland Empire home?",
+      answer:
+        "Sizing is done through a Manual J load calculation, not a rule of thumb. The Inland Empire\u2019s extreme summer heat, higher insulation requirements, and roof orientation all affect the correct tonnage. An undersized system runs nonstop and never cools the house; an oversized system short-cycles and creates humidity problems. We run the calculation before recommending any system.",
+    },
+    {
+      question: "Should I get a heat pump or a traditional AC?",
+      answer:
+        "For most Inland Empire homeowners replacing aging equipment, a heat pump is worth serious consideration \u2014 especially with the federal IRA tax credit of up to $2,000 for qualifying installations and California utility rebates. Heat pumps provide both cooling and heating in a single system, which is efficient in the IE\u2019s mild winters. If you have an existing gas furnace in good condition and good ductwork, a high-efficiency central AC paired with the furnace is also a solid choice. We\u2019ll give you both options with honest cost-of-ownership comparisons.",
+    },
+    {
+      question: "Do I need a permit for AC installation in California?",
+      answer:
+        "Yes. California requires a building permit for new HVAC equipment installation and replacement. We handle the permit application and city inspection as part of our installation process. Never accept an installation offer that skips the permit \u2014 an unpermitted system can create problems at resale and voids most manufacturer warranties.",
+    },
+    {
+      question: "What SEER2 rating should I get?",
+      answer:
+        "The federal minimum in California is now 15.2 SEER2 for split systems. We recommend 16\u201318 SEER2 for most Inland Empire homes \u2014 the energy savings over a 15-year system lifespan typically justify the modest upfront premium over the minimum. Systems above 20 SEER2 have longer payback periods and are worth considering only if you\u2019re in a high-use home or qualify for utility rebates that close the gap.",
+    },
+    {
+      question: "Do you install ductless mini-splits?",
+      answer:
+        "Yes. We install single-zone and multi-zone ductless mini-splits throughout the Inland Empire. Mini-splits are the right choice for room additions, garages, converted spaces, or homes without existing ductwork. They\u2019re also highly efficient for targeted cooling in specific areas. See our dedicated mini-split installation page for details on systems, pricing, and use cases.",
+    },
+    {
+      question: "Are there rebates or tax credits for new AC installation?",
+      answer:
+        "Yes. The federal Inflation Reduction Act (IRA) provides a tax credit of up to $600 for qualifying high-efficiency central AC systems (up to $2,000 for heat pumps). Southern California Edison and SoCal Gas also offer rebates for high-efficiency equipment. Rebate amounts change annually \u2014 ask us for current qualifying systems when you schedule your estimate.",
+    },
+  ],
+
+  acMaintenance: [
+    {
+      question: "How much does an AC tune-up cost in the Inland Empire?",
+      answer:
+        "A standard AC tune-up in the Inland Empire runs $89 to $199 for a single system. The price varies based on whether the visit includes just the inspection and cleaning checklist or also covers refrigerant top-off (which adds cost if your system is low). Our HVAC maintenance plan covers both heating and cooling tune-ups annually at a reduced per-visit rate.",
+    },
+    {
+      question: "How often should I get my AC serviced?",
+      answer:
+        "Once a year, typically in early spring before the Inland Empire cooling season begins (March through May is ideal). The IE\u2019s extreme summer heat \u2014 sustained temperatures above 100\u00b0F for weeks \u2014 puts more stress on AC equipment than in most other California climates. An annual tune-up catches worn capacitors, dirty coils, and refrigerant issues before they become mid-summer failures.",
+    },
+    {
+      question: "What does an AC tune-up include?",
+      answer:
+        "Our AC tune-up covers: inspect and clean condenser coil, inspect evaporator coil for buildup, check and record refrigerant charge, test capacitor and contactor, clean or flush condensate drain, check blower motor and belt condition, inspect electrical connections and wiring, measure supply and return air temperature split, and review thermostat operation. We also note any items that are worn but not yet failed so you can plan ahead rather than face an emergency call.",
+    },
+    {
+      question: "Can a dirty AC filter cause the system to fail?",
+      answer:
+        "Yes. A severely clogged filter restricts airflow to the point where the evaporator coil freezes, the blower motor overheats, and in extreme cases the compressor fails from lack of heat exchange. We recommend checking filters every 30 days during peak cooling season and replacing them every 1\u20133 months depending on filter type. This is the single cheapest maintenance item that has the highest impact on system life.",
+    },
+    {
+      question: "Is the HVAC maintenance plan worth it?",
+      answer:
+        "For most Inland Empire homeowners with central AC, yes \u2014 especially if the system is more than 5 years old. The plan covers both heating and cooling tune-ups each year, includes priority scheduling, and typically comes with a discount on any repairs needed after the visit. The annualized cost is usually less than a single emergency service call.",
+    },
+    {
+      question: "Do you check refrigerant during a tune-up?",
+      answer:
+        "Yes. We check refrigerant pressure and record the charge during every AC tune-up. If the system is low, we\u2019ll tell you \u2014 and we\u2019ll also tell you why. A system that\u2019s low on refrigerant has a leak; simply topping it off without finding the leak is a temporary fix. We\u2019ll quote the leak repair separately so you can decide how to proceed.",
+    },
+    {
+      question: "When is the best time to schedule AC maintenance?",
+      answer:
+        "March and April are ideal for Inland Empire homeowners \u2014 before the summer heat ramps up and before our schedule fills with emergency repair calls. If you miss the spring window, early fall (September\u2013October) is the next best time, catching the system after the hardest season before it sits idle over winter. Avoid trying to schedule a tune-up in June or July \u2014 availability is tight and pricing may reflect peak demand.",
+    },
+    {
+      question: "How long does an AC tune-up take?",
+      answer:
+        "Most AC tune-ups take 45 minutes to 90 minutes for a single system. Multi-system homes or systems with significant buildup on the condenser coil may take longer. We\u2019ll give you an accurate time estimate when you schedule.",
+    },
+  ],
+
+  miniSplitInstallation: [
+    {
+      question: "How much does mini-split installation cost in the Inland Empire?",
+      answer:
+        "A single-zone mini-split installation in the Inland Empire typically costs $2,500 to $4,500 installed, depending on BTU capacity, efficiency (SEER2), brand, and mounting complexity. Multi-zone systems serving 2\u20134 rooms run $5,000 to $8,000+. These are all-in prices including the equipment, labor, lineset, electrical disconnect, and startup. We provide a written quote after a site assessment.",
+    },
+    {
+      question: "What is a ductless mini-split and how does it work?",
+      answer:
+        "A ductless mini-split consists of an outdoor compressor/condenser unit connected by a refrigerant line to one or more indoor air handlers mounted on walls or ceilings. There\u2019s no ductwork involved. The indoor unit blows conditioned air directly into the room and returns air to the unit for reconditioning. Most modern mini-splits are heat pumps, meaning they provide both cooling and heating in a single system.",
+    },
+    {
+      question: "Is a mini-split better than central AC for the Inland Empire?",
+      answer:
+        "It depends on the use case. For homes with existing ductwork in good condition, central AC is usually more cost-effective. Mini-splits are the right choice for homes without ductwork, room additions, garages, detached structures, or situations where you want zone-level temperature control. They\u2019re also more efficient per zone because there\u2019s no duct loss \u2014 which can be significant in attic-run ducts in the Inland Empire\u2019s extreme heat.",
+    },
+    {
+      question: "How long does mini-split installation take?",
+      answer:
+        "A single-zone installation typically takes 4 to 8 hours for a two-person crew. Multi-zone installations with 3\u20134 indoor heads usually require a full day or two depending on lineset routing complexity and electrical work required. We handle the permit and inspection as part of the installation.",
+    },
+    {
+      question: "Do mini-splits work in the Inland Empire heat?",
+      answer:
+        "Yes. Modern mini-splits are rated to cool at outdoor temperatures of 115\u00b0F and higher \u2014 well above the Inland Empire\u2019s typical peak of 105\u2013110\u00b0F. Choose a system with a rated cooling capacity at high ambient temperatures (not just standard rating conditions at 95\u00b0F). We specify equipment that\u2019s rated for the IE\u2019s actual peak temperatures, not just the standard test conditions.",
+    },
+    {
+      question: "Which mini-split brands do you install?",
+      answer:
+        "We install Mitsubishi, Daikin, Fujitsu, LG, and Carrier mini-split systems. Each has strengths in different applications. Mitsubishi and Daikin are widely regarded as the most reliable for long-term performance. We\u2019ll recommend the right brand and model for your specific situation \u2014 not just whatever\u2019s in the warehouse.",
+    },
+    {
+      question: "Can a mini-split heat as well as cool?",
+      answer:
+        "Yes. All mini-splits we install are heat pump systems that provide both heating and cooling. In the Inland Empire\u2019s mild winters, a mini-split heat pump is extremely efficient for heating \u2014 typically 2\u20133x more efficient than electric resistance heat and cost-competitive with gas heating. For homes in higher-elevation areas like Yucaipa, Banning, or Beaumont that see harder freezes, we specify systems with low-ambient heating ratings.",
+    },
+    {
+      question: "Are there rebates for mini-split installation in California?",
+      answer:
+        "Yes. The federal IRA provides a tax credit of up to $2,000 for qualifying heat pump installations, including mini-splits. Southern California Edison offers rebates for high-efficiency ductless systems. Rebate amounts and qualifying models change annually. Ask us when you schedule your estimate \u2014 we\u2019ll tell you which systems currently qualify and what the expected rebate value is.",
+    },
+  ],
+
+  thermostatInstallation: [
+    {
+      question: "How much does thermostat installation cost?",
+      answer:
+        "Thermostat installation in the Inland Empire runs $149 to $450 for parts and labor. A basic programmable thermostat replacement runs $149\u2013$199. Smart thermostats (Ecobee, Nest) typically run $250\u2013$350 installed. Heat pump thermostats require a specific wiring configuration and can run higher depending on the system. All-in prices include the thermostat and installation labor.",
+    },
+    {
+      question: "Can I install a smart thermostat myself?",
+      answer:
+        "Many homeowners successfully DIY a standard smart thermostat swap on a basic single-stage heating and cooling system. Where it gets complicated: multi-stage systems, heat pumps (which require a C-wire and specific wiring configurations), older systems with non-standard wiring, and zoned HVAC systems. If your system is anything other than a basic single-stage central AC with gas furnace, we recommend professional installation to avoid wiring errors that can damage the control board.",
+    },
+    {
+      question: "What smart thermostat do you recommend for the Inland Empire?",
+      answer:
+        "The Ecobee Smart Thermostat Premium is our top recommendation for most Inland Empire homes \u2014 it has a built-in remote sensor for accurate room-level temperature readings, integrates with all major smart home platforms, and handles heat pump wiring well. The Nest Thermostat (4th gen) is a solid second choice for simpler systems. For homes with heat pumps or multi-stage equipment, we specify the correct thermostat during the estimate to avoid compatibility issues.",
+    },
+    {
+      question: "Does a smart thermostat actually save money in the Inland Empire?",
+      answer:
+        "Yes, for most homes. The Department of Energy estimates smart thermostats save an average of $50\u2013$150 per year. In the Inland Empire, where cooling costs are significantly higher than the national average due to long, hot summers, savings can reach $150\u2013$250 annually when the thermostat is properly configured with schedules and setback temperatures. Southern California Edison also offers a $75\u2013$100 rebate for qualifying smart thermostat installations.",
+    },
+    {
+      question: "My thermostat display is blank. Is it broken?",
+      answer:
+        "A blank thermostat display usually means one of three things: the batteries are dead (common on battery-powered units), the C-wire (common wire) has lost connection or wasn\u2019t connected, or a blown fuse on the HVAC control board has cut power to the thermostat. Try replacing the batteries first. If that doesn\u2019t fix it, call us \u2014 diagnosing and resolving a blank thermostat typically takes less than an hour.",
+    },
+    {
+      question: "Do you install thermostats for heat pump systems?",
+      answer:
+        "Yes. Heat pump thermostats require specific wiring (O/B wire for reversing valve, dual-fuel staging in hybrid systems) that standard thermostats don\u2019t support. We install heat pump-compatible smart thermostats and ensure the wiring is configured correctly for your specific system type \u2014 single-stage, dual-stage, or hybrid gas/heat pump.",
+    },
+    {
+      question: "Can a thermostat cause AC problems?",
+      answer:
+        "Yes. A faulty thermostat can cause the AC to short-cycle (turn on and off rapidly), run constantly without reaching the set temperature, not turn on at all, or display incorrect temperature readings that lead to overcooling or undercooling. If your HVAC system is behaving oddly and the AC and furnace check out mechanically, the thermostat is often the next thing to investigate.",
+    },
+    {
+      question: "How long does thermostat installation take?",
+      answer:
+        "A standard thermostat replacement takes 30 to 60 minutes. If additional wiring is needed (running a C-wire, adding a wire for a smart thermostat), it can take 1 to 2 hours. We test the full system \u2014 heating and cooling cycles \u2014 before leaving.",
+    },
+  ],
+
+  furnaceRepair: [
+    {
+      question: "How much does furnace repair cost in the Inland Empire?",
+      answer:
+        "Most furnace repairs in the Inland Empire run $89 to $600. Igniter replacement is one of the most common repairs, typically $150\u2013$300. Control board failures run $300\u2013$600. Heat exchanger issues are the most serious \u2014 if cracked, replacement may cost more than a new furnace. We give you an upfront quote after diagnosis so you know exactly what you\u2019re paying before we start.",
+    },
+    {
+      question: "Why is my furnace blowing cold air?",
+      answer:
+        "A furnace blowing cold air usually means the burners aren\u2019t lighting. Common causes: a faulty igniter, a dirty flame sensor that won\u2019t confirm the burner lit, a tripped high-limit switch from overheating, or a gas supply issue. In the Inland Empire, furnaces that sit idle for months through summer often have igniter or flame sensor issues when first turned on in fall \u2014 the same failure mode we see most frequently in October and November.",
+    },
+    {
+      question: "Is a furnace repair safe to delay?",
+      answer:
+        "Depends on the issue. A furnace that won\u2019t light is inconvenient but not dangerous. A furnace with a cracked heat exchanger is a carbon monoxide hazard and should not be run at all until repaired or replaced. If your CO detector has alarmed in the vicinity of the furnace, or if you smell something odd when the heat runs, shut off the furnace and call us immediately.",
+    },
+    {
+      question: "How long does furnace repair take?",
+      answer:
+        "Most furnace repairs are completed in one visit, typically 1 to 3 hours. Igniter replacements and flame sensor cleanings take under an hour. Control board replacements or heat exchanger inspections take longer. We carry common igniter and sensor parts on the truck, so most repairs don\u2019t require a parts run.",
+    },
+    {
+      question: "Should I repair or replace my furnace?",
+      answer:
+        "Repair when the repair cost is less than 50% of replacement and the furnace is under 15 years old. Replace when the repair is costly, the unit is older, or the heat exchanger is cracked. In the Inland Empire, furnaces are used less aggressively than in colder climates, which can extend their useful life. That said, older low-efficiency furnaces (80 AFUE) are significantly more expensive to operate than modern 96 AFUE units \u2014 the payback on replacement can be shorter than homeowners expect.",
+    },
+    {
+      question: "Do you offer emergency furnace repair?",
+      answer:
+        "Yes. We provide 24/7 emergency furnace repair throughout the Inland Empire. Call (800) 697-4014 any time. While heating emergencies are less common here than in colder states, they\u2019re still urgent \u2014 especially for households with elderly members, young children, or in the higher-elevation areas of Yucaipa, Banning, or Beaumont where overnight temperatures can drop below freezing.",
+    },
+    {
+      question: "What is a heat exchanger and why does it matter?",
+      answer:
+        "The heat exchanger is the component that separates combustion gases (including carbon monoxide) from the air that circulates through your home. A cracked heat exchanger allows CO to enter your living space \u2014 it is the single most serious furnace safety issue. We inspect the heat exchanger as part of every furnace service call and every annual tune-up. If it\u2019s cracked, we will not restart the furnace until it\u2019s addressed.",
+    },
+    {
+      question: "Why does my furnace keep shutting off?",
+      answer:
+        "Short-cycling (turning on and off rapidly) is most often caused by: an overheating furnace tripping the high-limit switch (usually from a dirty filter or blocked return), a faulty flame sensor that can\u2019t confirm the burner stayed lit, or an oversized furnace that heats the house too quickly and shuts off before completing a proper cycle. The fix depends on the root cause \u2014 a dirty filter is a $10 DIY fix, a faulty sensor requires a technician.",
+    },
+  ],
+
+  furnaceInstallation: [
+    {
+      question: "How much does furnace installation cost in the Inland Empire?",
+      answer:
+        "A new gas furnace installation in the Inland Empire typically runs $3,500 to $7,000 installed, depending on furnace size (BTU), efficiency rating (AFUE), and whether any ductwork modifications are needed. High-efficiency 96 AFUE systems are in the upper range; 80 AFUE systems run lower. Heat pump systems as a furnace replacement run $5,000 to $10,000 depending on system size. We provide a written, itemized quote after a load calculation.",
+    },
+    {
+      question: "Should I replace my furnace with a heat pump?",
+      answer:
+        "For most Inland Empire homes, a heat pump is worth serious consideration when replacing aging heating equipment \u2014 especially with the federal IRA tax credit of up to $2,000 for qualifying heat pump installations. Heat pumps provide both heating and cooling in a single system, are highly efficient in the IE\u2019s mild winters, and pair well with existing ductwork. We\u2019ll give you a side-by-side cost comparison with realistic energy savings estimates based on your home\u2019s actual usage.",
+    },
+    {
+      question: "What AFUE rating should I get for an Inland Empire furnace?",
+      answer:
+        "The California minimum for new gas furnaces is 80 AFUE. We recommend 96 AFUE for most replacements \u2014 the higher efficiency unit uses 16% less gas to produce the same heat output. In the Inland Empire\u2019s short heating season (roughly November through March), the energy payback on a 96 AFUE unit is longer than in colder climates. That said, gas prices in SoCal are among the highest in the nation, which narrows the payback gap.",
+    },
+    {
+      question: "How long does furnace installation take?",
+      answer:
+        "A furnace replacement (removing the old unit and installing the new one) typically takes 4 to 8 hours for a two-person crew. New furnace installations in homes without existing ductwork take longer. We handle the city permit (required by California) and inspection.",
+    },
+    {
+      question: "Do I need a permit for furnace installation in California?",
+      answer:
+        "Yes. California requires a building permit for HVAC equipment replacement and installation. We handle the permit application and schedule the inspection as part of our installation process. Don\u2019t accept a quote that skips the permit \u2014 an unpermitted furnace installation can create problems at resale and voids most manufacturer warranties.",
+    },
+    {
+      question: "How long does a new furnace last?",
+      answer:
+        "A well-maintained gas furnace in the Inland Empire can last 20 to 25 years. IE furnaces run fewer hours annually than in colder climates, which can extend equipment life. Annual maintenance \u2014 particularly heat exchanger inspection and burner cleaning \u2014 is the most important factor in longevity.",
+    },
+    {
+      question: "Are there tax credits for furnace installation?",
+      answer:
+        "Yes. The federal IRA provides a tax credit of up to $600 for qualifying high-efficiency gas furnaces (96 AFUE or higher), and up to $2,000 for qualifying heat pump systems. California utility rebates may also apply. Rebate amounts change annually \u2014 ask about current qualifying systems when you schedule your estimate.",
+    },
+    {
+      question: "What furnace brands do you install?",
+      answer:
+        "We install Carrier, Trane, Lennox, Rheem, Goodman, York, American Standard, and Bryant gas furnaces. We\u2019ll recommend a brand and model based on your home size, existing ductwork, budget, and efficiency goals \u2014 not based on what\u2019s in the warehouse.",
+    },
+  ],
+
+  furnaceMaintenance: [
+    {
+      question: "How much does a furnace tune-up cost in the Inland Empire?",
+      answer:
+        "A furnace tune-up in the Inland Empire runs $89 to $199 for a single system. The price varies based on furnace type, how long the system has been since its last service, and whether it includes just the inspection and cleaning or additional minor adjustments. Our HVAC maintenance plan covers both heating and cooling tune-ups annually at a reduced per-visit rate.",
+    },
+    {
+      question: "Do I really need annual furnace maintenance if I only use heat a few months a year?",
+      answer:
+        "Yes \u2014 and arguably the Inland Empire\u2019s short heating season makes it more important, not less. A furnace that sits idle for 7\u20138 months accumulates dust, pests can nest in the combustion chamber, and igniters that worked fine in spring may fail in October when you first turn the heat on. The carbon monoxide safety check is non-negotiable on a gas appliance regardless of how infrequently it runs.",
+    },
+    {
+      question: "What does a furnace tune-up include?",
+      answer:
+        "Our furnace tune-up covers: inspect and clean burners, inspect heat exchanger for cracks, test igniter operation and measure igniter current, clean flame sensor, check gas pressure and manifold pressure, inspect flue and venting for obstructions or damage, test safety switches and limit controls, check blower motor and belt condition, measure temperature rise, and test CO levels in flue gases. We also change the filter if you provide one or ask us to.",
+    },
+    {
+      question: "What is a heat exchanger inspection and why does it matter?",
+      answer:
+        "The heat exchanger is the metal component that separates combustion gases (including carbon monoxide) from the air that circulates through your home. A cracked heat exchanger allows CO to enter your living space \u2014 it\u2019s the most serious safety issue a furnace can have. We inspect it visually and with combustion analysis during every tune-up. If cracked, we\u2019ll document it with photos and won\u2019t restart the furnace without your authorization to proceed with repair or replacement.",
+    },
+    {
+      question: "When is the best time to schedule furnace maintenance?",
+      answer:
+        "September and October are ideal for Inland Empire homeowners \u2014 before the heating season starts and before our schedule fills up. If you get your AC tuned in spring and your furnace tuned in fall, you\u2019ll be covered year-round. Our HVAC maintenance plan handles the scheduling automatically so you don\u2019t have to remember.",
+    },
+    {
+      question: "Can a dirty furnace filter cause a breakdown?",
+      answer:
+        "Yes. A severely clogged filter restricts airflow, which causes the furnace to overheat and trip the high-limit safety switch. The furnace shuts off, then tries to restart, then shuts off again \u2014 a cycle that stresses the components and can lead to heat exchanger failure over time. Check your filter monthly during heating season and replace it every 1\u20133 months depending on filter type.",
+    },
+    {
+      question: "Is the HVAC maintenance plan worth it for a furnace I rarely use?",
+      answer:
+        "Yes, primarily for the CO safety check and igniter inspection. A furnace failure in November when overnight temperatures drop in Yucaipa, Banning, or Beaumont isn\u2019t inconvenient in the same way a broken AC in August is \u2014 but it\u2019s still a problem. The plan cost is typically less than a single emergency call, and priority scheduling means you\u2019re not waiting three days when it\u2019s cold.",
+    },
+    {
+      question: "How long does a furnace tune-up take?",
+      answer:
+        "Most furnace tune-ups take 45 minutes to 90 minutes for a single system. If the burners need significant cleaning or we find items that need attention, it may take longer. We\u2019ll give you an honest time estimate when you schedule.",
+    },
+  ],
+
+  wholeHomeHumidifier: [
+    {
+      question: "How much does whole-home humidifier installation cost?",
+      answer:
+        "A whole-home humidifier installation in the Inland Empire typically costs $600 to $1,800, depending on the type (bypass vs. steam) and whether any duct modifications are needed. Bypass humidifiers (the most common type) run $600\u2013$1,100 installed. Steam humidifiers, which work with any HVAC system including heat pumps and are more precise, run $1,200\u2013$1,800. We provide a written quote after assessing your system and home size.",
+    },
+    {
+      question: "Does the Inland Empire need whole-home humidifiers?",
+      answer:
+        "Yes \u2014 the IE\u2019s desert climate combined with forced-air heating produces some of the driest indoor air in California. During heating season (November through March), indoor relative humidity in unmanaged homes regularly drops below 25%, sometimes into the teens. At those levels, you experience cracked skin and lips, dry nasal passages (which reduce your natural defense against viruses), increased static electricity, and hardwood flooring and cabinetry that can warp and crack. A whole-home humidifier maintains 35\u201345% RH automatically.",
+    },
+    {
+      question: "What is the difference between a bypass humidifier and a steam humidifier?",
+      answer:
+        "A bypass humidifier uses your furnace fan to push air across a water panel, adding moisture as the air passes through. It works only when the furnace is heating, which is fine for most gas furnace homes. A steam humidifier heats water independently to create steam, which can be injected into the airstream regardless of whether the furnace is running. Steam humidifiers are more precise, work with any HVAC system (including heat pumps), and are the right choice for homes that need consistent humidity year-round.",
+    },
+    {
+      question: "How does a whole-home humidifier connect to my HVAC system?",
+      answer:
+        "A bypass humidifier taps into the supply plenum and return duct, with a water line connected to your home\u2019s plumbing. It uses a humidistat (either standalone or integrated with your thermostat) to control output. Installation requires access to the duct system and a nearby water supply line \u2014 most Inland Empire homes can be set up in 3 to 4 hours.",
+    },
+    {
+      question: "What humidity level should I maintain in my Inland Empire home?",
+      answer:
+        "The ASHRAE recommended range for occupied homes is 30\u201360% relative humidity. In the Inland Empire during heating season, targeting 35\u201345% RH balances comfort, health benefits, and protection of wood furnishings. We\u2019ll set your humidistat at a recommended starting point and explain how to adjust it seasonally.",
+    },
+    {
+      question: "Does a whole-home humidifier require maintenance?",
+      answer:
+        "Yes. Bypass humidifiers use a water panel (evaporator pad) that should be replaced annually at the start of each heating season. The water distribution tray and scale screen should be inspected and cleaned during the same visit. We include humidifier checks in our annual HVAC maintenance plan.",
+    },
+    {
+      question: "Can a humidifier cause mold problems?",
+      answer:
+        "A properly sized and controlled whole-home humidifier does not cause mold. Mold problems occur when relative humidity exceeds 60% consistently. We size the humidifier to your home\u2019s specific volume and set the humidistat conservatively. The risk of over-humidification from a correctly installed system is very low \u2014 especially in the IE\u2019s naturally dry climate.",
+    },
+    {
+      question: "How long does whole-home humidifier installation take?",
+      answer:
+        "Most whole-home humidifier installations take 3 to 4 hours. This includes tapping the duct system, running the water line, connecting the humidistat, and testing the system through a full heating cycle. Steam humidifier installations may take slightly longer due to the electrical connection required.",
+    },
+  ],
+
+  wholeHomeDehumidifier: [
+    {
+      question: "How much does whole-home dehumidifier installation cost?",
+      answer:
+        "Whole-home dehumidifier installation in the Inland Empire typically costs $1,200 to $3,000 installed, depending on the unit\u2019s capacity (pints per day), brand, and installation complexity. The unit itself is the primary cost driver \u2014 a properly sized whole-home unit for a 2,000 sq ft home runs $800\u2013$1,500 in equipment alone. We provide a written quote after assessing your home\u2019s size, layout, and humidity problem.",
+    },
+    {
+      question: "Does the Inland Empire need whole-home dehumidifiers?",
+      answer:
+        "Many IE homes do, particularly during the summer monsoon season (July through September) when Pacific moisture pushes inland and outdoor humidity can reach 60\u201380%+ during storm events. Homes with poor ventilation, slab foundations with moisture intrusion, tightly sealed construction, or that are located near lower-elevation valleys can see indoor humidity exceed 60% \u2014 the threshold for accelerated mold growth. A whole-home dehumidifier solves this without running the AC 24/7.",
+    },
+    {
+      question: "Can't I just run my AC to dehumidify?",
+      answer:
+        "Your AC does remove some humidity as a byproduct of cooling, but it\u2019s not designed for dehumidification. When outdoor temperatures drop in the evening but humidity remains high, the AC may not run enough to keep indoor RH in check. A standalone whole-home dehumidifier operates independently of the AC, targets humidity directly, and is far more energy-efficient for this specific task than running the AC to achieve the same humidity level.",
+    },
+    {
+      question: "How does a whole-home dehumidifier connect to existing HVAC?",
+      answer:
+        "Whole-home dehumidifiers are installed in line with your existing duct system \u2014 typically in the supply plenum or return air path. They draw air from the ducts, remove moisture, and return the drier air. Condensate drains either to a floor drain or through a condensate pump to the exterior. Installation requires duct access and electrical connection. Most installations take half a day to a full day.",
+    },
+    {
+      question: "What humidity level should my Inland Empire home be?",
+      answer:
+        "ASHRAE recommends 30\u201360% relative humidity for occupied spaces. In the Inland Empire\u2019s summer monsoon season, keeping indoor RH below 50% prevents mold growth and musty odors. We set your dehumidifier\u2019s humidistat to 45\u201350% as a starting point \u2014 you can adjust down if you prefer drier air.",
+    },
+    {
+      question: "What are signs I need a whole-home dehumidifier?",
+      answer:
+        "Signs that excess humidity is a problem in your IE home: condensation on windows in summer, musty or mildew odors (especially in bathrooms, closets, or the garage), visible mold spots on walls or ceilings, warping or buckling hardwood floors, or a consistently sticky, clammy feeling indoors despite the AC running. If your portable dehumidifier runs constantly and fills its tank daily, that\u2019s a strong signal a whole-home unit is warranted.",
+    },
+    {
+      question: "Does a whole-home dehumidifier require maintenance?",
+      answer:
+        "Whole-home dehumidifiers have a washable or replaceable air filter that should be cleaned or replaced every 6\u201312 months. The condensate drain line should be checked annually. We include dehumidifier checks in our annual HVAC maintenance plan.",
+    },
+    {
+      question: "What brands of whole-home dehumidifiers do you install?",
+      answer:
+        "We install Aprilaire, Santa Fe, and Honeywell whole-home dehumidifiers. Aprilaire is our most frequently installed brand \u2014 good parts availability, reliable performance, and strong customer support. We\u2019ll recommend the right capacity for your home size and humidity load.",
+    },
+  ],
+
+  heatPumpSystems: [
+    {
+      question: "How much does a heat pump cost in the Inland Empire?",
+      answer:
+        "A whole-home heat pump in the Inland Empire typically costs $5,000 to $12,000 installed for a standard split system replacing existing central HVAC. Larger homes or systems requiring ductwork modifications run higher. After the federal IRA tax credit of up to $2,000 and any applicable SCE rebates, the net cost is typically $3,500\u2013$10,000. We provide a written quote after a load calculation and site assessment.",
+    },
+    {
+      question: "Is a heat pump efficient in the Inland Empire heat?",
+      answer:
+        "Yes \u2014 heat pumps are highly efficient for cooling, often exceeding 20 SEER2. In the Inland Empire\u2019s mild winters (most winter days are above 40\u00b0F), heat pumps operate at 2\u20133x the efficiency of electric resistance heat. Cold-climate heat pumps (rated to 5\u00b0F or below) handle the higher-elevation IE areas like Yucaipa, Banning, and Beaumont. At extreme summer peaks above 110\u00b0F, output can dip slightly, but modern heat pumps maintain rated output up to 115\u00b0F.",
+    },
+    {
+      question: "What is the difference between a heat pump and a traditional AC?",
+      answer:
+        "A traditional central AC only cools. A heat pump cools in summer and heats in winter using the same refrigerant cycle running in reverse \u2014 it moves heat rather than generating it. A traditional HVAC system requires both an AC and a separate furnace; a heat pump replaces both. Heat pumps are typically more efficient for heating than gas furnaces on a per-BTU basis at moderate winter temperatures.",
+    },
+    {
+      question: "What is a dual-fuel heat pump system?",
+      answer:
+        "A dual-fuel or hybrid heat pump system pairs a heat pump with a gas furnace as a backup heat source. In mild weather, the heat pump handles heating at high efficiency. When outdoor temperatures drop below the heat pump\u2019s efficient operating range (typically below 35\u201340\u00b0F), the gas furnace takes over. This configuration makes sense for higher-elevation IE homes that see harder winters while still wanting the cooling efficiency of a heat pump in summer.",
+    },
+    {
+      question: "What is the IRA tax credit for heat pumps?",
+      answer:
+        "The Inflation Reduction Act (IRA) provides a federal tax credit of up to $2,000 per year for qualifying heat pump installations. The credit applies to heat pumps meeting Energy Star efficiency standards. This is a direct tax credit (not a deduction), meaning it reduces your tax bill dollar-for-dollar. Southern California Edison also offers rebates for high-efficiency heat pump systems. Ask about current qualifying models when you schedule your estimate.",
+    },
+    {
+      question: "Do heat pump water heaters count as HVAC heat pumps?",
+      answer:
+        "No \u2014 heat pump water heaters are a separate product category. They use the same heat-pump technology but are designed to heat domestic water, not to condition indoor air. Both qualify for IRA tax credits, but under different categories. We install both types \u2014 see our heat pump water heater page for that service.",
+    },
+    {
+      question: "How long does heat pump installation take?",
+      answer:
+        "A heat pump installation replacing an existing split-system HVAC typically takes one full day for a two-person crew. Systems requiring ductwork modifications or electrical panel upgrades (to support the heat pump\u2019s electrical load) may take two days. We handle the city permit and inspection.",
+    },
+    {
+      question: "What heat pump brands do you install?",
+      answer:
+        "We install Carrier, Trane, Lennox, Rheem, Daikin, and Goodman heat pump systems. Carrier and Trane are our preferred brands for their reliability and parts availability in the Inland Empire service area. We\u2019ll recommend the right system for your home size, duct condition, and efficiency goals.",
+    },
+  ],
+
+  hvacMaintenancePlan: [
+    {
+      question: "What does the HVAC maintenance plan include?",
+      answer:
+        "The plan includes two annual tune-ups \u2014 one AC tune-up in spring (ideally March\u2013May) and one furnace or heating tune-up in fall (ideally September\u2013October). Each visit covers a full inspection and cleaning checklist for that system. Plan members also receive priority scheduling and a discount on any repairs needed during or after the maintenance visit.",
+    },
+    {
+      question: "How much does the HVAC maintenance plan cost?",
+      answer:
+        "Plan pricing is available when you call or submit a quote request. The annual cost is structured to be less than paying for two separate tune-up visits individually. For current pricing, call (800) 697-4014 or request a quote \u2014 we\u2019ll give you the exact number before you commit to anything.",
+    },
+    {
+      question: "Is an HVAC maintenance plan worth it in the Inland Empire?",
+      answer:
+        "For most homeowners with central HVAC in the Inland Empire, yes. The plan cost is typically less than a single emergency repair call. The Inland Empire\u2019s extreme summer heat is hard on AC equipment \u2014 an annual tune-up that catches a degrading capacitor or low refrigerant charge in April is far less expensive than an emergency call in August. The furnace check also includes a carbon monoxide safety inspection, which is worth doing on any gas appliance.",
+    },
+    {
+      question: "Does the maintenance plan cover repairs?",
+      answer:
+        "The plan covers the cost of the tune-up visits. If repairs are needed (parts or additional labor beyond the tune-up scope), those are quoted and billed separately. Plan members receive a repair discount. We\u2019ll always tell you what\u2019s needed and what it costs before doing any additional work.",
+    },
+    {
+      question: "Can I get the maintenance plan on a new system I just had installed?",
+      answer:
+        "Yes, and we recommend it. Annual maintenance is required by most manufacturer warranties to keep them valid. Starting a maintenance plan on a new system from the beginning is the best way to protect your warranty and maximize equipment life.",
+    },
+    {
+      question: "What is priority scheduling and how does it work?",
+      answer:
+        "Priority scheduling means plan members move to the front of the queue during high-demand periods. In practice, this matters most in June, July, and August when our repair schedule fills quickly. If your AC fails on a 108\u00b0F day in Riverside and you\u2019re on the maintenance plan, you get a same-day appointment ahead of non-members.",
+    },
+    {
+      question: "Does the plan cover both my AC and furnace?",
+      answer:
+        "Yes. The standard plan covers one AC system and one heating system (furnace or heat pump). Multi-system homes (more than one AC or more than one heating zone) can add systems for an additional fee. Ask about multi-system pricing when you call.",
+    },
+    {
+      question: "Can I cancel the maintenance plan?",
+      answer:
+        "Yes. The plan is annual and does not auto-renew without your authorization. If you need to cancel before the year is up, we\u2019ll work with you on a prorated refund for unused visits. No long contracts.",
+    },
+  ],
+
+  airFiltration: [
+    {
+      question: "What whole-home air filtration options are available for my HVAC system?",
+      answer:
+        "There are three main options that connect to your existing HVAC ductwork: (1) Upgraded media filters \u2014 replacing your existing filter slot with a 4\u20135 inch media filter housing that accepts MERV 13\u201316 filters, capturing particles down to 0.3 microns. (2) Electronic air cleaners \u2014 use electrostatic charge to capture very fine particles, including PM2.5. (3) HEPA filtration systems \u2014 true HEPA (99.97% capture at 0.3 microns) housed in a bypass unit that routes a portion of your airflow through the HEPA filter. Each has different tradeoffs in cost, maintenance, and filtration effectiveness.",
+    },
+    {
+      question: "How much does whole-home air filtration installation cost?",
+      answer:
+        "A media filter upgrade (wider filter housing with MERV 13 capability) runs $400\u2013$700 installed. Electronic air cleaners installed into your duct system run $700\u2013$1,200. HEPA bypass filtration systems run $1,200\u2013$1,800 installed. All prices include parts and labor. We provide a written quote after assessing your duct system and the filter upgrade your system\u2019s blower can handle.",
+    },
+    {
+      question: "Will a MERV 13 filter damage my HVAC system?",
+      answer:
+        "A thin 1-inch MERV 13 filter can restrict airflow significantly and damage your blower motor and compressor over time. The right way to use MERV 13 filtration is with a 4\u20135 inch media filter housing, which provides much more filter surface area and does not restrict airflow. We assess your blower motor\u2019s capacity before recommending any filter upgrade \u2014 putting the wrong filter in an undersized filter slot causes exactly the kind of damage homeowners are trying to prevent.",
+    },
+    {
+      question: "Does whole-home air filtration help with wildfire smoke?",
+      answer:
+        "Yes. Wildfire smoke particles are primarily PM2.5 \u2014 particles smaller than 2.5 microns. A standard MERV 8 filter (most homes\u2019 default) captures less than 20% of PM2.5. A MERV 13 media filter captures 85\u201390%+ of PM2.5. A true HEPA filter captures 99.97%. During wildfire smoke events, running your HVAC on \u201cfan-only\u201d mode with a MERV 13 or HEPA filter continuously cycles indoor air through the filter, significantly reducing particle concentration.",
+    },
+    {
+      question: "What is the difference between air filtration and a UV purifier?",
+      answer:
+        "Air filtration physically captures particles in filter media. UV purifiers use ultraviolet light to kill biological contaminants (mold, bacteria, viruses) but do not remove particles. They\u2019re complementary technologies: filtration handles smoke, dust, pollen, and allergens; UV handles biological growth on the evaporator coil and in circulating air. For wildfire smoke and allergy concerns, filtration is the more impactful investment.",
+    },
+    {
+      question: "How often do whole-home air filtration filters need to be replaced?",
+      answer:
+        "4\u20135 inch media filters (MERV 13\u201316) typically need replacement every 6\u201312 months depending on air quality and usage. Electronic air cleaner cells need cleaning every 1\u20133 months. HEPA bypass filters are replaced annually. We note filter replacement intervals during installation and can include filtration maintenance in your HVAC maintenance plan.",
+    },
+    {
+      question: "Does a whole-home air filter help with allergies?",
+      answer:
+        "Yes. The Inland Empire is a high-pollen environment \u2014 the inland climate, dry wind patterns, and abundant landscaping create significant allergen loads throughout the year. MERV 13 filtration captures pollen, mold spores, and fine dust particles effectively. For households with allergy or asthma sufferers, upgrading to MERV 13 from a standard MERV 8 filter is one of the most practical IAQ improvements you can make.",
+    },
+    {
+      question: "Can I install whole-home air filtration in a home with old ductwork?",
+      answer:
+        "It depends on the duct condition. Significant leaks in the duct system reduce filtration effectiveness because unfiltered air bypasses the filter and enters the system directly. We assess duct condition during an air filtration estimate. If duct leakage is significant, we\u2019ll note it \u2014 duct sealing and filtration upgrades work together for the best result.",
     },
   ],
 };

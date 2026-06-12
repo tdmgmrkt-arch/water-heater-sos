@@ -40,33 +40,22 @@ const services = [
 
 export function PlumbingServiceCards() {
   return (
-    <section className="relative overflow-hidden py-10 sm:py-16 lg:py-24 bg-gray-50">
+    <section className="relative overflow-hidden bg-white py-8 sm:py-12 lg:py-16">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-      {/* Premium Section Header */}
+      {/* Section Header */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
-          className="mx-auto max-w-5xl text-center mb-8 sm:mb-12 min-w-0"
+          className="mx-auto max-w-5xl text-center mb-6 sm:mb-8 min-w-0"
         >
-          <motion.div
-            initial={{ opacity: 0, scale: 0.9 }}
-            whileInView={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.5, delay: 0.2 }}
-            viewport={{ once: true }}
-            className="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-[#FFF5F0] to-white px-3 py-1.5 sm:px-4 sm:py-2 mb-3 sm:mb-4 border border-[#EA5D19]/10 shadow-sm"
-          >
-            <span className="text-xs sm:text-sm font-bold text-gradient">Popular Services</span>
-          </motion.div>
-
-          <h2 className="text-2xl font-bold text-[#11110E] sm:text-4xl lg:text-5xl mb-4 sm:mb-6">
+          <h2 className="text-2xl font-bold text-[#11110E] sm:text-3xl lg:text-4xl mb-2 lg:mb-3">
             Plumbing Services
           </h2>
 
-          <p className="text-sm sm:text-lg leading-relaxed text-gray-600 max-w-7xl mx-auto">
-            <span className="hidden sm:inline">From drain cleaning to leak detection, we provide comprehensive plumbing solutions to keep your home running smoothly. Our expert technicians use advanced tools and techniques to solve any plumbing challenge.</span>
-            <span className="sm:hidden">Comprehensive plumbing solutions from drain cleaning to leak detection. Expert technicians ready to help.</span>
+          <p className="text-sm sm:text-base italic text-gray-500 max-w-3xl mx-auto">
+            Drain cleaning, hydro-jetting, leak detection, and full-service residential plumbing across the Inland Empire.
           </p>
         </motion.div>
 
@@ -86,7 +75,7 @@ export function PlumbingServiceCards() {
                 <Link href={service.href} className="block group">
                   <div className="relative h-full rounded-2xl sm:rounded-3xl overflow-hidden card-elevated bg-white">
                     {/* Image Container with Zoom Effect */}
-                    <div className="relative h-52 sm:h-80 overflow-hidden">
+                    <div className="relative h-40 sm:h-56 overflow-hidden">
                       <Image
                         src={service.image}
                         alt={service.subtitle ? `${service.title} ${service.subtitle}` : service.title}
@@ -160,22 +149,27 @@ export function PlumbingServiceCards() {
           })}
         </div>
 
-        {/* View All Services Button */}
+        {/* Unified bottom CTA — single primary action after all 3 service rows */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.3 }}
           viewport={{ once: true }}
-          className="mt-8 sm:mt-12 text-center"
+          className="mt-10 sm:mt-14 flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4"
         >
           <Link
-            href="/plumbing-services"
-            className="inline-flex items-center gap-2 rounded-full border-2 border-[#EA5D19] bg-transparent px-5 py-3 sm:px-8 sm:py-4 text-sm sm:text-lg font-semibold text-[#EA5D19] hover:bg-[#EA5D19] hover:text-white transition-all duration-200 hover:scale-105 shadow-md hover:shadow-lg"
+            href="/quote"
+            className="inline-flex items-center justify-center gap-2 rounded-full bg-gradient-to-r from-[#EA5D19] to-[#FF6E2E] px-6 py-3 sm:px-8 sm:py-4 text-sm sm:text-lg font-bold text-white shadow-lg hover:shadow-xl transition-all hover:scale-105"
           >
-            <span className="sm:hidden">All Plumbing Services</span>
-            <span className="hidden sm:inline">View All Plumbing Services</span>
+            Get a Free Quote
             <ArrowRight className="h-4 w-4 sm:h-5 sm:w-5" />
           </Link>
+          <a
+            href="tel:8006974014"
+            className="inline-flex items-center justify-center gap-2 rounded-full border-2 border-[#EA5D19] bg-white px-6 py-3 sm:px-8 sm:py-4 text-sm sm:text-lg font-bold text-[#EA5D19] hover:bg-[#FFF5F0] transition-all"
+          >
+            Call (800) 697-4014
+          </a>
         </motion.div>
       </div>
     </section>

@@ -37,32 +37,22 @@ const services = [
 
 export function ServiceCards() {
   return (
-    <section className="relative overflow-hidden py-12 lg:py-24">
+    <section id="services" className="relative overflow-hidden bg-white py-8 sm:py-12 lg:py-16">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-      {/* Premium Section Header */}
+      {/* Section Header */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
-          className="mx-auto max-w-5xl text-center mb-8 lg:mb-12 min-w-0"
+          className="mx-auto max-w-5xl text-center mb-6 lg:mb-8 min-w-0"
         >
-          <motion.div
-            initial={{ opacity: 0, scale: 0.9 }}
-            whileInView={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.5, delay: 0.2 }}
-            viewport={{ once: true }}
-            className="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-[#FFF5F0] to-white px-4 py-2 mb-4 border border-[#EA5D19]/10 shadow-sm"
-          >
-            <span className="text-sm font-bold text-gradient">Popular Services</span>
-          </motion.div>
-
-          <h2 className="text-2xl font-bold text-[#11110E] sm:text-3xl lg:text-5xl mb-4 lg:mb-6">
-            Water Heater Repair or Replacement
+          <h2 className="text-2xl font-bold text-[#11110E] sm:text-3xl lg:text-4xl mb-2 lg:mb-3">
+            Water Heater Services
           </h2>
 
-          <p className="text-base lg:text-lg leading-relaxed text-gray-600 max-w-7xl mx-auto">
-            Most people just want to repair or replace their existing water heater with the same type they currently have. In most cases, this makes the most sense and is a cost effective way to restore your hot water. However, we can discuss energy efficient options.
+          <p className="text-sm sm:text-base italic text-gray-500 max-w-3xl mx-auto">
+            Gas, electric, tankless, and heat pump water heaters — repaired or replaced across the Inland Empire.
           </p>
         </motion.div>
 
@@ -82,7 +72,7 @@ export function ServiceCards() {
                 <Link href={service.href} className="block group">
                   <div className="relative h-full rounded-3xl overflow-hidden card-elevated bg-white">
                     {/* Image Container with Zoom Effect */}
-                    <div className="relative h-52 sm:h-80 overflow-hidden">
+                    <div className="relative h-40 sm:h-56 overflow-hidden">
                       <Image
                         src={service.image}
                         alt={service.title}
@@ -155,23 +145,6 @@ export function ServiceCards() {
           })}
         </div>
 
-        {/* View All Services Button */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.3 }}
-          viewport={{ once: true }}
-          className="mt-8 sm:mt-12 text-center"
-        >
-          <Link
-            href="/water-heater-services"
-            className="inline-flex items-center gap-2 rounded-full border-2 border-[#EA5D19] bg-transparent px-5 py-3 sm:px-8 sm:py-4 text-sm sm:text-lg font-semibold text-[#EA5D19] hover:bg-[#EA5D19] hover:text-white transition-all duration-200 hover:scale-105 shadow-md hover:shadow-lg"
-          >
-            <span className="sm:hidden">All Water Heater Services</span>
-            <span className="hidden sm:inline">View All Water Heater Services</span>
-            <ArrowRight className="h-4 w-4 sm:h-5 sm:w-5" />
-          </Link>
-        </motion.div>
       </div>
     </section>
   );
