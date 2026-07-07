@@ -36,7 +36,7 @@ export function RanchoCucamongaContent() {
                 5-Star Rated Plumbers in Rancho Cucamonga, CA
               </p>
               <p className="text-lg text-gray-700 leading-relaxed mb-8">
-                Water Heater SOS is your go‑to plumber in Rancho Cucamonga for all your <Link href="/gas-water-heaters" className="text-[#EA5D19] hover:underline font-semibold">water heater repairs</Link>, <Link href="/drain-cleaning" className="text-[#EA5D19] hover:underline font-semibold">drain cleaning</Link>, and general plumbing needs. We're here to make your life easier, whether it's a broken pipe, a clogged drain, or a <Link href="/tankless-water-heaters" className="text-[#EA5D19] hover:underline font-semibold">tankless water heater installation</Link>. Our friendly Rancho Cucamonga plumbers are ready to tackle any job.
+                SOS Plumbing and Air is your go‑to plumber in Rancho Cucamonga for all your <Link href="/gas-water-heaters" className="text-[#EA5D19] hover:underline font-semibold">water heater repairs</Link>, <Link href="/drain-cleaning" className="text-[#EA5D19] hover:underline font-semibold">drain cleaning</Link>, and general plumbing needs. We're here to make your life easier, whether it's a broken pipe, a clogged drain, or a <Link href="/tankless-water-heaters" className="text-[#EA5D19] hover:underline font-semibold">tankless water heater installation</Link>. Our friendly Rancho Cucamonga plumbers are ready to tackle any job.
               </p>
               <Link
                 href="/quote"
@@ -76,7 +76,7 @@ export function RanchoCucamongaContent() {
               If you suspect a leak somewhere in your home but can't find it, our advanced <Link href="/leak-detection-services" className="text-[#EA5D19] hover:underline font-semibold">leak detection services</Link> use high‑tech equipment to pinpoint the problem without tearing up your walls or floors. For older homes with outdated plumbing, we offer <Link href="/whole-house-repipe" className="text-[#EA5D19] hover:underline font-semibold">whole‑house repipe</Link> services to replace old pipes and improve your water quality and flow. We also install or repair showers, fix or replace <Link href="/garbage-disposal-repair-replacement" className="text-[#EA5D19] hover:underline font-semibold">garbage disposals</Link>, and install <Link href="/water-filtration" className="text-[#EA5D19] hover:underline font-semibold">water filtration systems</Link> to improve your tap water.
             </p>
             <p>
-              Whatever plumbing challenge you're facing in Rancho Cucamonga, Water Heater SOS has you covered. Call or text us at (800) 697‑4014 for fast, friendly service.
+              Whatever plumbing challenge you're facing in Rancho Cucamonga, SOS Plumbing and Air has you covered. Call or text us at (800) 697‑4014 for fast, friendly service.
             </p>
           </div>
         </div>

@@ -36,7 +36,7 @@ export function YorbaLindaContent() {
                 Your Plumbing Pros in Yorba Linda, CA
               </p>
               <p className="text-lg text-gray-700 leading-relaxed mb-8">
-                Water Heater SOS is Yorba Linda's trusted local plumbing team. We prioritize your comfort with fast, reliable service and fair prices, handling everything from <Link href="/gas-water-heaters" className="text-[#EA5D19] hover:underline font-semibold">water heater repairs</Link> and leaky pipes to major plumbing upgrades. Hot water is essential for daily tasks, so our team repairs gas, electric or <Link href="/tankless-water-heaters" className="text-[#EA5D19] hover:underline font-semibold">tankless water heaters</Link> quickly.
+                SOS Plumbing and Air is Yorba Linda's trusted local plumbing team. We prioritize your comfort with fast, reliable service and fair prices, handling everything from <Link href="/gas-water-heaters" className="text-[#EA5D19] hover:underline font-semibold">water heater repairs</Link> and leaky pipes to major plumbing upgrades. Hot water is essential for daily tasks, so our team repairs gas, electric or <Link href="/tankless-water-heaters" className="text-[#EA5D19] hover:underline font-semibold">tankless water heaters</Link> quickly.
               </p>
               <Link
                 href="/quote"
@@ -70,13 +70,13 @@ export function YorbaLindaContent() {
               We recommend replacements for units older than seven years to avoid costly breakdowns. We also fix dripping <Link href="/faucet-repair-replacement" className="text-[#EA5D19] hover:underline font-semibold">faucets</Link>, unclog sinks, repair running <Link href="/toilet-repair-replacement" className="text-[#EA5D19] hover:underline font-semibold">toilets</Link>, restore water pressure, and detect sewer backups or slab leaks with advanced tools. Our team installs new faucets, toilets and showerheads, and sets up <Link href="/water-filtration" className="text-[#EA5D19] hover:underline font-semibold">water softeners</Link> to combat hard water.
             </p>
             <p>
-              Water Heater SOS restores hot water quickly, fixing both traditional tank and tankless heaters. We're experienced with major brands and handle everything from quick fixes to full replacements, emphasizing honest pricing and same‑day service. If a traditional tank heater fails, sediment buildup, broken elements or faulty thermostats could be the cause. Our plumbers flush tanks or replace parts and may recommend a new model for heaters older than seven years.
+              SOS Plumbing and Air restores hot water quickly, fixing both traditional tank and tankless heaters. We're experienced with major brands and handle everything from quick fixes to full replacements, emphasizing honest pricing and same‑day service. If a traditional tank heater fails, sediment buildup, broken elements or faulty thermostats could be the cause. Our plumbers flush tanks or replace parts and may recommend a new model for heaters older than seven years.
             </p>
             <p>
               For <Link href="/tankless-water-heaters" className="text-[#EA5D19] hover:underline font-semibold">tankless systems</Link>, common problems include mineral scale, ignition failures or sensor errors. Our technicians use advanced tools to pinpoint issues and will repair or replace units as needed. We also provide <Link href="/drain-cleaning" className="text-[#EA5D19] hover:underline font-semibold">drain cleaning</Link> services and <Link href="/leak-detection-services" className="text-[#EA5D19] hover:underline font-semibold">leak detection</Link> to keep your Yorba Linda home running smoothly.
             </p>
             <p>
-              Whatever plumbing challenge you're facing in Yorba Linda, Water Heater SOS is ready to help. Call or text us at (800) 697‑4014 for fast, professional service.
+              Whatever plumbing challenge you're facing in Yorba Linda, SOS Plumbing and Air is ready to help. Call or text us at (800) 697‑4014 for fast, professional service.
             </p>
           </div>
         </div>
@@ -174,7 +174,7 @@ export function YorbaLindaContent() {
             className="text-center mb-16"
           >
             <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl mb-4">
-              Why Choose Water Heater SOS
+              Why Choose SOS Plumbing and Air
             </h2>
           </motion.div>
 

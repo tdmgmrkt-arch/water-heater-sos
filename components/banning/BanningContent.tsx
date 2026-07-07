@@ -111,7 +111,7 @@ export function BanningContent() {
               </p>
 
               <p className="text-lg text-gray-700 leading-relaxed mb-8">
-                Imagine stepping into the shower, expecting warm water, only to get a freezing blast because your <Link href="/gas-water-heaters" className="text-[#EA5D19] hover:underline font-semibold">gas water heater</Link> gave up. Talk about a bad start to the day! At Water Heater SOS in Banning, CA, we're pros at getting your hot water flowing again, whether it's a gas, electric, or <Link href="/tankless-water-heaters" className="text-[#EA5D19] hover:underline font-semibold">tankless model</Link> that's acting up. But don't think we're just about water heaters because our team can handle any plumbing problem you've got! From dripping faucets to backed‑up drains, we're here to fix it all and keep your home running smoothly.
+                Imagine stepping into the shower, expecting warm water, only to get a freezing blast because your <Link href="/gas-water-heaters" className="text-[#EA5D19] hover:underline font-semibold">gas water heater</Link> gave up. Talk about a bad start to the day! At SOS Plumbing and Air in Banning, CA, we're pros at getting your hot water flowing again, whether it's a gas, electric, or <Link href="/tankless-water-heaters" className="text-[#EA5D19] hover:underline font-semibold">tankless model</Link> that's acting up. But don't think we're just about water heaters because our team can handle any plumbing problem you've got! From dripping faucets to backed‑up drains, we're here to fix it all and keep your home running smoothly.
               </p>
 
               <Link

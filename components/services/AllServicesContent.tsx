@@ -206,7 +206,7 @@ export function AllServicesContent({ defaultTab = "water-heater" }: AllServicesC
     <main className="min-h-screen bg-white">
       <SetFooterCTA
         title="Ready to Get Started?"
-        description="Contact Water Heater SOS today for expert service you can trust. Same-day appointments available!"
+        description="Contact SOS Plumbing and Air today for expert service you can trust. Same-day appointments available!"
         quoteLink="/quote"
       />
       {/* Hero Section */}

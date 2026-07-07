@@ -16,7 +16,7 @@ The following images need to be added to the `/public` folder:
 
 ### Existing Images (Already in place):
 - ✅ wh-sos-logo.webp
-- ✅ wh-sos-service-van.webp
+- ✅ sos-plumbing-and-air-service-van.webp
 - ✅ gas-water-heater-.webp
 - ✅ water-filtration-system.webp
 - ✅ tankless-water-heater.webp

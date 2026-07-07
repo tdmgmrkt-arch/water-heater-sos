@@ -36,7 +36,7 @@ export function ClaremontContent() {
                 Expert Water Heater Services & Complete Plumbing Solutions
               </p>
               <p className="text-lg text-gray-700 leading-relaxed mb-8">
-                Water Heater SOS proudly serves Claremont, CA, with top-tier <Link href="/gas-water-heaters" className="text-[#EA5D19] hover:underline font-semibold">water heater services</Link> and comprehensive plumbing solutions. Our licensed and insured plumbers are committed to delivering exceptional service, ensuring your home's plumbing system operates efficiently all year long.
+                SOS Plumbing and Air proudly serves Claremont, CA, with top-tier <Link href="/gas-water-heaters" className="text-[#EA5D19] hover:underline font-semibold">water heater services</Link> and comprehensive plumbing solutions. Our licensed and insured plumbers are committed to delivering exceptional service, ensuring your home's plumbing system operates efficiently all year long.
               </p>
               <Link
                 href="/quote"
@@ -73,7 +73,7 @@ export function ClaremontContent() {
               We know plumbing emergencies don't follow a schedule. That's why we offer 24/7 emergency services to handle urgent situations like <Link href="/leak-detection-services" className="text-[#EA5D19] hover:underline font-semibold">leak detection</Link>, burst pipes, and water heater failures. From <Link href="/drain-cleaning" className="text-[#EA5D19] hover:underline font-semibold">drain cleaning</Link> to <Link href="/faucet-repair-replacement" className="text-[#EA5D19] hover:underline font-semibold">faucet repairs</Link>, we handle everything with professionalism and care.
             </p>
             <p>
-              Claremont homeowners trust Water Heater SOS for our transparent pricing, quality craftsmanship, and dedication to customer satisfaction. We use only premium materials and equipment, ensuring every job meets the highest standards. Contact us today to schedule an appointment or request emergency service.
+              Claremont homeowners trust SOS Plumbing and Air for our transparent pricing, quality craftsmanship, and dedication to customer satisfaction. We use only premium materials and equipment, ensuring every job meets the highest standards. Contact us today to schedule an appointment or request emergency service.
             </p>
           </div>
         </div>

@@ -36,7 +36,7 @@ export function ColtonContent() {
                 Full‑Service Plumbing Company in Colton, CA
               </p>
               <p className="text-lg text-gray-700 leading-relaxed mb-8">
-                At Water Heater SOS, we're a family‑run crew that understands how important it is to have plumbing that works without headaches. Our super‑friendly technicians are all about giving you five‑star service that's fast, affordable and done right every time. We're not just pros at fixing <Link href="/gas-water-heaters" className="text-[#EA5D19] hover:underline font-semibold">water heaters</Link>—we handle all kinds of plumbing problems for homes and businesses, from leaky pipes to clogged drains.
+                At SOS Plumbing and Air, we're a family‑run crew that understands how important it is to have plumbing that works without headaches. Our super‑friendly technicians are all about giving you five‑star service that's fast, affordable and done right every time. We're not just pros at fixing <Link href="/gas-water-heaters" className="text-[#EA5D19] hover:underline font-semibold">water heaters</Link>—we handle all kinds of plumbing problems for homes and businesses, from leaky pipes to clogged drains.
               </p>
               <Link
                 href="/quote"
@@ -73,7 +73,7 @@ export function ColtonContent() {
               Our Colton plumbing services include water heater repairs, <Link href="/drain-cleaning" className="text-[#EA5D19] hover:underline font-semibold">drain cleaning</Link>, <Link href="/faucet-repair-replacement" className="text-[#EA5D19] hover:underline font-semibold">faucet repairs or installs</Link>, <Link href="/toilet-repair-replacement" className="text-[#EA5D19] hover:underline font-semibold">toilet fixes or upgrades</Link>, pipe leak repairs, sewer line clearing, <Link href="/leak-detection-services" className="text-[#EA5D19] hover:underline font-semibold">leak detection</Link>, <Link href="/whole-house-repipe" className="text-[#EA5D19] hover:underline font-semibold">whole‑house repiping</Link>, and shower repairs or installs.
             </p>
             <p>
-              Water Heater SOS is your trusted local plumber specializing in water‑heater repair and installation. Contact us for prompt service, honest guidance and exceptional water‑heater solutions from start to finish. Our licensed Colton plumbing experts thoroughly evaluate the problem with your water heater and address any concerns you may have. We value your trust and will never push unnecessary services—you can count on us for the most cost‑effective solution. Don't hesitate to contact us today to restore the hot water you rely on.
+              SOS Plumbing and Air is your trusted local plumber specializing in water‑heater repair and installation. Contact us for prompt service, honest guidance and exceptional water‑heater solutions from start to finish. Our licensed Colton plumbing experts thoroughly evaluate the problem with your water heater and address any concerns you may have. We value your trust and will never push unnecessary services—you can count on us for the most cost‑effective solution. Don't hesitate to contact us today to restore the hot water you rely on.
             </p>
           </div>
         </div>

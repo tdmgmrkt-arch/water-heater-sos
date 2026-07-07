@@ -36,7 +36,7 @@ export function ChinoContent() {
                 Your Go‑To Plumbing Experts in Chino, CA
               </p>
               <p className="text-lg text-gray-700 leading-relaxed mb-8">
-                Water Heater SOS helps homeowners and businesses in Chino by solving plumbing problems quickly using cutting‑edge tools and hands‑on expertise. We've been trusted for years to deliver reliable fixes and installations, from drips to full system overhauls.
+                SOS Plumbing and Air helps homeowners and businesses in Chino by solving plumbing problems quickly using cutting‑edge tools and hands‑on expertise. We've been trusted for years to deliver reliable fixes and installations, from drips to full system overhauls.
               </p>
               <Link
                 href="/quote"
@@ -73,10 +73,10 @@ export function ChinoContent() {
               We handle bathroom troubleshooting for running <Link href="/toilet-repair-replacement" className="text-[#EA5D19] hover:underline font-semibold">toilets and faulty valves</Link>, and provide <Link href="/whole-house-repipe" className="text-[#EA5D19] hover:underline font-semibold">pipe replacements</Link> to boost water pressure and stop leaks throughout your home. Our shower and fixture upgrade services ensure leak‑free performance, and we offer <Link href="/garbage-disposal-repair-replacement" className="text-[#EA5D19] hover:underline font-semibold">garbage disposal care</Link> to keep your kitchen sink running smoothly. Additionally, we repair slab leaks to protect your foundation from damage.
             </p>
             <p>
-              No matter the issue, Water Heater SOS provides reliable solutions with friendly service in Chino. We're trained on brands like Rinnai, Navien and Rheem, and we carry parts to finish most repairs in one visit. Our team offers clear pricing, upfront quotes and thorough techniques to ensure lasting repairs.
+              No matter the issue, SOS Plumbing and Air provides reliable solutions with friendly service in Chino. We're trained on brands like Rinnai, Navien and Rheem, and we carry parts to finish most repairs in one visit. Our team offers clear pricing, upfront quotes and thorough techniques to ensure lasting repairs.
             </p>
             <p>
-              Whatever plumbing challenge you're facing in Chino, Water Heater SOS is ready to help. Call or text us at (800) 697‑4014 for fast, professional service.
+              Whatever plumbing challenge you're facing in Chino, SOS Plumbing and Air is ready to help. Call or text us at (800) 697‑4014 for fast, professional service.
             </p>
           </div>
         </div>
@@ -174,7 +174,7 @@ export function ChinoContent() {
             className="text-center mb-16"
           >
             <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl mb-4">
-              Why Choose Water Heater SOS
+              Why Choose SOS Plumbing and Air
             </h2>
           </motion.div>
 

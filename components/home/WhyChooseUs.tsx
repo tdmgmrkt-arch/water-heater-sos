@@ -48,7 +48,7 @@ export function WhyChooseUs() {
             {/* Headline - Always first */}
             <div className="mb-3 lg:mb-4">
               <h2 className="text-white text-2xl leading-tight font-bold sm:text-3xl lg:text-5xl">
-                Why Choose Water Heater SOS?
+                Why Choose SOS Plumbing and Air?
               </h2>
             </div>
 
@@ -57,7 +57,7 @@ export function WhyChooseUs() {
               <div className="relative overflow-hidden rounded-xl shadow-2xl">
                 <Image
                   src="/wh-sos-service-rep.webp"
-                  alt="Water Heater SOS professional technician"
+                  alt="SOS Plumbing and Air professional technician"
                   width={600}
                   height={400}
                   className="h-auto w-full object-cover"
@@ -121,7 +121,7 @@ export function WhyChooseUs() {
             <div className="relative overflow-hidden rounded-xl shadow-2xl">
               <Image
                 src="/wh-sos-service-rep.webp"
-                alt="Water Heater SOS professional technician"
+                alt="SOS Plumbing and Air professional technician"
                 width={600}
                 height={400}
                 className="h-auto w-full object-cover"

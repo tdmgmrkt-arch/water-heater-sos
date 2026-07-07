@@ -100,11 +100,11 @@ export function LomaLindaContent() {
               </h1>
 
               <p className="text-xl text-gray-600 mb-6">
-                Water Heater SOS: Loma Linda, CA's Plumbing Champions
+                SOS Plumbing and Air: Loma Linda, CA's Plumbing Champions
               </p>
 
               <p className="text-lg text-gray-700 leading-relaxed mb-8">
-                Water Heater SOS is your go‑to local plumbing crew in Loma Linda, CA, delivering awesome service to keep your home's plumbing running perfectly. We're known for fixing water heaters, but we tackle all sorts of plumbing issues too, from <Link href="/faucet-repair-replacement" className="text-[#EA5D19] hover:underline font-semibold">leaky faucets</Link> to <Link href="/drain-cleaning" className="text-[#EA5D19] hover:underline font-semibold">clogged drains</Link>. Our friendly team is ready to handle any job, big or small, to make sure your home stays cozy and stress‑free.
+                SOS Plumbing and Air is your go‑to local plumbing crew in Loma Linda, CA, delivering awesome service to keep your home's plumbing running perfectly. We're known for fixing water heaters, but we tackle all sorts of plumbing issues too, from <Link href="/faucet-repair-replacement" className="text-[#EA5D19] hover:underline font-semibold">leaky faucets</Link> to <Link href="/drain-cleaning" className="text-[#EA5D19] hover:underline font-semibold">clogged drains</Link>. Our friendly team is ready to handle any job, big or small, to make sure your home stays cozy and stress‑free.
               </p>
 
               <Link

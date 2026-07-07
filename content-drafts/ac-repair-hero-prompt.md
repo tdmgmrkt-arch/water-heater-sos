@@ -27,7 +27,7 @@
 ---
 
 ## Style anchors (existing site photos)
-- `public/wh-sos-service-van.webp` — clean isolated subject, real photography, not illustrated
+- `public/sos-plumbing-and-air-service-van.webp` — clean isolated subject, real photography, not illustrated
 - `public/gas-water-heater-controls.webp` — tight realistic detail, authentic working context, natural light
 
 ## Brand-fit rules

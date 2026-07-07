@@ -36,7 +36,7 @@ export function HemetContent() {
                 Fast Response Plumbing Company in Hemet, CA
               </p>
               <p className="text-lg text-gray-700 leading-relaxed mb-8">
-                Water Heater SOS is a family‑run plumbing business serving Hemet. We fix leaky pipes, blocked drains, <Link href="/toilet-repair-replacement" className="text-[#EA5D19] hover:underline font-semibold">toilet repairs</Link>, shower fixes, <Link href="/garbage-disposal-repair-replacement" className="text-[#EA5D19] hover:underline font-semibold">garbage disposal</Link> issues and slab leak detection, offering fair prices and skilled service. We also handle <Link href="/whole-house-repipe" className="text-[#EA5D19] hover:underline font-semibold">whole‑house repipes</Link> and <Link href="/drain-cleaning" className="text-[#EA5D19] hover:underline font-semibold">drain cleaning</Link>.
+                SOS Plumbing and Air is a family‑run plumbing business serving Hemet. We fix leaky pipes, blocked drains, <Link href="/toilet-repair-replacement" className="text-[#EA5D19] hover:underline font-semibold">toilet repairs</Link>, shower fixes, <Link href="/garbage-disposal-repair-replacement" className="text-[#EA5D19] hover:underline font-semibold">garbage disposal</Link> issues and slab leak detection, offering fair prices and skilled service. We also handle <Link href="/whole-house-repipe" className="text-[#EA5D19] hover:underline font-semibold">whole‑house repipes</Link> and <Link href="/drain-cleaning" className="text-[#EA5D19] hover:underline font-semibold">drain cleaning</Link>.
               </p>
               <Link
                 href="/quote"
@@ -76,7 +76,7 @@ export function HemetContent() {
               For <Link href="/tankless-water-heaters" className="text-[#EA5D19] hover:underline font-semibold">tankless heaters</Link>, we fix problems like mineral buildup or ignition failures using precision tools. We provide clear pricing and honest advice and will install a new unit if necessary. We also offer <Link href="/water-filtration" className="text-[#EA5D19] hover:underline font-semibold">water filtration systems</Link> to provide clean, safe water for your home.
             </p>
             <p>
-              Whatever plumbing challenge you're facing in Hemet, Water Heater SOS is ready to help. Call or text us at (800) 697‑4014 for fast, professional service.
+              Whatever plumbing challenge you're facing in Hemet, SOS Plumbing and Air is ready to help. Call or text us at (800) 697‑4014 for fast, professional service.
             </p>
           </div>
         </div>
@@ -174,7 +174,7 @@ export function HemetContent() {
             className="text-center mb-16"
           >
             <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl mb-4">
-              Why Call Water Heater SOS
+              Why Call SOS Plumbing and Air
             </h2>
           </motion.div>
 

@@ -51,7 +51,7 @@ const acRepairSchema = {
     {
       "@type": "HVACBusiness",
       "@id": "https://waterheatersos.com/#business",
-      name: "Water Heater SOS",
+      name: "SOS Plumbing and Air",
       url: "https://waterheatersos.com",
       telephone: "+18006974014",
       priceRange: "$150\u2013$1,800",
@@ -223,7 +223,7 @@ const acRepairSchema = {
           name: "Do you offer emergency AC repair?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Yes \u2014 Water Heater SOS provides 24/7 emergency AC repair throughout the Inland Empire. When temperatures hit triple digits in Riverside, Moreno Valley, or Fontana, a broken AC is a health emergency for families with young children, elderly residents, or pets. Call (800) 697-4014 any time \u2014 day or night, weekday or weekend \u2014 and we\u2019ll dispatch a technician.",
+            text: "Yes \u2014 SOS Plumbing and Air provides 24/7 emergency AC repair throughout the Inland Empire. When temperatures hit triple digits in Riverside, Moreno Valley, or Fontana, a broken AC is a health emergency for families with young children, elderly residents, or pets. Call (800) 697-4014 any time \u2014 day or night, weekday or weekend \u2014 and we\u2019ll dispatch a technician.",
           },
         },
         {
@@ -239,7 +239,7 @@ const acRepairSchema = {
           name: "Are you licensed to do AC repair in California?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Yes. Water Heater SOS holds California Contractor License #1140776 under the C-20 (Warm-Air Heating, Ventilating and Air-Conditioning) classification required by the California State License Board (CSLB) for HVAC work. Our technicians are EPA 608 certified for refrigerant handling, as federally required for anyone servicing systems containing R-22, R-410A, or R-454B refrigerants. You can verify our license at the CSLB website.",
+            text: "Yes. SOS Plumbing and Air holds California Contractor License #1140776 under the C-20 (Warm-Air Heating, Ventilating and Air-Conditioning) classification required by the California State License Board (CSLB) for HVAC work. Our technicians are EPA 608 certified for refrigerant handling, as federally required for anyone servicing systems containing R-22, R-410A, or R-454B refrigerants. You can verify our license at the CSLB website.",
           },
         },
         {

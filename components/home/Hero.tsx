@@ -174,8 +174,8 @@ export function Hero({ rating, reviewCount }: HeroProps) {
                 {/* Image with caption overlay */}
                 <div className="relative overflow-hidden rounded-2xl shadow-xl">
                   <Image
-                    src="/wh-sos-service-van.webp"
-                    alt="Water Heater SOS service van ready for dispatch"
+                    src="/sos-plumbing-and-air-service-van.webp"
+                    alt="SOS Plumbing and Air service van ready for dispatch"
                     width={700}
                     height={400}
                     className="w-full h-auto object-contain"
@@ -261,8 +261,8 @@ export function Hero({ rating, reviewCount }: HeroProps) {
               </div>
 
               <Image
-                src="/wh-sos-service-van.webp"
-                alt="Water Heater SOS service van ready for dispatch"
+                src="/sos-plumbing-and-air-service-van.webp"
+                alt="SOS Plumbing and Air service van ready for dispatch"
                 width={700}
                 height={500}
                 className="h-auto w-full object-contain"

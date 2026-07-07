@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Service Area | Inland Empire Water Heater Services",
-  description: "Water Heater SOS serves the entire Inland Empire including Riverside, San Bernardino, Redlands, Ontario, Corona, and 30+ cities. Check if we service your area. Call (800) 697-4014.",
+  description: "SOS Plumbing and Air serves the entire Inland Empire including Riverside, San Bernardino, Redlands, Ontario, Corona, and 30+ cities. Check if we service your area. Call (800) 697-4014.",
   keywords: "service area, Inland Empire, Riverside, San Bernardino, Redlands, water heater service, coverage area, cities served, Ontario, Corona, Fontana",
   openGraph: {
     title: "Service Area",

@@ -103,7 +103,7 @@ export function YucaipaContent() {
                 Do You Need a Plumber in Yucaipa?
               </p>
               <p className="text-lg text-gray-700 leading-relaxed mb-4">
-                At Water Heater SOS, we&apos;re not just about water heaters anymore—we&apos;ve expanded to handle all plumbing repairs and installations in Yucaipa, CA! Our skilled team is dedicated to fixing your plumbing problems, from dripping faucets to clogged drains, and making sure everything works perfectly.
+                At SOS Plumbing and Air, we&apos;re not just about water heaters anymore—we&apos;ve expanded to handle all plumbing repairs and installations in Yucaipa, CA! Our skilled team is dedicated to fixing your plumbing problems, from dripping faucets to clogged drains, and making sure everything works perfectly.
               </p>
               <p className="text-lg text-gray-700 leading-relaxed mb-4">
                 We focus on giving you top-notch service, tailored to your needs, so your home&apos;s plumbing runs smoothly and efficiently. With our commitment to customer satisfaction, you can trust us to put you first and deliver reliable solutions every time.
@@ -211,7 +211,7 @@ export function YucaipaContent() {
               We can install water softeners to reduce mineral buildup, protect your plumbing, and make your water heater last longer. This saves you from frequent repairs and keeps your system running efficiently.
             </p>
             <p className="text-lg text-gray-700 leading-relaxed">
-              When you choose Water Heater SOS, you&apos;re getting a team that&apos;s friendly, reliable, and ready to work. We show up on time, explain the problem in a way that&apos;s easy to understand, and use high-quality parts to ensure our repairs last. Whether we&apos;re fixing a leaky pipe, installing a new toilet, or replacing a water heater, we clean up after ourselves and leave your home neat.
+              When you choose SOS Plumbing and Air, you&apos;re getting a team that&apos;s friendly, reliable, and ready to work. We show up on time, explain the problem in a way that&apos;s easy to understand, and use high-quality parts to ensure our repairs last. Whether we&apos;re fixing a leaky pipe, installing a new toilet, or replacing a water heater, we clean up after ourselves and leave your home neat.
             </p>
           </motion.div>
         </div>

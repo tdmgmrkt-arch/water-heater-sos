@@ -36,7 +36,7 @@ export function UplandContent() {
                 Fantastic 5-Star Plumbers in Upland, CA
               </p>
               <p className="text-lg text-gray-700 leading-relaxed mb-8">
-                Water Heater SOS is your trusted local plumbing company in Upland, ready to handle all your plumbing needs. From <Link href="/gas-water-heaters" className="text-[#EA5D19] hover:underline font-semibold">water heater repairs</Link> to <Link href="/drain-cleaning" className="text-[#EA5D19] hover:underline font-semibold">drain cleaning</Link>, <Link href="/faucet-repair-replacement" className="text-[#EA5D19] hover:underline font-semibold">faucet fixes</Link>, and <Link href="/tankless-water-heaters" className="text-[#EA5D19] hover:underline font-semibold">tankless water heater installations</Link>, we do it all. Our friendly Upland plumbers are here to get your home back to normal, fast.
+                SOS Plumbing and Air is your trusted local plumbing company in Upland, ready to handle all your plumbing needs. From <Link href="/gas-water-heaters" className="text-[#EA5D19] hover:underline font-semibold">water heater repairs</Link> to <Link href="/drain-cleaning" className="text-[#EA5D19] hover:underline font-semibold">drain cleaning</Link>, <Link href="/faucet-repair-replacement" className="text-[#EA5D19] hover:underline font-semibold">faucet fixes</Link>, and <Link href="/tankless-water-heaters" className="text-[#EA5D19] hover:underline font-semibold">tankless water heater installations</Link>, we do it all. Our friendly Upland plumbers are here to get your home back to normal, fast.
               </p>
               <Link
                 href="/quote"
@@ -76,7 +76,7 @@ export function UplandContent() {
               Need help with your toilet? We provide <Link href="/toilet-repair-replacement" className="text-[#EA5D19] hover:underline font-semibold">toilet repair or replacement</Link> services to fix running, clogged, or leaky toilets. If you suspect a leak somewhere in your home but can't locate it, our advanced <Link href="/leak-detection-services" className="text-[#EA5D19] hover:underline font-semibold">leak detection services</Link> use high‑tech equipment to find the problem without tearing up your walls or floors. For older homes with outdated plumbing, we offer <Link href="/whole-house-repipe" className="text-[#EA5D19] hover:underline font-semibold">whole‑house repipe</Link> services to replace old pipes and improve water quality and flow. We also install or repair showers, fix or replace <Link href="/garbage-disposal-repair-replacement" className="text-[#EA5D19] hover:underline font-semibold">garbage disposals</Link>, and offer <Link href="/water-filtration" className="text-[#EA5D19] hover:underline font-semibold">water filtration systems</Link> to improve your tap water.
             </p>
             <p>
-              Whatever plumbing challenge you're facing in Upland, Water Heater SOS is ready to help. Call or text us at (800) 697‑4014 for fast, professional service.
+              Whatever plumbing challenge you're facing in Upland, SOS Plumbing and Air is ready to help. Call or text us at (800) 697‑4014 for fast, professional service.
             </p>
           </div>
         </div>

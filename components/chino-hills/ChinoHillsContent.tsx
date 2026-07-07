@@ -36,7 +36,7 @@ export function ChinoHillsContent() {
                 Professional Top‑Rated Plumbers in Chino Hills, CA
               </p>
               <p className="text-lg text-gray-700 leading-relaxed mb-8">
-                Water Heater SOS is a family‑owned plumbing company serving Chino Hills. Our team tackles all plumbing jobs—clogs, slab leaks, <Link href="/leak-detection-services" className="text-[#EA5D19] hover:underline font-semibold">leak detection</Link>, <Link href="/whole-house-repipe" className="text-[#EA5D19] hover:underline font-semibold">whole‑house repipes</Link>, <Link href="/drain-cleaning" className="text-[#EA5D19] hover:underline font-semibold">drain cleaning</Link>, shower repairs, <Link href="/garbage-disposal-repair-replacement" className="text-[#EA5D19] hover:underline font-semibold">garbage disposal</Link> fixes, gas leak repairs and water leak solutions—with the same care and fair pricing.
+                SOS Plumbing and Air is a family‑owned plumbing company serving Chino Hills. Our team tackles all plumbing jobs—clogs, slab leaks, <Link href="/leak-detection-services" className="text-[#EA5D19] hover:underline font-semibold">leak detection</Link>, <Link href="/whole-house-repipe" className="text-[#EA5D19] hover:underline font-semibold">whole‑house repipes</Link>, <Link href="/drain-cleaning" className="text-[#EA5D19] hover:underline font-semibold">drain cleaning</Link>, shower repairs, <Link href="/garbage-disposal-repair-replacement" className="text-[#EA5D19] hover:underline font-semibold">garbage disposal</Link> fixes, gas leak repairs and water leak solutions—with the same care and fair pricing.
               </p>
               <Link
                 href="/quote"
@@ -70,13 +70,13 @@ export function ChinoHillsContent() {
               We handle complex projects like whole‑house repiping and gas leak detection and employ our own plumbers to ensure honest service. Our team offers outstanding customer service with same‑day appointments for quick scheduling to address your plumbing issues fast. All our plumbers are licensed and trained to deliver skilled service, and you can book appointments easily through our user‑friendly website. We provide upfront pricing with clear, honest quotes before work begins.
             </p>
             <p>
-              Water Heater SOS is your trusted partner for <Link href="/gas-water-heaters" className="text-[#EA5D19] hover:underline font-semibold">gas water heater</Link> and <Link href="/tankless-water-heaters" className="text-[#EA5D19] hover:underline font-semibold">tankless water heater</Link> repairs in Chino Hills. For gas heaters, we diagnose and fix issues quickly—from faulty thermocouples to burner problems—and offer same‑day service. If the unit is beyond repair, we install new <Link href="/gas-water-heaters" className="text-[#EA5D19] hover:underline font-semibold">gas water heaters</Link> while respecting your home and cleaning up afterward.
+              SOS Plumbing and Air is your trusted partner for <Link href="/gas-water-heaters" className="text-[#EA5D19] hover:underline font-semibold">gas water heater</Link> and <Link href="/tankless-water-heaters" className="text-[#EA5D19] hover:underline font-semibold">tankless water heater</Link> repairs in Chino Hills. For gas heaters, we diagnose and fix issues quickly—from faulty thermocouples to burner problems—and offer same‑day service. If the unit is beyond repair, we install new <Link href="/gas-water-heaters" className="text-[#EA5D19] hover:underline font-semibold">gas water heaters</Link> while respecting your home and cleaning up afterward.
             </p>
             <p>
               For tankless heaters, we handle mineral buildup and ignition failures using advanced tools to restore performance. If repairs aren't enough, we install new <Link href="/tankless-water-heaters" className="text-[#EA5D19] hover:underline font-semibold">tankless units</Link> tailored to your home's needs. Our team uses high‑quality materials and thorough techniques to ensure lasting repairs and installations.
             </p>
             <p>
-              Whatever plumbing challenge you're facing in Chino Hills, Water Heater SOS is ready to help. Call or text us at (800) 697‑4014 for fast, professional service.
+              Whatever plumbing challenge you're facing in Chino Hills, SOS Plumbing and Air is ready to help. Call or text us at (800) 697‑4014 for fast, professional service.
             </p>
           </div>
         </div>
@@ -174,7 +174,7 @@ export function ChinoHillsContent() {
             className="text-center mb-16"
           >
             <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl mb-4">
-              Why Hire Water Heater SOS
+              Why Hire SOS Plumbing and Air
             </h2>
           </motion.div>
 

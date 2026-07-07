@@ -1,4 +1,5 @@
-import { Hero } from "@/components/home/Hero";
+import { Hero as HeroMobile } from "@/components/home/Hero";
+import { HeroFullBleed } from "@/components/home/HeroFullBleed";
 import { ServiceCards } from "@/components/home/ServiceCards";
 import { HvacServiceCards } from "@/components/home/HvacServiceCards";
 import { PlumbingServiceCards } from "@/components/home/PlumbingServiceCards";
@@ -13,10 +14,15 @@ export default async function HomePage() {
 
   return (
     <>
-      <Hero rating={rating} reviewCount={reviewCount} />
-      <ServiceCards />
-      <HvacServiceCards />
+      <div className="lg:hidden">
+        <HeroMobile rating={rating} reviewCount={reviewCount} />
+      </div>
+      <div className="hidden lg:block">
+        <HeroFullBleed rating={rating} reviewCount={reviewCount} />
+      </div>
       <PlumbingServiceCards />
+      <HvacServiceCards />
+      <ServiceCards />
       <WhyChooseUs />
       <Reviews />
       <TrustedBrands />

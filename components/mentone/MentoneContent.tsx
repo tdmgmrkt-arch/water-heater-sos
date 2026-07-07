@@ -36,7 +36,7 @@ export function MentoneContent() {
                 Expert Water Heater Services & Complete Plumbing Solutions
               </p>
               <p className="text-lg text-gray-700 leading-relaxed mb-8">
-                Water Heater SOS is proud to serve the Mentone community with reliable, professional <Link href="/gas-water-heaters" className="text-[#EA5D19] hover:underline font-semibold">water heater services</Link> and comprehensive plumbing solutions. Our team of licensed and insured plumbers is dedicated to delivering exceptional service, ensuring your home's plumbing system runs smoothly year-round.
+                SOS Plumbing and Air is proud to serve the Mentone community with reliable, professional <Link href="/gas-water-heaters" className="text-[#EA5D19] hover:underline font-semibold">water heater services</Link> and comprehensive plumbing solutions. Our team of licensed and insured plumbers is dedicated to delivering exceptional service, ensuring your home's plumbing system runs smoothly year-round.
               </p>
               <Link
                 href="/quote"
@@ -73,7 +73,7 @@ export function MentoneContent() {
               We understand that plumbing emergencies don't wait for business hours. That's why we offer 24/7 emergency services to address urgent issues like <Link href="/leak-detection-services" className="text-[#EA5D19] hover:underline font-semibold">leak detection</Link>, burst pipes, and water heater failures. From <Link href="/drain-cleaning" className="text-[#EA5D19] hover:underline font-semibold">drain cleaning</Link> to <Link href="/faucet-repair-replacement" className="text-[#EA5D19] hover:underline font-semibold">faucet repairs</Link>, we handle it all with professionalism and care.
             </p>
             <p>
-              Mentone residents trust Water Heater SOS for our transparent pricing, quality workmanship, and commitment to customer satisfaction. We use only the best materials and equipment, ensuring every job is completed to the highest standards. Contact us today to schedule an appointment or request emergency service.
+              Mentone residents trust SOS Plumbing and Air for our transparent pricing, quality workmanship, and commitment to customer satisfaction. We use only the best materials and equipment, ensuring every job is completed to the highest standards. Contact us today to schedule an appointment or request emergency service.
             </p>
           </div>
         </div>
@@ -171,7 +171,7 @@ export function MentoneContent() {
               transition={{ duration: 0.5 }}
             >
               <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl mb-6">
-                Why Mentone Chooses Water Heater SOS
+                Why Mentone Chooses SOS Plumbing and Air
               </h2>
               <div className="space-y-4">
                 {[

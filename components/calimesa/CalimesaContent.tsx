@@ -116,7 +116,7 @@ export function CalimesaContent() {
               </p>
 
               <p className="text-lg text-gray-700 leading-relaxed mb-8">
-                Hey there, Calimesa homeowners! At Water Heater SOS, we're all about keeping your home's plumbing in tip‑top shape. While we're pros at fixing and installing water heaters, we've got you covered for all kinds of plumbing repairs and installations too. From dripping faucets to <Link href="/drain-cleaning" className="text-[#EA5D19] hover:underline font-semibold">clogged drains</Link>, we tackle the most common plumbing problems with skill and care.
+                Hey there, Calimesa homeowners! At SOS Plumbing and Air, we're all about keeping your home's plumbing in tip‑top shape. While we're pros at fixing and installing water heaters, we've got you covered for all kinds of plumbing repairs and installations too. From dripping faucets to <Link href="/drain-cleaning" className="text-[#EA5D19] hover:underline font-semibold">clogged drains</Link>, we tackle the most common plumbing problems with skill and care.
               </p>
 
               <Link

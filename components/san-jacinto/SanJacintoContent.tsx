@@ -36,7 +36,7 @@ export function SanJacintoContent() {
                 Top‑Rated Plumbers in San Jacinto, CA
               </p>
               <p className="text-lg text-gray-700 leading-relaxed mb-8">
-                Water Heater SOS is a trusted local family business serving San Jacinto. We fix stubborn clogs, emergency leaks and more with honest, careful service. From routine maintenance such as <Link href="/garbage-disposal-repair-replacement" className="text-[#EA5D19] hover:underline font-semibold">garbage disposal repairs</Link> and shower fixes to major projects like <Link href="/whole-house-repipe" className="text-[#EA5D19] hover:underline font-semibold">whole‑house repipes</Link>, our team arrives prepared to diagnose and solve any issue.
+                SOS Plumbing and Air is a trusted local family business serving San Jacinto. We fix stubborn clogs, emergency leaks and more with honest, careful service. From routine maintenance such as <Link href="/garbage-disposal-repair-replacement" className="text-[#EA5D19] hover:underline font-semibold">garbage disposal repairs</Link> and shower fixes to major projects like <Link href="/whole-house-repipe" className="text-[#EA5D19] hover:underline font-semibold">whole‑house repipes</Link>, our team arrives prepared to diagnose and solve any issue.
               </p>
               <Link
                 href="/quote"
@@ -67,7 +67,7 @@ export function SanJacintoContent() {
 
           <div className="mt-12 bg-white rounded-3xl shadow-lg border border-gray-200 p-8 space-y-6 text-lg leading-relaxed text-gray-700">
             <p>
-              Most of our new customers come from referrals because we treat every home like our own and bring dedication to every call. Don't let plumbing headaches disrupt your day—Water Heater SOS offers reliable, friendly service to keep your home running smoothly. We handle everything from <Link href="/toilet-repair-replacement" className="text-[#EA5D19] hover:underline font-semibold">clogged toilets</Link> to <Link href="/leak-detection-services" className="text-[#EA5D19] hover:underline font-semibold">slab leaks</Link> with care and fair prices.
+              Most of our new customers come from referrals because we treat every home like our own and bring dedication to every call. Don't let plumbing headaches disrupt your day—SOS Plumbing and Air offers reliable, friendly service to keep your home running smoothly. We handle everything from <Link href="/toilet-repair-replacement" className="text-[#EA5D19] hover:underline font-semibold">clogged toilets</Link> to <Link href="/leak-detection-services" className="text-[#EA5D19] hover:underline font-semibold">slab leaks</Link> with care and fair prices.
             </p>
             <p>
               A broken <Link href="/gas-water-heaters" className="text-[#EA5D19] hover:underline font-semibold">water heater</Link> can disrupt your day, which is why we provide quick service, honest pricing and a clean workspace. We handle simple repairs and full replacements, and for heaters older than seven years we often recommend replacement to avoid repeated breakdowns and to save on energy costs. When a <Link href="/gas-water-heaters" className="text-[#EA5D19] hover:underline font-semibold">gas water heater</Link> fails due to pilot‑light, thermostat or valve issues, we pinpoint the problem and explain it clearly.
@@ -76,7 +76,7 @@ export function SanJacintoContent() {
               We also repair <Link href="/tankless-water-heaters" className="text-[#EA5D19] hover:underline font-semibold">tankless units</Link> that save energy but can suffer from scale buildup or ignition problems. Our team diagnoses issues such as low flow or error codes using advanced tools. For older units (over seven years), frequent repairs may not be cost‑effective, so we recommend replacement. You'll receive clear pricing and honest advice, and we leave your home spotless after each job.
             </p>
             <p>
-              Whatever plumbing challenge you're facing in San Jacinto, Water Heater SOS is ready to help. Call or text us at (800) 697‑4014 for fast, professional service.
+              Whatever plumbing challenge you're facing in San Jacinto, SOS Plumbing and Air is ready to help. Call or text us at (800) 697‑4014 for fast, professional service.
             </p>
           </div>
         </div>
@@ -174,7 +174,7 @@ export function SanJacintoContent() {
             className="text-center mb-16"
           >
             <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl mb-4">
-              Why Call Water Heater SOS?
+              Why Call SOS Plumbing and Air?
             </h2>
           </motion.div>
 

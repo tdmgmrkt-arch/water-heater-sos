@@ -158,7 +158,7 @@ export const faqs: Record<string, FAQ[]> = {
     },
     {
       question: "How often do I need to clean my tankless water heater?",
-      answer: "For those with a tankless hot water heater, scheduling maintenance at least once a year is advisable. This annual service helps ensure your unit remains in good health and operates at its best performance level.\n\nAt Water Heater SOS, we're more than willing to take care of your tankless water heater maintenance needs. Our team is not just committed, but dedicated to delivering the same high-quality service and customer satisfaction that has made us a favorite among your neighbors.",
+      answer: "For those with a tankless hot water heater, scheduling maintenance at least once a year is advisable. This annual service helps ensure your unit remains in good health and operates at its best performance level.\n\nAt SOS Plumbing and Air, we're more than willing to take care of your tankless water heater maintenance needs. Our team is not just committed, but dedicated to delivering the same high-quality service and customer satisfaction that has made us a favorite among your neighbors.",
     },
     {
       question: "Do you offer a yearly maintenance program for tankless water heaters?",
@@ -306,7 +306,7 @@ export const faqs: Record<string, FAQ[]> = {
     },
     {
       question: "What else plumbing related do you do?",
-      answer: "Our name might be Water Heater SOS, but we handle every plumbing problem! From fixing leaky sinks, clogged drains, and broken faucets to repairing toilets, showers, and garbage disposals, we do it all. We also specialize in repairing and installing gas, electric, and tankless water heaters to keep your showers hot. Our team uses the best tools to fix your plumbing fast and right.",
+      answer: "Our name might be SOS Plumbing and Air, but we handle every plumbing problem! From fixing leaky sinks, clogged drains, and broken faucets to repairing toilets, showers, and garbage disposals, we do it all. We also specialize in repairing and installing gas, electric, and tankless water heaters to keep your showers hot. Our team uses the best tools to fix your plumbing fast and right.",
     },
   ],
 
@@ -333,7 +333,7 @@ export const faqs: Record<string, FAQ[]> = {
     },
     {
       question: "Can you handle other plumbing repairs?",
-      answer: "Think Water Heater SOS only does water heaters? Think again! We fix all kinds of plumbing issues, like leaky pipes, clogged drains, dripping faucets, toilets, showers, and garbage disposals. We're also experts at repairing or installing tankless water heaters to keep your hot water steady. Our skilled team gets the job done quickly and leaves your home's plumbing in great shape.",
+      answer: "Think SOS Plumbing and Air only does water heaters? Think again! We fix all kinds of plumbing issues, like leaky pipes, clogged drains, dripping faucets, toilets, showers, and garbage disposals. We're also experts at repairing or installing tankless water heaters to keep your hot water steady. Our skilled team gets the job done quickly and leaves your home's plumbing in great shape.",
     },
     {
       question: "I have multiple properties - what other cities do you service?",
@@ -387,7 +387,7 @@ export const faqs: Record<string, FAQ[]> = {
     },
     {
       question: "What other type of plumbing stuff do you do?",
-      answer: "At Water Heater SOS we are not just about water heaters. We are your go-to for all plumbing fixes! We repair dripping faucets, clogged drains, leaky pipes, leak detection services, toilets, showers, garbage disposals, and more. Plus, we're pros at fixing or installing gas, electric, and tankless water heaters to make sure you've got hot water.",
+      answer: "At SOS Plumbing and Air we are not just about water heaters. We are your go-to for all plumbing fixes! We repair dripping faucets, clogged drains, leaky pipes, leak detection services, toilets, showers, garbage disposals, and more. Plus, we're pros at fixing or installing gas, electric, and tankless water heaters to make sure you've got hot water.",
     },
   ],
 
@@ -437,7 +437,7 @@ export const faqs: Record<string, FAQ[]> = {
     },
     {
       question: "Are you a full service plumbing company?",
-      answer: "Yes! Water Heater SOS fixes all your plumbing problems! We handle leaky faucets, clogged drains, broken pipes, toilets, showers, garbage disposals, and more. Our team is also awesome at repairing and installing tankless water heaters to keep your hot water flowing.",
+      answer: "Yes! SOS Plumbing and Air fixes all your plumbing problems! We handle leaky faucets, clogged drains, broken pipes, toilets, showers, garbage disposals, and more. Our team is also awesome at repairing and installing tankless water heaters to keep your hot water flowing.",
     },
   ],
 
@@ -708,7 +708,7 @@ export const faqs: Record<string, FAQ[]> = {
     },
     {
       question: "Do your Yucaipa plumbers only work on water heaters?",
-      answer: "Don't let our name trick you. Water Heater SOS does way more than just water heaters! We tackle all sorts of plumbing repairs, like fixing leaky faucets, clearing clogged drains, repairing pipes, toilets, showers, and garbage disposals. Of course, we're experts at installing and fixing gas, electric, and tankless water heaters too. Our friendly team is here to solve your plumbing problems quickly and keep your home running smoothly.",
+      answer: "Don't let our name trick you. SOS Plumbing and Air does way more than just water heaters! We tackle all sorts of plumbing repairs, like fixing leaky faucets, clearing clogged drains, repairing pipes, toilets, showers, and garbage disposals. Of course, we're experts at installing and fixing gas, electric, and tankless water heaters too. Our friendly team is here to solve your plumbing problems quickly and keep your home running smoothly.",
     },
   ],
 
@@ -943,11 +943,11 @@ export const faqs: Record<string, FAQ[]> = {
   lakeElsinore: [
     {
       question: "What causes low water pressure in my home?",
-      answer: "Low water pressure often stems from clogged pipes or leaks. Our team at Water Heater SOS finds the issue using advanced tools. We fix it fast to restore strong water flow. Call us to get your plumbing back to normal.",
+      answer: "Low water pressure often stems from clogged pipes or leaks. Our team at SOS Plumbing and Air finds the issue using advanced tools. We fix it fast to restore strong water flow. Call us to get your plumbing back to normal.",
     },
     {
       question: "How do you clear a stubborn drain clog?",
-      answer: "We use professional tools like hydro-jetting to clear tough drain clogs. Our technicians target the blockage without damaging your pipes. You get a clean drain that works smoothly. Water Heater SOS ensures long-lasting results.",
+      answer: "We use professional tools like hydro-jetting to clear tough drain clogs. Our technicians target the blockage without damaging your pipes. You get a clean drain that works smoothly. SOS Plumbing and Air ensures long-lasting results.",
     },
     {
       question: "Can you repair a leaking showerhead?",
@@ -959,7 +959,7 @@ export const faqs: Record<string, FAQ[]> = {
     },
     {
       question: "How do I know if I have a gas leak?",
-      answer: "A gas leak may smell like rotten eggs or cause dizziness. Our technicians use specialized equipment to detect and fix gas leaks safely. You stay protected from dangerous hazards. Water Heater SOS responds fast to keep your home safe.",
+      answer: "A gas leak may smell like rotten eggs or cause dizziness. Our technicians use specialized equipment to detect and fix gas leaks safely. You stay protected from dangerous hazards. SOS Plumbing and Air responds fast to keep your home safe.",
     },
     {
       question: "Can you fix my noisy pipes?",
@@ -970,7 +970,7 @@ export const faqs: Record<string, FAQ[]> = {
   perris: [
     {
       question: "Why does my sink drain slowly?",
-      answer: "Clogs from grease, hair, or debris block the pipe. Water Heater SOS clears drains fast to restore flow.",
+      answer: "Clogs from grease, hair, or debris block the pipe. SOS Plumbing and Air clears drains fast to restore flow.",
     },
     {
       question: "How do I know if I have a slab leak?",
@@ -978,7 +978,7 @@ export const faqs: Record<string, FAQ[]> = {
     },
     {
       question: "What causes low water pressure in my shower?",
-      answer: "Mineral deposits or pipe issues reduce water flow. Water Heater SOS inspects and repairs showers to boost pressure.",
+      answer: "Mineral deposits or pipe issues reduce water flow. SOS Plumbing and Air inspects and repairs showers to boost pressure.",
     },
     {
       question: "Can you fix a noisy garbage disposal?",
@@ -1001,7 +1001,7 @@ export const faqs: Record<string, FAQ[]> = {
   murrieta: [
     {
       question: "How do I stop my faucet from dripping?",
-      answer: "A dripping faucet often needs new washers or seals. We fix it quickly to stop water waste. You save on your water bill. Water Heater SOS ensures a leak-free faucet.",
+      answer: "A dripping faucet often needs new washers or seals. We fix it quickly to stop water waste. You save on your water bill. SOS Plumbing and Air ensures a leak-free faucet.",
     },
     {
       question: "Can you help with hard water issues?",
@@ -1009,7 +1009,7 @@ export const faqs: Record<string, FAQ[]> = {
     },
     {
       question: "What causes a toilet to run constantly?",
-      answer: "A faulty flapper or valve often causes a running toilet. We replace the problem parts to stop the issue. You save water and lower your bills. Call Water Heater SOS for a quick fix.",
+      answer: "A faulty flapper or valve often causes a running toilet. We replace the problem parts to stop the issue. You save water and lower your bills. Call SOS Plumbing and Air for a quick fix.",
     },
     {
       question: "Do you offer financing for big plumbing jobs?",
@@ -1017,7 +1017,7 @@ export const faqs: Record<string, FAQ[]> = {
     },
     {
       question: "What's the benefit of professional drain cleaning?",
-      answer: "Professional drain cleaning removes deep clogs and buildup. Our tools clear pipes better than store-bought solutions. You avoid recurring blockages. Water Heater SOS keeps your drains flowing freely.",
+      answer: "Professional drain cleaning removes deep clogs and buildup. Our tools clear pipes better than store-bought solutions. You avoid recurring blockages. SOS Plumbing and Air keeps your drains flowing freely.",
     },
     {
       question: "Do you repair outdoor plumbing?",
@@ -1032,7 +1032,7 @@ export const faqs: Record<string, FAQ[]> = {
   mentone: [
     {
       question: "Do you offer 24/7 emergency plumbing services in Mentone?",
-      answer: "Yes, Water Heater SOS provides 24/7 emergency plumbing services to Mentone residents. Whether it's a burst pipe, water heater failure, or severe leak, our team is ready to respond quickly to minimize damage and restore your plumbing system.",
+      answer: "Yes, SOS Plumbing and Air provides 24/7 emergency plumbing services to Mentone residents. Whether it's a burst pipe, water heater failure, or severe leak, our team is ready to respond quickly to minimize damage and restore your plumbing system.",
     },
     {
       question: "How quickly can you respond to a service call in Mentone?",
@@ -1457,7 +1457,7 @@ export const faqs: Record<string, FAQ[]> = {
   claremont: [
     {
       question: "Do you provide 24/7 emergency plumbing services in Claremont?",
-      answer: "Yes, Water Heater SOS offers 24/7 emergency plumbing services to Claremont residents. Whether it's a burst pipe, water heater failure, or severe leak, our team is ready to respond quickly to minimize damage and restore your plumbing system.",
+      answer: "Yes, SOS Plumbing and Air offers 24/7 emergency plumbing services to Claremont residents. Whether it's a burst pipe, water heater failure, or severe leak, our team is ready to respond quickly to minimize damage and restore your plumbing system.",
     },
     {
       question: "How soon can you respond to a service call in Claremont?",
@@ -1480,7 +1480,7 @@ export const faqs: Record<string, FAQ[]> = {
   temecula: [
     {
       question: "How often should I clean my drains?",
-      answer: "Clean drains every 1-2 years to prevent clogs, but more frequently if you know there is already a known problem. At Water Heater SOS, we offer professional drain cleaning services.",
+      answer: "Clean drains every 1-2 years to prevent clogs, but more frequently if you know there is already a known problem. At SOS Plumbing and Air, we offer professional drain cleaning services.",
     },
     {
       question: "What's the difference between a partial and whole-house repipe?",
@@ -1488,11 +1488,11 @@ export const faqs: Record<string, FAQ[]> = {
     },
     {
       question: "Why does my toilet keep running?",
-      answer: "A faulty flapper or fill valve causes constant running. Water Heater SOS replaces parts to stop the issue, or if your toilet is in really bad shape, we may recommend installing a new one.",
+      answer: "A faulty flapper or fill valve causes constant running. SOS Plumbing and Air replaces parts to stop the issue, or if your toilet is in really bad shape, we may recommend installing a new one.",
     },
     {
       question: "What causes a faucet to drip?",
-      answer: "When your faucet drips, it is normally a sign of worn-out washers or seals that lead to drips. Water Heater SOS replaces parts to stop leaks fast.",
+      answer: "When your faucet drips, it is normally a sign of worn-out washers or seals that lead to drips. SOS Plumbing and Air replaces parts to stop leaks fast.",
     },
     {
       question: "How long does a whole-house repipe take?",
@@ -1542,11 +1542,11 @@ export const faqs: Record<string, FAQ[]> = {
   menifee: [
     {
       question: "What should I do if my garbage disposal stops working?",
-      answer: "Turn off the power and call Water Heater SOS. We troubleshoot and repair, or replace your garbage disposal. You get a fully functional kitchen again. Our quick service minimizes your downtime.",
+      answer: "Turn off the power and call SOS Plumbing and Air. We troubleshoot and repair, or replace your garbage disposal. You get a fully functional kitchen again. Our quick service minimizes your downtime.",
     },
     {
       question: "How often should I schedule plumbing maintenance?",
-      answer: "We suggest yearly maintenance to catch issues early. Our technicians inspect pipes, fixtures, and water heaters for problems. You avoid costly repairs down the road. Water Heater SOS keeps your system running smoothly.",
+      answer: "We suggest yearly maintenance to catch issues early. Our technicians inspect pipes, fixtures, and water heaters for problems. You avoid costly repairs down the road. SOS Plumbing and Air keeps your system running smoothly.",
     },
     {
       question: "Can you install a new toilet?",
@@ -1554,7 +1554,7 @@ export const faqs: Record<string, FAQ[]> = {
     },
     {
       question: "What happens if I ignore a slab leak?",
-      answer: "Ignoring a slab leak damages your home's foundation. Our leak detection services find and fix these leaks quickly. You prevent costly structural repairs. Water Heater SOS protects your home.",
+      answer: "Ignoring a slab leak damages your home's foundation. Our leak detection services find and fix these leaks quickly. You prevent costly structural repairs. SOS Plumbing and Air protects your home.",
     },
     {
       question: "Do you handle sewer line issues?",
@@ -1621,7 +1621,7 @@ export const faqs: Record<string, FAQ[]> = {
     {
       question: "Do you offer emergency AC repair?",
       answer:
-        "Yes \u2014 Water Heater SOS provides 24/7 emergency AC repair throughout the Inland Empire. When temperatures hit triple digits in Riverside, Moreno Valley, or Fontana, a broken AC is a health emergency for families with young children, elderly residents, or pets. Call (800) 697-4014 any time \u2014 day or night, weekday or weekend \u2014 and we\u2019ll dispatch a technician.",
+        "Yes \u2014 SOS Plumbing and Air provides 24/7 emergency AC repair throughout the Inland Empire. When temperatures hit triple digits in Riverside, Moreno Valley, or Fontana, a broken AC is a health emergency for families with young children, elderly residents, or pets. Call (800) 697-4014 any time \u2014 day or night, weekday or weekend \u2014 and we\u2019ll dispatch a technician.",
     },
     {
       question: "How quickly can you arrive?",
@@ -1631,7 +1631,7 @@ export const faqs: Record<string, FAQ[]> = {
     {
       question: "Are you licensed to do AC repair in California?",
       answer:
-        "Yes. Water Heater SOS holds California Contractor License #1140776 under the C-20 (Warm-Air Heating, Ventilating and Air-Conditioning) classification required by the California State License Board (CSLB) for HVAC work. Our technicians are EPA 608 certified for refrigerant handling, as federally required for anyone servicing systems containing R-22, R-410A, or R-454B refrigerants. You can verify our license at the CSLB website.",
+        "Yes. SOS Plumbing and Air holds California Contractor License #1140776 under the C-20 (Warm-Air Heating, Ventilating and Air-Conditioning) classification required by the California State License Board (CSLB) for HVAC work. Our technicians are EPA 608 certified for refrigerant handling, as federally required for anyone servicing systems containing R-22, R-410A, or R-454B refrigerants. You can verify our license at the CSLB website.",
     },
     {
       question: "Do you service all AC brands?",
@@ -1654,7 +1654,7 @@ export const faqs: Record<string, FAQ[]> = {
     {
       question: "Are you licensed to do HVAC work in California?",
       answer:
-        "Yes. Water Heater SOS holds California Contractor License #1140776 under the C-20 (Warm-Air Heating, Ventilating and Air-Conditioning) classification required by the California State License Board (CSLB) for HVAC and mechanical work. Our technicians are EPA 608 certified for refrigerant handling.",
+        "Yes. SOS Plumbing and Air holds California Contractor License #1140776 under the C-20 (Warm-Air Heating, Ventilating and Air-Conditioning) classification required by the California State License Board (CSLB) for HVAC and mechanical work. Our technicians are EPA 608 certified for refrigerant handling.",
     },
     {
       question: "Do you service both Riverside County and San Bernardino County?",

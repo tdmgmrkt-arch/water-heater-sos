@@ -112,7 +112,7 @@ export function MorenoValleyContent() {
               </p>
 
               <p className="text-lg text-gray-700 leading-relaxed mb-8">
-                At Water Heater SOS in Moreno Valley, CA, we pour our heart into every plumbing job, making sure everything's done right with skill and honesty. Our awesome team of pros treats every home like it's our own, working with care and clear pricing so you feel confident and stress‑free. We're not just <Link href="/gas-water-heaters" className="text-[#EA5D19] hover:underline font-semibold">water heater</Link> wizards—we fix all kinds of plumbing problems to keep your home running smoothly. As proud Moreno Valley locals, we're here to deliver top‑notch service you can count on, no matter the job!
+                At SOS Plumbing and Air in Moreno Valley, CA, we pour our heart into every plumbing job, making sure everything's done right with skill and honesty. Our awesome team of pros treats every home like it's our own, working with care and clear pricing so you feel confident and stress‑free. We're not just <Link href="/gas-water-heaters" className="text-[#EA5D19] hover:underline font-semibold">water heater</Link> wizards—we fix all kinds of plumbing problems to keep your home running smoothly. As proud Moreno Valley locals, we're here to deliver top‑notch service you can count on, no matter the job!
               </p>
 
               <Link
@@ -169,7 +169,7 @@ export function MorenoValleyContent() {
             </h2>
             <div className="h-1 w-20 bg-[#EA5D19] mx-auto rounded-full mb-6" />
             <p className="text-lg text-gray-700 leading-relaxed max-w-4xl mx-auto">
-              Whether it's a broken water heater, a tricky leak, or a new shower installation, Water Heater SOS is here to make your plumbing perfect. We cover the whole Inland Empire region, including spots like Hemet, San Jacinto, Banning, Beaumont, Menifee, Perris, Murrieta, and Temecula.
+              Whether it's a broken water heater, a tricky leak, or a new shower installation, SOS Plumbing and Air is here to make your plumbing perfect. We cover the whole Inland Empire region, including spots like Hemet, San Jacinto, Banning, Beaumont, Menifee, Perris, Murrieta, and Temecula.
             </p>
           </motion.div>
 

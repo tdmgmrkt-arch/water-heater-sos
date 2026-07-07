@@ -103,7 +103,7 @@ export function PlumbingContent() {
       className="mx-auto text-left"
     >
       <p className="text-sm sm:text-lg text-gray-700 leading-relaxed">
-        At Water Heater SOS, our expertise isn't limited to water heaters; we offer various plumbing services to ensure your home or business functions seamlessly. Here's a detailed look at the additional services our plumbers provide:
+        At SOS Plumbing and Air, our expertise isn't limited to water heaters; we offer various plumbing services to ensure your home or business functions seamlessly. Here's a detailed look at the additional services our plumbers provide:
       </p>
     </motion.div>
   </div>
@@ -165,7 +165,7 @@ export function PlumbingContent() {
       </div>
 
       <p className="text-sm sm:text-lg text-gray-700 leading-relaxed pt-4 sm:pt-8">
-        At Water Heater SOS, we're committed to providing quality, reliability, and professionalism in all our plumbing services. Our team can assist you with a minor drip or a major plumbing catastrophe. Contact us today to see how we can help with your plumbing needs.
+        At SOS Plumbing and Air, we're committed to providing quality, reliability, and professionalism in all our plumbing services. Our team can assist you with a minor drip or a major plumbing catastrophe. Contact us today to see how we can help with your plumbing needs.
       </p>
     </motion.div>
   </div>

@@ -176,7 +176,7 @@ export function RedlandsContent() {
             className="text-center mb-14"
           >
             <h2 className="text-2xl sm:text-3xl lg:text-5xl font-extrabold text-[#11110E] mb-4 lg:mb-6">
-              Why call Water Heater SOS?
+              Why call SOS Plumbing and Air?
             </h2>
             <div className="h-1 w-20 bg-[#EA5D19] mx-auto rounded-full" />
           </motion.div>

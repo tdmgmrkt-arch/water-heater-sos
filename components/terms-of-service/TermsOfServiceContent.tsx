@@ -119,7 +119,7 @@ export function TermsOfServiceContent() {
                 {/* Introduction */}
                 <div className="bg-white p-8 rounded-2xl shadow-lg border border-gray-100 mb-8">
                   <p className="text-gray-700 leading-relaxed">
-                    Welcome to Water Heater SOS. These Terms of Service (&quot;Terms&quot;) govern your use of our website and services. By accessing our website or using our services, you agree to be bound by these Terms.
+                    Welcome to SOS Plumbing and Air. These Terms of Service (&quot;Terms&quot;) govern your use of our website and services. By accessing our website or using our services, you agree to be bound by these Terms.
                   </p>
                   <p className="text-gray-700 leading-relaxed mt-4">
                     Please read these Terms carefully before scheduling service or using our website. If you do not agree with any part of these Terms, you may not use our services.
@@ -134,7 +134,7 @@ export function TermsOfServiceContent() {
                   </h2>
                   <div className="bg-white p-8 rounded-2xl shadow-lg border border-gray-100">
                     <p className="text-gray-700 leading-relaxed mb-4">
-                      By using the services provided by Water Heater SOS, you acknowledge that you have read, understood, and agree to be bound by these Terms of Service.
+                      By using the services provided by SOS Plumbing and Air, you acknowledge that you have read, understood, and agree to be bound by these Terms of Service.
                     </p>
                     <p className="text-gray-700 leading-relaxed">
                       If you are entering into this agreement on behalf of a business or other legal entity, you represent that you have the authority to bind such entity to these Terms.
@@ -150,7 +150,7 @@ export function TermsOfServiceContent() {
                   </h2>
                   <div className="bg-white p-8 rounded-2xl shadow-lg border border-gray-100">
                     <p className="text-gray-700 leading-relaxed mb-4">
-                      Water Heater SOS provides professional plumbing services including, but not limited to:
+                      SOS Plumbing and Air provides professional plumbing services including, but not limited to:
                     </p>
                     <ul className="list-disc list-inside space-y-2 text-gray-700 ml-4">
                       <li>Water heater installation, repair, and maintenance</li>
@@ -175,7 +175,7 @@ export function TermsOfServiceContent() {
                   </h2>
                   <div className="bg-white p-8 rounded-2xl shadow-lg border border-gray-100">
                     <p className="text-gray-700 leading-relaxed mb-4">
-                      When you schedule a service appointment with Water Heater SOS:
+                      When you schedule a service appointment with SOS Plumbing and Air:
                     </p>
                     <ul className="list-disc list-inside space-y-2 text-gray-700 ml-4">
                       <li>We will make every reasonable effort to arrive within the scheduled time window</li>
@@ -219,7 +219,7 @@ export function TermsOfServiceContent() {
                   </h2>
                   <div className="bg-white p-8 rounded-2xl shadow-lg border border-gray-100">
                     <p className="text-gray-700 leading-relaxed mb-4">
-                      Water Heater SOS stands behind the quality of our work:
+                      SOS Plumbing and Air stands behind the quality of our work:
                     </p>
                     <ul className="list-disc list-inside space-y-2 text-gray-700 ml-4">
                       <li><strong>Labor Warranty:</strong> All labor is warranted for one (1) year from the date of service</li>
@@ -240,7 +240,7 @@ export function TermsOfServiceContent() {
                   </h2>
                   <div className="bg-white p-8 rounded-2xl shadow-lg border border-gray-100">
                     <p className="text-gray-700 leading-relaxed mb-4">
-                      To the maximum extent permitted by law, Water Heater SOS shall not be liable for:
+                      To the maximum extent permitted by law, SOS Plumbing and Air shall not be liable for:
                     </p>
                     <ul className="list-disc list-inside space-y-2 text-gray-700 ml-4">
                       <li>Indirect, incidental, special, or consequential damages</li>
@@ -262,7 +262,7 @@ export function TermsOfServiceContent() {
                   </h2>
                   <div className="bg-white p-8 rounded-2xl shadow-lg border border-gray-100">
                     <p className="text-gray-700 leading-relaxed mb-4">
-                      By scheduling service, you grant Water Heater SOS and its technicians permission to:
+                      By scheduling service, you grant SOS Plumbing and Air and its technicians permission to:
                     </p>
                     <ul className="list-disc list-inside space-y-2 text-gray-700 ml-4">
                       <li>Access your property to perform the requested services</li>
@@ -324,7 +324,7 @@ export function TermsOfServiceContent() {
                   </h2>
                   <div className="bg-white p-8 rounded-2xl shadow-lg border border-gray-100">
                     <p className="text-gray-700 leading-relaxed mb-4">
-                      All content on the Water Heater SOS website, including text, graphics, logos, images, and software, is the property of Water Heater SOS and is protected by copyright and trademark laws.
+                      All content on the SOS Plumbing and Air website, including text, graphics, logos, images, and software, is the property of SOS Plumbing and Air and is protected by copyright and trademark laws.
                     </p>
                     <p className="text-gray-700 leading-relaxed">
                       You may not reproduce, distribute, modify, or create derivative works from any content without our express written permission.
@@ -340,7 +340,7 @@ export function TermsOfServiceContent() {
                   </h2>
                   <div className="bg-white p-8 rounded-2xl shadow-lg border border-gray-100">
                     <p className="text-gray-700 leading-relaxed">
-                      You agree to indemnify, defend, and hold harmless Water Heater SOS, its owners, employees, and agents from any claims, damages, losses, or expenses (including reasonable attorney fees) arising from your violation of these Terms or your misuse of our services.
+                      You agree to indemnify, defend, and hold harmless SOS Plumbing and Air, its owners, employees, and agents from any claims, damages, losses, or expenses (including reasonable attorney fees) arising from your violation of these Terms or your misuse of our services.
                     </p>
                   </div>
                 </div>
@@ -369,7 +369,7 @@ export function TermsOfServiceContent() {
                   </h2>
                   <div className="bg-white p-8 rounded-2xl shadow-lg border border-gray-100">
                     <p className="text-gray-700 leading-relaxed mb-4">
-                      Water Heater SOS reserves the right to modify these Terms at any time. Changes will be effective immediately upon posting to our website.
+                      SOS Plumbing and Air reserves the right to modify these Terms at any time. Changes will be effective immediately upon posting to our website.
                     </p>
                     <p className="text-gray-700 leading-relaxed">
                       Your continued use of our services after any changes indicates your acceptance of the modified Terms. We encourage you to review these Terms periodically.

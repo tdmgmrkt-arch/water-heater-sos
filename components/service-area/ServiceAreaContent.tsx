@@ -184,7 +184,7 @@ export function ServiceAreaContent() {
             className="text-center mb-12"
           >
             <h2 className="text-3xl font-bold text-white sm:text-4xl mb-4">
-              Why Choose Water Heater SOS?
+              Why Choose SOS Plumbing and Air?
             </h2>
             <div className="h-1 w-24 bg-gradient-to-r from-[#EA5D19] to-[#FF6E2E] mx-auto rounded-full"></div>
           </motion.div>
@@ -217,7 +217,7 @@ export function ServiceAreaContent() {
           >
             <div className="prose prose-lg prose-invert max-w-none">
               <p className="text-gray-300 leading-relaxed mb-6">
-                At Water Heater SOS we stand out in the industry not just for our quality service, but also for our incredibly competitive pricing. When you&apos;re looking at getting a new water heater or need repairs, cost can be a major concern. That&apos;s where we shine. We&apos;ve structured our plumbing pricing to be accessible to a broad range of customers, ensuring you don&apos;t have to break the bank to get reliable hot water at home.
+                At SOS Plumbing and Air we stand out in the industry not just for our quality service, but also for our incredibly competitive pricing. When you&apos;re looking at getting a new water heater or need repairs, cost can be a major concern. That&apos;s where we shine. We&apos;ve structured our plumbing pricing to be accessible to a broad range of customers, ensuring you don&apos;t have to break the bank to get reliable hot water at home.
               </p>
               <p className="text-gray-300 leading-relaxed">
                 Moreover, we sweeten the deal with various water heater discounts. Whether you&apos;re a first-time customer, a senior citizen, or perhaps looking to bundle services, we offer reductions that make our already competitive prices even more attractive. These discounts are not just minor cuts; they&apos;re significant enough to make a noticeable difference in your wallet. By choosing our plumbing company, you&apos;re not only investing in quality service but also ensuring you get some of the best deals around, making it a smart choice for anyone looking to manage expenses without compromising on service quality.

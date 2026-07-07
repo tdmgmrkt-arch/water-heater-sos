@@ -364,7 +364,7 @@ export function QuoteContent() {
               {/* --- Trust Element: Key Guarantees --- */}
               <div className="mb-10 p-6 bg-white rounded-2xl shadow-lg border border-gray-100 space-y-3">
                 <h3 className="text-xl font-bold text-[#11110E] mb-4 flex items-center gap-3">
-                    <CheckCircle className="h-6 w-6 text-[#EA5D19]" /> Why Choose Water Heater SOS?
+                    <CheckCircle className="h-6 w-6 text-[#EA5D19]" /> Why Choose SOS Plumbing and Air?
                 </h3>
                 <ul className="list-none space-y-2 text-lg text-gray-700">
                     <li className="flex items-start gap-2"><CheckCircle className="h-5 w-5 text-green-500 mt-1 flex-shrink-0" /> Same-Day Service: Fast response for repairs and installations.</li>
@@ -472,7 +472,7 @@ export function QuoteContent() {
                     required
                   />
                   <label htmlFor="smsConsent" className="text-xs text-gray-600 leading-relaxed cursor-pointer">
-                    <span className="text-red-500">*</span> By checking this box, I consent to receive SMS messages from Water Heater SOS. Msg frequency varies. Msg & data rates may apply. Reply STOP to opt out, HELP for help. View our{" "}
+                    <span className="text-red-500">*</span> By checking this box, I consent to receive SMS messages from SOS Plumbing and Air. Msg frequency varies. Msg & data rates may apply. Reply STOP to opt out, HELP for help. View our{" "}
                     <a href="/privacy-policy" className="underline hover:text-[#EA5D19]">Privacy Policy</a>{" "}
                     and{" "}
                     <a href="/terms-of-service" className="underline hover:text-[#EA5D19]">Terms of Service</a>.
@@ -484,7 +484,7 @@ export function QuoteContent() {
                   <div className="p-5 bg-green-50 border border-green-200 rounded-xl text-center">
                     <CheckCircle className="h-8 w-8 text-green-600 mx-auto mb-3" />
                     <p className="text-green-800 font-semibold text-base mb-2">
-                      A local Water Heater SOS specialist will review your request and contact you shortly — often within the same day.
+                      A local SOS Plumbing and Air specialist will review your request and contact you shortly — often within the same day.
                     </p>
                     <p className="text-green-700 text-sm">
                       If this is urgent, call us now at{" "}

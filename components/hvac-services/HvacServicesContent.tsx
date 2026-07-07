@@ -158,7 +158,7 @@ export function HvacServicesContent() {
                 Heating, cooling, and indoor air quality — one licensed team for everything your home needs.
               </p>
               <p className="text-base sm:text-lg text-gray-700 leading-relaxed mb-3 sm:mb-4">
-                Water Heater SOS provides full-service HVAC throughout the Inland Empire, including{" "}
+                SOS Plumbing and Air provides full-service HVAC throughout the Inland Empire, including{" "}
                 <Link href="/ac-repair" className="text-[#EA5D19] underline underline-offset-2 hover:text-[#d45416]">
                   air conditioning
                 </Link>
@@ -320,7 +320,7 @@ export function HvacServicesContent() {
               Why Inland Empire Homeowners Choose Us for HVAC Services
             </h2>
             <p className="text-base sm:text-lg text-gray-300 max-w-3xl mx-auto">
-              Water Heater SOS is a licensed Inland Empire HVAC contractor (CA LIC# 1140776) serving Riverside County and San Bernardino County with full-service heating, cooling, and indoor air quality solutions.
+              SOS Plumbing and Air is a licensed Inland Empire HVAC contractor (CA LIC# 1140776) serving Riverside County and San Bernardino County with full-service heating, cooling, and indoor air quality solutions.
             </p>
             <div className="h-1 w-16 sm:w-20 bg-[#EA5D19] mx-auto rounded-full mt-4" />
           </motion.div>

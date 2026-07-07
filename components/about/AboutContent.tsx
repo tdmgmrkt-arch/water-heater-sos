@@ -18,11 +18,11 @@ export function AboutContent() {
               transition={{ duration: 0.6 }}
             >
               <h1 className="text-3xl font-bold text-[#11110E] sm:text-4xl lg:text-5xl mb-4 lg:mb-6">
-                About Water Heater SOS
+                About SOS Plumbing and Air
               </h1>
               <div className="prose prose-lg max-w-none">
                 <p className="text-lg text-gray-700 leading-relaxed mb-6">
-                  Water Heater SOS is a family-owned business based in Redlands, California, and we service nearly the entire Inland Empire area. We specialize in water heater installation, replacement, and repair. We also provide full service plumbing; including leak detection, sewer services, shower repair and replacement, toilet installation and repair, and faucet repair and replacement.
+                  SOS Plumbing and Air is a family-owned business based in Redlands, California, and we service nearly the entire Inland Empire area. We specialize in water heater installation, replacement, and repair. We also provide full service plumbing; including leak detection, sewer services, shower repair and replacement, toilet installation and repair, and faucet repair and replacement.
                 </p>
                 <p className="text-lg text-gray-700 leading-relaxed">
                   We pride ourselves on customer service and we work hard to earn your business!
@@ -49,7 +49,7 @@ export function AboutContent() {
               <div className="relative aspect-[4/3] overflow-hidden rounded-2xl shadow-2xl">
                 <Image
                   src="/wh-sos-service-rep.webp"
-                  alt="Water Heater SOS Service Representative"
+                  alt="SOS Plumbing and Air Service Representative"
                   fill
                   className="object-cover"
                   priority
@@ -151,7 +151,7 @@ export function AboutContent() {
             <div className="bg-white p-8 rounded-2xl shadow-lg">
               <div className="text-4xl sm:text-5xl lg:text-6xl font-bold text-[#EA5D19] mb-4">2019</div>
               <p className="text-lg text-gray-700 leading-relaxed">
-                Water Heater SOS was established in 2019 with a simple mission: to provide the Inland Empire with reliable, professional water heater and plumbing services. Since our founding, we&apos;ve grown from a small family operation to a trusted name in water heater installation and repair throughout Southern California. Our commitment to quality service and customer satisfaction has remained unchanged since day one.
+                SOS Plumbing and Air was established in 2019 with a simple mission: to provide the Inland Empire with reliable, professional water heater and plumbing services. Since our founding, we&apos;ve grown from a small family operation to a trusted name in water heater installation and repair throughout Southern California. Our commitment to quality service and customer satisfaction has remained unchanged since day one.
               </p>
             </div>
           </motion.div>
@@ -188,10 +188,10 @@ export function AboutContent() {
               </div>
               <div className="prose prose-lg max-w-none">
                 <p className="text-lg text-gray-700 leading-relaxed mb-6">
-                  Anna M. founded Water Heater SOS in 2019 with a vision to bring honest, reliable water heater and plumbing services to the Inland Empire. As a local resident and business owner, Anna understands the importance of having a trustworthy plumber you can count on when water heater emergencies strike.
+                  Anna M. founded SOS Plumbing and Air in 2019 with a vision to bring honest, reliable water heater and plumbing services to the Inland Empire. As a local resident and business owner, Anna understands the importance of having a trustworthy plumber you can count on when water heater emergencies strike.
                 </p>
                 <p className="text-lg text-gray-700 leading-relaxed mb-6">
-                  Under Anna&apos;s leadership, Water Heater SOS has built a reputation for exceptional customer service, transparent pricing, and quality workmanship. Her hands-on approach ensures that every customer receives the personalized attention and professional service they deserve.
+                  Under Anna&apos;s leadership, SOS Plumbing and Air has built a reputation for exceptional customer service, transparent pricing, and quality workmanship. Her hands-on approach ensures that every customer receives the personalized attention and professional service they deserve.
                 </p>
                 <p className="text-lg text-gray-700 leading-relaxed">
                   &quot;We treat every home like it&apos;s our own,&quot; Anna says. &quot;That&apos;s the foundation of our business, and it&apos;s what keeps our customers coming back and referring their friends and family.&quot;

@@ -33,7 +33,7 @@ export function DrainCleaningContent() {
                 Are your drains backing up into your home?
               </p>
               <p className="text-sm sm:text-lg text-gray-700 leading-relaxed mb-5 sm:mb-8">
-                Nobody wants to deal with a backed up <Link href="/toilet-repair-replacement" className="text-[#EA5D19] hover:underline font-semibold">toilet</Link> or a clogged drain. With regular use, hair, soap, grease, and other debris can build up in your pipes, causing slow drainage or complete blockages. If left untreated, these clogs can make your sink, shower, toilet or bathtub nearly impossible to use. At Water Heater SOS, we offer expert drain cleaning services to keep your drains flowing freely and your home running smoothly.
+                Nobody wants to deal with a backed up <Link href="/toilet-repair-replacement" className="text-[#EA5D19] hover:underline font-semibold">toilet</Link> or a clogged drain. With regular use, hair, soap, grease, and other debris can build up in your pipes, causing slow drainage or complete blockages. If left untreated, these clogs can make your sink, shower, toilet or bathtub nearly impossible to use. At SOS Plumbing and Air, we offer expert drain cleaning services to keep your drains flowing freely and your home running smoothly.
               </p>
               <Link
                 href="/quote?category=Drain%20%26%20Sewer%20Services&service=Drain%20Cleaning"

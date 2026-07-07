@@ -36,7 +36,7 @@ const heatPumpSystemsSchema = {
     {
       "@type": "HVACBusiness",
       "@id": "https://waterheatersos.com/#business",
-      name: "Water Heater SOS",
+      name: "SOS Plumbing and Air",
       url: "https://waterheatersos.com",
       telephone: "+18006974014",
       priceRange: "$5,000\u2013$18,000",

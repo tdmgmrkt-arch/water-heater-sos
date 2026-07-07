@@ -36,7 +36,7 @@ export function FontanaContent() {
                 Delivering Plumbing Services in Fontana, CA
               </p>
               <p className="text-lg text-gray-700 leading-relaxed mb-8">
-                Water Heater SOS is your local, reliable plumbing company in Fontana, here to fix everything from leaky pipes to broken <Link href="/gas-water-heaters" className="text-[#EA5D19] hover:underline font-semibold">water heaters</Link>. We specialize in <Link href="/tankless-water-heaters" className="text-[#EA5D19] hover:underline font-semibold">tankless water heater installations</Link>, <Link href="/drain-cleaning" className="text-[#EA5D19] hover:underline font-semibold">drain cleaning</Link>, and all your general plumbing needs. Our friendly Fontana plumbers are ready to help you get your home back to normal, fast.
+                SOS Plumbing and Air is your local, reliable plumbing company in Fontana, here to fix everything from leaky pipes to broken <Link href="/gas-water-heaters" className="text-[#EA5D19] hover:underline font-semibold">water heaters</Link>. We specialize in <Link href="/tankless-water-heaters" className="text-[#EA5D19] hover:underline font-semibold">tankless water heater installations</Link>, <Link href="/drain-cleaning" className="text-[#EA5D19] hover:underline font-semibold">drain cleaning</Link>, and all your general plumbing needs. Our friendly Fontana plumbers are ready to help you get your home back to normal, fast.
               </p>
               <Link
                 href="/quote"
@@ -76,7 +76,7 @@ export function FontanaContent() {
               If you're dealing with a toilet that won't flush, runs constantly, or leaks, our <Link href="/toilet-repair-replacement" className="text-[#EA5D19] hover:underline font-semibold">toilet repair or replacement</Link> service will get it working right. For hidden leaks in your walls, floors, or foundation, our advanced <Link href="/leak-detection-services" className="text-[#EA5D19] hover:underline font-semibold">leak detection services</Link> use high‑tech equipment to pinpoint the problem without damaging your home. We also offer <Link href="/whole-house-repipe" className="text-[#EA5D19] hover:underline font-semibold">whole‑house repipe</Link> services for older homes with outdated plumbing, improving water quality and flow. Plus, we install or repair showers, fix or replace <Link href="/garbage-disposal-repair-replacement" className="text-[#EA5D19] hover:underline font-semibold">garbage disposals</Link>, and offer <Link href="/water-filtration" className="text-[#EA5D19] hover:underline font-semibold">water filtration systems</Link> to improve your tap water.
             </p>
             <p>
-              Whatever plumbing problem you're facing in Fontana, Water Heater SOS is ready to solve it. Call or text us at (800) 697‑4014 for fast, professional service.
+              Whatever plumbing problem you're facing in Fontana, SOS Plumbing and Air is ready to solve it. Call or text us at (800) 697‑4014 for fast, professional service.
             </p>
           </div>
         </div>

@@ -8,14 +8,14 @@ import { FooterCTAProvider } from "@/contexts/FooterCTAContext";
 
 export const metadata: Metadata = {
   title: {
-    default: "Water Heater, HVAC & Plumbing in the Inland Empire | Water Heater SOS",
-    template: "%s | Water Heater SOS",
+    default: "Water Heater, HVAC & Plumbing in the Inland Empire | SOS Plumbing and Air",
+    template: "%s | SOS Plumbing and Air",
   },
   description: "The Inland Empire's licensed water heater, HVAC, and plumbing contractor. Water heater installation, AC repair, heating service, and 24/7 emergency plumbing. CA LIC# 1140776. Call (800) 697-4014.",
   keywords: ["HVAC contractor Inland Empire", "AC repair Riverside", "furnace repair", "water heater repair", "water heater installation", "tankless water heater", "plumbing services", "Inland Empire", "Riverside", "San Bernardino", "Lake Elsinore"],
-  authors: [{ name: "Water Heater SOS" }],
-  creator: "Water Heater SOS",
-  publisher: "Water Heater SOS",
+  authors: [{ name: "SOS Plumbing and Air" }],
+  creator: "SOS Plumbing and Air",
+  publisher: "SOS Plumbing and Air",
   metadataBase: new URL("https://waterheatersos.com"),
   alternates: {
     canonical: "/",
@@ -24,23 +24,23 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_US",
     url: "https://waterheatersos.com",
-    siteName: "Water Heater SOS",
-    title: "Water Heater SOS — Water Heater, HVAC & Plumbing in the Inland Empire",
+    siteName: "SOS Plumbing and Air",
+    title: "SOS Plumbing and Air — Water Heater, HVAC & Plumbing in the Inland Empire",
     description: "Licensed water heater, HVAC, and plumbing contractor serving Riverside and San Bernardino counties. Same-day service, 24/7 emergencies, upfront pricing.",
     images: [
       {
-        url: "https://waterheatersos.com/wh-sos-service-van.webp",
+        url: "https://waterheatersos.com/sos-plumbing-and-air-service-van.webp",
         width: 1200,
         height: 630,
-        alt: "Water Heater SOS Service Van - Expert Water Heater Services",
+        alt: "SOS Plumbing and Air Service Van - Expert Water Heater Services",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Water Heater SOS",
+    title: "SOS Plumbing and Air",
     description: "Expert water heater services in the Inland Empire",
-    images: ["https://waterheatersos.com/wh-sos-service-van.webp"],
+    images: ["https://waterheatersos.com/sos-plumbing-and-air-service-van.webp"],
   },
   robots: {
     index: true,
@@ -69,7 +69,7 @@ export default function RootLayout({
       {
         "@type": "LocalBusiness",
         "@id": "https://waterheatersos.com/#organization",
-        name: "Water Heater SOS",
+        name: "SOS Plumbing and Air",
         url: "https://waterheatersos.com",
         telephone: "(800) 697-4014",
         email: "info@waterheatersos.com",
@@ -105,8 +105,8 @@ export default function RootLayout({
           },
         ],
         priceRange: "$$",
-        image: "https://waterheatersos.com/wh-sos-logo.webp",
-        logo: "https://waterheatersos.com/wh-sos-logo.webp",
+        image: "https://waterheatersos.com/sos-logo.webp",
+        logo: "https://waterheatersos.com/sos-logo.webp",
         openingHours: "Mo-Su 00:00-23:59",
         aggregateRating: {
           "@type": "AggregateRating",
@@ -118,7 +118,7 @@ export default function RootLayout({
         "@type": "WebSite",
         "@id": "https://waterheatersos.com/#website",
         url: "https://waterheatersos.com",
-        name: "Water Heater SOS",
+        name: "SOS Plumbing and Air",
         publisher: {
           "@id": "https://waterheatersos.com/#organization",
         },

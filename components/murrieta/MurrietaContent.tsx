@@ -36,7 +36,7 @@ export function MurrietaContent() {
                 Highly Rated Plumbing Company in Murrieta, CA
               </p>
               <p className="text-lg text-gray-700 leading-relaxed mb-8">
-                A backed‑up sink or a dripping showerhead can throw off your day. Water Heater SOS steps in to solve these issues quickly. Our skilled technicians tackle <Link href="/toilet-repair-replacement" className="text-[#EA5D19] hover:underline font-semibold">clogged toilets</Link>, clear drains, fix showers, and repair <Link href="/garbage-disposal-repair-replacement" className="text-[#EA5D19] hover:underline font-semibold">garbage disposals</Link>. Notice a water leak, gas leak, or slab leak? We act fast to keep your home safe.
+                A backed‑up sink or a dripping showerhead can throw off your day. SOS Plumbing and Air steps in to solve these issues quickly. Our skilled technicians tackle <Link href="/toilet-repair-replacement" className="text-[#EA5D19] hover:underline font-semibold">clogged toilets</Link>, clear drains, fix showers, and repair <Link href="/garbage-disposal-repair-replacement" className="text-[#EA5D19] hover:underline font-semibold">garbage disposals</Link>. Notice a water leak, gas leak, or slab leak? We act fast to keep your home safe.
               </p>
               <Link
                 href="/quote"
@@ -67,13 +67,13 @@ export function MurrietaContent() {
 
           <div className="mt-12 bg-white rounded-3xl shadow-lg border border-gray-200 p-8 space-y-6 text-lg leading-relaxed text-gray-700">
             <p>
-              Our advanced <Link href="/leak-detection-services" className="text-[#EA5D19] hover:underline font-semibold">leak detection</Link> pinpoints problems, and our <Link href="/whole-house-repipe" className="text-[#EA5D19] hover:underline font-semibold">whole‑house repipes</Link> upgrade your plumbing for years of reliability. You get straightforward answers in plain English and solutions tailored to your home. Your house needs plumbing that works without fail. Water Heater SOS offers emergency service, so a pipe burst won't leave you stranded.
+              Our advanced <Link href="/leak-detection-services" className="text-[#EA5D19] hover:underline font-semibold">leak detection</Link> pinpoints problems, and our <Link href="/whole-house-repipe" className="text-[#EA5D19] hover:underline font-semibold">whole‑house repipes</Link> upgrade your plumbing for years of reliability. You get straightforward answers in plain English and solutions tailored to your home. Your house needs plumbing that works without fail. SOS Plumbing and Air offers emergency service, so a pipe burst won't leave you stranded.
             </p>
             <p>
               We provide regular maintenance to catch issues early, keeping your pipes in top condition. Our team shows up with fully stocked trucks, ready to handle everything from minor fixes to major installations. Murrieta homeowners pick us for honest pricing and discounts for military or seniors, showing we care about our community.
             </p>
             <p>
-              Starting your day with a freezing shower in Murrieta is no fun. Water Heater SOS specializes in <Link href="/gas-water-heaters" className="text-[#EA5D19] hover:underline font-semibold">water heater repair</Link>, getting your hot water flowing fast. Our brand‑certified technicians diagnose problems like rusty tanks or faulty thermostats and often fix them the same day. We know every major brand, ensuring precise repairs that last. For <Link href="/tankless-water-heaters" className="text-[#EA5D19] hover:underline font-semibold">tankless water heaters</Link>, we optimize performance to save you energy and keep water hot. Need a <Link href="/gas-water-heaters" className="text-[#EA5D19] hover:underline font-semibold">new water heater</Link>? We install modern tank or tankless units that fit your home's needs, boosting efficiency and reliability.
+              Starting your day with a freezing shower in Murrieta is no fun. SOS Plumbing and Air specializes in <Link href="/gas-water-heaters" className="text-[#EA5D19] hover:underline font-semibold">water heater repair</Link>, getting your hot water flowing fast. Our brand‑certified technicians diagnose problems like rusty tanks or faulty thermostats and often fix them the same day. We know every major brand, ensuring precise repairs that last. For <Link href="/tankless-water-heaters" className="text-[#EA5D19] hover:underline font-semibold">tankless water heaters</Link>, we optimize performance to save you energy and keep water hot. Need a <Link href="/gas-water-heaters" className="text-[#EA5D19] hover:underline font-semibold">new water heater</Link>? We install modern tank or tankless units that fit your home's needs, boosting efficiency and reliability.
             </p>
           </div>
         </div>
@@ -171,7 +171,7 @@ export function MurrietaContent() {
             className="text-center mb-16"
           >
             <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl mb-4">
-              Why Choose Water Heater SOS Over Other Plumbers?
+              Why Choose SOS Plumbing and Air Over Other Plumbers?
             </h2>
           </motion.div>
 
@@ -229,7 +229,7 @@ export function MurrietaContent() {
               Why Water Softeners & Filtration Systems Are Essential for Your Murrieta Home
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Hard water or contaminated water isn't just an inconvenience; it can damage your home and affect your family's health. At Water Heater SOS, we specialize in installing <Link href="/water-filtration" className="text-[#EA5D19] hover:underline font-semibold">water softeners and filtration systems</Link> to provide you with clean, safe water.
+              Hard water or contaminated water isn't just an inconvenience; it can damage your home and affect your family's health. At SOS Plumbing and Air, we specialize in installing <Link href="/water-filtration" className="text-[#EA5D19] hover:underline font-semibold">water softeners and filtration systems</Link> to provide you with clean, safe water.
             </p>
           </motion.div>
 

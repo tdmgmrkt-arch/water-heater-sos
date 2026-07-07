@@ -36,7 +36,7 @@ export function EastvaleContent() {
                 Your Trusted Plumbing Experts in Eastvale, CA
               </p>
               <p className="text-lg text-gray-700 leading-relaxed mb-8">
-                Water Heater SOS provides plumbing services to homes and businesses in Eastvale. Our team uses modern tools to fix plumbing problems quickly and has served Eastvale for years. Licensed plumbers handle any job—big or small—with care and professionalism to keep your plumbing systems running smoothly.
+                SOS Plumbing and Air provides plumbing services to homes and businesses in Eastvale. Our team uses modern tools to fix plumbing problems quickly and has served Eastvale for years. Licensed plumbers handle any job—big or small—with care and professionalism to keep your plumbing systems running smoothly.
               </p>
               <Link
                 href="/quote"
@@ -76,7 +76,7 @@ export function EastvaleContent() {
               We also specialize in shower repair and installation for leak‑free performance, and our <Link href="/garbage-disposal-repair-replacement" className="text-[#EA5D19] hover:underline font-semibold">garbage disposal repair and installation</Link> service repairs jammed or leaking disposals and installs new units for smooth kitchen sink operation. Our team locates and fixes slab leaks under foundations to prevent structural damage, keeping your Eastvale home safe and sound.
             </p>
             <p>
-              Whatever plumbing issue you're facing in Eastvale, Water Heater SOS is ready to help. Call or text us at (800) 697‑4014 for fast, professional service.
+              Whatever plumbing issue you're facing in Eastvale, SOS Plumbing and Air is ready to help. Call or text us at (800) 697‑4014 for fast, professional service.
             </p>
           </div>
         </div>
@@ -174,7 +174,7 @@ export function EastvaleContent() {
             className="text-center mb-16"
           >
             <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl mb-4">
-              Why Call Water Heater SOS
+              Why Call SOS Plumbing and Air
             </h2>
           </motion.div>
 

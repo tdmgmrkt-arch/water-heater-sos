@@ -121,7 +121,7 @@ export function BeaumontContent() {
               </p>
 
               <p className="text-lg text-gray-700 leading-relaxed mb-8">
-                Nobody likes a cold shower or a sink full of dirty dishes because the hot water's gone out. At Water Heater SOS, we know how annoying it is when your <Link href="/gas-water-heaters" className="text-[#EA5D19] hover:underline font-semibold">water heater</Link> leaks or won't stay lit, and we're here to fix it fast! But we don't stop at water heaters. We are your go‑to team for all kinds of plumbing repairs and installations. From <Link href="/drain-cleaning" className="text-[#EA5D19] hover:underline font-semibold">clogged drains</Link> to <Link href="/faucet-repair-replacement" className="text-[#EA5D19] hover:underline font-semibold">leaky faucets</Link>, we handle every plumbing issue with care to keep your home running smoothly.
+                Nobody likes a cold shower or a sink full of dirty dishes because the hot water's gone out. At SOS Plumbing and Air, we know how annoying it is when your <Link href="/gas-water-heaters" className="text-[#EA5D19] hover:underline font-semibold">water heater</Link> leaks or won't stay lit, and we're here to fix it fast! But we don't stop at water heaters. We are your go‑to team for all kinds of plumbing repairs and installations. From <Link href="/drain-cleaning" className="text-[#EA5D19] hover:underline font-semibold">clogged drains</Link> to <Link href="/faucet-repair-replacement" className="text-[#EA5D19] hover:underline font-semibold">leaky faucets</Link>, we handle every plumbing issue with care to keep your home running smoothly.
               </p>
 
               <Link

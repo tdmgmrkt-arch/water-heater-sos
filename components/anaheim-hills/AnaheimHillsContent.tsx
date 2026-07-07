@@ -36,7 +36,7 @@ export function AnaheimHillsContent() {
                 Quality Plumbing Services in Anaheim Hills
               </p>
               <p className="text-lg text-gray-700 leading-relaxed mb-8">
-                Plumbing troubles? We at Water Heater SOS fix them fast. Our family‑run team in Anaheim Hills brings years of skill to every job. We handle all plumbing repairs and installations with care. From unclogging <Link href="/toilet-repair-replacement" className="text-[#EA5D19] hover:underline font-semibold">toilets</Link> to <Link href="/whole-house-repipe" className="text-[#EA5D19] hover:underline font-semibold">repiping your whole house</Link>, we get it done right.
+                Plumbing troubles? We at SOS Plumbing and Air fix them fast. Our family‑run team in Anaheim Hills brings years of skill to every job. We handle all plumbing repairs and installations with care. From unclogging <Link href="/toilet-repair-replacement" className="text-[#EA5D19] hover:underline font-semibold">toilets</Link> to <Link href="/whole-house-repipe" className="text-[#EA5D19] hover:underline font-semibold">repiping your whole house</Link>, we get it done right.
               </p>
               <Link
                 href="/quote"

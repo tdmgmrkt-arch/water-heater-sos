@@ -123,7 +123,7 @@ export function PrivacyPolicyContent() {
                 {/* Introduction */}
                 <div className="bg-white p-8 rounded-2xl shadow-lg border border-gray-100 mb-8">
                   <p className="text-gray-700 leading-relaxed">
-                    Water Heater SOS ("us", "we", or "our") operates the WaterHeaterSOS.com website (the "Service").
+                    SOS Plumbing and Air ("us", "we", or "our") operates the WaterHeaterSOS.com website (the "Service").
                   </p>
                   <p className="text-gray-700 leading-relaxed mt-4">
                     This page informs you of our policies regarding the collection, use, and disclosure of personal data when you use our Service and the choices you have associated with that data.
@@ -146,7 +146,7 @@ export function PrivacyPolicyContent() {
                   <div className="bg-white p-8 rounded-2xl shadow-lg border border-gray-100 space-y-4">
                     <div>
                       <h3 className="font-bold text-[#11110E] mb-2">Service</h3>
-                      <p className="text-gray-700">Service is the https://waterheatersos.com website operated by Water Heater SOS.</p>
+                      <p className="text-gray-700">Service is the https://waterheatersos.com website operated by SOS Plumbing and Air.</p>
                     </div>
                     <div>
                       <h3 className="font-bold text-[#11110E] mb-2">Personal Data</h3>
@@ -253,7 +253,7 @@ export function PrivacyPolicyContent() {
                   </h2>
                   <div className="bg-white p-8 rounded-2xl shadow-lg border border-gray-100">
                     <p className="text-gray-700 leading-relaxed mb-4">
-                      Water Heater SOS uses the collected data for various purposes:
+                      SOS Plumbing and Air uses the collected data for various purposes:
                     </p>
                     <ul className="list-disc list-inside space-y-2 text-gray-700 ml-4">
                       <li>To provide and maintain our Service</li>
@@ -275,10 +275,10 @@ export function PrivacyPolicyContent() {
                   </h2>
                   <div className="bg-white p-8 rounded-2xl shadow-lg border border-gray-100">
                     <p className="text-gray-700 leading-relaxed mb-4">
-                      If you are from the European Economic Area (EEA), Water Heater SOS legal basis for collecting and using the personal information described in this Privacy Policy depends on the Personal Data we collect and the specific context in which we collect it.
+                      If you are from the European Economic Area (EEA), SOS Plumbing and Air legal basis for collecting and using the personal information described in this Privacy Policy depends on the Personal Data we collect and the specific context in which we collect it.
                     </p>
                     <p className="text-gray-700 leading-relaxed mb-4">
-                      Water Heater SOS may process your Personal Data because:
+                      SOS Plumbing and Air may process your Personal Data because:
                     </p>
                     <ul className="list-disc list-inside space-y-2 text-gray-700 ml-4">
                       <li>We need to perform a contract with you</li>
@@ -298,10 +298,10 @@ export function PrivacyPolicyContent() {
                   </h2>
                   <div className="bg-white p-8 rounded-2xl shadow-lg border border-gray-100">
                     <p className="text-gray-700 leading-relaxed mb-4">
-                      Water Heater SOS will retain your Personal Data only for as long as is necessary for the purposes set out in this Privacy Policy. We will retain and use your Personal Data to the extent necessary to comply with our legal obligations (for example, if we are required to retain your data to comply with applicable laws), resolve disputes, and enforce our legal agreements and policies.
+                      SOS Plumbing and Air will retain your Personal Data only for as long as is necessary for the purposes set out in this Privacy Policy. We will retain and use your Personal Data to the extent necessary to comply with our legal obligations (for example, if we are required to retain your data to comply with applicable laws), resolve disputes, and enforce our legal agreements and policies.
                     </p>
                     <p className="text-gray-700 leading-relaxed">
-                      Water Heater SOS will also retain Usage Data for internal analysis purposes. Usage Data is generally retained for a shorter period of time, except when this data is used to strengthen the security or to improve the functionality of our Service, or we are legally obligated to retain this data for longer time periods.
+                      SOS Plumbing and Air will also retain Usage Data for internal analysis purposes. Usage Data is generally retained for a shorter period of time, except when this data is used to strengthen the security or to improve the functionality of our Service, or we are legally obligated to retain this data for longer time periods.
                     </p>
                   </div>
                 </div>
@@ -323,7 +323,7 @@ export function PrivacyPolicyContent() {
                       Your consent to this Privacy Policy followed by your submission of such information represents your agreement to that transfer.
                     </p>
                     <p className="text-gray-700 leading-relaxed">
-                      Water Heater SOS will take all steps reasonably necessary to ensure that your data is treated securely and in accordance with this Privacy Policy and no transfer of your Personal Data will take place to an organization or a country unless there are adequate controls in place including the security of your data and other personal information.
+                      SOS Plumbing and Air will take all steps reasonably necessary to ensure that your data is treated securely and in accordance with this Privacy Policy and no transfer of your Personal Data will take place to an organization or a country unless there are adequate controls in place including the security of your data and other personal information.
                     </p>
                   </div>
                 </div>
@@ -338,23 +338,23 @@ export function PrivacyPolicyContent() {
                     <div>
                       <h3 className="font-bold text-[#11110E] mb-3 text-xl">Business Transaction</h3>
                       <p className="text-gray-700 leading-relaxed">
-                        If Water Heater SOS is involved in a merger, acquisition or asset sale, your Personal Data may be transferred. We will provide notice before your Personal Data is transferred and becomes subject to a different Privacy Policy.
+                        If SOS Plumbing and Air is involved in a merger, acquisition or asset sale, your Personal Data may be transferred. We will provide notice before your Personal Data is transferred and becomes subject to a different Privacy Policy.
                       </p>
                     </div>
                     <div>
                       <h3 className="font-bold text-[#11110E] mb-3 text-xl">Disclosure for Law Enforcement</h3>
                       <p className="text-gray-700 leading-relaxed">
-                        Under certain circumstances, Water Heater SOS may be required to disclose your Personal Data if required to do so by law or in response to valid requests by public authorities (e.g. a court or a government agency).
+                        Under certain circumstances, SOS Plumbing and Air may be required to disclose your Personal Data if required to do so by law or in response to valid requests by public authorities (e.g. a court or a government agency).
                       </p>
                     </div>
                     <div>
                       <h3 className="font-bold text-[#11110E] mb-3 text-xl">Legal Requirements</h3>
                       <p className="text-gray-700 leading-relaxed mb-3">
-                        Water Heater SOS may disclose your Personal Data in the good faith belief that such action is necessary to:
+                        SOS Plumbing and Air may disclose your Personal Data in the good faith belief that such action is necessary to:
                       </p>
                       <ul className="list-disc list-inside space-y-2 text-gray-700 ml-4">
                         <li>To comply with a legal obligation</li>
-                        <li>To protect and defend the rights or property of Water Heater SOS</li>
+                        <li>To protect and defend the rights or property of SOS Plumbing and Air</li>
                         <li>To prevent or investigate possible wrongdoing in connection with the Service</li>
                         <li>To protect the personal safety of users of the Service or the public</li>
                         <li>To protect against legal liability</li>
@@ -400,7 +400,7 @@ export function PrivacyPolicyContent() {
                   </h2>
                   <div className="bg-white p-8 rounded-2xl shadow-lg border border-gray-100">
                     <p className="text-gray-700 leading-relaxed mb-4">
-                      If you are a resident of the European Economic Area (EEA), you have certain data protection rights. Water Heater SOS aims to take reasonable steps to allow you to correct, amend, delete, or limit the use of your Personal Data.
+                      If you are a resident of the European Economic Area (EEA), you have certain data protection rights. SOS Plumbing and Air aims to take reasonable steps to allow you to correct, amend, delete, or limit the use of your Personal Data.
                     </p>
                     <p className="text-gray-700 leading-relaxed mb-4">
                       If you wish to be informed of what Personal Data we hold about you and if you want it to be removed from our systems, please contact us.
@@ -414,7 +414,7 @@ export function PrivacyPolicyContent() {
                       <li><strong>The right to object.</strong> You have the right to object to our processing of your Personal Data.</li>
                       <li><strong>The right of restriction.</strong> You have the right to request that we restrict the processing of your personal information.</li>
                       <li><strong>The right to data portability.</strong> You have the right to be provided with a copy of the information we have on you in a structured, machine-readable and commonly used format.</li>
-                      <li><strong>The right to withdraw consent.</strong> You also have the right to withdraw your consent at any time where Water Heater SOS relied on your consent to process your personal information.</li>
+                      <li><strong>The right to withdraw consent.</strong> You also have the right to withdraw your consent at any time where SOS Plumbing and Air relied on your consent to process your personal information.</li>
                     </ul>
                     <p className="text-gray-700 leading-relaxed mt-4">
                       Please note that we may ask you to verify your identity before responding to such requests.

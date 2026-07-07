@@ -36,7 +36,7 @@ const acInstallationSchema = {
     {
       "@type": "HVACBusiness",
       "@id": "https://waterheatersos.com/#business",
-      name: "Water Heater SOS",
+      name: "SOS Plumbing and Air",
       url: "https://waterheatersos.com",
       telephone: "+18006974014",
       priceRange: "$4,500\u2013$12,000",

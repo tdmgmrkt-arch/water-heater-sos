@@ -1,9 +1,9 @@
-# CLIENT: Water Heater SOS
+# CLIENT: SOS Plumbing and Air
 
 ---
 
 ## Business Overview
-- **Legal / business name:** Water Heater SOS
+- **Legal / business name:** SOS Plumbing and Air
 - **DBA (if different):** —
 - **Slug (folder name):** `water-heater-sos`
 - **Industry / vertical:** Water heaters + plumbing → **expanding into HVAC (2026-06-11)**
@@ -29,7 +29,7 @@
 
 ## Brand
 - **Voice notes:** Premium, confident, problem-solver tone. Emergency-ready ("Available 24/7"). Lean on local trust + 5-star service. Use proper service names with ampersand styling per existing site convention (e.g., "Faucet Repair & Replacement").
-- **Logo/assets location:** `/public/wh-sos-logo.webp`, `/public/wh-sos-service-rep.webp`, `/public/wh-sos-service-van.webp`
+- **Logo/assets location:** `/public/wh-sos-logo.webp`, `/public/wh-sos-service-rep.webp`, `/public/sos-plumbing-and-air-service-van.webp`
 - **Primary color(s):** Orange `#EA5D19` (CTA/highlight), Black `#11110E` (header/footer), Cream `#fffdf9`
 - **Fonts:** Default Next.js / Tailwind stack (no custom font detected)
 - **Photography preferences:** Real photos preferred (existing site uses real service-rep and service-van photos). AI-generated hero images acceptable for new HVAC pages if they match the existing visual style.

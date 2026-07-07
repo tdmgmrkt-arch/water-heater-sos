@@ -159,15 +159,15 @@ export function Header() {
       {/* 🛑 END OVERLAY 🛑 */}
 
       <Container>
-        <div className="flex h-20 items-center justify-between">
+        <div className="flex h-32 items-center justify-between">
           {/* Logo */}
-          <Link href="/" className="flex items-center">
+          <Link href="/" className="relative z-60 flex items-center">
             <Image
-              src="/wh-sos-logo.webp"
-              alt="Water Heater SOS Logo"
-              width={120}
-              height={15}
-              className="h-15 w-auto"
+              src="/sos-plumbing-and-air.svg"
+              alt="SOS Plumbing and Air Logo"
+              width={300}
+              height={200}
+              className="h-24 md:h-28 w-auto"
               priority
             />
           </Link>
@@ -262,7 +262,7 @@ export function Header() {
                             <div className="relative overflow-hidden rounded-xl shadow-2xl my-10">
                                             <Image
                                               src="/wh-sos-service-rep.webp"
-                                              alt="Water Heater SOS professional technician"
+                                              alt="SOS Plumbing and Air professional technician"
                                               width={600}
                                               height={400}
                                               className="h-30 w-80 object-cover"
@@ -501,11 +501,11 @@ export function Header() {
                 <div className="flex items-center justify-between border-b border-white/10 bg-[#11110E] p-6">
                   <Link href="/" onClick={() => setMobileOpen(false)}>
                     <Image
-                      src="/wh-sos-logo.webp"
-                      alt="Water Heater SOS Logo"
-                      width={120}
-                      height={40}
-                      className="h-auto w-auto"
+                      src="/sos-plumbing-and-air.svg"
+                      alt="SOS Plumbing and Air Logo"
+                      width={240}
+                      height={160}
+                      className="h-16 w-auto"
                     />
                   </Link>
                   <button

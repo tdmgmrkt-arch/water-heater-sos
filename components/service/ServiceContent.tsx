@@ -97,7 +97,7 @@ export function ServiceContent() {
               Our Plumbing Services
             </h1>
             <p className="text-xl text-gray-600 mb-8">
-              Water Heater SOS provides comprehensive plumbing and water heater services throughout the Inland Empire. Our licensed technicians are available 24/7 for emergencies and scheduled appointments. From routine maintenance to major installations, we deliver quality workmanship with transparent pricing and no hidden fees.
+              SOS Plumbing and Air provides comprehensive plumbing and water heater services throughout the Inland Empire. Our licensed technicians are available 24/7 for emergencies and scheduled appointments. From routine maintenance to major installations, we deliver quality workmanship with transparent pricing and no hidden fees.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link

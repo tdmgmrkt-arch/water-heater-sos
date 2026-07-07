@@ -36,7 +36,7 @@ export function NorcoContent() {
                 Your Go‑To Plumbing Experts in Norco, CA
               </p>
               <p className="text-lg text-gray-700 leading-relaxed mb-8">
-                Water Heater SOS provides dependable plumbing solutions for homes and businesses in Norco. Our experienced team uses cutting‑edge tools and has served Norco for years, handling tasks from minor repairs to major projects with care and skill.
+                SOS Plumbing and Air provides dependable plumbing solutions for homes and businesses in Norco. Our experienced team uses cutting‑edge tools and has served Norco for years, handling tasks from minor repairs to major projects with care and skill.
               </p>
               <Link
                 href="/quote"
@@ -76,7 +76,7 @@ export function NorcoContent() {
               For homes with aging plumbing, our <Link href="/whole-house-repipe" className="text-[#EA5D19] hover:underline font-semibold">whole‑house repiping</Link> service replaces old pipes for better water flow and fewer leaks. We also provide shower repair and installation for leak‑free performance, and our <Link href="/garbage-disposal-repair-replacement" className="text-[#EA5D19] hover:underline font-semibold">garbage disposal repair or installation</Link> service ensures smooth kitchen sink operation. Additionally, we locate and repair slab leaks to protect your home's foundation from damage.
             </p>
             <p>
-              Whatever plumbing challenge you're facing in Norco, Water Heater SOS is ready to help. Call or text us at (800) 697‑4014 for fast, reliable service.
+              Whatever plumbing challenge you're facing in Norco, SOS Plumbing and Air is ready to help. Call or text us at (800) 697‑4014 for fast, reliable service.
             </p>
           </div>
         </div>
@@ -174,7 +174,7 @@ export function NorcoContent() {
             className="text-center mb-16"
           >
             <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl mb-4">
-              Why Call Water Heater SOS
+              Why Call SOS Plumbing and Air
             </h2>
           </motion.div>
 

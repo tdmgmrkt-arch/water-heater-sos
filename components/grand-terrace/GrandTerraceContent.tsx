@@ -36,7 +36,7 @@ export function GrandTerraceContent() {
                 Trusted for All Your Plumbing Needs in Grand Terrace, CA
               </p>
               <p className="text-lg text-gray-700 leading-relaxed mb-8">
-                Water Heater SOS is your trusted local plumbing company serving Grand Terrace and the surrounding areas. We specialize in <Link href="/gas-water-heaters" className="text-[#EA5D19] hover:underline font-semibold">water heater repairs</Link>, <Link href="/drain-cleaning" className="text-[#EA5D19] hover:underline font-semibold">drain cleaning</Link>, <Link href="/faucet-repair-replacement" className="text-[#EA5D19] hover:underline font-semibold">faucet repairs</Link>, and <Link href="/tankless-water-heaters" className="text-[#EA5D19] hover:underline font-semibold">tankless water heater installations</Link>. Our experienced Grand Terrace plumbers are ready to solve any plumbing problem you have.
+                SOS Plumbing and Air is your trusted local plumbing company serving Grand Terrace and the surrounding areas. We specialize in <Link href="/gas-water-heaters" className="text-[#EA5D19] hover:underline font-semibold">water heater repairs</Link>, <Link href="/drain-cleaning" className="text-[#EA5D19] hover:underline font-semibold">drain cleaning</Link>, <Link href="/faucet-repair-replacement" className="text-[#EA5D19] hover:underline font-semibold">faucet repairs</Link>, and <Link href="/tankless-water-heaters" className="text-[#EA5D19] hover:underline font-semibold">tankless water heater installations</Link>. Our experienced Grand Terrace plumbers are ready to solve any plumbing problem you have.
               </p>
               <Link
                 href="/quote"
@@ -76,7 +76,7 @@ export function GrandTerraceContent() {
               If you're dealing with a toilet that won't flush, runs constantly, or leaks, our <Link href="/toilet-repair-replacement" className="text-[#EA5D19] hover:underline font-semibold">toilet repair or replacement</Link> service will get it working right. For hidden leaks in your walls, floors, or foundation, our advanced <Link href="/leak-detection-services" className="text-[#EA5D19] hover:underline font-semibold">leak detection services</Link> use high‑tech equipment to locate the problem without damaging your home. We also offer <Link href="/whole-house-repipe" className="text-[#EA5D19] hover:underline font-semibold">whole‑house repipe</Link> services for older homes with outdated plumbing, improving water quality and flow. Plus, we install or repair showers, fix or replace <Link href="/garbage-disposal-repair-replacement" className="text-[#EA5D19] hover:underline font-semibold">garbage disposals</Link>, and offer <Link href="/water-filtration" className="text-[#EA5D19] hover:underline font-semibold">water filtration systems</Link> to improve your tap water.
             </p>
             <p>
-              Whatever plumbing issue you're facing in Grand Terrace, Water Heater SOS is ready to help. Call or text us at (800) 697‑4014 for fast, reliable service.
+              Whatever plumbing issue you're facing in Grand Terrace, SOS Plumbing and Air is ready to help. Call or text us at (800) 697‑4014 for fast, reliable service.
             </p>
           </div>
         </div>

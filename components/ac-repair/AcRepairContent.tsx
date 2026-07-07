@@ -239,7 +239,7 @@ export function AcRepairContent() {
               <p className="text-base sm:text-lg text-gray-700 leading-relaxed mb-3 sm:mb-4">
                 When your air conditioner breaks down in Riverside, Moreno
                 Valley, or anywhere across the Inland Empire, you don&rsquo;t
-                have time to wait. Water Heater SOS provides AC repair
+                have time to wait. SOS Plumbing and Air provides AC repair
                 throughout the Inland Empire with same-day appointments and
                 24/7 emergency service. Most AC repairs run between $150 and
                 $800 — a diagnostic call starts at the low end, while a
@@ -520,7 +520,7 @@ export function AcRepairContent() {
             </h2>
             {/* Canonical brand entity — appears once per GEO requirement #6 */}
             <p className="text-base sm:text-lg text-gray-300 max-w-3xl mx-auto">
-              Water Heater SOS is a licensed Inland Empire HVAC contractor (CA
+              SOS Plumbing and Air is a licensed Inland Empire HVAC contractor (CA
               LIC# 1140776) serving Riverside County and San Bernardino County
               with 24/7 emergency AC repair and same-day service.
             </p>

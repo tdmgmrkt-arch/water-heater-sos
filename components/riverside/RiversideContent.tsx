@@ -36,7 +36,7 @@ export function RiversideContent() {
                 Plumbing Company in Riverside, CA
               </p>
               <p className="text-lg text-gray-700 leading-relaxed mb-8">
-                Water Heater SOS is a family‑owned plumbing company ready to fix any problem you've got. No job is too big or too small—from unclogging drains to fixing <Link href="/gas-water-heaters" className="text-[#EA5D19] hover:underline font-semibold">water heaters</Link>—and we treat every home like it's our own. Our friendly Riverside plumbers know their stuff and work hard to get your plumbing back in shape fast.
+                SOS Plumbing and Air is a family‑owned plumbing company ready to fix any problem you've got. No job is too big or too small—from unclogging drains to fixing <Link href="/gas-water-heaters" className="text-[#EA5D19] hover:underline font-semibold">water heaters</Link>—and we treat every home like it's our own. Our friendly Riverside plumbers know their stuff and work hard to get your plumbing back in shape fast.
               </p>
               <Link
                 href="/quote"

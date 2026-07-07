@@ -36,7 +36,7 @@ export function MenifeeContent() {
                 Plumbing Services for Your Menifee, CA Home
               </p>
               <p className="text-lg text-gray-700 leading-relaxed mb-8">
-                A backed‑up drain or a dripping faucet can throw off your routine. Water Heater SOS in Menifee fixes these issues fast. Our brand‑certified technicians clear <Link href="/toilet-repair-replacement" className="text-[#EA5D19] hover:underline font-semibold">toilet clogs</Link>, clean drains, repair showers, and restore <Link href="/garbage-disposal-repair-replacement" className="text-[#EA5D19] hover:underline font-semibold">garbage disposals</Link>. Spot a water leak, gas leak, or slab leak? We act quickly to protect your home.
+                A backed‑up drain or a dripping faucet can throw off your routine. SOS Plumbing and Air in Menifee fixes these issues fast. Our brand‑certified technicians clear <Link href="/toilet-repair-replacement" className="text-[#EA5D19] hover:underline font-semibold">toilet clogs</Link>, clean drains, repair showers, and restore <Link href="/garbage-disposal-repair-replacement" className="text-[#EA5D19] hover:underline font-semibold">garbage disposals</Link>. Spot a water leak, gas leak, or slab leak? We act quickly to protect your home.
               </p>
               <Link
                 href="/quote"
@@ -67,10 +67,10 @@ export function MenifeeContent() {
 
           <div className="mt-12 bg-white rounded-3xl shadow-lg border border-gray-200 p-8 space-y-6 text-lg leading-relaxed text-gray-700">
             <p>
-              Our <Link href="/leak-detection-services" className="text-[#EA5D19] hover:underline font-semibold">leak detection</Link> services find hidden problems, and our <Link href="/whole-house-repipe" className="text-[#EA5D19] hover:underline font-semibold">whole‑house repipe</Link> keeps your plumbing strong. As the homeowner, you need reliable plumbing. Water Heater SOS provides emergency service to fix or replace your plumbing emergency. We offer routine maintenance to stop issues before they start, keeping your pipes in great shape.
+              Our <Link href="/leak-detection-services" className="text-[#EA5D19] hover:underline font-semibold">leak detection</Link> services find hidden problems, and our <Link href="/whole-house-repipe" className="text-[#EA5D19] hover:underline font-semibold">whole‑house repipe</Link> keeps your plumbing strong. As the homeowner, you need reliable plumbing. SOS Plumbing and Air provides emergency service to fix or replace your plumbing emergency. We offer routine maintenance to stop issues before they start, keeping your pipes in great shape.
             </p>
             <p>
-              Our team shows up with fully stocked trucks, ready for small fixes or big installations. Menifee homeowners pick us for fair prices and military or senior discounts that show we care about our community. Stepping into a freezing shower can start your day wrong. Water Heater SOS focuses on <Link href="/gas-water-heaters" className="text-[#EA5D19] hover:underline font-semibold">water heater repair</Link>, bringing back your hot water fast.
+              Our team shows up with fully stocked trucks, ready for small fixes or big installations. Menifee homeowners pick us for fair prices and military or senior discounts that show we care about our community. Stepping into a freezing shower can start your day wrong. SOS Plumbing and Air focuses on <Link href="/gas-water-heaters" className="text-[#EA5D19] hover:underline font-semibold">water heater repair</Link>, bringing back your hot water fast.
             </p>
             <p>
               Our skilled technicians, trained on all major brands, pinpoint problems quickly and often fix your system within hours. From corroded tanks to broken thermostats, we handle every issue with accuracy. For <Link href="/tankless-water-heaters" className="text-[#EA5D19] hover:underline font-semibold">tankless units</Link>, we optimize performance to cut your energy costs and keep water hot. You enjoy reliable hot water without delay.
@@ -171,7 +171,7 @@ export function MenifeeContent() {
             className="text-center mb-16"
           >
             <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl mb-4">
-              Why Call Water Heater SOS?
+              Why Call SOS Plumbing and Air?
             </h2>
           </motion.div>
 
@@ -195,7 +195,7 @@ export function MenifeeContent() {
               },
               {
                 title: "Community Focus",
-                description: "Water Heater SOS serves the Inland Empire with pride, offering military and senior discounts. Our commitment to the Inland Empire shows in our customer care. You support a local business that values its neighbors.",
+                description: "SOS Plumbing and Air serves the Inland Empire with pride, offering military and senior discounts. Our commitment to the Inland Empire shows in our customer care. You support a local business that values its neighbors.",
               },
             ].map((benefit, index) => (
               <motion.div

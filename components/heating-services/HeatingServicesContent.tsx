@@ -162,7 +162,7 @@ export function HeatingServicesContent() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <motion.div initial={{ opacity: 0, y: 25 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6 }} className="text-center mb-8 sm:mb-14">
             <h2 className="text-xl sm:text-2xl lg:text-4xl font-extrabold text-white mb-3 lg:mb-6">Why Inland Empire Homeowners Choose Us for Heating Services</h2>
-            <p className="text-base sm:text-lg text-gray-300 max-w-3xl mx-auto">Water Heater SOS is a licensed Inland Empire HVAC contractor (CA LIC# 1140776) serving Riverside County and San Bernardino County with full-service furnace and heating system repair, installation, and maintenance.</p>
+            <p className="text-base sm:text-lg text-gray-300 max-w-3xl mx-auto">SOS Plumbing and Air is a licensed Inland Empire HVAC contractor (CA LIC# 1140776) serving Riverside County and San Bernardino County with full-service furnace and heating system repair, installation, and maintenance.</p>
             <div className="h-1 w-16 sm:w-20 bg-[#EA5D19] mx-auto rounded-full mt-4" />
           </motion.div>
           <div className="grid gap-4 sm:gap-6 sm:grid-cols-2 lg:grid-cols-3 lg:gap-8">

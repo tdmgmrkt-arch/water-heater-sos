@@ -36,7 +36,7 @@ export function CoronaContent() {
                 Your Trusted Plumbing Company in Corona, CA
               </p>
               <p className="text-lg text-gray-700 leading-relaxed mb-8">
-                Water Heater SOS provides Corona homeowners with dependable plumbing and water heater services. Our licensed technicians specialize in <Link href="/gas-water-heaters" className="text-[#EA5D19] hover:underline font-semibold">gas water heater repairs</Link>, <Link href="/tankless-water-heaters" className="text-[#EA5D19] hover:underline font-semibold">tankless installations</Link>, and complete plumbing solutions. We understand the unique needs of Corona residents and deliver fast, professional service every time.
+                SOS Plumbing and Air provides Corona homeowners with dependable plumbing and water heater services. Our licensed technicians specialize in <Link href="/gas-water-heaters" className="text-[#EA5D19] hover:underline font-semibold">gas water heater repairs</Link>, <Link href="/tankless-water-heaters" className="text-[#EA5D19] hover:underline font-semibold">tankless installations</Link>, and complete plumbing solutions. We understand the unique needs of Corona residents and deliver fast, professional service every time.
               </p>
               <Link
                 href="/quote"

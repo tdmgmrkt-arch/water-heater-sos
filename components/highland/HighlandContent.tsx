@@ -112,7 +112,7 @@ export function HighlandContent() {
               </p>
 
               <p className="text-lg text-gray-700 leading-relaxed mb-8">
-                At Water Heater SOS in Highland, CA, we're a hometown crew dedicated to keeping your plumbing in top shape without ever taking shortcuts. Your comfort and safety are our top priorities, and we love serving our Highland neighbors with awesome service. While we're experts at fixing water heaters, we tackle all kinds of plumbing issues too, from <Link href="/leak-detection-services" className="text-[#EA5D19] hover:underline font-semibold">leaky pipes</Link> to <Link href="/drain-cleaning" className="text-[#EA5D19] hover:underline font-semibold">clogged drains</Link>. Our friendly team is always ready to swoop in and fix any plumbing problem, big or small, to keep your home running like a charm. As part of the Highland community, we're proud to help our neighbors with reliable plumbing solutions.
+                At SOS Plumbing and Air in Highland, CA, we're a hometown crew dedicated to keeping your plumbing in top shape without ever taking shortcuts. Your comfort and safety are our top priorities, and we love serving our Highland neighbors with awesome service. While we're experts at fixing water heaters, we tackle all kinds of plumbing issues too, from <Link href="/leak-detection-services" className="text-[#EA5D19] hover:underline font-semibold">leaky pipes</Link> to <Link href="/drain-cleaning" className="text-[#EA5D19] hover:underline font-semibold">clogged drains</Link>. Our friendly team is always ready to swoop in and fix any plumbing problem, big or small, to keep your home running like a charm. As part of the Highland community, we're proud to help our neighbors with reliable plumbing solutions.
               </p>
 
               <Link
@@ -165,7 +165,7 @@ export function HighlandContent() {
             className="text-center mb-14"
           >
             <h2 className="text-2xl sm:text-3xl lg:text-5xl font-extrabold text-[#11110E] mb-4 lg:mb-6">
-              Why call Water Heater SOS?
+              Why call SOS Plumbing and Air?
             </h2>
             <div className="h-1 w-20 bg-[#EA5D19] mx-auto rounded-full" />
           </motion.div>

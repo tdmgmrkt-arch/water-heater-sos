@@ -36,7 +36,7 @@ export function LakeElsinoreContent() {
                 5‑Star Plumbing Company in Lake Elsinore, CA
               </p>
               <p className="text-lg text-gray-700 leading-relaxed mb-8">
-                A dripping faucet or a clogged toilet can throw your whole day off track. When plumbing problems strike in Lake Elsinore, CA, Water Heater SOS is your go‑to solution. Our certified technicians handle everything from <Link href="/drain-cleaning" className="text-[#EA5D19] hover:underline font-semibold">drain cleaning</Link> and shower repairs to getting your <Link href="/garbage-disposal-repair-replacement" className="text-[#EA5D19] hover:underline font-semibold">garbage disposal</Link> back in action.
+                A dripping faucet or a clogged toilet can throw your whole day off track. When plumbing problems strike in Lake Elsinore, CA, SOS Plumbing and Air is your go‑to solution. Our certified technicians handle everything from <Link href="/drain-cleaning" className="text-[#EA5D19] hover:underline font-semibold">drain cleaning</Link> and shower repairs to getting your <Link href="/garbage-disposal-repair-replacement" className="text-[#EA5D19] hover:underline font-semibold">garbage disposal</Link> back in action.
               </p>
               <Link
                 href="/quote"
@@ -70,10 +70,10 @@ export function LakeElsinoreContent() {
               Noticed a leak? Whether it's water, gas, or even a hidden slab leak, our team jumps into action to safeguard your home. With advanced <Link href="/leak-detection-services" className="text-[#EA5D19] hover:underline font-semibold">leak detection</Link> and expert <Link href="/whole-house-repipe" className="text-[#EA5D19] hover:underline font-semibold">house repiping</Link> services, we ensure your plumbing stays reliable—no surprises. Plus, we explain everything in plain terms and tailor solutions to fit your home's needs.
             </p>
             <p>
-              Your home deserves plumbing that just works. That's why Water Heater SOS offers emergency services, so a burst pipe doesn't turn into a disaster. From routine maintenance (to prevent leaks before they happen) to major installations, our fully stocked trucks mean we're ready for anything. We proudly serve Lake Elsinore and nearby areas like Menifee, Murrieta, Temecula, Canyon Lake, and Wildomar.
+              Your home deserves plumbing that just works. That's why SOS Plumbing and Air offers emergency services, so a burst pipe doesn't turn into a disaster. From routine maintenance (to prevent leaks before they happen) to major installations, our fully stocked trucks mean we're ready for anything. We proudly serve Lake Elsinore and nearby areas like Menifee, Murrieta, Temecula, Canyon Lake, and Wildomar.
             </p>
             <p>
-              A cold shower on a Lake Elsinore morning? No thanks. Our specialists get your hot water flowing again, fast. Water Heater SOS specializes in <Link href="/gas-water-heaters" className="text-[#EA5D19] hover:underline font-semibold">water heater repair</Link>, getting your hot water back fast. Our brand‑certified technicians know every major brand and fix problems with precision. For <Link href="/tankless-water-heaters" className="text-[#EA5D19] hover:underline font-semibold">tankless water heaters</Link>, we ensure efficient performance, cutting your energy bills and keeping water hot. You deserve a reliable system that works when you need it.
+              A cold shower on a Lake Elsinore morning? No thanks. Our specialists get your hot water flowing again, fast. SOS Plumbing and Air specializes in <Link href="/gas-water-heaters" className="text-[#EA5D19] hover:underline font-semibold">water heater repair</Link>, getting your hot water back fast. Our brand‑certified technicians know every major brand and fix problems with precision. For <Link href="/tankless-water-heaters" className="text-[#EA5D19] hover:underline font-semibold">tankless water heaters</Link>, we ensure efficient performance, cutting your energy bills and keeping water hot. You deserve a reliable system that works when you need it.
             </p>
           </div>
         </div>
@@ -171,7 +171,7 @@ export function LakeElsinoreContent() {
             className="text-center mb-16"
           >
             <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl mb-4">
-              Why Water Heater SOS?
+              Why SOS Plumbing and Air?
             </h2>
           </motion.div>
 

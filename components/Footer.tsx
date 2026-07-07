@@ -145,11 +145,11 @@ export function Footer() {
             <div className="md:col-span-4 lg:col-span-4">
               <Link href="/" className="inline-block mb-3 md:mb-4">
                 <Image
-                  src="/wh-sos-logo.webp"
-                  alt="Water Heater SOS Logo"
-                  width={200}
-                  height={66}
-                  className="h-14 md:h-20 w-auto"
+                  src="/sos-logo.webp"
+                  alt="SOS Plumbing and Air Logo"
+                  width={400}
+                  height={247}
+                  className="h-28 md:h-40 w-auto"
                 />
               </Link>
 
@@ -309,7 +309,7 @@ export function Footer() {
         <div className="border-t border-white/10 py-4 md:py-5">
           <div className="flex flex-col md:flex-row items-center justify-between gap-2 md:gap-3 text-center md:text-left">
             <div className="flex flex-col sm:flex-row items-center gap-2 md:gap-3 text-xs text-gray-400">
-              <p>© 2025 Water Heater SOS. All Rights Reserved.</p>
+              <p>© 2025 SOS Plumbing and Air. All Rights Reserved.</p>
               <span className="hidden sm:inline text-gray-700">•</span>
               <Link href="/privacy-policy" className="hover:text-[#EA5D19] transition-colors">
                 Privacy Policy

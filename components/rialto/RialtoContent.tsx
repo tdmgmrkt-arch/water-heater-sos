@@ -36,7 +36,7 @@ export function RialtoContent() {
                 Top‑Rated Plumbing Company in Rialto, CA
               </p>
               <p className="text-lg text-gray-700 leading-relaxed mb-8">
-                At Water Heater SOS, we're more than just plumbers—we're your Rialto neighbors! From the busy streets near the Renaissance Marketplace to the quiet homes around Frisbie Park, we've earned a name for showing up quickly and fixing things right. We proudly help homes and businesses in Rialto with reliable, licensed plumbing solutions tailored to local needs. Whether it's a sudden leak or a much‑needed upgrade, we're here to get your plumbing working perfectly, often on the same day.
+                At SOS Plumbing and Air, we're more than just plumbers—we're your Rialto neighbors! From the busy streets near the Renaissance Marketplace to the quiet homes around Frisbie Park, we've earned a name for showing up quickly and fixing things right. We proudly help homes and businesses in Rialto with reliable, licensed plumbing solutions tailored to local needs. Whether it's a sudden leak or a much‑needed upgrade, we're here to get your plumbing working perfectly, often on the same day.
               </p>
               <Link
                 href="/quote"

@@ -36,7 +36,7 @@ export function SanBernardinoContent() {
                 Plumbing Problem Solvers in San Bernardino
               </p>
               <p className="text-lg text-gray-700 leading-relaxed mb-8">
-                Plumbing issues like clogged drains, sewer backups or a broken water heater can turn your day upside down and hit your wallet hard. At Water Heater SOS in San Bernardino, we make those headaches disappear fast with top‑notch service at prices that won't break the bank. We're not just water‑heater experts—we handle all kinds of plumbing troubles, from <Link href="/leak-detection-services" className="text-[#EA5D19] hover:underline font-semibold">leaky pipes</Link> to jammed <Link href="/garbage-disposal-repair-replacement" className="text-[#EA5D19] hover:underline font-semibold">garbage disposals</Link>, to keep your home running smoothly.
+                Plumbing issues like clogged drains, sewer backups or a broken water heater can turn your day upside down and hit your wallet hard. At SOS Plumbing and Air in San Bernardino, we make those headaches disappear fast with top‑notch service at prices that won't break the bank. We're not just water‑heater experts—we handle all kinds of plumbing troubles, from <Link href="/leak-detection-services" className="text-[#EA5D19] hover:underline font-semibold">leaky pipes</Link> to jammed <Link href="/garbage-disposal-repair-replacement" className="text-[#EA5D19] hover:underline font-semibold">garbage disposals</Link>, to keep your home running smoothly.
               </p>
               <Link
                 href="/quote"

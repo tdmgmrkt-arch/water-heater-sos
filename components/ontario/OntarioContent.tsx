@@ -36,7 +36,7 @@ export function OntarioContent() {
                 5-Star Rated Plumbing Company in Ontario, CA
               </p>
               <p className="text-lg text-gray-700 leading-relaxed mb-8">
-                Water Heater SOS is a local Ontario plumbing company you can trust. We do it all—fixing <Link href="/gas-water-heaters" className="text-[#EA5D19] hover:underline font-semibold">water heaters</Link>, clearing drains, repairing <Link href="/faucet-repair-replacement" className="text-[#EA5D19] hover:underline font-semibold">faucets</Link>, and installing <Link href="/tankless-water-heaters" className="text-[#EA5D19] hover:underline font-semibold">tankless water heaters</Link>. Our friendly Ontario plumbers are ready to tackle any plumbing problem and get things running smoothly again.
+                SOS Plumbing and Air is a local Ontario plumbing company you can trust. We do it all—fixing <Link href="/gas-water-heaters" className="text-[#EA5D19] hover:underline font-semibold">water heaters</Link>, clearing drains, repairing <Link href="/faucet-repair-replacement" className="text-[#EA5D19] hover:underline font-semibold">faucets</Link>, and installing <Link href="/tankless-water-heaters" className="text-[#EA5D19] hover:underline font-semibold">tankless water heaters</Link>. Our friendly Ontario plumbers are ready to tackle any plumbing problem and get things running smoothly again.
               </p>
               <Link
                 href="/quote"
@@ -76,7 +76,7 @@ export function OntarioContent() {
               Need help with your toilet? We provide <Link href="/toilet-repair-replacement" className="text-[#EA5D19] hover:underline font-semibold">toilet repair or replacement</Link> services to fix running, clogged, or leaky toilets. If you've got a leaky pipe hiding in your walls or under your foundation, our advanced <Link href="/leak-detection-services" className="text-[#EA5D19] hover:underline font-semibold">leak detection services</Link> can pinpoint the problem without tearing up your home. For older homes with outdated plumbing, our <Link href="/whole-house-repipe" className="text-[#EA5D19] hover:underline font-semibold">whole‑house repipe</Link> service replaces old pipes to improve water quality and flow. We also install or repair showers, fix or replace <Link href="/garbage-disposal-repair-replacement" className="text-[#EA5D19] hover:underline font-semibold">garbage disposals</Link>, and offer <Link href="/water-filtration" className="text-[#EA5D19] hover:underline font-semibold">water filtration systems</Link> to remove contaminants and improve your tap water.
             </p>
             <p>
-              Whatever plumbing issue you're facing, Water Heater SOS is here to help. Call or text us at (800) 697‑4014 for fast, reliable plumbing services in Ontario and the surrounding areas.
+              Whatever plumbing issue you're facing, SOS Plumbing and Air is here to help. Call or text us at (800) 697‑4014 for fast, reliable plumbing services in Ontario and the surrounding areas.
             </p>
           </div>
         </div>

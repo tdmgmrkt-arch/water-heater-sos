@@ -271,7 +271,7 @@ export function HvacMaintenancePlanContent() {
             className="text-center mb-10 lg:mb-14"
           >
             <h2 className="text-3xl lg:text-4xl font-bold text-white mb-4">
-              Why Inland Empire Homeowners Choose Water Heater SOS
+              Why Inland Empire Homeowners Choose SOS Plumbing and Air
             </h2>
           </motion.div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
