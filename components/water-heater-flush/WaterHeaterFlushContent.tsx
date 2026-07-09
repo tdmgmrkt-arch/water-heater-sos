@@ -84,7 +84,7 @@ export function WaterHeaterFlushContent() {
               className="relative h-[250px] sm:h-[350px] lg:h-[500px] rounded-2xl lg:rounded-3xl overflow-hidden shadow-xl lg:shadow-2xl"
             >
               <Image
-                src="/placeholderimage.webp"
+                src="/service-page-images/water-heater-flush.webp"
                 alt="Water heater flush service"
                 fill
                 className="object-cover"

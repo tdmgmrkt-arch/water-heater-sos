@@ -55,7 +55,7 @@ export function CoronaContent() {
             >
               <div className="relative h-[500px] w-full rounded-2xl overflow-hidden shadow-2xl">
                 <Image
-                  src="/wh-sos-service-rep.webp"
+                  src="/city-page-images/corona.webp"
                   alt="Professional plumber in Corona"
                   fill
                   className="object-cover"

@@ -55,7 +55,7 @@ export function MentoneContent() {
             >
               <div className="relative h-[500px] w-full rounded-2xl overflow-hidden shadow-2xl">
                 <Image
-                  src="/wh-sos-service-rep.webp"
+                  src="/city-page-images/mentone.webp"
                   alt="Professional plumber in Mentone"
                   fill
                   className="object-cover"
@@ -207,7 +207,7 @@ export function MentoneContent() {
             >
               <div className="relative h-[400px] w-full rounded-2xl overflow-hidden shadow-xl">
                 <Image
-                  src="/wh-sos-service-rep.webp"
+                  src="/city-page-images/mentone.webp"
                   alt="Mentone plumbing services"
                   fill
                   className="object-cover"

@@ -55,7 +55,7 @@ export function AirDuctCleaningContent() {
             >
               <div className="relative h-[250px] sm:h-[350px] lg:h-[500px] w-full rounded-2xl lg:rounded-3xl overflow-hidden shadow-xl lg:shadow-2xl">
                 <Image
-                  src="/placeholderimage.webp"
+                  src="/service-page-images/air-duct-cleaning.webp"
                   alt="Professional air duct and dryer vent cleaning services"
                   fill
                   className="object-cover"

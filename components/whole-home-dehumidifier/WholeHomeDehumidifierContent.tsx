@@ -180,7 +180,7 @@ export function WholeHomeDehumidifierContent() {
               className="relative h-[250px] sm:h-[350px] lg:h-[500px] rounded-2xl lg:rounded-3xl overflow-hidden shadow-xl lg:shadow-2xl"
             >
               <Image
-                src="/wh-sos-service-rep.webp"
+                src="/service-page-images/whole-home-dehumidifier.webp"
                 alt="Licensed HVAC technician performing whole-home dehumidifier installation in the Inland Empire"
                 fill
                 className="object-cover"

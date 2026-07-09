@@ -55,7 +55,7 @@ export function ColtonContent() {
             >
               <div className="relative h-[500px] w-full rounded-2xl overflow-hidden shadow-2xl">
                 <Image
-                  src="/wh-sos-service-rep.webp"
+                  src="/city-page-images/colton.webp"
                   alt="Professional plumber in Colton"
                   fill
                   className="object-cover"

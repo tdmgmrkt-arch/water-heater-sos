@@ -55,7 +55,7 @@ export function YorbaLindaContent() {
             >
               <div className="relative h-[500px] w-full rounded-2xl overflow-hidden shadow-2xl">
                 <Image
-                  src="/wh-sos-service-rep.webp"
+                  src="/city-page-images/yorba-linda.webp"
                   alt="Professional plumber in Yorba Linda"
                   fill
                   className="object-cover"

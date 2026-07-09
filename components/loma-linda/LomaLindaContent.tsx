@@ -124,7 +124,7 @@ export function LomaLindaContent() {
               className="relative h-[400px] lg:h-[500px] rounded-3xl overflow-hidden shadow-2xl"
             >
               <Image
-                src="/wh-sos-service-rep.webp"
+                src="/city-page-images/loma-linda.webp"
                 alt="Loma Linda plumbing services and water heater repair"
                 fill
                 className="object-cover"

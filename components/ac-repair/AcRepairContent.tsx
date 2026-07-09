@@ -284,7 +284,7 @@ export function AcRepairContent() {
                 Current placeholder: /wh-sos-service-rep.webp
               */}
               <Image
-                src="/wh-sos-service-rep.webp"
+                src="/service-page-images/ac-repair.webp"
                 alt="Licensed HVAC technician performing AC repair in the Inland Empire"
                 fill
                 sizes="(max-width: 1024px) 100vw, 50vw"

@@ -235,7 +235,7 @@ export function HeatPumpSystemsContent() {
               className="relative h-[250px] sm:h-[350px] lg:h-[500px] rounded-2xl lg:rounded-3xl overflow-hidden shadow-xl lg:shadow-2xl"
             >
               <Image
-                src="/wh-sos-service-rep.webp"
+                src="/service-page-images/heat-pump-systems.webp"
                 alt="Licensed HVAC technician performing heat pump system installation in the Inland Empire"
                 fill
                 className="object-cover"

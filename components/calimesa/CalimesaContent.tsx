@@ -136,7 +136,7 @@ export function CalimesaContent() {
               className="relative h-[400px] lg:h-[500px] rounded-3xl overflow-hidden shadow-2xl"
             >
               <Image
-                src="/wh-sos-service-rep.webp"
+                src="/city-page-images/calimesa.webp"
                 alt="Calimesa plumbing services and water heater repair"
                 fill
                 className="object-cover"

@@ -55,7 +55,7 @@ export function FontanaContent() {
             >
               <div className="relative h-[500px] w-full rounded-2xl overflow-hidden shadow-2xl">
                 <Image
-                  src="/wh-sos-service-rep.webp"
+                  src="/city-page-images/fontana.webp"
                   alt="Professional plumber in Fontana"
                   fill
                   className="object-cover"

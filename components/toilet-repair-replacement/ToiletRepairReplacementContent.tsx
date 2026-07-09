@@ -55,7 +55,7 @@ export function ToiletRepairReplacementContent() {
             >
               <div className="relative h-[250px] sm:h-[350px] lg:h-[500px] w-full rounded-2xl lg:rounded-3xl overflow-hidden shadow-xl lg:shadow-2xl">
                 <Image
-                  src="/placeholderimage.webp"
+                  src="/service-page-images/toilet-repair-replacement-image.webp"
                   alt="Professional toilet repair and replacement services"
                   fill
                   className="object-cover"

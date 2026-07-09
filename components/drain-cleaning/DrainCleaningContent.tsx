@@ -52,7 +52,7 @@ export function DrainCleaningContent() {
             >
               <div className="relative h-[250px] sm:h-[350px] lg:h-[500px] w-full rounded-2xl overflow-hidden shadow-xl lg:shadow-2xl">
                 <Image
-                  src="/wh-sos-service-rep.webp"
+                  src="/service-page-images/drain-cleaning.webp"
                   alt="Professional drain cleaning service"
                   fill
                   className="object-cover"

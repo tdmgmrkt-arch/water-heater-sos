@@ -55,7 +55,7 @@ export function HydroJettingContent() {
             >
               <div className="relative h-[250px] sm:h-[350px] lg:h-[500px] w-full rounded-2xl lg:rounded-3xl overflow-hidden shadow-xl lg:shadow-2xl">
                 <Image
-                  src="/placeholderimage.webp"
+                  src="/service-page-images/hydro-jetting.webp"
                   alt="Hydro-jetting service for drain cleaning"
                   fill
                   className="object-cover"

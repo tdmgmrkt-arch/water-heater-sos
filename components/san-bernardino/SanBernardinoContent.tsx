@@ -55,7 +55,7 @@ export function SanBernardinoContent() {
             >
               <div className="relative h-[500px] w-full rounded-2xl overflow-hidden shadow-2xl">
                 <Image
-                  src="/wh-sos-service-rep.webp"
+                  src="/city-page-images/san-bernardino.webp"
                   alt="Professional plumber in San Bernardino"
                   fill
                   className="object-cover"

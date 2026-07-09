@@ -89,7 +89,7 @@ export function IndoorAirQualityContent() {
             </motion.div>
             <motion.div initial={{ opacity: 0, x: 30 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.6, delay: 0.2 }} className="relative h-[250px] sm:h-[350px] lg:h-[500px] rounded-2xl lg:rounded-3xl overflow-hidden shadow-xl lg:shadow-2xl">
               <Image
-                src="/wh-sos-service-rep.webp"
+                src="/service-page-images/indoor-air-quality.webp"
                 alt="Licensed HVAC technician performing indoor air quality services in the Inland Empire"
                 fill
                 className="object-cover"

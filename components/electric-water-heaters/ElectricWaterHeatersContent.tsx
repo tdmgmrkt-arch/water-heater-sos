@@ -80,7 +80,7 @@ export function ElectricWaterHeatersContent() {
               className="relative h-[250px] sm:h-[350px] lg:h-[500px] rounded-2xl lg:rounded-3xl overflow-hidden shadow-xl lg:shadow-2xl"
             >
               <Image
-                src="/wh-sos-service-rep.webp"
+                src="/service-page-images/electric-water-heaters.webp"
                 alt="Electric water heater repair and installation service"
                 fill
                 className="object-cover"

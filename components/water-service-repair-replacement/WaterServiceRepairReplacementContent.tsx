@@ -48,7 +48,7 @@ export function WaterServiceRepairReplacementContent() {
             >
               <div className="relative h-[250px] sm:h-[350px] lg:h-[500px] w-full rounded-2xl lg:rounded-3xl overflow-hidden shadow-xl lg:shadow-2xl">
                 <Image
-                  src="/placeholderimage.webp"
+                  src="/service-page-images/water-service-repair-replacement.webp"
                   alt="Professional water service line repair and replacement"
                   fill
                   className="object-cover"

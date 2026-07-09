@@ -55,7 +55,7 @@ export function OntarioContent() {
             >
               <div className="relative h-[500px] w-full rounded-2xl overflow-hidden shadow-2xl">
                 <Image
-                  src="/wh-sos-service-rep.webp"
+                  src="/city-page-images/ontario.webp"
                   alt="Professional plumber in Ontario"
                   fill
                   className="object-cover"

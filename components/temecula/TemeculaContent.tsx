@@ -55,7 +55,7 @@ export function TemeculaContent() {
             >
               <div className="relative h-[500px] w-full rounded-2xl overflow-hidden shadow-2xl">
                 <Image
-                  src="/wh-sos-service-rep.webp"
+                  src="/city-page-images/temecula.webp"
                   alt="Professional plumber in Temecula"
                   fill
                   className="object-cover"
@@ -275,7 +275,7 @@ export function TemeculaContent() {
             >
               <div className="relative h-[400px] w-full rounded-2xl overflow-hidden shadow-xl">
                 <Image
-                  src="/wh-sos-service-rep.webp"
+                  src="/city-page-images/temecula.webp"
                   alt="Water filtration and tankless water heater services in Temecula"
                   fill
                   className="object-cover"

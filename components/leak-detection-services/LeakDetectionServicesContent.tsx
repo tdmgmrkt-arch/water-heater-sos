@@ -55,7 +55,7 @@ export function LeakDetectionServicesContent() {
             >
               <div className="relative h-[250px] sm:h-[350px] lg:h-[500px] w-full rounded-2xl lg:rounded-3xl overflow-hidden shadow-xl lg:shadow-2xl">
                 <Image
-                  src="/placeholderimage.webp"
+                  src="/service-page-images/leak-detection-services.webp"
                   alt="Professional leak detection services"
                   fill
                   className="object-cover"
