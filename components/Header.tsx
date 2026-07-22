@@ -15,6 +15,7 @@ import {
   MapIcon,
   TrendingUp,
   Snowflake,
+  BookOpen,
 } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Container } from "./Container";
@@ -115,6 +116,7 @@ const menuStructure: Record<string, MenuCategory> = {
       { name: "Free Online Quote", href: "/quote", desc: "Get instant pricing", icon: Ticket, featured: true },
       { name: "About", href: "/about", desc: "Learn about our team", icon: Mail },
       { name: "Contact Us", href: "/contact", desc: "Get in touch with our team", icon: Phone },
+      { name: "Blog", href: "/blog", desc: "Field notes & homeowner guides", icon: BookOpen },
       { name: "Discounts", href: "/discount-water-heaters", desc: "Get Water Heater Discounts", icon: Ticket },
       { name: "Service Area", href: "/service-area", desc: "Areas We Service", icon: MapIcon },
     ],

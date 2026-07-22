@@ -14,6 +14,7 @@ module.exports = {
       '/quote': 0.9,
       '/contact': 0.9,
       '/about': 0.8,
+      '/blog': 0.8,
       '/gas-water-heaters': 0.9,
       '/tankless-water-heaters': 0.9,
       '/ac-repair': 0.9,
@@ -38,10 +39,13 @@ module.exports = {
       '/hvac-maintenance-plan': 0.8,
     };
 
+    // Individual blog posts get a slightly-elevated priority
+    const isBlogPost = path.startsWith('/blog/') && path !== '/blog';
+
     return {
       loc: path,
-      changefreq: config.changefreq,
-      priority: priorities[path] || config.priority,
+      changefreq: isBlogPost ? 'monthly' : config.changefreq,
+      priority: priorities[path] || (isBlogPost ? 0.7 : config.priority),
       lastmod: new Date().toISOString(),
     };
   },

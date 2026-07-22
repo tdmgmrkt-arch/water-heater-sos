@@ -24,6 +24,7 @@ _None._
 
 ## Recently Completed
 
+- 2026-07-21 — **Blog system launched.** Built `/blog` index + dynamic `/blog/[slug]` route with 10 seeded, monthly-dated (2025-10 through 2026-07) local-SEO posts covering water heater, plumbing, HVAC, and IAQ topics. Each post includes 4+ internal links to service pages and at least one authoritative external citation (energy.gov, epa.gov, cdc.gov, arb.ca.gov, energystar.gov, usgs.gov, cpsc.gov, waterboards.ca.gov, switchison.org, airnow.gov). Blog nav link added to Header (Contact dropdown) + Footer (quickLinks + resources). Sitemap config updated with `/blog` priority 0.8 and `/blog/*` priority 0.7. Unsplash stock images used for covers (added `images.unsplash.com` to next.config remotePatterns). Full JSON-LD `Blog` + `BlogPosting` schema. Build verified — all 11 blog routes prerender successfully.
 - 2026-06-11 — Repo move to `~/agency/clients/water-heater-sos/` completed. Old `C:\Users\Owner\water-heater-sos*` folders removed. Git remote + Vercel unaffected.
 - 2026-06-11 — GBP Coherence Audit completed. Maps Health Score: 48/100. Full audit saved to `/audits/gbp-coherence-2026-06-11.md`.
 - 2026-06-11 — AC Repair page content finalized (v4, approved). 17 HVAC routes confirmed in local codebase; none yet deployed to production (404s on waterheatersos.com).

@@ -12,6 +12,7 @@ const footerLinks = {
   quickLinks: [
     { name: "Home", href: "/" },
     { name: "About Us", href: "/about" },
+    { name: "Blog", href: "/blog" },
     { name: "Contact", href: "/contact" },
     { name: "Service Area", href: "/service-area" },
   ],
@@ -24,7 +25,7 @@ const footerLinks = {
   resources: [
     { name: "Free Online Quote", href: "/quote" },
     { name: "Air Duct Cleaning", href: "/air-duct-cleaning" },
-    { name: "Blog & Tips", href: "/service" },
+    { name: "Blog & Tips", href: "/blog" },
     { name: "Discounts & Specials", href: "/discount-water-heaters" },
   ],
 };
@@ -346,6 +347,17 @@ export function Footer() {
                 </svg>
               </a>
             </div>
+          </div>
+          <div className="mt-3 pt-3 border-t border-white/5 text-center text-xs text-gray-500">
+            Designed &amp; Developed by{" "}
+            <a
+              href="https://tdmarketinggroup.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-[#EA5D19] transition-colors"
+            >
+              TD Marketing Group
+            </a>
           </div>
         </div>
       </Container>
