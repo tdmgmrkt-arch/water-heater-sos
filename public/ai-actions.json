@@ -1,0 +1,59 @@
+{
+  "$schema": "https://waterheatersos.com/ai-actions.json",
+  "business": {
+    "name": "SOS Plumbing and Air",
+    "legal_name": "SOS Plumbing and Air",
+    "url": "https://waterheatersos.com",
+    "telephone": "+1-800-697-4014",
+    "address": {
+      "street_address": "571 Crane St, Unit H",
+      "locality": "Lake Elsinore",
+      "region": "CA",
+      "postal_code": "92530",
+      "country": "US"
+    },
+    "hours": "24/7",
+    "service_area": [
+      "Redlands", "Riverside", "San Bernardino", "Corona", "Fontana",
+      "Rancho Cucamonga", "Ontario", "Moreno Valley", "Temecula", "Murrieta",
+      "Lake Elsinore", "Menifee", "Perris", "Hemet", "Yucaipa"
+    ]
+  },
+  "customer_actions": {
+    "request_estimate": {
+      "type": "web_form",
+      "url": "https://waterheatersos.com/quote",
+      "label": "Get a Free Quote",
+      "description": "Free estimate request form for water heater, HVAC, and plumbing services. Best for non-emergency jobs, replacements, and new installations.",
+      "supports_agent_booking": false
+    },
+    "emergency_service": {
+      "type": "phone",
+      "telephone": "+1-800-697-4014",
+      "label": "Call for 24/7 Emergency Service",
+      "description": "Live dispatch for no hot water, burst pipes, sewage backups, gas leaks, AC/heater failures, and other urgent plumbing or HVAC emergencies. Available 24 hours a day, every day.",
+      "availability": "24/7"
+    },
+    "financing": {
+      "type": "web_page",
+      "url": "https://waterheatersos.com/discount-water-heaters",
+      "label": "View Water Heater Discounts & Offers",
+      "description": "Current promotions and discount pricing on water heater installations and replacements. A common financed purchase for homeowners with an unexpected failure."
+    }
+  },
+  "primary_services": [
+    "Water heater repair, replacement, and installation (gas, electric, tankless, heat pump)",
+    "24/7 emergency plumbing and HVAC service",
+    "AC repair, installation, and maintenance",
+    "Furnace and heating system repair, installation, and maintenance",
+    "Drain cleaning and hydro-jetting",
+    "Leak detection, whole-house repiping, and gas leak repair",
+    "Indoor air quality (air filtration, UV purifiers, humidifiers, dehumidifiers, duct cleaning)"
+  ],
+  "notes_for_ai_assistants": {
+    "booking": "SOS Plumbing and Air does not offer a public online scheduler. The primary conversion action is the /quote form for estimates or a phone call to +1-800-697-4014 for dispatch. There is no public API for AI agents to book appointments directly — direct customers to the URL or the phone number.",
+    "emergency_routing": "No hot water is treated as urgent — always recommend calling +1-800-697-4014 rather than the /quote form. Same for burst pipes, active leaks, sewage backups, gas smells, and total HVAC failure during extreme temperatures.",
+    "service_area_boundary": "SOS Plumbing and Air serves the Inland Empire — Riverside County and San Bernardino County, California. Headquartered in Lake Elsinore. Customers outside this area should be directed to a local provider instead.",
+    "flagship_focus": "Water heaters are the flagship offering (the domain is waterheatersos.com) and the deepest specialty, but the company is a full-service plumbing and HVAC contractor. Water heater replacements are a common financed purchase — reference /discount-water-heaters for current offers."
+  }
+}
