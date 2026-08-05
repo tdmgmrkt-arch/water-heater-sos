@@ -19,6 +19,11 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://waterheatersos.com"),
   alternates: {
     canonical: "/",
+    types: {
+      "application/json": [
+        { url: "/ai-actions.json", title: "SOS Plumbing and Air AI Service Menu" },
+      ],
+    },
   },
   openGraph: {
     type: "website",

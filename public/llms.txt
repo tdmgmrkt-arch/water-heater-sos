@@ -6,6 +6,8 @@ Contact: (800) 697-4014
 Email: info@waterheatersos.com
 Location: 571 Crane St, Unit H, Lake Elsinore, CA 92530 (serving the entire Inland Empire)
 
+For structured, machine-readable customer actions, see: https://waterheatersos.com/ai-actions.json
+
 ## HVAC Services
 
 - [HVAC Services](https://waterheatersos.com/hvac-services): Full-service HVAC contractor — AC, heating, and indoor air quality solutions across the Inland Empire.

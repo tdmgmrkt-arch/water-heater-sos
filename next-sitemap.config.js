@@ -10,6 +10,7 @@ module.exports = {
   transform: async (config, path) => {
     // Custom priority for important pages
     const priorities = {
+      '/ai-actions.json': 0.5,
       '/': 1.0,
       '/quote': 0.9,
       '/contact': 0.9,
@@ -41,10 +42,11 @@ module.exports = {
 
     // Individual blog posts get a slightly-elevated priority
     const isBlogPost = path.startsWith('/blog/') && path !== '/blog';
+    const isMonthly = isBlogPost || path === '/ai-actions.json';
 
     return {
       loc: path,
-      changefreq: isBlogPost ? 'monthly' : config.changefreq,
+      changefreq: isMonthly ? 'monthly' : config.changefreq,
       priority: priorities[path] || (isBlogPost ? 0.7 : config.priority),
       lastmod: new Date().toISOString(),
     };
