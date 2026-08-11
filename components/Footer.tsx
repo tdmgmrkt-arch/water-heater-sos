@@ -12,6 +12,7 @@ const footerLinks = {
   quickLinks: [
     { name: "Home", href: "/" },
     { name: "About Us", href: "/about" },
+    { name: "Transparent Pricing", href: "/transparent-pricing" },
     { name: "Blog", href: "/blog" },
     { name: "Contact", href: "/contact" },
     { name: "Service Area", href: "/service-area" },

@@ -38,11 +38,12 @@ module.exports = {
       '/whole-home-humidifier': 0.8,
       '/whole-home-dehumidifier': 0.8,
       '/hvac-maintenance-plan': 0.8,
+      '/transparent-pricing': 0.8,
     };
 
     // Individual blog posts get a slightly-elevated priority
     const isBlogPost = path.startsWith('/blog/') && path !== '/blog';
-    const isMonthly = isBlogPost || path === '/ai-actions.json';
+    const isMonthly = isBlogPost || path === '/ai-actions.json' || path === '/transparent-pricing';
 
     return {
       loc: path,

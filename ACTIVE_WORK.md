@@ -1,6 +1,6 @@
 # Active Work — SOS Plumbing and Air
 
-_Last updated: 2026-06-11 (repo move completed)_
+_Last updated: 2026-08-11_
 
 ---
 
@@ -24,6 +24,7 @@ _None._
 
 ## Recently Completed
 
+- 2026-08-11 — **`/transparent-pricing` page shipped** (uncommitted). Ported from Gardner Plumbing Co. and rebranded for SOS: orange brand palette, phone (800) 697-4014, CA LIC #1140776, "the Inland Empire" region phrase. Expanded pricing tables to cover all 3 verticals from SOS Transparency Pricing Guide PDF: service call/diagnostic fees, drain & sewer, water heaters (dedicated section — SOS flagship), faucets/fixtures/valves, garbage disposals, leak detection, repiping, gas lines, sewer replacement, HVAC diagnostic, AC repairs, heating repairs. New sections not in Gardner: Property Management/Realtor/HOA partnerships, HVAC pricing. Includes SOS Promise section (inline, no separate component), 5 SOS-branded story testimonials across Inland Empire cities, 11 FAQ accordion with plumbing + water heater + HVAC questions, final CTA, sticky mobile CTA. Header updated: added "Transparent Pricing" (featured) to Contact dropdown. next-sitemap.config.js: priority 0.8, monthly changefreq. Build clean, all files uncommitted for user review. **Open:** verify CA LIC #1140776 vs PDF's #677889; wire live Google reviews after launch.
 - 2026-07-21 — **Blog system launched.** Built `/blog` index + dynamic `/blog/[slug]` route with 10 seeded, monthly-dated (2025-10 through 2026-07) local-SEO posts covering water heater, plumbing, HVAC, and IAQ topics. Each post includes 4+ internal links to service pages and at least one authoritative external citation (energy.gov, epa.gov, cdc.gov, arb.ca.gov, energystar.gov, usgs.gov, cpsc.gov, waterboards.ca.gov, switchison.org, airnow.gov). Blog nav link added to Header (Contact dropdown) + Footer (quickLinks + resources). Sitemap config updated with `/blog` priority 0.8 and `/blog/*` priority 0.7. Unsplash stock images used for covers (added `images.unsplash.com` to next.config remotePatterns). Full JSON-LD `Blog` + `BlogPosting` schema. Build verified — all 11 blog routes prerender successfully.
 - 2026-06-11 — Repo move to `~/agency/clients/water-heater-sos/` completed. Old `C:\Users\Owner\water-heater-sos*` folders removed. Git remote + Vercel unaffected.
 - 2026-06-11 — GBP Coherence Audit completed. Maps Health Score: 48/100. Full audit saved to `/audits/gbp-coherence-2026-06-11.md`.

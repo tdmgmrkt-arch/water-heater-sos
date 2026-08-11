@@ -16,6 +16,7 @@ import {
   TrendingUp,
   Snowflake,
   BookOpen,
+  DollarSign,
 } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Container } from "./Container";
@@ -119,6 +120,7 @@ const menuStructure: Record<string, MenuCategory> = {
       { name: "Blog", href: "/blog", desc: "Field notes & homeowner guides", icon: BookOpen },
       { name: "Discounts", href: "/discount-water-heaters", desc: "Get Water Heater Discounts", icon: Ticket },
       { name: "Service Area", href: "/service-area", desc: "Areas We Service", icon: MapIcon },
+      { name: "Transparent Pricing", href: "/transparent-pricing", desc: "Upfront pricing on every service", icon: DollarSign, featured: true },
     ],
   },
 };
