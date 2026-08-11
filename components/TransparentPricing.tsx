@@ -754,7 +754,7 @@ export function TransparentPricing() {
             >
               <div className="relative overflow-hidden rounded-2xl shadow-2xl">
                 <Image
-                  src="/wh-sos-service-rep.webp"
+                  src="/sos-technician-hero.webp"
                   alt="SOS Plumbing and Air technician — transparent pricing, upfront written estimates with no hidden fees across the Inland Empire"
                   width={1200}
                   height={1500}
@@ -963,12 +963,12 @@ export function TransparentPricing() {
             >
               <div className="relative overflow-hidden rounded-2xl shadow-2xl">
                 <Image
-                  src="/wh-sos-service-rep.webp"
-                  alt="SOS Plumbing and Air service representative reviewing a written quote with a homeowner — no obligation"
+                  src="/sos-technician-assessment.webp"
+                  alt="SOS Plumbing and Air technician assessing a water heater before providing a written estimate — no obligation, no pressure across the Inland Empire"
                   width={1200}
                   height={1500}
                   sizes="(max-width: 1024px) 100vw, 50vw"
-                  className="w-full h-[400px] lg:h-[500px] object-cover object-top"
+                  className="w-full h-[400px] lg:h-[500px] object-cover object-center"
                 />
                 <div className="absolute bottom-6 left-6 rounded-2xl p-4 border border-white/20 shadow-2xl bg-black/60 backdrop-blur-md">
                   <div className="flex items-center gap-3">
