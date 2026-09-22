@@ -4,6 +4,7 @@ import "./globals.css";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { FloatingActions } from "@/components/FloatingActions";
+import { AccessibilityWidget } from "@/components/AccessibilityWidget";
 import { FooterCTAProvider } from "@/contexts/FooterCTAContext";
 
 export const metadata: Metadata = {
@@ -199,6 +200,7 @@ export default function RootLayout({
           <main>{children}</main>
           <Footer />
           <FloatingActions />
+          <AccessibilityWidget />
         </FooterCTAProvider>
       </body>
     </html>
