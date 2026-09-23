@@ -11,6 +11,7 @@ const sections = [
   { id: "usage-data", title: "Usage Data" },
   { id: "tracking-cookies", title: "Tracking & Cookies Data" },
   { id: "use-of-data", title: "Use of Data" },
+  { id: "sms-communications", title: "SMS / Text Message Communications" },
   { id: "legal-basis", title: "Legal Basis for Processing (GDPR)" },
   { id: "retention", title: "Retention of Data" },
   { id: "transfer", title: "Transfer of Data" },
@@ -73,7 +74,7 @@ export function PrivacyPolicyContent() {
 
             <div className="flex items-center justify-center gap-2 text-gray-300">
               <Calendar className="h-4 w-4" />
-              <p className="text-lg">Effective Date: August 3, 2024</p>
+              <p className="text-lg">Effective Date: August 3, 2024 &middot; Last Updated: September 23, 2026</p>
             </div>
           </motion.div>
         </div>
@@ -264,6 +265,52 @@ export function PrivacyPolicyContent() {
                       <li>To monitor the usage of our Service</li>
                       <li>To detect, prevent and address technical issues</li>
                     </ul>
+                  </div>
+                </div>
+
+                {/* SMS / Text Message Communications */}
+                <div id="sms-communications" className="scroll-mt-24 mb-12">
+                  <h2 className="text-3xl font-bold text-[#11110E] mb-6 flex items-center gap-3">
+                    <span className="w-1 h-8 bg-gradient-to-b from-[#EA5D19] to-[#FF6E2E] rounded-full"></span>
+                    SMS / Text Message Communications
+                  </h2>
+                  <div className="bg-white p-8 rounded-2xl shadow-lg border border-gray-100">
+                    <p className="text-gray-700 leading-relaxed mb-4">
+                      When you submit a request through our website, you may choose to opt in to receive automated text messages from SOS Plumbing and Air by checking the SMS consent box on our form. Opting in is entirely optional and is never required in order to request service, receive an estimate, or have work performed.
+                    </p>
+                    <p className="text-gray-700 leading-relaxed mb-4">
+                      The consent language presented on our form reads:
+                    </p>
+                    <div className="bg-[#fffdf9] border-l-4 border-[#EA5D19] p-5 rounded-r-xl mb-6">
+                      <p className="text-gray-700 leading-relaxed italic">
+                        &ldquo;I would like to receive automated text messages from SOS Plumbing and Air for appointment notifications, reminders, and review requests. Message frequency may vary. Message and data rates may apply. Reply HELP for help or STOP to opt out at any time. View our Privacy Policy and Terms of Service.&rdquo;
+                      </p>
+                    </div>
+
+                    <h3 className="font-bold text-[#11110E] mb-3 text-xl">What We Send</h3>
+                    <ul className="list-disc list-inside space-y-2 text-gray-700 ml-4 mb-6">
+                      <li><strong>Appointment notifications</strong> — confirmations, technician dispatch and arrival updates</li>
+                      <li><strong>Reminders</strong> — upcoming appointments and scheduled maintenance</li>
+                      <li><strong>Review requests</strong> — a follow-up after your service is complete</li>
+                    </ul>
+
+                    <h3 className="font-bold text-[#11110E] mb-3 text-xl">Message Frequency and Rates</h3>
+                    <p className="text-gray-700 leading-relaxed mb-6">
+                      Message frequency may vary based on your service activity. Message and data rates may apply according to your mobile carrier plan. SOS Plumbing and Air does not charge for text messages.
+                    </p>
+
+                    <h3 className="font-bold text-[#11110E] mb-3 text-xl">How to Opt Out or Get Help</h3>
+                    <p className="text-gray-700 leading-relaxed mb-6">
+                      You may opt out at any time by replying <strong>STOP</strong> to any message from us. You will receive a single confirmation message and will not receive further texts unless you opt back in. Reply <strong>HELP</strong> at any time for assistance, or contact us directly at{" "}
+                      <a href="tel:8006974014" className="text-[#EA5D19] font-semibold hover:underline">(800) 697-4014</a>.
+                    </p>
+
+                    <h3 className="font-bold text-[#11110E] mb-3 text-xl">How We Handle Your SMS Consent and Phone Number</h3>
+                    <div className="bg-[#fffdf9] border-l-4 border-[#EA5D19] p-5 rounded-r-xl">
+                      <p className="text-gray-700 leading-relaxed">
+                        <strong>SMS opt-in consent and phone numbers are never shared with, sold to, or rented to third parties or affiliates for marketing or promotional purposes.</strong> Phone numbers collected for SMS purposes are used solely by SOS Plumbing and Air and the service providers that operate our messaging platform on our behalf, and only for the message types described above.
+                      </p>
+                    </div>
                   </div>
                 </div>
 

@@ -460,7 +460,8 @@ export function QuoteContent() {
                     <textarea id="description" name="description" value={formData.description} onChange={handleInputChange} rows={8} className="w-full px-4 py-2.5 rounded-lg border border-gray-300 focus:ring-2 focus:ring-[#EA5D19] focus:border-transparent outline-none transition-all resize-none" placeholder="Let us know what service you're interested in or need help with" required/>
                 </div>
 
-                {/* SMS Consent Checkbox - A2P Compliance */}
+                {/* SMS Consent Checkbox - A2P Compliance. Intentionally optional: consent to
+                    automated texts is not a condition of requesting or receiving service. */}
                 <div className="flex items-start gap-3">
                   <input
                     type="checkbox"
@@ -469,10 +470,9 @@ export function QuoteContent() {
                     checked={smsConsent}
                     onChange={(e) => setSmsConsent(e.target.checked)}
                     className="mt-1 h-4 w-4 rounded border-gray-300 text-[#EA5D19] focus:ring-[#EA5D19] cursor-pointer"
-                    required
                   />
                   <label htmlFor="smsConsent" className="text-xs text-gray-600 leading-relaxed cursor-pointer">
-                    <span className="text-red-500">*</span> By checking this box, I consent to receive SMS messages from SOS Plumbing and Air. Msg frequency varies. Msg & data rates may apply. Reply STOP to opt out, HELP for help. View our{" "}
+                    I would like to receive automated text messages from SOS Plumbing and Air for appointment notifications, reminders, and review requests. Message frequency may vary. Message and data rates may apply. Reply HELP for help or STOP to opt out at any time. View our{" "}
                     <a href="/privacy-policy" className="underline hover:text-[#EA5D19]">Privacy Policy</a>{" "}
                     and{" "}
                     <a href="/terms-of-service" className="underline hover:text-[#EA5D19]">Terms of Service</a>.

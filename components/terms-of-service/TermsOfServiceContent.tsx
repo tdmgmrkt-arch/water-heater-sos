@@ -14,6 +14,7 @@ const sections = [
   { id: "property-access", title: "Property Access" },
   { id: "customer-responsibilities", title: "Customer Responsibilities" },
   { id: "cancellation", title: "Cancellation Policy" },
+  { id: "sms-terms", title: "SMS / Text Message Terms" },
   { id: "intellectual-property", title: "Intellectual Property" },
   { id: "indemnification", title: "Indemnification" },
   { id: "governing-law", title: "Governing Law" },
@@ -69,7 +70,7 @@ export function TermsOfServiceContent() {
 
             <div className="flex items-center justify-center gap-2 text-gray-300">
               <Calendar className="h-4 w-4" />
-              <p className="text-lg">Effective Date: August 3, 2024</p>
+              <p className="text-lg">Effective Date: August 3, 2024 &middot; Last Updated: September 23, 2026</p>
             </div>
           </motion.div>
         </div>
@@ -313,6 +314,63 @@ export function TermsOfServiceContent() {
                     <p className="text-gray-700 leading-relaxed mt-4">
                       To cancel or reschedule an appointment, please contact us as soon as possible at (951) 600-5010.
                     </p>
+                  </div>
+                </div>
+
+                {/* SMS / Text Message Terms */}
+                <div id="sms-terms" className="scroll-mt-24 mb-12">
+                  <h2 className="text-3xl font-bold text-[#11110E] mb-6 flex items-center gap-3">
+                    <span className="w-1 h-8 bg-gradient-to-b from-[#EA5D19] to-[#FF6E2E] rounded-full"></span>
+                    SMS / Text Message Terms
+                  </h2>
+                  <div className="bg-white p-8 rounded-2xl shadow-lg border border-gray-100">
+                    <h3 className="font-bold text-[#11110E] mb-3 text-xl">Program Description</h3>
+                    <p className="text-gray-700 leading-relaxed mb-6">
+                      SOS Plumbing and Air operates an automated text message program for customers who choose to opt in. Participants receive text messages related to their service, specifically: appointment notifications, reminders, and review requests.
+                    </p>
+
+                    <h3 className="font-bold text-[#11110E] mb-3 text-xl">How You Opt In</h3>
+                    <p className="text-gray-700 leading-relaxed mb-4">
+                      You are enrolled only when you affirmatively check the SMS consent box on a form on our website, which reads:
+                    </p>
+                    <div className="bg-[#fffdf9] border-l-4 border-[#EA5D19] p-5 rounded-r-xl mb-4">
+                      <p className="text-gray-700 leading-relaxed italic">
+                        &ldquo;I would like to receive automated text messages from SOS Plumbing and Air for appointment notifications, reminders, and review requests. Message frequency may vary. Message and data rates may apply. Reply HELP for help or STOP to opt out at any time. View our Privacy Policy and Terms of Service.&rdquo;
+                      </p>
+                    </div>
+                    <p className="text-gray-700 leading-relaxed mb-6">
+                      Consent to receive automated text messages is <strong>not a condition of purchase</strong> and is never required in order to request service, receive an estimate, or have work performed by SOS Plumbing and Air.
+                    </p>
+
+                    <h3 className="font-bold text-[#11110E] mb-3 text-xl">Message Frequency and Cost</h3>
+                    <p className="text-gray-700 leading-relaxed mb-6">
+                      Message frequency may vary based on your service activity. Message and data rates may apply. SOS Plumbing and Air does not charge for text messages; any charges come from your mobile carrier under your plan.
+                    </p>
+
+                    <h3 className="font-bold text-[#11110E] mb-3 text-xl">Opting Out (STOP)</h3>
+                    <p className="text-gray-700 leading-relaxed mb-6">
+                      You may cancel at any time by replying <strong>STOP</strong> to any message you receive from us. You will receive a single confirmation message, after which we will send no further texts unless you opt in again.
+                    </p>
+
+                    <h3 className="font-bold text-[#11110E] mb-3 text-xl">Getting Help (HELP)</h3>
+                    <p className="text-gray-700 leading-relaxed mb-6">
+                      Reply <strong>HELP</strong> to any message for assistance, or contact us at{" "}
+                      <a href="tel:8006974014" className="text-[#EA5D19] font-semibold hover:underline">(800) 697-4014</a>.
+                    </p>
+
+                    <h3 className="font-bold text-[#11110E] mb-3 text-xl">Carriers and Delivery</h3>
+                    <p className="text-gray-700 leading-relaxed mb-6">
+                      This program is available to subscribers of participating United States mobile carriers. Wireless carriers are not liable for delayed or undelivered messages. Message delivery is subject to the availability and capability of your carrier&apos;s network and your device.
+                    </p>
+
+                    <h3 className="font-bold text-[#11110E] mb-3 text-xl">Privacy</h3>
+                    <div className="bg-[#fffdf9] border-l-4 border-[#EA5D19] p-5 rounded-r-xl">
+                      <p className="text-gray-700 leading-relaxed">
+                        <strong>SMS opt-in consent and phone numbers are never shared with, sold to, or rented to third parties or affiliates for marketing or promotional purposes.</strong> See our{" "}
+                        <a href="/privacy-policy" className="text-[#EA5D19] font-semibold hover:underline">Privacy Policy</a>{" "}
+                        for full details on how we handle your information.
+                      </p>
+                    </div>
                   </div>
                 </div>
 
