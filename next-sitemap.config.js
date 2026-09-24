@@ -1,6 +1,6 @@
 /** @type {import('next-sitemap').IConfig} */
 module.exports = {
-  siteUrl: 'https://waterheatersos.com',
+  siteUrl: 'https://sosplumbingandair.com',
   generateRobotsTxt: false, // We have a custom robots.txt
   generateIndexSitemap: false,
   exclude: [],

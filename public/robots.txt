@@ -3,4 +3,4 @@ User-agent: *
 Allow: /
 
 # Sitemap
-Sitemap: https://waterheatersos.com/sitemap.xml
+Sitemap: https://sosplumbingandair.com/sitemap.xml

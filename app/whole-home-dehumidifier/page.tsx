@@ -14,13 +14,13 @@ export const metadata: Metadata = {
     "dehumidifier installation riverside ca",
     "mold prevention inland empire",
   ],
-  alternates: { canonical: "https://waterheatersos.com/whole-home-dehumidifier" },
+  alternates: { canonical: "https://sosplumbingandair.com/whole-home-dehumidifier" },
   openGraph: {
     title: "Whole-Home Dehumidifier Installation in the Inland Empire",
     description:
       "Whole-home dehumidifier installation in the Inland Empire — control summer monsoon humidity & prevent mold. Licensed (CA LIC# 1140776). Call (800) 697-4014.",
     type: "website",
-    url: "https://waterheatersos.com/whole-home-dehumidifier",
+    url: "https://sosplumbingandair.com/whole-home-dehumidifier",
   },
   twitter: {
     card: "summary_large_image",
@@ -35,9 +35,9 @@ const dehumidifierSchema = {
   "@graph": [
     {
       "@type": "HVACBusiness",
-      "@id": "https://waterheatersos.com/#business",
+      "@id": "https://sosplumbingandair.com/#business",
       name: "SOS Plumbing and Air",
-      url: "https://waterheatersos.com",
+      url: "https://sosplumbingandair.com",
       telephone: "+18006974014",
       priceRange: "$1,200\u2013$3,000",
       description:
@@ -85,13 +85,13 @@ const dehumidifierSchema = {
     },
     {
       "@type": "Service",
-      "@id": "https://waterheatersos.com/whole-home-dehumidifier#service",
+      "@id": "https://sosplumbingandair.com/whole-home-dehumidifier#service",
       name: "Whole-Home Dehumidifier Installation",
       serviceType: "Whole-Home Dehumidifier Installation",
-      url: "https://waterheatersos.com/whole-home-dehumidifier",
+      url: "https://sosplumbingandair.com/whole-home-dehumidifier",
       description:
         "Whole-home dehumidifier installation in the Inland Empire. Standalone whole-home units integrated with existing HVAC ductwork. Prevents mold, reduces musty odors, and improves comfort during summer monsoon season. Licensed HVAC contractor (CA LIC# 1140776).",
-      provider: { "@id": "https://waterheatersos.com/#business" },
+      provider: { "@id": "https://sosplumbingandair.com/#business" },
       areaServed: [
         { "@type": "City", name: "Riverside" }, { "@type": "City", name: "Moreno Valley" },
         { "@type": "City", name: "Corona" }, { "@type": "City", name: "San Bernardino" },
@@ -110,7 +110,7 @@ const dehumidifierSchema = {
     },
     {
       "@type": "FAQPage",
-      "@id": "https://waterheatersos.com/whole-home-dehumidifier#faq",
+      "@id": "https://sosplumbingandair.com/whole-home-dehumidifier#faq",
       mainEntity: [
         {
           "@type": "Question",
@@ -180,12 +180,12 @@ const dehumidifierSchema = {
     },
     {
       "@type": "BreadcrumbList",
-      "@id": "https://waterheatersos.com/whole-home-dehumidifier#breadcrumb",
+      "@id": "https://sosplumbingandair.com/whole-home-dehumidifier#breadcrumb",
       itemListElement: [
-        { "@type": "ListItem", position: 1, name: "Home", item: "https://waterheatersos.com" },
-        { "@type": "ListItem", position: 2, name: "HVAC Services", item: "https://waterheatersos.com/hvac-services" },
-        { "@type": "ListItem", position: 3, name: "Indoor Air Quality", item: "https://waterheatersos.com/indoor-air-quality" },
-        { "@type": "ListItem", position: 4, name: "Whole-Home Dehumidifier", item: "https://waterheatersos.com/whole-home-dehumidifier" },
+        { "@type": "ListItem", position: 1, name: "Home", item: "https://sosplumbingandair.com" },
+        { "@type": "ListItem", position: 2, name: "HVAC Services", item: "https://sosplumbingandair.com/hvac-services" },
+        { "@type": "ListItem", position: 3, name: "Indoor Air Quality", item: "https://sosplumbingandair.com/indoor-air-quality" },
+        { "@type": "ListItem", position: 4, name: "Whole-Home Dehumidifier", item: "https://sosplumbingandair.com/whole-home-dehumidifier" },
       ],
     },
   ],

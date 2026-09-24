@@ -18,10 +18,10 @@ export const metadata: Metadata = {
     description:
       "Expert plumbing services in Loma Linda, CA. Water heater repair & replacement, leak detection, and more.",
     type: "website",
-    url: "https://waterheatersos.com/loma-linda",
+    url: "https://sosplumbingandair.com/loma-linda",
   },
   alternates: {
-    canonical: "https://waterheatersos.com/loma-linda",
+    canonical: "https://sosplumbingandair.com/loma-linda",
   },
 };
 

@@ -14,13 +14,13 @@ export const metadata: Metadata = {
     "hvac maintenance inland empire",
     "ac tune up riverside ca",
   ],
-  alternates: { canonical: "https://waterheatersos.com/ac-maintenance" },
+  alternates: { canonical: "https://sosplumbingandair.com/ac-maintenance" },
   openGraph: {
     title: "AC Maintenance & Tune-Up in the Inland Empire | Annual Service",
     description:
       "AC maintenance & tune-ups in the Inland Empire. Annual service keeps your AC running through triple-digit summers. Licensed (CA LIC# 1140776). Call (800) 697-4014.",
     type: "website",
-    url: "https://waterheatersos.com/ac-maintenance",
+    url: "https://sosplumbingandair.com/ac-maintenance",
   },
   twitter: {
     card: "summary_large_image",
@@ -35,9 +35,9 @@ const acMaintenanceSchema = {
   "@graph": [
     {
       "@type": "HVACBusiness",
-      "@id": "https://waterheatersos.com/#business",
+      "@id": "https://sosplumbingandair.com/#business",
       name: "SOS Plumbing and Air",
-      url: "https://waterheatersos.com",
+      url: "https://sosplumbingandair.com",
       telephone: "+18006974014",
       priceRange: "$89\u2013$199",
       description:
@@ -85,13 +85,13 @@ const acMaintenanceSchema = {
     },
     {
       "@type": "Service",
-      "@id": "https://waterheatersos.com/ac-maintenance#service",
+      "@id": "https://sosplumbingandair.com/ac-maintenance#service",
       name: "AC Maintenance",
       serviceType: "AC Maintenance",
-      url: "https://waterheatersos.com/ac-maintenance",
+      url: "https://sosplumbingandair.com/ac-maintenance",
       description:
         "Annual AC maintenance and tune-up service in the Inland Empire. Keeps your AC running at peak efficiency through triple-digit Inland Empire summers. Licensed HVAC contractor (CA LIC# 1140776).",
-      provider: { "@id": "https://waterheatersos.com/#business" },
+      provider: { "@id": "https://sosplumbingandair.com/#business" },
       areaServed: [
         { "@type": "City", name: "Riverside" }, { "@type": "City", name: "Moreno Valley" },
         { "@type": "City", name: "Corona" }, { "@type": "City", name: "San Bernardino" },
@@ -112,7 +112,7 @@ const acMaintenanceSchema = {
     },
     {
       "@type": "FAQPage",
-      "@id": "https://waterheatersos.com/ac-maintenance#faq",
+      "@id": "https://sosplumbingandair.com/ac-maintenance#faq",
       mainEntity: [
         {
           "@type": "Question",
@@ -182,12 +182,12 @@ const acMaintenanceSchema = {
     },
     {
       "@type": "BreadcrumbList",
-      "@id": "https://waterheatersos.com/ac-maintenance#breadcrumb",
+      "@id": "https://sosplumbingandair.com/ac-maintenance#breadcrumb",
       itemListElement: [
-        { "@type": "ListItem", position: 1, name: "Home", item: "https://waterheatersos.com" },
-        { "@type": "ListItem", position: 2, name: "HVAC Services", item: "https://waterheatersos.com/hvac-services" },
-        { "@type": "ListItem", position: 3, name: "AC Services", item: "https://waterheatersos.com/ac-services" },
-        { "@type": "ListItem", position: 4, name: "AC Maintenance", item: "https://waterheatersos.com/ac-maintenance" },
+        { "@type": "ListItem", position: 1, name: "Home", item: "https://sosplumbingandair.com" },
+        { "@type": "ListItem", position: 2, name: "HVAC Services", item: "https://sosplumbingandair.com/hvac-services" },
+        { "@type": "ListItem", position: 3, name: "AC Services", item: "https://sosplumbingandair.com/ac-services" },
+        { "@type": "ListItem", position: 4, name: "AC Maintenance", item: "https://sosplumbingandair.com/ac-maintenance" },
       ],
     },
   ],

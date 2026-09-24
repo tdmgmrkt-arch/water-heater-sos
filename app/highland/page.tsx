@@ -19,10 +19,10 @@ export const metadata: Metadata = {
     description:
       "Expert plumbing services in Highland, CA. Water heater repair & replacement, leak detection, and more.",
     type: "website",
-    url: "https://waterheatersos.com/highland",
+    url: "https://sosplumbingandair.com/highland",
   },
   alternates: {
-    canonical: "https://waterheatersos.com/highland",
+    canonical: "https://sosplumbingandair.com/highland",
   },
 };
 

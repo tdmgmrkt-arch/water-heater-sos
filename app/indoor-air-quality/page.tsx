@@ -14,13 +14,13 @@ export const metadata: Metadata = {
     "wildfire smoke air filter inland empire",
     "whole house air filtration inland empire",
   ],
-  alternates: { canonical: "https://waterheatersos.com/indoor-air-quality" },
+  alternates: { canonical: "https://sosplumbingandair.com/indoor-air-quality" },
   openGraph: {
     title: "Indoor Air Quality Services in the Inland Empire | IAQ Contractor",
     description:
       "Indoor air quality services in the Inland Empire — air duct cleaning, filtration, UV purifiers, humidifiers & dehumidifiers. Licensed (CA LIC# 1140776). Call (800) 697-4014.",
     type: "website",
-    url: "https://waterheatersos.com/indoor-air-quality",
+    url: "https://sosplumbingandair.com/indoor-air-quality",
   },
   twitter: {
     card: "summary_large_image",
@@ -35,9 +35,9 @@ const indoorAirQualitySchema = {
   "@graph": [
     {
       "@type": "HVACBusiness",
-      "@id": "https://waterheatersos.com/#business",
+      "@id": "https://sosplumbingandair.com/#business",
       name: "SOS Plumbing and Air",
-      url: "https://waterheatersos.com",
+      url: "https://sosplumbingandair.com",
       telephone: "+18006974014",
       priceRange: "$200\u2013$3,500",
       description:
@@ -85,22 +85,22 @@ const indoorAirQualitySchema = {
     },
     {
       "@type": "CollectionPage",
-      "@id": "https://waterheatersos.com/indoor-air-quality#page",
+      "@id": "https://sosplumbingandair.com/indoor-air-quality#page",
       name: "Indoor Air Quality Services in the Inland Empire",
-      url: "https://waterheatersos.com/indoor-air-quality",
+      url: "https://sosplumbingandair.com/indoor-air-quality",
       description:
         "Indoor air quality services in the Inland Empire — air duct cleaning, whole-home air filtration, UV purifiers, humidifiers, and dehumidifiers. Licensed IAQ contractor (CA LIC# 1140776).",
-      provider: { "@id": "https://waterheatersos.com/#business" },
+      provider: { "@id": "https://sosplumbingandair.com/#business" },
       hasPart: [
-        { "@type": "WebPage", url: "https://waterheatersos.com/air-duct-cleaning" },
-        { "@type": "WebPage", url: "https://waterheatersos.com/air-filtration" },
-        { "@type": "WebPage", url: "https://waterheatersos.com/whole-home-humidifier" },
-        { "@type": "WebPage", url: "https://waterheatersos.com/whole-home-dehumidifier" },
+        { "@type": "WebPage", url: "https://sosplumbingandair.com/air-duct-cleaning" },
+        { "@type": "WebPage", url: "https://sosplumbingandair.com/air-filtration" },
+        { "@type": "WebPage", url: "https://sosplumbingandair.com/whole-home-humidifier" },
+        { "@type": "WebPage", url: "https://sosplumbingandair.com/whole-home-dehumidifier" },
       ],
     },
     {
       "@type": "FAQPage",
-      "@id": "https://waterheatersos.com/indoor-air-quality#faq",
+      "@id": "https://sosplumbingandair.com/indoor-air-quality#faq",
       mainEntity: [
         {
           "@type": "Question",
@@ -146,11 +146,11 @@ const indoorAirQualitySchema = {
     },
     {
       "@type": "BreadcrumbList",
-      "@id": "https://waterheatersos.com/indoor-air-quality#breadcrumb",
+      "@id": "https://sosplumbingandair.com/indoor-air-quality#breadcrumb",
       itemListElement: [
-        { "@type": "ListItem", position: 1, name: "Home", item: "https://waterheatersos.com" },
-        { "@type": "ListItem", position: 2, name: "HVAC Services", item: "https://waterheatersos.com/hvac-services" },
-        { "@type": "ListItem", position: 3, name: "Indoor Air Quality", item: "https://waterheatersos.com/indoor-air-quality" },
+        { "@type": "ListItem", position: 1, name: "Home", item: "https://sosplumbingandair.com" },
+        { "@type": "ListItem", position: 2, name: "HVAC Services", item: "https://sosplumbingandair.com/hvac-services" },
+        { "@type": "ListItem", position: 3, name: "Indoor Air Quality", item: "https://sosplumbingandair.com/indoor-air-quality" },
       ],
     },
   ],

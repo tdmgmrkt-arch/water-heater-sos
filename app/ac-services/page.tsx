@@ -15,14 +15,14 @@ export const metadata: Metadata = {
     "ac company inland empire",
   ],
   alternates: {
-    canonical: "https://waterheatersos.com/ac-services",
+    canonical: "https://sosplumbingandair.com/ac-services",
   },
   openGraph: {
     title: "AC Services in the Inland Empire | Air Conditioning Contractor",
     description:
       "AC services in the Inland Empire — repair, installation, maintenance & mini-splits. Licensed (CA LIC# 1140776), same-day service. Call (800) 697-4014.",
     type: "website",
-    url: "https://waterheatersos.com/ac-services",
+    url: "https://sosplumbingandair.com/ac-services",
   },
   twitter: {
     card: "summary_large_image",
@@ -37,9 +37,9 @@ const acServicesSchema = {
   "@graph": [
     {
       "@type": "HVACBusiness",
-      "@id": "https://waterheatersos.com/#business",
+      "@id": "https://sosplumbingandair.com/#business",
       name: "SOS Plumbing and Air",
-      url: "https://waterheatersos.com",
+      url: "https://sosplumbingandair.com",
       telephone: "+18006974014",
       priceRange: "$89\u2013$12,000",
       description:
@@ -103,23 +103,23 @@ const acServicesSchema = {
     },
     {
       "@type": "CollectionPage",
-      "@id": "https://waterheatersos.com/ac-services#page",
+      "@id": "https://sosplumbingandair.com/ac-services#page",
       name: "Air Conditioning Services in the Inland Empire",
-      url: "https://waterheatersos.com/ac-services",
+      url: "https://sosplumbingandair.com/ac-services",
       description:
         "Complete air conditioning services in the Inland Empire — AC repair, installation, maintenance, ductless mini-split installation, and smart thermostat installation. Licensed HVAC contractor (CA LIC# 1140776).",
-      provider: { "@id": "https://waterheatersos.com/#business" },
+      provider: { "@id": "https://sosplumbingandair.com/#business" },
       hasPart: [
-        { "@type": "WebPage", url: "https://waterheatersos.com/ac-repair" },
-        { "@type": "WebPage", url: "https://waterheatersos.com/ac-installation" },
-        { "@type": "WebPage", url: "https://waterheatersos.com/ac-maintenance" },
-        { "@type": "WebPage", url: "https://waterheatersos.com/mini-split-installation" },
-        { "@type": "WebPage", url: "https://waterheatersos.com/thermostat-installation" },
+        { "@type": "WebPage", url: "https://sosplumbingandair.com/ac-repair" },
+        { "@type": "WebPage", url: "https://sosplumbingandair.com/ac-installation" },
+        { "@type": "WebPage", url: "https://sosplumbingandair.com/ac-maintenance" },
+        { "@type": "WebPage", url: "https://sosplumbingandair.com/mini-split-installation" },
+        { "@type": "WebPage", url: "https://sosplumbingandair.com/thermostat-installation" },
       ],
     },
     {
       "@type": "FAQPage",
-      "@id": "https://waterheatersos.com/ac-services#faq",
+      "@id": "https://sosplumbingandair.com/ac-services#faq",
       mainEntity: [
         {
           "@type": "Question",
@@ -165,11 +165,11 @@ const acServicesSchema = {
     },
     {
       "@type": "BreadcrumbList",
-      "@id": "https://waterheatersos.com/ac-services#breadcrumb",
+      "@id": "https://sosplumbingandair.com/ac-services#breadcrumb",
       itemListElement: [
-        { "@type": "ListItem", position: 1, name: "Home", item: "https://waterheatersos.com" },
-        { "@type": "ListItem", position: 2, name: "HVAC Services", item: "https://waterheatersos.com/hvac-services" },
-        { "@type": "ListItem", position: 3, name: "AC Services", item: "https://waterheatersos.com/ac-services" },
+        { "@type": "ListItem", position: 1, name: "Home", item: "https://sosplumbingandair.com" },
+        { "@type": "ListItem", position: 2, name: "HVAC Services", item: "https://sosplumbingandair.com/hvac-services" },
+        { "@type": "ListItem", position: 3, name: "AC Services", item: "https://sosplumbingandair.com/ac-services" },
       ],
     },
   ],

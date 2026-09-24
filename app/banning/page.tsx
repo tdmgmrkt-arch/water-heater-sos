@@ -18,10 +18,10 @@ export const metadata: Metadata = {
     description:
       "Expert plumbing services in Banning, CA. Water heater repair & replacement, tankless installations, and more.",
     type: "website",
-    url: "https://waterheatersos.com/banning",
+    url: "https://sosplumbingandair.com/banning",
   },
   alternates: {
-    canonical: "https://waterheatersos.com/banning",
+    canonical: "https://sosplumbingandair.com/banning",
   },
 };
 

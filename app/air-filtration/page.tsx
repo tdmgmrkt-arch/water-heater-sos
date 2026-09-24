@@ -14,13 +14,13 @@ export const metadata: Metadata = {
     "wildfire smoke air filtration inland empire",
     "air filtration system riverside ca",
   ],
-  alternates: { canonical: "https://waterheatersos.com/air-filtration" },
+  alternates: { canonical: "https://sosplumbingandair.com/air-filtration" },
   openGraph: {
     title: "Whole-Home Air Filtration in the Inland Empire | MERV 13 & HEPA",
     description:
       "Whole-home air filtration installation in the Inland Empire — MERV 13, HEPA & media filters for wildfire smoke, allergens & dust. Licensed (CA LIC# 1140776). Call (800) 697-4014.",
     type: "website",
-    url: "https://waterheatersos.com/air-filtration",
+    url: "https://sosplumbingandair.com/air-filtration",
   },
   twitter: {
     card: "summary_large_image",
@@ -35,9 +35,9 @@ const airFiltrationSchema = {
   "@graph": [
     {
       "@type": "HVACBusiness",
-      "@id": "https://waterheatersos.com/#business",
+      "@id": "https://sosplumbingandair.com/#business",
       name: "SOS Plumbing and Air",
-      url: "https://waterheatersos.com",
+      url: "https://sosplumbingandair.com",
       telephone: "+18006974014",
       priceRange: "$400\u2013$1,800",
       description:
@@ -85,13 +85,13 @@ const airFiltrationSchema = {
     },
     {
       "@type": "Service",
-      "@id": "https://waterheatersos.com/air-filtration#service",
+      "@id": "https://sosplumbingandair.com/air-filtration#service",
       name: "Whole-Home Air Filtration",
       serviceType: "Whole-Home Air Filtration Installation",
-      url: "https://waterheatersos.com/air-filtration",
+      url: "https://sosplumbingandair.com/air-filtration",
       description:
         "Whole-home air filtration installation in the Inland Empire. MERV 13 filter upgrades, HEPA media filters, and whole-house air cleaners for wildfire smoke, allergens, pollen, and dust. Licensed HVAC contractor (CA LIC# 1140776).",
-      provider: { "@id": "https://waterheatersos.com/#business" },
+      provider: { "@id": "https://sosplumbingandair.com/#business" },
       areaServed: [
         { "@type": "City", name: "Riverside" }, { "@type": "City", name: "Moreno Valley" },
         { "@type": "City", name: "Corona" }, { "@type": "City", name: "San Bernardino" },
@@ -110,7 +110,7 @@ const airFiltrationSchema = {
     },
     {
       "@type": "FAQPage",
-      "@id": "https://waterheatersos.com/air-filtration#faq",
+      "@id": "https://sosplumbingandair.com/air-filtration#faq",
       mainEntity: [
         {
           "@type": "Question",
@@ -180,12 +180,12 @@ const airFiltrationSchema = {
     },
     {
       "@type": "BreadcrumbList",
-      "@id": "https://waterheatersos.com/air-filtration#breadcrumb",
+      "@id": "https://sosplumbingandair.com/air-filtration#breadcrumb",
       itemListElement: [
-        { "@type": "ListItem", position: 1, name: "Home", item: "https://waterheatersos.com" },
-        { "@type": "ListItem", position: 2, name: "HVAC Services", item: "https://waterheatersos.com/hvac-services" },
-        { "@type": "ListItem", position: 3, name: "Indoor Air Quality", item: "https://waterheatersos.com/indoor-air-quality" },
-        { "@type": "ListItem", position: 4, name: "Air Filtration", item: "https://waterheatersos.com/air-filtration" },
+        { "@type": "ListItem", position: 1, name: "Home", item: "https://sosplumbingandair.com" },
+        { "@type": "ListItem", position: 2, name: "HVAC Services", item: "https://sosplumbingandair.com/hvac-services" },
+        { "@type": "ListItem", position: 3, name: "Indoor Air Quality", item: "https://sosplumbingandair.com/indoor-air-quality" },
+        { "@type": "ListItem", position: 4, name: "Air Filtration", item: "https://sosplumbingandair.com/air-filtration" },
       ],
     },
   ],

@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     type: "website",
   },
   alternates: {
-    canonical: "https://waterheatersos.com/garbage-disposal-repair-replacement",
+    canonical: "https://sosplumbingandair.com/garbage-disposal-repair-replacement",
   },
 };
 

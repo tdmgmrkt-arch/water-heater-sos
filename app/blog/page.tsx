@@ -14,14 +14,14 @@ export const metadata: Metadata = {
     "home maintenance blog",
   ],
   alternates: {
-    canonical: "https://waterheatersos.com/blog",
+    canonical: "https://sosplumbingandair.com/blog",
   },
   openGraph: {
     title: "Inland Empire Plumbing, Water Heater & HVAC Blog | SOS Plumbing and Air",
     description:
       "Practical guides from a licensed Inland Empire contractor — water heaters, plumbing, AC, heating, and indoor air quality tips for Riverside and San Bernardino County homeowners.",
     type: "website",
-    url: "https://waterheatersos.com/blog",
+    url: "https://sosplumbingandair.com/blog",
   },
 };
 
@@ -31,21 +31,21 @@ export default function BlogPage() {
   const blogSchema = {
     "@context": "https://schema.org",
     "@type": "Blog",
-    "@id": "https://waterheatersos.com/blog#blog",
+    "@id": "https://sosplumbingandair.com/blog#blog",
     name: "SOS Plumbing and Air — Field Notes",
     description:
       "Homeowner-friendly guides on water heaters, plumbing, and HVAC from a licensed Inland Empire contractor.",
-    url: "https://waterheatersos.com/blog",
+    url: "https://sosplumbingandair.com/blog",
     publisher: {
-      "@id": "https://waterheatersos.com/#organization",
+      "@id": "https://sosplumbingandair.com/#organization",
     },
     blogPost: posts.map((p) => ({
       "@type": "BlogPosting",
       headline: p.title,
       description: p.description,
       datePublished: p.date,
-      url: `https://waterheatersos.com/blog/${p.slug}`,
-      image: `https://waterheatersos.com${p.coverImage}`,
+      url: `https://sosplumbingandair.com/blog/${p.slug}`,
+      image: `https://sosplumbingandair.com${p.coverImage}`,
       author: {
         "@type": "Organization",
         name: p.author,

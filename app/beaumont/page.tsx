@@ -18,10 +18,10 @@ export const metadata: Metadata = {
     description:
       "Expert plumbing services in Beaumont, CA. Water heater repair & replacement, drain cleaning, and more.",
     type: "website",
-    url: "https://waterheatersos.com/beaumont",
+    url: "https://sosplumbingandair.com/beaumont",
   },
   alternates: {
-    canonical: "https://waterheatersos.com/beaumont",
+    canonical: "https://sosplumbingandair.com/beaumont",
   },
 };
 

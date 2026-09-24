@@ -37,7 +37,7 @@ const serviceSchema = {
     "@type": "LocalBusiness",
     name: "SOS Plumbing and Air",
     telephone: "+1-800-697-4014",
-    url: "https://waterheatersos.com",
+    url: "https://sosplumbingandair.com",
     address: {
       "@type": "PostalAddress",
       streetAddress: "571 Crane St Unit H",

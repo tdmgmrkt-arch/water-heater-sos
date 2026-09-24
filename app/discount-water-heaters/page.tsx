@@ -22,10 +22,10 @@ export const metadata: Metadata = {
     description:
       "Save big on water heater services! Get $100 off replacements, $250 off tankless installations, $25 off flushes, and $300 off whole house water filtration.",
     type: "website",
-    url: "https://waterheatersos.com/discount-water-heaters",
+    url: "https://sosplumbingandair.com/discount-water-heaters",
   },
   alternates: {
-    canonical: "https://waterheatersos.com/discount-water-heaters",
+    canonical: "https://sosplumbingandair.com/discount-water-heaters",
   },
 };
 

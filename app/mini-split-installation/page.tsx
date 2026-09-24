@@ -14,13 +14,13 @@ export const metadata: Metadata = {
     "mini split installation riverside ca",
     "ductless hvac inland empire",
   ],
-  alternates: { canonical: "https://waterheatersos.com/mini-split-installation" },
+  alternates: { canonical: "https://sosplumbingandair.com/mini-split-installation" },
   openGraph: {
     title: "Mini-Split Installation in the Inland Empire | Ductless AC Systems",
     description:
       "Ductless mini-split installation in the Inland Empire — single-zone & multi-zone systems for additions, garages & older homes. Licensed (CA LIC# 1140776). Call (800) 697-4014.",
     type: "website",
-    url: "https://waterheatersos.com/mini-split-installation",
+    url: "https://sosplumbingandair.com/mini-split-installation",
   },
   twitter: {
     card: "summary_large_image",
@@ -35,9 +35,9 @@ const miniSplitSchema = {
   "@graph": [
     {
       "@type": "HVACBusiness",
-      "@id": "https://waterheatersos.com/#business",
+      "@id": "https://sosplumbingandair.com/#business",
       name: "SOS Plumbing and Air",
-      url: "https://waterheatersos.com",
+      url: "https://sosplumbingandair.com",
       telephone: "+18006974014",
       priceRange: "$2,500\u2013$8,000",
       description:
@@ -85,13 +85,13 @@ const miniSplitSchema = {
     },
     {
       "@type": "Service",
-      "@id": "https://waterheatersos.com/mini-split-installation#service",
+      "@id": "https://sosplumbingandair.com/mini-split-installation#service",
       name: "Mini-Split Installation",
       serviceType: "Ductless Mini-Split Installation",
-      url: "https://waterheatersos.com/mini-split-installation",
+      url: "https://sosplumbingandair.com/mini-split-installation",
       description:
         "Ductless mini-split installation in the Inland Empire. Single-zone and multi-zone systems for room additions, garages, older homes without ductwork, and targeted zone control. Licensed HVAC contractor (CA LIC# 1140776).",
-      provider: { "@id": "https://waterheatersos.com/#business" },
+      provider: { "@id": "https://sosplumbingandair.com/#business" },
       areaServed: [
         { "@type": "City", name: "Riverside" }, { "@type": "City", name: "Moreno Valley" },
         { "@type": "City", name: "Corona" }, { "@type": "City", name: "San Bernardino" },
@@ -110,7 +110,7 @@ const miniSplitSchema = {
     },
     {
       "@type": "FAQPage",
-      "@id": "https://waterheatersos.com/mini-split-installation#faq",
+      "@id": "https://sosplumbingandair.com/mini-split-installation#faq",
       mainEntity: [
         {
           "@type": "Question",
@@ -180,12 +180,12 @@ const miniSplitSchema = {
     },
     {
       "@type": "BreadcrumbList",
-      "@id": "https://waterheatersos.com/mini-split-installation#breadcrumb",
+      "@id": "https://sosplumbingandair.com/mini-split-installation#breadcrumb",
       itemListElement: [
-        { "@type": "ListItem", position: 1, name: "Home", item: "https://waterheatersos.com" },
-        { "@type": "ListItem", position: 2, name: "HVAC Services", item: "https://waterheatersos.com/hvac-services" },
-        { "@type": "ListItem", position: 3, name: "AC Services", item: "https://waterheatersos.com/ac-services" },
-        { "@type": "ListItem", position: 4, name: "Mini-Split Installation", item: "https://waterheatersos.com/mini-split-installation" },
+        { "@type": "ListItem", position: 1, name: "Home", item: "https://sosplumbingandair.com" },
+        { "@type": "ListItem", position: 2, name: "HVAC Services", item: "https://sosplumbingandair.com/hvac-services" },
+        { "@type": "ListItem", position: 3, name: "AC Services", item: "https://sosplumbingandair.com/ac-services" },
+        { "@type": "ListItem", position: 4, name: "Mini-Split Installation", item: "https://sosplumbingandair.com/mini-split-installation" },
       ],
     },
   ],

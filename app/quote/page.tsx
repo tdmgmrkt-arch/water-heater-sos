@@ -20,7 +20,7 @@ export async function generateMetadata({ searchParams }: Props): Promise<Metadat
       type: "website",
     },
     alternates: {
-      canonical: "https://waterheatersos.com/quote",
+      canonical: "https://sosplumbingandair.com/quote",
     },
     ...(hasQueryParams && {
       robots: {

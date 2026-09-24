@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     type: "website",
   },
   alternates: {
-    canonical: "https://waterheatersos.com/gas-leak-repairs",
+    canonical: "https://sosplumbingandair.com/gas-leak-repairs",
   },
 };
 

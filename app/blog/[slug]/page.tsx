@@ -19,7 +19,7 @@ export async function generateMetadata({
   const post = getBlogPostMeta(slug);
   if (!post) return { title: "Post Not Found" };
 
-  const url = `https://waterheatersos.com/blog/${post.slug}`;
+  const url = `https://sosplumbingandair.com/blog/${post.slug}`;
 
   return {
     title: post.title,
@@ -57,7 +57,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
   const content = blogContentRegistry[slug];
   if (!post || !content) notFound();
 
-  const url = `https://waterheatersos.com/blog/${post.slug}`;
+  const url = `https://sosplumbingandair.com/blog/${post.slug}`;
 
   // Related = 3 most-recent OTHER posts
   const related = getSortedBlogPosts()
@@ -70,16 +70,16 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
     "@id": `${url}#article`,
     headline: post.title,
     description: post.description,
-    image: `https://waterheatersos.com${post.coverImage}`,
+    image: `https://sosplumbingandair.com${post.coverImage}`,
     datePublished: post.date,
     dateModified: post.date,
     author: {
       "@type": "Organization",
       name: post.author,
-      url: "https://waterheatersos.com",
+      url: "https://sosplumbingandair.com",
     },
     publisher: {
-      "@id": "https://waterheatersos.com/#organization",
+      "@id": "https://sosplumbingandair.com/#organization",
     },
     mainEntityOfPage: {
       "@type": "WebPage",

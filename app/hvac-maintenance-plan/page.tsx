@@ -14,13 +14,13 @@ export const metadata: Metadata = {
     "hvac tune up plan inland empire",
     "hvac service plan riverside ca",
   ],
-  alternates: { canonical: "https://waterheatersos.com/hvac-maintenance-plan" },
+  alternates: { canonical: "https://sosplumbingandair.com/hvac-maintenance-plan" },
   openGraph: {
     title: "HVAC Maintenance Plan in the Inland Empire | Annual Service Agreement",
     description:
       "HVAC maintenance plan in the Inland Empire — annual tune-ups for heating & cooling, priority scheduling & repair discounts. Licensed (CA LIC# 1140776). Call (800) 697-4014.",
     type: "website",
-    url: "https://waterheatersos.com/hvac-maintenance-plan",
+    url: "https://sosplumbingandair.com/hvac-maintenance-plan",
   },
   twitter: {
     card: "summary_large_image",
@@ -35,9 +35,9 @@ const hvacMaintenancePlanSchema = {
   "@graph": [
     {
       "@type": "HVACBusiness",
-      "@id": "https://waterheatersos.com/#business",
+      "@id": "https://sosplumbingandair.com/#business",
       name: "SOS Plumbing and Air",
-      url: "https://waterheatersos.com",
+      url: "https://sosplumbingandair.com",
       telephone: "+18006974014",
       description:
         "Licensed HVAC contractor serving the Inland Empire with HVAC maintenance plans — annual heating and cooling tune-ups, priority scheduling, and repair discounts. CA LIC# 1140776.",
@@ -84,13 +84,13 @@ const hvacMaintenancePlanSchema = {
     },
     {
       "@type": "Service",
-      "@id": "https://waterheatersos.com/hvac-maintenance-plan#service",
+      "@id": "https://sosplumbingandair.com/hvac-maintenance-plan#service",
       name: "HVAC Maintenance Plan",
       serviceType: "HVAC Maintenance Plan",
-      url: "https://waterheatersos.com/hvac-maintenance-plan",
+      url: "https://sosplumbingandair.com/hvac-maintenance-plan",
       description:
         "Annual HVAC maintenance plan covering heating and cooling tune-ups, priority scheduling, and repair discounts throughout the Inland Empire. Licensed HVAC contractor (CA LIC# 1140776).",
-      provider: { "@id": "https://waterheatersos.com/#business" },
+      provider: { "@id": "https://sosplumbingandair.com/#business" },
       // 3 plan tiers per draft. Pricing intentionally not exposed in schema until
       // client confirms final tier names + dollar amounts. Each tier surfaces here
       // as an Offer with `description: "Call for pricing"` so AI engines and rich
@@ -129,7 +129,7 @@ const hvacMaintenancePlanSchema = {
     },
     {
       "@type": "FAQPage",
-      "@id": "https://waterheatersos.com/hvac-maintenance-plan#faq",
+      "@id": "https://sosplumbingandair.com/hvac-maintenance-plan#faq",
       mainEntity: [
         {
           "@type": "Question",
@@ -199,12 +199,12 @@ const hvacMaintenancePlanSchema = {
     },
     {
       "@type": "BreadcrumbList",
-      "@id": "https://waterheatersos.com/hvac-maintenance-plan#breadcrumb",
+      "@id": "https://sosplumbingandair.com/hvac-maintenance-plan#breadcrumb",
       itemListElement: [
-        { "@type": "ListItem", position: 1, name: "Home", item: "https://waterheatersos.com" },
-        { "@type": "ListItem", position: 2, name: "HVAC Services", item: "https://waterheatersos.com/hvac-services" },
-        { "@type": "ListItem", position: 3, name: "Heating Services", item: "https://waterheatersos.com/heating-services" },
-        { "@type": "ListItem", position: 4, name: "HVAC Maintenance Plan", item: "https://waterheatersos.com/hvac-maintenance-plan" },
+        { "@type": "ListItem", position: 1, name: "Home", item: "https://sosplumbingandair.com" },
+        { "@type": "ListItem", position: 2, name: "HVAC Services", item: "https://sosplumbingandair.com/hvac-services" },
+        { "@type": "ListItem", position: 3, name: "Heating Services", item: "https://sosplumbingandair.com/heating-services" },
+        { "@type": "ListItem", position: 4, name: "HVAC Maintenance Plan", item: "https://sosplumbingandair.com/hvac-maintenance-plan" },
       ],
     },
   ],

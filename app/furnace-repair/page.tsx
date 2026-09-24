@@ -14,13 +14,13 @@ export const metadata: Metadata = {
     "gas furnace repair inland empire",
     "furnace repair near me",
   ],
-  alternates: { canonical: "https://waterheatersos.com/furnace-repair" },
+  alternates: { canonical: "https://sosplumbingandair.com/furnace-repair" },
   openGraph: {
     title: "Furnace Repair in the Inland Empire | 24/7 Heating Service",
     description:
       "Furnace repair in the Inland Empire — 24/7 emergency service, all brands. Licensed (CA LIC# 1140776). Call (800) 697-4014.",
     type: "website",
-    url: "https://waterheatersos.com/furnace-repair",
+    url: "https://sosplumbingandair.com/furnace-repair",
   },
   twitter: {
     card: "summary_large_image",
@@ -35,9 +35,9 @@ const furnaceRepairSchema = {
   "@graph": [
     {
       "@type": "HVACBusiness",
-      "@id": "https://waterheatersos.com/#business",
+      "@id": "https://sosplumbingandair.com/#business",
       name: "SOS Plumbing and Air",
-      url: "https://waterheatersos.com",
+      url: "https://sosplumbingandair.com",
       telephone: "+18006974014",
       priceRange: "$89\u2013$1,800",
       description:
@@ -85,13 +85,13 @@ const furnaceRepairSchema = {
     },
     {
       "@type": "Service",
-      "@id": "https://waterheatersos.com/furnace-repair#service",
+      "@id": "https://sosplumbingandair.com/furnace-repair#service",
       name: "Furnace Repair",
       serviceType: "Furnace Repair",
-      url: "https://waterheatersos.com/furnace-repair",
+      url: "https://sosplumbingandair.com/furnace-repair",
       description:
         "24/7 furnace repair in the Inland Empire. All major brands, licensed HVAC technicians (CA LIC# 1140776). Serving Riverside County and San Bernardino County.",
-      provider: { "@id": "https://waterheatersos.com/#business" },
+      provider: { "@id": "https://sosplumbingandair.com/#business" },
       areaServed: [
         { "@type": "City", name: "Riverside" }, { "@type": "City", name: "Moreno Valley" },
         { "@type": "City", name: "Corona" }, { "@type": "City", name: "San Bernardino" },
@@ -110,7 +110,7 @@ const furnaceRepairSchema = {
     },
     {
       "@type": "FAQPage",
-      "@id": "https://waterheatersos.com/furnace-repair#faq",
+      "@id": "https://sosplumbingandair.com/furnace-repair#faq",
       mainEntity: [
         {
           "@type": "Question",
@@ -180,12 +180,12 @@ const furnaceRepairSchema = {
     },
     {
       "@type": "BreadcrumbList",
-      "@id": "https://waterheatersos.com/furnace-repair#breadcrumb",
+      "@id": "https://sosplumbingandair.com/furnace-repair#breadcrumb",
       itemListElement: [
-        { "@type": "ListItem", position: 1, name: "Home", item: "https://waterheatersos.com" },
-        { "@type": "ListItem", position: 2, name: "HVAC Services", item: "https://waterheatersos.com/hvac-services" },
-        { "@type": "ListItem", position: 3, name: "Heating Services", item: "https://waterheatersos.com/heating-services" },
-        { "@type": "ListItem", position: 4, name: "Furnace Repair", item: "https://waterheatersos.com/furnace-repair" },
+        { "@type": "ListItem", position: 1, name: "Home", item: "https://sosplumbingandair.com" },
+        { "@type": "ListItem", position: 2, name: "HVAC Services", item: "https://sosplumbingandair.com/hvac-services" },
+        { "@type": "ListItem", position: 3, name: "Heating Services", item: "https://sosplumbingandair.com/heating-services" },
+        { "@type": "ListItem", position: 4, name: "Furnace Repair", item: "https://sosplumbingandair.com/furnace-repair" },
       ],
     },
   ],

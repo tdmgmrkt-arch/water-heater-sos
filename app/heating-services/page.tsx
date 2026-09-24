@@ -14,13 +14,13 @@ export const metadata: Metadata = {
     "furnace services inland empire",
     "heat pump inland empire",
   ],
-  alternates: { canonical: "https://waterheatersos.com/heating-services" },
+  alternates: { canonical: "https://sosplumbingandair.com/heating-services" },
   openGraph: {
     title: "Heating Services in the Inland Empire | Furnace & Heat Pump Contractor",
     description:
       "Heating services in the Inland Empire — furnace repair, installation, maintenance & heat pump systems. Licensed (CA LIC# 1140776). Call (800) 697-4014.",
     type: "website",
-    url: "https://waterheatersos.com/heating-services",
+    url: "https://sosplumbingandair.com/heating-services",
   },
   twitter: {
     card: "summary_large_image",
@@ -35,9 +35,9 @@ const heatingServicesSchema = {
   "@graph": [
     {
       "@type": "HVACBusiness",
-      "@id": "https://waterheatersos.com/#business",
+      "@id": "https://sosplumbingandair.com/#business",
       name: "SOS Plumbing and Air",
-      url: "https://waterheatersos.com",
+      url: "https://sosplumbingandair.com",
       telephone: "+18006974014",
       priceRange: "$89\u2013$18,000",
       description:
@@ -101,23 +101,23 @@ const heatingServicesSchema = {
     },
     {
       "@type": "CollectionPage",
-      "@id": "https://waterheatersos.com/heating-services#page",
+      "@id": "https://sosplumbingandair.com/heating-services#page",
       name: "Heating Services in the Inland Empire",
-      url: "https://waterheatersos.com/heating-services",
+      url: "https://sosplumbingandair.com/heating-services",
       description:
         "Complete heating services in the Inland Empire — furnace repair, furnace installation, furnace maintenance, heat pump systems, and HVAC maintenance plans. Licensed HVAC contractor (CA LIC# 1140776).",
-      provider: { "@id": "https://waterheatersos.com/#business" },
+      provider: { "@id": "https://sosplumbingandair.com/#business" },
       hasPart: [
-        { "@type": "WebPage", url: "https://waterheatersos.com/furnace-repair" },
-        { "@type": "WebPage", url: "https://waterheatersos.com/furnace-installation" },
-        { "@type": "WebPage", url: "https://waterheatersos.com/furnace-maintenance" },
-        { "@type": "WebPage", url: "https://waterheatersos.com/heat-pump-systems" },
-        { "@type": "WebPage", url: "https://waterheatersos.com/hvac-maintenance-plan" },
+        { "@type": "WebPage", url: "https://sosplumbingandair.com/furnace-repair" },
+        { "@type": "WebPage", url: "https://sosplumbingandair.com/furnace-installation" },
+        { "@type": "WebPage", url: "https://sosplumbingandair.com/furnace-maintenance" },
+        { "@type": "WebPage", url: "https://sosplumbingandair.com/heat-pump-systems" },
+        { "@type": "WebPage", url: "https://sosplumbingandair.com/hvac-maintenance-plan" },
       ],
     },
     {
       "@type": "FAQPage",
-      "@id": "https://waterheatersos.com/heating-services#faq",
+      "@id": "https://sosplumbingandair.com/heating-services#faq",
       mainEntity: [
         {
           "@type": "Question",
@@ -163,11 +163,11 @@ const heatingServicesSchema = {
     },
     {
       "@type": "BreadcrumbList",
-      "@id": "https://waterheatersos.com/heating-services#breadcrumb",
+      "@id": "https://sosplumbingandair.com/heating-services#breadcrumb",
       itemListElement: [
-        { "@type": "ListItem", position: 1, name: "Home", item: "https://waterheatersos.com" },
-        { "@type": "ListItem", position: 2, name: "HVAC Services", item: "https://waterheatersos.com/hvac-services" },
-        { "@type": "ListItem", position: 3, name: "Heating Services", item: "https://waterheatersos.com/heating-services" },
+        { "@type": "ListItem", position: 1, name: "Home", item: "https://sosplumbingandair.com" },
+        { "@type": "ListItem", position: 2, name: "HVAC Services", item: "https://sosplumbingandair.com/hvac-services" },
+        { "@type": "ListItem", position: 3, name: "Heating Services", item: "https://sosplumbingandair.com/heating-services" },
       ],
     },
   ],

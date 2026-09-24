@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     type: "website",
   },
   alternates: {
-    canonical: "https://waterheatersos.com/sewer-camera-inspection",
+    canonical: "https://sosplumbingandair.com/sewer-camera-inspection",
   },
 };
 

@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     type: "website",
   },
   alternates: {
-    canonical: "https://waterheatersos.com/air-duct-cleaning",
+    canonical: "https://sosplumbingandair.com/air-duct-cleaning",
   },
 };
 

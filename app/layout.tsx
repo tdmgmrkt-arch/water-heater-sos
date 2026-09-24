@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   authors: [{ name: "SOS Plumbing and Air" }],
   creator: "SOS Plumbing and Air",
   publisher: "SOS Plumbing and Air",
-  metadataBase: new URL("https://waterheatersos.com"),
+  metadataBase: new URL("https://sosplumbingandair.com"),
   alternates: {
     canonical: "/",
     types: {
@@ -29,13 +29,13 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://waterheatersos.com",
+    url: "https://sosplumbingandair.com",
     siteName: "SOS Plumbing and Air",
     title: "SOS Plumbing and Air — Water Heater, HVAC & Plumbing in the Inland Empire",
     description: "Licensed water heater, HVAC, and plumbing contractor serving Riverside and San Bernardino counties. Same-day service, 24/7 emergencies, upfront pricing.",
     images: [
       {
-        url: "https://waterheatersos.com/sos-plumbing-and-air-service-van.webp",
+        url: "https://sosplumbingandair.com/sos-plumbing-and-air-service-van.webp",
         width: 1200,
         height: 630,
         alt: "SOS Plumbing and Air Service Van - Expert Water Heater Services",
@@ -46,7 +46,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "SOS Plumbing and Air",
     description: "Expert water heater services in the Inland Empire",
-    images: ["https://waterheatersos.com/sos-plumbing-and-air-service-van.webp"],
+    images: ["https://sosplumbingandair.com/sos-plumbing-and-air-service-van.webp"],
   },
   robots: {
     index: true,
@@ -74,9 +74,9 @@ export default function RootLayout({
     "@graph": [
       {
         "@type": "LocalBusiness",
-        "@id": "https://waterheatersos.com/#organization",
+        "@id": "https://sosplumbingandair.com/#organization",
         name: "SOS Plumbing and Air",
-        url: "https://waterheatersos.com",
+        url: "https://sosplumbingandair.com",
         telephone: "(800) 697-4014",
         email: "info@waterheatersos.com",
         address: {
@@ -111,8 +111,8 @@ export default function RootLayout({
           },
         ],
         priceRange: "$$",
-        image: "https://waterheatersos.com/sos-logo.webp",
-        logo: "https://waterheatersos.com/sos-logo.webp",
+        image: "https://sosplumbingandair.com/sos-logo.webp",
+        logo: "https://sosplumbingandair.com/sos-logo.webp",
         openingHours: "Mo-Su 00:00-23:59",
         aggregateRating: {
           "@type": "AggregateRating",
@@ -122,27 +122,27 @@ export default function RootLayout({
       },
       {
         "@type": "WebSite",
-        "@id": "https://waterheatersos.com/#website",
-        url: "https://waterheatersos.com",
+        "@id": "https://sosplumbingandair.com/#website",
+        url: "https://sosplumbingandair.com",
         name: "SOS Plumbing and Air",
         publisher: {
-          "@id": "https://waterheatersos.com/#organization",
+          "@id": "https://sosplumbingandair.com/#organization",
         },
         potentialAction: {
           "@type": "SearchAction",
-          target: "https://waterheatersos.com/?s={search_term_string}",
+          target: "https://sosplumbingandair.com/?s={search_term_string}",
           "query-input": "required name=search_term_string",
         },
       },
       {
         "@type": "BreadcrumbList",
-        "@id": "https://waterheatersos.com/#breadcrumb",
+        "@id": "https://sosplumbingandair.com/#breadcrumb",
         itemListElement: [
           {
             "@type": "ListItem",
             position: 1,
             name: "Home",
-            item: "https://waterheatersos.com",
+            item: "https://sosplumbingandair.com",
           },
         ],
       },

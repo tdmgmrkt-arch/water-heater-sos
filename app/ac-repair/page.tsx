@@ -19,14 +19,14 @@ export const metadata: Metadata = {
     "ac repair moreno valley",
   ],
   alternates: {
-    canonical: "https://waterheatersos.com/ac-repair",
+    canonical: "https://sosplumbingandair.com/ac-repair",
   },
   openGraph: {
     title: "AC Repair in the Inland Empire | 24/7 Same-Day Service",
     description:
       "AC repair in the Inland Empire from $150. Licensed techs (CA LIC# 1140776), same-day service, 5-star rated. Call (800) 697-4014.",
     type: "website",
-    url: "https://waterheatersos.com/ac-repair",
+    url: "https://sosplumbingandair.com/ac-repair",
   },
   twitter: {
     card: "summary_large_image",
@@ -50,9 +50,9 @@ const acRepairSchema = {
   "@graph": [
     {
       "@type": "HVACBusiness",
-      "@id": "https://waterheatersos.com/#business",
+      "@id": "https://sosplumbingandair.com/#business",
       name: "SOS Plumbing and Air",
-      url: "https://waterheatersos.com",
+      url: "https://sosplumbingandair.com",
       telephone: "+18006974014",
       priceRange: "$150\u2013$1,800",
       description:
@@ -128,14 +128,14 @@ const acRepairSchema = {
     },
     {
       "@type": "Service",
-      "@id": "https://waterheatersos.com/ac-repair#service",
+      "@id": "https://sosplumbingandair.com/ac-repair#service",
       name: "AC Repair",
       serviceType: "AC Repair",
-      url: "https://waterheatersos.com/ac-repair",
+      url: "https://sosplumbingandair.com/ac-repair",
       description:
         "24/7 emergency AC repair in the Inland Empire. Licensed technicians (CA LIC# 1140776), same-day service, upfront pricing. Serving Riverside County and San Bernardino County.",
       provider: {
-        "@id": "https://waterheatersos.com/#business",
+        "@id": "https://sosplumbingandair.com/#business",
       },
       areaServed: [
         { "@type": "City", name: "Riverside" },
@@ -184,7 +184,7 @@ const acRepairSchema = {
     },
     {
       "@type": "FAQPage",
-      "@id": "https://waterheatersos.com/ac-repair#faq",
+      "@id": "https://sosplumbingandair.com/ac-repair#faq",
       mainEntity: [
         {
           "@type": "Question",
@@ -254,25 +254,25 @@ const acRepairSchema = {
     },
     {
       "@type": "BreadcrumbList",
-      "@id": "https://waterheatersos.com/ac-repair#breadcrumb",
+      "@id": "https://sosplumbingandair.com/ac-repair#breadcrumb",
       itemListElement: [
         {
           "@type": "ListItem",
           position: 1,
           name: "Home",
-          item: "https://waterheatersos.com",
+          item: "https://sosplumbingandair.com",
         },
         {
           "@type": "ListItem",
           position: 2,
           name: "HVAC Services",
-          item: "https://waterheatersos.com/hvac-services",
+          item: "https://sosplumbingandair.com/hvac-services",
         },
         {
           "@type": "ListItem",
           position: 3,
           name: "AC Repair",
-          item: "https://waterheatersos.com/ac-repair",
+          item: "https://sosplumbingandair.com/ac-repair",
         },
       ],
     },

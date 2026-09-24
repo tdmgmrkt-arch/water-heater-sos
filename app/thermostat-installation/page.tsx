@@ -14,13 +14,13 @@ export const metadata: Metadata = {
     "thermostat installation riverside ca",
     "hvac thermostat inland empire",
   ],
-  alternates: { canonical: "https://waterheatersos.com/thermostat-installation" },
+  alternates: { canonical: "https://sosplumbingandair.com/thermostat-installation" },
   openGraph: {
     title: "Thermostat Installation & Replacement in the Inland Empire",
     description:
       "Thermostat installation & replacement in the Inland Empire — smart thermostats, Ecobee, Nest & Honeywell. Licensed (CA LIC# 1140776). Call (800) 697-4014.",
     type: "website",
-    url: "https://waterheatersos.com/thermostat-installation",
+    url: "https://sosplumbingandair.com/thermostat-installation",
   },
   twitter: {
     card: "summary_large_image",
@@ -35,9 +35,9 @@ const thermostatSchema = {
   "@graph": [
     {
       "@type": "HVACBusiness",
-      "@id": "https://waterheatersos.com/#business",
+      "@id": "https://sosplumbingandair.com/#business",
       name: "SOS Plumbing and Air",
-      url: "https://waterheatersos.com",
+      url: "https://sosplumbingandair.com",
       telephone: "+18006974014",
       priceRange: "$149\u2013$450",
       description:
@@ -85,13 +85,13 @@ const thermostatSchema = {
     },
     {
       "@type": "Service",
-      "@id": "https://waterheatersos.com/thermostat-installation#service",
+      "@id": "https://sosplumbingandair.com/thermostat-installation#service",
       name: "Thermostat Installation",
       serviceType: "Thermostat Installation",
-      url: "https://waterheatersos.com/thermostat-installation",
+      url: "https://sosplumbingandair.com/thermostat-installation",
       description:
         "Thermostat installation and replacement in the Inland Empire. Smart thermostats (Ecobee, Nest, Honeywell) and standard programmable thermostats installed by licensed HVAC technicians (CA LIC# 1140776).",
-      provider: { "@id": "https://waterheatersos.com/#business" },
+      provider: { "@id": "https://sosplumbingandair.com/#business" },
       areaServed: [
         { "@type": "City", name: "Riverside" }, { "@type": "City", name: "Moreno Valley" },
         { "@type": "City", name: "Corona" }, { "@type": "City", name: "San Bernardino" },
@@ -110,7 +110,7 @@ const thermostatSchema = {
     },
     {
       "@type": "FAQPage",
-      "@id": "https://waterheatersos.com/thermostat-installation#faq",
+      "@id": "https://sosplumbingandair.com/thermostat-installation#faq",
       mainEntity: [
         {
           "@type": "Question",
@@ -180,12 +180,12 @@ const thermostatSchema = {
     },
     {
       "@type": "BreadcrumbList",
-      "@id": "https://waterheatersos.com/thermostat-installation#breadcrumb",
+      "@id": "https://sosplumbingandair.com/thermostat-installation#breadcrumb",
       itemListElement: [
-        { "@type": "ListItem", position: 1, name: "Home", item: "https://waterheatersos.com" },
-        { "@type": "ListItem", position: 2, name: "HVAC Services", item: "https://waterheatersos.com/hvac-services" },
-        { "@type": "ListItem", position: 3, name: "AC Services", item: "https://waterheatersos.com/ac-services" },
-        { "@type": "ListItem", position: 4, name: "Thermostat Installation", item: "https://waterheatersos.com/thermostat-installation" },
+        { "@type": "ListItem", position: 1, name: "Home", item: "https://sosplumbingandair.com" },
+        { "@type": "ListItem", position: 2, name: "HVAC Services", item: "https://sosplumbingandair.com/hvac-services" },
+        { "@type": "ListItem", position: 3, name: "AC Services", item: "https://sosplumbingandair.com/ac-services" },
+        { "@type": "ListItem", position: 4, name: "Thermostat Installation", item: "https://sosplumbingandair.com/thermostat-installation" },
       ],
     },
   ],

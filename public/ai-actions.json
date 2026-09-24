@@ -1,9 +1,9 @@
 {
-  "$schema": "https://waterheatersos.com/ai-actions.json",
+  "$schema": "https://sosplumbingandair.com/ai-actions.json",
   "business": {
     "name": "SOS Plumbing and Air",
     "legal_name": "SOS Plumbing and Air",
-    "url": "https://waterheatersos.com",
+    "url": "https://sosplumbingandair.com",
     "telephone": "+1-800-697-4014",
     "address": {
       "street_address": "571 Crane St, Unit H",
@@ -22,7 +22,7 @@
   "customer_actions": {
     "request_estimate": {
       "type": "web_form",
-      "url": "https://waterheatersos.com/quote",
+      "url": "https://sosplumbingandair.com/quote",
       "label": "Get a Free Quote",
       "description": "Free estimate request form for water heater, HVAC, and plumbing services. Best for non-emergency jobs, replacements, and new installations.",
       "supports_agent_booking": false
@@ -36,7 +36,7 @@
     },
     "financing": {
       "type": "web_page",
-      "url": "https://waterheatersos.com/discount-water-heaters",
+      "url": "https://sosplumbingandair.com/discount-water-heaters",
       "label": "View Water Heater Discounts & Offers",
       "description": "Current promotions and discount pricing on water heater installations and replacements. A common financed purchase for homeowners with an unexpected failure."
     }

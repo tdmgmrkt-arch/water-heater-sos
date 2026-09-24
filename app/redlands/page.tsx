@@ -21,10 +21,10 @@ export const metadata: Metadata = {
     description:
       "Expert plumbing services in Redlands, CA. Fast water heater repair & replacement, drain cleaning, faucet repairs, and more.",
     type: "website",
-    url: "https://waterheatersos.com/redlands",
+    url: "https://sosplumbingandair.com/redlands",
   },
   alternates: {
-    canonical: "https://waterheatersos.com/redlands",
+    canonical: "https://sosplumbingandair.com/redlands",
   },
 };
 

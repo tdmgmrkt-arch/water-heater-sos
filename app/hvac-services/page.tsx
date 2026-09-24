@@ -15,14 +15,14 @@ export const metadata: Metadata = {
     "hvac company san bernardino county",
   ],
   alternates: {
-    canonical: "https://waterheatersos.com/hvac-services",
+    canonical: "https://sosplumbingandair.com/hvac-services",
   },
   openGraph: {
     title: "HVAC Services in the Inland Empire | Licensed Contractor",
     description:
       "HVAC services in the Inland Empire — AC, heating & indoor air quality. Licensed contractor (CA LIC# 1140776), 24/7 service. Call (800) 697-4014.",
     type: "website",
-    url: "https://waterheatersos.com/hvac-services",
+    url: "https://sosplumbingandair.com/hvac-services",
   },
   twitter: {
     card: "summary_large_image",
@@ -37,9 +37,9 @@ const hvacServicesSchema = {
   "@graph": [
     {
       "@type": "HVACBusiness",
-      "@id": "https://waterheatersos.com/#business",
+      "@id": "https://sosplumbingandair.com/#business",
       name: "SOS Plumbing and Air",
-      url: "https://waterheatersos.com",
+      url: "https://sosplumbingandair.com",
       telephone: "+18006974014",
       priceRange: "$89\u2013$18,000",
       description:
@@ -111,23 +111,23 @@ const hvacServicesSchema = {
     },
     {
       "@type": "CollectionPage",
-      "@id": "https://waterheatersos.com/hvac-services#page",
+      "@id": "https://sosplumbingandair.com/hvac-services#page",
       name: "HVAC Services in the Inland Empire",
-      url: "https://waterheatersos.com/hvac-services",
+      url: "https://sosplumbingandair.com/hvac-services",
       description:
         "Complete HVAC services in the Inland Empire — AC repair, installation, maintenance, furnace services, heat pump systems, and indoor air quality solutions. Licensed HVAC contractor (CA LIC# 1140776).",
       provider: {
-        "@id": "https://waterheatersos.com/#business",
+        "@id": "https://sosplumbingandair.com/#business",
       },
       hasPart: [
-        { "@type": "WebPage", url: "https://waterheatersos.com/ac-services" },
-        { "@type": "WebPage", url: "https://waterheatersos.com/heating-services" },
-        { "@type": "WebPage", url: "https://waterheatersos.com/indoor-air-quality" },
+        { "@type": "WebPage", url: "https://sosplumbingandair.com/ac-services" },
+        { "@type": "WebPage", url: "https://sosplumbingandair.com/heating-services" },
+        { "@type": "WebPage", url: "https://sosplumbingandair.com/indoor-air-quality" },
       ],
     },
     {
       "@type": "FAQPage",
-      "@id": "https://waterheatersos.com/hvac-services#faq",
+      "@id": "https://sosplumbingandair.com/hvac-services#faq",
       mainEntity: [
         {
           "@type": "Question",

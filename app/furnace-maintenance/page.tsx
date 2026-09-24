@@ -14,13 +14,13 @@ export const metadata: Metadata = {
     "hvac maintenance inland empire",
     "furnace safety check inland empire",
   ],
-  alternates: { canonical: "https://waterheatersos.com/furnace-maintenance" },
+  alternates: { canonical: "https://sosplumbingandair.com/furnace-maintenance" },
   openGraph: {
     title: "Furnace Maintenance & Tune-Up in the Inland Empire | Annual Service",
     description:
       "Annual furnace maintenance & tune-ups in the Inland Empire. CO safety checks included. Licensed (CA LIC# 1140776). Call (800) 697-4014.",
     type: "website",
-    url: "https://waterheatersos.com/furnace-maintenance",
+    url: "https://sosplumbingandair.com/furnace-maintenance",
   },
   twitter: {
     card: "summary_large_image",
@@ -35,9 +35,9 @@ const furnaceMaintenanceSchema = {
   "@graph": [
     {
       "@type": "HVACBusiness",
-      "@id": "https://waterheatersos.com/#business",
+      "@id": "https://sosplumbingandair.com/#business",
       name: "SOS Plumbing and Air",
-      url: "https://waterheatersos.com",
+      url: "https://sosplumbingandair.com",
       telephone: "+18006974014",
       priceRange: "$89\u2013$199",
       description:
@@ -85,13 +85,13 @@ const furnaceMaintenanceSchema = {
     },
     {
       "@type": "Service",
-      "@id": "https://waterheatersos.com/furnace-maintenance#service",
+      "@id": "https://sosplumbingandair.com/furnace-maintenance#service",
       name: "Furnace Maintenance",
       serviceType: "Furnace Maintenance",
-      url: "https://waterheatersos.com/furnace-maintenance",
+      url: "https://sosplumbingandair.com/furnace-maintenance",
       description:
         "Annual furnace maintenance and tune-up service in the Inland Empire, including carbon monoxide safety inspection. Licensed HVAC contractor (CA LIC# 1140776).",
-      provider: { "@id": "https://waterheatersos.com/#business" },
+      provider: { "@id": "https://sosplumbingandair.com/#business" },
       areaServed: [
         { "@type": "City", name: "Riverside" }, { "@type": "City", name: "Moreno Valley" },
         { "@type": "City", name: "Corona" }, { "@type": "City", name: "San Bernardino" },
@@ -110,7 +110,7 @@ const furnaceMaintenanceSchema = {
     },
     {
       "@type": "FAQPage",
-      "@id": "https://waterheatersos.com/furnace-maintenance#faq",
+      "@id": "https://sosplumbingandair.com/furnace-maintenance#faq",
       mainEntity: [
         {
           "@type": "Question",
@@ -180,12 +180,12 @@ const furnaceMaintenanceSchema = {
     },
     {
       "@type": "BreadcrumbList",
-      "@id": "https://waterheatersos.com/furnace-maintenance#breadcrumb",
+      "@id": "https://sosplumbingandair.com/furnace-maintenance#breadcrumb",
       itemListElement: [
-        { "@type": "ListItem", position: 1, name: "Home", item: "https://waterheatersos.com" },
-        { "@type": "ListItem", position: 2, name: "HVAC Services", item: "https://waterheatersos.com/hvac-services" },
-        { "@type": "ListItem", position: 3, name: "Heating Services", item: "https://waterheatersos.com/heating-services" },
-        { "@type": "ListItem", position: 4, name: "Furnace Maintenance", item: "https://waterheatersos.com/furnace-maintenance" },
+        { "@type": "ListItem", position: 1, name: "Home", item: "https://sosplumbingandair.com" },
+        { "@type": "ListItem", position: 2, name: "HVAC Services", item: "https://sosplumbingandair.com/hvac-services" },
+        { "@type": "ListItem", position: 3, name: "Heating Services", item: "https://sosplumbingandair.com/heating-services" },
+        { "@type": "ListItem", position: 4, name: "Furnace Maintenance", item: "https://sosplumbingandair.com/furnace-maintenance" },
       ],
     },
   ],

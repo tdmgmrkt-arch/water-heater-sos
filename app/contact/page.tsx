@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     type: "website",
   },
   alternates: {
-    canonical: "https://waterheatersos.com/contact",
+    canonical: "https://sosplumbingandair.com/contact",
   },
 };
 

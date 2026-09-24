@@ -25,7 +25,7 @@ export function Breadcrumb({ items }: BreadcrumbProps) {
       "position": index + 1,
       "name": item.label,
       "item": item.href
-        ? `https://waterheatersos.com${item.href}`
+        ? `https://sosplumbingandair.com${item.href}`
         : undefined,
     })),
   };

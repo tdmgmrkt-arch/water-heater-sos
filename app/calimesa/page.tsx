@@ -19,10 +19,10 @@ export const metadata: Metadata = {
     description:
       "Expert plumbing services in Calimesa, CA. Water heater repair & replacement, drain cleaning, leak detection, and more.",
     type: "website",
-    url: "https://waterheatersos.com/calimesa",
+    url: "https://sosplumbingandair.com/calimesa",
   },
   alternates: {
-    canonical: "https://waterheatersos.com/calimesa",
+    canonical: "https://sosplumbingandair.com/calimesa",
   },
 };
 

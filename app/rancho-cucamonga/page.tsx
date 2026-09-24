@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     type: "website",
   },
   alternates: {
-    canonical: "https://waterheatersos.com/rancho-cucamonga",
+    canonical: "https://sosplumbingandair.com/rancho-cucamonga",
   },
 };
 

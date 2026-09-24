@@ -14,13 +14,13 @@ export const metadata: Metadata = {
     "new ac system inland empire",
     "ac installation cost inland empire",
   ],
-  alternates: { canonical: "https://waterheatersos.com/ac-installation" },
+  alternates: { canonical: "https://sosplumbingandair.com/ac-installation" },
   openGraph: {
     title: "AC Installation in the Inland Empire | New Central Air Systems",
     description:
       "AC installation in the Inland Empire — new central air systems, heat pumps & ductless mini-splits. Licensed (CA LIC# 1140776). Call (800) 697-4014.",
     type: "website",
-    url: "https://waterheatersos.com/ac-installation",
+    url: "https://sosplumbingandair.com/ac-installation",
   },
   twitter: {
     card: "summary_large_image",
@@ -35,9 +35,9 @@ const acInstallationSchema = {
   "@graph": [
     {
       "@type": "HVACBusiness",
-      "@id": "https://waterheatersos.com/#business",
+      "@id": "https://sosplumbingandair.com/#business",
       name: "SOS Plumbing and Air",
-      url: "https://waterheatersos.com",
+      url: "https://sosplumbingandair.com",
       telephone: "+18006974014",
       priceRange: "$4,500\u2013$12,000",
       description:
@@ -85,13 +85,13 @@ const acInstallationSchema = {
     },
     {
       "@type": "Service",
-      "@id": "https://waterheatersos.com/ac-installation#service",
+      "@id": "https://sosplumbingandair.com/ac-installation#service",
       name: "AC Installation",
       serviceType: "AC Installation",
-      url: "https://waterheatersos.com/ac-installation",
+      url: "https://sosplumbingandair.com/ac-installation",
       description:
         "Professional AC installation in the Inland Empire. New central air systems, heat pump installations, and ductless mini-splits. Licensed HVAC contractor (CA LIC# 1140776), Riverside County and San Bernardino County.",
-      provider: { "@id": "https://waterheatersos.com/#business" },
+      provider: { "@id": "https://sosplumbingandair.com/#business" },
       areaServed: [
         { "@type": "City", name: "Riverside" }, { "@type": "City", name: "Moreno Valley" },
         { "@type": "City", name: "Corona" }, { "@type": "City", name: "San Bernardino" },
@@ -112,7 +112,7 @@ const acInstallationSchema = {
     },
     {
       "@type": "FAQPage",
-      "@id": "https://waterheatersos.com/ac-installation#faq",
+      "@id": "https://sosplumbingandair.com/ac-installation#faq",
       mainEntity: [
         {
           "@type": "Question",
@@ -182,12 +182,12 @@ const acInstallationSchema = {
     },
     {
       "@type": "BreadcrumbList",
-      "@id": "https://waterheatersos.com/ac-installation#breadcrumb",
+      "@id": "https://sosplumbingandair.com/ac-installation#breadcrumb",
       itemListElement: [
-        { "@type": "ListItem", position: 1, name: "Home", item: "https://waterheatersos.com" },
-        { "@type": "ListItem", position: 2, name: "HVAC Services", item: "https://waterheatersos.com/hvac-services" },
-        { "@type": "ListItem", position: 3, name: "AC Services", item: "https://waterheatersos.com/ac-services" },
-        { "@type": "ListItem", position: 4, name: "AC Installation", item: "https://waterheatersos.com/ac-installation" },
+        { "@type": "ListItem", position: 1, name: "Home", item: "https://sosplumbingandair.com" },
+        { "@type": "ListItem", position: 2, name: "HVAC Services", item: "https://sosplumbingandair.com/hvac-services" },
+        { "@type": "ListItem", position: 3, name: "AC Services", item: "https://sosplumbingandair.com/ac-services" },
+        { "@type": "ListItem", position: 4, name: "AC Installation", item: "https://sosplumbingandair.com/ac-installation" },
       ],
     },
   ],
