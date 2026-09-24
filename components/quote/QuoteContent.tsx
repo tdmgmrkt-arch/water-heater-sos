@@ -247,16 +247,20 @@ export function QuoteContent() {
     setSubmitStatus("idle");
 
     try {
-      // Execute reCAPTCHA Enterprise
+      // Execute reCAPTCHA Enterprise — never let it block a lead
       let recaptchaToken = "";
-      const grecaptcha = window.grecaptcha;
-      if (grecaptcha?.enterprise) {
-        await new Promise<void>((resolve) => {
-          grecaptcha.enterprise.ready(resolve);
-        });
-        recaptchaToken = await grecaptcha.enterprise.execute(RECAPTCHA_SITE_KEY, {
-          action: "submit_quote",
-        });
+      try {
+        const grecaptcha = window.grecaptcha;
+        if (grecaptcha?.enterprise) {
+          await new Promise<void>((resolve) => {
+            grecaptcha.enterprise.ready(resolve);
+          });
+          recaptchaToken = await grecaptcha.enterprise.execute(RECAPTCHA_SITE_KEY, {
+            action: "submit_quote",
+          });
+        }
+      } catch {
+        // Script blocked, slow, or domain not allowlisted — submit anyway
       }
 
       // Parse address components from address string
